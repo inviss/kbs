@@ -1,0 +1,114 @@
+[2015-01-23 오후 2:47:42:040]    ****************Initialized*******************
+[2015-01-23 오후 2:48:03:660]    원격 서버에 연결할 수 없습니다.
+   위치: System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   위치: System.Net.HttpWebRequest.GetRequestStream()
+   위치: System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   위치: Transcoder_KBS.SoapObj.ServiceNavigatorService.saveStatus(String arg0) 파일 D:\Sehee Source\02 KBS\05 Transcoder_KBS\Transcoder_KBS\Web References\SoapObj\Reference.cs:줄 174
+   위치: Transcoder_KBS.WorkAgent.QueryGetJobs(String eqid) 파일 D:\Sehee Source\02 KBS\05 Transcoder_KBS\Transcoder_KBS\WorkAgent.cs:줄 415
+[2015-01-23 오후 2:48:18:676]    ****************Initialized*******************
+[2015-01-23 오후 2:48:40:289]    원격 서버에 연결할 수 없습니다.
+   위치: System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   위치: System.Net.HttpWebRequest.GetRequestStream()
+   위치: System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   위치: Transcoder_KBS.SoapObj.ServiceNavigatorService.saveStatus(String arg0) 파일 D:\Sehee Source\02 KBS\05 Transcoder_KBS\Transcoder_KBS\Web References\SoapObj\Reference.cs:줄 174
+   위치: Transcoder_KBS.WorkAgent.QueryGetJobs(String eqid) 파일 D:\Sehee Source\02 KBS\05 Transcoder_KBS\Transcoder_KBS\WorkAgent.cs:줄 415
+[2015-01-23 오후 2:48:53:985]    ****************Initialized*******************
+[2015-01-23 오후 2:49:25:599]    ****************Initialized*******************
+[2015-01-23 오후 2:52:06:159]    ****************Initialized*******************
+[2015-01-23 오후 2:52:23:731]    ****************Initialized*******************
+[2015-01-23 오후 2:53:04:863]    원격 서버에 연결할 수 없습니다.
+   위치: System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   위치: System.Net.HttpWebRequest.GetRequestStream()
+   위치: System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   위치: Transcoder_KBS.SoapObj.ServiceNavigatorService.saveStatus(String arg0) 파일 D:\Sehee Source\02 KBS\05 Transcoder_KBS\Transcoder_KBS\Web References\SoapObj\Reference.cs:줄 174
+   위치: Transcoder_KBS.WorkAgent.QueryGetJobs(String eqid) 파일 D:\Sehee Source\02 KBS\05 Transcoder_KBS\Transcoder_KBS\WorkAgent.cs:줄 415
+[2015-01-23 오후 2:53:17:272]    스레드가 중단되었습니다.
+   위치: Transcoder_KBS.WorkAgent.QueryGetJobs(String eqid) 파일 D:\Sehee Source\02 KBS\05 Transcoder_KBS\Transcoder_KBS\WorkAgent.cs:줄 430
+[2015-01-23 오후 2:55:05:549]    ****************Initialized*******************
+[2015-01-23 오후 2:57:25:301]    ****************Initialized*******************
+[2015-01-23 오후 2:58:21:190]    ****************Initialized*******************
+[2015-01-23 오후 2:58:42:809]    원격 서버에 연결할 수 없습니다.
+   위치: System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   위치: System.Net.HttpWebRequest.GetRequestStream()
+   위치: System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   위치: Transcoder_KBS.SoapObj.ServiceNavigatorService.saveStatus(String arg0) 파일 D:\Sehee Source\02 KBS\05 Transcoder_KBS\Transcoder_KBS\Web References\SoapObj\Reference.cs:줄 174
+   위치: Transcoder_KBS.WorkAgent.QueryGetJobs(String eqid) 파일 D:\Sehee Source\02 KBS\05 Transcoder_KBS\Transcoder_KBS\WorkAgent.cs:줄 415
+[2015-01-23 오후 2:58:54:867]    스레드가 중단되었습니다.
+   위치: Transcoder_KBS.WorkAgent.QueryGetJobs(String eqid) 파일 D:\Sehee Source\02 KBS\05 Transcoder_KBS\Transcoder_KBS\WorkAgent.cs:줄 430
+[2015-01-23 오후 2:59:04:652]    ****************Initialized*******************
+[2015-01-23 오후 3:00:18:819]    ****************Initialized*******************
+[2015-01-23 오후 3:00:40:423]    원격 서버에 연결할 수 없습니다.
+   위치: System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   위치: System.Net.HttpWebRequest.GetRequestStream()
+   위치: System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   위치: Transcoder_KBS.SoapObj.ServiceNavigatorService.saveStatus(String arg0) 파일 D:\Sehee Source\02 KBS\05 Transcoder_KBS\Transcoder_KBS\Web References\SoapObj\Reference.cs:줄 174
+   위치: Transcoder_KBS.WorkAgent.QueryGetJobs(String eqid) 파일 D:\Sehee Source\02 KBS\05 Transcoder_KBS\Transcoder_KBS\WorkAgent.cs:줄 415
+[2015-01-23 오후 3:01:23:470]    원격 서버에 연결할 수 없습니다.
+   위치: System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   위치: System.Net.HttpWebRequest.GetRequestStream()
+   위치: System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   위치: Transcoder_KBS.SoapObj.ServiceNavigatorService.saveStatus(String arg0) 파일 D:\Sehee Source\02 KBS\05 Transcoder_KBS\Transcoder_KBS\Web References\SoapObj\Reference.cs:줄 174
+   위치: Transcoder_KBS.WorkAgent.QueryGetJobs(String eqid) 파일 D:\Sehee Source\02 KBS\05 Transcoder_KBS\Transcoder_KBS\WorkAgent.cs:줄 415
+[2015-01-23 오후 3:02:06:525]    원격 서버에 연결할 수 없습니다.
+   위치: System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   위치: System.Net.HttpWebRequest.GetRequestStream()
+   위치: System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   위치: Transcoder_KBS.SoapObj.ServiceNavigatorService.saveStatus(String arg0) 파일 D:\Sehee Source\02 KBS\05 Transcoder_KBS\Transcoder_KBS\Web References\SoapObj\Reference.cs:줄 174
+   위치: Transcoder_KBS.WorkAgent.QueryGetJobs(String eqid) 파일 D:\Sehee Source\02 KBS\05 Transcoder_KBS\Transcoder_KBS\WorkAgent.cs:줄 415
+[2015-01-23 오후 3:02:49:577]    원격 서버에 연결할 수 없습니다.
+   위치: System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   위치: System.Net.HttpWebRequest.GetRequestStream()
+   위치: System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   위치: Transcoder_KBS.SoapObj.ServiceNavigatorService.saveStatus(String arg0) 파일 D:\Sehee Source\02 KBS\05 Transcoder_KBS\Transcoder_KBS\Web References\SoapObj\Reference.cs:줄 174
+   위치: Transcoder_KBS.WorkAgent.QueryGetJobs(String eqid) 파일 D:\Sehee Source\02 KBS\05 Transcoder_KBS\Transcoder_KBS\WorkAgent.cs:줄 415
+[2015-01-23 오후 3:03:53:372]    원격 서버에 연결할 수 없습니다.
+   위치: System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   위치: System.Net.HttpWebRequest.GetRequestStream()
+   위치: System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   위치: Transcoder_KBS.SoapObj.ServiceNavigatorService.saveStatus(String arg0) 파일 D:\Sehee Source\02 KBS\05 Transcoder_KBS\Transcoder_KBS\Web References\SoapObj\Reference.cs:줄 174
+   위치: Transcoder_KBS.WorkAgent.QueryGetJobs(String eqid) 파일 D:\Sehee Source\02 KBS\05 Transcoder_KBS\Transcoder_KBS\WorkAgent.cs:줄 415
+[2015-01-23 오후 3:04:17:280]    ****************Initialized*******************
+[2015-01-23 오후 3:04:38:898]    원격 서버에 연결할 수 없습니다.
+   위치: System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   위치: System.Net.HttpWebRequest.GetRequestStream()
+   위치: System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   위치: Transcoder_KBS.SoapObj.ServiceNavigatorService.saveStatus(String arg0) 파일 D:\Sehee Source\02 KBS\05 Transcoder_KBS\Transcoder_KBS\Web References\SoapObj\Reference.cs:줄 174
+   위치: Transcoder_KBS.WorkAgent.QueryGetJobs(String eqid) 파일 D:\Sehee Source\02 KBS\05 Transcoder_KBS\Transcoder_KBS\WorkAgent.cs:줄 415
+[2015-01-23 오후 3:05:22:134]    ****************Initialized*******************
+[2015-01-23 오후 3:05:33:912]    ****************Initialized*******************
+[2015-01-23 오후 3:05:55:500]    ****************Initialized*******************
+[2015-01-23 오후 3:06:28:551]    ****************Initialized*******************
+[2015-01-23 오후 3:08:06:228]    ****************Initialized*******************
+[2015-01-23 오후 3:08:27:863]    원격 서버에 연결할 수 없습니다.
+   위치: System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   위치: System.Net.HttpWebRequest.GetRequestStream()
+   위치: System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   위치: Transcoder_KBS.SoapObj.ServiceNavigatorService.saveStatus(String arg0) 파일 D:\Sehee Source\02 KBS\05 Transcoder_KBS\Transcoder_KBS\Web References\SoapObj\Reference.cs:줄 174
+   위치: Transcoder_KBS.WorkAgent.QueryGetJobs(String eqid) 파일 D:\Sehee Source\02 KBS\05 Transcoder_KBS\Transcoder_KBS\WorkAgent.cs:줄 415
+[2015-01-23 오후 3:12:35:378]    ****************Initialized*******************
+[2015-01-23 오후 3:12:57:013]    ****************Initialized*******************
+[2015-01-23 오후 3:13:32:799]    ****************Initialized*******************
+[2015-01-23 오후 3:13:54:400]    스레드가 중단되었습니다.
+   위치: System.Net.Connection.CompleteStartConnection(Boolean async, HttpWebRequest httpWebRequest)
+   위치: System.Net.Connection.CompleteStartRequest(Boolean onSubmitThread, HttpWebRequest request, TriState needReConnect)
+   위치: System.Net.Connection.SubmitRequest(HttpWebRequest request, Boolean forcedsubmit)
+   위치: System.Net.ServicePoint.SubmitRequest(HttpWebRequest request, String connName)
+   위치: System.Net.HttpWebRequest.SubmitRequest(ServicePoint servicePoint)
+   위치: System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   위치: System.Net.HttpWebRequest.GetRequestStream()
+   위치: System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   위치: Transcoder_KBS.SoapObj.ServiceNavigatorService.saveStatus(String arg0) 파일 D:\Sehee Source\02 KBS\05 Transcoder_KBS\Transcoder_KBS\Web References\SoapObj\Reference.cs:줄 174
+   위치: Transcoder_KBS.WorkAgent.QueryGetJobs(String eqid) 파일 D:\Sehee Source\02 KBS\05 Transcoder_KBS\Transcoder_KBS\WorkAgent.cs:줄 415
+[2015-01-23 오후 3:14:04:984]    ****************Initialized*******************
+[2015-01-23 오후 3:14:26:606]    스레드가 중단되었습니다.
+   위치: System.Net.Connection.CompleteStartConnection(Boolean async, HttpWebRequest httpWebRequest)
+   위치: System.Net.Connection.CompleteStartRequest(Boolean onSubmitThread, HttpWebRequest request, TriState needReConnect)
+   위치: System.Net.Connection.SubmitRequest(HttpWebRequest request, Boolean forcedsubmit)
+   위치: System.Net.ServicePoint.SubmitRequest(HttpWebRequest request, String connName)
+   위치: System.Net.HttpWebRequest.SubmitRequest(ServicePoint servicePoint)
+   위치: System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   위치: System.Net.HttpWebRequest.GetRequestStream()
+   위치: System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   위치: Transcoder_KBS.SoapObj.ServiceNavigatorService.saveStatus(String arg0) 파일 D:\Sehee Source\02 KBS\05 Transcoder_KBS\Transcoder_KBS\Web References\SoapObj\Reference.cs:줄 174
+   위치: Transcoder_KBS.WorkAgent.QueryGetJobs(String eqid) 파일 D:\Sehee Source\02 KBS\05 Transcoder_KBS\Transcoder_KBS\WorkAgent.cs:줄 415
+[2015-01-23 오후 3:14:32:825]    ****************Initialized*******************

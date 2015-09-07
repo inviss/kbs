@@ -1,0 +1,3223 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>D2net.Common</name>
+    </assembly>
+    <members>
+        <member name="T:D2net.Common.UI.NativeMethods">
+            <summary>
+            Summary description for NativeMethods.
+            </summary>
+        </member>
+        <member name="T:D2net.Common.UI.Month">
+            <summary>
+            Summary description for DayProperties.
+            </summary>
+        </member>
+        <member name="F:D2net.Common.UI.MonthPropertyEventArgs.m_property">
+            <summary>
+            The property that has changed
+            </summary>
+        </member>
+        <member name="F:D2net.Common.UI.MonthColorEventArgs.m_color">
+            <summary>
+            The property that has changed
+            </summary>
+        </member>
+        <member name="F:D2net.Common.UI.MonthBorderStyleEventArgs.m_borderStyle">
+            <summary>
+            The property that has changed
+            </summary>
+        </member>
+        <member name="T:D2net.Common.Ftp.DataConnectionType">
+            <summary>
+            <para>Data connection type enumerator.</para>
+            </summary>
+        </member>
+        <member name="F:D2net.Common.Ftp.DataConnectionType.Active">
+            <summary>
+            <para>Opens a socket and listens for a connection from server for data transfer.</para>
+            </summary>
+        </member>
+        <member name="F:D2net.Common.Ftp.DataConnectionType.Passive">
+            <summary>
+            <para>Opens a socket and connects to server for data transfer.</para>
+            </summary>
+        </member>
+        <member name="T:D2net.Common.Ftp.FileTransferType">
+            <summary>
+            <para>FTP file transfer type enumerator.</para>
+            </summary>
+        </member>
+        <member name="F:D2net.Common.Ftp.FileTransferType.ASCII">
+            <summary>
+            <para>Use for transfer of text files.</para>
+            </summary>
+        </member>
+        <member name="F:D2net.Common.Ftp.FileTransferType.Binary">
+            <summary>
+            <para>Use for transfer of non-text files.</para>
+            </summary>
+        </member>
+        <member name="T:D2net.Common.Ftp.ConnectionState">
+            <summary>
+            <para>FTP connection state enumerator.</para>
+            </summary>
+        </member>
+        <member name="F:D2net.Common.Ftp.ConnectionState.Disconnected">
+            <summary>
+            <para>Connection is not initiated, or closed by succesfully calling <see cref="M:Melih.FTPClient.FTPClient.FTPClose"/>.</para>
+            </summary>
+        </member>
+        <member name="F:D2net.Common.Ftp.ConnectionState.Connecting">
+            <summary>
+            <para>Connection is initiated by calling <see cref="M:Melih.FTPClient.FTPClient.FTPOpen"/>.</para>
+            </summary>
+        </member>
+        <member name="F:D2net.Common.Ftp.ConnectionState.Authorizing">
+            <summary>
+            <para><see cref="M:Melih.FTPClient.FTPClient.FTPConnect"/> is called, but has not yet exited, either successfully or unsuccessfully.</para>
+            </summary>
+        </member>
+        <member name="F:D2net.Common.Ftp.ConnectionState.Connected">
+            <summary>
+            <para><see cref="M:Melih.FTPClient.FTPClient.FTPConnect"/> has exited successfully and the connection has been established.</para>
+            </summary>
+        </member>
+        <member name="F:D2net.Common.Ftp.ConnectionState.Disconnecting">
+            <summary>
+            <para><see cref="M:Melih.FTPClient.FTPClient.FTPClose"/>is called, but has not yet exited.</para>
+            </summary>
+        </member>
+        <member name="F:D2net.Common.Ftp.ConnectionState.LoggingOff">
+            <summary>
+            <para><see cref="M:Melih.FTPClient.FTPClient.FTPQuit"/>is called, but has not yet exited.</para>
+            </summary>
+        </member>
+        <member name="F:D2net.Common.Ftp.ConnectionState.LoggedOff">
+            <summary>
+            <para>Session is closed by succesfully calling <see cref="M:Melih.FTPClient.FTPClient.FTPQuit"/>.</para>
+            </summary>
+        </member>
+        <member name="T:D2net.Common.Ftp.FileTransferResuming">
+            <summary>
+            <para>Resume or overwrite existing transfer enumerator</para>
+            </summary>
+        </member>
+        <member name="F:D2net.Common.Ftp.FileTransferResuming.Resume">
+            <summary>
+            <para>Resume unfinished transfer.</para>
+            </summary>
+        </member>
+        <member name="F:D2net.Common.Ftp.FileTransferResuming.Overwrite">
+            <summary>
+            <para>Overwrite unfinished transfer.</para>
+            </summary>
+        </member>
+        <member name="T:D2net.Common.UI.TabControlEx">
+            <summary>
+            Summary description for TabControl.
+            </summary>
+        </member>
+        <member name="F:D2net.Common.UI.TabControlEx.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:D2net.Common.UI.TabControlEx.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:D2net.Common.UI.TabControlEx.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:D2net.Common.UI.FlatTabControl">
+            <summary>
+            Summary description for FlatTabControl.
+            </summary>
+        </member>
+        <member name="F:D2net.Common.UI.FlatTabControl.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:D2net.Common.UI.FlatTabControl.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:D2net.Common.UI.FlatTabControl.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:D2net.Common.UI.Weeknumber">
+            <summary>
+            Summary description for WeekNumber.
+            </summary>
+        </member>
+        <member name="M:D2net.Common.UI.WeeknumberClickEventArgs.#ctor">
+            <summary>
+            Initializes a new instance of the DayClickEventArgs class with default settings
+            </summary>
+        </member>
+        <member name="F:D2net.Common.UI.WeeknumberPropertyEventArgs.m_property">
+            <summary>
+            The property that has changed
+            </summary>
+        </member>
+        <member name="T:D2net.Common.UI.Weekday">
+            <summary>
+            Summary description for Weekday.
+            </summary>
+        </member>
+        <member name="M:D2net.Common.UI.WeekdayClickEventArgs.#ctor">
+            <summary>
+            Initializes a new instance of the DayClickEventArgs class with default settings
+            </summary>
+        </member>
+        <member name="F:D2net.Common.UI.WeekdayPropertyEventArgs.m_property">
+            <summary>
+            The property that has changed
+            </summary>
+        </member>
+        <member name="T:D2net.Common.UI.ColorSlider">
+            <summary>
+            Encapsulates control that visualy displays certain integer value and allows user to change it within desired range. It imitates <see cref="T:System.Windows.Forms.TrackBar"/> as far as mouse usage is concerned.
+            </summary>
+        </member>
+        <member name="M:D2net.Common.UI.ColorSlider.#ctor(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:D2net.Common.UI.ColorSlider"/> class.
+            </summary>
+            <param name="min">The minimum value.</param>
+            <param name="max">The maximum value.</param>
+            <param name="value">The current value.</param>
+        </member>
+        <member name="M:D2net.Common.UI.ColorSlider.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:D2net.Common.UI.ColorSlider"/> class.
+            </summary>
+        </member>
+        <member name="M:D2net.Common.UI.ColorSlider.OnPaint(System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            Raises the <see cref="E:System.Windows.Forms.Control.Paint"></see> event.
+            </summary>
+            <param name="e">A <see cref="T:System.Windows.Forms.PaintEventArgs"></see> that contains the event data.</param>
+        </member>
+        <member name="M:D2net.Common.UI.ColorSlider.DrawColorSlider(System.Windows.Forms.PaintEventArgs,System.Drawing.Color,System.Drawing.Color,System.Drawing.Color,System.Drawing.Color,System.Drawing.Color,System.Drawing.Color,System.Drawing.Color,System.Drawing.Color)">
+            <summary>
+            Draws the colorslider control using passed colors.
+            </summary>
+            <param name="e">The <see cref="T:System.Windows.Forms.PaintEventArgs"/> instance containing the event data.</param>
+            <param name="thumbOuterColorPaint">The thumb outer color paint.</param>
+            <param name="thumbInnerColorPaint">The thumb inner color paint.</param>
+            <param name="thumbPenColorPaint">The thumb pen color paint.</param>
+            <param name="barOuterColorPaint">The bar outer color paint.</param>
+            <param name="barInnerColorPaint">The bar inner color paint.</param>
+            <param name="barPenColorPaint">The bar pen color paint.</param>
+            <param name="elapsedOuterColorPaint">The elapsed outer color paint.</param>
+            <param name="elapsedInnerColorPaint">The elapsed inner color paint.</param>
+        </member>
+        <member name="M:D2net.Common.UI.ColorSlider.OnEnabledChanged(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:System.Windows.Forms.Control.EnabledChanged"></see> event.
+            </summary>
+            <param name="e">An <see cref="T:System.EventArgs"></see> that contains the event data.</param>
+        </member>
+        <member name="M:D2net.Common.UI.ColorSlider.OnMouseEnter(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:System.Windows.Forms.Control.MouseEnter"></see> event.
+            </summary>
+            <param name="e">An <see cref="T:System.EventArgs"></see> that contains the event data.</param>
+        </member>
+        <member name="M:D2net.Common.UI.ColorSlider.OnMouseLeave(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:System.Windows.Forms.Control.MouseLeave"></see> event.
+            </summary>
+            <param name="e">An <see cref="T:System.EventArgs"></see> that contains the event data.</param>
+        </member>
+        <member name="M:D2net.Common.UI.ColorSlider.OnMouseDown(System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            Raises the <see cref="E:System.Windows.Forms.Control.MouseDown"></see> event.
+            </summary>
+            <param name="e">A <see cref="T:System.Windows.Forms.MouseEventArgs"></see> that contains the event data.</param>
+        </member>
+        <member name="M:D2net.Common.UI.ColorSlider.OnMouseMove(System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            Raises the <see cref="E:System.Windows.Forms.Control.MouseMove"></see> event.
+            </summary>
+            <param name="e">A <see cref="T:System.Windows.Forms.MouseEventArgs"></see> that contains the event data.</param>
+        </member>
+        <member name="M:D2net.Common.UI.ColorSlider.OnMouseUp(System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            Raises the <see cref="E:System.Windows.Forms.Control.MouseUp"></see> event.
+            </summary>
+            <param name="e">A <see cref="T:System.Windows.Forms.MouseEventArgs"></see> that contains the event data.</param>
+        </member>
+        <member name="M:D2net.Common.UI.ColorSlider.OnMouseWheel(System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            Raises the <see cref="E:System.Windows.Forms.Control.MouseWheel"></see> event.
+            </summary>
+            <param name="e">A <see cref="T:System.Windows.Forms.MouseEventArgs"></see> that contains the event data.</param>
+        </member>
+        <member name="M:D2net.Common.UI.ColorSlider.OnGotFocus(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:System.Windows.Forms.Control.GotFocus"></see> event.
+            </summary>
+            <param name="e">An <see cref="T:System.EventArgs"></see> that contains the event data.</param>
+        </member>
+        <member name="M:D2net.Common.UI.ColorSlider.OnLostFocus(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:System.Windows.Forms.Control.LostFocus"></see> event.
+            </summary>
+            <param name="e">An <see cref="T:System.EventArgs"></see> that contains the event data.</param>
+        </member>
+        <member name="M:D2net.Common.UI.ColorSlider.OnKeyUp(System.Windows.Forms.KeyEventArgs)">
+            <summary>
+            Raises the <see cref="E:System.Windows.Forms.Control.KeyUp"></see> event.
+            </summary>
+            <param name="e">A <see cref="T:System.Windows.Forms.KeyEventArgs"></see> that contains the event data.</param>
+        </member>
+        <member name="M:D2net.Common.UI.ColorSlider.ProcessDialogKey(System.Windows.Forms.Keys)">
+            <summary>
+            Processes a dialog key.
+            </summary>
+            <param name="keyData">One of the <see cref="T:System.Windows.Forms.Keys"></see> values that represents the key to process.</param>
+            <returns>
+            true if the key was processed by the control; otherwise, false.
+            </returns>
+        </member>
+        <member name="M:D2net.Common.UI.ColorSlider.CreateRoundRectPath(System.Drawing.Rectangle,System.Drawing.Size)">
+            <summary>
+            Creates the round rect path.
+            </summary>
+            <param name="rect">The rectangle on which graphics path will be spanned.</param>
+            <param name="size">The size of rounded rectangle edges.</param>
+            <returns></returns>
+        </member>
+        <member name="M:D2net.Common.UI.ColorSlider.DesaturateColors(System.Drawing.Color[])">
+            <summary>
+            Desaturates colors from given array.
+            </summary>
+            <param name="colorsToDesaturate">The colors to be desaturated.</param>
+            <returns></returns>
+        </member>
+        <member name="M:D2net.Common.UI.ColorSlider.LightenColors(System.Drawing.Color[])">
+            <summary>
+            Lightens colors from given array.
+            </summary>
+            <param name="colorsToLighten">The colors to lighten.</param>
+            <returns></returns>
+        </member>
+        <member name="M:D2net.Common.UI.ColorSlider.SetProperValue(System.Int32)">
+            <summary>
+            Sets the trackbar value so that it wont exceed allowed range.
+            </summary>
+            <param name="val">The value.</param>
+        </member>
+        <member name="M:D2net.Common.UI.ColorSlider.IsPointInRect(System.Drawing.Point,System.Drawing.Rectangle)">
+            <summary>
+            Determines whether rectangle contains given point.
+            </summary>
+            <param name="pt">The point to test.</param>
+            <param name="rect">The base rectangle.</param>
+            <returns>
+            	<c>true</c> if rectangle contains given point; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="F:D2net.Common.UI.ColorSlider.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:D2net.Common.UI.ColorSlider.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:D2net.Common.UI.ColorSlider.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="E:D2net.Common.UI.ColorSlider.ValueChanged">
+            <summary>
+            Fires when Slider position has changed
+            </summary>
+        </member>
+        <member name="E:D2net.Common.UI.ColorSlider.Scroll">
+            <summary>
+            Fires when user scrolls the Slider
+            </summary>
+        </member>
+        <member name="P:D2net.Common.UI.ColorSlider.ThumbRect">
+            <summary>
+            Gets the thumb rect. Usefull to determine bounding rectangle when creating custom thumb shape.
+            </summary>
+            <value>The thumb rect.</value>
+        </member>
+        <member name="P:D2net.Common.UI.ColorSlider.ThumbSize">
+            <summary>
+            Gets or sets the size of the thumb.
+            </summary>
+            <value>The size of the thumb.</value>
+            <exception cref="T:System.ArgumentOutOfRangeException">exception thrown when value is lower than zero or grather than half of appropiate dimension</exception>
+        </member>
+        <member name="P:D2net.Common.UI.ColorSlider.ThumbCustomShape">
+            <summary>
+            Gets or sets the thumb custom shape. Use ThumbRect property to determine bounding rectangle.
+            </summary>
+            <value>The thumb custom shape. null means default shape</value>
+        </member>
+        <member name="P:D2net.Common.UI.ColorSlider.ThumbRoundRectSize">
+            <summary>
+            Gets or sets the size of the thumb round rectangle edges.
+            </summary>
+            <value>The size of the thumb round rectangle edges.</value>
+        </member>
+        <member name="P:D2net.Common.UI.ColorSlider.BorderRoundRectSize">
+            <summary>
+            Gets or sets the size of the border round rect.
+            </summary>
+            <value>The size of the border round rect.</value>
+        </member>
+        <member name="P:D2net.Common.UI.ColorSlider.Orientation">
+            <summary>
+            Gets or sets the orientation of Slider.
+            </summary>
+            <value>The orientation.</value>
+        </member>
+        <member name="P:D2net.Common.UI.ColorSlider.Value">
+            <summary>
+            Gets or sets the value of Slider.
+            </summary>
+            <value>The value.</value>
+            <exception cref="T:System.ArgumentOutOfRangeException">exception thrown when value is outside appropriate range (min, max)</exception>
+        </member>
+        <member name="P:D2net.Common.UI.ColorSlider.Minimum">
+            <summary>
+            Gets or sets the minimum value.
+            </summary>
+            <value>The minimum value.</value>
+            <exception cref="T:System.ArgumentOutOfRangeException">exception thrown when minimal value is greather than maximal one</exception>
+        </member>
+        <member name="P:D2net.Common.UI.ColorSlider.Maximum">
+            <summary>
+            Gets or sets the maximum value.
+            </summary>
+            <value>The maximum value.</value>
+            <exception cref="T:System.ArgumentOutOfRangeException">exception thrown when maximal value is lower than minimal one</exception>
+        </member>
+        <member name="P:D2net.Common.UI.ColorSlider.SmallChange">
+            <summary>
+            Gets or sets trackbar's small change. It affects how to behave when directional keys are pressed
+            </summary>
+            <value>The small change value.</value>
+        </member>
+        <member name="P:D2net.Common.UI.ColorSlider.LargeChange">
+            <summary>
+            Gets or sets trackbar's large change. It affects how to behave when PageUp/PageDown keys are pressed
+            </summary>
+            <value>The large change value.</value>
+        </member>
+        <member name="P:D2net.Common.UI.ColorSlider.DrawFocusRectangle">
+            <summary>
+            Gets or sets a value indicating whether to draw focus rectangle.
+            </summary>
+            <value><c>true</c> if focus rectangle should be drawn; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:D2net.Common.UI.ColorSlider.DrawSemitransparentThumb">
+            <summary>
+            Gets or sets a value indicating whether to draw semitransparent thumb.
+            </summary>
+            <value><c>true</c> if semitransparent thumb should be drawn; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:D2net.Common.UI.ColorSlider.MouseEffects">
+            <summary>
+            Gets or sets whether mouse entry and exit actions have impact on how control look.
+            </summary>
+            <value><c>true</c> if mouse entry and exit actions have impact on how control look; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:D2net.Common.UI.ColorSlider.MouseWheelBarPartitions">
+            <summary>
+            Gets or sets the mouse wheel bar partitions.
+            </summary>
+            <value>The mouse wheel bar partitions.</value>
+            <exception cref="T:System.ArgumentOutOfRangeException">exception thrown when value isn't greather than zero</exception>
+        </member>
+        <member name="P:D2net.Common.UI.ColorSlider.ThumbOuterColor">
+            <summary>
+            Gets or sets the thumb outer color .
+            </summary>
+            <value>The thumb outer color.</value>
+        </member>
+        <member name="P:D2net.Common.UI.ColorSlider.ThumbInnerColor">
+            <summary>
+            Gets or sets the inner color of the thumb.
+            </summary>
+            <value>The inner color of the thumb.</value>
+        </member>
+        <member name="P:D2net.Common.UI.ColorSlider.ThumbPenColor">
+            <summary>
+            Gets or sets the color of the thumb pen.
+            </summary>
+            <value>The color of the thumb pen.</value>
+        </member>
+        <member name="P:D2net.Common.UI.ColorSlider.BarOuterColor">
+            <summary>
+            Gets or sets the outer color of the bar.
+            </summary>
+            <value>The outer color of the bar.</value>
+        </member>
+        <member name="P:D2net.Common.UI.ColorSlider.BarInnerColor">
+            <summary>
+            Gets or sets the inner color of the bar.
+            </summary>
+            <value>The inner color of the bar.</value>
+        </member>
+        <member name="P:D2net.Common.UI.ColorSlider.BarPenColor">
+            <summary>
+            Gets or sets the color of the bar pen.
+            </summary>
+            <value>The color of the bar pen.</value>
+        </member>
+        <member name="P:D2net.Common.UI.ColorSlider.ElapsedOuterColor">
+            <summary>
+            Gets or sets the outer color of the elapsed.
+            </summary>
+            <value>The outer color of the elapsed.</value>
+        </member>
+        <member name="P:D2net.Common.UI.ColorSlider.ElapsedInnerColor">
+            <summary>
+            Gets or sets the inner color of the elapsed.
+            </summary>
+            <value>The inner color of the elapsed.</value>
+        </member>
+        <member name="P:D2net.Common.UI.ColorSlider.ColorSchema">
+            <summary>
+            Sets color schema. Color generalization / fast color changing. Has no effect when slider colors are changed manually after schema was applied. 
+            </summary>
+            <value>New color schema value</value>
+        </member>
+        <member name="T:D2net.Common.UI.AlignEditor">
+            <summary>
+            Summary description for ImageEditor.
+            </summary>
+        </member>
+        <member name="F:D2net.Common.UI.AdvPanel.components">
+            <summary> 
+            필수 디자이너 변수입니다.
+            </summary>
+        </member>
+        <member name="M:D2net.Common.UI.AdvPanel.Dispose(System.Boolean)">
+            <summary> 
+            사용 중인 모든 리소스를 정리합니다.
+            </summary>
+            <param name="disposing">관리되는 리소스를 삭제해야 하면 true이고, 그렇지 않으면 false입니다.</param>
+        </member>
+        <member name="M:D2net.Common.UI.AdvPanel.InitializeComponent">
+            <summary> 
+            디자이너 지원에 필요한 메서드입니다. 
+            이 메서드의 내용을 코드 편집기로 수정하지 마십시오.
+            </summary>
+        </member>
+        <member name="P:D2net.Common.UI.AdvPanel.InnerBorderStyle">
+            <summary>
+            Whether or not to enable the segment feature of the time slider. This feature shows a timespan
+            within the min and max to be highlighted within the slider.
+            </summary>
+        </member>
+        <member name="T:D2net.Common.UI.AdvDTPick">
+            <summary>
+            UserControl1에 대한 요약 설명입니다.
+            </summary>
+        </member>
+        <member name="F:D2net.Common.UI.AdvDTPick.components">
+            <summary>
+            필수 디자이너 변수입니다.
+            </summary>
+        </member>
+        <member name="M:D2net.Common.UI.AdvDTPick.Dispose(System.Boolean)">
+            <summary>
+            사용 중인 모든 리소스를 정리합니다.
+            </summary>
+        </member>
+        <member name="M:D2net.Common.UI.AdvDTPick.InitializeComponent">
+            <summary>
+            디자이너 지원에 필요한 메서드입니다. 
+            이 메서드의 내용을 코드 편집기로 수정하지 마십시오.
+            </summary>
+        </member>
+        <member name="T:D2net.Common.API.User32">
+            <summary>
+            User32에 대한 요약 설명입니다.
+            </summary>
+        </member>
+        <member name="T:D2net.Common.UI.TrackBarEx">
+            <summary>
+            Summary description for TrackBarEx.
+            </summary>
+        </member>
+        <member name="F:D2net.Common.UI.TrackBarEx.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:D2net.Common.UI.TrackBarEx.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:D2net.Common.UI.TrackBarEx.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:D2net.Common.UI.GlobalHook">
+            <summary>
+            Summary description for GlobalHook.
+            </summary>
+        </member>
+        <member name="T:D2net.Common.UI.UpDownEx">
+            <summary>
+            UpDownEx에 대한 요약 설명입니다.
+            </summary>
+        </member>
+        <member name="F:D2net.Common.UI.UpDownEx.components">
+            <summary> 
+            필수 디자이너 변수입니다.
+            </summary>
+        </member>
+        <member name="M:D2net.Common.UI.UpDownEx.Dispose(System.Boolean)">
+            <summary> 
+            사용 중인 모든 리소스를 정리합니다.
+            </summary>
+        </member>
+        <member name="M:D2net.Common.UI.UpDownEx.InitializeComponent">
+            <summary> 
+            디자이너 지원에 필요한 메서드입니다. 
+            이 메서드의 내용을 코드 편집기로 수정하지 마십시오.
+            </summary>
+        </member>
+        <member name="T:D2net.Common.UI.TransButton">
+            <summary>
+            Summary description for TransButton.
+            </summary>
+        </member>
+        <member name="F:D2net.Common.UI.TransButton.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:D2net.Common.UI.TransButton.#cctor">
+            <summary>
+            TransButton default constructor.
+            </summary>
+        </member>
+        <member name="M:D2net.Common.UI.TransButton.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:D2net.Common.UI.TransButton.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:D2net.Common.UI.TransButton.ControlState.Normal">
+            <summary>Button is in the normal state.</summary>
+        </member>
+        <member name="F:D2net.Common.UI.TransButton.ControlState.Hover">
+            <summary>Button is in the hover state.</summary>
+        </member>
+        <member name="F:D2net.Common.UI.TransButton.ControlState.Pressed">
+            <summary>Button is in the pressed state.</summary>
+        </member>
+        <member name="F:D2net.Common.UI.TransButton.ControlState.Default">
+            <summary>Button is in the default state.</summary>
+        </member>
+        <member name="F:D2net.Common.UI.TransButton.ControlState.Disabled">
+            <summary>Button is in the disabled state.</summary>
+        </member>
+        <member name="T:D2net.Common.UI.SkinManager">
+            <summary>
+            SkinManager에 대한 요약 설명입니다.
+            </summary>
+        </member>
+        <member name="T:D2net.Common.API.Shell32">
+            <summary>
+            Shell32에 대한 요약 설명입니다.
+            </summary>
+        </member>
+        <member name="T:D2net.Common.UI.ImageButton">
+            <summary>
+            이미지 버튼을 정의한다. 이미지는 {[기본],[클릭],[HOT],[비활성화]}의 순으로 가로로 한장의 이미지로 작성한다.
+            </summary>
+            <example> 이미지 설정
+            <code>
+            btnTest = ImageButton();
+            btnTest.ButtonImage = new Image("*.jpeg");
+            </code>
+            </example>
+        </member>
+        <member name="F:D2net.Common.UI.ImageButton._ButtonImage">
+            <summary>
+            전체 이미지 - {[기본],[클릭],[HOT],[비활성화]} 의 순으로 가로로 구성된 이미지
+            </summary>
+        </member>
+        <member name="F:D2net.Common.UI.ImageButton._ButtonImages">
+            <summary>
+            {[기본],[클릭],[HOT],[비활성화]} 순의 이미지 배열(Croma Key 있는것)
+            </summary>
+        </member>
+        <member name="F:D2net.Common.UI.ImageButton._OrginalImages">
+            <summary>
+            {[기본],[클릭],[HOT],[비활성화]} 순의 이미지 배열(Croma Key 없는것)
+            </summary>
+        </member>
+        <member name="F:D2net.Common.UI.ImageButton._BtnState">
+            <summary>
+            버튼의 상태 변화를 나타내는 플래그
+            </summary>
+        </member>
+        <member name="F:D2net.Common.UI.ImageButton._ViewText">
+            <summary>
+            버튼에 텍스트를 보여줄지 여부를 설정하는 플래그
+            </summary>
+        </member>
+        <member name="F:D2net.Common.UI.ImageButton._HotTextForeColor">
+            <summary>
+            버튼위로 마우스가 올라왔을때의 버튼 텍스트의 색깔
+            </summary>
+        </member>
+        <member name="F:D2net.Common.UI.ImageButton._DisabledTextForeColor">
+            <summary>
+            비활성화시에 버튼 텍스트의 색깔
+            </summary>
+        </member>
+        <member name="F:D2net.Common.UI.ImageButton._DisabledTextShadowColor">
+            <summary>
+            비활성화시에 버튼 텍스트 그림자의 색깔
+            </summary>
+        </member>
+        <member name="F:D2net.Common.UI.ImageButton._PushDownPixel">
+            <summary>
+            버튼이 눌렸을때 밀리는 픽셀을 정의한다.
+            </summary>
+        </member>
+        <member name="F:D2net.Common.UI.ImageButton._Transparent">
+            <summary>
+            버튼의 Croma key를 적용할지 여부를 판단한다.
+            </summary>
+        </member>
+        <member name="F:D2net.Common.UI.ImageButton._TransparentColor">
+            <summary>
+            버튼의 Croma key를 색깔을 지정한다.
+            </summary>
+        </member>
+        <member name="F:D2net.Common.UI.ImageButton._OutLineWidth">
+            <summary>
+            버튼의 경계를 출력하기 위한 폭
+            </summary>
+        </member>
+        <member name="M:D2net.Common.UI.ImageButton.#ctor">
+            <summary>
+            버튼 기본 생성자
+            </summary>
+        </member>
+        <member name="M:D2net.Common.UI.ImageButton.OnPaint(System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            버튼을 그리기 위한 재정의 함수
+            </summary>
+        </member>
+        <member name="M:D2net.Common.UI.ImageButton.OnMouseEnter(System.EventArgs)">
+            <summary>
+            마우스 포인터가 버튼에 들어갔을때 이벤트 헨들러
+            </summary>
+        </member>
+        <member name="M:D2net.Common.UI.ImageButton.OnMouseLeave(System.EventArgs)">
+            <summary>
+            마우스 포인터가 버튼으로 들어갔을때 이벤트 헨들러
+            </summary>
+        </member>
+        <member name="M:D2net.Common.UI.ImageButton.OnMouseUp(System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            마우스 포인터가 버튼에서 나왔을때 이벤트 헨들러
+            </summary>
+        </member>
+        <member name="M:D2net.Common.UI.ImageButton.DrawButton(System.Drawing.Graphics,D2net.Common.UI.ImageButton.BtnState)">
+            <summary>
+            실제 버튼을 그린다.
+            </summary>
+        </member>
+        <member name="P:D2net.Common.UI.ImageButton.Enabled">
+            <summary>
+            버튼을 활성화 비활성화를 정의한다. 버튼의 Enabled 속성을 설정하면 버튼이 다시그려진다.
+            </summary>
+        </member>
+        <member name="P:D2net.Common.UI.ImageButton.FlatStyle">
+            <summary>
+            버튼의 FlatStyle 속성을 정의한다. 기본적으로 FlatStyle.Flat로 설정되며, 변경되지 않는다.
+            </summary>
+        </member>
+        <member name="P:D2net.Common.UI.ImageButton.Transparent">
+            <summary>
+            버튼의 Croma key를 적용할지 여부를 판단한다.
+            </summary>
+        </member>
+        <member name="P:D2net.Common.UI.ImageButton.TransparentColor">
+            <summary>
+            버튼의 Croma key를 색깔을 지정한다.
+            </summary>
+        </member>
+        <member name="P:D2net.Common.UI.ImageButton.ButtonImage">
+            <summary>
+            전체 이미지 - {[기본],[클릭],[HOT],[비활성화]} 의 순으로 가로로 구성된 이미지
+            </summary>
+        </member>
+        <member name="P:D2net.Common.UI.ImageButton.ViewText">
+            <summary>
+            버튼에 텍스트를 보여줄지 여부를 설정하는 플래그
+            </summary>
+        </member>
+        <member name="P:D2net.Common.UI.ImageButton.ForeColor">
+            <summary>
+            버튼 기본 텍스트의 색깔. 단, 설정이 되지 않음. 설정시에는 <c>ImageButton.EnabledTextForeColor</c>를 사용
+            </summary>
+            <seealso cref="P:D2net.Common.UI.ImageButton.EnabledTextForeColor"/>
+        </member>
+        <member name="P:D2net.Common.UI.ImageButton.EnabledTextForeColor">
+            <summary>
+            버튼 기본 텍스트의 색깔. <c>ImageButton.ForeColor</c>와 동일하다.
+            </summary>
+            <seealso cref="P:D2net.Common.UI.ImageButton.ForeColor"/>
+        </member>
+        <member name="P:D2net.Common.UI.ImageButton.HotTextForeColor">
+            <summary>
+            버튼위로 마우스가 올라왔을때의 버튼 텍스트의 색깔
+            </summary>
+        </member>
+        <member name="P:D2net.Common.UI.ImageButton.DisabledTextForeColor">
+            <summary>
+            비활성화시에 버튼 텍스트의 색깔
+            </summary>
+        </member>
+        <member name="P:D2net.Common.UI.ImageButton.DisabledTextShadowColor">
+            <summary>
+            비활성화시에 버튼 텍스트 그림자의 색깔
+            </summary>
+        </member>
+        <member name="P:D2net.Common.UI.ImageButton.PushDownPixel">
+            <summary>
+            버튼이 눌렸을때 밀리는 픽셀을 정의한다.
+            </summary>
+        </member>
+        <member name="T:D2net.Common.UI.ImageButton.BtnState">
+            <summary>
+            버튼의 상태를 정의한 열거형
+            </summary>
+        </member>
+        <member name="F:D2net.Common.UI.ImageButton.BtnState.DEFAULT">
+            <summary>
+            기본
+            </summary>
+        </member>
+        <member name="F:D2net.Common.UI.ImageButton.BtnState.CLICK">
+            <summary>
+            클릭
+            </summary>
+        </member>
+        <member name="F:D2net.Common.UI.ImageButton.BtnState.ROLLOVER">
+            <summary>
+            HOT(마우스가 버튼위에 올라왔을때)
+            </summary>
+        </member>
+        <member name="F:D2net.Common.UI.ImageButton.BtnState.DISABLED">
+            <summary>
+            비활성화
+            </summary>
+        </member>
+        <member name="T:D2net.Common.UI.HDDVolumMeter">
+            <summary>
+            HDDVolumMeter에 대한 요약 설명입니다.
+            </summary>
+        </member>
+        <member name="F:D2net.Common.UI.HDDVolumMeter.components">
+            <summary> 
+            필수 디자이너 변수입니다.
+            </summary>
+        </member>
+        <member name="M:D2net.Common.UI.HDDVolumMeter.Dispose(System.Boolean)">
+            <summary> 
+            사용 중인 모든 리소스를 정리합니다.
+            </summary>
+        </member>
+        <member name="M:D2net.Common.UI.HDDVolumMeter.InitializeComponent">
+            <summary> 
+            디자이너 지원에 필요한 메서드입니다. 
+            이 메서드의 내용을 코드 편집기로 수정하지 마십시오.
+            </summary>
+        </member>
+        <member name="T:D2net.Common.UI.HashComboBox">
+             <summary>
+             "Key=Value"의 형태의 데이터를 입력하고, Key를 입력하여 값을 선택/반환할 수 있다. 
+             또한, ComboBox에 선택된 아이템을 이용하여 Key값을 반환 받을 수 있다.
+             </summary>
+            
+             <example> ComboBox에 데이터 추가/ 선택/ 반환
+             데이터 추가
+             <code>
+                cmbVideoDevice.Add(1, "비디오 디바이스(I1)");
+                cmbVideoDevice.Add(2, "비디오 디바이스(I2)");
+                cmbVideoDevice.Add(3, "SDTI1");
+                cmbVideoDevice.Add(4, "SDTI2");
+             </code>
+             데이터 선택
+             <code>
+                cmbVideoDevice.SelectKey(1);
+             </code>
+             데이터 반환
+             <code>
+                int selkey = (int)cmbCompressionType.SelectedObject;
+             </code>
+             </example>
+        </member>
+        <member name="F:D2net.Common.UI.HashComboBox.cmbHashTable">
+            <summary> 
+            이름을 표시할 ComboBox
+            </summary>
+        </member>
+        <member name="F:D2net.Common.UI.HashComboBox._Table">
+            <summary> 
+            이름에 해당하는 값을 저장할 Hashtable
+            </summary>
+        </member>
+        <member name="F:D2net.Common.UI.HashComboBox.components">
+            <summary> 
+            필수 디자이너 변수입니다.
+            </summary>
+        </member>
+        <member name="M:D2net.Common.UI.HashComboBox.#ctor">
+            <summary>
+            기본 생성자
+            </summary>
+        </member>
+        <member name="M:D2net.Common.UI.HashComboBox.Dispose(System.Boolean)">
+            <summary> 
+            사용 중인 모든 리소스를 정리합니다.
+            </summary>
+        </member>
+        <member name="M:D2net.Common.UI.HashComboBox.InitializeComponent">
+            <summary> 
+            디자이너 지원에 필요한 메서드입니다. 
+            이 메서드의 내용을 코드 편집기로 수정하지 마십시오.
+            </summary>
+        </member>
+        <member name="M:D2net.Common.UI.HashComboBox.Add(System.Object,System.Object)">
+            <summary>
+            ComboBox에 아이템을 추가한다.
+            </summary>
+            <returns>추가된 아이템의 인덱스</returns>
+            <param name="key">추가할 아이템을 검색할 Key</param>
+            <param name="value">아이템에 추가할 값</param>
+            <example> 아이템 추가
+            <code>
+               cmbVideoDevice.Add(1, "비디오 디바이스(I1)");
+               cmbVideoDevice.Add(2, "비디오 디바이스(I2)");
+               cmbVideoDevice.Add(3, "SDTI1");
+               cmbVideoDevice.Add(4, "SDTI2");
+            </code>
+            </example>
+        </member>
+        <member name="M:D2net.Common.UI.HashComboBox.Remove(System.Object)">
+            <summary>
+            ComboBox에 아이템을 삭제한다.
+            </summary>
+            <param name="key">삭제할 아이템을 검색할 Key</param>
+            <example> 아이템 삭제
+            <code>
+            cmbVideoDevice.Remove(1);
+            </code>
+            </example>
+        </member>
+        <member name="M:D2net.Common.UI.HashComboBox.Clear">
+            <summary>
+            ComboBox에 모든 아이템을 삭제한다.
+            </summary>
+            <example> 아이템 모두 삭제
+            <code>
+            cmbVideoDevice.Clear();
+            </code>
+            </example>
+        </member>
+        <member name="M:D2net.Common.UI.HashComboBox.FindValue(System.Object)">
+            <summary>
+            ComboBox에서 key에 해당하는 value값을 반환 받는다.
+            </summary>
+            <returns>키에 대응되는 아이템의 값</returns>
+            <param name="key">검색할 Key</param>
+            <example> 아이템 검색
+            <code>
+            object obj = cmbVideoDevice.FindValue(1);
+            System.Console.WriteLine("obj = " + obj.toString());
+            
+            Output : obj = 비디오 디바이스(I1)
+            </code>
+            </example>
+        </member>
+        <member name="M:D2net.Common.UI.HashComboBox.FindKey(System.Object)">
+            <summary>
+            ComboBox에서 value에 해당하는 key값을 검색한다.
+            </summary>
+            <returns>값에 대응되는 키</returns>
+            <param name="val">검색할 값</param>
+            <example> Key 검색
+            <code>
+            object key = cmbVideoDevice.FindKey("비디오 디바이스(I1)");
+            System.Console.WriteLine("key = " + key.toString());
+            
+            Output : key = 1
+            </code>
+            </example>
+        </member>
+        <member name="M:D2net.Common.UI.HashComboBox.SelectKey(System.Object)">
+            <summary>
+            ComboBox에서 key에 해당하는 아이템을 선택한다.
+            </summary>
+            <param name="key">선택할 Key</param>
+            <example> 아이템 선택
+            <code>
+            object obj = cmbVideoDevice.SelectKey(1);
+            </code>
+            </example>
+        </member>
+        <member name="P:D2net.Common.UI.HashComboBox.SelectedObject">
+            <summary>
+            ComboBox에서 선택된 아이템의 Key값을 설정한다.
+            </summary>
+            <example>
+            선택된 아이템 사용
+            <code>
+            object key = cmbVideoDevice.SelectedObject;
+            </code>
+            </example>
+        </member>
+        <member name="T:D2net.Common.FileReader">
+            <summary>
+            FileReader에 대한 요약 설명입니다.
+            </summary>
+        </member>
+        <member name="T:D2net.Common.UI.DateItemCollectionEditor">
+            <summary>
+            A custom CollectionEditor for editing DateItemCollection
+            </summary>
+        </member>
+        <member name="T:D2net.Common.UI.ColorEx">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:D2net.Common.UI.AssemblyListCtrl">
+            <summary>
+            AssemblyListCtrl에 대한 요약 설명입니다.
+            </summary>
+        </member>
+        <member name="F:D2net.Common.UI.AdvDispPanel.components">
+            <summary> 
+            필수 디자이너 변수입니다.
+            </summary>
+        </member>
+        <member name="M:D2net.Common.UI.AdvDispPanel.Dispose(System.Boolean)">
+            <summary> 
+            사용 중인 모든 리소스를 정리합니다.
+            </summary>
+            <param name="disposing">관리되는 리소스를 삭제해야 하면 true이고, 그렇지 않으면 false입니다.</param>
+        </member>
+        <member name="M:D2net.Common.UI.AdvDispPanel.InitializeComponent">
+            <summary> 
+            디자이너 지원에 필요한 메서드입니다. 
+            이 메서드의 내용을 코드 편집기로 수정하지 마십시오.
+            </summary>
+        </member>
+        <member name="F:D2net.Common.Xml.tb_cti_Class.ncol_cla">
+            <summary>
+            컬러구분
+            </summary>
+        </member>
+        <member name="M:D2net.Common.Xml.tb_cti_Class.#ctor">
+            
+        </member>
+        <member name="P:D2net.Common.Xml.tb_cti_Class.brct_dt">
+            <summary>
+            재방일
+            </summary>
+        </member>
+        <member name="P:D2net.Common.Xml.tb_cti_Class.sou_typ">
+            <summary>
+            음색구분
+            </summary>
+        </member>
+        <member name="P:D2net.Common.Xml.tb_cti_Class.sou_cla">
+            <summary>
+            음향구분
+            </summary>
+        </member>
+        <member name="P:D2net.Common.Xml.ListItemClass.tb_ct">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:D2net.Common.TCFormat">
+            <summary>
+            Time Code Format
+            </summary>
+        </member>
+        <member name="F:D2net.Common.TCFormat.NTSC_Drop">
+            <summary>
+            NTSC Drop Frame Time code format
+            </summary>
+        </member>
+        <member name="F:D2net.Common.TCFormat.NTSC_Nondrop">
+            <summary>
+            NTSC non Drop Frame Time code format
+            </summary>
+        </member>
+        <member name="F:D2net.Common.TCFormat.PAL">
+            <summary>
+            PAL Time code format
+            </summary>
+        </member>
+        <member name="F:D2net.Common.TCFormat.Frames">
+            <summary>
+            User defined frame rate
+            </summary>
+        </member>
+        <member name="T:D2net.Common.TCMode">
+            <summary>
+            Time code Mode
+            </summary>
+        </member>
+        <member name="F:D2net.Common.TCMode.TimeCode">
+            <summary>
+            TC Mode
+            </summary>
+        </member>
+        <member name="F:D2net.Common.TCMode.CTL">
+            <summary>
+            CTL Mode
+            </summary>
+        </member>
+        <member name="T:D2net.Common.TimeCode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:D2net.Common.TimeCode.HOURS">
+            <summary>
+            시간
+            </summary>
+        </member>
+        <member name="F:D2net.Common.TimeCode.MINUTES">
+            <summary>
+            분
+            </summary>
+        </member>
+        <member name="F:D2net.Common.TimeCode.SECONDS">
+            <summary>
+            초
+            </summary>
+        </member>
+        <member name="F:D2net.Common.TimeCode.FRAMES">
+            <summary>
+            Frame
+            </summary>
+        </member>
+        <member name="F:D2net.Common.TimeCode.FR_HOUR_ND">
+            <summary>
+            frames per hour in non-drop mode
+            </summary>
+        </member>
+        <member name="F:D2net.Common.TimeCode.FR_HOUR_DROP">
+            <summary>
+            frames per hour in drop frame mode
+            </summary>
+        </member>
+        <member name="F:D2net.Common.TimeCode.FR_MINUTE_ND">
+            <summary>
+            frames per minute in non-drop mode
+            </summary>
+        </member>
+        <member name="F:D2net.Common.TimeCode.FR_TENMIN_DROP">
+            <summary>
+            frames per ten minutes in drop frame
+            </summary>
+        </member>
+        <member name="F:D2net.Common.TimeCode.FR_MINUTE_DROP">
+            <summary>
+            frame per minute in drop frame mode
+            </summary>
+        </member>
+        <member name="F:D2net.Common.TimeCode.FR_SECOND">
+            <summary>
+            frames per second, both modes NTSC
+            </summary>
+        </member>
+        <member name="F:D2net.Common.TimeCode.FR_HOUR_PAL">
+            <summary>
+            frames per hour in PAL
+            </summary>
+        </member>
+        <member name="F:D2net.Common.TimeCode.FR_MINUTE_PAL">
+            <summary>
+            frames per minute in PAL
+            </summary>
+        </member>
+        <member name="F:D2net.Common.TimeCode.FR_SECOND_PAL">
+            <summary>
+            frames per second in PAL
+            </summary>
+        </member>
+        <member name="F:D2net.Common.TimeCode.MAX_NTSC_ND_FRAMES">
+            <summary>
+            Non drop Frame의 최대 프레임 수
+            </summary>
+        </member>
+        <member name="F:D2net.Common.TimeCode.MAX_NTSC_D_FRAMES">
+            <summary>
+            Drop Frame의 최대 프레임 수
+            </summary>
+        </member>
+        <member name="F:D2net.Common.TimeCode.MAX_PAL_FRAMES">
+            <summary>
+            PAL의 최대 프레임 수
+            </summary>
+        </member>
+        <member name="F:D2net.Common.TimeCode.MAX_NTSC_ND_CTLS">
+            <summary>
+            Non drop Frame CTL의 최대 프레임 수
+            </summary>
+        </member>
+        <member name="F:D2net.Common.TimeCode.MAX_NTSC_D_CTLS">
+            <summary>
+            Drop Frame CTL의 최대 프레임 수
+            </summary>
+        </member>
+        <member name="F:D2net.Common.TimeCode.MAX_PAL_CTLS">
+            <summary>
+            PAL CTL의 최대 프레임 수
+            </summary>
+        </member>
+        <member name="F:D2net.Common.TimeCode.tcmode">
+            <summary>
+            time code mode
+            </summary>
+        </member>
+        <member name="F:D2net.Common.TimeCode.tcformat">
+            <summary>
+            time code format
+            </summary>
+        </member>
+        <member name="F:D2net.Common.TimeCode.frame">
+            <summary>
+            current frame
+            </summary>
+        </member>
+        <member name="M:D2net.Common.TimeCode.#ctor(D2net.Common.TCFormat,D2net.Common.TCMode)">
+            <summary>
+            생성자
+            </summary>
+            <param name="tcformat">time code format</param>
+            <param name="tcmode">time code mode</param>
+        </member>
+        <member name="M:D2net.Common.TimeCode.#ctor(D2net.Common.TCFormat,D2net.Common.TCMode,System.Int64)">
+            <summary>
+            생성자
+            </summary>
+            <param name="tcformat">time code format</param>
+            <param name="tcmode">time code mode</param>
+            <param name="frame">current frame</param>
+        </member>
+        <member name="M:D2net.Common.TimeCode.#ctor(D2net.Common.TCFormat,D2net.Common.TCMode,System.String)">
+            <summary>
+            생성자
+            </summary>
+            <param name="tcformat">time code format</param>
+            <param name="tcmode">time code mode</param>
+            <param name="timecode">time code 문자열</param>
+        </member>
+        <member name="M:D2net.Common.TimeCode.ToString">
+            <summary>
+            time code 문자열을 반환한다
+            </summary>
+            <returns>time code 문자열</returns>
+        </member>
+        <member name="M:D2net.Common.TimeCode.Clone">
+            <summary>
+            time code를 복제한다
+            </summary>
+            <returns>time code</returns>
+        </member>
+        <member name="M:D2net.Common.TimeCode.Compare(System.Int64)">
+            <summary>
+            입력된 프레임과 현재 프레임과의 차이를 계산(프레임 수)
+            </summary>
+            <param name="frame">차이를 계산 하고자 하는 프레임</param>
+            <returns>차이(프레임 수)</returns>
+        </member>
+        <member name="M:D2net.Common.TimeCode.Compare(System.String)">
+            <summary>
+            입력된 time code 문자열과 현재 프레임과의 차이를 계산(프레임 수)
+            </summary>
+            <param name="timecode">time code 문자열</param>
+            <returns>차이(프레임 수)</returns>
+        </member>
+        <member name="M:D2net.Common.TimeCode.Compare(D2net.Common.TimeCode)">
+            <summary>
+            입력된 time code 객체와 현재 프레임과의 차이를 계산(프레임 수)
+            </summary>
+            <param name="timecode">time code 객체</param>
+            <returns>차이(프레임 수)</returns>
+        </member>
+        <member name="M:D2net.Common.TimeCode.Sum(System.Int32)">
+            <summary>
+            입력된 frame과 현재 프레임을 더한다
+            </summary>
+            <param name="frame">프레임 수</param>
+        </member>
+        <member name="M:D2net.Common.TimeCode.Sum(System.String)">
+            <summary>
+            입력된 time code 문자열과 현재 프레임을 더한다
+            </summary>
+            <param name="timecode">time code 문자열</param>
+        </member>
+        <member name="M:D2net.Common.TimeCode.Sum(D2net.Common.TimeCode)">
+            <summary>
+            입력된 time code 객체와 현재 프레임을 더한다
+            </summary>
+            <param name="timecode">time code 객체</param>
+        </member>
+        <member name="M:D2net.Common.TimeCode.Sub(System.Int32)">
+            <summary>
+            입력된 frame과 현재 프레임을 뺀다
+            </summary>
+            <param name="frame">프레임 수</param>
+        </member>
+        <member name="M:D2net.Common.TimeCode.Sub(System.String)">
+            <summary>
+            입력된 time code 문자열과 현재 프레임을 뺀다
+            </summary>
+            <param name="timecode">time code 문자열</param>
+        </member>
+        <member name="M:D2net.Common.TimeCode.Sub(D2net.Common.TimeCode)">
+            <summary>
+            입력된 time code 객체와 현재 프레임을 뺀다
+            </summary>
+            <param name="timecode">time code 객체</param>
+        </member>
+        <member name="M:D2net.Common.TimeCode.Increase">
+            <summary>
+            현재 프레임을 1 증가
+            </summary>
+        </member>
+        <member name="M:D2net.Common.TimeCode.Decrease">
+            <summary>
+            현재 프레임을 1 감소
+            </summary>
+        </member>
+        <member name="P:D2net.Common.TimeCode.TimeCodeMode">
+            <summary>
+            time code mode
+            </summary>
+        </member>
+        <member name="P:D2net.Common.TimeCode.TimeCodeFormat">
+            <summary>
+            time code format
+            </summary>
+        </member>
+        <member name="P:D2net.Common.TimeCode.Frame">
+            <summary>
+            current frame
+            </summary>
+        </member>
+        <member name="P:D2net.Common.TimeCode.Hour">
+            <summary>
+            시간
+            </summary>
+        </member>
+        <member name="P:D2net.Common.TimeCode.Minute">
+            <summary>
+            분
+            </summary>
+        </member>
+        <member name="P:D2net.Common.TimeCode.Second">
+            <summary>
+            초
+            </summary>
+        </member>
+        <member name="P:D2net.Common.TimeCode.FrameOfSecond">
+            <summary>
+            프레임
+            </summary>
+        </member>
+        <member name="P:D2net.Common.TimeCode.TC">
+            <summary>
+             time code 문자열을 반환한다
+            </summary>
+        </member>
+        <member name="P:D2net.Common.TimeCode.VCRTC">
+            <summary>
+            VCR에서 사용하는 time code 문자열을 반환한다
+            </summary>
+        </member>
+        <member name="T:D2net.Common.UI.ShadowLabel">
+            <summary>
+            Summary description for ShadowLabel.
+            </summary>
+        </member>
+        <member name="F:D2net.Common.UI.ShadowLabel._drawGradient">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:D2net.Common.UI.ShadowLabel.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:D2net.Common.UI.ShadowLabel.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:D2net.Common.UI.ImageRadioButton">
+            <summary>
+            ImageRadioButton에 대한 요약 설명입니다.
+            </summary>
+        </member>
+        <member name="T:D2net.Common.UI.Footer">
+            <summary>
+            Summary description for Footer.
+            </summary>
+        </member>
+        <member name="F:D2net.Common.UI.FooterPropertyEventArgs.m_property">
+            <summary>
+            The property that has changed
+            </summary>
+        </member>
+        <member name="T:D2net.Common.UI.DateItemCollection">
+            <summary>
+            Represents a collection of DateItem objects
+            </summary>
+        </member>
+        <member name="F:D2net.Common.UI.DateItemCollection.owner">
+            <summary>
+            The Calendar that owns this DateItemCollection
+            </summary>
+        </member>
+        <member name="T:D2net.Common.UI.ComboBoxEx">
+            <summary>
+            ComboBoxEx에 대한 요약 설명입니다.
+            </summary>
+        </member>
+        <member name="T:D2net.Common.TGALoader">
+            <summary>
+            ImageEx에 대한 요약 설명입니다.
+            </summary>
+        </member>
+        <member name="T:D2net.Common.Ftp.ConnectionStateChangedEventArgs">
+            <summary>
+            <para>Event argument for event <see cref="E:Melih.FTPClient.FTPClient.OnConnectionStateChanged"/>.</para>
+            </summary>
+        </member>
+        <member name="M:D2net.Common.Ftp.ConnectionStateChangedEventArgs.#ctor(D2net.Common.Ftp.ConnectionState)">
+            <summary>
+            <para>Constructor.</para>
+            </summary>
+            <param name="connstate">New state of the ftp connection.</param>
+        </member>
+        <member name="P:D2net.Common.Ftp.ConnectionStateChangedEventArgs.NewConnectionState">
+            <summary>
+            <para>New state of the ftp connection.</para>
+            </summary>
+        </member>
+        <member name="T:D2net.Common.Ftp.AsyncConnectionOpCompletedEventArgs">
+            <summary>
+            <para>Event argument for events <see cref="E:Melih.FTPClient.FTPClient.OnAsyncOpenCompleted"/>
+             and <see cref="E:Melih.FTPClient.FTPClient.OnAsyncCloseCompleted"/>.</para>
+            </summary>
+        </member>
+        <member name="M:D2net.Common.Ftp.AsyncConnectionOpCompletedEventArgs.#ctor(System.String,System.Int32)">
+            <summary>
+            <para>Constructor.</para>
+            </summary>
+            <param name="host">Connected host.</param>
+            <param name="port">Connection port.</param>
+        </member>
+        <member name="M:D2net.Common.Ftp.AsyncConnectionOpCompletedEventArgs.#ctor(System.Exception)">
+            <summary>
+            <para>Constructor.</para>
+            </summary>
+            <param name="exception">Exception that has been raised during execution of async method.</param>
+        </member>
+        <member name="P:D2net.Common.Ftp.AsyncConnectionOpCompletedEventArgs.Host">
+            <summary>
+            <para>Connected host.</para>
+            </summary>
+        </member>
+        <member name="P:D2net.Common.Ftp.AsyncConnectionOpCompletedEventArgs.Port">
+            <summary>
+            <para>Connection port.</para>
+            </summary>
+        </member>
+        <member name="P:D2net.Common.Ftp.AsyncConnectionOpCompletedEventArgs.FTPException">
+            <summary>
+            <para>Exception that has been raised during execution of async method.</para>
+            </summary>
+        </member>
+        <member name="P:D2net.Common.Ftp.AsyncConnectionOpCompletedEventArgs.ExceptionOccured">
+            <summary>
+            <para>True if an exception was raised during the execution of the async method, false otherwise.</para>
+            </summary>
+        </member>
+        <member name="T:D2net.Common.Ftp.AsyncSessionOpCompletedEventArgs">
+            <summary>
+            <para>Event argument for events <see cref="E:Melih.FTPClient.FTPClient.OnAsyncConnectCompleted"/>
+             and <see cref="E:Melih.FTPClient.FTPClient.OnAsyncQuitCompleted"/>.</para>
+            </summary>
+        </member>
+        <member name="M:D2net.Common.Ftp.AsyncSessionOpCompletedEventArgs.#ctor(System.String,System.Int32,System.String)">
+            <summary>
+            <para>Constructor.</para>
+            </summary>
+            <param name="host">Connected host.</param>
+            <param name="port">Connection port.</param>
+            <param name="user">User for whom session has been opened.</param>
+        </member>
+        <member name="M:D2net.Common.Ftp.AsyncSessionOpCompletedEventArgs.#ctor(System.Exception)">
+            <summary>
+            <para>Constructor.</para>
+            </summary>
+            <param name="exception">Exception that has been raised during execution of async method.</param>
+        </member>
+        <member name="P:D2net.Common.Ftp.AsyncSessionOpCompletedEventArgs.User">
+            <summary>
+            <para>User, for whom session has been opened.</para>
+            </summary>
+        </member>
+        <member name="T:D2net.Common.Ftp.AsyncCreateDirectoryCompletedEventArgs">
+            <summary>
+            <para>Event argument for event <see cref="E:Melih.FTPClient.FTPClient.OnAsyncCreateDirectoryCompleted"/>.</para>
+            </summary>
+        </member>
+        <member name="M:D2net.Common.Ftp.AsyncCreateDirectoryCompletedEventArgs.#ctor(System.String,System.Int32,System.String,System.String)">
+            <summary>
+            <para>Constructor.</para>
+            </summary>
+            <param name="host">Connected host.</param>
+            <param name="port">Connection port.</param>
+            <param name="user">User, for whom session has been opened.</param>
+            <param name="directoryname">Name of the newly created directory.</param>
+        </member>
+        <member name="M:D2net.Common.Ftp.AsyncCreateDirectoryCompletedEventArgs.#ctor(System.Exception)">
+            <summary>
+            <para>Constructor.</para>
+            </summary>
+            <param name="exception">Exception that has been raised during execution of async method.</param>
+        </member>
+        <member name="P:D2net.Common.Ftp.AsyncCreateDirectoryCompletedEventArgs.CreatedDirectory">
+            <summary>
+            <para>Name of the newly created directory.</para>
+            </summary>
+        </member>
+        <member name="T:D2net.Common.Ftp.AsyncCurrentDirectoryOpCompletedEventArgs">
+            <summary>
+            <para>Event argument for events <see cref="E:Melih.FTPClient.FTPClient.OnAsyncGetCurrentDirectoryCompleted"/>
+             and <see cref="E:Melih.FTPClient.FTPClient.OnAsyncSetCurrentDirectoryCompleted"/>.</para>
+            </summary>
+        </member>
+        <member name="M:D2net.Common.Ftp.AsyncCurrentDirectoryOpCompletedEventArgs.#ctor(System.String,System.Int32,System.String,System.String)">
+            <summary>
+            <para>Constructor.</para>
+            </summary>
+            <param name="host">Connected host.</param>
+            <param name="port">Connection port.</param>
+            <param name="user">User, for whom session has been opened.</param>
+            <param name="path">Current remote path.</param>
+        </member>
+        <member name="M:D2net.Common.Ftp.AsyncCurrentDirectoryOpCompletedEventArgs.#ctor(System.Exception)">
+            <summary>
+            <para>Constructor.</para>
+            </summary>
+            <param name="exception">Exception that has been raised during execution of async method.</param>
+        </member>
+        <member name="P:D2net.Common.Ftp.AsyncCurrentDirectoryOpCompletedEventArgs.CurrentPath">
+            <summary>
+            <para>Current remote path.</para>
+            </summary>
+        </member>
+        <member name="T:D2net.Common.Ftp.AsyncDeleteFileCompletedEventArgs">
+            <summary>
+            <para>Event argument for event <see cref="E:Melih.FTPClient.FTPClient.OnAsyncDeleteFileCompleted"/>.</para>
+            </summary>
+        </member>
+        <member name="M:D2net.Common.Ftp.AsyncDeleteFileCompletedEventArgs.#ctor(System.String,System.Int32,System.String,System.String)">
+            <summary>
+            <para>Constructor.</para>
+            </summary>
+            <param name="host">Connected host.</param>
+            <param name="port">Connection port.</param>
+            <param name="user">User, for whom session has been opened.</param>
+            <param name="filename">Name of the deleted file.</param>
+        </member>
+        <member name="M:D2net.Common.Ftp.AsyncDeleteFileCompletedEventArgs.#ctor(System.Exception)">
+            <summary>
+            <para>Constructor.</para>
+            </summary>
+            <param name="exception">Exception that has been raised during execution of async method.</param>
+        </member>
+        <member name="P:D2net.Common.Ftp.AsyncDeleteFileCompletedEventArgs.DeletedFile">
+            <summary>
+            <para>Name of the deleted file.</para>
+            </summary>
+        </member>
+        <member name="T:D2net.Common.Ftp.AsyncFindFileCompletedEventArgs">
+            <summary>
+            <para>Event argument for events <see cref="E:Melih.FTPClient.FTPClient.OnAsyncFindFirstFileCompleted"/>
+             and <see cref="E:Melih.FTPClient.FTPClient.OnAsyncFindNextFileCompleted"/>.</para>
+            </summary>
+        </member>
+        <member name="M:D2net.Common.Ftp.AsyncFindFileCompletedEventArgs.#ctor(System.String,System.Int32,System.String,D2net.Common.Ftp.FileData)">
+            <summary>
+            <para>Constructor.</para>
+            </summary>
+            <param name="host">Connected host.</param>
+            <param name="port">Connection port.</param>
+            <param name="user">User, for whom session has been opened.</param>
+            <param name="filedata">FileData structure of found file.</param>
+        </member>
+        <member name="M:D2net.Common.Ftp.AsyncFindFileCompletedEventArgs.#ctor(System.Exception)">
+            <summary>
+            <para>Constructor.</para>
+            </summary>
+            <param name="exception">Exception that has been raised during execution of async method.</param>
+        </member>
+        <member name="P:D2net.Common.Ftp.AsyncFindFileCompletedEventArgs.FileFound">
+            <summary>
+            <para>FileData structure of found file.</para>
+            </summary>
+        </member>
+        <member name="T:D2net.Common.Ftp.AsyncFileTransferCompletedEventArgs">
+            <summary>
+            <para>Event argument for events <see cref="E:Melih.FTPClient.FTPClient.OnAsyncGetFileCompleted"/>
+             and <see cref="E:Melih.FTPClient.FTPClient.OnAsyncPutFileCompleted"/>.</para>
+            </summary>
+        </member>
+        <member name="M:D2net.Common.Ftp.AsyncFileTransferCompletedEventArgs.#ctor(System.String,System.Int32,System.String,System.String,System.String,D2net.Common.Ftp.FileTransferType,D2net.Common.Ftp.DataConnectionType,D2net.Common.Ftp.FileTransferResuming)">
+            <summary>
+            <para>Constructor.</para>
+            </summary>
+            <param name="host">Connected host.</param>
+            <param name="port">Connection port.</param>
+            <param name="user">User, for whom session has been opened.</param>
+            <param name="localfile">Name of the local file.</param>
+            <param name="remotefile">Name of the remote file.</param>
+            <param name="type">File transfer type.</param>
+            <param name="conntype">Data connection type.</param>
+            <param name="resume">Resumed unfinished transfer or overwrote.</param>
+        </member>
+        <member name="M:D2net.Common.Ftp.AsyncFileTransferCompletedEventArgs.#ctor(System.Exception)">
+            <summary>
+            <para>Constructor.</para>
+            </summary>
+            <param name="exception">Exception that has been raised during execution of async method.</param>
+        </member>
+        <member name="P:D2net.Common.Ftp.AsyncFileTransferCompletedEventArgs.ConnectionType">
+            <summary>
+            <para>Data connection type.</para>
+            </summary>
+        </member>
+        <member name="P:D2net.Common.Ftp.AsyncFileTransferCompletedEventArgs.LocalFile">
+            <summary>
+            <para>Name of the local file.</para>
+            </summary>
+        </member>
+        <member name="P:D2net.Common.Ftp.AsyncFileTransferCompletedEventArgs.RemoteFile">
+            <summary>
+            <para>Name of the remote file.</para>
+            </summary>
+        </member>
+        <member name="P:D2net.Common.Ftp.AsyncFileTransferCompletedEventArgs.TransferType">
+            <summary>
+            <para>File transfer type.</para>
+            </summary>
+        </member>
+        <member name="P:D2net.Common.Ftp.AsyncFileTransferCompletedEventArgs.TransferResuming">
+            <summary>
+            <para>Resumed unfinished transfer or overwrote.</para>
+            </summary>
+        </member>
+        <member name="T:D2net.Common.Ftp.AsyncRemoveDirectoryCompletedEventArgs">
+            <summary>
+            <para>Event argument for event <see cref="E:Melih.FTPClient.FTPClient.OnAsyncRemoveDirectoryCompleted"/>.</para>
+            </summary>
+        </member>
+        <member name="M:D2net.Common.Ftp.AsyncRemoveDirectoryCompletedEventArgs.#ctor(System.String,System.Int32,System.String,System.String)">
+            <summary>
+            <para>Constructor.</para>
+            </summary>
+            <param name="host">Connected host.</param>
+            <param name="port">Connection port.</param>
+            <param name="user">User, for whom session has been opened.</param>
+            <param name="directoryname">Name of the deleted directory.</param>
+        </member>
+        <member name="M:D2net.Common.Ftp.AsyncRemoveDirectoryCompletedEventArgs.#ctor(System.Exception)">
+            <summary>
+            <para>Constructor.</para>
+            </summary>
+            <param name="exception">Exception that has been raised during execution of async method.</param>
+        </member>
+        <member name="P:D2net.Common.Ftp.AsyncRemoveDirectoryCompletedEventArgs.RemovedDirectory">
+            <summary>
+            <para>Name of the deleted directory.</para>
+            </summary>
+        </member>
+        <member name="T:D2net.Common.Ftp.AsyncRenameFileCompletedEventArgs">
+            <summary>
+            <para>Event argument for event <see cref="E:Melih.FTPClient.FTPClient.OnAsyncRenameFileCompleted"/>.</para>
+            </summary>
+        </member>
+        <member name="M:D2net.Common.Ftp.AsyncRenameFileCompletedEventArgs.#ctor(System.String,System.Int32,System.String,System.String,System.String)">
+            <summary>
+            <para>Constructor.</para>
+            </summary>
+            <param name="host">Connected host.</param>
+            <param name="port">Connection port.</param>
+            <param name="user">User, for whom session has been opened.</param>
+            <param name="renamefrom">Old name of the file that has been renamed.</param>
+            <param name="renameto">New name of the file that has been renamed.</param>
+        </member>
+        <member name="M:D2net.Common.Ftp.AsyncRenameFileCompletedEventArgs.#ctor(System.Exception)">
+            <summary>
+            <para>Constructor.</para>
+            </summary>
+            <param name="exception">Exception that has been raised during execution of async method.</param>
+        </member>
+        <member name="P:D2net.Common.Ftp.AsyncRenameFileCompletedEventArgs.OldFileName">
+            <summary>
+            <para>Old name of the file that has been renamed.</para>
+            </summary>
+        </member>
+        <member name="P:D2net.Common.Ftp.AsyncRenameFileCompletedEventArgs.NewFileName">
+            <summary>
+            <para>New name of the file that has been renamed.</para>
+            </summary>
+        </member>
+        <member name="T:D2net.Common.Ftp.AsyncSendCommandCompletedEventArgs">
+            <summary>
+            <para>Event argument for event <see cref="E:Melih.FTPClient.FTPClient.OnAsyncSendCommandCompleted"/>.</para>
+            </summary>
+        </member>
+        <member name="M:D2net.Common.Ftp.AsyncSendCommandCompletedEventArgs.#ctor(System.String,System.Int32,System.String,System.String,System.String)">
+            <summary>
+            <para>Constructor.</para>
+            </summary>
+            <param name="host">Connected host.</param>
+            <param name="port">Connection port.</param>
+            <param name="user">User, for whom session has been opened.</param>
+            <param name="command">Command string sent to host.</param>
+            <param name="reply">Reply from the host.</param>
+        </member>
+        <member name="M:D2net.Common.Ftp.AsyncSendCommandCompletedEventArgs.#ctor(System.Exception)">
+            <summary>
+            <para>Constructor.</para>
+            </summary>
+            <param name="exception">Exception that has been raised during execution of async method.</param>
+        </member>
+        <member name="P:D2net.Common.Ftp.AsyncSendCommandCompletedEventArgs.Command">
+            <summary>
+            <para>Command string sent to host.</para>
+            </summary>
+        </member>
+        <member name="P:D2net.Common.Ftp.AsyncSendCommandCompletedEventArgs.Reply">
+            <summary>
+            <para>Reply from the host.</para>
+            </summary>
+        </member>
+        <member name="T:D2net.Common.Ftp.FileTransferEventArgs">
+            <summary>
+            <para>Event argument for events <see cref="E:Melih.FTPClient.FTPClient.OnFileUploadDataSent"/>
+             and <see cref="E:Melih.FTPClient.FTPClient.OnFileDownloadDataReceived"/>.</para>
+            </summary>
+        </member>
+        <member name="M:D2net.Common.Ftp.FileTransferEventArgs.#ctor(System.String,System.Int32,System.String,System.String,System.String,System.Int64,System.Int64)">
+            <summary>
+            <para>Constructor.</para>
+            </summary>
+            <param name="host">Connected host.</param>
+            <param name="port">Connection port.</param>
+            <param name="user">User, for whom session has been opened.</param>
+            <param name="localfile">Name of the local file that is being transferred to/from.</param>
+            <param name="remotefile">Name of the remote file that is being transferred from/to.</param>
+            <param name="bytestransferred">Total bytes transferred so far.</param>
+            <param name="totalfilelength">Length of the file that is being transferred.</param>
+        </member>
+        <member name="M:D2net.Common.Ftp.FileTransferEventArgs.#ctor(System.Exception)">
+            <summary>
+            <para>Constructor.</para>
+            </summary>
+            <param name="exception">Exception that has been raised during execution of method.</param>
+        </member>
+        <member name="P:D2net.Common.Ftp.FileTransferEventArgs.Host">
+            <summary>
+            <para>Name of the local file that is being transferred to/from.</para>
+            </summary>
+        </member>
+        <member name="P:D2net.Common.Ftp.FileTransferEventArgs.LocalFile">
+            <summary>
+            <para>Name of the local file that is being transferred to/from.</para>
+            </summary>
+        </member>
+        <member name="P:D2net.Common.Ftp.FileTransferEventArgs.RemoteFile">
+            <summary>
+            <para>Name of the remote file that is being transferred from/to.</para>
+            </summary>
+        </member>
+        <member name="P:D2net.Common.Ftp.FileTransferEventArgs.BytesTransferred">
+            <summary>
+            <para>Total bytes transferred so far.</para>
+            </summary>
+        </member>
+        <member name="P:D2net.Common.Ftp.FileTransferEventArgs.TotalFileLength">
+            <summary>
+            <para>Length of the file that is being transferred.</para>
+            </summary>
+        </member>
+        <member name="T:D2net.Common.Ftp.FTPClient">
+            <summary>
+            <para>Component that encapsulates FTP methods,
+             which are very similar to the methods in the export table of wininet.dll</para>
+            </summary>
+        </member>
+        <member name="F:D2net.Common.Ftp.FTPClient.DEFAULT_FTP_PORT">
+            <summary>
+            <para>Default port number for FTP connections.</para>
+            </summary>
+        </member>
+        <member name="F:D2net.Common.Ftp.FTPClient._KSC5601">
+            <summary>
+            <para>Korean Encoding Support.</para>
+            </summary>
+        </member>
+        <member name="F:D2net.Common.Ftp.FTPClient.bFTPPutStop">
+            <summary>
+            [2013/6/14[14:05] sehee][MethodeADD NUM :20130614_a] 관련변수
+            </summary>
+        </member>
+        <member name="M:D2net.Common.Ftp.FTPClient.SetPassword(System.String)">
+            <summary>
+            <para>Sets the password used in FTP connection.</para>
+            <param name="passwd">New password value.</param>
+            </summary>
+        </member>
+        <member name="M:D2net.Common.Ftp.FTPClient.CheckExistFolder(System.String,D2net.Common.Ftp.FileTransferResuming@)">
+            <summary>
+            //[2013/6/18[15:01] sehee]
+            UploadFile전에 파일 경로 생성
+            </summary>
+            <param name="path"></param>
+            <returns></returns>
+        </member>
+        <member name="M:D2net.Common.Ftp.FTPClient.#ctor">
+            <summary>
+            <para>Constructor for <see cref="T:Melih.FTPClient.FTPClient"/> class.</para>
+            </summary>
+        </member>
+        <member name="M:D2net.Common.Ftp.FTPClient.FTPOpen(System.String,System.Int32)">
+            <summary>
+            <para>Opens FTP connection to specified host through specified port and consumes welcome message.
+            If successful, <see cref="P:Melih.FTPClient.FTPClient.State"/> property is set to <see cref="F:Melih.FTPClient.ConnectionState.Connecting"/>. Otherwise, <see cref="P:Melih.FTPClient.FTPClient.State"/> property is set to <see cref="F:Melih.FTPClient.ConnectionState.Disconnected"/>. </para>
+            </summary>
+            <param name="host">Name or IP of FTP server.</param>
+            <param name="port">Port number for FTP connection.</param>
+        </member>
+        <member name="M:D2net.Common.Ftp.FTPClient.FTPOpen">
+            <summary>
+            <para>Opens FTP connection to host specified in property Host through port specified in property Port and consumes welcome message.
+            Host and Port properties has to be set prior to calling this method. If successful, <see cref="P:Melih.FTPClient.FTPClient.State"/> property is set to <see cref="F:Melih.FTPClient.ConnectionState.Connecting"/>. Otherwise, <see cref="P:Melih.FTPClient.FTPClient.State"/> property is set to <see cref="F:Melih.FTPClient.ConnectionState.Disconnected"/>.</para>
+            </summary>
+        </member>
+        <member name="M:D2net.Common.Ftp.FTPClient.FTPConnect(System.String,System.String)">
+            <summary>
+            <para>Makes authorization for specified user with specified password. As soon as this method is called, <see cref="P:Melih.FTPClient.FTPClient.State"/> property is set to <see cref="F:Melih.FTPClient.ConnectionState.Authorizing"/>. 
+            If successful, <see cref="P:Melih.FTPClient.FTPClient.State"/> property is set to <see cref="F:Melih.FTPClient.ConnectionState.Connected"/>. Otherwise, <see cref="P:Melih.FTPClient.FTPClient.State"/> property is set to <see cref="F:Melih.FTPClient.ConnectionState.Connecting"/>.</para>
+            </summary>
+            <param name="user">Username for FTP connection.</param>
+            <param name="passwd">Password for the user specified in user parameter.</param>
+        </member>
+        <member name="M:D2net.Common.Ftp.FTPClient.FTPConnect">
+            <summary>
+            <para>Makes authorization for user specified in User property with password specified by calling <see cref="M:Melih.FTPClient.FTPClient.SetPassword(System.String)"/> method. User property has to be set and <see cref="M:Melih.FTPClient.FTPClient.SetPassword(System.String)"/> method has to be called prior to calling this method. 
+            As soon as this method is called, <see cref="P:Melih.FTPClient.FTPClient.State"/> property is set to <see cref="F:Melih.FTPClient.ConnectionState.Authorizing"/>. 
+            If successful, <see cref="P:Melih.FTPClient.FTPClient.State"/> property is set to <see cref="F:Melih.FTPClient.ConnectionState.Connected"/>. Otherwise, <see cref="P:Melih.FTPClient.FTPClient.State"/> property is set to <see cref="F:Melih.FTPClient.ConnectionState.Connecting"/>.</para>
+            </summary>
+        </member>
+        <member name="M:D2net.Common.Ftp.FTPClient.FTPSetCurrentDirectory(System.String)">
+            <summary>
+            <para>Changes remote directory.</para>
+            </summary>
+            <param name="path">Directory name.</param>
+        </member>
+        <member name="M:D2net.Common.Ftp.FTPClient.FTPGetCurrentDirectory">
+            <summary>
+            <para>Determines the path of the remote directory.</para>
+            </summary>
+            <returns>Remote directory.</returns>
+        </member>
+        <member name="M:D2net.Common.Ftp.FTPClient.FTPGetFile(System.String,System.String,D2net.Common.Ftp.FileTransferType)">
+            <summary>
+            <para>Transfers a file on the FTP server to local machine. Uses active data connection by default.</para>
+            </summary>
+            <param name="remotefile">Name of the remote file.</param>
+            <param name="localfile">Full path of the local file that will be created.</param>
+            <param name="type">Data transfer type. FileTransferType.ASCII for files containing text, and FileTransferType.Binary for others.</param>
+        </member>
+        <member name="M:D2net.Common.Ftp.FTPClient.FTPGetFile(System.String,System.String,D2net.Common.Ftp.FileTransferType,D2net.Common.Ftp.DataConnectionType)">
+            <summary>
+            <para>Transfers a file on the FTP server to local machine.</para>
+            </summary>
+            <param name="remotefile">Name of the remote file.</param>
+            <param name="localfile">Full path of the local file that will be created.</param>
+            <param name="type">Data transfer type. FileTransferType.ASCII for files containing text, and FileTransferType.Binary for others.</param>
+            <param name="conntype">Data connection type.</param>
+        </member>
+        <member name="M:D2net.Common.Ftp.FTPClient.FTPGetFile(System.String,System.String,D2net.Common.Ftp.FileTransferType,D2net.Common.Ftp.DataConnectionType,D2net.Common.Ftp.FileTransferResuming)">
+            <summary>
+            <para>Transfers a file on the FTP server to local machine.</para>
+            </summary>
+            <param name="remotefile">Name of the remote file.</param>
+            <param name="localfile">Full path of the local file that will be created.</param>
+            <param name="type">Data transfer type. FileTransferType.ASCII for files containing text, and FileTransferType.Binary for others.</param>
+            <param name="conntype">Data connection type.</param>
+            <param name="resume">Resume unfinished transfer or overwrite.</param>
+        </member>
+        <member name="M:D2net.Common.Ftp.FTPClient.FTPPutFile(System.String,System.String,D2net.Common.Ftp.FileTransferType)">
+            <summary>
+            <para>Transfers a file on the local machine to FTP server. Uses active data connection by default.</para>
+            </summary>
+            <param name="localfile">Full path of the local file that will be uploaded.</param>
+            <param name="remotefile">Name of the remote file.</param>
+            <param name="type">Data transfer type. FileTransferType.ASCII for files containing text, and FileTransferType.Binary for others.</param>
+        </member>
+        <member name="M:D2net.Common.Ftp.FTPClient.FTPPutFile(System.String,System.String,D2net.Common.Ftp.FileTransferType,D2net.Common.Ftp.DataConnectionType)">
+            <summary>
+            <para>Transfers a file on the local machine to FTP server.</para>
+            </summary>
+            <param name="localfile">Full path of the local file that will be uploaded.</param>
+            <param name="remotefile">Name of the remote file.</param>
+            <param name="type">Data transfer type. FileTransferType.ASCII for files containing text, and FileTransferType.Binary for others.</param>
+            <param name="conntype">Data connection type.</param>
+        </member>
+        <member name="M:D2net.Common.Ftp.FTPClient.FTPPutFile(System.String,System.String,D2net.Common.Ftp.FileTransferType,D2net.Common.Ftp.DataConnectionType,D2net.Common.Ftp.FileTransferResuming)">
+            <summary>
+            <para>Transfers a file on the local machine to FTP server.</para>
+            </summary>
+            <param name="localfile">Full path of the local file that will be uploaded.</param>
+            <param name="remotefile">Name of the remote file.</param>
+            <param name="type">Data transfer type. FileTransferType.ASCII for files containing text, and FileTransferType.Binary for others.</param>
+            <param name="conntype">Data connection type.</param>
+            <param name="resume">Resume unfinished transfer or overwrite.</param>
+        </member>
+        <member name="M:D2net.Common.Ftp.FTPClient.FTPSearchDir(D2net.Common.Ftp.DataConnectionType)">
+            <summary>
+            //[2013/6/18[14:40] sehee]
+            <para>Search the Current Directory<see cref="P:Melih.FTPClient.FileData.ErrorReadingFileDate"/> and <see cref="P:Melih.FTPClient.FileData.ErrorReadingFileSize"/> of returned
+            <see cref="T:Melih.FTPClient.FileData"/> class to see if an error has occured during reading FileSize and FileDate from remote server.</para>
+            </summary>
+            <param name="conntype">Data connection type</param>
+            <returns>File data of the first file that matches to the criteria.</returns>
+        </member>
+        <member name="M:D2net.Common.Ftp.FTPClient.FTPSearchDir">
+            <summary>
+            //[2013/6/18[14:40] sehee]
+            <para>Search the Current Directory<see cref="P:Melih.FTPClient.FileData.ErrorReadingFileDate"/> and <see cref="P:Melih.FTPClient.FileData.ErrorReadingFileSize"/> of returned
+            <see cref="T:Melih.FTPClient.FileData"/> class to see if an error has occured during reading FileSize and FileDate from remote server.</para>
+            </summary>
+            <param name="conntype">Data connection type</param>
+            <returns>File data of the first file that matches to the criteria.</returns>
+        </member>
+        <member name="M:D2net.Common.Ftp.FTPClient.FTPFindFirstFile(System.String,D2net.Common.Ftp.DataConnectionType)">
+            <summary>
+            <para>Finds the first file whose name matches the criteria specied in mask parameter. Raises <see cref="T:Melih.FTPClient.FTPClientException"/> if no file matches the criteria. 
+            Check <see cref="P:Melih.FTPClient.FileData.ErrorReadingFileDate"/> and <see cref="P:Melih.FTPClient.FileData.ErrorReadingFileSize"/> of returned
+            <see cref="T:Melih.FTPClient.FileData"/> class to see if an error has occured during reading FileSize and FileDate from remote server.</para>
+            </summary>
+            <param name="mask">The criteria for the names of the files to be searched for, such as "*.zip"</param>
+            <param name="conntype">Data connection type</param>
+            <returns>File data of the first file that matches to the criteria.</returns>
+        </member>
+        <member name="M:D2net.Common.Ftp.FTPClient.FTPFindFirstFile(System.String)">
+            <summary>
+            <para>Finds the first file whose name matches the criteria specied in mask parameter. Raises <see cref="T:Melih.FTPClient.FTPClientException"/> if no file matches the criteria. 
+            Check <see cref="P:Melih.FTPClient.FileData.ErrorReadingFileDate"/> and <see cref="P:Melih.FTPClient.FileData.ErrorReadingFileSize"/> of returned
+            <see cref="T:Melih.FTPClient.FileData"/> class to see if an error has occured during reading FileSize and FileDate from remote server. Uses active data connection by default.</para>
+            </summary>
+            <param name="mask">The criteria for the names of the files to be searched for, such as "*.zip"</param>
+            <returns>File data of the first file that matches to the criteria.</returns>
+        </member>
+        <member name="M:D2net.Common.Ftp.FTPClient.Peek">
+            <summary>
+            <para>Indicates if any more file data exists that can be queried by <see cref="M:Melih.FTPClient.FTPClient.FTPFindNextFile"/>. 
+            Use in conjunction with <see cref="M:Melih.FTPClient.FTPClient.Peek"/>.</para>
+            </summary>
+            <example>Here is a sample on how to use FTPFindFirstFile, Peek and FTPFindNextFile. 
+            <code>
+            filedata = ftpcli.FTPFindFirstFile("*.*");
+            while (ftpcli.Peek())
+            {
+            	filedata = ftpcli.FTPFindNextFile();
+            }
+            </code>
+            </example>
+            <returns>True if more file data exists, false otherwise.</returns>
+        </member>
+        <member name="M:D2net.Common.Ftp.FTPClient.FTPFindNextFile">
+            <summary>
+            <para>Finds the next file in row whose name matches to the criteria specified in <see cref="M:Melih.FTPClient.FTPClient.FTPFindFirstFile(System.String)"/>. 
+            Use in conjunction with <see cref="M:Melih.FTPClient.FTPClient.Peek"/>. Check <see cref="P:Melih.FTPClient.FileData.ErrorReadingFileDate"/> and <see cref="P:Melih.FTPClient.FileData.ErrorReadingFileSize"/> of returned
+            <see cref="T:Melih.FTPClient.FileData"/> class to see if an error has occured during reading FileSize and FileDate from remote server.</para>
+            </summary>
+            <example>Here is a sample on how to use FTPFindFirstFile, Peek and FTPFindNextFile.
+            <code>
+            filedata = ftpcli.FTPFindFirstFile("*.*");
+            while (ftpcli.Peek())
+            {
+            	filedata = ftpcli.FTPFindNextFile();
+            }
+            </code>
+            </example>
+            <returns>File data of a file that matches to the criteria.</returns>
+        </member>
+        <member name="M:D2net.Common.Ftp.FTPClient.FTPMoveDirectory(System.String)">
+            <summary>
+            //[2013/6/18[15:02] sehee]
+            <para>Move created Direcotry</para>
+            </summary>
+            <param name="directoryname">Name of the newly created directory.</param>
+        </member>
+        <member name="M:D2net.Common.Ftp.FTPClient.FTPCreateDirectory(System.String)">
+            <summary>
+            <para>Creates a directory on FTP server.</para>
+            </summary>
+            <param name="directoryname">Name of the newly created directory.</param>
+        </member>
+        <member name="M:D2net.Common.Ftp.FTPClient.FTPRemoveDirectory(System.String)">
+            <summary>
+            <para>Deletes a directory from FTP server.</para>
+            </summary>
+            <param name="directoryname">Name of the directory to be deleted.</param>
+        </member>
+        <member name="M:D2net.Common.Ftp.FTPClient.FTPDeleteFile(System.String)">
+            <summary>
+            <para>Deletes a file from FTP server.</para>
+            </summary>
+            <param name="filename">Name of the file to be deleted.</param>
+        </member>
+        <member name="M:D2net.Common.Ftp.FTPClient.FTPRenameFile(System.String,System.String)">
+            <summary>
+            <para>Renames a file that resides on FTP server.</para>
+            </summary>
+            <param name="renamefrom">Original name of the file.</param>
+            <param name="renameto">New name of the file.</param>
+        </member>
+        <member name="M:D2net.Common.Ftp.FTPClient.FTPSendCommand(System.String)">
+            <summary>
+            <para>Sends a command string to FTP server</para>
+            </summary>
+            <param name="command">Command string</param>
+            <returns>Reply of the FTP server.</returns>
+        </member>
+        <member name="M:D2net.Common.Ftp.FTPClient.FTPQuit">
+            <summary>
+            <para>Closes FTP session. Another session can be established by <see cref="M:Melih.FTPClient.FTPClient.FTPConnect"/>.</para>
+            </summary>
+        </member>
+        <member name="M:D2net.Common.Ftp.FTPClient.FTPClose">
+            <summary>
+            <para>Grecefully closes the FTP connection and discards all the resources. You should not call <see cref="M:Melih.FTPClient.FTPClient.FTPOpen"/> after this method. 
+            <see cref="P:Melih.FTPClient.FTPClient.State"/> is set to <see cref="F:Melih.FTPClient.ConnectionState.Disconnecting"/> as soon as this method is called, and to <see cref="F:Melih.FTPClient.ConnectionState.Disconnected"/> after this method exits.</para>
+            </summary>
+        </member>
+        <member name="M:D2net.Common.Ftp.FTPClient.FTPClose(System.Boolean)">
+            <summary>
+            <para>Closes the FTP connection and discards all the resources. You should not call <see cref="M:Melih.FTPClient.FTPClient.FTPOpen"/> after this method. 
+            <see cref="P:Melih.FTPClient.FTPClient.State"/> is set to <see cref="F:Melih.FTPClient.ConnectionState.Disconnecting"/> as soon as this method is called, and to <see cref="F:Melih.FTPClient.ConnectionState.Disconnected"/> after this method exits.</para>
+            </summary>
+            <param name="gracefulshutdown">Closes current session before closing connection if true, directly closes connection if false.</param>
+        </member>
+        <member name="M:D2net.Common.Ftp.FTPClient.FTPAsyncOpen(System.String,System.Int32)">
+            <summary>
+            <para>Asyncronous version of <see cref="M:Melih.FTPClient.FTPClient.FTPOpen"/></para>
+            </summary>
+            <param name="host">Name or IP of FTP server.</param>
+            <param name="port">Port number for FTP connection.</param>
+        </member>
+        <member name="M:D2net.Common.Ftp.FTPClient.FTPAsyncClose(System.Boolean)">
+            <summary>
+            <para>Asyncronous version of <see cref="M:Melih.FTPClient.FTPClient.FTPClose"/></para>
+            </summary>
+            <param name="gracefulshutdown">Closes current session before closing connection if true, directly closes connection if false.</param>
+        </member>
+        <member name="M:D2net.Common.Ftp.FTPClient.FTPAsyncConnect(System.String,System.String)">
+            <summary>
+            <para>Asyncronous version of <see cref="M:Melih.FTPClient.FTPClient.FTPConnect"/></para>
+            </summary>
+            <param name="user">Username for FTP connection.</param>
+            <param name="passwd">Password for the user specified in user parameter.</param>
+        </member>
+        <member name="M:D2net.Common.Ftp.FTPClient.FTPAsyncQuit">
+            <summary>
+            <para>Asyncronous version of <see cref="M:Melih.FTPClient.FTPClient.FTPQuit"/></para>
+            </summary>
+        </member>
+        <member name="M:D2net.Common.Ftp.FTPClient.FTPAsyncCreateDirectory(System.String)">
+            <summary>
+            <para>Asyncronous version of <see cref="M:Melih.FTPClient.FTPClient.FTPCreateDirectory"/></para>
+            </summary>
+            <param name="directoryname">Name of the newly created directory.</param>
+        </member>
+        <member name="M:D2net.Common.Ftp.FTPClient.FTPAsyncDeleteFile(System.String)">
+            <summary>
+            <para>Asyncronous version of <see cref="M:Melih.FTPClient.FTPClient.FTPDeleteFile"/></para>
+            </summary>
+            <param name="filename">Name of the file to be deleted.</param>
+        </member>
+        <member name="M:D2net.Common.Ftp.FTPClient.FTPAsyncFindFirstFile(System.String,D2net.Common.Ftp.DataConnectionType)">
+            <summary>
+            <para>Asyncronous version of <see cref="M:Melih.FTPClient.FTPClient.FTPFindFirstFile"/>.
+             Found file data is returned within event arguments.</para>
+            </summary>
+            <param name="mask">The criteria for the names of the files to be searched for, such as "*.zip"</param>
+            <param name="conntype">Data connection type</param>
+        </member>
+        <member name="M:D2net.Common.Ftp.FTPClient.FTPAsyncFindNextFile">
+            <summary>
+            <para>Asyncronous version of <see cref="M:Melih.FTPClient.FTPClient.FTPFindNextFile"/>.
+             Found file data is returned within event arguments.</para>
+            </summary>
+        </member>
+        <member name="M:D2net.Common.Ftp.FTPClient.FTPAsyncGetCurrentDirectory">
+            <summary>
+            <para>Asyncronous version of <see cref="M:Melih.FTPClient.FTPClient.FTPGetCurrentDirectory"/>.</para>
+            </summary>
+        </member>
+        <member name="M:D2net.Common.Ftp.FTPClient.FTPAsyncGetFile(System.String,System.String,D2net.Common.Ftp.FileTransferType,D2net.Common.Ftp.DataConnectionType,D2net.Common.Ftp.FileTransferResuming)">
+            <summary>
+            <para>Asyncronous version of <see cref="M:Melih.FTPClient.FTPClient.FTPGetFile"/>.</para>
+            </summary>
+            <param name="remotefile">Name of the remote file.</param>
+            <param name="localfile">Full path of the local file that will be created.</param>
+            <param name="type">Data transfer type. FileTransferType.ASCII for files containing text, and FileTransferType.Binary for others.</param>
+            <param name="conntype">Data connection type.</param>
+            <param name="resume">Resume unfinished transfer or overwrite.</param>
+        </member>
+        <member name="M:D2net.Common.Ftp.FTPClient.FTPAsyncPutFile(System.String,System.String,D2net.Common.Ftp.FileTransferType,D2net.Common.Ftp.DataConnectionType,D2net.Common.Ftp.FileTransferResuming)">
+            <summary>
+            <para>Asyncronous version of <see cref="M:Melih.FTPClient.FTPClient.FTPPutFile"/>.</para>
+            </summary>
+            <param name="localfile">Full path of the local file that will be uploaded.</param>
+            <param name="remotefile">Name of the remote file.</param>
+            <param name="type">Data transfer type. FileTransferType.ASCII for files containing text, and FileTransferType.Binary for others.</param>
+            <param name="conntype">Data connection type.</param>
+            <param name="resume">Resume unfinished transfer or overwrite.</param>
+        </member>
+        <member name="M:D2net.Common.Ftp.FTPClient.FTPAsyncRemoveDirectory(System.String)">
+            <summary>
+            <para>Asyncronous version of <see cref="M:Melih.FTPClient.FTPClient.FTPRemoveDirectory"/>.</para>
+            </summary>
+            <param name="directoryname">Name of the directory to be deleted.</param>
+        </member>
+        <member name="M:D2net.Common.Ftp.FTPClient.FTPAsyncRenameFile(System.String,System.String)">
+            <summary>
+            <para>Asyncronous version of <see cref="M:Melih.FTPClient.FTPClient.FTPRenameFile"/>.</para>
+            </summary>
+            <param name="renamefrom">Original name of the file.</param>
+            <param name="renameto">New name of the file.</param>
+        </member>
+        <member name="M:D2net.Common.Ftp.FTPClient.FTPAsyncSendCommand(System.String)">
+            <summary>
+            <para>Asyncronous version of <see cref="M:Melih.FTPClient.FTPClient.FTPSendCommand"/>.
+             Reply of the server is returned within event arguments.</para>
+            </summary>
+            <param name="command">Command string</param>
+        </member>
+        <member name="M:D2net.Common.Ftp.FTPClient.FTPAsyncSetCurrentDirectory(System.String)">
+            <summary>
+            <para>Asyncronous version of <see cref="M:Melih.FTPClient.FTPClient.FTPSetCurrentDirectory"/>.</para>
+            </summary>
+            <param name="path">Directory name.</param>
+        </member>
+        <member name="M:D2net.Common.Ftp.FTPClient.FTPPutStop">
+            <summary>
+            [2013/6/14[13:59] sehee] [MethodeADD NUM :20130614_a]
+            FTP전송 중지 기능
+            </summary>
+        </member>
+        <member name="E:D2net.Common.Ftp.FTPClient.OnConnectionStateChanged">
+            <summary>
+            <para>Event fired when state of the connection to the server has changed.</para>
+            </summary>
+        </member>
+        <member name="E:D2net.Common.Ftp.FTPClient.OnAsyncOpenCompleted">
+            <summary>
+            <para>Event fired when asyncronous FTPOpen is completed.</para>
+            </summary>
+        </member>
+        <member name="E:D2net.Common.Ftp.FTPClient.OnAsyncCloseCompleted">
+            <summary>
+            <para>Event fired when asyncronous FTPClose is completed.</para>
+            </summary>
+        </member>
+        <member name="E:D2net.Common.Ftp.FTPClient.OnAsyncConnectCompleted">
+            <summary>
+            <para>Event fired when asyncronous FTPConnect is completed.</para>
+            </summary>
+        </member>
+        <member name="E:D2net.Common.Ftp.FTPClient.OnAsyncQuitCompleted">
+            <summary>
+            <para>Event fired when asyncronous FTPQuit is completed.</para>
+            </summary>
+        </member>
+        <member name="E:D2net.Common.Ftp.FTPClient.OnAsyncCreateDirectoryCompleted">
+            <summary>
+            <para>Event fired when asyncronous FTPCreateDirectory is completed.</para>
+            </summary>
+        </member>
+        <member name="E:D2net.Common.Ftp.FTPClient.OnAsyncDeleteFileCompleted">
+            <summary>
+            <para>Event fired when asyncronous FTPDeleteFile is completed.</para>
+            </summary>
+        </member>
+        <member name="E:D2net.Common.Ftp.FTPClient.OnAsyncFindFirstFileCompleted">
+            <summary>
+            <para>Event fired when asyncronous FTPFindFirstFile is completed.</para>
+            </summary>
+        </member>
+        <member name="E:D2net.Common.Ftp.FTPClient.OnAsyncFindNextFileCompleted">
+            <summary>
+            <para>Event fired when asyncronous FTPFindNextFile is completed.</para>
+            </summary>
+        </member>
+        <member name="E:D2net.Common.Ftp.FTPClient.OnAsyncGetCurrentDirectoryCompleted">
+            <summary>
+            <para>Event fired when asyncronous FTPGetCurrentDirectory is completed.</para>
+            </summary>
+        </member>
+        <member name="E:D2net.Common.Ftp.FTPClient.OnAsyncGetFileCompleted">
+            <summary>
+            <para>Event fired when asyncronous FTPGetFile is completed.</para>
+            </summary>
+        </member>
+        <member name="E:D2net.Common.Ftp.FTPClient.OnAsyncPutFileCompleted">
+            <summary>
+            <para>Event fired when asyncronous FTPPutFile is completed.</para>
+            </summary>
+        </member>
+        <member name="E:D2net.Common.Ftp.FTPClient.OnAsyncRemoveDirectoryCompleted">
+            <summary>
+            <para>Event fired when asyncronous FTPRemoveDirectory is completed.</para>
+            </summary>
+        </member>
+        <member name="E:D2net.Common.Ftp.FTPClient.OnAsyncRenameFileCompleted">
+            <summary>
+            <para>Event fired when asyncronous FTPRenameFile is completed.</para>
+            </summary>
+        </member>
+        <member name="E:D2net.Common.Ftp.FTPClient.OnAsyncSendCommandCompleted">
+            <summary>
+            <para>Event fired when asyncronous FTPSendCommand is completed.</para>
+            </summary>
+        </member>
+        <member name="E:D2net.Common.Ftp.FTPClient.OnAsyncSetCurrentDirectoryCompleted">
+            <summary>
+            <para>Event fired when asyncronous FTPSetCurrentDirectory is completed.</para>
+            </summary>
+        </member>
+        <member name="E:D2net.Common.Ftp.FTPClient.OnFileUploadDataSent">
+            <summary>
+            <para>Event fired when data is sent during file upload.</para>
+            </summary>
+        </member>
+        <member name="E:D2net.Common.Ftp.FTPClient.OnFileDownloadDataReceived">
+            <summary>
+            <para>Event fired when data is received during file download.</para>
+            </summary>
+        </member>
+        <member name="E:D2net.Common.Ftp.FTPClient.OnFTPPutStopComplete">
+            <summary>
+            [2013/6/14[13:59] sehee] [MethodeADD NUM :20130614_a]
+            </summary>
+        </member>
+        <member name="P:D2net.Common.Ftp.FTPClient.Port">
+            <summary>
+            <para>Gets or sets port number for FTP connection.</para>
+            </summary>
+        </member>
+        <member name="P:D2net.Common.Ftp.FTPClient.Host">
+            <summary>
+            <para>Gets or sets name or IP of FTP server.</para>
+            </summary>
+        </member>
+        <member name="P:D2net.Common.Ftp.FTPClient.User">
+            <summary>
+            <para>Gets or sets username used in FTP connection.</para>
+            </summary>
+        </member>
+        <member name="P:D2net.Common.Ftp.FTPClient.State">
+            <summary>
+            <para>Gets the state of FTP connection.</para>
+            </summary>
+        </member>
+        <member name="T:D2net.Common.Ftp.FTPClientException">
+            <summary>
+            <para>Class that implements the exceptions raised by <see cref="T:Melih.FTPClient.FTPClient"/> class.</para>
+            </summary>
+        </member>
+        <member name="M:D2net.Common.Ftp.FTPClientException.#ctor(System.String)">
+            <summary>
+            <para>Constructor for <see cref="T:Melih.FTPClient.FTPClientException"/></para>
+            </summary>
+            <param name="message">Message contained in the exception.</param>
+        </member>
+        <member name="T:D2net.Common.Ftp.FTPClientPutStopException">
+            <summary>
+            [2013/6/14[13:59] sehee] [MethodeADD NUM :20130614_a]
+            FTP전송중 STOP함수 요청시 Upload중에 Exeption으로 빠져 
+            FTP전송 중지 및 후처리에 사용됨
+            </summary>
+        </member>
+        <member name="T:D2net.Common.Ftp.FileData">
+            <summary>
+            <para>Structure definition for file information returned by
+            <see cref="M:Melih.FTPClient.FTPClient.FTPFindFirstFile(System.String)"/> and <see cref="M:Melih.FTPClient.FTPClient.FTPFindNextFile"/> methods.</para>
+            </summary>
+        </member>
+        <member name="M:D2net.Common.Ftp.FileData.#ctor">
+            <summary>
+            <para>Constructor for <see cref="T:Melih.FTPClient.FileData"/>.</para>
+            </summary>
+        </member>
+        <member name="P:D2net.Common.Ftp.FileData.FileName">
+            <summary>
+            <para>Name of the file.</para>
+            </summary>
+        </member>
+        <member name="P:D2net.Common.Ftp.FileData.FileSize">
+            <summary>
+            <para>Size of the file in bytes. Value is Int32 (int).</para>
+            </summary>
+        </member>
+        <member name="P:D2net.Common.Ftp.FileData.FileSizeLong">
+            <summary>
+            <para>Size of the file in bytes. Value is Int64 (long).</para>
+            </summary>
+        </member>
+        <member name="P:D2net.Common.Ftp.FileData.ErrorReadingFileSize">
+            <summary>
+            <para>Indicates if an error has occured while reading file size from remote server.</para>
+            </summary>
+        </member>
+        <member name="P:D2net.Common.Ftp.FileData.FileDateTime">
+            <summary>
+            <para>Last write time of the file.</para>
+            </summary>
+        </member>
+        <member name="P:D2net.Common.Ftp.FileData.ErrorReadingFileDate">
+            <summary>
+            <para>Indicates if an error has occured while reading date of the last modification on file from remote server.</para>
+            </summary>
+        </member>
+        <member name="T:D2net.Common.LogManager">
+            <summary>
+            Logging을 위한 로그 스트림 클래스
+            </summary>
+        </member>
+        <member name="F:D2net.Common.LogManager._WriterList">
+            <summary>
+            로그를 출력할 Stream를 리스트로 관리할 객체
+            </summary>
+        </member>
+        <member name="M:D2net.Common.LogManager.#ctor">
+            <summary>
+            기본 생성자
+            </summary>
+        </member>
+        <member name="M:D2net.Common.LogManager.Finalize">
+            <summary>
+            로그 메너저가 메모리에서 삭제될때 호출된다.
+            </summary>
+        </member>
+        <member name="M:D2net.Common.LogManager.AddWriter(System.IO.StreamWriter)">
+            <summary>
+            로그를 출력할 출력 스트림을 추가한다.
+            </summary>
+            <param name="sw">로그를 출력할 출력 스트림.</param>
+        </member>
+        <member name="M:D2net.Common.LogManager.WriteDateTime">
+            <summary>
+            현재 시스템의 날짜와 시간을 로그에 기록한다. 
+            </summary>
+        </member>
+        <member name="M:D2net.Common.LogManager.WriteDateTime(System.DateTime)">
+            <summary>
+            입력된 날짜와 시간을 로그에 기록한다.
+            </summary>
+            <param name="dt">로그에 출력할 날짜와 시간.</param>
+        </member>
+        <member name="M:D2net.Common.LogManager.Write(System.String)">
+            <summary>
+            입력된 문자열을 로그에 기록한다.
+            </summary>
+            <param name="txt">로그에 출력할 문자열.</param>
+        </member>
+        <member name="M:D2net.Common.LogManager.WriteLine(System.String)">
+            <summary>
+            입력된 문자열을 로그에 기록하고 한줄 밑으로 내린다.
+            </summary>
+            <param name="txt">로그에 출력할 문자열.</param>
+        </member>
+        <member name="M:D2net.Common.LogManager.WriteLine(System.DateTime,System.String)">
+            <summary>
+            입력된 날찌와 시간, 문자열을 로그에 기록하고 한줄 밑으로 내린다.
+            </summary>
+            <param name="dt">로그에 출력할 날짜와 시간.</param>
+            <param name="txt">로그에 출력할 문자열.</param>
+        </member>
+        <member name="M:D2net.Common.LogManager.WriteException(System.Exception)">
+            <summary>
+            입력된 문자열을 로그에 기록하고 한줄 밑으로 내린다.
+            </summary>
+            <param name="ex">로그에 출력할 예외.</param>
+        </member>
+        <member name="M:D2net.Common.LogManager.WriteException(System.DateTime,System.Exception)">
+            <summary>
+            입력된 날찌와 시간, 문자열을 로그에 기록하고 한줄 밑으로 내린다.
+            </summary>
+            <param name="dt">로그에 출력할 날짜와 시간.</param>
+            <param name="ex">로그에 출력할 예외.</param>
+        </member>
+        <member name="T:D2net.Common.UI.AlignControl">
+            <summary>
+            Summary description for AlignControl.
+            </summary>
+        </member>
+        <member name="F:D2net.Common.UI.AlignControl.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:D2net.Common.UI.AlignControl.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:D2net.Common.UI.AlignEventArgs.#ctor">
+            <summary>
+            Initializes a new instance of the DayClickEventArgs class with default settings
+            </summary>
+        </member>
+        <member name="T:D2net.Common.UI.DateTimePickerEx">
+            <summary>
+            DateTimePickerEx에 대한 요약 설명입니다.
+            </summary>
+        </member>
+        <member name="M:D2net.Common.UI.DateTimePickerEx.Dispose(System.Boolean)">
+            <summary> 
+            사용 중인 모든 리소스를 정리합니다.
+            </summary>
+        </member>
+        <member name="T:D2net.Common.UI.TextBoxEx">
+            <summary>
+            TextBoxEx에 대한 요약 설명입니다.
+            </summary>
+        </member>
+        <member name="T:D2net.Common.Properties.Resources">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:D2net.Common.Properties.Resources.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:D2net.Common.Properties.Resources.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="T:D2net.Common.UI.GlobalizedPropertyDescriptor">
+            <summary>
+            GlobalizedPropertyDescriptor enhances the base class bay obtaining the display name for a property
+            from the resource.
+            </summary>
+        </member>
+        <member name="T:D2net.Common.UI.GlobalizedObject">
+            <summary>
+            GlobalizedObject implements ICustomTypeDescriptor to enable 
+            required functionality to describe a type (class).<br></br>
+            The main task of this class is to instantiate our own property descriptor 
+            of type GlobalizedPropertyDescriptor.  
+            </summary>
+        </member>
+        <member name="M:D2net.Common.UI.GlobalizedObject.GetProperties(System.Attribute[])">
+            <summary>
+            Called to get the properties of a type.
+            </summary>
+            <param name="attributes"></param>
+            <returns></returns>
+        </member>
+        <member name="T:D2net.Common.UI.Day">
+            <summary>
+            Summary description for Day.
+            </summary>
+        </member>
+        <member name="M:D2net.Common.UI.DayEventArgs.#ctor">
+            <summary>
+            Initializes a new instance of the DayClickEventArgs class with default settings
+            </summary>
+        </member>
+        <member name="M:D2net.Common.UI.DayClickEventArgs.#ctor">
+            <summary>
+            Initializes a new instance of the DayClickEventArgs class with default settings
+            </summary>
+        </member>
+        <member name="M:D2net.Common.UI.DayDragDropEventArgs.#ctor(System.Windows.Forms.IDataObject,System.Int32,System.String)">
+            <summary>
+            Initializes a new instance of the DayClickEventArgs class with default settings
+            </summary>
+        </member>
+        <member name="T:D2net.Common.UI.TCEditor">
+            <summary>
+            TimeCodeEditor에 대한 요약 설명입니다.
+            </summary>
+        </member>
+        <member name="T:D2net.Common.UI.ThemeManager">
+            <summary>
+            Summary description for ThemeManager.
+            </summary>
+        </member>
+        <member name="T:D2net.Common.UI.Storagedisplay">
+            <summary>
+            UserControl1에 대한 요약 설명입니다.
+            </summary>
+        </member>
+        <member name="F:D2net.Common.UI.Storagedisplay.components">
+            <summary>
+            필수 디자이너 변수입니다.
+            </summary>
+        </member>
+        <member name="M:D2net.Common.UI.Storagedisplay.Dispose(System.Boolean)">
+            <summary>
+            사용 중인 모든 리소스를 정리합니다.
+            </summary>
+        </member>
+        <member name="M:D2net.Common.UI.Storagedisplay.InitializeComponent">
+            <summary>
+            디자이너 지원에 필요한 메서드입니다. 
+            이 메서드의 내용을 코드 편집기로 수정하지 마십시오.
+            </summary>
+        </member>
+        <member name="M:D2net.Common.UI.Storagedisplay.AddValue(System.String,System.Int32)">
+            <summary>
+            그래프 추가
+            </summary>
+            <param name="name">이름</param>
+            <param name="free">남은 용량</param>
+        </member>
+        <member name="M:D2net.Common.UI.Storagedisplay.SetValue(System.Int32,System.String,System.Int32)">
+            <summary>
+            이미 생성된 그래프의 값을 변환
+            </summary>
+            <param name="index">몇번째 그래프</param>
+            <param name="name">표시 텍스트</param>
+            <param name="free">남은 용량</param>
+        </member>
+        <member name="M:D2net.Common.UI.Storagedisplay.SetColor(System.Int32,System.Drawing.Color,System.Drawing.Color)">
+            <summary>
+            이미 생성된 그래프의 색상을 변환
+            </summary>
+            <param name="index">몇번째 그래프</param>
+            <param name="DarkColor">어두운 색상(색1)</param>
+            <param name="LightColor">밝은 색상(색2)</param>
+        </member>
+        <member name="M:D2net.Common.UI.Storagedisplay.ClearGraph">
+            <summary>
+            화면에 표시된 그래프를 모두 제거
+            </summary>
+        </member>
+        <member name="P:D2net.Common.UI.Storagedisplay.GraphDarkColor">
+            <summary>
+            그래프의 어두운 색(색1)을 설정
+            </summary>
+        </member>
+        <member name="P:D2net.Common.UI.Storagedisplay.GraphLightColor">
+            <summary>
+            그래프의 밝은색(색2)을 설정
+            </summary>
+        </member>
+        <member name="P:D2net.Common.UI.Storagedisplay.TextColor">
+            <summary>
+            텍스트의 색깔을 설정
+            </summary>
+        </member>
+        <member name="P:D2net.Common.UI.Storagedisplay.Is3D">
+            <summary>
+            입체감을 표시할지 여부
+            </summary>
+        </member>
+        <member name="T:D2net.Common.UI.ResourceManager">
+            <summary>
+            CMBankResMgr에 대한 요약 설명입니다.
+            </summary>
+        </member>
+        <member name="T:D2net.Common.UI.ImageSplitter">
+            <summary>
+            큰 이미지를 n * m개의 이미지로 분할한다(row=n, col=m).
+            </summary>
+            <remarks> 이미지 분할 방법. 
+            row가 n개이고 col이 m인 이미지 분할은 m*n개의 이미지로 분할되게 되고, 다음과 같이 분할된다.
+            열은 n개이고 행은 m개인 영역으로 분할됨.
+            <list type="table">
+             <item><term>0</term><term>1</term><term>2</term><term>3</term><term>...</term>
+             <term>m-4</term><term>m-3</term><term>m-2</term><term>m-1</term></item>
+             <item><term>m</term><term>m+1</term><term>m+2</term><term>m+3</term><term>...</term>
+             <term>2*m-4</term><term>2*m-3</term><term>2*m-2</term><term>2*m-1</term></item>
+             <item><term>2*m</term><term>2*m+1</term><term>2*m+2</term><term>2*m+3</term><term>...</term>
+             <term>3*m-4</term><term>3*m-3</term><term>3*m-2</term><term>3*m-1</term></item>
+             <item><term>3*m</term><term>3*m+1</term><term>3*m+2</term><term>3*m+3</term><term>...</term>
+             <term>4*m-4</term><term>4*m-3</term><term>4*m-2</term><term>4*m-1</term></item>
+             <item><term>...</term><term>...</term><term>...</term><term>...</term><term>...</term>
+             <term>...</term><term>...</term><term>...</term><term>...</term></item>
+             <item><term>(n-4)*m</term><term>(n-4)*m+1</term><term>(n-4)*m+2</term><term>(n-4)*m+3</term><term>...</term>
+             <term>(n-3)*m-4</term><term>(n-3)*m-3</term><term>(n-3)*m-2</term><term>(n-3)*m-1</term></item>
+             <item><term>(n-3)*m</term><term>(n-3)*m+1</term><term>(n-3)*m+2</term><term>(n-3)*m+3</term><term>...</term>
+             <term>(n-2)*m-4</term><term>(n-2)*m-3</term><term>(n-2)*m-2</term><term>(n-2)*m-1</term></item>
+             <item><term>(n-2)*m</term><term>(n-2)*m+1</term><term>(n-2)*m+2</term><term>(n-2)*m+3</term><term>...</term>
+             <term>(n-1)*m-4</term><term>(n-1)*m-3</term><term>(n-1)*m-2</term><term>(n-1)*m-1</term></item>
+             <item><term>(n-1)*m</term><term>(n-1)*m+1</term><term>(n-1)*m+2</term><term>(n-1)*m+3</term><term>...</term>
+             <term>n*m-4</term><term>n*m-3</term><term>n*m-2</term><term>n*m-1</term></item>
+            </list>
+            </remarks>
+            <example> 이미지 배열로 분할
+            <code>
+            Image[] imgs = ImageSplitter.SplitImage(new Image("c:\***.jpg"), 3, 4);
+            </code>
+            </example>
+        </member>
+        <member name="M:D2net.Common.UI.ImageSplitter.#ctor">
+            <summary>
+            기본 생성자
+            </summary>
+        </member>
+        <member name="M:D2net.Common.UI.ImageSplitter.SplitImage(System.Drawing.Image,System.Int32,System.Int32)">
+            <summary>
+            src 이미지를 row * col개의 이미지 배열로 분할한다.
+            </summary>
+            <returns>분할된 이미지 배열</returns>
+            <param name="src">분할할 대상 이미지</param>
+            <param name="row">이미지를 row개로 수평분할한다.</param>
+            <param name="col">이미지를 col개로 수직분할한다.</param>
+            <example> 이미지 분할
+            <code>
+            Image[] imgs = ImageSplitter.SplitImage(new Image("c:\***.jpg"), 3, 4);
+            </code>
+            </example>
+        </member>
+        <member name="M:D2net.Common.UI.ImageSplitter.SplitImage(System.Drawing.Bitmap,System.Int32,System.Int32)">
+            <summary>
+            src 비트맵을 row * col개의 비트맵 배열로 분할한다.
+            </summary>
+            <returns>분할된 비트맵 배열</returns>
+            <param name="src">분할할 대상 비트맵</param>
+            <param name="row">이미지를 row개로 수평분할한다.</param>
+            <param name="col">이미지를 col개로 수직분할한다.</param>
+            <example> 비트맵 분할
+            <code>
+            Bitmap[] imgs = ImageSplitter.SplitImage(new Image("c:\***.jpg"), 3, 4);
+            </code>
+            </example>
+        </member>
+        <member name="M:D2net.Common.UI.ImageSplitter.SplitImageList(System.Drawing.Image,System.Int32,System.Int32)">
+            <summary>
+            src 이미지를 row * col개의 이미지를 포함한 <c>ImageList</c>형식으로 반환한다.
+            </summary>
+            <returns><c>ImageList</c>형식</returns>
+            <param name="src">분할할 대상 이미지</param>
+            <param name="row">이미지를 row개로 수평분할한다.</param>
+            <param name="col">이미지를 col개로 수직분할한다.</param>
+            <example> 이미지 분할
+            <code>
+            ImageList imgs = ImageSplitter.SplitImageList(new Bitmap("c:\***.jpg"), 3, 4);
+            </code>
+            </example>
+        </member>
+        <member name="M:D2net.Common.UI.ImageSplitter.SplitImageList(System.Drawing.Bitmap,System.Int32,System.Int32)">
+            <summary>
+            src 비트맵을 row * col개의 비트맵을 포함한 <c>ImageList</c>형식으로 반환한다.
+            </summary>
+            <returns><c>ImageList</c>형식</returns>
+            <param name="src">분할할 대상 비트맵</param>
+            <param name="row">이미지를 row개로 수평분할한다.</param>
+            <param name="col">이미지를 col개로 수직분할한다.</param>
+            <example> 이미지 분할
+            <code>
+            ImageList imgs = ImageSplitter.SplitImageList(new Bitmap("c:\***.jpg"), 3, 4);
+            </code>
+            </example>
+        </member>
+        <member name="M:D2net.Common.UI.ImageSplitter.SplitImageListRef(System.Windows.Forms.ImageList@,System.Drawing.Image,System.Int32,System.Int32)">
+            <summary>
+            src 이미지를 row * col개의 이미지를 lstIamge에 저장한다.
+            </summary>
+            <returns><c>ImageList</c>형식</returns>
+            <param name="lstImage">이미지를 저장할 이미지 리스트</param>
+            <param name="src">분할할 대상 이미지</param>
+            <param name="row">이미지를 row개로 수평분할한다.</param>
+            <param name="col">이미지를 col개로 수직분할한다.</param>
+            <example> 이미지 분할
+            <code>
+            ImageList imgs = new ImageList;
+            ImageSplitter.SplitImageList(imgs, new Image("c:\***.jpg"), 3, 4);
+            </code>
+            </example>
+        </member>
+        <member name="M:D2net.Common.UI.ImageSplitter.SplitImageListRef(System.Windows.Forms.ImageList@,System.Drawing.Bitmap,System.Int32,System.Int32)">
+            <summary>
+            src 비트맵를 row * col개의 비트맵를 lstIamge에 저장한다.
+            </summary>
+            <returns><c>ImageList</c>형식</returns>
+            <param name="lstImage">비트맵를 저장할 이미지 리스트</param>
+            <param name="src">분할할 대상 비트맵</param>
+            <param name="row">이미지를 row개로 수평분할한다.</param>
+            <param name="col">이미지를 col개로 수직분할한다.</param>
+            <example> 비트맵 분할
+            <code>
+            ImageList imgs = new ImageList;
+            ImageSplitter.SplitImageList(imgs, new Bitmap("c:\***.jpg"), 3, 4);
+            </code>
+            </example>
+        </member>
+        <member name="T:D2net.Common.Ftp.ConnectionStateChanged">
+            <summary>
+            <para>Delegate for <see cref="E:Melih.FTPClient.FTPClient.OnConnectionStateChanged"/> event.</para>
+            </summary>
+        </member>
+        <member name="T:D2net.Common.Ftp.AsyncConnectionOpCompleted">
+            <summary>
+            <para>Delegate for <see cref="E:Melih.FTPClient.FTPClient.OnAsyncOpenCompleted"/> and
+             <see cref="E:Melih.FTPClient.FTPClient.OnAsyncCloseCompleted"/> events.</para>
+            </summary>
+        </member>
+        <member name="T:D2net.Common.Ftp.AsyncSessionOpCompleted">
+            <summary>
+            <para>Delegate for <see cref="E:Melih.FTPClient.FTPClient.OnAsyncConnectCompleted"/> and
+             <see cref="E:Melih.FTPClient.FTPClient.OnAsyncQuitCompleted"/> events.</para>
+            </summary>
+        </member>
+        <member name="T:D2net.Common.Ftp.AsyncCreateDirectoryCompleted">
+            <summary>
+            <para>Delegate for <see cref="E:Melih.FTPClient.FTPClient.OnAsyncCreateDirectoryCompleted"/> event.</para>
+            </summary>
+        </member>
+        <member name="T:D2net.Common.Ftp.AsyncDeleteFileCompleted">
+            <summary>
+            <para>Delegate for <see cref="E:Melih.FTPClient.FTPClient.OnAsyncDeleteFileCompleted"/> event.</para>
+            </summary>
+        </member>
+        <member name="T:D2net.Common.Ftp.AsyncFindFileCompleted">
+            <summary>
+            <para>Delegate for <see cref="E:Melih.FTPClient.FTPClient.OnAsyncFindFirstFileCompleted"/> and
+             <see cref="E:Melih.FTPClient.FTPClient.OnAsyncFindNextFileCompleted"/> events.</para>
+            </summary>
+        </member>
+        <member name="T:D2net.Common.Ftp.AsyncCurrentDirectoryOpCompleted">
+            <summary>
+            <para>Delegate for <see cref="E:Melih.FTPClient.FTPClient.OnAsyncGetCurrentDirectoryCompleted"/> and
+             <see cref="E:Melih.FTPClient.FTPClient.OnAsyncSetCurrentDirectoryCompleted"/> events.</para>
+            </summary>
+        </member>
+        <member name="T:D2net.Common.Ftp.AsyncFileTransferCompleted">
+            <summary>
+            <para>Delegate for <see cref="E:Melih.FTPClient.FTPClient.OnAsyncGetFileCompleted"/> and
+             <see cref="E:Melih.FTPClient.FTPClient.OnAsyncPutFileCompleted"/> events.</para>
+            </summary>
+        </member>
+        <member name="T:D2net.Common.Ftp.AsyncRemoveDirectoryCompleted">
+            <summary>
+            <para>Delegate for <see cref="E:Melih.FTPClient.FTPClient.OnAsyncRemoveDirectoryCompleted"/> event.</para>
+            </summary>
+        </member>
+        <member name="T:D2net.Common.Ftp.AsyncRenameFileCompleted">
+            <summary>
+            <para>Delegate for <see cref="E:Melih.FTPClient.FTPClient.OnAsyncRenameFileCompleted"/> event.</para>
+            </summary>
+        </member>
+        <member name="T:D2net.Common.Ftp.AsyncSendCommandCompleted">
+            <summary>
+            <para>Delegate for <see cref="E:Melih.FTPClient.FTPClient.OnAsyncSendCommandCompleted"/> event.</para>
+            </summary>
+        </member>
+        <member name="T:D2net.Common.Ftp.FileTransferDelegate">
+            <summary>
+            <para>Delegate for <see cref="E:Melih.FTPClient.FTPClient.OnFileUploadDataSent"/> and
+             <see cref="E:Melih.FTPClient.FTPClient.OnFileDownloadDataReceived"/> events.</para>
+            </summary>
+        </member>
+        <member name="T:D2net.Common.Ftp.FTPPutStopComplete">
+            <summary>
+            [2013/6/14[13:59] sehee] [MethodeADD NUM :20130614_a]
+            </summary>
+        </member>
+        <member name="T:D2net.Common.API.DriveType">
+            <summary>
+            시스템의 로지컬 드라이브의 타입을 나타내는 열거형.
+            </summary>
+        </member>
+        <member name="F:D2net.Common.API.DriveType.DRIVE_UNKNOWN">
+            <summary>
+            알수 없는 타입
+            </summary>
+        </member>
+        <member name="F:D2net.Common.API.DriveType.DRIVE_NO_ROOT_DIR">
+            <summary>
+            경로가 유효하지 않은 디렉토리
+            </summary>
+        </member>
+        <member name="F:D2net.Common.API.DriveType.DRIVE_REMOVABLE">
+            <summary>
+            제거할수 있는 드라이브
+            </summary>
+        </member>
+        <member name="F:D2net.Common.API.DriveType.DRIVE_FIXED">
+            <summary>
+            지울수 없는 드라이브
+            </summary>
+        </member>
+        <member name="F:D2net.Common.API.DriveType.DRIVE_REMOTE">
+            <summary>
+            리모트(네트웍) 드라이브
+            </summary>
+        </member>
+        <member name="F:D2net.Common.API.DriveType.DRIVE_CDROM">
+            <summary>
+            CD-ROM 드라이브
+            </summary>
+        </member>
+        <member name="F:D2net.Common.API.DriveType.DRIVE_RAMDISK">
+            <summary>
+            RAM 디스크
+            </summary>
+        </member>
+        <member name="T:D2net.Common.API.Kernel32">
+            <summary>
+            Kernel32 Api의 호출을 위한 클래스 타입 
+            </summary>
+        </member>
+        <member name="F:D2net.Common.API.Kernel32.MAX_PATH">
+            <summary>
+            경로 길이의 최대값
+            </summary>
+        </member>
+        <member name="M:D2net.Common.API.Kernel32.#ctor">
+            <summary>
+            기본 생성자
+            </summary>
+        </member>
+        <member name="M:D2net.Common.API.Kernel32.GetDiskFreeSpace(System.String,System.UInt32@,System.UInt32@,System.UInt32@,System.UInt32@)">
+            <summary>
+            디스크상의 비어있는 공간 정보를 반환한다.
+            </summary>
+            <returns>성공하면 true, 실패하면 false.</returns>
+            <param name="path">
+            정보를 반환 받을 경로명. 
+            이 값이 null이면 현재 선택된 경로의 디스크의 정보를 반환한다. 
+            이 값이 UNC 이름이면, 반드시 '\\'를 포함하여야 한다(예, \\MyServer\MyShare).
+            경로는 '\'를 가지고 있어야 한다(예, C:\).
+            </param>
+            <param name="sec1">클러스터당 색터 수를 반환 받을 변수의 참조</param>
+            <param name="sec2">색터당 바이트 수를 반환 받을 변수의 참조</param>
+            <param name="sec3">디스크의 사용 가능한 클러스터 수를 반환 받을 변수의 참조</param>
+            <param name="sec4">디스크의 전체 클러스터 수를 반환 받을 변수의 참조</param>
+        </member>
+        <member name="M:D2net.Common.API.Kernel32.GetDiskFreeSpaceEx(System.String,System.UInt64@,System.UInt64@,System.UInt64@)">
+            <summary>
+            디스크상의 비어있는 공간 정보를 반환한다.
+            </summary>
+            <returns>성공하면 true, 실패하면 false.</returns>
+            <param name="path">
+            정보를 반환 받을 경로명. 
+            이 값이 null이면 현재 선택된 경로의 디스크의 정보를 반환한다. 
+            이 값이 UNC 이름이면, 반드시 '\\'를 포함하여야 한다(예, \\MyServer\MyShare).
+            경로는 '\'를 가지고 있어야 한다(예, C:\).
+            </param>
+            <param name="FreeBytesAvailable">디스크의 현재 사용자에게 사용 가능한 바이트 수를 반환 받을 변수의 참조.</param>
+            <param name="TotalNumberOfBytes">디스크의 전체 바이트 수를 반환 받을 변수의 참조</param>
+            <param name="TotalNumberOfFreeBytes">디스크의 사용 가능한 바이트 수를 반환 받을 변수의 참조.</param>
+        </member>
+        <member name="M:D2net.Common.API.Kernel32.GetLastError">
+            <summary>
+            호출되는 스레드의 마지막 시스템 에러코드를 반환한다.
+            </summary>
+            <returns>마지막 에러코드.</returns>
+        </member>
+        <member name="M:D2net.Common.API.Kernel32.GetLogicalDriveStrings(System.UInt32,System.SByte[])">
+            <summary>
+            시스템에서 유효한 드라이브를 문자열로 버퍼에 채운다.
+            </summary>
+            <returns>성공하면 문자열 길이를 반환한다. 실패하면 0 값을 반환한다.</returns>
+            <param name="buffLen">드라이브 이름들을 반환 받을 버퍼의 길이.</param>
+            <param name="buff">드라이브 이름들을 반환 받을 버퍼.
+            드라이브 이름은 null로 구별하고, 전체 드라이브 이름 정보의 끝은 null이 두번 나오게 된다.
+            c:\&lt;null&gt;d:\&lt;null&gt;&lt;null&gt;
+            </param>
+        </member>
+        <member name="M:D2net.Common.API.Kernel32.GetDriveType(System.String)">
+            <summary>
+            입력한 경로에 해당하는 드라이브 타입을 결정한다.
+            </summary>
+            <returns>드라이브 타입(<c>DriveType</c>)</returns>
+            <param name="path">
+            타입을 반환 받을 경로명. '\'를 가지고 있어야 한다(예, C:\).
+            이 값이 null이면 현재 선택된 디렉토리에 대한 타입을 반환한다.
+            </param>
+            <seealso cref="T:D2net.Common.API.DriveType"/>
+        </member>
+        <member name="M:D2net.Common.API.Kernel32.GetDrives(D2net.Common.API.DriveType[])">
+            <summary>
+            입력한 타입에 해당하는 드라이브 이름을 문자열의 배열로 반환한다.
+            </summary>
+            <returns>드라이브 이름 문자열의 배열.</returns>
+            <param name="types">
+            반환 받을 드라이브의 타입을 입력한다.
+            </param>
+            <seealso cref="T:D2net.Common.API.DriveType"/>
+            <example> 드라이브 이름 반환
+            <code>
+            string[] drvs = Kernel32.GetDrives(DriveType.DRIVE_FIXED, DriveType.DRIVE_REMOTE);
+            </code>
+            위의 실행 결과는 고정된 하드 디스크와 네트웍 드라이브의 이름을 반환 받는다.
+            </example>
+        </member>
+        <member name="T:D2net.Common.UI.ImageMapEditor">
+            <summary>
+            Summary description for ImageEditor.
+            </summary>
+        </member>
+        <member name="T:D2net.Common.UI.ImageCheckBox">
+            <summary>
+            ImageCheckBox에 대한 요약 설명입니다.
+            </summary>
+        </member>
+        <member name="T:D2net.Common.UI.Header">
+            <summary>
+            Summary description for Header
+            </summary>
+        </member>
+        <member name="F:D2net.Common.UI.HeaderPropertyEventArgs.m_property">
+            <summary>
+            The property that has changed
+            </summary>
+        </member>
+        <member name="T:D2net.Common.UI.DateTimePicker">
+            <summary>
+            MyDateTimePicker에 대한 요약 설명입니다.
+            </summary>
+        </member>
+        <member name="T:D2net.Common.UI.ScrollablePanel">
+            <summary>
+            Description r?um? de ScrollablePanel.
+            </summary>
+        </member>
+        <member name="F:D2net.Common.UI.MonthCalendarEx.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:D2net.Common.UI.MonthCalendarEx.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:D2net.Common.UI.MonthCalendarEx.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:D2net.Common.UI.MonthChangedEventArgs.#ctor">
+            <summary>
+            Initializes a new instance of the DayClickEventArgs class with default settings
+            </summary>
+        </member>
+        <member name="M:D2net.Common.UI.DayRenderEventArgs.#ctor">
+            <summary>
+            Initializes a new instance of the DayRenderEventArgs class with default settings
+            </summary>
+        </member>
+        <member name="M:D2net.Common.UI.ClickEventArgs.#ctor">
+            <summary>
+            Initializes a new instance of the DayClickEventArgs class with default settings
+            </summary>
+        </member>
+        <member name="F:D2net.Common.UI.CalendarColorEventArgs.m_color">
+            <summary>
+            The color that has changed
+            </summary>
+        </member>
+        <member name="M:D2net.Common.UI.CalendarColorEventArgs.#ctor">
+            <summary>
+            Initializes a new instance of the MozItemEventArgs class with default settings
+            </summary>
+        </member>
+        <member name="F:D2net.Common.UI.DraggableTabControl.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:D2net.Common.UI.DraggableTabControl.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:D2net.Common.UI.DraggableTabControl.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:D2net.Common.UI.DraggableTabControl.GetTabPageByTab(System.Drawing.Point)">
+            <summary>
+            Finds the TabPage whose tab is contains the given point.
+            </summary>
+            <param name="pt">The point (given in client coordinates) to look for a TabPage.</param>
+            <returns>The TabPage whose tab is at the given point (null if there isn't one).</returns>
+        </member>
+        <member name="M:D2net.Common.UI.DraggableTabControl.FindIndex(System.Windows.Forms.TabPage)">
+            <summary>
+            Loops over all the TabPages to find the index of the given TabPage.
+            </summary>
+            <param name="page">The TabPage we want the index for.</param>
+            <returns>The index of the given TabPage(-1 if it isn't found.)</returns>
+        </member>
+        <member name="M:D2net.Common.UI.ListViewEx.GetSubItemBounds(System.Windows.Forms.ListViewItem,System.Int32)">
+            <summary>
+            Retrieve the bounds of a ListViewSubItem
+            </summary>
+            <param name="Item">The Item containing the SubItem</param>
+            <param name="SubItem">Index of the SubItem</param>
+            <returns>Subitem's bounds</returns>
+        </member>
+        <member name="M:D2net.Common.UI.ListViewEx.RemoveEmbeddedControl(System.Windows.Forms.Control)">
+            <summary>
+            Remove a control from the ListView
+            </summary>
+            <param name="c">Control to be removed</param>
+        </member>
+        <member name="T:D2net.Common.UI.ListViewEx.ListViewColumnSorter">
+            <summary>
+            This class is an implementation of the 'IComparer' interface.
+            </summary>
+        </member>
+        <member name="F:D2net.Common.UI.ListViewEx.ListViewColumnSorter.ColumnToSort">
+            <summary>
+            Specifies the column to be sorted
+            </summary>
+        </member>
+        <member name="F:D2net.Common.UI.ListViewEx.ListViewColumnSorter.OrderOfSort">
+            <summary>
+            Specifies the order in which to sort (i.e. 'Ascending').
+            </summary>
+        </member>
+        <member name="F:D2net.Common.UI.ListViewEx.ListViewColumnSorter.ObjectCompare">
+            <summary>
+            Case insensitive comparer object
+            </summary>
+        </member>
+        <member name="M:D2net.Common.UI.ListViewEx.ListViewColumnSorter.#ctor">
+            <summary>
+            Class constructor.  Initializes various elements
+            </summary>
+        </member>
+        <member name="M:D2net.Common.UI.ListViewEx.ListViewColumnSorter.Compare(System.Object,System.Object)">
+            <summary>
+            This method is inherited from the IComparer interface.  It compares the two objects passed using a case insensitive comparison.
+            </summary>
+            <param name="x">First object to be compared</param>
+            <param name="y">Second object to be compared</param>
+            <returns>The result of the comparison. "0" if equal, negative if 'x' is less than 'y' and positive if 'x' is greater than 'y'</returns>
+        </member>
+        <member name="P:D2net.Common.UI.ListViewEx.ListViewColumnSorter.SortColumn">
+            <summary>
+            Gets or sets the number of the column to which to apply the sorting operation (Defaults to '0').
+            </summary>
+        </member>
+        <member name="P:D2net.Common.UI.ListViewEx.ListViewColumnSorter.Order">
+            <summary>
+            Gets or sets the order of sorting to apply (for example, 'Ascending' or 'Descending').
+            </summary>
+        </member>
+        <member name="T:D2net.Common.UI.AdvProgressBar">
+            <summary>
+            UserControl1에 대한 요약 설명입니다.
+            </summary>
+        </member>
+        <member name="F:D2net.Common.UI.AdvProgressBar.components">
+            <summary>
+            필수 디자이너 변수입니다.
+            </summary>
+        </member>
+        <member name="M:D2net.Common.UI.AdvProgressBar.Dispose(System.Boolean)">
+            <summary>
+            사용 중인 모든 리소스를 정리합니다.
+            </summary>
+        </member>
+        <member name="M:D2net.Common.UI.AdvProgressBar.InitializeComponent">
+            <summary>
+            디자이너 지원에 필요한 메서드입니다. 
+            이 메서드의 내용을 코드 편집기로 수정하지 마십시오.
+            </summary>
+        </member>
+        <member name="P:D2net.Common.UI.AdvProgressBar.MinValue">
+            <summary>
+            최소값 설정
+            </summary>
+        </member>
+        <member name="P:D2net.Common.UI.AdvProgressBar.MaxValue">
+            <summary>
+            최대값 설정
+            </summary>
+        </member>
+        <member name="P:D2net.Common.UI.AdvProgressBar.currentValue">
+            <summary>
+            현재값 설정
+            </summary>
+        </member>
+        <member name="P:D2net.Common.UI.AdvProgressBar.SetBackgroundColor">
+            <summary>
+            배경색을 설정
+            </summary>
+        </member>
+        <member name="P:D2net.Common.UI.AdvProgressBar.ControlBackgroundColor">
+            <summary>
+            컨트롤 배경색을 설정
+            </summary>
+        </member>
+        <member name="P:D2net.Common.UI.AdvProgressBar.StartingColor">
+            <summary>
+            표시막대의
+            시작점의 색깔
+            </summary>
+        </member>
+        <member name="P:D2net.Common.UI.AdvProgressBar.APBBorderStyle">
+            <summary>
+            Border Style
+            </summary>
+        </member>
+        <member name="P:D2net.Common.UI.AdvProgressBar.EndColor">
+            <summary>
+            표시막대의
+            끝점의 색깔
+            </summary>
+        </member>
+        <member name="P:D2net.Common.UI.AdvProgressBar.TextColor">
+            <summary>
+            글자의 색
+            </summary>
+        </member>
+        <member name="P:D2net.Common.UI.AdvProgressBar.TextShadowColor">
+            <summary>
+            글자의 그림자의 색
+            </summary>
+        </member>
+        <member name="P:D2net.Common.UI.AdvProgressBar.TextFont">
+            <summary>
+            폰트를 설정
+            </summary>
+        </member>
+        <member name="P:D2net.Common.UI.AdvProgressBar.SetCenter">
+            <summary>
+            표시되는 글자를 변위에 따라 이동시킬지 설정
+            </summary>
+        </member>
+        <member name="P:D2net.Common.UI.AdvProgressBar.DisplayingText">
+            <summary>
+            표시할 텍스트
+            </summary>
+        </member>
+        <member name="T:D2net.Common.UI.SplashWindowForm">
+            <summary>
+            Summary description for SplashScreen.
+            </summary>
+        </member>
+        <member name="M:D2net.Common.UI.SplashWindowForm.#ctor(System.Drawing.Image,System.Drawing.Color,System.Drawing.Color,System.Windows.Forms.BorderStyle,System.Drawing.Font,System.Drawing.Color,System.Drawing.Color,System.Windows.Forms.BorderStyle)">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:D2net.Common.UI.SplashWindowForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:D2net.Common.UI.SplashWindowForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:D2net.Common.UI.RegistryAccess">
+            <summary>
+            A class for managing registry access.
+            </summary>
+        </member>
+        <member name="T:D2net.Common.UI.CalenderForm">
+            <summary>
+            Form1에 대한 요약 설명입니다.
+            </summary>
+        </member>
+        <member name="F:D2net.Common.UI.CalenderForm.components">
+            <summary>
+            필수 디자이너 변수입니다.
+            </summary>
+        </member>
+        <member name="M:D2net.Common.UI.CalenderForm.Dispose(System.Boolean)">
+            <summary>
+            사용 중인 모든 리소스를 정리합니다.
+            </summary>
+        </member>
+        <member name="M:D2net.Common.UI.CalenderForm.InitializeComponent">
+            <summary>
+            디자이너 지원에 필요한 메서드입니다.
+            이 메서드의 내용을 코드 편집기로 수정하지 마십시오.
+            </summary>
+        </member>
+        <member name="T:D2net.Common.AutomationInstance">
+            <summary>
+            AutomationInstance에 대한 요약 설명입니다.
+            </summary>
+        </member>
+    </members>
+</doc>

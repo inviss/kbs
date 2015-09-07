@@ -1,0 +1,249 @@
+[2015-08-13 오후 4:37:16:022]    ****************Initialized*******************
+[2015-08-13 오후 4:37:52:040]    ****************Initialized*******************
+[2015-08-13 오후 4:37:53:772]    --->Got a Job
+<workflow>
+  <source_path>X:\\mp2\T2003-0131\PS-2013147629-01-000\</source_path>
+  <source_file>1db83f9a-8a88-46d5-aca9-31ae5461cc08.ts</source_file>
+  <target_path>Y:\\mp4\T2003-0131\PS-2013147629-01-000\</target_path>
+  <default_opt>-qscale 5</default_opt>
+  <cti_Id>591837</cti_Id>
+  <audio_mode>02</audio_mode>
+  <start_time>1</start_time>
+  <end_time>1200</end_time>
+  <job>
+    <job_id>373569</job_id>
+    <job_kind>video</job_kind>
+    <pro_flid>521</pro_flid>
+    <serv_bit>128k</serv_bit>
+    <ext>mp4</ext>
+    <vdo_codec>h264</vdo_codec>
+    <vdo_bit_rate>64</vdo_bit_rate>
+    <vdo_hori>320</vdo_hori>
+    <vdo_vert>180</vdo_vert>
+    <vdo_f_s>29.97</vdo_f_s>
+    <vdo_sync>0</vdo_sync>
+    <aud_codec>aac</aud_codec>
+    <aud_bit_rate>64</aud_bit_rate>
+    <aud_chan>2</aud_chan>
+    <aud_s_rate>48</aud_s_rate>
+    <target_file>1db83f9a-8a88-46d5-aca9-31ae5461cc08_128k_HD.mp4</target_file>
+    <qc_yn>Y</qc_yn>
+  </job>
+</workflow>
+[2015-08-13 오후 4:37:53:773]    Set CopyState : 373569 , False 
+[2015-08-13 오후 4:37:53:912]    --->[Start FileDelProc]
+[2015-08-13 오후 4:37:53:912]    [FileDelProc] f:\TranscoderTempWorking\1db83f9a-8a88-46d5-aca9-31ae5461cc08.ts
+[2015-08-13 오후 4:37:53:948]    --->[End FileDelProc]
+[2015-08-13 오후 4:37:53:951]    [Start FileCopy]
+[2015-08-13 오후 4:37:53:952]    [CTI_ID]591837 --> FileCopyStart X:\\mp2\T2003-0131\PS-2013147629-01-000\1db83f9a-8a88-46d5-aca9-31ae5461cc08.ts->f:\TranscoderTempWorking\1db83f9a-8a88-46d5-aca9-31ae5461cc08.ts
+[2015-08-13 오후 4:39:52:698]         [XCOPY_END] X:\\mp2\T2003-0131\PS-2013147629-01-000\1db83f9a-8a88-46d5-aca9-31ae5461cc08.ts -> Exist? : True
+[2015-08-13 오후 4:39:52:698]         [XCOPY_END] f:\TranscoderTempWorking\1db83f9a-8a88-46d5-aca9-31ae5461cc08.ts -> Exist? : True
+[2015-08-13 오후 4:39:52:699]    [CopyComplete]f:\TranscoderTempWorking\1db83f9a-8a88-46d5-aca9-31ae5461cc08.ts --> FileCopyExist? : True
+[2015-08-13 오후 4:39:52:699]    Set CopyState : 373569 , True 
+[2015-08-13 오후 4:39:52:804]    [End FileCopy]
+[2015-08-13 오후 4:42:16:506]    TC_02_01(373569) Occured Error : ETC_ERROR - CheckEror Value : True
+[2015-08-13 오후 4:42:19:518]    --->Got a Job
+<workflow>
+  <source_path>X:\\mp2\T2010-0301\PS-2013170745-01-001\</source_path>
+  <source_file>865bc91f-27da-4411-b117-ddbc02be6387.mxf</source_file>
+  <target_path>Y:\\mp4\T2010-0301\PS-2013170745-01-001\</target_path>
+  <default_opt>-qscale 5</default_opt>
+  <cti_Id>591792</cti_Id>
+  <audio_mode>02</audio_mode>
+  <job>
+    <job_id>373553</job_id>
+    <job_kind>video</job_kind>
+    <pro_flid>521</pro_flid>
+    <serv_bit>128k</serv_bit>
+    <ext>mp4</ext>
+    <vdo_codec>h264</vdo_codec>
+    <vdo_bit_rate>64</vdo_bit_rate>
+    <vdo_hori>320</vdo_hori>
+    <vdo_vert>180</vdo_vert>
+    <vdo_f_s>29.97</vdo_f_s>
+    <vdo_sync>0</vdo_sync>
+    <aud_codec>aac</aud_codec>
+    <aud_bit_rate>64</aud_bit_rate>
+    <aud_chan>2</aud_chan>
+    <aud_s_rate>48</aud_s_rate>
+    <target_file>865bc91f-27da-4411-b117-ddbc02be6387_128k_HD.mp4</target_file>
+    <qc_yn>Y</qc_yn>
+  </job>
+</workflow>
+[2015-08-13 오후 4:42:19:518]    Set CopyState : 373553 , False 
+[2015-08-13 오후 4:42:19:628]    --->[Start FileDelProc]
+[2015-08-13 오후 4:42:19:628]    [FileDelProc] f:\TranscoderTempWorking\1db83f9a-8a88-46d5-aca9-31ae5461cc08.ts
+[2015-08-13 오후 4:42:19:674]    [FileDelProc] f:\TranscoderTempWorking\1db83f9a-8a88-46d5-aca9-31ae5461cc08_128k_HD.mp4
+[2015-08-13 오후 4:42:19:677]    --->[End FileDelProc]
+[2015-08-13 오후 4:42:19:678]    [Start FileCopy]
+[2015-08-13 오후 4:42:19:678]    [CTI_ID]591792 --> FileCopyStart X:\\mp2\T2010-0301\PS-2013170745-01-001\865bc91f-27da-4411-b117-ddbc02be6387.mxf->f:\TranscoderTempWorking\865bc91f-27da-4411-b117-ddbc02be6387.mxf
+[2015-08-13 오후 4:46:09:551]    ****************Initialized*******************
+[2015-08-13 오후 4:46:11:249]    --->Got a Job
+<workflow>
+  <source_path>X:\\mp2\T2010-0301\PS-2013170745-01-001\</source_path>
+  <source_file>8a23b3c6-ab5c-49c2-be89-8c65c9ea228f.mxf</source_file>
+  <target_path>Y:\\mp4\T2010-0301\PS-2013170745-01-001\</target_path>
+  <default_opt>-qscale 5</default_opt>
+  <cti_Id>591820</cti_Id>
+  <audio_mode>02</audio_mode>
+  <job>
+    <job_id>373564</job_id>
+    <job_kind>video</job_kind>
+    <pro_flid>521</pro_flid>
+    <serv_bit>128k</serv_bit>
+    <ext>mp4</ext>
+    <vdo_codec>h264</vdo_codec>
+    <vdo_bit_rate>64</vdo_bit_rate>
+    <vdo_hori>320</vdo_hori>
+    <vdo_vert>180</vdo_vert>
+    <vdo_f_s>29.97</vdo_f_s>
+    <vdo_sync>0</vdo_sync>
+    <aud_codec>aac</aud_codec>
+    <aud_bit_rate>64</aud_bit_rate>
+    <aud_chan>2</aud_chan>
+    <aud_s_rate>48</aud_s_rate>
+    <target_file>8a23b3c6-ab5c-49c2-be89-8c65c9ea228f_128k_HD.mp4</target_file>
+    <qc_yn>Y</qc_yn>
+  </job>
+</workflow>
+[2015-08-13 오후 4:46:11:251]    Set CopyState : 373564 , False 
+[2015-08-13 오후 4:46:11:386]    --->[Start FileDelProc]
+[2015-08-13 오후 4:46:11:386]    [FileDelProc] f:\TranscoderTempWorking\865bc91f-27da-4411-b117-ddbc02be6387.mxf
+[2015-08-13 오후 4:46:11:410]    --->[End FileDelProc]
+[2015-08-13 오후 4:46:11:413]    [Start FileCopy]
+[2015-08-13 오후 4:46:11:413]    [CTI_ID]591820 --> FileCopyStart X:\\mp2\T2010-0301\PS-2013170745-01-001\8a23b3c6-ab5c-49c2-be89-8c65c9ea228f.mxf->f:\TranscoderTempWorking\8a23b3c6-ab5c-49c2-be89-8c65c9ea228f.mxf
+[2015-08-13 오후 4:46:11:414]         [XCOPY_FAIL] RetryCont : 0 X:\\mp2\T2010-0301\PS-2013170745-01-001\8a23b3c6-ab5c-49c2-be89-8c65c9ea228f.mxf 파일이 존재하지 않습니다. (10초대기)
+[2015-08-13 오후 4:46:21:414]    [CTI_ID]591820 --> FileCopyStart X:\\mp2\T2010-0301\PS-2013170745-01-001\8a23b3c6-ab5c-49c2-be89-8c65c9ea228f.mxf->f:\TranscoderTempWorking\8a23b3c6-ab5c-49c2-be89-8c65c9ea228f.mxf
+[2015-08-13 오후 4:46:21:415]         [XCOPY_FAIL] RetryCont : 1 X:\\mp2\T2010-0301\PS-2013170745-01-001\8a23b3c6-ab5c-49c2-be89-8c65c9ea228f.mxf 파일이 존재하지 않습니다. (10초대기)
+[2015-08-13 오후 4:46:31:416]    [CTI_ID]591820 --> FileCopyStart X:\\mp2\T2010-0301\PS-2013170745-01-001\8a23b3c6-ab5c-49c2-be89-8c65c9ea228f.mxf->f:\TranscoderTempWorking\8a23b3c6-ab5c-49c2-be89-8c65c9ea228f.mxf
+[2015-08-13 오후 4:46:31:417]         [XCOPY_FAIL] RetryCont : 2 X:\\mp2\T2010-0301\PS-2013170745-01-001\8a23b3c6-ab5c-49c2-be89-8c65c9ea228f.mxf 파일이 존재하지 않습니다. (10초대기)
+[2015-08-13 오후 4:46:41:418]    [CTI_ID]591820 --> FileCopyStart X:\\mp2\T2010-0301\PS-2013170745-01-001\8a23b3c6-ab5c-49c2-be89-8c65c9ea228f.mxf->f:\TranscoderTempWorking\8a23b3c6-ab5c-49c2-be89-8c65c9ea228f.mxf
+[2015-08-13 오후 4:46:41:419]         [XCOPY_FAIL] RetryCont : 3 X:\\mp2\T2010-0301\PS-2013170745-01-001\8a23b3c6-ab5c-49c2-be89-8c65c9ea228f.mxf 파일이 존재하지 않습니다. (10초대기)
+[2015-08-13 오후 4:46:51:419]    [CTI_ID]591820 --> FileCopyStart X:\\mp2\T2010-0301\PS-2013170745-01-001\8a23b3c6-ab5c-49c2-be89-8c65c9ea228f.mxf->f:\TranscoderTempWorking\8a23b3c6-ab5c-49c2-be89-8c65c9ea228f.mxf
+[2015-08-13 오후 4:46:51:420]         [XCOPY_FAIL] RetryCont : 4 X:\\mp2\T2010-0301\PS-2013170745-01-001\8a23b3c6-ab5c-49c2-be89-8c65c9ea228f.mxf 파일이 존재하지 않습니다. (10초대기)
+[2015-08-13 오후 4:47:01:421]    [CTI_ID]591820 --> FileCopyStart X:\\mp2\T2010-0301\PS-2013170745-01-001\8a23b3c6-ab5c-49c2-be89-8c65c9ea228f.mxf->f:\TranscoderTempWorking\8a23b3c6-ab5c-49c2-be89-8c65c9ea228f.mxf
+[2015-08-13 오후 4:47:01:422]         [XCOPY_FAIL] RetryCont : 5 X:\\mp2\T2010-0301\PS-2013170745-01-001\8a23b3c6-ab5c-49c2-be89-8c65c9ea228f.mxf 파일이 존재하지 않습니다. (10초대기)
+[2015-08-13 오후 4:47:09:134]    ****************Initialized*******************
+[2015-08-13 오후 4:47:54:986]    --->Got a Job
+<workflow>
+  <source_path>X:\\mp2\T2003-0131\PS-2013147629-01-000\</source_path>
+  <source_file>1db83f9a-8a88-46d5-aca9-31ae5461cc08.ts</source_file>
+  <target_path>Y:\\mp4\T2003-0131\PS-2013147629-01-000\</target_path>
+  <default_opt>-qscale 5</default_opt>
+  <cti_Id>591837</cti_Id>
+  <audio_mode>02</audio_mode>
+  <start_time>1</start_time>
+  <end_time>1200</end_time>
+  <job>
+    <job_id>373569</job_id>
+    <job_kind>video</job_kind>
+    <pro_flid>521</pro_flid>
+    <serv_bit>128k</serv_bit>
+    <ext>mp4</ext>
+    <vdo_codec>h264</vdo_codec>
+    <vdo_bit_rate>64</vdo_bit_rate>
+    <vdo_hori>320</vdo_hori>
+    <vdo_vert>180</vdo_vert>
+    <vdo_f_s>29.97</vdo_f_s>
+    <vdo_sync>0</vdo_sync>
+    <aud_codec>aac</aud_codec>
+    <aud_bit_rate>64</aud_bit_rate>
+    <aud_chan>2</aud_chan>
+    <aud_s_rate>48</aud_s_rate>
+    <target_file>1db83f9a-8a88-46d5-aca9-31ae5461cc08_128k_HD.mp4</target_file>
+    <qc_yn>Y</qc_yn>
+  </job>
+</workflow>
+[2015-08-13 오후 4:47:54:988]    Set CopyState : 373569 , False 
+[2015-08-13 오후 4:47:55:118]    --->[Start FileDelProc]
+[2015-08-13 오후 4:47:55:118]    --->[End FileDelProc]
+[2015-08-13 오후 4:47:55:120]    [Start FileCopy]
+[2015-08-13 오후 4:47:55:120]    [CTI_ID]591837 --> FileCopyStart X:\\mp2\T2003-0131\PS-2013147629-01-000\1db83f9a-8a88-46d5-aca9-31ae5461cc08.ts->f:\TranscoderTempWorking\1db83f9a-8a88-46d5-aca9-31ae5461cc08.ts
+[2015-08-13 오후 4:48:41:906]         [XCOPY_END] X:\\mp2\T2003-0131\PS-2013147629-01-000\1db83f9a-8a88-46d5-aca9-31ae5461cc08.ts -> Exist? : True
+[2015-08-13 오후 4:48:41:906]         [XCOPY_END] f:\TranscoderTempWorking\1db83f9a-8a88-46d5-aca9-31ae5461cc08.ts -> Exist? : True
+[2015-08-13 오후 4:48:41:907]    [CopyComplete]f:\TranscoderTempWorking\1db83f9a-8a88-46d5-aca9-31ae5461cc08.ts --> FileCopyExist? : True
+[2015-08-13 오후 4:48:41:907]    Set CopyState : 373569 , True 
+[2015-08-13 오후 4:48:42:012]    [End FileCopy]
+[2015-08-13 오후 4:49:54:590]    ****************Initialized*******************
+[2015-08-13 오후 4:49:56:263]    --->Got a Job
+<workflow>
+  <source_path>X:\\mp2\T2010-0301\PS-2013170745-01-001\</source_path>
+  <source_file>865bc91f-27da-4411-b117-ddbc02be6387.mxf</source_file>
+  <target_path>Y:\\mp4\T2010-0301\PS-2013170745-01-001\</target_path>
+  <default_opt>-qscale 5</default_opt>
+  <cti_Id>591792</cti_Id>
+  <audio_mode>02</audio_mode>
+  <job>
+    <job_id>373553</job_id>
+    <job_kind>video</job_kind>
+    <pro_flid>521</pro_flid>
+    <serv_bit>128k</serv_bit>
+    <ext>mp4</ext>
+    <vdo_codec>h264</vdo_codec>
+    <vdo_bit_rate>64</vdo_bit_rate>
+    <vdo_hori>320</vdo_hori>
+    <vdo_vert>180</vdo_vert>
+    <vdo_f_s>29.97</vdo_f_s>
+    <vdo_sync>0</vdo_sync>
+    <aud_codec>aac</aud_codec>
+    <aud_bit_rate>64</aud_bit_rate>
+    <aud_chan>2</aud_chan>
+    <aud_s_rate>48</aud_s_rate>
+    <target_file>865bc91f-27da-4411-b117-ddbc02be6387_128k_HD.mp4</target_file>
+    <qc_yn>Y</qc_yn>
+  </job>
+</workflow>
+[2015-08-13 오후 4:49:56:265]    Set CopyState : 373553 , False 
+[2015-08-13 오후 4:49:56:394]    --->[Start FileDelProc]
+[2015-08-13 오후 4:49:56:394]    [FileDelProc] f:\TranscoderTempWorking\1db83f9a-8a88-46d5-aca9-31ae5461cc08.ts
+[2015-08-13 오후 4:49:56:461]    'f:\TranscoderTempWorking\1db83f9a-8a88-46d5-aca9-31ae5461cc08.ts' 파일은 다른 프로세스에서 사용 중이므로 프로세스에서 액세스할 수 없습니다.
+   위치: System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   위치: System.IO.File.InternalDelete(String path, Boolean checkHost)
+   위치: Transcoder_KBS.WorkAgent.LocalDelProc(Object obj) 파일 D:\Sehee Source\02 KBS\05 Transcoder_KBS\Transcoder_KBS\WorkAgent.cs:줄 727
+[2015-08-13 오후 4:49:56:461]    --->[End FileDelProc]
+[2015-08-13 오후 4:49:56:463]    [Start FileCopy]
+[2015-08-13 오후 4:49:56:463]    [CTI_ID]591792 --> FileCopyStart X:\\mp2\T2010-0301\PS-2013170745-01-001\865bc91f-27da-4411-b117-ddbc02be6387.mxf->f:\TranscoderTempWorking\865bc91f-27da-4411-b117-ddbc02be6387.mxf
+[2015-08-13 오후 4:50:24:783]         [XCOPY_END] X:\\mp2\T2010-0301\PS-2013170745-01-001\865bc91f-27da-4411-b117-ddbc02be6387.mxf -> Exist? : True
+[2015-08-13 오후 4:50:24:783]         [XCOPY_END] f:\TranscoderTempWorking\865bc91f-27da-4411-b117-ddbc02be6387.mxf -> Exist? : True
+[2015-08-13 오후 4:50:24:785]    [CopyComplete]f:\TranscoderTempWorking\865bc91f-27da-4411-b117-ddbc02be6387.mxf --> FileCopyExist? : True
+[2015-08-13 오후 4:50:24:785]    Set CopyState : 373553 , True 
+[2015-08-13 오후 4:50:24:889]    [End FileCopy]
+[2015-08-13 오후 4:50:35:551]    [SaveRePorts] <?xml version="1.0" encoding="utf-8"?><workflow><content><job_id>373553</job_id><job_gb>V</job_gb><job_state>C</job_state><file_size /><frm_per_sec /><job_err_code /></content></workflow>
+[2015-08-13 오후 4:50:56:969]    [SaveRePorts - Result(373553)]  true
+[2015-08-13 오후 4:51:00:498]    --->Got a Job
+<workflow>
+  <source_path>X:\\mp2\T2010-0301\PS-2013170745-01-001\</source_path>
+  <source_file>8a23b3c6-ab5c-49c2-be89-8c65c9ea228f.mxf</source_file>
+  <target_path>Y:\\mp4\T2010-0301\PS-2013170745-01-001\</target_path>
+  <default_opt>-qscale 5</default_opt>
+  <cti_Id>591820</cti_Id>
+  <audio_mode>02</audio_mode>
+  <job>
+    <job_id>373564</job_id>
+    <job_kind>video</job_kind>
+    <pro_flid>521</pro_flid>
+    <serv_bit>128k</serv_bit>
+    <ext>mp4</ext>
+    <vdo_codec>h264</vdo_codec>
+    <vdo_bit_rate>64</vdo_bit_rate>
+    <vdo_hori>320</vdo_hori>
+    <vdo_vert>180</vdo_vert>
+    <vdo_f_s>29.97</vdo_f_s>
+    <vdo_sync>0</vdo_sync>
+    <aud_codec>aac</aud_codec>
+    <aud_bit_rate>64</aud_bit_rate>
+    <aud_chan>2</aud_chan>
+    <aud_s_rate>48</aud_s_rate>
+    <target_file>8a23b3c6-ab5c-49c2-be89-8c65c9ea228f_128k_HD.mp4</target_file>
+    <qc_yn>Y</qc_yn>
+  </job>
+</workflow>
+[2015-08-13 오후 4:51:00:498]    Set CopyState : 373564 , False 
+[2015-08-13 오후 4:51:00:610]    --->[Start FileDelProc]
+[2015-08-13 오후 4:51:00:610]    [FileDelProc] f:\TranscoderTempWorking\1db83f9a-8a88-46d5-aca9-31ae5461cc08.ts
+[2015-08-13 오후 4:51:00:650]    [FileDelProc] f:\TranscoderTempWorking\1db83f9a-8a88-46d5-aca9-31ae5461cc08_128k_HD.mp4
+[2015-08-13 오후 4:51:00:653]    [FileDelProc] f:\TranscoderTempWorking\865bc91f-27da-4411-b117-ddbc02be6387.mxf
+[2015-08-13 오후 4:51:00:677]    --->[End FileDelProc]
+[2015-08-13 오후 4:51:00:678]    [Start FileCopy]
+[2015-08-13 오후 4:51:00:678]    [CTI_ID]591820 --> FileCopyStart X:\\mp2\T2010-0301\PS-2013170745-01-001\8a23b3c6-ab5c-49c2-be89-8c65c9ea228f.mxf->f:\TranscoderTempWorking\8a23b3c6-ab5c-49c2-be89-8c65c9ea228f.mxf
+[2015-08-13 오후 4:51:00:679]         [XCOPY_FAIL] RetryCont : 0 X:\\mp2\T2010-0301\PS-2013170745-01-001\8a23b3c6-ab5c-49c2-be89-8c65c9ea228f.mxf 파일이 존재하지 않습니다. (10초대기)

@@ -1,0 +1,32 @@
+C:\Users\Administrator\Desktop\KBS\Transcoder_KBS\Transcoder_KBS\bin\x64\Release\Transcoder_KBS.exe
+C:\Users\Administrator\Desktop\KBS\Transcoder_KBS\Transcoder_KBS\obj\x64\Release\Transcoder_KBS.Form1.resources
+C:\Users\Administrator\Desktop\KBS\Transcoder_KBS\Transcoder_KBS\obj\x64\Release\Transcoder_KBS.Properties.Resources.resources
+C:\Users\Administrator\Desktop\KBS\Transcoder_KBS\Transcoder_KBS\obj\x64\Release\Transcoder_KBS.csproj.GenerateResource.Cache
+C:\Users\Administrator\Desktop\KBS\Transcoder_KBS\Transcoder_KBS\obj\x64\Release\Transcoder_KBS.exe
+C:\Users\Administrator\Desktop\KBS\Transcoder_KBS\Transcoder_KBS\bin\x64\Release\Transcoder_KBS.exe.config
+D:\Sehee Source\06 FFMPEG\Transcoder_KBS\Transcoder_KBS\bin\x64\Release\Transcoder_KBS.exe.config
+D:\Sehee Source\06 FFMPEG\Transcoder_KBS\Transcoder_KBS\bin\x64\Release\Transcoder_KBS.exe
+D:\Sehee Source\06 FFMPEG\Transcoder_KBS\Transcoder_KBS\bin\x64\Release\Transcoder_KBS.XmlSerializers.dll
+D:\Sehee Source\06 FFMPEG\Transcoder_KBS\Transcoder_KBS\obj\x64\Release\Transcoder_KBS.Properties.Resources.resources
+D:\Sehee Source\06 FFMPEG\Transcoder_KBS\Transcoder_KBS\obj\x64\Release\Transcoder_KBS.csproj.GenerateResource.Cache
+D:\Sehee Source\06 FFMPEG\Transcoder_KBS\Transcoder_KBS\obj\x64\Release\Transcoder_KBS.exe
+D:\Sehee Source\06 FFMPEG\Transcoder_KBS\Transcoder_KBS\obj\x64\Release\Transcoder_KBS.XmlSerializers.dll
+D:\Sehee Source\06 FFMPEG\Transcoder_KBS\Transcoder_KBS\bin\x64\Release\LoggerWritter.dll
+D:\Sehee Source\06 FFMPEG\Transcoder_KBS\Transcoder_KBS\bin\x64\Release\D2net.Common.dll
+D:\Sehee Source\06 FFMPEG\Transcoder_KBS\Transcoder_KBS\bin\x64\Release\LoggerWritter.pdb
+D:\Sehee Source\06 FFMPEG\Transcoder_KBS\Transcoder_KBS\obj\x64\Release\Transcoder_KBS.csprojResolveAssemblyReference.cache
+D:\Sehee Source\06 FFMPEG\Transcoder_KBS\Transcoder_KBS\obj\x64\Release\Transcoder_KBS.MainForm.resources
+D:\Sehee Source\06 FFMPEG\Transcoder_KBS\Transcoder_KBS\obj\x64\Release\Transcoder_KBS.ConfigForm.resources
+D:\Sehee Source\02 KBS\05 Transcoder_KBS\Transcoder_KBS\bin\x64\Release\Transcoder_KBS.exe.config
+D:\Sehee Source\02 KBS\05 Transcoder_KBS\Transcoder_KBS\bin\x64\Release\Transcoder_KBS.exe
+D:\Sehee Source\02 KBS\05 Transcoder_KBS\Transcoder_KBS\bin\x64\Release\Transcoder_KBS.XmlSerializers.dll
+D:\Sehee Source\02 KBS\05 Transcoder_KBS\Transcoder_KBS\bin\x64\Release\D2net.Common.dll
+D:\Sehee Source\02 KBS\05 Transcoder_KBS\Transcoder_KBS\bin\x64\Release\LoggerWritter.dll
+D:\Sehee Source\02 KBS\05 Transcoder_KBS\Transcoder_KBS\bin\x64\Release\LoggerWritter.pdb
+D:\Sehee Source\02 KBS\05 Transcoder_KBS\Transcoder_KBS\obj\x64\Release\Transcoder_KBS.csprojResolveAssemblyReference.cache
+D:\Sehee Source\02 KBS\05 Transcoder_KBS\Transcoder_KBS\obj\x64\Release\Transcoder_KBS.ConfigForm.resources
+D:\Sehee Source\02 KBS\05 Transcoder_KBS\Transcoder_KBS\obj\x64\Release\Transcoder_KBS.MainForm.resources
+D:\Sehee Source\02 KBS\05 Transcoder_KBS\Transcoder_KBS\obj\x64\Release\Transcoder_KBS.Properties.Resources.resources
+D:\Sehee Source\02 KBS\05 Transcoder_KBS\Transcoder_KBS\obj\x64\Release\Transcoder_KBS.csproj.GenerateResource.Cache
+D:\Sehee Source\02 KBS\05 Transcoder_KBS\Transcoder_KBS\obj\x64\Release\Transcoder_KBS.exe
+D:\Sehee Source\02 KBS\05 Transcoder_KBS\Transcoder_KBS\obj\x64\Release\Transcoder_KBS.XmlSerializers.dll
