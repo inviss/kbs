@@ -1,0 +1,7 @@
+D:\A_Sehee Project\KBSClipTrimmer_20110906(v2005)\LoggerWitter\bin\x64\Release\LoggerWritter.dll
+D:\A_Sehee Project\KBSClipTrimmer_20110906(v2005)\LoggerWitter\bin\x64\Release\LoggerWritter.pdb
+D:\A_Sehee Project\KBSClipTrimmer_20110906(v2005)\LoggerWitter\bin\x64\Release\D2net.Common.dll
+D:\A_Sehee Project\KBSClipTrimmer_20110906(v2005)\LoggerWitter\bin\x64\Release\D2net.Common.xml
+D:\A_Sehee Project\KBSClipTrimmer_20110906(v2005)\LoggerWitter\obj\x64\Release\ResolveAssemblyReference.cache
+D:\A_Sehee Project\KBSClipTrimmer_20110906(v2005)\LoggerWitter\obj\x64\Release\LoggerWritter.dll
+D:\A_Sehee Project\KBSClipTrimmer_20110906(v2005)\LoggerWitter\obj\x64\Release\LoggerWritter.pdb

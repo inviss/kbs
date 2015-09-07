@@ -1,0 +1,92 @@
+F:\_SeheeProject\KBS\Trimmer\KBSClipTrimmer_Video [2011-12-24]\LoggerWitter\bin\Release\LoggerWritter.dll
+F:\_SeheeProject\KBS\Trimmer\KBSClipTrimmer_Video [2011-12-24]\LoggerWitter\bin\Release\LoggerWritter.pdb
+F:\_SeheeProject\KBS\Trimmer\KBSClipTrimmer_Video [2011-12-24]\LoggerWitter\bin\Release\D2net.Common.dll
+F:\_SeheeProject\KBS\Trimmer\KBSClipTrimmer_Video [2011-12-24]\LoggerWitter\bin\Release\D2net.Common.xml
+F:\_SeheeProject\KBS\Trimmer\KBSClipTrimmer_Video [2011-12-24]\LoggerWitter\obj\Release\ResolveAssemblyReference.cache
+F:\_SeheeProject\KBS\Trimmer\KBSClipTrimmer_Video [2011-12-24]\LoggerWitter\obj\Release\LoggerWritter.dll
+F:\_SeheeProject\KBS\Trimmer\KBSClipTrimmer_Video [2011-12-24]\LoggerWitter\obj\Release\LoggerWritter.pdb
+F:\_SeheeProject\SBS\ClipTrimmer_Video\LoggerWitter\bin\Release\LoggerWritter.dll
+F:\_SeheeProject\SBS\ClipTrimmer_Video\LoggerWitter\bin\Release\LoggerWritter.pdb
+F:\_SeheeProject\SBS\ClipTrimmer_Video\LoggerWitter\bin\Release\D2net.Common.dll
+F:\_SeheeProject\SBS\ClipTrimmer_Video\LoggerWitter\bin\Release\D2net.Common.xml
+F:\_SeheeProject\SBS\ClipTrimmer_Video\LoggerWitter\obj\Release\ResolveAssemblyReference.cache
+F:\_SeheeProject\SBS\ClipTrimmer_Video\LoggerWitter\obj\Release\LoggerWritter.dll
+F:\_SeheeProject\SBS\ClipTrimmer_Video\LoggerWitter\obj\Release\LoggerWritter.pdb
+D:\seheeProject\SBS\SBS\ClipTrimmer_Video\LoggerWitter\bin\Release\LoggerWritter.dll
+D:\seheeProject\SBS\SBS\ClipTrimmer_Video\LoggerWitter\bin\Release\LoggerWritter.pdb
+D:\seheeProject\SBS\SBS\ClipTrimmer_Video\LoggerWitter\bin\Release\D2net.Common.dll
+D:\seheeProject\SBS\SBS\ClipTrimmer_Video\LoggerWitter\bin\Release\D2net.Common.xml
+D:\seheeProject\SBS\SBS\ClipTrimmer_Video\LoggerWitter\obj\Release\ResolveAssemblyReference.cache
+D:\seheeProject\SBS\SBS\ClipTrimmer_Video\LoggerWitter\obj\Release\LoggerWritter.dll
+D:\seheeProject\SBS\SBS\ClipTrimmer_Video\LoggerWitter\obj\Release\LoggerWritter.pdb
+F:\_SeheeProject\SBS\SBS Trimmer\SBS\ClipTrimmer_Video\LoggerWitter\bin\Release\LoggerWritter.dll
+F:\_SeheeProject\SBS\SBS Trimmer\SBS\ClipTrimmer_Video\LoggerWitter\bin\Release\LoggerWritter.pdb
+F:\_SeheeProject\SBS\SBS Trimmer\SBS\ClipTrimmer_Video\LoggerWitter\bin\Release\D2net.Common.dll
+F:\_SeheeProject\SBS\SBS Trimmer\SBS\ClipTrimmer_Video\LoggerWitter\bin\Release\D2net.Common.xml
+F:\_SeheeProject\SBS\SBS Trimmer\SBS\ClipTrimmer_Video\LoggerWitter\obj\Release\ResolveAssemblyReference.cache
+F:\_SeheeProject\SBS\SBS Trimmer\SBS\ClipTrimmer_Video\LoggerWitter\obj\Release\LoggerWritter.dll
+F:\_SeheeProject\SBS\SBS Trimmer\SBS\ClipTrimmer_Video\LoggerWitter\obj\Release\LoggerWritter.pdb
+F:\_SeheeProject\SBS\SBS Trimmer\ClipTrimmer_Video\LoggerWitter\bin\Release\LoggerWritter.dll
+F:\_SeheeProject\SBS\SBS Trimmer\ClipTrimmer_Video\LoggerWitter\bin\Release\LoggerWritter.pdb
+F:\_SeheeProject\SBS\SBS Trimmer\ClipTrimmer_Video\LoggerWitter\bin\Release\D2net.Common.dll
+F:\_SeheeProject\SBS\SBS Trimmer\ClipTrimmer_Video\LoggerWitter\bin\Release\D2net.Common.xml
+F:\_SeheeProject\SBS\SBS Trimmer\ClipTrimmer_Video\LoggerWitter\obj\Release\ResolveAssemblyReference.cache
+F:\_SeheeProject\SBS\SBS Trimmer\ClipTrimmer_Video\LoggerWitter\obj\Release\LoggerWritter.dll
+F:\_SeheeProject\SBS\SBS Trimmer\ClipTrimmer_Video\LoggerWitter\obj\Release\LoggerWritter.pdb
+F:\_SeheeProject\SBS\SBS Trimmer2\SBS Trimmer\ClipTrimmer_Video\LoggerWitter\bin\Release\LoggerWritter.dll
+F:\_SeheeProject\SBS\SBS Trimmer2\SBS Trimmer\ClipTrimmer_Video\LoggerWitter\bin\Release\LoggerWritter.pdb
+F:\_SeheeProject\SBS\SBS Trimmer2\SBS Trimmer\ClipTrimmer_Video\LoggerWitter\bin\Release\D2net.Common.dll
+F:\_SeheeProject\SBS\SBS Trimmer2\SBS Trimmer\ClipTrimmer_Video\LoggerWitter\bin\Release\D2net.Common.xml
+F:\_SeheeProject\SBS\SBS Trimmer2\SBS Trimmer\ClipTrimmer_Video\LoggerWitter\obj\Release\ResolveAssemblyReference.cache
+F:\_SeheeProject\SBS\SBS Trimmer2\SBS Trimmer\ClipTrimmer_Video\LoggerWitter\obj\Release\LoggerWritter.dll
+F:\_SeheeProject\SBS\SBS Trimmer2\SBS Trimmer\ClipTrimmer_Video\LoggerWitter\obj\Release\LoggerWritter.pdb
+F:\_SeheeProject\SBS\SBS Trimmer\SBS Trimmer\ClipTrimmer_Video\LoggerWitter\bin\Release\LoggerWritter.dll
+F:\_SeheeProject\SBS\SBS Trimmer\SBS Trimmer\ClipTrimmer_Video\LoggerWitter\bin\Release\LoggerWritter.pdb
+F:\_SeheeProject\SBS\SBS Trimmer\SBS Trimmer\ClipTrimmer_Video\LoggerWitter\bin\Release\D2net.Common.dll
+F:\_SeheeProject\SBS\SBS Trimmer\SBS Trimmer\ClipTrimmer_Video\LoggerWitter\bin\Release\D2net.Common.xml
+F:\_SeheeProject\SBS\SBS Trimmer\SBS Trimmer\ClipTrimmer_Video\LoggerWitter\obj\Release\ResolveAssemblyReference.cache
+F:\_SeheeProject\SBS\SBS Trimmer\SBS Trimmer\ClipTrimmer_Video\LoggerWitter\obj\Release\LoggerWritter.dll
+F:\_SeheeProject\SBS\SBS Trimmer\SBS Trimmer\ClipTrimmer_Video\LoggerWitter\obj\Release\LoggerWritter.pdb
+D:\SeheeProject\DAS-Monitoring\DasMonitoring\LoggerWitter\bin\Release\LoggerWritter.dll
+D:\SeheeProject\DAS-Monitoring\DasMonitoring\LoggerWitter\bin\Release\LoggerWritter.pdb
+D:\SeheeProject\DAS-Monitoring\DasMonitoring\LoggerWitter\bin\Release\D2net.Common.dll
+D:\SeheeProject\DAS-Monitoring\DasMonitoring\LoggerWitter\bin\Release\D2net.Common.xml
+D:\SeheeProject\DAS-Monitoring\DasMonitoring\LoggerWitter\obj\Release\ResolveAssemblyReference.cache
+D:\SeheeProject\DAS-Monitoring\DasMonitoring\LoggerWitter\obj\Release\LoggerWritter.dll
+D:\SeheeProject\DAS-Monitoring\DasMonitoring\LoggerWitter\obj\Release\LoggerWritter.pdb
+F:\_SeheeProject\Project-DAS\DAS-Monitoring\DasMonitoring\LoggerWitter\bin\Release\LoggerWritter.dll
+F:\_SeheeProject\Project-DAS\DAS-Monitoring\DasMonitoring\LoggerWitter\bin\Release\LoggerWritter.pdb
+F:\_SeheeProject\Project-DAS\DAS-Monitoring\DasMonitoring\LoggerWitter\bin\Release\D2net.Common.dll
+F:\_SeheeProject\Project-DAS\DAS-Monitoring\DasMonitoring\LoggerWitter\bin\Release\D2net.Common.xml
+F:\_SeheeProject\Project-DAS\DAS-Monitoring\DasMonitoring\LoggerWitter\obj\Release\ResolveAssemblyReference.cache
+F:\_SeheeProject\Project-DAS\DAS-Monitoring\DasMonitoring\LoggerWitter\obj\Release\LoggerWritter.dll
+F:\_SeheeProject\Project-DAS\DAS-Monitoring\DasMonitoring\LoggerWitter\obj\Release\LoggerWritter.pdb
+F:\_SeheeProject\Managed Project\NpsFtpAgent\LoggerWitter\obj\Release\ResolveAssemblyReference.cache
+F:\_SeheeProject\Managed Project\NpsFtpAgent\LoggerWitter\bin\Release\LoggerWritter.dll
+F:\_SeheeProject\Managed Project\NpsFtpAgent\LoggerWitter\bin\Release\LoggerWritter.pdb
+F:\_SeheeProject\Managed Project\NpsFtpAgent\LoggerWitter\bin\Release\D2net.Common.dll
+F:\_SeheeProject\Managed Project\NpsFtpAgent\LoggerWitter\bin\Release\D2net.Common.xml
+F:\_SeheeProject\Managed Project\NpsFtpAgent\LoggerWitter\obj\Release\LoggerWritter.dll
+F:\_SeheeProject\Managed Project\NpsFtpAgent\LoggerWitter\obj\Release\LoggerWritter.pdb
+F:\_SeheeProject\Managed Project\NpsFtpAgent_UDP\LoggerWitter\bin\Release\LoggerWritter.dll
+F:\_SeheeProject\Managed Project\NpsFtpAgent_UDP\LoggerWitter\bin\Release\LoggerWritter.pdb
+F:\_SeheeProject\Managed Project\NpsFtpAgent_UDP\LoggerWitter\bin\Release\D2net.Common.dll
+F:\_SeheeProject\Managed Project\NpsFtpAgent_UDP\LoggerWitter\bin\Release\D2net.Common.xml
+F:\_SeheeProject\Managed Project\NpsFtpAgent_UDP\LoggerWitter\obj\Release\ResolveAssemblyReference.cache
+F:\_SeheeProject\Managed Project\NpsFtpAgent_UDP\LoggerWitter\obj\Release\LoggerWritter.dll
+F:\_SeheeProject\Managed Project\NpsFtpAgent_UDP\LoggerWitter\obj\Release\LoggerWritter.pdb
+F:\_SeheeProject\Managed Project\Dalet TM & Agent\NpsFtpAgent_UDP_issused\LoggerWitter\bin\Release\LoggerWritter.dll
+F:\_SeheeProject\Managed Project\Dalet TM & Agent\NpsFtpAgent_UDP_issused\LoggerWitter\bin\Release\LoggerWritter.pdb
+F:\_SeheeProject\Managed Project\Dalet TM & Agent\NpsFtpAgent_UDP_issused\LoggerWitter\bin\Release\D2net.Common.dll
+F:\_SeheeProject\Managed Project\Dalet TM & Agent\NpsFtpAgent_UDP_issused\LoggerWitter\bin\Release\D2net.Common.xml
+F:\_SeheeProject\Managed Project\Dalet TM & Agent\NpsFtpAgent_UDP_issused\LoggerWitter\obj\Release\ResolveAssemblyReference.cache
+F:\_SeheeProject\Managed Project\Dalet TM & Agent\NpsFtpAgent_UDP_issused\LoggerWitter\obj\Release\LoggerWritter.dll
+F:\_SeheeProject\Managed Project\Dalet TM & Agent\NpsFtpAgent_UDP_issused\LoggerWitter\obj\Release\LoggerWritter.pdb
+D:\Sehee Source\02 KBS\05 Transcoder_KBS\LoggerWitter\bin\Release\LoggerWritter.dll.config
+D:\Sehee Source\02 KBS\05 Transcoder_KBS\LoggerWitter\bin\Release\LoggerWritter.dll
+D:\Sehee Source\02 KBS\05 Transcoder_KBS\LoggerWitter\bin\Release\LoggerWritter.pdb
+D:\Sehee Source\02 KBS\05 Transcoder_KBS\LoggerWitter\bin\Release\D2net.Common.dll
+D:\Sehee Source\02 KBS\05 Transcoder_KBS\LoggerWitter\bin\Release\D2net.Common.xml
+D:\Sehee Source\02 KBS\05 Transcoder_KBS\LoggerWitter\obj\Release\LoggerWritter.csprojResolveAssemblyReference.cache
+D:\Sehee Source\02 KBS\05 Transcoder_KBS\LoggerWitter\obj\Release\LoggerWritter.dll
+D:\Sehee Source\02 KBS\05 Transcoder_KBS\LoggerWitter\obj\Release\LoggerWritter.pdb

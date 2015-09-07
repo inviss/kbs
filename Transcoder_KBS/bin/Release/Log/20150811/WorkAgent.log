@@ -1,0 +1,302 @@
+[2015-08-11 오후 3:43:02:754]    ****************Initialized*******************
+[2015-08-11 오후 3:43:04:486]    HTTP 상태 404: Not Found(으)로 인해 요청하지 못했습니다.
+   위치: System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   위치: System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   위치: Transcoder_KBS.SoapObj.ServiceNavigatorService.saveStatus(String arg0) 파일 D:\Sehee Source\02 KBS\05 Transcoder_KBS\Transcoder_KBS\Web References\SoapObj\Reference.cs:줄 174
+   위치: Transcoder_KBS.WorkAgent.QueryGetJobs(String eqid) 파일 D:\Sehee Source\02 KBS\05 Transcoder_KBS\Transcoder_KBS\WorkAgent.cs:줄 501
+[2015-08-11 오후 3:43:04:486]    [GetJob-Exception - Cleared Memory]
+[2015-08-11 오후 3:43:27:605]    HTTP 상태 404: Not Found(으)로 인해 요청하지 못했습니다.
+   위치: System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   위치: System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   위치: Transcoder_KBS.SoapObj.ServiceNavigatorService.saveStatus(String arg0) 파일 D:\Sehee Source\02 KBS\05 Transcoder_KBS\Transcoder_KBS\Web References\SoapObj\Reference.cs:줄 174
+   위치: Transcoder_KBS.WorkAgent.QueryGetJobs(String eqid) 파일 D:\Sehee Source\02 KBS\05 Transcoder_KBS\Transcoder_KBS\WorkAgent.cs:줄 501
+[2015-08-11 오후 3:43:27:605]    [GetJob-Exception - Cleared Memory]
+[2015-08-11 오후 3:43:50:656]    HTTP 상태 404: Not Found(으)로 인해 요청하지 못했습니다.
+   위치: System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   위치: System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   위치: Transcoder_KBS.SoapObj.ServiceNavigatorService.saveStatus(String arg0) 파일 D:\Sehee Source\02 KBS\05 Transcoder_KBS\Transcoder_KBS\Web References\SoapObj\Reference.cs:줄 174
+   위치: Transcoder_KBS.WorkAgent.QueryGetJobs(String eqid) 파일 D:\Sehee Source\02 KBS\05 Transcoder_KBS\Transcoder_KBS\WorkAgent.cs:줄 501
+[2015-08-11 오후 3:43:50:656]    [GetJob-Exception - Cleared Memory]
+[2015-08-11 오후 3:44:13:710]    HTTP 상태 404: Not Found(으)로 인해 요청하지 못했습니다.
+   위치: System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   위치: System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   위치: Transcoder_KBS.SoapObj.ServiceNavigatorService.saveStatus(String arg0) 파일 D:\Sehee Source\02 KBS\05 Transcoder_KBS\Transcoder_KBS\Web References\SoapObj\Reference.cs:줄 174
+   위치: Transcoder_KBS.WorkAgent.QueryGetJobs(String eqid) 파일 D:\Sehee Source\02 KBS\05 Transcoder_KBS\Transcoder_KBS\WorkAgent.cs:줄 501
+[2015-08-11 오후 3:44:13:710]    [GetJob-Exception - Cleared Memory]
+[2015-08-11 오후 3:44:36:763]    HTTP 상태 404: Not Found(으)로 인해 요청하지 못했습니다.
+   위치: System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   위치: System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   위치: Transcoder_KBS.SoapObj.ServiceNavigatorService.saveStatus(String arg0) 파일 D:\Sehee Source\02 KBS\05 Transcoder_KBS\Transcoder_KBS\Web References\SoapObj\Reference.cs:줄 174
+   위치: Transcoder_KBS.WorkAgent.QueryGetJobs(String eqid) 파일 D:\Sehee Source\02 KBS\05 Transcoder_KBS\Transcoder_KBS\WorkAgent.cs:줄 501
+[2015-08-11 오후 3:44:36:763]    [GetJob-Exception - Cleared Memory]
+[2015-08-11 오후 3:45:09:102]    --->Got a Job
+<workflow>
+  <source_path>X:\\mp2\T2003-0131\PS-2013147629-01-000\</source_path>
+  <source_file>1db83f9a-8a88-46d5-aca9-31ae5461cc08.ts</source_file>
+  <target_path>Z:\\mp4\T2003-0131\PS-2013147629-01-000\</target_path>
+  <default_opt>-qscale 5</default_opt>
+  <cti_Id>591837</cti_Id>
+  <audio_mode>02</audio_mode>
+  <start_time>1</start_time>
+  <end_time>1200</end_time>
+  <job>
+    <job_id>373569</job_id>
+    <job_kind>video</job_kind>
+    <pro_flid>521</pro_flid>
+    <serv_bit>128k</serv_bit>
+    <ext>mp4</ext>
+    <vdo_codec>h264</vdo_codec>
+    <vdo_bit_rate>64</vdo_bit_rate>
+    <vdo_hori>320</vdo_hori>
+    <vdo_vert>180</vdo_vert>
+    <vdo_f_s>29.97</vdo_f_s>
+    <vdo_sync>0</vdo_sync>
+    <aud_codec>aac</aud_codec>
+    <aud_bit_rate>64</aud_bit_rate>
+    <aud_chan>2</aud_chan>
+    <aud_s_rate>48</aud_s_rate>
+    <target_file>1db83f9a-8a88-46d5-aca9-31ae5461cc08_128k_HD.mp4</target_file>
+    <qc_yn>Y</qc_yn>
+  </job>
+</workflow>
+[2015-08-11 오후 3:45:19:421]    Set CopyState : 373569 , False 
+[2015-08-11 오후 3:47:18:780]    ****************Initialized*******************
+[2015-08-11 오후 3:47:20:479]    --->Got a Job
+<workflow>
+  <source_path>X:\\mp2\T2010-0301\PS-2013170745-01-001\</source_path>
+  <source_file>865bc91f-27da-4411-b117-ddbc02be6387.mxf</source_file>
+  <target_path>Z:\\mp4\T2010-0301\PS-2013170745-01-001\</target_path>
+  <default_opt>-qscale 5</default_opt>
+  <cti_Id>591792</cti_Id>
+  <audio_mode>02</audio_mode>
+  <job>
+    <job_id>373553</job_id>
+    <job_kind>video</job_kind>
+    <pro_flid>521</pro_flid>
+    <serv_bit>128k</serv_bit>
+    <ext>mp4</ext>
+    <vdo_codec>h264</vdo_codec>
+    <vdo_bit_rate>64</vdo_bit_rate>
+    <vdo_hori>320</vdo_hori>
+    <vdo_vert>180</vdo_vert>
+    <vdo_f_s>29.97</vdo_f_s>
+    <vdo_sync>0</vdo_sync>
+    <aud_codec>aac</aud_codec>
+    <aud_bit_rate>64</aud_bit_rate>
+    <aud_chan>2</aud_chan>
+    <aud_s_rate>48</aud_s_rate>
+    <target_file>865bc91f-27da-4411-b117-ddbc02be6387_128k_HD.mp4</target_file>
+    <qc_yn>Y</qc_yn>
+  </job>
+</workflow>
+[2015-08-11 오후 3:47:20:481]    Set CopyState : 373553 , False 
+[2015-08-11 오후 3:47:20:614]    --->[Start FileDelProc]
+[2015-08-11 오후 3:47:20:615]    --->[End FileDelProc]
+[2015-08-11 오후 3:47:20:710]    [Start FileCopy]
+[2015-08-11 오후 3:47:20:710]    [CTI_ID]591792 --> FileCopyStart X:\\mp2\T2010-0301\PS-2013170745-01-001\865bc91f-27da-4411-b117-ddbc02be6387.mxf->f:\TranscoderTempWorking\865bc91f-27da-4411-b117-ddbc02be6387.mxf
+[2015-08-11 오후 3:47:20:712]         [XCOPY_FAIL] RetryCont : 0 X:\\mp2\T2010-0301\PS-2013170745-01-001\865bc91f-27da-4411-b117-ddbc02be6387.mxf 파일이 존재하지 않습니다. (10초대기)
+[2015-08-11 오후 3:47:30:713]    [CTI_ID]591792 --> FileCopyStart X:\\mp2\T2010-0301\PS-2013170745-01-001\865bc91f-27da-4411-b117-ddbc02be6387.mxf->f:\TranscoderTempWorking\865bc91f-27da-4411-b117-ddbc02be6387.mxf
+[2015-08-11 오후 3:47:30:714]         [XCOPY_FAIL] RetryCont : 1 X:\\mp2\T2010-0301\PS-2013170745-01-001\865bc91f-27da-4411-b117-ddbc02be6387.mxf 파일이 존재하지 않습니다. (10초대기)
+[2015-08-11 오후 3:47:40:714]    [CTI_ID]591792 --> FileCopyStart X:\\mp2\T2010-0301\PS-2013170745-01-001\865bc91f-27da-4411-b117-ddbc02be6387.mxf->f:\TranscoderTempWorking\865bc91f-27da-4411-b117-ddbc02be6387.mxf
+[2015-08-11 오후 3:47:40:715]         [XCOPY_FAIL] RetryCont : 2 X:\\mp2\T2010-0301\PS-2013170745-01-001\865bc91f-27da-4411-b117-ddbc02be6387.mxf 파일이 존재하지 않습니다. (10초대기)
+[2015-08-11 오후 3:47:50:716]    [CTI_ID]591792 --> FileCopyStart X:\\mp2\T2010-0301\PS-2013170745-01-001\865bc91f-27da-4411-b117-ddbc02be6387.mxf->f:\TranscoderTempWorking\865bc91f-27da-4411-b117-ddbc02be6387.mxf
+[2015-08-11 오후 3:47:50:717]         [XCOPY_FAIL] RetryCont : 3 X:\\mp2\T2010-0301\PS-2013170745-01-001\865bc91f-27da-4411-b117-ddbc02be6387.mxf 파일이 존재하지 않습니다. (10초대기)
+[2015-08-11 오후 3:48:00:717]    [CTI_ID]591792 --> FileCopyStart X:\\mp2\T2010-0301\PS-2013170745-01-001\865bc91f-27da-4411-b117-ddbc02be6387.mxf->f:\TranscoderTempWorking\865bc91f-27da-4411-b117-ddbc02be6387.mxf
+[2015-08-11 오후 3:48:00:718]         [XCOPY_FAIL] RetryCont : 4 X:\\mp2\T2010-0301\PS-2013170745-01-001\865bc91f-27da-4411-b117-ddbc02be6387.mxf 파일이 존재하지 않습니다. (10초대기)
+[2015-08-11 오후 3:48:10:719]    [CTI_ID]591792 --> FileCopyStart X:\\mp2\T2010-0301\PS-2013170745-01-001\865bc91f-27da-4411-b117-ddbc02be6387.mxf->f:\TranscoderTempWorking\865bc91f-27da-4411-b117-ddbc02be6387.mxf
+[2015-08-11 오후 3:48:10:720]         [XCOPY_FAIL] RetryCont : 5 X:\\mp2\T2010-0301\PS-2013170745-01-001\865bc91f-27da-4411-b117-ddbc02be6387.mxf 파일이 존재하지 않습니다. (10초대기)
+[2015-08-11 오후 3:48:20:751]    [CopyComplete] --> FileCopyExist? : False
+[2015-08-11 오후 3:48:20:751]    Set CopyState : 373553 , True 
+[2015-08-11 오후 3:48:20:855]    [End FileCopy]
+[2015-08-11 오후 3:48:21:000]    TC_02_01 Occured Error : READ_ERROR - CheckEror Value : True
+[2015-08-11 오후 3:48:31:729]    --->Got a Job
+<workflow>
+  <source_path>X:\\mp2\T2010-0301\PS-2013170745-01-001\</source_path>
+  <source_file>8a23b3c6-ab5c-49c2-be89-8c65c9ea228f.mxf</source_file>
+  <target_path>Z:\\mp4\T2010-0301\PS-2013170745-01-001\</target_path>
+  <default_opt>-qscale 5</default_opt>
+  <cti_Id>591820</cti_Id>
+  <audio_mode>02</audio_mode>
+  <job>
+    <job_id>373564</job_id>
+    <job_kind>video</job_kind>
+    <pro_flid>521</pro_flid>
+    <serv_bit>128k</serv_bit>
+    <ext>mp4</ext>
+    <vdo_codec>h264</vdo_codec>
+    <vdo_bit_rate>64</vdo_bit_rate>
+    <vdo_hori>320</vdo_hori>
+    <vdo_vert>180</vdo_vert>
+    <vdo_f_s>29.97</vdo_f_s>
+    <vdo_sync>0</vdo_sync>
+    <aud_codec>aac</aud_codec>
+    <aud_bit_rate>64</aud_bit_rate>
+    <aud_chan>2</aud_chan>
+    <aud_s_rate>48</aud_s_rate>
+    <target_file>8a23b3c6-ab5c-49c2-be89-8c65c9ea228f_128k_HD.mp4</target_file>
+    <qc_yn>Y</qc_yn>
+  </job>
+</workflow>
+[2015-08-11 오후 3:48:31:729]    Set CopyState : 373564 , False 
+[2015-08-11 오후 3:48:31:842]    --->[Start FileDelProc]
+[2015-08-11 오후 3:48:31:843]    --->[End FileDelProc]
+[2015-08-11 오후 3:48:31:843]    [Start FileCopy]
+[2015-08-11 오후 3:48:31:843]    [CTI_ID]591820 --> FileCopyStart X:\\mp2\T2010-0301\PS-2013170745-01-001\8a23b3c6-ab5c-49c2-be89-8c65c9ea228f.mxf->f:\TranscoderTempWorking\8a23b3c6-ab5c-49c2-be89-8c65c9ea228f.mxf
+[2015-08-11 오후 3:48:31:844]         [XCOPY_FAIL] RetryCont : 0 X:\\mp2\T2010-0301\PS-2013170745-01-001\8a23b3c6-ab5c-49c2-be89-8c65c9ea228f.mxf 파일이 존재하지 않습니다. (10초대기)
+[2015-08-11 오후 3:48:41:845]    [CTI_ID]591820 --> FileCopyStart X:\\mp2\T2010-0301\PS-2013170745-01-001\8a23b3c6-ab5c-49c2-be89-8c65c9ea228f.mxf->f:\TranscoderTempWorking\8a23b3c6-ab5c-49c2-be89-8c65c9ea228f.mxf
+[2015-08-11 오후 3:48:41:845]         [XCOPY_FAIL] RetryCont : 1 X:\\mp2\T2010-0301\PS-2013170745-01-001\8a23b3c6-ab5c-49c2-be89-8c65c9ea228f.mxf 파일이 존재하지 않습니다. (10초대기)
+[2015-08-11 오후 3:48:51:845]    [CTI_ID]591820 --> FileCopyStart X:\\mp2\T2010-0301\PS-2013170745-01-001\8a23b3c6-ab5c-49c2-be89-8c65c9ea228f.mxf->f:\TranscoderTempWorking\8a23b3c6-ab5c-49c2-be89-8c65c9ea228f.mxf
+[2015-08-11 오후 3:48:51:846]         [XCOPY_FAIL] RetryCont : 2 X:\\mp2\T2010-0301\PS-2013170745-01-001\8a23b3c6-ab5c-49c2-be89-8c65c9ea228f.mxf 파일이 존재하지 않습니다. (10초대기)
+[2015-08-11 오후 3:49:01:847]    [CTI_ID]591820 --> FileCopyStart X:\\mp2\T2010-0301\PS-2013170745-01-001\8a23b3c6-ab5c-49c2-be89-8c65c9ea228f.mxf->f:\TranscoderTempWorking\8a23b3c6-ab5c-49c2-be89-8c65c9ea228f.mxf
+[2015-08-11 오후 3:49:02:507]         [XCOPY_FAIL] RetryCont : 3 X:\\mp2\T2010-0301\PS-2013170745-01-001\8a23b3c6-ab5c-49c2-be89-8c65c9ea228f.mxf 파일이 존재하지 않습니다. (10초대기)
+[2015-08-11 오후 3:49:12:507]    [CTI_ID]591820 --> FileCopyStart X:\\mp2\T2010-0301\PS-2013170745-01-001\8a23b3c6-ab5c-49c2-be89-8c65c9ea228f.mxf->f:\TranscoderTempWorking\8a23b3c6-ab5c-49c2-be89-8c65c9ea228f.mxf
+[2015-08-11 오후 3:49:13:157]         [XCOPY_FAIL] RetryCont : 4 X:\\mp2\T2010-0301\PS-2013170745-01-001\8a23b3c6-ab5c-49c2-be89-8c65c9ea228f.mxf 파일이 존재하지 않습니다. (10초대기)
+[2015-08-11 오후 3:49:23:157]    [CTI_ID]591820 --> FileCopyStart X:\\mp2\T2010-0301\PS-2013170745-01-001\8a23b3c6-ab5c-49c2-be89-8c65c9ea228f.mxf->f:\TranscoderTempWorking\8a23b3c6-ab5c-49c2-be89-8c65c9ea228f.mxf
+[2015-08-11 오후 3:49:23:157]         [XCOPY_FAIL] RetryCont : 5 X:\\mp2\T2010-0301\PS-2013170745-01-001\8a23b3c6-ab5c-49c2-be89-8c65c9ea228f.mxf 파일이 존재하지 않습니다. (10초대기)
+[2015-08-11 오후 3:49:33:161]    [CopyComplete] --> FileCopyExist? : False
+[2015-08-11 오후 3:49:33:161]    Set CopyState : 373564 , True 
+[2015-08-11 오후 3:49:33:298]    [End FileCopy]
+[2015-08-11 오후 3:49:33:412]    TC_02_05 Occured Error : READ_ERROR - CheckEror Value : True
+[2015-08-11 오후 3:49:42:901]    --->Got a Job
+<workflow>
+  <source_path>X:\\mp2\T2003-0131\PS-2013147629-01-000\</source_path>
+  <source_file>1db83f9a-8a88-46d5-aca9-31ae5461cc08.ts</source_file>
+  <target_path>Z:\\mp4\T2003-0131\PS-2013147629-01-000\</target_path>
+  <default_opt>-qscale 5</default_opt>
+  <cti_Id>591837</cti_Id>
+  <audio_mode>02</audio_mode>
+  <start_time>1</start_time>
+  <end_time>1200</end_time>
+  <job>
+    <job_id>373569</job_id>
+    <job_kind>video</job_kind>
+    <pro_flid>521</pro_flid>
+    <serv_bit>128k</serv_bit>
+    <ext>mp4</ext>
+    <vdo_codec>h264</vdo_codec>
+    <vdo_bit_rate>64</vdo_bit_rate>
+    <vdo_hori>320</vdo_hori>
+    <vdo_vert>180</vdo_vert>
+    <vdo_f_s>29.97</vdo_f_s>
+    <vdo_sync>0</vdo_sync>
+    <aud_codec>aac</aud_codec>
+    <aud_bit_rate>64</aud_bit_rate>
+    <aud_chan>2</aud_chan>
+    <aud_s_rate>48</aud_s_rate>
+    <target_file>1db83f9a-8a88-46d5-aca9-31ae5461cc08_128k_HD.mp4</target_file>
+    <qc_yn>Y</qc_yn>
+  </job>
+</workflow>
+[2015-08-11 오후 3:49:42:901]    Set CopyState : 373569 , False 
+[2015-08-11 오후 3:49:43:014]    --->[Start FileDelProc]
+[2015-08-11 오후 3:49:43:014]    --->[End FileDelProc]
+[2015-08-11 오후 3:49:43:014]    [Start FileCopy]
+[2015-08-11 오후 3:49:43:014]    [CTI_ID]591837 --> FileCopyStart X:\\mp2\T2003-0131\PS-2013147629-01-000\1db83f9a-8a88-46d5-aca9-31ae5461cc08.ts->f:\TranscoderTempWorking\1db83f9a-8a88-46d5-aca9-31ae5461cc08.ts
+[2015-08-11 오후 3:50:33:583]         [XCOPY_END] X:\\mp2\T2003-0131\PS-2013147629-01-000\1db83f9a-8a88-46d5-aca9-31ae5461cc08.ts -> Exist? : True
+[2015-08-11 오후 3:50:33:583]         [XCOPY_END] f:\TranscoderTempWorking\1db83f9a-8a88-46d5-aca9-31ae5461cc08.ts -> Exist? : True
+[2015-08-11 오후 3:50:33:583]    [CopyComplete]f:\TranscoderTempWorking\1db83f9a-8a88-46d5-aca9-31ae5461cc08.ts --> FileCopyExist? : True
+[2015-08-11 오후 3:50:33:583]    Set CopyState : 373569 , True 
+[2015-08-11 오후 3:50:33:687]    [End FileCopy]
+[2015-08-11 오후 3:52:08:575]    TC_02_02 Occured Error : ETC_ERROR - CheckEror Value : True
+[2015-08-11 오후 4:22:03:757]    HTTP 상태 404: Not Found(으)로 인해 요청하지 못했습니다.
+   위치: System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   위치: System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   위치: Transcoder_KBS.SoapObj.ServiceNavigatorService.saveStatus(String arg0) 파일 D:\Sehee Source\02 KBS\05 Transcoder_KBS\Transcoder_KBS\Web References\SoapObj\Reference.cs:줄 174
+   위치: Transcoder_KBS.WorkAgent.QueryGetJobs(String eqid) 파일 D:\Sehee Source\02 KBS\05 Transcoder_KBS\Transcoder_KBS\WorkAgent.cs:줄 501
+[2015-08-11 오후 4:22:03:757]    [GetJob-Exception - Cleared Memory]
+[2015-08-11 오후 4:22:26:829]    HTTP 상태 404: Not Found(으)로 인해 요청하지 못했습니다.
+   위치: System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   위치: System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   위치: Transcoder_KBS.SoapObj.ServiceNavigatorService.saveStatus(String arg0) 파일 D:\Sehee Source\02 KBS\05 Transcoder_KBS\Transcoder_KBS\Web References\SoapObj\Reference.cs:줄 174
+   위치: Transcoder_KBS.WorkAgent.QueryGetJobs(String eqid) 파일 D:\Sehee Source\02 KBS\05 Transcoder_KBS\Transcoder_KBS\WorkAgent.cs:줄 501
+[2015-08-11 오후 4:22:26:829]    [GetJob-Exception - Cleared Memory]
+[2015-08-11 오후 4:22:49:902]    HTTP 상태 404: Not Found(으)로 인해 요청하지 못했습니다.
+   위치: System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   위치: System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   위치: Transcoder_KBS.SoapObj.ServiceNavigatorService.saveStatus(String arg0) 파일 D:\Sehee Source\02 KBS\05 Transcoder_KBS\Transcoder_KBS\Web References\SoapObj\Reference.cs:줄 174
+   위치: Transcoder_KBS.WorkAgent.QueryGetJobs(String eqid) 파일 D:\Sehee Source\02 KBS\05 Transcoder_KBS\Transcoder_KBS\WorkAgent.cs:줄 501
+[2015-08-11 오후 4:22:49:902]    [GetJob-Exception - Cleared Memory]
+[2015-08-11 오후 4:23:12:974]    HTTP 상태 404: Not Found(으)로 인해 요청하지 못했습니다.
+   위치: System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   위치: System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   위치: Transcoder_KBS.SoapObj.ServiceNavigatorService.saveStatus(String arg0) 파일 D:\Sehee Source\02 KBS\05 Transcoder_KBS\Transcoder_KBS\Web References\SoapObj\Reference.cs:줄 174
+   위치: Transcoder_KBS.WorkAgent.QueryGetJobs(String eqid) 파일 D:\Sehee Source\02 KBS\05 Transcoder_KBS\Transcoder_KBS\WorkAgent.cs:줄 501
+[2015-08-11 오후 4:23:12:974]    [GetJob-Exception - Cleared Memory]
+[2015-08-11 오후 4:23:36:047]    HTTP 상태 404: Not Found(으)로 인해 요청하지 못했습니다.
+   위치: System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   위치: System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   위치: Transcoder_KBS.SoapObj.ServiceNavigatorService.saveStatus(String arg0) 파일 D:\Sehee Source\02 KBS\05 Transcoder_KBS\Transcoder_KBS\Web References\SoapObj\Reference.cs:줄 174
+   위치: Transcoder_KBS.WorkAgent.QueryGetJobs(String eqid) 파일 D:\Sehee Source\02 KBS\05 Transcoder_KBS\Transcoder_KBS\WorkAgent.cs:줄 501
+[2015-08-11 오후 4:23:36:047]    [GetJob-Exception - Cleared Memory]
+[2015-08-11 오후 4:23:59:119]    HTTP 상태 404: Not Found(으)로 인해 요청하지 못했습니다.
+   위치: System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   위치: System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   위치: Transcoder_KBS.SoapObj.ServiceNavigatorService.saveStatus(String arg0) 파일 D:\Sehee Source\02 KBS\05 Transcoder_KBS\Transcoder_KBS\Web References\SoapObj\Reference.cs:줄 174
+   위치: Transcoder_KBS.WorkAgent.QueryGetJobs(String eqid) 파일 D:\Sehee Source\02 KBS\05 Transcoder_KBS\Transcoder_KBS\WorkAgent.cs:줄 501
+[2015-08-11 오후 4:23:59:119]    [GetJob-Exception - Cleared Memory]
+[2015-08-11 오후 4:24:22:207]    HTTP 상태 404: Not Found(으)로 인해 요청하지 못했습니다.
+   위치: System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   위치: System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   위치: Transcoder_KBS.SoapObj.ServiceNavigatorService.saveStatus(String arg0) 파일 D:\Sehee Source\02 KBS\05 Transcoder_KBS\Transcoder_KBS\Web References\SoapObj\Reference.cs:줄 174
+   위치: Transcoder_KBS.WorkAgent.QueryGetJobs(String eqid) 파일 D:\Sehee Source\02 KBS\05 Transcoder_KBS\Transcoder_KBS\WorkAgent.cs:줄 501
+[2015-08-11 오후 4:24:22:207]    [GetJob-Exception - Cleared Memory]
+[2015-08-11 오후 4:24:45:280]    HTTP 상태 404: Not Found(으)로 인해 요청하지 못했습니다.
+   위치: System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   위치: System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   위치: Transcoder_KBS.SoapObj.ServiceNavigatorService.saveStatus(String arg0) 파일 D:\Sehee Source\02 KBS\05 Transcoder_KBS\Transcoder_KBS\Web References\SoapObj\Reference.cs:줄 174
+   위치: Transcoder_KBS.WorkAgent.QueryGetJobs(String eqid) 파일 D:\Sehee Source\02 KBS\05 Transcoder_KBS\Transcoder_KBS\WorkAgent.cs:줄 501
+[2015-08-11 오후 4:24:45:280]    [GetJob-Exception - Cleared Memory]
+[2015-08-11 오후 4:25:08:336]    HTTP 상태 404: Not Found(으)로 인해 요청하지 못했습니다.
+   위치: System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   위치: System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   위치: Transcoder_KBS.SoapObj.ServiceNavigatorService.saveStatus(String arg0) 파일 D:\Sehee Source\02 KBS\05 Transcoder_KBS\Transcoder_KBS\Web References\SoapObj\Reference.cs:줄 174
+   위치: Transcoder_KBS.WorkAgent.QueryGetJobs(String eqid) 파일 D:\Sehee Source\02 KBS\05 Transcoder_KBS\Transcoder_KBS\WorkAgent.cs:줄 501
+[2015-08-11 오후 4:25:08:336]    [GetJob-Exception - Cleared Memory]
+[2015-08-11 오후 4:25:31:409]    HTTP 상태 404: Not Found(으)로 인해 요청하지 못했습니다.
+   위치: System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   위치: System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   위치: Transcoder_KBS.SoapObj.ServiceNavigatorService.saveStatus(String arg0) 파일 D:\Sehee Source\02 KBS\05 Transcoder_KBS\Transcoder_KBS\Web References\SoapObj\Reference.cs:줄 174
+   위치: Transcoder_KBS.WorkAgent.QueryGetJobs(String eqid) 파일 D:\Sehee Source\02 KBS\05 Transcoder_KBS\Transcoder_KBS\WorkAgent.cs:줄 501
+[2015-08-11 오후 4:25:31:409]    [GetJob-Exception - Cleared Memory]
+[2015-08-11 오후 4:25:54:481]    HTTP 상태 404: Not Found(으)로 인해 요청하지 못했습니다.
+   위치: System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   위치: System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   위치: Transcoder_KBS.SoapObj.ServiceNavigatorService.saveStatus(String arg0) 파일 D:\Sehee Source\02 KBS\05 Transcoder_KBS\Transcoder_KBS\Web References\SoapObj\Reference.cs:줄 174
+   위치: Transcoder_KBS.WorkAgent.QueryGetJobs(String eqid) 파일 D:\Sehee Source\02 KBS\05 Transcoder_KBS\Transcoder_KBS\WorkAgent.cs:줄 501
+[2015-08-11 오후 4:25:54:481]    [GetJob-Exception - Cleared Memory]
+[2015-08-11 오후 4:26:17:554]    HTTP 상태 404: Not Found(으)로 인해 요청하지 못했습니다.
+   위치: System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   위치: System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   위치: Transcoder_KBS.SoapObj.ServiceNavigatorService.saveStatus(String arg0) 파일 D:\Sehee Source\02 KBS\05 Transcoder_KBS\Transcoder_KBS\Web References\SoapObj\Reference.cs:줄 174
+   위치: Transcoder_KBS.WorkAgent.QueryGetJobs(String eqid) 파일 D:\Sehee Source\02 KBS\05 Transcoder_KBS\Transcoder_KBS\WorkAgent.cs:줄 501
+[2015-08-11 오후 4:26:17:554]    [GetJob-Exception - Cleared Memory]
+[2015-08-11 오후 4:26:40:626]    HTTP 상태 404: Not Found(으)로 인해 요청하지 못했습니다.
+   위치: System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   위치: System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   위치: Transcoder_KBS.SoapObj.ServiceNavigatorService.saveStatus(String arg0) 파일 D:\Sehee Source\02 KBS\05 Transcoder_KBS\Transcoder_KBS\Web References\SoapObj\Reference.cs:줄 174
+   위치: Transcoder_KBS.WorkAgent.QueryGetJobs(String eqid) 파일 D:\Sehee Source\02 KBS\05 Transcoder_KBS\Transcoder_KBS\WorkAgent.cs:줄 501
+[2015-08-11 오후 4:26:40:626]    [GetJob-Exception - Cleared Memory]
+[2015-08-11 오후 4:27:03:699]    HTTP 상태 404: Not Found(으)로 인해 요청하지 못했습니다.
+   위치: System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   위치: System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   위치: Transcoder_KBS.SoapObj.ServiceNavigatorService.saveStatus(String arg0) 파일 D:\Sehee Source\02 KBS\05 Transcoder_KBS\Transcoder_KBS\Web References\SoapObj\Reference.cs:줄 174
+   위치: Transcoder_KBS.WorkAgent.QueryGetJobs(String eqid) 파일 D:\Sehee Source\02 KBS\05 Transcoder_KBS\Transcoder_KBS\WorkAgent.cs:줄 501
+[2015-08-11 오후 4:27:03:699]    [GetJob-Exception - Cleared Memory]
+[2015-08-11 오후 4:27:26:771]    HTTP 상태 404: Not Found(으)로 인해 요청하지 못했습니다.
+   위치: System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   위치: System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   위치: Transcoder_KBS.SoapObj.ServiceNavigatorService.saveStatus(String arg0) 파일 D:\Sehee Source\02 KBS\05 Transcoder_KBS\Transcoder_KBS\Web References\SoapObj\Reference.cs:줄 174
+   위치: Transcoder_KBS.WorkAgent.QueryGetJobs(String eqid) 파일 D:\Sehee Source\02 KBS\05 Transcoder_KBS\Transcoder_KBS\WorkAgent.cs:줄 501
+[2015-08-11 오후 4:27:26:771]    [GetJob-Exception - Cleared Memory]
+[2015-08-11 오후 4:27:49:843]    HTTP 상태 404: Not Found(으)로 인해 요청하지 못했습니다.
+   위치: System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   위치: System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   위치: Transcoder_KBS.SoapObj.ServiceNavigatorService.saveStatus(String arg0) 파일 D:\Sehee Source\02 KBS\05 Transcoder_KBS\Transcoder_KBS\Web References\SoapObj\Reference.cs:줄 174
+   위치: Transcoder_KBS.WorkAgent.QueryGetJobs(String eqid) 파일 D:\Sehee Source\02 KBS\05 Transcoder_KBS\Transcoder_KBS\WorkAgent.cs:줄 501
+[2015-08-11 오후 4:27:49:843]    [GetJob-Exception - Cleared Memory]
+[2015-08-11 오후 4:28:12:916]    HTTP 상태 404: Not Found(으)로 인해 요청하지 못했습니다.
+   위치: System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   위치: System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   위치: Transcoder_KBS.SoapObj.ServiceNavigatorService.saveStatus(String arg0) 파일 D:\Sehee Source\02 KBS\05 Transcoder_KBS\Transcoder_KBS\Web References\SoapObj\Reference.cs:줄 174
+   위치: Transcoder_KBS.WorkAgent.QueryGetJobs(String eqid) 파일 D:\Sehee Source\02 KBS\05 Transcoder_KBS\Transcoder_KBS\WorkAgent.cs:줄 501
+[2015-08-11 오후 4:28:12:916]    [GetJob-Exception - Cleared Memory]
