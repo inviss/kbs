@@ -1,9 +1,0 @@
-﻿<?xml version='1.0' encoding='utf-8'?>
-<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Transcoder_KBS.Properties" GeneratedClassName="Settings">
-  <Profiles />
-  <Settings>
-    <Setting Name="Transcoder_KBS_SoapObj_ServiceNavigatorService" Type="(Web Service URL)" Scope="Application">
-      <Value Profile="(Default)">http://14.36.147.23/asehub/services/ServiceNavigator</Value>
-    </Setting>
-  </Settings>
-</SettingsFile>

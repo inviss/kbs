@@ -1,8 +1,0 @@
-[2015-08-11 오후 2:56:00:572]    ****************Initialized*******************
-[2015-08-11 오후 2:56:01:185]    [By MainForm] ==============[Start Delete For Errored Files]=================
-[2015-08-11 오후 2:56:03:155]    HTTP 상태 404: Not Found(으)로 인해 요청하지 못했습니다.
-   위치: System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
-   위치: System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
-   위치: Transcoder_KBS.SoapObj.ServiceNavigatorService.saveStatus(String arg0) 파일 D:\Sehee Source\02 KBS\05 Transcoder_KBS\Transcoder_KBS\Web References\SoapObj\Reference.cs:줄 174
-   위치: Transcoder_KBS.WorkAgent.QueryGetJobs(String eqid) 파일 D:\Sehee Source\02 KBS\05 Transcoder_KBS\Transcoder_KBS\WorkAgent.cs:줄 501
-[2015-08-11 오후 2:56:03:185]    [GetJob-Exception - Cleared Memory]
