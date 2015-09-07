@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://soap.d2net.co.kr/" xmlns:ns1="http://cxf.apache.org/bindings/xformat" name="ServiceNavigatorService" targetNamespace="http://soap.d2net.co.kr/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xs:schema elementFormDefault="unqualified" targetNamespace="http://soap.d2net.co.kr/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="findContents" type="tns:findContents" />
+      <xs:element name="findContentsResponse" type="tns:findContentsResponse" />
+      <xs:element name="findDailySchedule" type="tns:findDailySchedule" />
+      <xs:element name="findDailyScheduleResponse" type="tns:findDailyScheduleResponse" />
+      <xs:element name="findTransfers" type="tns:findTransfers" />
+      <xs:element name="findTransfersResponse" type="tns:findTransfersResponse" />
+      <xs:element name="saveContents" type="tns:saveContents" />
+      <xs:element name="saveContentsResponse" type="tns:saveContentsResponse" />
+      <xs:element name="saveFileIngest" type="tns:saveFileIngest" />
+      <xs:element name="saveFileIngestResponse" type="tns:saveFileIngestResponse" />
+      <xs:element name="saveReports" type="tns:saveReports" />
+      <xs:element name="saveReportsResponse" type="tns:saveReportsResponse" />
+      <xs:element name="saveStatus" type="tns:saveStatus" />
+      <xs:element name="saveStatusResponse" type="tns:saveStatusResponse" />
+      <xs:element name="soapTest" type="tns:soapTest" />
+      <xs:element name="soapTestResponse" type="tns:soapTestResponse" />
+      <xs:complexType name="saveFileIngest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="saveFileIngestResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="findTransfers">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="findTransfersResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="saveStatus">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="saveStatusResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="soapTest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="soapTestResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="saveReports">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="saveReportsResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="saveContents">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="saveContentsResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="findDailySchedule">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="findDailyScheduleResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="findContents">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="findContentsResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="findTransfers">
+    <wsdl:part name="parameters" element="tns:findTransfers" />
+  </wsdl:message>
+  <wsdl:message name="findTransfersResponse">
+    <wsdl:part name="parameters" element="tns:findTransfersResponse" />
+  </wsdl:message>
+  <wsdl:message name="findContentsResponse">
+    <wsdl:part name="parameters" element="tns:findContentsResponse" />
+  </wsdl:message>
+  <wsdl:message name="findDailySchedule">
+    <wsdl:part name="parameters" element="tns:findDailySchedule" />
+  </wsdl:message>
+  <wsdl:message name="saveStatus">
+    <wsdl:part name="parameters" element="tns:saveStatus" />
+  </wsdl:message>
+  <wsdl:message name="saveContentsResponse">
+    <wsdl:part name="parameters" element="tns:saveContentsResponse" />
+  </wsdl:message>
+  <wsdl:message name="saveReportsResponse">
+    <wsdl:part name="parameters" element="tns:saveReportsResponse" />
+  </wsdl:message>
+  <wsdl:message name="saveStatusResponse">
+    <wsdl:part name="parameters" element="tns:saveStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="saveContents">
+    <wsdl:part name="parameters" element="tns:saveContents" />
+  </wsdl:message>
+  <wsdl:message name="findContents">
+    <wsdl:part name="parameters" element="tns:findContents" />
+  </wsdl:message>
+  <wsdl:message name="saveFileIngest">
+    <wsdl:part name="parameters" element="tns:saveFileIngest" />
+  </wsdl:message>
+  <wsdl:message name="saveFileIngestResponse">
+    <wsdl:part name="parameters" element="tns:saveFileIngestResponse" />
+  </wsdl:message>
+  <wsdl:message name="soapTestResponse">
+    <wsdl:part name="parameters" element="tns:soapTestResponse" />
+  </wsdl:message>
+  <wsdl:message name="saveReports">
+    <wsdl:part name="parameters" element="tns:saveReports" />
+  </wsdl:message>
+  <wsdl:message name="findDailyScheduleResponse">
+    <wsdl:part name="parameters" element="tns:findDailyScheduleResponse" />
+  </wsdl:message>
+  <wsdl:message name="soapTest">
+    <wsdl:part name="parameters" element="tns:soapTest" />
+  </wsdl:message>
+  <wsdl:portType name="Navigator">
+    <wsdl:operation name="saveFileIngest">
+      <wsdl:input name="saveFileIngest" message="tns:saveFileIngest" />
+      <wsdl:output name="saveFileIngestResponse" message="tns:saveFileIngestResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="findTransfers">
+      <wsdl:input name="findTransfers" message="tns:findTransfers" />
+      <wsdl:output name="findTransfersResponse" message="tns:findTransfersResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="saveStatus">
+      <wsdl:input name="saveStatus" message="tns:saveStatus" />
+      <wsdl:output name="saveStatusResponse" message="tns:saveStatusResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="soapTest">
+      <wsdl:input name="soapTest" message="tns:soapTest" />
+      <wsdl:output name="soapTestResponse" message="tns:soapTestResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="saveReports">
+      <wsdl:input name="saveReports" message="tns:saveReports" />
+      <wsdl:output name="saveReportsResponse" message="tns:saveReportsResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="saveContents">
+      <wsdl:input name="saveContents" message="tns:saveContents" />
+      <wsdl:output name="saveContentsResponse" message="tns:saveContentsResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="findDailySchedule">
+      <wsdl:input name="findDailySchedule" message="tns:findDailySchedule" />
+      <wsdl:output name="findDailyScheduleResponse" message="tns:findDailyScheduleResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="findContents">
+      <wsdl:input name="findContents" message="tns:findContents" />
+      <wsdl:output name="findContentsResponse" message="tns:findContentsResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ServiceNavigatorServiceSoapBinding" type="tns:Navigator">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="saveFileIngest">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="saveFileIngest">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="saveFileIngestResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="findTransfers">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="findTransfers">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="findTransfersResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="saveStatus">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="saveStatus">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="saveStatusResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="soapTest">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="soapTest">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="soapTestResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="saveReports">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="saveReports">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="saveReportsResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="saveContents">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="saveContents">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="saveContentsResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="findDailySchedule">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="findDailySchedule">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="findDailyScheduleResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="findContents">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="findContents">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="findContentsResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServiceNavigatorService">
+    <wsdl:port name="ServiceNavigatorPort" binding="tns:ServiceNavigatorServiceSoapBinding">
+      <soap:address location="http://14.36.147.23/asehub/services/ServiceNavigator" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

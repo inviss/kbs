@@ -1,0 +1,177 @@
+[2015-08-13 오후 4:28:54:317]    ****************Initialized*******************
+[2015-08-13 오후 4:29:44:425]    --->Got a Job 373569
+[2015-08-13 오후 4:29:44:528]    ******************Start Transcording JobID :[373569]******************
+[2015-08-13 오후 4:29:44:531]    --------------------FFPROBE------------------------
+[2015-08-13 오후 4:29:44:587]    ffprobe version 2.4.2 Copyright (c) 2007-2014 the FFmpeg developers
+[2015-08-13 오후 4:29:44:594]      built on Dec 17 2014 01:04:08 with gcc 4.8.1 (GCC)
+[2015-08-13 오후 4:29:44:594]      configuration: --prefix=_output/ --disable-debug --disable-pthreads --enable-w32threads --enable-postproc --cpu=i686 --enable-static --enable-shared --enable-gpl --enable-version3 --enable-runtime-cpudetect --enable-memalign-hack --enable-avisynth --enable-libx264 --enable-nonfree --enable-libmp3lame --enable-cross-compile --target-os=mingw32 --arch=x86_64 --disable-network --pkg-config=pkg-config
+[2015-08-13 오후 4:29:44:594]      libavutil      54.  7.100 / 54.  7.100
+[2015-08-13 오후 4:29:44:594]      libavcodec     56.  1.100 / 56.  1.100
+[2015-08-13 오후 4:29:44:594]      libavformat    56.  4.101 / 56.  4.101
+[2015-08-13 오후 4:29:44:594]      libavdevice    56.  0.100 / 56.  0.100
+[2015-08-13 오후 4:29:44:594]      libavfilter     5.  1.100 /  5.  1.100
+[2015-08-13 오후 4:29:44:594]      libswscale      3.  0.100 /  3.  0.100
+[2015-08-13 오후 4:29:44:594]      libswresample   1.  1.100 /  1.  1.100
+[2015-08-13 오후 4:29:44:594]      libpostproc    53.  0.100 / 53.  0.100
+[2015-08-13 오후 4:29:44:594]    [h264 @ 01f41b40] non-existing PPS 0 referenced
+[2015-08-13 오후 4:29:44:594]        Last message repeated 1 times
+[2015-08-13 오후 4:29:44:594]    [h264 @ 01f41b40] decode_slice_header error
+[2015-08-13 오후 4:29:44:594]    [h264 @ 01f41b40] no frame!
+[2015-08-13 오후 4:29:44:594]    [h264 @ 01f41b40] non-existing PPS 0 referenced
+[2015-08-13 오후 4:29:44:594]        Last message repeated 1 times
+[2015-08-13 오후 4:29:44:594]    [h264 @ 01f41b40] decode_slice_header error
+[2015-08-13 오후 4:29:44:594]    [h264 @ 01f41b40] no frame!
+[2015-08-13 오후 4:29:44:594]    [h264 @ 01f41b40] non-existing PPS 0 referenced
+[2015-08-13 오후 4:29:44:594]        Last message repeated 1 times
+[2015-08-13 오후 4:29:44:594]    [h264 @ 01f41b40] decode_slice_header error
+[2015-08-13 오후 4:29:44:595]    [h264 @ 01f41b40] no frame!
+[2015-08-13 오후 4:29:44:595]    [h264 @ 01f41b40] non-existing PPS 0 referenced
+[2015-08-13 오후 4:29:44:595]        Last message repeated 1 times
+[2015-08-13 오후 4:29:44:595]    [h264 @ 01f41b40] decode_slice_header error
+[2015-08-13 오후 4:29:44:595]    [h264 @ 01f41b40] no frame!
+[2015-08-13 오후 4:29:44:595]    [h264 @ 01f41b40] non-existing PPS 0 referenced
+[2015-08-13 오후 4:29:44:595]        Last message repeated 1 times
+[2015-08-13 오후 4:29:44:595]    [h264 @ 01f41b40] decode_slice_header error
+[2015-08-13 오후 4:29:44:595]    [h264 @ 01f41b40] no frame!
+[2015-08-13 오후 4:29:44:595]    [h264 @ 01f41b40] non-existing PPS 0 referenced
+[2015-08-13 오후 4:29:44:595]        Last message repeated 1 times
+[2015-08-13 오후 4:29:44:595]    [h264 @ 01f41b40] decode_slice_header error
+[2015-08-13 오후 4:29:44:595]    [h264 @ 01f41b40] no frame!
+[2015-08-13 오후 4:29:44:595]    [h264 @ 01f41b40] non-existing PPS 0 referenced
+[2015-08-13 오후 4:29:44:595]        Last message repeated 1 times
+[2015-08-13 오후 4:29:44:595]    [h264 @ 01f41b40] decode_slice_header error
+[2015-08-13 오후 4:29:44:595]    [h264 @ 01f41b40] no frame!
+[2015-08-13 오후 4:29:44:595]    [h264 @ 01f41b40] non-existing PPS 0 referenced
+[2015-08-13 오후 4:29:44:595]        Last message repeated 1 times
+[2015-08-13 오후 4:29:44:595]    [h264 @ 01f41b40] decode_slice_header error
+[2015-08-13 오후 4:29:44:595]    [h264 @ 01f41b40] no frame!
+[2015-08-13 오후 4:29:44:595]    [h264 @ 01f41b40] non-existing PPS 0 referenced
+[2015-08-13 오후 4:29:44:595]        Last message repeated 1 times
+[2015-08-13 오후 4:29:44:595]    [h264 @ 01f41b40] decode_slice_header error
+[2015-08-13 오후 4:29:44:595]    [h264 @ 01f41b40] no frame!
+[2015-08-13 오후 4:29:44:595]    [h264 @ 01f41b40] non-existing PPS 0 referenced
+[2015-08-13 오후 4:29:44:595]        Last message repeated 1 times
+[2015-08-13 오후 4:29:44:595]    [h264 @ 01f41b40] decode_slice_header error
+[2015-08-13 오후 4:29:44:596]    [h264 @ 01f41b40] no frame!
+[2015-08-13 오후 4:29:44:596]    [h264 @ 01f41b40] non-existing PPS 0 referenced
+[2015-08-13 오후 4:29:44:596]        Last message repeated 1 times
+[2015-08-13 오후 4:29:44:596]    [h264 @ 01f41b40] decode_slice_header error
+[2015-08-13 오후 4:29:44:596]    [h264 @ 01f41b40] no frame!
+[2015-08-13 오후 4:29:44:596]    [h264 @ 01f41b40] non-existing PPS 0 referenced
+[2015-08-13 오후 4:29:44:596]        Last message repeated 1 times
+[2015-08-13 오후 4:29:44:596]    [h264 @ 01f41b40] decode_slice_header error
+[2015-08-13 오후 4:29:44:596]    [h264 @ 01f41b40] no frame!
+[2015-08-13 오후 4:29:44:596]    [h264 @ 01f41b40] non-existing PPS 0 referenced
+[2015-08-13 오후 4:29:44:596]        Last message repeated 1 times
+[2015-08-13 오후 4:29:44:596]    [h264 @ 01f41b40] decode_slice_header error
+[2015-08-13 오후 4:29:44:596]    [h264 @ 01f41b40] no frame!
+[2015-08-13 오후 4:29:44:596]    [h264 @ 01f41b40] non-existing PPS 0 referenced
+[2015-08-13 오후 4:29:44:596]        Last message repeated 1 times
+[2015-08-13 오후 4:29:44:596]    [h264 @ 01f41b40] decode_slice_header error
+[2015-08-13 오후 4:29:44:596]    [h264 @ 01f41b40] no frame!
+[2015-08-13 오후 4:29:44:596]    [mpegts @ 007ff8a0] Could not find codec parameters for stream 1 (Unknown: none ([11][0][0][0] / 0x000B)): unknown codec
+[2015-08-13 오후 4:29:44:596]    Consider increasing the value for the 'analyzeduration' and 'probesize' options
+[2015-08-13 오후 4:29:44:596]    [mpegts @ 007ff8a0] Could not find codec parameters for stream 2 (Unknown: none ([5][0][0][0] / 0x0005)): unknown codec
+[2015-08-13 오후 4:29:44:598]    Consider increasing the value for the 'analyzeduration' and 'probesize' options
+[2015-08-13 오후 4:29:44:598]    Input #0, mpegts, from 'f:\TranscoderTempWorking\1db83f9a-8a88-46d5-aca9-31ae5461cc08.ts':
+[2015-08-13 오후 4:29:44:598]      Duration: 00:39:45.80, start: 8468.412733, bitrate: 1763 kb/s
+[2015-08-13 오후 4:29:44:598]      Program 2 
+[2015-08-13 오후 4:29:44:598]        Stream #0:0[0x21]: Video: h264 (Constrained Baseline) ([27][0][0][0] / 0x001B), yuv420p, 640x360 [SAR 1:1 DAR 16:9], 29.97 fps, 29.97 tbr, 90k tbn, 59.94 tbc
+[2015-08-13 오후 4:29:44:598]        Stream #0:1[0x1100]: Unknown: none ([11][0][0][0] / 0x000B)
+[2015-08-13 오후 4:29:44:598]        Stream #0:2[0x501]: Unknown: none ([5][0][0][0] / 0x0005)
+[2015-08-13 오후 4:29:44:598]        Stream #0:3[0x24](kor): Audio: aac ([15][0][0][0] / 0x000F), 48000 Hz, stereo, fltp, 63 kb/s
+[2015-08-13 오후 4:29:44:598]    Unsupported codec with id 0 for input stream 1
+[2015-08-13 오후 4:29:44:598]    Unsupported codec with id 0 for input stream 2
+[2015-08-13 오후 4:29:44:598]    
+[2015-08-13 오후 4:29:44:600]    Extract MediaInfo Duration:00:39:45.80/ AudiocStreamCount:1
+File :f:\TranscoderTempWorking\1db83f9a-8a88-46d5-aca9-31ae5461cc08.ts
+[2015-08-13 오후 4:29:44:603]    ---------------------FFMPEG---------------------
+[2015-08-13 오후 4:29:44:603]    <TrimMode> Duration Force Changed 00:19:59.00
+[2015-08-13 오후 4:29:44:606]    [Make Arg] -> f:\TranscoderTempWorking\1db83f9a-8a88-46d5-aca9-31ae5461cc08.ts , [AudioMode] ->02
+[2015-08-13 오후 4:29:44:606]    Arg: -threads 12 -i "f:\TranscoderTempWorking\1db83f9a-8a88-46d5-aca9-31ae5461cc08.ts" -ss 1 -t 1199 -pix_fmt yuv420p -b:v 64k -sws_flags lanczos -vf "yadif=0:1-1, scale=320:180" -r 29.97 -vsync 0 -g 15 -c:a aac -ac 2 -ar 48000 -strict experimental "f:\TranscoderTempWorking\1db83f9a-8a88-46d5-aca9-31ae5461cc08_128k_HD.mp4"
+[2015-08-13 오후 4:29:44:627]      built on Dec 17 2014 01:04:08 with gcc 4.8.1 (GCC)
+[2015-08-13 오후 4:29:44:627]      configuration: --prefix=_output/ --disable-debug --disable-pthreads --enable-w32threads --enable-postproc --cpu=i686 --enable-static --enable-shared --enable-gpl --enable-version3 --enable-runtime-cpudetect --enable-memalign-hack --enable-avisynth --enable-libx264 --enable-nonfree --enable-libmp3lame --enable-cross-compile --target-os=mingw32 --arch=x86_64 --disable-network --pkg-config=pkg-config
+[2015-08-13 오후 4:29:44:661]    [mpegts @ 0062d500] Could not find codec parameters for stream 1 (Unknown: none ([11][0][0][0] / 0x000B)): unknown codec
+[2015-08-13 오후 4:29:44:661]    [mpegts @ 0062d500] Could not find codec parameters for stream 2 (Unknown: none ([5][0][0][0] / 0x0005)): unknown codec
+[2015-08-13 오후 4:29:44:661]    Input #0, mpegts, from 'f:\TranscoderTempWorking\1db83f9a-8a88-46d5-aca9-31ae5461cc08.ts':
+[2015-08-13 오후 4:29:44:661]      Duration: 00:39:45.80, start: 8468.412733, bitrate: 1763 kb/s
+[2015-08-13 오후 4:29:44:661]        Stream #0:0[0x21]: Video: h264 (Constrained Baseline) ([27][0][0][0] / 0x001B), yuv420p, 640x360 [SAR 1:1 DAR 16:9], 29.97 fps, 29.97 tbr, 90k tbn, 59.94 tbc
+[2015-08-13 오후 4:29:44:661]        Stream #0:1[0x1100]: Unknown: none ([11][0][0][0] / 0x000B)
+[2015-08-13 오후 4:29:44:661]        Stream #0:2[0x501]: Unknown: none ([5][0][0][0] / 0x0005)
+[2015-08-13 오후 4:29:44:661]        Stream #0:3[0x24](kor): Audio: aac ([15][0][0][0] / 0x000F), 48000 Hz, stereo, fltp, 63 kb/s
+[2015-08-13 오후 4:29:44:661]    [libx264 @ 02b5c9a0] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2
+[2015-08-13 오후 4:29:44:667]    [libx264 @ 02b5c9a0] 264 - core 142 - H.264/MPEG-4 AVC codec - Copyleft 2003-2014 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=36 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=15 keyint_min=1 scenecut=40 intra_refresh=0 rc_lookahead=15 rc=abr mbtree=1 bitrate=64 ratetol=1.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+[2015-08-13 오후 4:29:44:673]    Output #0, mp4, to 'f:\TranscoderTempWorking\1db83f9a-8a88-46d5-aca9-31ae5461cc08_128k_HD.mp4':
+[2015-08-13 오후 4:29:44:673]      Metadata:
+[2015-08-13 오후 4:29:44:673]        encoder         : Lavf56.4.101
+[2015-08-13 오후 4:29:44:673]        Stream #0:0: Video: h264 (libx264) ([33][0][0][0] / 0x0021), yuv420p, 320x180 [SAR 1:1 DAR 16:9], q=-1--1, 64 kb/s, 29.97 fps, 11988 tbn, 29.97 tbc
+[2015-08-13 오후 4:29:44:673]        Metadata:
+[2015-08-13 오후 4:29:44:673]          encoder         : Lavc56.1.100 libx264
+[2015-08-13 오후 4:29:44:673]        Stream #0:1(kor): Audio: aac ([64][0][0][0] / 0x0040), 48000 Hz, stereo, fltp, 128 kb/s
+[2015-08-13 오후 4:29:44:674]        Metadata:
+[2015-08-13 오후 4:29:44:674]          encoder         : Lavc56.1.100 aac
+[2015-08-13 오후 4:29:44:674]    Stream mapping:
+[2015-08-13 오후 4:29:44:674]      Stream #0:0 -> #0:0 (h264 (native) -> h264 (libx264))
+[2015-08-13 오후 4:29:44:674]      Stream #0:3 -> #0:1 (aac (native) -> aac (native))
+[2015-08-13 오후 4:31:16:310]    video:9477kB audio:18761kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 4.454908%
+[2015-08-13 오후 4:31:16:310]    [libx264 @ 02b5c9a0] frame I:2472  Avg QP:37.06  size:  2942
+[2015-08-13 오후 4:31:16:310]    [libx264 @ 02b5c9a0] frame P:15640 Avg QP:41.98  size:   120
+[2015-08-13 오후 4:31:16:310]    [libx264 @ 02b5c9a0] frame B:17818 Avg QP:45.91  size:    31
+[2015-08-13 오후 4:31:16:310]    [libx264 @ 02b5c9a0] consecutive B-frames: 24.1% 26.6%  8.5% 40.8%
+[2015-08-13 오후 4:31:16:310]    [libx264 @ 02b5c9a0] mb I  I16..4: 18.2% 50.4% 31.4%
+[2015-08-13 오후 4:31:16:310]    [libx264 @ 02b5c9a0] mb P  I16..4:  0.7%  0.9%  0.1%  P16..4: 12.6%  1.4%  0.6%  0.0%  0.0%    skip:83.7%
+[2015-08-13 오후 4:31:16:310]    [libx264 @ 02b5c9a0] mb B  I16..4:  0.0%  0.0%  0.0%  B16..8:  6.5%  0.1%  0.0%  direct: 0.0%  skip:93.4%  L0:30.0% L1:69.8% BI: 0.2%
+[2015-08-13 오후 4:31:16:310]    [libx264 @ 02b5c9a0] final ratefactor: 36.35
+[2015-08-13 오후 4:31:16:310]    [libx264 @ 02b5c9a0] 8x8 transform intra:50.5% inter:82.1%
+[2015-08-13 오후 4:31:16:310]    [libx264 @ 02b5c9a0] coded y,uvDC,uvAC intra: 54.0% 51.3% 20.0% inter: 0.8% 0.9% 0.1%
+[2015-08-13 오후 4:31:16:310]    [libx264 @ 02b5c9a0] i16 v,h,dc,p: 29% 42%  8% 20%
+[2015-08-13 오후 4:31:16:310]    [libx264 @ 02b5c9a0] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 23% 22% 21%  5%  5%  5%  6%  5%  7%
+[2015-08-13 오후 4:31:16:310]    [libx264 @ 02b5c9a0] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 28% 30% 13%  5%  5%  5%  6%  4%  5%
+[2015-08-13 오후 4:31:16:310]    [libx264 @ 02b5c9a0] i8c dc,h,v,p: 69% 18% 11%  2%
+[2015-08-13 오후 4:31:16:311]    [libx264 @ 02b5c9a0] Weighted P-Frames: Y:2.7% UV:1.1%
+[2015-08-13 오후 4:31:16:311]    [libx264 @ 02b5c9a0] ref P L0: 80.7%  7.8%  8.6%  2.7%  0.2%
+[2015-08-13 오후 4:31:16:311]    [libx264 @ 02b5c9a0] ref B L0: 89.0% 10.7%  0.3%
+[2015-08-13 오후 4:31:16:311]    [libx264 @ 02b5c9a0] ref B L1: 98.6%  1.4%
+[2015-08-13 오후 4:31:16:311]    [libx264 @ 02b5c9a0] kb/s:64.75
+[2015-08-13 오후 4:31:16:357]    --------------------FFPROBE------------------------
+[2015-08-13 오후 4:31:16:398]    ffprobe version 2.4.2 Copyright (c) 2007-2014 the FFmpeg developers
+[2015-08-13 오후 4:31:16:398]      built on Dec 17 2014 01:04:08 with gcc 4.8.1 (GCC)
+[2015-08-13 오후 4:31:16:398]      configuration: --prefix=_output/ --disable-debug --disable-pthreads --enable-w32threads --enable-postproc --cpu=i686 --enable-static --enable-shared --enable-gpl --enable-version3 --enable-runtime-cpudetect --enable-memalign-hack --enable-avisynth --enable-libx264 --enable-nonfree --enable-libmp3lame --enable-cross-compile --target-os=mingw32 --arch=x86_64 --disable-network --pkg-config=pkg-config
+[2015-08-13 오후 4:31:16:398]      libavutil      54.  7.100 / 54.  7.100
+[2015-08-13 오후 4:31:16:398]      libavcodec     56.  1.100 / 56.  1.100
+[2015-08-13 오후 4:31:16:398]      libavformat    56.  4.101 / 56.  4.101
+[2015-08-13 오후 4:31:16:398]      libavdevice    56.  0.100 / 56.  0.100
+[2015-08-13 오후 4:31:16:398]      libavfilter     5.  1.100 /  5.  1.100
+[2015-08-13 오후 4:31:16:399]      libswscale      3.  0.100 /  3.  0.100
+[2015-08-13 오후 4:31:16:399]      libswresample   1.  1.100 /  1.  1.100
+[2015-08-13 오후 4:31:16:399]      libpostproc    53.  0.100 / 53.  0.100
+[2015-08-13 오후 4:31:16:399]    Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'f:\TranscoderTempWorking\1db83f9a-8a88-46d5-aca9-31ae5461cc08_128k_HD.mp4':
+[2015-08-13 오후 4:31:16:399]      Metadata:
+[2015-08-13 오후 4:31:16:399]        major_brand     : isom
+[2015-08-13 오후 4:31:16:399]        minor_version   : 512
+[2015-08-13 오후 4:31:16:399]        compatible_brands: isomiso2avc1mp41
+[2015-08-13 오후 4:31:16:399]        encoder         : Lavf56.4.101
+[2015-08-13 오후 4:31:16:399]      Duration: 00:19:59.02, start: 0.021333, bitrate: 201 kb/s
+[2015-08-13 오후 4:31:16:399]        Stream #0:0(und): Video: h264 (High) (avc1 / 0x31637661), yuv420p, 320x180 [SAR 1:1 DAR 16:9], 64 kb/s, 29.97 fps, 29.97 tbr, 11988 tbn, 59.94 tbc (default)
+[2015-08-13 오후 4:31:16:399]        Metadata:
+[2015-08-13 오후 4:31:16:399]          handler_name    : VideoHandler
+[2015-08-13 오후 4:31:16:399]        Stream #0:1(kor): Audio: aac (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 128 kb/s (default)
+[2015-08-13 오후 4:31:16:399]        Metadata:
+[2015-08-13 오후 4:31:16:399]          handler_name    : SoundHandler
+[2015-08-13 오후 4:31:16:399]    
+[2015-08-13 오후 4:31:16:401]    Extract MediaInfo Duration:00:19:59.02/ AudiocStreamCount:1
+File :f:\TranscoderTempWorking\1db83f9a-8a88-46d5-aca9-31ae5461cc08_128k_HD.mp4
+[2015-08-13 오후 4:31:16:401]    [Validation Check] f:\TranscoderTempWorking\1db83f9a-8a88-46d5-aca9-31ae5461cc08_128k_HD.mp4 ,Exist=True,Size=30203777/1048576(최소사이즈[1MB]),Percent=100
+[2015-08-13 오후 4:31:16:402]    [Validation Check-OK] Src Duration : 00:19:59.00 Des Duration : 00:19:59.01
+[2015-08-13 오후 4:31:17:632]    FileMove : f:\TranscoderTempWorking\1db83f9a-8a88-46d5-aca9-31ae5461cc08_128k_HD.mp4 -> Y:\\mp4\T2003-0131\PS-2013147629-01-000\\1db83f9a-8a88-46d5-aca9-31ae5461cc08_128k_HD.mp4
+[2015-08-13 오후 4:31:30:382]    [Profile Move Excepted-RetryCount : 0] gg
+   위치: Transcoder_KBS.Transcoder.StartFFmpeg() 파일 D:\Sehee Source\02 KBS\05 Transcoder_KBS\Transcoder_KBS\Transcoder.cs:줄 356
+[2015-08-13 오후 4:31:33:240]    [Profile Move Excepted-RetryCount : 0] gg
+   위치: Transcoder_KBS.Transcoder.StartFFmpeg() 파일 D:\Sehee Source\02 KBS\05 Transcoder_KBS\Transcoder_KBS\Transcoder.cs:줄 356
+[2015-08-13 오후 4:31:34:473]    [Profile Move Excepted-RetryCount : 0] gg
+   위치: Transcoder_KBS.Transcoder.StartFFmpeg() 파일 D:\Sehee Source\02 KBS\05 Transcoder_KBS\Transcoder_KBS\Transcoder.cs:줄 356
+[2015-08-13 오후 4:31:35:775]    [Profile Move Excepted-RetryCount : 0] gg
+   위치: Transcoder_KBS.Transcoder.StartFFmpeg() 파일 D:\Sehee Source\02 KBS\05 Transcoder_KBS\Transcoder_KBS\Transcoder.cs:줄 356
+[2015-08-13 오후 4:31:37:116]    [Profile Move Excepted-RetryCount : 0] gg
+   위치: Transcoder_KBS.Transcoder.StartFFmpeg() 파일 D:\Sehee Source\02 KBS\05 Transcoder_KBS\Transcoder_KBS\Transcoder.cs:줄 356
+[2015-08-13 오후 4:31:50:027]    ****************Initialized*******************
