@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="Code">
+    
+    <typeAlias alias="Code" type="kr.co.d2net.dto.CodeTbl"/>
+    
+    <resultMap id="CodeMap" class="Code">
+    	<result property="clfCd" column="CLF_CD" />	
+		<result property="sclCd" column="SCL_CD" />	
+		<result property="clfNm" column="CLF_NM" />	
+		<result property="note" column="NOTE" />
+		<result property="rmk1" column="RMK_1" />
+		<result property="rmk2" column="RMK_2" />
+		<result property="regDt" column="REG_DT" />	
+		<result property="regrid" column="REGRID" />	
+		<result property="modDt" column="MOD_DT" />	
+		<result property="modrid" column="MODRID" />	
+		<result property="useYn" column="USE_YN" />	
+    </resultMap>
+    
+    <select id="findCode" resultMap="CodeMap" parameterClass="map">
+	     SELECT  
+             *
+         FROM CODE_TBL 
+       	 <dynamic prepend="WHERE">
+			<isNotEmpty property="clfCd" prepend="AND">
+				CLF_CD = #clfCd#
+			</isNotEmpty>
+			<isNotEmpty property="eqId" prepend="AND">
+				<isEqual property="eqId" compareValue="VT">
+					CLF_NM like '%TV'
+				</isEqual>
+				<isEqual property="eqId" compareValue="AT">
+					CLF_NM not like '%TV'
+				</isEqual>
+			</isNotEmpty>
+			<isNotEmpty property="useYn" prepend="AND">
+				USE_YN = #useYn#
+			</isNotEmpty>
+         </dynamic>	  
+         ORDER BY SCL_CD ASC
+    </select>
+    
+    <select id="findCodeClfCd" resultClass="Code" parameterClass="map">
+		SELECT 
+			CLF_CD as clfCd
+		 FROM CODE_TBL
+		<dynamic prepend="WHERE">
+			
+			<isNotEmpty property="clfCd" prepend="AND">
+				CLF_CD in (#clfCd#)
+			</isNotEmpty>
+         </dynamic>	
+		GROUP BY CLF_CD
+    </select>
+    
+    <select id="getCode" resultClass="Code" parameterClass="map">
+		SELECT  
+			CLF_CD as clfCd,
+			SCL_CD as sclCd,
+			CLF_NM as clfNm,
+			NOTE   as note, 
+			RMK_1  as rmk1, 
+			RMK_2  as rmk2,
+			REG_DT as regDt,
+			REGRID as regrid,
+			MOD_DT as modDt,
+			MODRID as modrid,
+			USE_YN as useYn
+		FROM CODE_TBL
+		<dynamic prepend="WHERE">
+			<isNotEmpty prepend="AND" property="sclCd">
+				SCL_CD = #sclCd#
+			</isNotEmpty>
+			<isNotEmpty prepend="AND" property="clfCd">
+				CLF_CD = #clfCd#
+			</isNotEmpty>
+		</dynamic>
+    </select>
+    
+    <insert id="insertCode" parameterClass="Code">
+		INSERT INTO CODE_TBL (
+			CLF_CD,SCL_CD,CLF_NM,NOTE,RMK_1,RMK_2,REG_DT,REGRID,MOD_DT,MODRID,USE_YN
+		) VALUES (
+			#clfCd#,#sclCd#,#clfNm#,#note#,#rmk1#,#rmk2#,sysdate,#regrid#,#modDt#,#modrid#,#useYn#  
+
+		)
+	</insert>
+    
+    <update id="updateCode" parameterClass="Code">
+	    UPDATE CODE_TBL
+		SET MOD_DT = sysdate
+		<isNotNull property="rmk2" prepend=",">
+			RMK_2 = #rmk2#
+		</isNotNull>
+		<isNotNull property="useYn" prepend=",">
+			USE_YN = #useYn#
+		</isNotNull>
+		<isNotNull property="clfNm" prepend=",">
+			CLF_NM = #clfNm#
+		</isNotNull>
+		<isNotNull property="rmk1" prepend=",">
+			RMK_1 = #rmk1#
+		</isNotNull>
+		
+		WHERE
+			CLF_CD = #clfCd# AND SCL_CD = #sclCd#
+    </update>
+    
+ </sqlMap>

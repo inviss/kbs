@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE sqlMapConfig PUBLIC "-//iBATIS.com//DTD SQL Map Config 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-config-2.dtd">
+
+<sqlMapConfig>
+
+	<settings enhancementEnabled="true" useStatementNamespaces="true" />
+	
+	<sqlMap resource="kr/co/d2net/dao/sql/user.xml"/>
+	<sqlMap resource="kr/co/d2net/dao/sql/auth.xml"/>
+	<sqlMap resource="kr/co/d2net/dao/sql/roleauth.xml"/>
+	<sqlMap resource="kr/co/d2net/dao/sql/menu.xml"/>
+	<sqlMap resource="kr/co/d2net/dao/sql/weeksch.xml"/>
+	<sqlMap resource="kr/co/d2net/dao/sql/contents.xml"/>
+	<sqlMap resource="kr/co/d2net/dao/sql/profl.xml"/>
+	<sqlMap resource="kr/co/d2net/dao/sql/busipartner.xml"/>
+	<sqlMap resource="kr/co/d2net/dao/sql/probusi.xml"/>
+	<sqlMap resource="kr/co/d2net/dao/sql/disuseinfo.xml"/>
+	<sqlMap resource="kr/co/d2net/dao/sql/dairyorder.xml"/>
+	<sqlMap resource="kr/co/d2net/dao/sql/live.xml"/>
+	<sqlMap resource="kr/co/d2net/dao/sql/contentsinst.xml"/>
+	<sqlMap resource="kr/co/d2net/dao/sql/contentsbusi.xml"/>
+	<sqlMap resource="kr/co/d2net/dao/sql/busipartnerpgm.xml"/>
+	<sqlMap resource="kr/co/d2net/dao/sql/trahis.xml"/>
+	<sqlMap resource="kr/co/d2net/dao/sql/trshis.xml"/>
+	<sqlMap resource="kr/co/d2net/dao/sql/equipment.xml"/>
+	<sqlMap resource="kr/co/d2net/dao/sql/opt.xml"/>
+	<sqlMap resource="kr/co/d2net/dao/sql/proopt.xml"/>
+	<sqlMap resource="kr/co/d2net/dao/sql/userauth.xml"/>
+	<sqlMap resource="kr/co/d2net/dao/sql/outsysteminfo.xml"/>
+	<sqlMap resource="kr/co/d2net/dao/sql/qcreport.xml"/>
+	<sqlMap resource="kr/co/d2net/dao/sql/code.xml"/>
+	<sqlMap resource="kr/co/d2net/dao/sql/oracle_quartz_manager.xml"/>
+	
+	<sqlMap resource="kr/co/d2net/dao/sql/corner.xml"/>
+	<sqlMap resource="kr/co/d2net/dao/sql/schconfirm.xml"/>
+</sqlMapConfig>

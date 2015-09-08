@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="ErrorRgst">
+    
+    <typeAlias alias="ErrorRgst" type="kr.co.d2net.dto.ErrorRgstTbl"/>
+    
+    <resultMap id="ErrorRgstMap" class="ErrorRgst">
+    	<result property="ctiId" column="CTI_ID" />                
+		<result property="wrt" column="WRT" />                     
+		<result property="workClf" column="WORK_CLF" />            
+		<result property="cont" column="CONT" />                   
+		<result property="img" column="IMG" />                     
+		<result property="workCmCont" column="WORK_CM_CONT" />     
+		<result property="workSeq" column="WORK_SEQ" />            
+		<result property="imgPath" column="IMG_PATH" />            
+		<result property="regrid" column="REGRID" />               
+		<result property="regDt" column="REG_DT" />                
+		<result property="modrid" column="MODRID" />               
+		<result property="modDt" column="MOD_DT" />                
+    </resultMap>
+    
+    <select id="findErrorRgst" resultMap="ErrorRgstMap" parameterClass="map">
+	     SELECT  
+             *
+         FROM ERROR_RGST_TBL
+         <dynamic prepend="WHERE">
+
+         </dynamic>
+    </select>
+    
+    <select id="getErrorRgst" resultClass="ErrorRgst" parameterClass="map">
+		SELECT  
+			CTI_ID       as ctiId,       
+			WRT          as wrt,       
+			WORK_CLF     as workClf,   
+			CONT         as cont,      
+			IMG          as img,       
+			WORK_CM_CONT as workCmCont,
+			WORK_SEQ     as workSeq,   
+			IMG_PATH     as imgPath,   
+			REGRID       as regrid,    
+			REG_DT       as regDt,     
+			MODRID       as modrid,    
+			MOD_DT       as modDt
+		FROM ERROR_RGST_TBL
+		<dynamic prepend="WHERE">
+
+		</dynamic>
+    </select>
+    
+    <insert id="insertErrorRgst" parameterClass="ErrorRgst">
+		INSERT INTO ERROR_RGST_TBL (
+			CTI_ID,WRT,WORK_CLF,CONT,IMG,WORK_CM_CONT,WORK_SEQ,IMG_PATH,REGRID,REG_DT,MODRID,MOD_DT
+		) VALUES (
+			#ctiId#,#wrt#,#workClf#,#cont#,#img#,#workCmCont#,#workSeq#,#imgPath#,#regrid#,#regDt#,#modrid#,#modDt#
+		)
+	</insert>
+    
+ </sqlMap>

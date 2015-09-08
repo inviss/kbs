@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="Contents">
+    
+    <typeAlias alias="Contents" type="kr.co.d2net.dto.ContentsTbl"/>
+    
+    <resultMap id="ContentsMap" class="Contents">
+    	<result property="ctId" column="CT_ID" />
+		<result property="ctTyp" column="CT_TYP" />
+		<result property="ctCla" column="CT_CLA" />
+		<result property="ctNm" column="CT_NM" />
+		<result property="cont" column="CONT" />
+		<result property="ctOwnDeptNm" column="CT_OWN_DEPT_NM" />
+		<result property="vdQlty" column="VD_QLTY" /> 
+		<result property="aspRtoCd" column="ASP_RTO_CD" />
+		<result property="edtrid" column="EDTRID" />
+		<result property="keyWords" column="KEY_WORDS" />
+		<result property="kfrmPath" column="KFRM_PATH" />
+		<result property="kfrmPxCd" column="KFRM_PX_CD" />
+		<result property="totKfrmNums" column="TOT_KFRM_NUMS" />
+		<result property="useYn" column="USE_YN" />
+		<result property="regDt" column="REG_DT" />
+		<result property="regrid" column="REGRID" />
+		<result property="ctOwnDeptCd" column="CT_OWN_DEPT_CD" />
+		<result property="modrid" column="MODRID" />
+		<result property="modDt" column="MOD_DT" />
+		<result property="delDd" column="DEL_DD" />
+		<result property="dataStatCd" column="DATA_STAT_CD" />
+		<result property="ctLeng" column="CT_LENG" />
+		<result property="ctSeq" column="CT_SEQ" />
+		<result property="duration" column="DURATION" />
+		<result property="pgmId" column="PGM_ID" />
+		<result property="pgmCd" column="PGM_CD" />
+		<result property="pgmNm" column="PGM_NM" />
+		<result property="segmentNm" column="SEGMENT_NM" />
+		<result property="segmentId" column="SEGMENT_ID" />
+		<result property="brdDd" column="BRD_DD" />
+		<result property="outSystemId" column="OUT_SYSTEM_ID" />
+		<result property="pgmGrpCd" column="PGM_GRP_CD" />
+		<result property="channelCode" column="CHANNEL_CODE" />
+		<result property="trimmSte" column="TRIMM_STE" />
+		<result property="delayDay" column="DELAY_DAY" />
+		<result property="format" column="FORMAT" />
+		<result property="disuseDd" column="DISUSE_DD" />
+		<result property="delayDt" column="DELAY_DT" />
+		<result property="pgmNum" column="PGM_NUM" />
+		<result property="personInfo" column="PERSON_INFO" />
+		<result property="part" column="PART" />
+		<result property="sSeq" column="S_SEQ" />
+		<result property="nid" column="NID" />
+		<result property="grpAliasEng" column="GRP_ALIAS_ENG" />
+		<result property="jobId" column="JOB_ID" />
+		<result property="prgrs" column="PRGRS" />
+    </resultMap>
+    
+    <resultMap id="ContentsMap2" class="Contents">
+    	<result property="ctId" column="CT_ID" />
+		<result property="ctTyp" column="CT_TYP" />
+		<result property="ctCla" column="CT_CLA" />
+		<result property="ctNm" column="CT_NM" />
+		<result property="cont" column="CONT" />
+		<result property="ctOwnDeptNm" column="CT_OWN_DEPT_NM" />
+		<result property="vdQlty" column="VD_QLTY" /> 
+		<result property="aspRtoCd" column="ASP_RTO_CD" />
+		<result property="edtrid" column="EDTRID" />
+		<result property="keyWords" column="KEY_WORDS" />
+		<result property="kfrmPath" column="KFRM_PATH" />
+		<result property="kfrmPxCd" column="KFRM_PX_CD" />
+		<result property="totKfrmNums" column="TOT_KFRM_NUMS" />
+		<result property="useYn" column="USE_YN" />
+		<result property="regDt" column="REG_DT" />
+		<result property="regrid" column="REGRID" />
+		<result property="ctOwnDeptCd" column="CT_OWN_DEPT_CD" />
+		<result property="modrid" column="MODRID" />
+		<result property="modDt" column="MOD_DT" />
+		<result property="delDd" column="DEL_DD" />
+		<result property="dataStatCd" column="DATA_STAT_CD" />
+		<result property="ctLeng" column="CT_LENG" />
+		<result property="ctSeq" column="CT_SEQ" />
+		<result property="duration" column="DURATION" />
+		<result property="pgmId" column="PGM_ID" />
+		<result property="pgmCd" column="PGM_CD" />
+		<result property="pgmNm" column="PGM_NM" />
+		<result property="segmentNm" column="SEGMENT_NM" />
+		<result property="segmentId" column="SEGMENT_ID" />
+		<result property="brdDd" column="BRD_DD" />
+		<result property="outSystemId" column="OUT_SYSTEM_ID" />
+		<result property="pgmGrpCd" column="PGM_GRP_CD" />
+		<result property="channelCode" column="CHANNEL_CODE" />
+		<result property="trimmSte" column="TRIMM_STE" />
+		<result property="delayDay" column="DELAY_DAY" />
+		<result property="format" column="FORMAT" />
+		<result property="delayDt" column="DELAY_DT" />
+		<result property="pgmNum" column="PGM_NUM" />
+		<result property="personInfo" column="PERSON_INFO" />
+		<result property="part" column="PART" />
+		<result property="sSeq" column="S_SEQ" />
+		<result property="nid" column="NID" />
+		<result property="grpAliasEng" column="GRP_ALIAS_ENG" />
+		<result property="jobId" column="JOB_ID" />
+		<result property="prgrs" column="PRGRS" />
+    </resultMap>
+    
+    <select id="findContents" resultMap="ContentsMap2" parameterClass="map">
+	     SELECT  
+             *
+         FROM CONTENTS_TBL CT
+         <dynamic prepend="WHERE">
+			<isNotEmpty property="pgmId" prepend="AND">
+				CT.PGM_ID = #pgmId#
+			</isNotEmpty>
+			<isNotEmpty property="ctCla" prepend="AND">
+				CT.CT_CLA = #ctCla#
+			</isNotEmpty>
+			<isNotEmpty property="ctTyp" prepend="AND">
+				CT.CT_TYP = #ctTyp#
+			</isNotEmpty>
+			<isNotEmpty property="dataStatCd" prepend="AND">
+				CT.DATA_STAT_CD is not null AND CT.DATA_STAT_CD = #dataStatCd#
+			</isNotEmpty>
+			<isNotEmpty prepend="AND" property="regrid">
+				CT.REGRID = #regrid# AND to_char(CT.REG_DT, 'YYYYMMDD') = to_char(sysdate, 'YYYYMMDD')
+			</isNotEmpty>
+			<isNotEmpty prepend="AND" property="regrids">
+				CT.REGRID in ($regrids$) AND to_char(CT.REG_DT, 'YYYYMMDD') = to_char(sysdate, 'YYYYMMDD')
+			</isNotEmpty>
+			<isNotEmpty prepend="AND" property="jobId">
+				CT.JOB_ID = #jobId# AND CT.JOB_ID is not null
+			</isNotEmpty>
+			AND CT.USE_YN='Y'
+         </dynamic>
+    </select>
+    
+    <select id="getRmsContentsCount" resultClass="Contents" parameterClass="map">
+    	SELECT COUNT(*) as count FROM CONTENTS_TBL WHERE NID = #nid#
+    </select>
+    
+    <select id="getContents" resultClass="Contents" parameterClass="map">
+		SELECT  
+			CT_ID          as ctId,
+			CT_TYP         as ctTyp,
+			CT_CLA         as ctCla,      
+			CT_NM          as ctNm,       
+			CONT           as cont,       
+			CT_OWN_DEPT_NM as ctOwnDeptNm,
+			VD_QLTY        as vdQlty,     
+			ASP_RTO_CD     as aspRtoCd,   
+			EDTRID         as edtrid,     
+			KEY_WORDS      as keyWords,   
+			KFRM_PATH      as kfrmPath,   
+			KFRM_PX_CD     as kfrmPxCd,   
+			TOT_KFRM_NUMS  as totKfrmNums,
+			USE_YN         as useYn,      
+			REG_DT         as regDt,      
+			REGRID         as regrid,     
+			CT_OWN_DEPT_CD as ctOwnDeptCd,
+			MODRID         as modrid,     
+			MOD_DT         as modDt,      
+			DEL_DD         as delDd,      
+			DATA_STAT_CD   as dataStatCd, 
+			CT_LENG        as ctLeng,     
+			CT_SEQ         as ctSeq,      
+			DURATION       as duration,   
+			PGM_ID         as pgmId,      
+			PGM_CD         as pgmCd,      
+			PGM_NM         as pgmNm,      
+			SEGMENT_NM     as segmentNm,  
+			SEGMENT_ID     as segmentId,  
+			BRD_DD         as brdDd,         
+			OUT_SYSTEM_ID  as outSystemId,
+			PGM_GRP_CD     as pgmGrpCd,
+			CHANNEL_CODE   as channelCode, 
+			TRIMM_STE   as trimmSte,
+			DELAY_DAY   as delayDay,
+			FORMAT   as format,
+			PERSON_INFO as personInfo,
+			PART as part,
+			PGM_NUM as pgmNum,
+			S_SEQ as sSeq,
+			JOB_ID as jobId,
+			PRGRS as prgrs,
+			LOCAL_CODE as localCode
+		FROM CONTENTS_TBL
+		<dynamic prepend="WHERE">
+			<isNotEmpty property="ctId" prepend="AND">
+				CT_ID = #ctId#
+			</isNotEmpty>
+			<isNotEmpty property="pgmCd" prepend="AND">
+				PGM_CD = #pgmCd#
+			</isNotEmpty>
+			<isNotEmpty property="pgmId" prepend="AND">
+				PGM_ID = #pgmId#
+			</isNotEmpty>
+			<isNotEmpty property="regrid" prepend="AND">
+				REGRID = #regrid# AND JOB_ID is not null AND PGM_NM is null
+			</isNotEmpty>
+			<isNotEmpty property="jobId" prepend="AND">
+				JOB_ID = #jobId#
+			</isNotEmpty>
+		</dynamic>
+		AND ROWNUM = 1
+		ORDER BY CT_ID DESC
+    </select>
+    
+    <select id="getContents2" resultClass="Contents" parameterClass="map">
+		SELECT  
+			ct.CT_ID          as ctId,      
+			ct.CT_NM          as ctNm,            
+			ct.PGM_NM         as pgmNm,      
+			ct.REG_DT		   as regDt,
+			ct.CT_CLA as ctiId,
+			(SELECT ctt.CLF_NM FROM CODE_TBL ctt WHERE ctt.SCL_CD=ct.CHANNEL_CODE and ctt.CLF_CD='CHAN') AS channelCode,
+            (SELECT ctt.CLF_NM FROM CODE_TBL ctt WHERE ctt.SCL_CD=ct.CT_CLA and ctt.CLF_CD='CCLA') AS ctCla,
+			ct.FORMAT		   as format,
+			di.DISUSE_DD as disuseDd,
+			ct.BRD_DD         as brdDd 
+		FROM DISUSE_INFO_TBL di
+			inner JOIN CONTENTS_TBL ct ON di.DATA_ID = ct.CT_ID 
+			
+		<dynamic prepend="WHERE">
+			
+			<isNotNull property="disuseNo" prepend="AND">
+				di.DISUSE_NO = #disuseNo# 
+			</isNotNull>
+			<isNotNull property="ctId" prepend="AND">
+				ct.CT_ID = #ctId#  
+			</isNotNull>
+		</dynamic>
+    </select>
+    
+    <select id="getContents3" resultClass="Contents" parameterClass="map">
+		SELECT  
+			ct.CT_ID          as ctId,
+			ct.CT_NM          as ctNm,            
+			ct.PGM_NM         as pgmNm,      
+			ct.REG_DT		   as regDt,
+			ct.FORMAT		   as format,
+			ct.BRD_DD         as brdDd,
+            (SELECT ctt.CLF_NM FROM CODE_TBL ctt WHERE ctt.SCL_CD=ct.CHANNEL_CODE and ctt.CLF_CD='CHAN') AS channelCode,
+            (SELECT ctt.CLF_NM FROM CODE_TBL ctt WHERE ctt.SCL_CD=ct.CT_CLA and ctt.CLF_CD='CCLA') AS ctCla
+		FROM CONTENTS_TBL ct
+        
+		<dynamic prepend="WHERE">
+			CT_ID = #ctId# 
+		</dynamic>
+    </select>
+    
+    <select id="getContentsPrgrs" resultClass="Contents" parameterClass="map">
+		SELECT  
+			CT_ID          as ctId,
+			DATA_STAT_CD   as dataStatCd,
+			PRGRS		   as prgrs	
+		FROM CONTENTS_TBL 
+        
+		<dynamic prepend="WHERE">
+			<isNotEmpty property="ctId2" prepend="AND">
+    			CT_ID in ($ctId2$)
+    		</isNotEmpty>
+		</dynamic>
+    </select>
+ 
+	<select id="getContents4" resultClass="Contents" parameterClass="map">
+		SELECT  
+			CT_ID          as ctId,
+			CT_TYP         as ctTyp,
+			(SELECT ctt.CLF_NM FROM CODE_TBL ctt WHERE ctt.SCL_CD=ct.CHANNEL_CODE and ctt.CLF_CD='CHAN') AS channelCode,
+            (SELECT ctt.CLF_NM FROM CODE_TBL ctt WHERE ctt.SCL_CD=ct.CT_CLA and ctt.CLF_CD='CCLA') AS ctCla,    
+			CT_NM          as ctNm,       
+			CONT           as cont,       
+			CT_OWN_DEPT_NM as ctOwnDeptNm,
+			VD_QLTY        as vdQlty,     
+			ASP_RTO_CD     as aspRtoCd,   
+			EDTRID         as edtrid,     
+			KEY_WORDS      as keyWords,   
+			KFRM_PATH      as kfrmPath,   
+			KFRM_PX_CD     as kfrmPxCd,   
+			TOT_KFRM_NUMS  as totKfrmNums,
+			USE_YN         as useYn,      
+			REG_DT         as regDt,      
+			REGRID         as regrid,     
+			CT_OWN_DEPT_CD as ctOwnDeptCd,
+			MODRID         as modrid,     
+			MOD_DT         as modDt,      
+			DEL_DD         as delDd,      
+			DATA_STAT_CD   as dataStatCd, 
+			CT_LENG        as ctLeng,     
+			CT_SEQ         as ctSeq,      
+			DURATION       as duration,   
+			PGM_ID         as pgmId,      
+			PGM_CD         as pgmCd,      
+			PGM_NM         as pgmNm,      
+			SEGMENT_NM     as segmentNm,  
+			SEGMENT_ID     as segmentId,  
+			BRD_DD         as brdDd,         
+			OUT_SYSTEM_ID  as outSystemId,
+			PGM_GRP_CD     as pgmGrpCd,
+			TRIMM_STE   as trimmSte,
+			DELAY_DAY   as delayDay,
+			FORMAT   as format,
+			PERSON_INFO as personInfo,
+			PART as part,
+			PGM_NUM as pgmNum,
+			S_SEQ as sSeq
+		FROM CONTENTS_TBL
+		<dynamic prepend="WHERE">
+			CT_ID = #ctId#
+		</dynamic>
+    </select> 
+ 
+   <select id="getContentsPgmNum" resultClass="Contents" parameterClass="map">
+	SELECT 
+	DECODE((SELECT  count(*)   as pgmNum		FROM CONTENTS_TBL        
+			WHERE pgm_id = #pgmId# AND ct_typ=#ctTyp# AND ct_cla=#ctCla#  GROUP BY CT_CLA,CT_TYP,PGM_ID)
+		,NULL
+		,0
+		,(SELECT  count(*)   as pgmNum		FROM CONTENTS_TBL       
+			 WHERE pgm_id = #pgmId# AND ct_typ=#ctTyp# AND ct_cla=#ctCla# GROUP BY CT_CLA, CT_TYP, PGM_ID)+1) AS pgmNum 
+    FROM dual
+    </select>
+    
+    <update id="updateContentsRms" parameterClass="Contents">
+    	UPDATE CONTENTS_TBL SET CT_ID =#ctId# 
+    	<isNotNull prepend="," property="trimmSte">
+	    	TRIMM_STE=#trimmSte#
+    	</isNotNull>
+    	<isNotNull prepend="," property="pgmCd">
+	    	PGM_CD=#pgmCd#
+    	</isNotNull>
+   		<isNotNull prepend="," property="channelCode">
+    		CHANNEL_CODE=#channelCode#
+    	</isNotNull>
+    	<isNotNull prepend="," property="pgmGrpCd">
+    		PGM_GRP_CD=#pgmGrpCd#
+    	</isNotNull>
+    	<isNotNull prepend="," property="pgmId">
+    		PGM_ID=#pgmId#
+    	</isNotNull>
+    	<isNotNull prepend="," property="segmentId">
+    		SEGMENT_ID=#segmentId#
+    	</isNotNull>
+    	<isNotNull prepend="," property="ctCla">
+    		CT_CLA=#ctCla#
+    	</isNotNull>
+    	<isNotNull prepend="," property="ctTyp">
+    		CT_TYP=#ctTyp#
+    	</isNotNull>
+    	<isNotNull prepend="," property="part">
+    		PART=#part#
+    	</isNotNull>
+    	<isNotNull prepend="," property="personInfo">
+    		PERSON_INFO=#personInfo#
+    	</isNotNull>
+    	<isNotNull prepend="," property="pgmNm">
+    		PGM_NM=#pgmNm#
+    	</isNotNull>
+    	<isNotNull prepend="," property="brdDd">
+    		BRD_DD=#brdDd#
+    	</isNotNull>
+    	<isNotNull prepend="," property="sSeq">
+    		S_SEQ=#sSeq#
+    	</isNotNull>
+    	<isNotNull prepend="," property="grpAliasEng">
+    		GRP_ALIAS_ENG=#grpAliasEng#
+    	</isNotNull>
+    	<isNotNull prepend="," property="dataStatCd">
+    		DATA_STAT_CD=#dataStatCd#
+    	</isNotNull>
+    	<isNotNull prepend="," property="jobId">
+    		JOB_ID=#jobId#
+    	</isNotNull>
+    	<isNotNull prepend="," property="prgrs">
+    		PRGRS=#prgrs#
+    	</isNotNull>
+    	<isNotNull prepend="," property="ctLeng">
+    		CT_LENG=#ctLeng#
+    	</isNotNull>
+    	<dynamic prepend="WHERE">
+    		<isNotNull prepend="AND" property="ctId">
+    			CT_ID=#ctId#
+    		</isNotNull>
+    	</dynamic>
+    </update>
+    
+    <update id="updateContents2" parameterClass="Contents">
+    	UPDATE CONTENTS_TBL SET DELAY_DAY=#delayDay#, DELAY_DT=sysdate
+    	<isNotNull prepend="," property="cont">
+    		REG_DT=to_date('4000-12-30','YYYY-MM-DD')
+    	</isNotNull>
+    	<dynamic prepend="WHERE">
+    		<isNotNull prepend="AND" property="ctId">
+    			CT_ID=#ctId#
+    		</isNotNull>
+    	</dynamic>
+    </update>
+    
+    <update id="updateContents" parameterClass="Contents">
+    	UPDATE CONTENTS_TBL SET CT_ID =#ctId# 
+    	<isNotNull prepend="," property="delayDay">
+	    	DELAY_DAY=#delayDay#
+    	</isNotNull>
+   		<isNotNull prepend="," property="pgmId">
+    		PGM_ID=#pgmId#
+    	</isNotNull>
+    	<isNotNull prepend="," property="pgmCd">
+    		PGM_CD=#pgmCd#
+    	</isNotNull>
+    	<isNotNull prepend="," property="pgmNm">
+    		PGM_NM=#pgmNm#
+    	</isNotNull>
+    	<isNotNull prepend="," property="pgmGrpCd">
+    		PGM_GRP_CD=#pgmGrpCd#
+    	</isNotNull>
+    	<isNotNull prepend="," property="brdDd">
+    		BRD_DD=#brdDd#
+    	</isNotNull>
+    	<isNotNull prepend="," property="dataStatCd">
+    		DATA_STAT_CD=#dataStatCd#
+    	</isNotNull>
+    	<isNotNull prepend="," property="outSystemId">
+    		OUT_SYSTEM_ID=#outSystemId#
+    	</isNotNull>
+    	<isNotNull prepend="," property="prgrs">
+    		PRGRS=#prgrs#
+    	</isNotNull>
+    	<isNotNull prepend="," property="ctCla">
+    		CT_CLA=#ctCla#
+    	</isNotNull>
+    	<isNotNull prepend="," property="ctTyp">
+    		CT_TYP=#ctTyp#
+    	</isNotNull>
+    	<isNotNull prepend="," property="channelCode">
+    		CHANNEL_CODE=#channelCode#
+    	</isNotNull>
+    	<dynamic prepend="WHERE">
+    		<isNotNull prepend="AND" property="ctId">
+    			CT_ID=#ctId#
+    		</isNotNull>
+    		<isNotNull prepend="AND" property="jobId">
+    			JOB_ID=#jobId#
+    		</isNotNull>
+    	</dynamic>
+    </update>
+    
+    <update id="deleteContents" parameterClass="Contents">
+    	UPDATE CONTENTS_TBL SET USE_YN=#useYn#
+    	<dynamic prepend="WHERE">
+    		<isNotNull prepend="AND" property="ctId">
+    			CT_ID=#ctId#
+    		</isNotNull>
+    	</dynamic>
+    </update>
+    
+    <insert id="insertContents" parameterClass="Contents">
+    	<selectKey keyProperty="ctId" resultClass="java.lang.Long">
+      		select CT_ID_SEQ.NEXTVAL from dual
+     	</selectKey>
+		INSERT INTO CONTENTS_TBL (
+			CT_ID,CT_TYP,CT_CLA,CT_NM,CONT,CT_OWN_DEPT_NM,VD_QLTY,ASP_RTO_CD,EDTRID,KEY_WORDS,KFRM_PATH,KFRM_PX_CD,TOT_KFRM_NUMS,USE_YN,REG_DT,REGRID,CT_OWN_DEPT_CD,MODRID,MOD_DT,DEL_DD,DATA_STAT_CD,CT_LENG,CT_SEQ,DURATION,PGM_ID,PGM_CD,PGM_NM,SEGMENT_NM,SEGMENT_ID,BRD_DD,OUT_SYSTEM_ID,PGM_GRP_CD,CHANNEL_CODE,TRIMM_STE,DELAY_DAY,FORMAT,PGM_NUM,NID,GRP_ALIAS_ENG,JOB_ID,PRGRS,LOCAL_CODE
+
+		) VALUES (
+			#ctId#,#ctTyp#,#ctCla#,#ctNm#,#cont#,#ctOwnDeptNm#,#vdQlty#,#aspRtoCd#,#edtrid#,#keyWords#,#kfrmPath#,#kfrmPxCd#,#totKfrmNums#,#useYn#,sysdate,#regrid#,#ctOwnDeptCd#,#modrid#,#modDt#,#delDd#,#dataStatCd#,#ctLeng#,#ctSeq#,#duration#,#pgmId#,#pgmCd#,#pgmNm#,#segmentNm#,#segmentId#,#brdDd#,#outSystemId#,#pgmGrpCd#,#channelCode#,#trimmSte#,#delayDay#,#format#,#pgmNum#,#nid#,#grpAliasEng#,#jobId#,#prgrs#,#localCode#
+		)
+	</insert>
+    
+ </sqlMap>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="OutSystemInfo">
+    
+    <typeAlias alias="OutSystemInfo" type="kr.co.d2net.dto.OutSystemInfoTbl"/>
+    
+    <resultMap id="OutSystemInfoMap" class="OutSystemInfo">
+    	<result property="sysInfoId" column="SYS_INFO_ID" />
+		<result property="sysNm" column="SYS_NM  " />
+		<result property="regrid" column="REGRID" />
+		<result property="regDt" column="REG_DT" />
+		<result property="modrid" column="MODRID" />
+		<result property="modDt" column="MOD_DT" />
+		<result property="ip" column="IP" />
+		<result property="port" column="PORT" />
+		<result property="endPoint" column="END_POINT" />
+		<result property="wsdlUrl" column="WSDL_URL" />
+		<result property="rem" column="REM" />
+		<result property="useYn" column="USE_YN" />
+    </resultMap>
+    
+    <select id="findOutSystemInfo" resultMap="OutSystemInfoMap" parameterClass="map">
+	     SELECT  
+             *
+         FROM OUT_SYSTEM_INFO_TBL
+         <dynamic prepend="WHERE">
+
+         </dynamic>
+    </select>
+    
+    <select id="getOutSystemInfo" resultClass="OutSystemInfo" parameterClass="map">
+		SELECT  
+			SYS_INFO_ID as sysInfoId,
+			SYS_NM      as sysNm,     
+			REGRID      as regrid,   
+			REG_DT      as regDt,    
+			MODRID      as modrid,   
+			MOD_DT      as modDt,    
+			IP          as ip,       
+			PORT        as port,     
+			END_POINT   as endPoint, 
+			WSDL_URL    as wsdlUrl,
+			REM			as rem,
+			USE_YN		as useYn 
+		FROM OUT_SYSTEM_INFO_TBL
+		<dynamic prepend="WHERE">
+			<isNotEmpty property="sysInfoId" prepend="AND">
+				SYS_INFO_ID = #sysInfoId#
+			</isNotEmpty>
+		</dynamic>
+    </select>
+    
+    <insert id="insertOutSystemInfo" parameterClass="OutSystemInfo">
+		INSERT INTO OUT_SYSTEM_INFO_TBL (
+			SYS_INFO_ID,SYS_NM,REGRID,REG_DT,MODRID,MOD_DT,IP,PORT,END_POINT,WSDL_URL,REM,USE_YN
+		) VALUES (
+			SYS_INFO_ID_SEQ.nextval,#sysNm#,#regrid#,sysdate,#modrid#,#modDt#,#ip#,#port#,#endPoint#,#wsdlUrl#,#rem#,#useYn#
+		)
+	</insert>
+    
+    <update id="updateOutSystemInfo" parameterClass="OutSystemInfo">
+    	UPDATE OUT_SYSTEM_INFO_TBL SET SYS_NM=#sysNm#,REGRID=#regrid#,MOD_DT=sysdate,IP=#ip#,PORT=#port#,END_POINT=#endPoint#,WSDL_URL=#wsdlUrl#,REM=#rem#
+    	<dynamic prepend="WHERE">
+	    	<isNotNull property="sysInfoId" prepend="AND">
+	    		SYS_INFO_ID=#sysInfoId#
+	    	</isNotNull>
+    	</dynamic>
+    </update>
+    
+    <update id="deleteOutSystemInfo" parameterClass="OutSystemInfo">
+    	UPDATE OUT_SYSTEM_INFO_TBL SET USE_YN=#useYn#
+    	<dynamic prepend="WHERE">
+	    	<isNotNull property="sysInfoId" prepend="AND">
+	    		SYS_INFO_ID=#sysInfoId#
+	    	</isNotNull>
+    	</dynamic>
+    </update>
+ </sqlMap>

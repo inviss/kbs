@@ -1,0 +1,65 @@
+<!DOCTYPE tiles-definitions PUBLIC  "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN"  "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+	<!-- user -->
+	<definition name=".user"   template="/WEB-INF/layout/user/default.ftl">
+		<put-attribute name="title"		value="Media Manager"/>
+		<put-attribute name="header"	value="/WEB-INF/layout/user/header.ftl"/>
+		<put-attribute name="right"		value="/WEB-INF/layout/user/right.ftl"/>
+		<put-attribute name="footer"	value="/WEB-INF/layout/user/footer.ftl"/>
+	</definition>
+	
+	<!-- admin -->
+	<definition name=".admin"   template="/WEB-INF/layout/admin/default.ftl">
+		<put-attribute name="title"		value="Racing Configuration Management"/>
+		<put-attribute name="header"	value="/WEB-INF/layout/admin/header.ftl"/>
+		<put-attribute name="left"		value="/WEB-INF/layout/admin/left.ftl"/>
+		<put-attribute name="footer"	value="/WEB-INF/layout/admin/footer.ftl"/>
+	</definition>
+	
+	<!-- blank -->
+	<definition name=".blank"   template="/WEB-INF/layout/blank/default.ftl">
+		<put-attribute name="title"		value="Media Manager"/>
+	</definition>
+
+	<!-- implement blank ============ -->
+	<definition name="member/login" extends=".blank">
+		<put-attribute name="title"		value="시스템 로그인"/>
+		<put-attribute name="body"		value="/WEB-INF/views/login.ftl"/>
+	</definition>
+	<!-- implement blank ============ -->
+	<definition name="popup/*" extends=".blank">
+		
+		<put-attribute name="body"		value="/WEB-INF/views/popup/{1}.ftl"/>
+	</definition>
+	
+	<!-- implement user ============ -->
+	<definition name="content/*" extends=".user">
+		<put-attribute name="body"		value="/WEB-INF/views/content/{1}.ftl"/>
+	</definition>
+	
+	<!-- implement user ============ -->
+	<definition name="schedule/*" extends=".user">
+		<put-attribute name="body"		value="/WEB-INF/views/schedule/{1}.ftl"/>
+	</definition>
+	
+	<!-- implement user ============ -->
+	<definition name="system/*" extends=".user">
+		<put-attribute name="body"		value="/WEB-INF/views/system/{1}.ftl"/>
+	</definition>
+	
+	<!-- implement user ============ -->
+	<definition name="workflow/*" extends=".user">
+		<put-attribute name="body"		value="/WEB-INF/views/workflow/{1}.ftl"/>
+	</definition>
+	
+	<!-- implement user ============ -->
+	<definition name="service/*" extends=".user">
+		<put-attribute name="body"		value="/WEB-INF/views/service/{1}.ftl"/>
+	</definition>
+	
+	<!-- implement user ============ -->
+	<definition name="disuse/*" extends=".user">
+		<put-attribute name="body"		value="/WEB-INF/views/disuse/{1}.ftl"/>
+	</definition>
+
+</tiles-definitions>

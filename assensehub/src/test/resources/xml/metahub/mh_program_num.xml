@@ -1,0 +1,372 @@
+<nodes count="10" more="false">
+<node nid="51100012094685" tid="mh_program_num_tv">
+<property defalut="group_code.program_code" name="프로그램코드(virtual)" pid="p_code" type="TEXT" value=""></property>
+<property defalut="" name="프로그램ID" pid="program_id" type="ID" value="">PS-2011163609-01-000</property>
+<property defalut="group_code.keyword" name="부가정보" pid="keyword" type="TEXT" value=""></property>
+<property defalut="node.pcode.program_title" name="프로그램명" pid="program_title" type="NAME" value="">위기탈출 넘버원</property>
+<property defalut="" name="그룹코드" pid="group_code" type="REFERENCE" value="T2005-0396">T2005-0396</property>
+<property defalut="" name="프로그램코드" pid="pcode" type="REFERENCE" value="T2005-0396">위기탈출 넘버원</property>
+<property defalut="" name="방송예정일자" pid="broadcast_planned_date" type="DATE" value="20111205 000000">2011/12/05 00:00:00</property>
+<property defalut="" name="회차" pid="program_sequence_number" type="NUMBER" value=""></property>
+<property defalut="" name="저작권유무_국내" pid="copyright_yn" type="CODE" value=""></property>
+<property defalut="" name="저작권유무_해외" pid="copyright_yn_foreign" type="CODE" value=""></property>
+<property defalut="" name="방송예정시각" pid="broadcast_planned_time" type="TEXT" value=""></property>
+<property defalut="" name="방송예정길이_분" pid="broadcast_planned_duration_minute" type="NUMBER" value=""></property>
+<property defalut="" name="기획의도" pid="program_intention" type="TEXT" value=""></property>
+<property defalut="" name="방송예정매체코드" pid="broadcast_planned_media_code" type="CODE" value=""></property>
+<property defalut="" name="방송예정채널코드" pid="broadcast_planned_channel_code" type="CODE" value=""></property>
+<property defalut="" name="방송예정지역국코드" pid="broadcast_planned_local_station_code" type="CODE" value=""></property>
+<property defalut="node.pcode.main_image_path" name="대표이미지" pid="main_image" type="TEXT" value=""></property>
+<property defalut="" name="부순번호" pid="part_number" type="NUMBER" value=""></property>
+<property defalut="" name="프로파일" pid="ref_profile" type="REFERENCES" value=""></property>
+<property defalut="" name="주간 편성 정보" pid="ref_weekly_schedule" type="REFERENCED">
+<node iconclass="Icon_fugue_cd_calendar__pencil" nid="51100012095236" tid="mh_weekly_schedule"></node>
+</property>
+<property defalut="" name="프로그램등급코드" pid="program_deliberation_grade_code" type="CODE" value=""></property>
+<property defalut="" name="세그먼트" pid="ref_sid" type="REFERENCED"/>
+<property defalut="" name="비고" pid="note" type="TEXT" value=""></property>
+<property defalut="" name="오디오모드-주" pid="audio_mode_main" type="TEXT" value=""></property>
+<property defalut="" name="제작종료일자" pid="production_end_date" type="DATE" value=""></property>
+<property defalut="" name="출연진" pid="participant" type="REFERENCED"/>
+<property defalut="" name="변환동영상" pid="ref_transcoding" type="REFERENCED"/>
+<property defalut="" name="연관 이미지" pid="relation_img" type="REFERENCED"/>
+<property defalut="group_code.program_genre_code" name="장르코드" pid="program_genre_code" type="CODE" value="301">교양-구성</property>
+<property defalut="group_code.channel_code" name="채널 코드" pid="channel_code" type="CODE" value="12">2TV</property>
+<property defalut="" name="Created" pid="created" type="DATE" value="20111205 182059">2011/12/05 18:20:59</property>
+<property defalut="" name="Changed" pid="changed" type="DATE" value="20111205 182059">2011/12/05 18:20:59</property>
+<property defalut="" name="Node Id" pid="nid" type="NODEID" value="">51100012094685</property>
+</node>
+<node nid="51100012093329" tid="mh_program_num_tv">
+<property defalut="group_code.program_code" name="프로그램코드(virtual)" pid="p_code" type="TEXT" value=""></property>
+<property defalut="" name="프로그램ID" pid="program_id" type="ID" value="">PS-2011156842-01-000</property>
+<property defalut="group_code.keyword" name="부가정보" pid="keyword" type="TEXT" value=""></property>
+<property defalut="node.pcode.program_title" name="프로그램명" pid="program_title" type="NAME" value="">대국민 토크쇼 안녕하세요</property>
+<property defalut="" name="그룹코드" pid="group_code" type="REFERENCE" value="T2010-1328">T2010-1328</property>
+<property defalut="" name="프로그램코드" pid="pcode" type="REFERENCE" value="T2010-1446">대국민 토크쇼 안녕하세요</property>
+<property defalut="" name="방송예정일자" pid="broadcast_planned_date" type="DATE" value="20111205 000000">2011/12/05 00:00:00</property>
+<property defalut="" name="회차" pid="program_sequence_number" type="NUMBER" value=""></property>
+<property defalut="" name="저작권유무_국내" pid="copyright_yn" type="CODE" value=""></property>
+<property defalut="" name="저작권유무_해외" pid="copyright_yn_foreign" type="CODE" value=""></property>
+<property defalut="" name="방송예정시각" pid="broadcast_planned_time" type="TEXT" value=""></property>
+<property defalut="" name="방송예정길이_분" pid="broadcast_planned_duration_minute" type="NUMBER" value=""></property>
+<property defalut="" name="기획의도" pid="program_intention" type="TEXT" value=""></property>
+<property defalut="" name="방송예정매체코드" pid="broadcast_planned_media_code" type="CODE" value=""></property>
+<property defalut="" name="방송예정채널코드" pid="broadcast_planned_channel_code" type="CODE" value=""></property>
+<property defalut="" name="방송예정지역국코드" pid="broadcast_planned_local_station_code" type="CODE" value=""></property>
+<property defalut="node.pcode.main_image_path" name="대표이미지" pid="main_image" type="TEXT" value=""></property>
+<property defalut="" name="부순번호" pid="part_number" type="NUMBER" value=""></property>
+<property defalut="" name="프로파일" pid="ref_profile" type="REFERENCES" value=""></property>
+<property defalut="" name="주간 편성 정보" pid="ref_weekly_schedule" type="REFERENCED">
+<node iconclass="Icon_fugue_cd_calendar__pencil" nid="51100012095238" tid="mh_weekly_schedule"></node>
+</property>
+<property defalut="" name="프로그램등급코드" pid="program_deliberation_grade_code" type="CODE" value=""></property>
+<property defalut="" name="세그먼트" pid="ref_sid" type="REFERENCED"/>
+<property defalut="" name="비고" pid="note" type="TEXT" value=""></property>
+<property defalut="" name="오디오모드-주" pid="audio_mode_main" type="TEXT" value=""></property>
+<property defalut="" name="제작종료일자" pid="production_end_date" type="DATE" value=""></property>
+<property defalut="" name="출연진" pid="participant" type="REFERENCED"/>
+<property defalut="" name="변환동영상" pid="ref_transcoding" type="REFERENCED"/>
+<property defalut="" name="연관 이미지" pid="relation_img" type="REFERENCED"/>
+<property defalut="group_code.program_genre_code" name="장르코드" pid="program_genre_code" type="CODE" value="401">오락-구성</property>
+<property defalut="group_code.channel_code" name="채널 코드" pid="channel_code" type="CODE" value="12">2TV</property>
+<property defalut="" name="Created" pid="created" type="DATE" value="20111205 172036">2011/12/05 17:20:36</property>
+<property defalut="" name="Changed" pid="changed" type="DATE" value="20111205 172036">2011/12/05 17:20:36</property>
+<property defalut="" name="Node Id" pid="nid" type="NODEID" value="">51100012093329</property>
+</node>
+<node nid="51100012093269" tid="mh_program_num_tv">
+<property defalut="group_code.program_code" name="프로그램코드(virtual)" pid="p_code" type="TEXT" value=""></property>
+<property defalut="" name="프로그램ID" pid="program_id" type="ID" value="">PS-2011156864-01-000</property>
+<property defalut="group_code.keyword" name="부가정보" pid="keyword" type="TEXT" value=""></property>
+<property defalut="node.pcode.program_title" name="프로그램명" pid="program_title" type="NAME" value="">세계는 지금</property>
+<property defalut="" name="그룹코드" pid="group_code" type="REFERENCE" value="T2000-0120">T2000-0120</property>
+<property defalut="" name="프로그램코드" pid="pcode" type="REFERENCE" value="T2011-0466">생방송 세계는 지금</property>
+<property defalut="" name="방송예정일자" pid="broadcast_planned_date" type="DATE" value="20111205 000000">2011/12/05 00:00:00</property>
+<property defalut="" name="회차" pid="program_sequence_number" type="NUMBER" value=""></property>
+<property defalut="" name="저작권유무_국내" pid="copyright_yn" type="CODE" value=""></property>
+<property defalut="" name="저작권유무_해외" pid="copyright_yn_foreign" type="CODE" value=""></property>
+<property defalut="" name="방송예정시각" pid="broadcast_planned_time" type="TEXT" value=""></property>
+<property defalut="" name="방송예정길이_분" pid="broadcast_planned_duration_minute" type="NUMBER" value=""></property>
+<property defalut="" name="기획의도" pid="program_intention" type="TEXT" value=""></property>
+<property defalut="" name="방송예정매체코드" pid="broadcast_planned_media_code" type="CODE" value=""></property>
+<property defalut="" name="방송예정채널코드" pid="broadcast_planned_channel_code" type="CODE" value=""></property>
+<property defalut="" name="방송예정지역국코드" pid="broadcast_planned_local_station_code" type="CODE" value=""></property>
+<property defalut="node.pcode.main_image_path" name="대표이미지" pid="main_image" type="TEXT" value=""></property>
+<property defalut="" name="부순번호" pid="part_number" type="NUMBER" value=""></property>
+<property defalut="" name="프로파일" pid="ref_profile" type="REFERENCES" value=""></property>
+<property defalut="" name="주간 편성 정보" pid="ref_weekly_schedule" type="REFERENCED">
+<node iconclass="Icon_fugue_cd_calendar__pencil" nid="51100012095235" tid="mh_weekly_schedule"></node>
+</property>
+<property defalut="" name="프로그램등급코드" pid="program_deliberation_grade_code" type="CODE" value=""></property>
+<property defalut="" name="세그먼트" pid="ref_sid" type="REFERENCED"/>
+<property defalut="" name="비고" pid="note" type="TEXT" value=""></property>
+<property defalut="" name="오디오모드-주" pid="audio_mode_main" type="TEXT" value=""></property>
+<property defalut="" name="제작종료일자" pid="production_end_date" type="DATE" value=""></property>
+<property defalut="" name="출연진" pid="participant" type="REFERENCED"/>
+<property defalut="" name="변환동영상" pid="ref_transcoding" type="REFERENCED"/>
+<property defalut="" name="연관 이미지" pid="relation_img" type="REFERENCED"/>
+<property defalut="group_code.program_genre_code" name="장르코드" pid="program_genre_code" type="CODE" value="501">다큐멘터리-보도</property>
+<property defalut="group_code.channel_code" name="채널 코드" pid="channel_code" type="CODE" value="12">2TV</property>
+<property defalut="" name="Created" pid="created" type="DATE" value="20111205 171040">2011/12/05 17:10:40</property>
+<property defalut="" name="Changed" pid="changed" type="DATE" value="20111205 171040">2011/12/05 17:10:40</property>
+<property defalut="" name="Node Id" pid="nid" type="NODEID" value="">51100012093269</property>
+</node>
+<node nid="51100012093265" tid="mh_program_num_tv">
+<property defalut="group_code.program_code" name="프로그램코드(virtual)" pid="p_code" type="TEXT" value=""></property>
+<property defalut="" name="프로그램ID" pid="program_id" type="ID" value="">PS-2011161687-01-000</property>
+<property defalut="group_code.keyword" name="부가정보" pid="keyword" type="TEXT" value=""></property>
+<property defalut="node.pcode.program_title" name="프로그램명" pid="program_title" type="NAME" value="">생생 정보통</property>
+<property defalut="" name="그룹코드" pid="group_code" type="REFERENCE" value="T2010-0303">T2010-0303</property>
+<property defalut="" name="프로그램코드" pid="pcode" type="REFERENCE" value="T2010-0303">생생 정보통</property>
+<property defalut="" name="방송예정일자" pid="broadcast_planned_date" type="DATE" value="20111205 000000">2011/12/05 00:00:00</property>
+<property defalut="" name="회차" pid="program_sequence_number" type="NUMBER" value=""></property>
+<property defalut="" name="저작권유무_국내" pid="copyright_yn" type="CODE" value=""></property>
+<property defalut="" name="저작권유무_해외" pid="copyright_yn_foreign" type="CODE" value=""></property>
+<property defalut="" name="방송예정시각" pid="broadcast_planned_time" type="TEXT" value=""></property>
+<property defalut="" name="방송예정길이_분" pid="broadcast_planned_duration_minute" type="NUMBER" value=""></property>
+<property defalut="" name="기획의도" pid="program_intention" type="TEXT" value=""></property>
+<property defalut="" name="방송예정매체코드" pid="broadcast_planned_media_code" type="CODE" value=""></property>
+<property defalut="" name="방송예정채널코드" pid="broadcast_planned_channel_code" type="CODE" value=""></property>
+<property defalut="" name="방송예정지역국코드" pid="broadcast_planned_local_station_code" type="CODE" value=""></property>
+<property defalut="node.pcode.main_image_path" name="대표이미지" pid="main_image" type="TEXT" value=""></property>
+<property defalut="" name="부순번호" pid="part_number" type="NUMBER" value=""></property>
+<property defalut="" name="프로파일" pid="ref_profile" type="REFERENCES" value=""></property>
+<property defalut="" name="주간 편성 정보" pid="ref_weekly_schedule" type="REFERENCED">
+<node iconclass="Icon_fugue_cd_calendar__pencil" nid="51100012095233" tid="mh_weekly_schedule"></node>
+</property>
+<property defalut="" name="프로그램등급코드" pid="program_deliberation_grade_code" type="CODE" value=""></property>
+<property defalut="" name="세그먼트" pid="ref_sid" type="REFERENCED"/>
+<property defalut="" name="비고" pid="note" type="TEXT" value=""></property>
+<property defalut="" name="오디오모드-주" pid="audio_mode_main" type="TEXT" value=""></property>
+<property defalut="" name="제작종료일자" pid="production_end_date" type="DATE" value=""></property>
+<property defalut="" name="출연진" pid="participant" type="REFERENCED"/>
+<property defalut="" name="변환동영상" pid="ref_transcoding" type="REFERENCED"/>
+<property defalut="" name="연관 이미지" pid="relation_img" type="REFERENCED"/>
+<property defalut="group_code.program_genre_code" name="장르코드" pid="program_genre_code" type="CODE" value="301">교양-구성</property>
+<property defalut="group_code.channel_code" name="채널 코드" pid="channel_code" type="CODE" value="12">2TV</property>
+<property defalut="" name="Created" pid="created" type="DATE" value="20111205 171040">2011/12/05 17:10:40</property>
+<property defalut="" name="Changed" pid="changed" type="DATE" value="20111205 171040">2011/12/05 17:10:40</property>
+<property defalut="" name="Node Id" pid="nid" type="NODEID" value="">51100012093265</property>
+</node>
+<node nid="51100012093262" tid="mh_program_num_tv">
+<property defalut="group_code.program_code" name="프로그램코드(virtual)" pid="p_code" type="TEXT" value=""></property>
+<property defalut="" name="프로그램ID" pid="program_id" type="ID" value="">PS-2011161686-01-000</property>
+<property defalut="group_code.keyword" name="부가정보" pid="keyword" type="TEXT" value=""></property>
+<property defalut="node.pcode.program_title" name="프로그램명" pid="program_title" type="NAME" value="">생생 정보통</property>
+<property defalut="" name="그룹코드" pid="group_code" type="REFERENCE" value="T2010-0303">T2010-0303</property>
+<property defalut="" name="프로그램코드" pid="pcode" type="REFERENCE" value="T2010-0303">생생 정보통</property>
+<property defalut="" name="방송예정일자" pid="broadcast_planned_date" type="DATE" value="20111205 000000">2011/12/05 00:00:00</property>
+<property defalut="" name="회차" pid="program_sequence_number" type="NUMBER" value=""></property>
+<property defalut="" name="저작권유무_국내" pid="copyright_yn" type="CODE" value=""></property>
+<property defalut="" name="저작권유무_해외" pid="copyright_yn_foreign" type="CODE" value=""></property>
+<property defalut="" name="방송예정시각" pid="broadcast_planned_time" type="TEXT" value=""></property>
+<property defalut="" name="방송예정길이_분" pid="broadcast_planned_duration_minute" type="NUMBER" value=""></property>
+<property defalut="" name="기획의도" pid="program_intention" type="TEXT" value=""></property>
+<property defalut="" name="방송예정매체코드" pid="broadcast_planned_media_code" type="CODE" value=""></property>
+<property defalut="" name="방송예정채널코드" pid="broadcast_planned_channel_code" type="CODE" value=""></property>
+<property defalut="" name="방송예정지역국코드" pid="broadcast_planned_local_station_code" type="CODE" value=""></property>
+<property defalut="node.pcode.main_image_path" name="대표이미지" pid="main_image" type="TEXT" value=""></property>
+<property defalut="" name="부순번호" pid="part_number" type="NUMBER" value=""></property>
+<property defalut="" name="프로파일" pid="ref_profile" type="REFERENCES" value=""></property>
+<property defalut="" name="주간 편성 정보" pid="ref_weekly_schedule" type="REFERENCED">
+<node iconclass="Icon_fugue_cd_calendar__pencil" nid="51100012095232" tid="mh_weekly_schedule"></node>
+</property>
+<property defalut="" name="프로그램등급코드" pid="program_deliberation_grade_code" type="CODE" value=""></property>
+<property defalut="" name="세그먼트" pid="ref_sid" type="REFERENCED"/>
+<property defalut="" name="비고" pid="note" type="TEXT" value=""></property>
+<property defalut="" name="오디오모드-주" pid="audio_mode_main" type="TEXT" value=""></property>
+<property defalut="" name="제작종료일자" pid="production_end_date" type="DATE" value=""></property>
+<property defalut="" name="출연진" pid="participant" type="REFERENCED"/>
+<property defalut="" name="변환동영상" pid="ref_transcoding" type="REFERENCED"/>
+<property defalut="" name="연관 이미지" pid="relation_img" type="REFERENCED"/>
+<property defalut="group_code.program_genre_code" name="장르코드" pid="program_genre_code" type="CODE" value="301">교양-구성</property>
+<property defalut="group_code.channel_code" name="채널 코드" pid="channel_code" type="CODE" value="12">2TV</property>
+<property defalut="" name="Created" pid="created" type="DATE" value="20111205 171040">2011/12/05 17:10:40</property>
+<property defalut="" name="Changed" pid="changed" type="DATE" value="20111205 171040">2011/12/05 17:10:40</property>
+<property defalut="" name="Node Id" pid="nid" type="NODEID" value="">51100012093262</property>
+</node>
+<node nid="51100012093259" tid="mh_program_num_tv">
+<property defalut="group_code.program_code" name="프로그램코드(virtual)" pid="p_code" type="TEXT" value=""></property>
+<property defalut="" name="프로그램ID" pid="program_id" type="ID" value="">PS-2011165932-01-000</property>
+<property defalut="group_code.keyword" name="부가정보" pid="keyword" type="TEXT" value=""></property>
+<property defalut="node.pcode.program_title" name="프로그램명" pid="program_title" type="NAME" value="">KBS 뉴스타임</property>
+<property defalut="" name="그룹코드" pid="group_code" type="REFERENCE" value="T2010-0452">T2010-0452</property>
+<property defalut="" name="프로그램코드" pid="pcode" type="REFERENCE" value="T2010-0452">KBS 뉴스타임</property>
+<property defalut="" name="방송예정일자" pid="broadcast_planned_date" type="DATE" value="20111205 000000">2011/12/05 00:00:00</property>
+<property defalut="" name="회차" pid="program_sequence_number" type="NUMBER" value=""></property>
+<property defalut="" name="저작권유무_국내" pid="copyright_yn" type="CODE" value=""></property>
+<property defalut="" name="저작권유무_해외" pid="copyright_yn_foreign" type="CODE" value=""></property>
+<property defalut="" name="방송예정시각" pid="broadcast_planned_time" type="TEXT" value=""></property>
+<property defalut="" name="방송예정길이_분" pid="broadcast_planned_duration_minute" type="NUMBER" value=""></property>
+<property defalut="" name="기획의도" pid="program_intention" type="TEXT" value=""></property>
+<property defalut="" name="방송예정매체코드" pid="broadcast_planned_media_code" type="CODE" value=""></property>
+<property defalut="" name="방송예정채널코드" pid="broadcast_planned_channel_code" type="CODE" value=""></property>
+<property defalut="" name="방송예정지역국코드" pid="broadcast_planned_local_station_code" type="CODE" value=""></property>
+<property defalut="node.pcode.main_image_path" name="대표이미지" pid="main_image" type="TEXT" value=""></property>
+<property defalut="" name="부순번호" pid="part_number" type="NUMBER" value=""></property>
+<property defalut="" name="프로파일" pid="ref_profile" type="REFERENCES" value=""></property>
+<property defalut="" name="주간 편성 정보" pid="ref_weekly_schedule" type="REFERENCED">
+<node iconclass="Icon_fugue_cd_calendar__pencil" nid="51100012095231" tid="mh_weekly_schedule"></node>
+</property>
+<property defalut="" name="프로그램등급코드" pid="program_deliberation_grade_code" type="CODE" value=""></property>
+<property defalut="" name="세그먼트" pid="ref_sid" type="REFERENCED"/>
+<property defalut="" name="비고" pid="note" type="TEXT" value=""></property>
+<property defalut="" name="오디오모드-주" pid="audio_mode_main" type="TEXT" value=""></property>
+<property defalut="" name="제작종료일자" pid="production_end_date" type="DATE" value=""></property>
+<property defalut="" name="출연진" pid="participant" type="REFERENCED"/>
+<property defalut="" name="변환동영상" pid="ref_transcoding" type="REFERENCED"/>
+<property defalut="" name="연관 이미지" pid="relation_img" type="REFERENCED"/>
+<property defalut="group_code.program_genre_code" name="장르코드" pid="program_genre_code" type="CODE" value="101">보도-뉴스</property>
+<property defalut="group_code.channel_code" name="채널 코드" pid="channel_code" type="CODE" value="12">2TV</property>
+<property defalut="" name="Created" pid="created" type="DATE" value="20111205 171040">2011/12/05 17:10:40</property>
+<property defalut="" name="Changed" pid="changed" type="DATE" value="20111205 171040">2011/12/05 17:10:40</property>
+<property defalut="" name="Node Id" pid="nid" type="NODEID" value="">51100012093259</property>
+</node>
+<node nid="51100012093254" tid="mh_program_num_tv">
+<property defalut="group_code.program_code" name="프로그램코드(virtual)" pid="p_code" type="TEXT" value=""></property>
+<property defalut="" name="프로그램ID" pid="program_id" type="ID" value="">PS-2011149131-01-000</property>
+<property defalut="group_code.keyword" name="부가정보" pid="keyword" type="TEXT" value=""></property>
+<property defalut="node.pcode.program_title" name="프로그램명" pid="program_title" type="NAME" value="">TV 유치원</property>
+<property defalut="" name="그룹코드" pid="group_code" type="REFERENCE" value="T2007-0154">T2007-0154</property>
+<property defalut="" name="프로그램코드" pid="pcode" type="REFERENCE" value="T2010-0301">TV 유치원</property>
+<property defalut="" name="방송예정일자" pid="broadcast_planned_date" type="DATE" value="20111205 000000">2011/12/05 00:00:00</property>
+<property defalut="" name="회차" pid="program_sequence_number" type="NUMBER" value=""></property>
+<property defalut="" name="저작권유무_국내" pid="copyright_yn" type="CODE" value=""></property>
+<property defalut="" name="저작권유무_해외" pid="copyright_yn_foreign" type="CODE" value=""></property>
+<property defalut="" name="방송예정시각" pid="broadcast_planned_time" type="TEXT" value=""></property>
+<property defalut="" name="방송예정길이_분" pid="broadcast_planned_duration_minute" type="NUMBER" value=""></property>
+<property defalut="" name="기획의도" pid="program_intention" type="TEXT" value=""></property>
+<property defalut="" name="방송예정매체코드" pid="broadcast_planned_media_code" type="CODE" value=""></property>
+<property defalut="" name="방송예정채널코드" pid="broadcast_planned_channel_code" type="CODE" value=""></property>
+<property defalut="" name="방송예정지역국코드" pid="broadcast_planned_local_station_code" type="CODE" value=""></property>
+<property defalut="node.pcode.main_image_path" name="대표이미지" pid="main_image" type="TEXT" value=""></property>
+<property defalut="" name="부순번호" pid="part_number" type="NUMBER" value=""></property>
+<property defalut="" name="프로파일" pid="ref_profile" type="REFERENCES" value=""></property>
+<property defalut="" name="주간 편성 정보" pid="ref_weekly_schedule" type="REFERENCED">
+<node iconclass="Icon_fugue_cd_calendar__pencil" nid="51100012095228" tid="mh_weekly_schedule"></node>
+</property>
+<property defalut="" name="프로그램등급코드" pid="program_deliberation_grade_code" type="CODE" value=""></property>
+<property defalut="" name="세그먼트" pid="ref_sid" type="REFERENCED"/>
+<property defalut="" name="비고" pid="note" type="TEXT" value=""></property>
+<property defalut="" name="오디오모드-주" pid="audio_mode_main" type="TEXT" value=""></property>
+<property defalut="" name="제작종료일자" pid="production_end_date" type="DATE" value=""></property>
+<property defalut="" name="출연진" pid="participant" type="REFERENCED"/>
+<property defalut="" name="변환동영상" pid="ref_transcoding" type="REFERENCED"/>
+<property defalut="" name="연관 이미지" pid="relation_img" type="REFERENCED"/>
+<property defalut="group_code.program_genre_code" name="장르코드" pid="program_genre_code" type="CODE" value="301">교양-구성</property>
+<property defalut="group_code.channel_code" name="채널 코드" pid="channel_code" type="CODE" value="12">2TV</property>
+<property defalut="" name="Created" pid="created" type="DATE" value="20111205 171039">2011/12/05 17:10:39</property>
+<property defalut="" name="Changed" pid="changed" type="DATE" value="20111205 171039">2011/12/05 17:10:39</property>
+<property defalut="" name="Node Id" pid="nid" type="NODEID" value="">51100012093254</property>
+</node>
+<node nid="51100012093251" tid="mh_program_num_tv">
+<property defalut="group_code.program_code" name="프로그램코드(virtual)" pid="p_code" type="TEXT" value=""></property>
+<property defalut="" name="프로그램ID" pid="program_id" type="ID" value="">PS-2011157347-01-000</property>
+<property defalut="group_code.keyword" name="부가정보" pid="keyword" type="TEXT" value=""></property>
+<property defalut="node.pcode.program_title" name="프로그램명" pid="program_title" type="NAME" value="">미키마우스 클럽하우스</property>
+<property defalut="" name="그룹코드" pid="group_code" type="REFERENCE" value="T2011-0749">T2011-0749</property>
+<property defalut="" name="프로그램코드" pid="pcode" type="REFERENCE" value="T2011-0749">미키마우스 클럽하우스</property>
+<property defalut="" name="방송예정일자" pid="broadcast_planned_date" type="DATE" value="20111205 000000">2011/12/05 00:00:00</property>
+<property defalut="" name="회차" pid="program_sequence_number" type="NUMBER" value="">21</property>
+<property defalut="" name="저작권유무_국내" pid="copyright_yn" type="CODE" value=""></property>
+<property defalut="" name="저작권유무_해외" pid="copyright_yn_foreign" type="CODE" value=""></property>
+<property defalut="" name="방송예정시각" pid="broadcast_planned_time" type="TEXT" value=""></property>
+<property defalut="" name="방송예정길이_분" pid="broadcast_planned_duration_minute" type="NUMBER" value=""></property>
+<property defalut="" name="기획의도" pid="program_intention" type="TEXT" value=""></property>
+<property defalut="" name="방송예정매체코드" pid="broadcast_planned_media_code" type="CODE" value=""></property>
+<property defalut="" name="방송예정채널코드" pid="broadcast_planned_channel_code" type="CODE" value=""></property>
+<property defalut="" name="방송예정지역국코드" pid="broadcast_planned_local_station_code" type="CODE" value=""></property>
+<property defalut="node.pcode.main_image_path" name="대표이미지" pid="main_image" type="TEXT" value=""></property>
+<property defalut="" name="부순번호" pid="part_number" type="NUMBER" value=""></property>
+<property defalut="" name="프로파일" pid="ref_profile" type="REFERENCES" value=""></property>
+<property defalut="" name="주간 편성 정보" pid="ref_weekly_schedule" type="REFERENCED">
+<node iconclass="Icon_fugue_cd_calendar__pencil" nid="51100012095227" tid="mh_weekly_schedule"></node>
+</property>
+<property defalut="" name="프로그램등급코드" pid="program_deliberation_grade_code" type="CODE" value=""></property>
+<property defalut="" name="세그먼트" pid="ref_sid" type="REFERENCED"/>
+<property defalut="" name="비고" pid="note" type="TEXT" value=""></property>
+<property defalut="" name="오디오모드-주" pid="audio_mode_main" type="TEXT" value=""></property>
+<property defalut="" name="제작종료일자" pid="production_end_date" type="DATE" value=""></property>
+<property defalut="" name="출연진" pid="participant" type="REFERENCED"/>
+<property defalut="" name="변환동영상" pid="ref_transcoding" type="REFERENCED"/>
+<property defalut="" name="연관 이미지" pid="relation_img" type="REFERENCED"/>
+<property defalut="group_code.program_genre_code" name="장르코드" pid="program_genre_code" type="CODE" value="802">만화-외국만화</property>
+<property defalut="group_code.channel_code" name="채널 코드" pid="channel_code" type="CODE" value="12">2TV</property>
+<property defalut="" name="Created" pid="created" type="DATE" value="20111205 171038">2011/12/05 17:10:38</property>
+<property defalut="" name="Changed" pid="changed" type="DATE" value="20111205 171038">2011/12/05 17:10:38</property>
+<property defalut="" name="Node Id" pid="nid" type="NODEID" value="">51100012093251</property>
+</node>
+<node nid="51100012093247" tid="mh_program_num_tv">
+<property defalut="group_code.program_code" name="프로그램코드(virtual)" pid="p_code" type="TEXT" value=""></property>
+<property defalut="" name="프로그램ID" pid="program_id" type="ID" value="">PS-2011165931-01-000</property>
+<property defalut="group_code.keyword" name="부가정보" pid="keyword" type="TEXT" value=""></property>
+<property defalut="node.pcode.program_title" name="프로그램명" pid="program_title" type="NAME" value="">KBS 뉴스타임</property>
+<property defalut="" name="그룹코드" pid="group_code" type="REFERENCE" value="T2010-0452">T2010-0452</property>
+<property defalut="" name="프로그램코드" pid="pcode" type="REFERENCE" value="T2010-0452">KBS 뉴스타임</property>
+<property defalut="" name="방송예정일자" pid="broadcast_planned_date" type="DATE" value="20111205 000000">2011/12/05 00:00:00</property>
+<property defalut="" name="회차" pid="program_sequence_number" type="NUMBER" value=""></property>
+<property defalut="" name="저작권유무_국내" pid="copyright_yn" type="CODE" value=""></property>
+<property defalut="" name="저작권유무_해외" pid="copyright_yn_foreign" type="CODE" value=""></property>
+<property defalut="" name="방송예정시각" pid="broadcast_planned_time" type="TEXT" value=""></property>
+<property defalut="" name="방송예정길이_분" pid="broadcast_planned_duration_minute" type="NUMBER" value=""></property>
+<property defalut="" name="기획의도" pid="program_intention" type="TEXT" value=""></property>
+<property defalut="" name="방송예정매체코드" pid="broadcast_planned_media_code" type="CODE" value=""></property>
+<property defalut="" name="방송예정채널코드" pid="broadcast_planned_channel_code" type="CODE" value=""></property>
+<property defalut="" name="방송예정지역국코드" pid="broadcast_planned_local_station_code" type="CODE" value=""></property>
+<property defalut="node.pcode.main_image_path" name="대표이미지" pid="main_image" type="TEXT" value=""></property>
+<property defalut="" name="부순번호" pid="part_number" type="NUMBER" value=""></property>
+<property defalut="" name="프로파일" pid="ref_profile" type="REFERENCES" value=""></property>
+<property defalut="" name="주간 편성 정보" pid="ref_weekly_schedule" type="REFERENCED">
+<node iconclass="Icon_fugue_cd_calendar__pencil" nid="51100012095225" tid="mh_weekly_schedule"></node>
+</property>
+<property defalut="" name="프로그램등급코드" pid="program_deliberation_grade_code" type="CODE" value=""></property>
+<property defalut="" name="세그먼트" pid="ref_sid" type="REFERENCED"/>
+<property defalut="" name="비고" pid="note" type="TEXT" value=""></property>
+<property defalut="" name="오디오모드-주" pid="audio_mode_main" type="TEXT" value=""></property>
+<property defalut="" name="제작종료일자" pid="production_end_date" type="DATE" value=""></property>
+<property defalut="" name="출연진" pid="participant" type="REFERENCED"/>
+<property defalut="" name="변환동영상" pid="ref_transcoding" type="REFERENCED"/>
+<property defalut="" name="연관 이미지" pid="relation_img" type="REFERENCED"/>
+<property defalut="group_code.program_genre_code" name="장르코드" pid="program_genre_code" type="CODE" value="101">보도-뉴스</property>
+<property defalut="group_code.channel_code" name="채널 코드" pid="channel_code" type="CODE" value="12">2TV</property>
+<property defalut="" name="Created" pid="created" type="DATE" value="20111205 171038">2011/12/05 17:10:38</property>
+<property defalut="" name="Changed" pid="changed" type="DATE" value="20111205 171038">2011/12/05 17:10:38</property>
+<property defalut="" name="Node Id" pid="nid" type="NODEID" value="">51100012093247</property>
+</node>
+<node nid="51100012093241" tid="mh_program_num_tv">
+<property defalut="group_code.program_code" name="프로그램코드(virtual)" pid="p_code" type="TEXT" value=""></property>
+<property defalut="" name="프로그램ID" pid="program_id" type="ID" value="">PS-2011162352-01-000</property>
+<property defalut="group_code.keyword" name="부가정보" pid="keyword" type="TEXT" value=""></property>
+<property defalut="node.pcode.program_title" name="프로그램명" pid="program_title" type="NAME" value="">세상의 모든 다큐</property>
+<property defalut="" name="그룹코드" pid="group_code" type="REFERENCE" value="T2011-0923">T2011-0923</property>
+<property defalut="" name="프로그램코드" pid="pcode" type="REFERENCE" value="T2011-0923">세상의 모든 다큐</property>
+<property defalut="" name="방송예정일자" pid="broadcast_planned_date" type="DATE" value="20111205 000000">2011/12/05 00:00:00</property>
+<property defalut="" name="회차" pid="program_sequence_number" type="NUMBER" value=""></property>
+<property defalut="" name="저작권유무_국내" pid="copyright_yn" type="CODE" value=""></property>
+<property defalut="" name="저작권유무_해외" pid="copyright_yn_foreign" type="CODE" value=""></property>
+<property defalut="" name="방송예정시각" pid="broadcast_planned_time" type="TEXT" value=""></property>
+<property defalut="" name="방송예정길이_분" pid="broadcast_planned_duration_minute" type="NUMBER" value=""></property>
+<property defalut="" name="기획의도" pid="program_intention" type="TEXT" value=""></property>
+<property defalut="" name="방송예정매체코드" pid="broadcast_planned_media_code" type="CODE" value=""></property>
+<property defalut="" name="방송예정채널코드" pid="broadcast_planned_channel_code" type="CODE" value=""></property>
+<property defalut="" name="방송예정지역국코드" pid="broadcast_planned_local_station_code" type="CODE" value=""></property>
+<property defalut="node.pcode.main_image_path" name="대표이미지" pid="main_image" type="TEXT" value=""></property>
+<property defalut="" name="부순번호" pid="part_number" type="NUMBER" value=""></property>
+<property defalut="" name="프로파일" pid="ref_profile" type="REFERENCES" value=""></property>
+<property defalut="" name="주간 편성 정보" pid="ref_weekly_schedule" type="REFERENCED">
+<node iconclass="Icon_fugue_cd_calendar__pencil" nid="51100012095221" tid="mh_weekly_schedule"></node>
+</property>
+<property defalut="" name="프로그램등급코드" pid="program_deliberation_grade_code" type="CODE" value=""></property>
+<property defalut="" name="세그먼트" pid="ref_sid" type="REFERENCED"/>
+<property defalut="" name="비고" pid="note" type="TEXT" value=""></property>
+<property defalut="" name="오디오모드-주" pid="audio_mode_main" type="TEXT" value=""></property>
+<property defalut="" name="제작종료일자" pid="production_end_date" type="DATE" value=""></property>
+<property defalut="" name="출연진" pid="participant" type="REFERENCED"/>
+<property defalut="" name="변환동영상" pid="ref_transcoding" type="REFERENCED"/>
+<property defalut="" name="연관 이미지" pid="relation_img" type="REFERENCED"/>
+<property defalut="group_code.program_genre_code" name="장르코드" pid="program_genre_code" type="CODE" value="502">다큐멘터리-교양</property>
+<property defalut="group_code.channel_code" name="채널 코드" pid="channel_code" type="CODE" value="12">2TV</property>
+<property defalut="" name="Created" pid="created" type="DATE" value="20111205 171037">2011/12/05 17:10:37</property>
+<property defalut="" name="Changed" pid="changed" type="DATE" value="20111205 171037">2011/12/05 17:10:37</property>
+<property defalut="" name="Node Id" pid="nid" type="NODEID" value="">51100012093241</property>
+</node>
+</nodes>

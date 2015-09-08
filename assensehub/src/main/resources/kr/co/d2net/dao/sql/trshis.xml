@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="TrsHis">
+    
+    <typeAlias alias="TrsHis" type="kr.co.d2net.dto.TransferHisTbl"/>
+    
+    <resultMap id="TrsHisMap" class="TrsHis">
+    	<result property="deviceNm" column="DEVICE_NM" />              
+		<result property="deviceIp" column="DEVICE_IP" />              
+		<result property="useYn" column="USE_YN" />                    
+		<result property="seq" column="SEQ" />                         
+		<result property="regDt" column="REG_DT" />                    
+		<result property="regrid" column="REGRID" />                   
+		<result property="modDt" column="MOD_DT" />                    
+		<result property="modrid" column="MODRID" />                   
+		<result property="trsStrDt" column="TRS_STR_DT" />           
+		<result property="ctiId" column="CTI_ID" />                    
+		<result property="workStatcd" column="WORK_STATCD" />          
+		<result property="reqUsrid" column="REQ_USRID" />              
+		<result property="prgrs" column="PRGRS" />                     
+		<result property="downVol" column="DOWN_VOL" />                
+		<result property="flPath" column="FL_PATH" />                  
+		<result property="trsEndDt" column="TRS_END_DT" />           
+		<result property="busiPartnerId" column="BUSI_PARTNER_ID" />   
+		<result property="url" column="URL" />
+		                         
+		<result property="retryCnt" column="RETRY_CNT" />
+        <result property="company" column="COMPANY" />
+        <result property="proFlnm" column="PRO_FLNM" />
+        <result property="pgmNm" column="PGM_NM" />
+        <result property="orgFileNm" column="ORG_FILE_NM" />
+
+		<result property="eqPsCd" column="EQ_PS_CD" />
+		<result property="priority" column="PRIORITY" />
+		<result property="proFlid" column="PRO_FLID" />
+		<result property="deviceid" column="DEVICEID" />
+		<result property="jobGubun" column="JOB_GUBUN" />
+		<result property="metaIns" column="META_INS" />
+		<result property="metaUpd" column="META_UPD" />
+    </resultMap>
+    
+    <resultMap id="TrsHisJobMap" class="TrsHis">
+		<result property="seq" column="SEQ" />                         
+		<result property="ctiId" column="CTI_ID" />                    
+		<result property="retryCnt" column="RETRY_CNT" />     
+		<result property="flPath" column="FL_PATH" />                  
+        <result property="orgFileNm" column="ORG_FILE_NM" />
+        <result property="wrkFileNm" column="WRK_FILE_NM" />
+        <result property="flExt" column="FL_EXT" />
+		<result property="priority" column="PRIORITY" />
+		<result property="proFlid" column="PRO_FLID" />
+		<result property="pgmGrpCd" column="PGM_GRP_CD" />
+		<result property="ctNm" column="CT_NM" />
+		<result property="ctId" column="CT_ID" />
+		<result property="ctiId" column="CTI_ID" />
+		<result property="pgmCd" column="PGM_CD" />
+		<result property="pgmId" column="PGM_ID" />
+		<result property="pgmNm" column="PGM_NM" />
+		<result property="ip" column="IP" />
+		<result property="ftpid" column="FTPID" />
+		<result property="password" column="PASSWORD" />
+		<result property="port" column="PORT" />
+		<result property="remoteDir" column="REMOTE_DIR" />
+		<result property="transMethod" column="TRANS_METHOD" />
+		<result property="company" column="COMPANY" />
+		<result property="bitRate" column="BIT_RATE" />
+		<result property="proFlnm" column="PRO_FLNM" />
+		<result property="busiPartnerId" column="BUSI_PARTNER_ID" />
+		<result property="vodSmil" column="VOD_SMIL" />
+		<result property="workStatcd" column="WORK_STATCD" />
+    </resultMap>
+    
+    <resultMap id="TrsHisBusiMap" class="TrsHis">
+		<result property="pgmCd" column="PGM_CD" />                         
+		<result property="pgmId" column="PGM_ID" />                    
+		<result property="pgmNm" column="PGM_NM" />     
+		<result property="segmentId" column="SEGMENT_ID" />                  
+        <result property="segmentNm" column="SEGMENT_NM" />
+        <result property="ctNm" column="CT_NM" />
+        <result property="company" column="COMPANY" />
+        <result property="ip" column="IP" />     
+		<result property="ftpid" column="FTPID" />                  
+        <result property="password" column="PASSWORD" />
+        <result property="remoteDir" column="REMOTE_DIR" />
+        <result property="transMethod" column="TRANS_METHOD" />
+        <result property="port" column="PORT" />
+        <result property="orgFileNm" column="ORG_FILE_NM" />
+        <result property="wrkFileNm" column="WRK_FILE_NM" />
+        <result property="flPath" column="FL_PATH" />
+        <result property="flExt" column="FL_EXT" />
+        <result property="flSz" column="FL_SZ" />
+        <result property="busiPartnerId" column="BUSI_PARTNER_ID" />
+        <result property="proFlid" column="PRO_FLID" />
+        <result property="company" column="COMPANY" />
+        <result property="srvUrl" column="SRV_URL" />
+        <result property="contentML" column="CONTENT_ML" />
+        <result property="vodSmil" column="VOD_SMIL" />
+        <result property="ctiId" column="CTI_ID" />
+    </resultMap>
+    
+    <resultMap id="TrsCtiBusiMap" class="TrsHis">       
+		<result property="wrkFileNm" column="WRK_FILE_NM" />                    
+		<result property="flExt" column="FL_EXT" />     
+		<result property="bitRate" column="BIT_RATE" />   
+		<result property="avGubun" column="AV_GUBUN" />                
+    </resultMap>
+    
+    <select id="findTrsHisBusi" resultMap="TrsHisBusiMap" parameterClass="java.lang.Long">
+	    SELECT
+			a.PRO_FLID, c.PGM_CD, c.PGM_ID, c.PGM_NM, c.SEGMENT_ID, c.SEGMENT_NM, c.CT_NM,
+		    e.COMPANY, e.IP, e.FTPID, e.PASSWORD, e.REMOTE_DIR, e.TRANS_METHOD, e.PORT, e.SRV_URL, e.CONTENT_ML, e.VOD_SMIL,
+		    b.ORG_FILE_NM, b.WRK_FILE_NM, b.FL_PATH, b.FL_EXT, b.FL_SZ, d.BUSI_PARTNERID BUSI_PARTNER_ID, b.CTI_ID
+		FROM TRA_HIS_TBL a
+        	inner JOIN CONTENTS_INST_TBL b ON a.CTI_ID = b.CTI_ID
+        	inner JOIN CONTENTS_TBL c ON b.CT_ID = c.CT_ID
+            inner JOIN BUSI_PARTNER_PGM d ON c.PGM_CD = d.PROGRAM_CODE and c.CT_TYP = d.CT_TYP
+            inner JOIN PRO_BUSI_TBL f ON a.PRO_FLID = f.PRO_FLID AND f.BUSI_PARTNERID = d.BUSI_PARTNERID
+            inner JOIN BUSI_PARTNER_TBL e ON d.BUSI_PARTNERID = e.BUSI_PARTNERID
+		WHERE a.seq = #seq#
+    </select>
+    
+    <select id="findCtiBusi" resultMap="TrsCtiBusiMap" parameterClass="map">
+	    SELECT
+			f.WRK_FILE_NM, d.FL_EXT,
+		    NVL(c.AUD_BIT_RATE,0)+NVL(c.VDO_BIT_RATE,0)||'000' BIT_RATE,
+		    (CASE WHEN c.VDO_CODEC IS NULL OR c.VDO_CODEC = '' THEN 'A' ELSE 'V' end) AV_GUBUN
+		FROM BUSI_PARTNER_TBL a
+			inner JOIN PRO_BUSI_TBL b ON a.BUSI_PARTNERID = b.BUSI_PARTNERID
+		    inner JOIN PRO_FL_TBL c ON b.PRO_FLID = c.PRO_FLID
+			inner JOIN TRA_HIS_TBL d ON c.PRO_FLID = d.PRO_FLID
+		    inner JOIN CONTENTS_INST_TBL e ON d.CTI_ID = e.CTI_ID
+            inner JOIN CONTENTS_INST_TBL f ON d.WRK_CTI_ID = f.CTI_ID
+		WHERE a.BUSI_PARTNERID = #busiPartnerId# AND e.CTI_ID = #ctiId#
+    </select>
+    
+    <select id="findTrsHis" resultMap="TrsHisMap" parameterClass="map">
+	    SELECT  * FROM TRS_HIS_TBL TRS
+			LEFT OUTER JOIN CONTENTS_INST_TBL CTI ON CTI.CTI_ID = TRS.CTI_ID
+			LEFT OUTER JOIN CONTENTS_TBL CT ON CT.CT_ID = CTI.CT_ID
+			LEFT OUTER JOIN PRO_FL_TBL PFL ON PFL.PRO_FLID = CTI.PRO_FLID
+			LEFT OUTER JOIN BUSI_PARTNER_TBL BPT ON BPT.BUSI_PARTNERID = TRS.BUSI_PARTNER_ID
+         <dynamic prepend="WHERE">
+
+         </dynamic>
+    </select>
+    
+    <select id="getTrsHis" resultClass="TrsHis" parameterClass="map">
+		SELECT  
+			DEVICEID       as deviceid,     
+			USE_YN          as useYn,        
+			SEQ             as seq,          
+			REG_DT          as regDt,        
+			REGRID          as regrid,       
+			MOD_DT          as modDt,        
+			MODRID          as modrid,       
+			TRS_STR_DT     as trsStrDt,    
+			CTI_ID          as ctiId,        
+			WORK_STATCD     as workStatcd,   
+			REQ_USRID       as reqUsrid,     
+			PRGRS           as prgrs,        
+			DOWN_VOL        as downVol,      
+			FL_PATH         as flPath,       
+			TRS_END_DT     as trsEndDt,    
+			BUSI_PARTNER_ID as busiPartnerId,
+			URL             as url, 
+			EQ_PS_CD 	as eqPsCd,
+			PRIORITY 	as priority,
+			PRO_FLID 	as proFlid,
+			DEVICEID 	as deviceid,		 
+			        
+			RETRY_CNT       as retryCnt 
+		FROM TRS_HIS_TBL
+		<dynamic prepend="WHERE">
+			
+		</dynamic>
+    </select>
+    
+    <select id="getTrsHisPrgrs" resultClass="TrsHis" parameterClass="map">
+		SELECT  
+			      
+			SEQ             as seq,             
+			PRGRS           as prgrs
+		FROM TRS_HIS_TBL
+		<dynamic prepend="WHERE">
+			<isNotEmpty property="seq2" prepend="AND">
+    			SEQ in ($seq2$)
+    		</isNotEmpty>
+		</dynamic>
+    </select>
+    
+    <select id="getTrsHisJob" resultClass="TrsHis" parameterClass="map">
+		SELECT  
+		    ct.PGM_GRP_CD as pgmGrpCd, ct.PGM_CD as pgmCd, ct.PGM_ID as pgmId, ct.PGM_NM as pgmNm,
+			ct.SEGMENT_NM as segmentNm, ct.CT_NM as ctNm, ct.CT_ID as ctId, cti.CTI_ID as ctiId, trs.SEQ,
+			cti.FL_PATH, cti.ORG_FILE_NM, cti.WRK_FILE_NM
+		FROM TRS_HIS_TBL trs
+			inner JOIN CONTENTS_INST_TBL cti ON trs.CTI_ID = cti.CTI_ID
+		    inner JOIN CONTENTS_TBL ct ON cti.CT_ID = ct.CT_ID
+		WHERE trs.work_statcd IN ('000') AND ROWNUM = 1
+		ORDER BY trs.priority ASC, trs.reg_dt desc
+    </select>
+    
+    <select id="findVideoLiveStatCd" resultMap="TrsHisJobMap" parameterClass="map">
+    	SELECT  
+			trs.PRIORITY, trs.RETRY_CNT, trs.PRO_FLID, trs.WORK_STATCD,
+		    ct.PGM_GRP_CD, ct.PGM_CD, ct.PGM_ID, ct.PGM_NM,
+			ct.CT_NM, ct.CT_ID, cti.CTI_ID, trs.SEQ,
+			cti.FL_PATH, cti.ORG_FILE_NM, cti.WRK_FILE_NM, cti.FL_EXT,
+			bp.COMPANY, bp.IP, bp.FTPID, BP.PASSWORD, bp.PORT, bp.REMOTE_DIR, bp.TRANS_METHOD,trs.BUSI_PARTNER_ID, bp.VOD_SMIL,
+			pf.PRO_FLNM, (CASE WHEN pf.VDO_CODEC IS NULL OR pf.VDO_CODEC = '' THEN pf.AUD_BIT_RATE ELSE pf.VDO_BIT_RATE end) BIT_RATE
+		FROM TRS_HIS_TBL trs
+			inner JOIN CONTENTS_INST_TBL cti ON trs.CTI_ID = cti.CTI_ID
+		    inner JOIN CONTENTS_TBL ct ON cti.CT_ID = ct.CT_ID
+		    inner JOIN BUSI_PARTNER_TBL bp ON trs.BUSI_PARTNER_ID = bp.BUSI_PARTNERID
+		    inner JOIN PRO_FL_TBL pf ON trs.PRO_FLID = pf.PRO_FLID
+		WHERE ROWNUM &lt;= #size#
+        	AND trs.work_statcd = #wrkStatCd#
+            AND CT.CT_TYP = '00'
+            AND trs.PRGRS &lt;&gt; '100'
+            AND EXISTS (
+            	SELECT 1 FROM CONTENTS_INST_TBL mxf WHERE mxf.REG_DT &gt; (SYSDATE - 10) AND mxf.CTI_FMT LIKE '1%' AND mxf.AV_GUBUN = 'V' AND mxf.USE_YN = 'Y' 
+                	AND mxf.CT_ID = ct.CT_ID
+            )
+            AND (
+	            EXISTS (
+	            	SELECT 1 FROM CONTENTS_TBL t WHERE t.CT_ID = ct.CT_SEQ AND t.REGRID = 'LIVE'
+	            ) OR ct.REGRID = 'NAS'
+            )
+            <isNull prepend="AND" property="vdoBitRate">
+				(pf.VDO_BIT_RATE is NULL OR pf.VDO_BIT_RATE &lt;&gt; '35000') AND trs.PRGRS &lt;&gt; '100'
+			</isNull>
+			<isNotNull prepend="AND" property="vdoBitRate">
+				(pf.VDO_BIT_RATE is not NULL AND pf.VDO_BIT_RATE = #vdoBitRate#) AND trs.PRGRS &lt;&gt; '100'
+			</isNotNull>
+		ORDER BY trs.priority ASC, trs.reg_dt ASC
+    </select>
+    
+    <select id="findVideoDMCRStatCd" resultMap="TrsHisJobMap" parameterClass="map">
+    	SELECT  
+			trs.PRIORITY, trs.RETRY_CNT, trs.PRO_FLID, trs.WORK_STATCD,
+		    ct.PGM_GRP_CD, ct.PGM_CD, ct.PGM_ID, ct.PGM_NM,
+			ct.CT_NM, ct.CT_ID, cti.CTI_ID, trs.SEQ,
+			cti.FL_PATH, cti.ORG_FILE_NM, cti.WRK_FILE_NM, cti.FL_EXT,
+			bp.COMPANY, bp.IP, bp.FTPID, BP.PASSWORD, bp.PORT, bp.REMOTE_DIR, bp.TRANS_METHOD,trs.BUSI_PARTNER_ID, bp.VOD_SMIL,
+			pf.PRO_FLNM, (CASE WHEN pf.VDO_CODEC IS NULL OR pf.VDO_CODEC = '' THEN pf.AUD_BIT_RATE ELSE pf.VDO_BIT_RATE end) BIT_RATE
+		FROM TRS_HIS_TBL trs
+			inner JOIN CONTENTS_INST_TBL cti ON trs.CTI_ID = cti.CTI_ID
+		    inner JOIN CONTENTS_TBL ct ON cti.CT_ID = ct.CT_ID
+		    inner JOIN DAIRY_ORDER_TBL dairy ON ct.PGM_ID = dairy.PROGRAM_ID
+		    inner JOIN (SELECT program_code, program_id, MAX(running_end_time) running_end_time FROM DAIRY_ORDER_TBL GROUP BY program_code, program_id)
+            	dairy2 ON dairy.PROGRAM_CODE = dairy2.PROGRAM_CODE AND dairy.PROGRAM_ID = dairy2.PROGRAM_ID  AND dairy.RUNNING_END_TIME = dairy2.RUNNING_END_TIME
+		    inner JOIN BUSI_PARTNER_TBL bp ON trs.BUSI_PARTNER_ID = bp.BUSI_PARTNERID
+		    inner JOIN PRO_FL_TBL pf ON trs.PRO_FLID = pf.PRO_FLID
+		WHERE ROWNUM &lt;= #size#
+        	AND trs.work_statcd = #wrkStatCd# 
+            AND CT.CT_TYP = '00'
+            AND trs.PRGRS &lt;&gt; '100'
+            AND EXISTS (
+            	SELECT 1 FROM CONTENTS_INST_TBL mxf WHERE mxf.REG_DT &gt; (SYSDATE - 10) AND mxf.CTI_FMT LIKE '1%' AND mxf.AV_GUBUN = 'V' AND mxf.USE_YN = 'Y' 
+                	AND mxf.CT_ID = ct.CT_ID
+            )
+            AND EXISTS (
+            	SELECT 1 FROM CONTENTS_TBL t WHERE t.CT_ID = ct.CT_SEQ AND t.REGRID = 'DMCR'
+            )
+            AND dairy.END_DATETIME &lt; SYSDATE
+            <isNull prepend="AND" property="vdoBitRate">
+				(pf.VDO_BIT_RATE is NULL OR pf.VDO_BIT_RATE &lt;&gt; '35000') AND trs.PRGRS &lt;&gt; '100'
+			</isNull>
+			<isNotNull prepend="AND" property="vdoBitRate">
+				(pf.VDO_BIT_RATE is not NULL AND pf.VDO_BIT_RATE = #vdoBitRate#) AND trs.PRGRS &lt;&gt; '100'
+			</isNotNull>
+		ORDER BY trs.priority ASC, trs.reg_dt ASC
+    </select>
+    
+    <!-- 비디오 비본방 전송 기본조회 -->
+    <select id="findVideoNonOnAirStatCd" resultMap="TrsHisJobMap" parameterClass="map">
+    	SELECT * FROM (
+	    	SELECT  
+				trs.PRIORITY, trs.RETRY_CNT, trs.PRO_FLID, trs.WORK_STATCD,
+			    ct.PGM_GRP_CD, ct.PGM_CD, ct.PGM_ID, ct.PGM_NM,
+				ct.CT_NM, ct.CT_ID, cti.CTI_ID, trs.SEQ,
+				cti.FL_PATH, cti.ORG_FILE_NM, cti.WRK_FILE_NM, cti.FL_EXT,
+				bp.COMPANY, bp.IP, bp.FTPID, BP.PASSWORD, bp.PORT, bp.REMOTE_DIR, bp.TRANS_METHOD,trs.BUSI_PARTNER_ID, bp.VOD_SMIL,
+				pf.PRO_FLNM, (CASE WHEN pf.VDO_CODEC IS NULL OR pf.VDO_CODEC = '' THEN pf.AUD_BIT_RATE ELSE pf.VDO_BIT_RATE end) BIT_RATE
+			FROM TRS_HIS_TBL trs
+				inner JOIN CONTENTS_INST_TBL cti ON trs.CTI_ID = cti.CTI_ID
+			    inner JOIN CONTENTS_TBL ct ON cti.CT_ID = ct.CT_ID
+			    inner JOIN (
+		        	SELECT * FROM CONTENTS_INST_TBL WHERE CTI_FMT like '1%' AND USE_YN = 'Y'
+		        ) mxf ON mxf.CT_ID = ct.CT_ID
+			    inner JOIN BUSI_PARTNER_TBL bp ON trs.BUSI_PARTNER_ID = bp.BUSI_PARTNERID
+			    inner JOIN PRO_FL_TBL pf ON trs.PRO_FLID = pf.PRO_FLID
+			WHERE ROWNUM &lt;= #size# and trs.work_statcd = #wrkStatCd# AND ct.CT_TYP &lt;&gt; '00' AND mxf.AV_GUBUN = 'V'
+			<isNull prepend="AND" property="vdoBitRate">
+				(pf.VDO_BIT_RATE is NULL OR pf.VDO_BIT_RATE &lt;&gt; '35000') AND trs.PRGRS &lt;&gt; '100'
+			</isNull>
+			<isNotNull prepend="AND" property="vdoBitRate">
+				(pf.VDO_BIT_RATE is not NULL AND pf.VDO_BIT_RATE = #vdoBitRate#) AND trs.PRGRS &lt;&gt; '100'
+			</isNotNull>
+			UNION ALL
+			SELECT  
+				trs.PRIORITY, trs.RETRY_CNT, trs.PRO_FLID, trs.WORK_STATCD,
+			    ct.PGM_GRP_CD, ct.PGM_CD, ct.PGM_ID, ct.PGM_NM,
+				ct.CT_NM, ct.CT_ID, cti.CTI_ID, trs.SEQ,
+				cti.FL_PATH, cti.ORG_FILE_NM, cti.WRK_FILE_NM, cti.FL_EXT,
+				bp.COMPANY, bp.IP, bp.FTPID, BP.PASSWORD, bp.PORT, bp.REMOTE_DIR, bp.TRANS_METHOD,trs.BUSI_PARTNER_ID, bp.VOD_SMIL,
+				pf.PRO_FLNM, (CASE WHEN pf.VDO_CODEC IS NULL OR pf.VDO_CODEC = '' THEN pf.AUD_BIT_RATE ELSE pf.VDO_BIT_RATE end) BIT_RATE
+			FROM TRS_HIS_TBL trs
+				inner JOIN CONTENTS_INST_TBL cti ON trs.CTI_ID = cti.CTI_ID
+			    inner JOIN CONTENTS_TBL ct ON cti.CT_ID = ct.CT_ID
+			    inner JOIN WEEK_SCH_TBL week ON ct.PGM_ID = week.PROGRAM_ID
+			    inner JOIN (
+		        	SELECT * FROM CONTENTS_INST_TBL WHERE CTI_FMT like '1%' AND USE_YN = 'Y'
+		        ) mxf ON mxf.CT_ID = ct.CT_ID
+			    inner JOIN BUSI_PARTNER_TBL bp ON trs.BUSI_PARTNER_ID = bp.BUSI_PARTNERID
+			    inner JOIN PRO_FL_TBL pf ON trs.PRO_FLID = pf.PRO_FLID
+			WHERE ROWNUM &lt;= #size# and trs.work_statcd = #wrkStatCd# AND ct.CT_TYP = '00' AND week.PROGRAMMING_LOCAL_STATION_CODE &lt;&gt; '00' AND mxf.AV_GUBUN = 'V'
+			<isNull prepend="AND" property="vdoBitRate">
+				(pf.VDO_BIT_RATE is NULL OR pf.VDO_BIT_RATE &lt;&gt; '35000') AND trs.PRGRS &lt;&gt; '100'
+			</isNull>
+			<isNotNull prepend="AND" property="vdoBitRate">
+				(pf.VDO_BIT_RATE is not NULL AND pf.VDO_BIT_RATE = #vdoBitRate#) AND trs.PRGRS &lt;&gt; '100'
+			</isNotNull>
+		) A
+    </select>
+    
+    <!-- 오디오 전송 상태조회 -->
+    <select id="findAudioStatCd" resultMap="TrsHisJobMap" parameterClass="map">
+    	SELECT  
+			trs.PRIORITY, trs.RETRY_CNT, trs.PRO_FLID, trs.WORK_STATCD,
+		    ct.PGM_GRP_CD, ct.PGM_CD, ct.PGM_ID, ct.PGM_NM,
+			ct.CT_NM, ct.CT_ID, cti.CTI_ID, trs.SEQ,
+			cti.FL_PATH, cti.ORG_FILE_NM, cti.WRK_FILE_NM, cti.FL_EXT,
+			bp.COMPANY, bp.IP, bp.FTPID, BP.PASSWORD, bp.PORT, bp.REMOTE_DIR, bp.TRANS_METHOD,trs.BUSI_PARTNER_ID, bp.VOD_SMIL,
+			pf.PRO_FLNM, (CASE WHEN pf.VDO_CODEC IS NULL OR pf.VDO_CODEC = '' THEN pf.AUD_BIT_RATE ELSE pf.VDO_BIT_RATE end) BIT_RATE
+		FROM TRS_HIS_TBL trs
+			inner JOIN CONTENTS_INST_TBL cti ON trs.CTI_ID = cti.CTI_ID
+		    inner JOIN CONTENTS_TBL ct ON cti.CT_ID = ct.CT_ID
+		    inner JOIN (
+	        	SELECT * FROM CONTENTS_INST_TBL WHERE CTI_FMT like '3%' AND USE_YN = 'Y'
+	        ) mxf ON mxf.CT_ID = ct.CT_ID
+		    inner JOIN BUSI_PARTNER_TBL bp ON trs.BUSI_PARTNER_ID = bp.BUSI_PARTNERID
+		    inner JOIN PRO_FL_TBL pf ON trs.PRO_FLID = pf.PRO_FLID
+		WHERE trs.work_statcd = #wrkStatCd# AND mxf.AV_GUBUN = 'A'
+		<isNull prepend="AND" property="vdoBitRate">
+			(pf.VDO_BIT_RATE is NULL OR pf.VDO_BIT_RATE &lt;&gt; '35000') AND trs.PRGRS &lt;&gt; '100'
+		</isNull>
+		<isNotNull prepend="AND" property="vdoBitRate">
+			(pf.VDO_BIT_RATE is not NULL AND pf.VDO_BIT_RATE = #vdoBitRate#) AND trs.PRGRS &lt;&gt; '100'
+		</isNotNull>
+		ORDER BY trs.priority ASC, trs.reg_dt ASC
+    </select>
+    
+    <select id="findTrsHisStatCd" resultMap="TrsHisJobMap" parameterClass="map">
+		SELECT  
+			trs.PRIORITY, trs.RETRY_CNT, trs.PRO_FLID, trs.WORK_STATCD,
+		    ct.PGM_GRP_CD, ct.PGM_CD, ct.PGM_ID, ct.PGM_NM,
+			ct.CT_NM, ct.CT_ID, cti.CTI_ID, trs.SEQ,
+			cti.FL_PATH, cti.ORG_FILE_NM, cti.WRK_FILE_NM, cti.FL_EXT,
+			bp.COMPANY, bp.IP, bp.FTPID, BP.PASSWORD, bp.PORT, bp.REMOTE_DIR, bp.TRANS_METHOD,trs.BUSI_PARTNER_ID, bp.VOD_SMIL,
+			pf.PRO_FLNM, (CASE WHEN pf.VDO_CODEC IS NULL OR pf.VDO_CODEC = '' THEN pf.AUD_BIT_RATE ELSE pf.VDO_BIT_RATE end) BIT_RATE
+		FROM TRS_HIS_TBL trs
+			inner JOIN CONTENTS_INST_TBL cti ON trs.CTI_ID = cti.CTI_ID
+		    inner JOIN CONTENTS_TBL ct ON cti.CT_ID = ct.CT_ID
+		    inner JOIN BUSI_PARTNER_TBL bp ON trs.BUSI_PARTNER_ID = bp.BUSI_PARTNERID
+		    inner JOIN PRO_FL_TBL pf ON trs.PRO_FLID = pf.PRO_FLID
+		WHERE ROWNUM &lt;= #size# and trs.work_statcd = #wrkStatCd#
+		<isNull prepend="AND" property="vdoBitRate">
+			(pf.VDO_BIT_RATE is null OR pf.VDO_BIT_RATE &lt;&gt; '35000') AND trs.PRGRS &lt;&gt; '100'
+		</isNull>
+		<isNotNull prepend="AND" property="vdoBitRate">
+			pf.VDO_BIT_RATE = #vdoBitRate# AND trs.PRGRS &lt;&gt; '100'
+		</isNotNull>
+		ORDER BY trs.priority ASC, trs.reg_dt asc
+    </select>
+    
+    <select id="findTrsHisStatus" resultMap="TrsHisJobMap" parameterClass="map">
+    	SELECT * from (
+			SELECT  
+				trs.PRIORITY, trs.RETRY_CNT, trs.PRO_FLID, trs.WORK_STATCD,
+			    ct.PGM_GRP_CD, ct.PGM_CD, ct.PGM_ID, ct.PGM_NM,
+				ct.CT_NM, ct.CT_ID, cti.CTI_ID, trs.SEQ,
+				cti.FL_PATH, cti.ORG_FILE_NM, cti.WRK_FILE_NM, cti.FL_EXT,
+				bp.COMPANY, bp.IP, bp.FTPID, BP.PASSWORD, bp.PORT, bp.REMOTE_DIR, bp.TRANS_METHOD,trs.BUSI_PARTNER_ID, bp.VOD_SMIL,
+				pf.PRO_FLNM, (CASE WHEN pf.VDO_CODEC IS NULL OR pf.VDO_CODEC = '' THEN pf.AUD_BIT_RATE ELSE pf.VDO_BIT_RATE end) BIT_RATE
+			FROM TRS_HIS_TBL trs
+				inner JOIN CONTENTS_INST_TBL cti ON trs.CTI_ID = cti.CTI_ID
+			    inner JOIN CONTENTS_TBL ct ON cti.CT_ID = ct.CT_ID
+			    inner JOIN BUSI_PARTNER_TBL bp ON trs.BUSI_PARTNER_ID = bp.BUSI_PARTNERID
+			    inner JOIN PRO_FL_TBL pf ON trs.PRO_FLID = pf.PRO_FLID
+			WHERE trs.work_statcd IN ($workStatcd$)
+			<isNotNull property="desc">
+				<isEqual property="desc" compareValue="regDt">
+			  		ORDER BY trs.WORK_STATCD DESC, trs.REG_DT ASC
+			  	</isEqual>
+			  	<isEqual property="desc" compareValue="trsEndDt">
+			  		ORDER BY trs.TRS_END_DT DESC
+			  	</isEqual>
+			</isNotNull>
+		) a WHERE ROWNUM &lt;= #size#
+    </select>
+    
+    <update id="updateTrsHis" parameterClass="TrsHis">
+    	UPDATE TRS_HIS_TBL SET 
+    		DEVICEID = #deviceid#, 
+    		USE_YN = #useYn#, 
+    		REG_DT = #regDt#, 
+    		REGRID = #regrid#, 
+    		MOD_DT = #modDt#, 
+    		MODRID = #modrid#, 
+    		TRS_STR_DT = #trsStrDt#, 
+    		EQ_PS_CD = #eqPsCd#,
+    		CTI_ID = #ctiId#, 
+    		WORK_STATCD = #workStatcd#, 
+    		REQ_USRID = #reqUsrid#, 
+    		PRGRS = #prgrs#,
+    		DOWN_VOL = #downVol#, 
+    		FL_PATH = #flPath#,
+    		TRS_END_DT = #trsEndDt#, 
+    		BUSI_PARTNER_ID = #busiPartnerId#, 
+    		URL = #url#,
+    		PRIORITY = #priority#,
+    		PRO_FLID = #proFlid#,
+    		RETRY_CNT = #retryCnt#
+   		WHERE
+   			SEQ= #seq#
+    </update>
+    
+    <update id="updateTrsHisState" parameterClass="TrsHis">
+		UPDATE TRS_HIS_TBL SET MOD_DT = sysdate 
+		  <isNotNull prepend="," property="workStatcd">
+		  	WORK_STATCD = #workStatcd#
+		  </isNotNull>
+		  <isNotNull prepend="," property="deviceid">
+		  	DEVICEID = #deviceid#
+		  </isNotNull>
+		  <isNotNull prepend="," property="eqPsCd">
+		  	EQ_PS_CD = #eqPsCd#
+		  </isNotNull>
+		  <isNotNull prepend="," property="useYn">
+		  	USE_YN = #useYn#
+		  </isNotNull>
+		  <isNotNull prepend="," property="prgrs">
+		  	PRGRS = #prgrs#
+		  </isNotNull>
+		  <isNotNull prepend="," property="metaIns">
+		  	META_INS = #metaIns#
+		  </isNotNull>
+		  <isNotNull prepend="," property="metaUpd">
+		  	META_UPD = #metaUpd#
+		  </isNotNull>
+		  
+		  <isNotNull prepend="," property="trsStrDt">
+		  	TRS_STR_DT = #trsStrDt#
+		  </isNotNull>
+		   
+		  <isNotNull prepend="," property="trsEndDt">
+		  	TRS_END_DT = #trsEndDt#
+		  </isNotNull>
+		 
+		WHERE
+			SEQ=#seq#		 
+	</update>
+	
+	<update id="updateTransRequest2" parameterClass="TrsHis">
+		UPDATE TRS_HIS_TBL SET MOD_DT = sysdate,TRS_END_DT = #trsEndDt#, TRS_STR_DT = #trsStrDt# 
+		  <isNotNull prepend="," property="workStatcd">
+		  	WORK_STATCD = #workStatcd#
+		  </isNotNull>
+		  <isNotNull prepend="," property="deviceid">
+		  	DEVICEID = #deviceid#
+		  </isNotNull>
+		  <isNotNull prepend="," property="eqPsCd">
+		  	EQ_PS_CD = #eqPsCd#
+		  </isNotNull>
+		  <isNotNull prepend="," property="useYn">
+		  	USE_YN = #useYn#
+		  </isNotNull>
+		  <isNotNull prepend="," property="prgrs">
+		  	PRGRS = #prgrs#
+		  </isNotNull>
+		  <isNotNull prepend="," property="metaIns">
+		  	META_INS = #metaIns#
+		  </isNotNull>
+		  <isNotNull prepend="," property="metaUpd">
+		  	META_UPD = #metaUpd#
+		  </isNotNull>
+		  <!--  
+		  <isNotNull prepend="," property="trsStrDt">
+		  	TRS_STR_DT = #trsStrDt#
+		  </isNotNull>
+		   
+		  <isNotNull prepend="," property="trsEndDt">
+		  	TRS_END_DT = #trsEndDt#
+		  </isNotNull>
+		 -->
+		WHERE
+			SEQ=#seq#		 
+	</update>
+	
+	<update id="updateTransRequest" parameterClass="TrsHis">
+		UPDATE TRS_HIS_TBL SET MOD_DT = sysdate,TRS_END_DT = #trsEndDt#, TRS_STR_DT = #trsStrDt#  
+		  <isNotNull prepend="," property="workStatcd">
+		  	WORK_STATCD = #workStatcd#
+		  </isNotNull>
+		  <isNotNull prepend="," property="deviceid">
+		  	DEVICEID = #deviceid#
+		  </isNotNull>
+		  <isNotNull prepend="," property="eqPsCd">
+		  	EQ_PS_CD = #eqPsCd#
+		  </isNotNull>
+		  <isNotNull prepend="," property="useYn">
+		  	USE_YN = #useYn#
+		  </isNotNull>
+		  <isNotNull prepend="," property="prgrs">
+		  	PRGRS = #prgrs#
+		  </isNotNull>
+		  <isNotNull prepend="," property="metaIns">
+		  	META_INS = #metaIns#
+		  </isNotNull>
+		  <isNotNull prepend="," property="metaUpd">
+		  	META_UPD = #metaUpd#
+		  </isNotNull>
+		  <!--
+		  <isNotNull prepend="," property="trsStrDt">
+		  	TRS_STR_DT = #trsStrDt#
+		  </isNotNull>
+		   
+		  <isNotNull prepend="," property="trsEndDt">
+		  	TRS_END_DT = #trsEndDt#
+		  </isNotNull>
+		 -->
+		  
+		WHERE
+			CTI_ID=#ctiId#		 
+	</update>
+	
+	<insert id="insertTrsHis" parameterClass="TrsHis">
+    	<selectKey keyProperty="seq" resultClass="java.lang.Long">
+      		select TRS_HIS_SEQ.NEXTVAL from dual
+     	</selectKey>
+		INSERT INTO TRS_HIS_TBL (
+			DEVICEID,USE_YN,SEQ,REG_DT,REGRID,EQ_PS_CD,CTI_ID,WORK_STATCD,REQ_USRID,PRGRS,DOWN_VOL,FL_PATH,BUSI_PARTNER_ID,URL,RETRY_CNT,PRIORITY,PRO_FLID,JOB_GUBUN,META_INS,META_UPD
+		) VALUES (
+			#deviceid#,#useYn#,#seq#,#regDt#,#regrid#,#eqPsCd#,#ctiId#,#workStatcd#,#reqUsrid#,#prgrs#,#downVol#,#flPath#,#busiPartnerId#,#url#,#retryCnt#,#priority#,#proFlid#,#jobGubun#,#metaIns#,#metaUpd#
+		)
+	</insert>
+	
+ </sqlMap>

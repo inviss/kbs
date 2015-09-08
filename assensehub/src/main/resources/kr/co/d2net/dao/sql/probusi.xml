@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="ProBusi">
+    
+    <typeAlias alias="ProBusi" type="kr.co.d2net.dto.ProBusiTbl"/>
+    <typeAlias alias="BusiPartner" type="kr.co.d2net.dto.BusiPartnerTbl"/>
+    <typeAlias alias="ProFl" type="kr.co.d2net.dto.ProFlTbl"/>
+    
+    <resultMap id="ProBusiMap" class="ProBusi">
+    	<result property="proFlid" column="PRO_FLID" />             
+		<result property="busiPartnerid" column="BUSI_PARTNERID" /> 
+		<result property="remark" column="REMARK" />                
+    </resultMap>
+    
+    <resultMap id="BusiPartnerMap" class="BusiPartner">
+    	<result property="busiPartnerid" column="BUSI_PARTNERID" />
+		<result property="regrid" column="REGRID" />
+		<result property="regDt" column="REG_DT" />
+		<result property="modrid" column="MODRID" />
+		<result property="modDt" column="MOD_DT" />
+		<result property="password" column="PASSWORD" />
+		<result property="company" column="COMPANY" />
+		<result property="servyn" column="SERVYN" />
+		<result property="ftpServYn" column="FTP_SERV_YN" />
+		<result property="folderRule" column="FOLDER_RULE" />
+		<result property="ip" column="IP" />              
+		<result property="port" column="PORT" />              
+		<result property="transMethod" column="TRANS_METHOD" />
+		<result property="remoteDir" column="REMOTE_DIR" />  
+		<result property="ftpid" column="FTPID" />
+    </resultMap>
+    
+    <resultMap id="ProFlMap" class="ProFl">
+    	<result property="proFlid" column="PRO_FLID" /> 
+		<result property="regrid" column="REGRID" />
+		<result property="servBit" column="SERV_BIT" />
+		<result property="modrid" column="MODRID" />
+		<result property="ext" column="EXT" />
+		<result property="vdoCodec" column="VDO_CODEC" />
+		<result property="vdoBitRate" column="VDO_BIT_RATE" />
+		<result property="vdoHori" column="VDO_HORI" />
+		<result property="vdoVert" column="VDO_VERT" />
+		<result property="vdoFS" column="VDO_F_S" />
+		<result property="vdoSync" column="VDO_SYNC" />
+		<result property="audCodec" column="AUD_CODEC" />
+		<result property="audBitRate" column="AUD_BIT_RATE" />
+		<result property="audChan" column="AUD_CHAN" />
+		<result property="audSRate" column="AUD_S_RATE" />
+		<result property="keyFrame" column="KEY_FRAME" />
+		<result property="chanpriority" column="CHANPRIORITY" />
+		<result property="priority" column="PRIORITY" />
+		<result property="proFlnm" column="PRO_FLNM" />
+		<result property="modDt" column="MOD_DT" />
+		<result property="regDt" column="REG_DT" />
+		<result property="picKind" column="PIC_KIND" />
+		<result property="useYn" column="USE_YN" />
+		<result property="flNameRule" column="FL_NAME_RULE" />
+    </resultMap>
+    
+    <!-- 프로파일별로 전송해야할 사업자 정보를 가져온다. -->
+    <select id="findProBusis" resultMap="BusiPartnerMap" parameterClass="map">
+		SELECT * FROM BUSI_PARTNER_TBL WHERE BUSI_PARTNERID IN (
+			  SELECT 
+			    b.BUSI_PARTNERID
+			  FROM PRO_BUSI_TBL a
+			      inner JOIN PRO_BUSI_TBL b ON a.PRO_FLID = b.PRO_FLID
+			  WHERE a.PRO_FLID = #proFlid# AND SERVYN = 'Y'
+			  GROUP BY b.BUSI_PARTNERID
+		)
+    </select>
+    
+    <select id="findProBusi" resultMap="ProBusiMap" parameterClass="map">
+	     SELECT  
+             *
+         FROM PRO_BUSI_TBL a
+         	INNER JOIN BUSI_PARTNER_TBL b ON a.BUSI_PARTNERID = b.BUSI_PARTNERID
+         <dynamic prepend="WHERE">
+         	<isNotEmpty property="proFlid" prepend="AND">
+				a.PRO_FLID = #proFlid#
+			</isNotEmpty>
+         </dynamic>
+    </select>
+    
+
+    <select id="findPgmProBusi" resultMap="ProFlMap" parameterClass="map">
+		SELECT * FROM PRO_FL_TBL WHERE PRO_FLID IN (
+			SELECT
+			    c.PRO_FLID
+			FROM BUSI_PARTNER_PGM a
+			    inner JOIN BUSI_PARTNER_TBL b ON a.BUSI_PARTNERID = b.BUSI_PARTNERID
+			    left outer JOIN PRO_BUSI_TBL c ON b.BUSI_PARTNERID = c.BUSI_PARTNERID  
+			WHERE a.PROGRAM_CODE = #pgmCd# and a.CT_TYP=#ctTyp#
+			GROUP BY c.PRO_FLID
+		)
+	</select>
+	
+	<select id="findNewPgmProBusi" resultMap="ProFlMap" parameterClass="map">
+		SELECT * FROM PRO_FL_TBL WHERE PRO_FLID IN (
+			SELECT
+			    c.PRO_FLID
+			FROM BUSI_PARTNER_PGM a
+			    inner JOIN BUSI_PARTNER_TBL b ON a.BUSI_PARTNERID = b.BUSI_PARTNERID
+			    left outer JOIN PRO_BUSI_TBL c ON b.BUSI_PARTNERID = c.BUSI_PARTNERID  
+			WHERE a.PROGRAM_CODE = #pgmCd# and a.CT_TYP=#ctTyp#  AND c.PRO_FLID NOT IN (
+				SELECT PRO_FLID FROM TRA_HIS_TBL WHERE CTI_ID= #ctiId#
+			)
+			GROUP BY c.PRO_FLID
+		)
+	</select>
+    
+    <select id="findProBusi2" resultMap="ProBusiMap" parameterClass="map">
+
+	     SELECT  
+             *
+         FROM PRO_BUSI_TBL 
+         <dynamic prepend="WHERE">
+         	<isNotEmpty property="busiPartnerid" prepend="AND">
+				BUSI_PARTNERID = #busiPartnerid#
+			</isNotEmpty>
+         </dynamic>
+    </select>
+    
+    <select id="getProBusi" resultClass="ProBusi" parameterClass="map">
+		SELECT  
+			PRO_FLID       as proFlid,       
+			BUSI_PARTNERID as busiPartnerid, 
+			REMARK         as remark         
+		FROM PRO_BUSI_TBL
+		<dynamic prepend="WHERE">
+
+		</dynamic>
+    </select>
+    
+    <insert id="insertProBusi" parameterClass="ProBusi">
+		INSERT INTO PRO_BUSI_TBL (
+			PRO_FLID,BUSI_PARTNERID,REMARK
+		) VALUES (
+			#proFlid#,#busiPartnerid#,#remark#
+		)
+	</insert>
+	
+    <update id="deleteProBusi" parameterClass="ProBusi">
+    	DELETE FROM PRO_BUSI_TBL
+    	<dynamic prepend="WHERE">
+	    	<isNotNull property="busiPartnerid" prepend="AND">
+	    		BUSI_PARTNERID=#busiPartnerid#
+	    	</isNotNull>
+    	</dynamic>
+    </update>
+ </sqlMap>

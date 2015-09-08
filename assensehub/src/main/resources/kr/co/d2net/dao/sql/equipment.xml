@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="Equipment">
+    
+    <typeAlias alias="Equipment" type="kr.co.d2net.dto.EquipmentTbl"/>
+    
+    <resultMap id="EquipmentMap" class="Equipment">
+    	<result property="deviceNm" column="DEVICE_NM" />         
+		<result property="deviceclfCd" column="DEVICECLF_CD" />   
+		<result property="deviceIp" column="DEVICE_IP" />         
+		<result property="devicePort" column="DEVICE_PORT" />     
+		<result property="useYn" column="USE_YN" />               
+		<result property="deviceid" column="DEVICEID" />          
+		<result property="regDt" column="REG_DT" />               
+		<result property="regrid" column="REGRID" />              
+		<result property="modDt" column="MOD_DT" />               
+		<result property="modrid" column="MODRID" />              
+		<result property="eqSeq" column="EQ_SEQ" />               
+		<result property="eqPsCd" column="EQ_PS_CD" />            
+		<result property="eqUseUrl" column="EQ_USE_URL" />        
+		<result property="eqUseId" column="EQ_USE_ID" />         
+		<result property="eqUsePasswd" column="EQ_USE_PASSWD" />  
+		<result property="ctiId" column="CTI_ID" />         
+		<result property="workStatcd" column="WORK_STATCD" />    
+		<result property="outSystemId" column="OUT_SYSTEM_ID" />  
+		<result property="reqUsrid" column="REQ_USRID" />         
+		<result property="prgrs" column="PRGRS" />                
+		<result property="downVol" column="DOWN_VOL" />           
+		<result property="totalSize" column="TOTAL_SIZE" />       
+		<result property="logRcdPeriod" column="LOG_RCD_PERIOD" />
+		<result property="flPath" column="FL_PATH" />             
+		
+		<result property="ctNm" column="CT_NM" />
+    </resultMap>
+    
+    <resultMap id="findEquipmentMap" class="Equipment">
+    	<result property="deviceNm" column="DEVICE_NM" />         
+		<result property="deviceclfCd" column="DEVICECLF_CD" />   
+		<result property="deviceIp" column="DEVICE_IP" />         
+		<result property="useYn" column="USE_YN" />               
+		<result property="deviceid" column="DEVICEID" />          
+		<result property="workStatcd" column="WORK_STATCD" />    
+		<result property="prgrs" column="PRGRS" />                
+		<result property="ctNm" column="CT_NM" />
+		
+    </resultMap>
+    
+    <select id="findEquipment" resultMap="findEquipmentMap" parameterClass="map">
+	     SELECT EQ.DEVICEID,EQ.DEVICE_NM,CT.CT_NM,EQ.WORK_STATCD,EQ.PRGRS,EQ.DEVICECLF_CD,EQ.DEVICE_IP,EQ.USE_YN
+	     FROM EQUIPMENT_TBL EQ
+			LEFT OUTER JOIN CONTENTS_INST_TBL CTI ON CTI.CTI_ID = EQ.CTI_ID
+			LEFT OUTER JOIN CONTENTS_TBL CT ON CT.CT_ID = CTI.CT_ID
+       	<dynamic prepend="WHERE">
+			<isNotEmpty property="useYn" prepend="AND">
+				EQ.USE_YN = #useYn#
+			</isNotEmpty>
+		</dynamic>
+         ORDER BY EQ.DEVICEID ASC, EQ.EQ_PS_CD ASC
+    </select>
+    
+    <select id="getEquipment" resultClass="Equipment" parameterClass="map">
+		SELECT  
+			DEVICE_NM      as deviceNm,      
+			DEVICECLF_CD   as deviceclfCd,   
+			DEVICE_IP      as deviceIp,      
+			DEVICE_PORT    as devicePort,    
+			USE_YN         as useYn,         
+			DEVICEID       as deviceid,      
+			REG_DT         as regDt,         
+			REGRID         as regrid,        
+			MOD_DT         as modDt,         
+			MODRID         as modrid,        
+			EQ_SEQ         as eqSeq,         
+			EQ_PS_CD       as eqPsCd,        
+			EQ_USE_URL     as eqUseUrl,      
+			EQ_USE_ID      as eqUseId,       
+			EQ_USE_PASSWD  as eqUsePasswd,   
+			CTI_ID         as ctiId,         
+			WORK_STATCD    as workStatcd,    
+			OUT_SYSTEM_ID  as outSystemId,   
+			REQ_USRID      as reqUsrid,      
+			PRGRS          as prgrs,         
+			DOWN_VOL       as downVol,       
+			TOTAL_SIZE     as totalSize,     
+			LOG_RCD_PERIOD as logRcdPeriod
+			
+		FROM Equipment_TBL
+		<dynamic prepend="WHERE">
+			<isNotEmpty property="deviceid" prepend="AND">
+				DEVICEID = #deviceid#
+			</isNotEmpty>
+			<isNotEmpty property="eqPsCd" prepend="AND">
+				EQ_PS_CD = #eqPsCd#
+			</isNotEmpty>
+			
+		</dynamic>
+    </select>
+    
+    <select id="getEquipmentCount" resultClass="Equipment" parameterClass="map">
+		SELECT  
+			count(*) as count         		
+		FROM Equipment_TBL WHERE DEVICEID = #deviceid# 
+		
+    </select>
+    <insert id="insertEquipment" parameterClass="Equipment">
+		INSERT INTO Equipment_TBL (
+			DEVICE_NM,DEVICECLF_CD,DEVICE_IP,DEVICE_PORT,USE_YN,DEVICEID,REG_DT,REGRID,MOD_DT,MODRID,EQ_SEQ,EQ_PS_CD,EQ_USE_URL,EQ_USE_ID,EQ_USE_PASSWD,CTI_ID,WORK_STATCD,OUT_SYSTEM_ID,REQ_USRID,PRGRS,DOWN_VOL,TOTAL_SIZE,LOG_RCD_PERIOD
+		) VALUES (
+			#deviceNm:VARCHAR:EMPTY#,#deviceclfCd#,#deviceIp#,#devicePort#,#useYn#,#deviceid#,sysdate,#regrid#,#modDt#,#modrid#,#eqSeq#,#eqPsCd#,#eqUseUrl#,#eqUseId#,#eqUsePasswd#,#ctiId#,#workStatcd#,#outSystemId#,#reqUsrid#,#prgrs#,#downVol#,#totalSize#,#logRcdPeriod#    
+		)
+	</insert>
+    
+    <update id="updateEquipment" parameterClass="Equipment">
+	    UPDATE EQUIPMENT_TBL
+		SET MOD_DT = sysdate
+		<isNotNull property="deviceNm" prepend=",">
+			DEVICE_NM = #deviceNm#
+		</isNotNull>
+		<isNotNull property="deviceIp" prepend=",">
+			DEVICE_IP = #deviceIp#
+		</isNotNull>
+		<isNotNull property="devicePort" prepend=",">
+			DEVICE_PORT = #devicePort#
+		</isNotNull>
+		<isNotNull property="useYn" prepend=",">
+			USE_YN = #useYn#
+		</isNotNull>
+		<isNotNull property="eqSeq">
+			<isGreaterThan property="eqSeq" compareValue="-1"  prepend=",">
+				EQ_SEQ = #eqSeq#
+			</isGreaterThan>
+		</isNotNull>
+		<isNotNull property="prgrs" prepend=",">
+			PRGRS = #prgrs#
+		</isNotNull>
+		<isNotNull property="workStatcd" prepend=",">
+			WORK_STATCD = #workStatcd#
+		</isNotNull>
+		<isNotNull property="ctiId" prepend=",">
+			CTI_ID = #ctiId#
+		</isNotNull>
+		WHERE
+			DEVICEID = #deviceid# AND EQ_PS_CD = #eqPsCd#
+    </update>
+    
+    
+    <update id="instdeleteEquipment" parameterClass="Equipment">
+    	UPDATE EQUIPMENT_TBL SET USE_YN=#useYn# 
+    	<dynamic prepend="WHERE">
+	    	<isNotNull property="deviceid" prepend="AND">
+	    		DEVICEID=#deviceid#
+	    	</isNotNull>
+	    	<isNotNull property="eqPsCd" prepend="AND">
+	    		EQ_PS_CD=#eqPsCd#
+	    	</isNotNull>
+    	</dynamic>
+    </update>
+    
+    <update id="devicedeleteEquipment" parameterClass="Equipment">
+    	DELETE FROM EQUIPMENT_TBL 
+    	<dynamic prepend="WHERE">
+	    	<isNotNull property="deviceid" prepend="AND">
+	    		DEVICEID=#deviceid#
+	    	</isNotNull>
+	    	<isNotNull property="eqPsCd" prepend="AND">
+	    		EQ_PS_CD=#eqPsCd#
+	    	</isNotNull>
+    	</dynamic>
+    </update>
+    
+ </sqlMap>

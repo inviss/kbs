@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="UserAuth">
+    
+    <typeAlias alias="UserAuth" type="kr.co.d2net.dto.UserAuthTbl"/>
+    
+    <resultMap id="UserAuthMap" class="UserAuth">
+    	<result property="authId" column="AUTH_ID" /> 
+		<result property="modrid" column="MODRID" />  
+		<result property="modDt" column="MOD_DT" />   
+		<result property="userId" column="USER_ID" /> 
+
+    </resultMap>
+    
+    <select id="findUserAuth" resultMap="UserAuthMap" parameterClass="map">
+	     SELECT  
+             *
+         FROM USER_AUTH_TBL
+         <dynamic prepend="WHERE">
+
+         </dynamic>
+    </select>
+    
+    <select id="getUserAuth" resultClass="UserAuth" parameterClass="map">
+		SELECT  
+			AUTH_ID as authId,
+			MODRID  as modrid,
+			MOD_DT  as modDt, 
+			USER_ID as userId 
+		FROM USER_AUTH_TBL
+		<dynamic prepend="WHERE">
+			<isNotEmpty property="userId" prepend="AND">
+				USER_ID = #userId#
+			</isNotEmpty>
+			<isNotEmpty property="authId" prepend="AND">
+				AUTH_ID = #authId#
+			</isNotEmpty>
+		</dynamic>
+    </select>
+    
+    <update id="updateUserAuth" parameterClass="UserAuth">
+    	UPDATE USER_AUTH_TBL set AUTH_ID = #authId# WHERE USER_ID = #userId#
+    </update>
+    
+    <insert id="insertUserAuth" parameterClass="UserAuth">
+		INSERT INTO USER_AUTH_TBL (
+			AUTH_ID,USER_ID
+		) VALUES (
+			#authId#,#userId#
+		)
+	</insert>
+    
+ </sqlMap>

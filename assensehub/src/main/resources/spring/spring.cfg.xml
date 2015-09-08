@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<beans xmlns="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:util="http://www.springframework.org/schema/util" 
+	xmlns:context="http://www.springframework.org/schema/context" 
+	xmlns:p="http://www.springframework.org/schema/p" 
+		xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd 
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.0.xsd 
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+	
+	<context:property-placeholder location="classpath:config/db.properties"/>
+	 
+	<!-- Application Message Bundle -->
+	<bean id="messageSource" class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
+		<property name="basenames">  
+        	<list>  
+            	<value>classpath:config/config</value>
+            	<value>classpath:config/button</value>
+        	</list>
+    	</property>
+		<property name="cacheSeconds" value="10" />
+	</bean>
+	
+	<!-- XML Parser -->
+	<bean id="xmlStream" class="kr.co.d2net.commons.util.XmlStreamImpl"/>
+	<!-- XML Stream -->
+	<bean id="xmlFileService" class="kr.co.d2net.commons.util.XmlFileServiceImpl"/>
+	
+	<!-- FreeMarker Configurer and View Resolver -->
+    <bean id="freeMarkerConfigurer" class="org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer">
+        <property name="templateLoaderPath" value="/WEB-INF/views/"/>
+        <property name="freemarkerSettings">
+            <props>
+            	<prop key="default_encoding">utf-8</prop>
+				<prop key="template_update_delay">0</prop>
+				<prop key="number_format">#.#######</prop>
+                <prop key="datetime_format">yyyy-MM-dd</prop>
+            </props>
+        </property>
+        <property name="freemarkerVariables">
+            <map>
+                <entry key="xml_escape" value-ref="fmXmlEscape"/>
+            </map>
+        </property>
+    </bean>
+    <bean id="fmXmlEscape" class="freemarker.template.utility.XmlEscape"/>
+    
+    <bean id="fileRepository" class="kr.co.d2net.commons.util.FileRepository" />
+    
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver"/>
+    
+    <!-- 
+    <bean id="uciRegisterService" class="kr.co.d2net.service.UciRegisterServiceImpl" init-method="uciInit">
+    	<property name="formatList">
+    		<map>
+    			<entry key="avi" value="avi" />
+    			<entry key="asf" value="asf" />
+    			<entry key="jpg" value="jpg" />
+    			<entry key="midi" value="midi" />
+    			<entry key="mov" value="mov" />
+    			<entry key="mp2" value="mp2" />
+    			<entry key="mp3" value="mp3" />
+    			<entry key="pcd" value="pcd" />
+    			<entry key="pic" value="pic" />
+    			<entry key="psd" value="psd" />
+    			<entry key="ram" value="ram" />
+    			<entry key="dat" value="dat" />
+    			<entry key="txt" value="txt" />
+    			<entry key="wav" value="wav" />
+    			<entry key="wmf" value="wmf" />
+    			<entry key="wmv" value="wmv" />
+    			<entry key="zip" value="zip" />
+    			<entry key="mpeg" value="mpeg" />
+    			<entry key="mpg" value="mpg" />
+    			<entry key="mp4" value="mp4" />
+    			<entry key="vob" value="vob" />
+    			<entry key="flv" value="flv" />
+    			<entry key="k3g" value="k3g" />
+    			<entry key="3gp" value="3gp" />
+    			<entry key="skm" value="skm" />
+    			<entry key="mkv" value="mkv" />
+    			<entry key="mxf" value="mxf" />
+    		</map>
+    	</property>
+    </bean>
+    -->
+</beans>

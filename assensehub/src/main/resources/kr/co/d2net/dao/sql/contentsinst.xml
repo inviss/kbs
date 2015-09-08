@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="ContentsInst">
+    
+    <typeAlias alias="ContentsInst" type="kr.co.d2net.dto.ContentsInstTbl"/>
+    
+    <resultMap id="ContentsInstMap" class="ContentsInst">
+    	<result property="ctiId" column="CTI_ID" />
+		<result property="ctId" column="CT_ID" />
+		<result property="ctiFmt" column="CTI_FMT" />	
+		<result property="meCd" column="ME_CD" />
+		<result property="bitRt" column="BIT_RT" />  
+		<result property="frmPerSec" column="FRM_PER_SEC" />  
+		<result property="drpFrmYn" column="DRP_FRM_YN" />  
+		<result property="vdHresol" column="VD_HRESOL" />  
+		<result property="vdVresol" column="VD_VRESOL" />  
+		<result property="recordTypeCd" column="RECORD_TYPE_CD" />  
+		<result property="flPath" column="FL_PATH" />  
+		<result property="flSz" column="FL_SZ" />  
+		<result property="regDt" column="REG_DT" />  
+		<result property="regrid" column="REGRID" />  
+		<result property="modDt" column="MOD_DT" />  
+		<result property="modrid" column="MODRID" />  
+		<result property="colorCd" column="COLOR_CD" />  
+		<result property="orgFileNm" column="ORG_FILE_NM" />  
+		<result property="audSampFrq" column="AUD_SAMP_FRQ" />  
+		<result property="audioBdwt" column="AUDIO_BDWT" />  
+		<result property="ingestEqId" column="INGEST_EQ_ID" />  
+		<result property="audioYn" column="AUDIO_YN" />  
+		<result property="audioLanCd" column="AUDIO_LAN_CD" />  
+		<result property="noiRducTypCd" column="NOI_RDUC_TYP_CD" />  
+		<result property="encQltyDesc" column="ENC_QLTY_DESC" />  
+		<result property="encQltyCd" column="ENC_QLTY_CD" />  
+		<result property="wrkFileNm" column="WRK_FILE_NM" />
+		<result property="usrFileNm" column="USR_FILE_NM" />
+		<result property="flExt" column="FL_EXT" />  
+		<result property="proFlid" column="PRO_FLID" /> 
+		<result property="useYn" column="USE_YN" />
+		<result property="avGubun" column="AV_GUBUN" />
+		<result property="startTime" column="START_TIME" />
+		<result property="endTime" column="END_TIME" />
+    </resultMap>
+    
+    <resultMap id="ContentsMap" class="ContentsInst">
+    	<result property="ctiId" column="CTI_ID" />
+		<result property="ctiFmt" column="CTI_FMT" />	
+		
+		<result property="flPath" column="FL_PATH" />
+		
+		<result property="pgmId" column="PGM_ID" />
+		<result property="pgmNm" column="PGM_NM" />
+		<result property="ctId" column="CT_ID" />
+		
+		<result property="ctNm" column="CT_NM" />
+		<result property="proFlnm" column="PRO_FLNM" />
+		<result property="wrkFileNm" column="WRK_FILE_NM" />
+		<result property="usrFileNm" column="USR_FILE_NM" />
+		<result property="orgFileNm" column="ORG_FILE_NM" />
+		<result property="flExt" column="FL_EXT" />
+		<result property="flSz" column="FL_SZ" />
+		
+		<result property="pgmCd" column="PGM_CD" />
+		<result property="pgmGrpCd" column="PGM_GRP_CD" />
+		<result property="brdDd" column="BRD_DD" />
+	    <result property="channelCode" column="CHANNEL_CODE" />
+	    <result property="ctTyp" column="CT_TYP" />
+	    <result property="ctCla" column="CT_CLA" />
+	    <result property="vdQlty" column="VD_QLTY" />
+	    
+	    <result property="regrid" column="REGRID" />
+	    <result property="pgmNum" column="PGM_NUM" />
+	    <result property="avGubun" column="AV_GUBUN" />
+	    <result property="proFlnm" column="PRO_FLNM" />
+	    <result property="proFlid" column="PRO_FLID" />
+    </resultMap>
+    
+     <resultMap id="ContentsDeleteMap" class="ContentsInst">
+    	<result property="ctiId" column="CTI_ID" />
+		<result property="ctiFmt" column="CTI_FMT" />	
+		
+		<result property="flPath" column="FL_PATH" />
+		
+		<result property="pgmId" column="PGM_ID" />
+		<result property="pgmNm" column="PGM_NM" />
+		<result property="ctId" column="CT_ID" />
+		
+		<result property="ctNm" column="CT_NM" />
+		<result property="proFlnm" column="PRO_FLNM" />
+		<result property="wrkFileNm" column="WRK_FILE_NM" />
+		<result property="usrFileNm" column="USR_FILE_NM" />
+		<result property="orgFileNm" column="ORG_FILE_NM" />
+		<result property="flExt" column="FL_EXT" />
+		
+		<result property="pgmCd" column="PGM_CD" />
+		<result property="brdDd" column="BRD_DD" />
+	    <result property="channelCode" column="CHANNEL_CODE" />
+	    <result property="ctTyp" column="CT_TYP" />
+	    <result property="ctCla" column="CT_CLA" />
+	    <result property="disuseNo" column="DISUSE_NO" />
+    </resultMap>
+    
+      <resultMap id="ContentInstsDeleteMap" class="ContentsInst">
+    	<result property="ctiId" column="CTI_ID" />
+		<result property="ctId" column="CT_ID" />
+		<result property="flPath" column="FL_PATH" />
+		<result property="orgFileNm" column="ORG_FILE_NM" />
+		<result property="flExt" column="FL_EXT" />
+	    <result property="disuseNo" column="DISUSE_NO" />
+    </resultMap>
+
+    
+    <select id="findContentsInst" resultMap="ContentsInstMap" parameterClass="map">
+	     SELECT  
+             *
+         FROM CONTENTS_INST_TBL
+         <dynamic prepend="WHERE">
+
+         </dynamic>
+    </select>
+    
+     <select id="findContents" resultMap="ContentsMap" parameterClass="map">
+	     SELECT * 
+	     FROM CONTENTS_TBL CT
+			INNER JOIN CONTENTS_INST_TBL  CTI ON CT.CT_ID = CTI.CT_ID
+			LEFT OUTER JOIN PRO_FL_TBL PFT ON PFT.PRO_FLID = CTI.PRO_FLID
+         <dynamic prepend="WHERE">
+         		CT.USE_YN='Y' AND CTI.USE_YN ='Y' AND CTI.PRO_FLID IS NOT NULL AND
+			<isNotNull property="sdate" prepend="AND" >
+				CT.BRD_DD &gt;= #sdate# 
+			</isNotNull>
+			<isNotNull property="edate" prepend="AND">
+				CT.BRD_DD &lt;= #edate# 
+			</isNotNull>
+			<isNotEmpty property="pgmNm" prepend="AND">
+				CT.PGM_NM LIKE ('%'||#pgmNm#||'%')
+			</isNotEmpty>
+			<isNotEmpty property="ctiFmt" prepend="AND">
+				CTI_FMT LIKE (#ctiFmt#||'%')
+			</isNotEmpty>
+			<isNotEmpty property="notCtiFmt" prepend="AND">
+				CTI_FMT NOT LIKE (#notCtiFmt#||'%')
+			</isNotEmpty>
+			<isNotEmpty property="ctId" prepend="AND">
+				CT.CT_ID = #ctId#
+			</isNotEmpty>
+			<isNotEmpty property="ctiId" prepend="AND">
+				CTI_ID = #ctiId#
+			</isNotEmpty>
+         </dynamic>
+    </select>
+    
+     <select id="findOrgContents" resultMap="ContentsMap" parameterClass="map">
+	     SELECT * 
+	     FROM CONTENTS_TBL CT
+			INNER JOIN CONTENTS_INST_TBL  CTI ON CT.CT_ID = CTI.CT_ID
+			LEFT OUTER JOIN PRO_FL_TBL PFT ON PFT.PRO_FLID = CTI.PRO_FLID 
+         <dynamic prepend="WHERE">
+         		CT.USE_YN='Y' AND CTI.USE_YN ='Y' AND
+			<isNotNull property="sdate" prepend="AND" >
+				CT.BRD_DD &gt;= #sdate# 
+			</isNotNull>
+			<isNotNull property="edate" prepend="AND">
+				CT.BRD_DD &lt;= #edate# 
+			</isNotNull>
+			<isNotEmpty property="pgmNm" prepend="AND">
+				CT.PGM_NM LIKE ('%'||#pgmNm#||'%')
+			</isNotEmpty>
+			<isNotEmpty property="ctiFmt" prepend="AND">
+				CTI_FMT LIKE (#ctiFmt#||'%')
+			</isNotEmpty>
+			<isNotEmpty property="notCtiFmt" prepend="AND">
+				CTI_FMT NOT LIKE (#notCtiFmt#||'%')
+			</isNotEmpty>
+			<isNotEmpty property="ctId" prepend="AND">
+				CT.CT_ID = #ctId#
+			</isNotEmpty>
+			<isNotEmpty property="ctiId" prepend="AND">
+				CTI_ID = #ctiId#
+			</isNotEmpty>
+         </dynamic>
+    </select>
+    
+    <select id="findDelContents" resultMap="ContentsMap" parameterClass="map">
+	     SELECT * 
+	     FROM CONTENTS_TBL CT
+			INNER JOIN CONTENTS_INST_TBL  CTI ON CT.CT_ID = CTI.CT_ID
+			LEFT OUTER JOIN PRO_FL_TBL PFT ON PFT.PRO_FLID = CTI.PRO_FLID
+         <dynamic prepend="WHERE">
+         		
+			<isNotNull property="sdate" prepend="AND" >
+				CT.BRD_DD &gt;= #sdate# 
+			</isNotNull>
+			<isNotNull property="edate" prepend="AND">
+				CT.BRD_DD &lt;= #edate# 
+			</isNotNull>
+			<isNotEmpty property="pgmNm" prepend="AND">
+				CT.PGM_NM LIKE ('%'||#pgmNm#||'%')
+			</isNotEmpty>
+			<isNotEmpty property="ctiFmt" prepend="AND">
+				CTI_FMT LIKE (#ctiFmt#||'%')
+			</isNotEmpty>
+			<isNotEmpty property="notCtiFmt" prepend="AND">
+				CTI_FMT NOT LIKE (#notCtiFmt#||'%')
+			</isNotEmpty>
+			<isNotEmpty property="ctId" prepend="AND">
+				CT.CT_ID = #ctId#
+			</isNotEmpty>
+			<isNotEmpty property="ctiId" prepend="AND">
+				CTI_ID = #ctiId#
+			</isNotEmpty>
+         </dynamic>
+    </select>
+    
+    <select id="findContentsRms" resultMap="ContentsMap" parameterClass="map">
+	     SELECT * 
+	     FROM CONTENTS_TBL CT
+			INNER JOIN CONTENTS_INST_TBL  CTI ON CT.CT_ID = CTI.CT_ID
+			LEFT OUTER JOIN PRO_FL_TBL PFT ON PFT.PRO_FLID = CTI.PRO_FLID
+         <dynamic prepend="WHERE">
+         		CT.USE_YN='Y' AND CTI.USE_YN ='Y' AND (CTI_FMT LIKE '1%' OR CTI_FMT LIKE '3%')  AND
+			<isNotNull property="sdate" prepend="AND" >
+				CT.BRD_DD &gt;= #sdate# 
+			</isNotNull>
+			<isNotNull property="edate" prepend="AND">
+				CT.BRD_DD &lt;= #edate# 
+			</isNotNull>
+			<isNotEmpty property="pgmNm" prepend="AND">
+				CT.PGM_NM LIKE ('%'||#pgmNm#||'%')
+			</isNotEmpty>
+			<isNotEmpty property="ctiFmt" prepend="AND">
+				CTI_FMT LIKE (#ctiFmt#||'%')
+			</isNotEmpty>
+			<isNotEmpty property="notCtiFmt" prepend="AND">
+				CTI_FMT NOT LIKE (#notCtiFmt#||'%')
+			</isNotEmpty>
+			<isNotEmpty property="ctId" prepend="AND">
+				CT.CT_ID = #ctId#
+			</isNotEmpty>
+         </dynamic>
+    </select>
+    
+    <select id="findContentsByMediaTool" resultMap="ContentsMap" parameterClass="map">
+	     SELECT * 
+	     FROM CONTENTS_TBL CT
+			INNER JOIN CONTENTS_INST_TBL  CTI ON CT.CT_ID = CTI.CT_ID
+			LEFT OUTER JOIN PRO_FL_TBL PFT ON PFT.PRO_FLID = CTI.PRO_FLID
+         <dynamic prepend="WHERE">
+         		CT.USE_YN='Y' AND CTI.USE_YN ='Y' AND CTI.FL_SZ >0 AND CT.REGRID &lt;&gt; 'RMS' AND
+			<isNotNull property="sdate" prepend="AND" >
+				CT.BRD_DD &gt;= #sdate# 
+			</isNotNull>
+			<isNotNull property="edate" prepend="AND">
+				CT.BRD_DD &lt; #edate# 
+			</isNotNull>
+			<isNotEmpty property="ctiFmt" prepend="AND">
+				CTI.CTI_FMT LIKE (#ctiFmt#||'%')
+			</isNotEmpty>
+			<isNotEmpty property="trimmSte" prepend="AND">
+				CT.TRIMM_STE = #trimmSte#
+			</isNotEmpty>
+			<isNotEmpty property="pgmNm" prepend="AND">
+				CT.PGM_NM LIKE ('%'||#pgmNm#||'%')
+			</isNotEmpty>
+			<isNotEmpty property="ctId" prepend="AND">
+				CT.CT_ID = #ctId#
+			</isNotEmpty>
+			<isNotEmpty property="channelCd" prepend="AND">
+				CT.CHANNEL_CODE = #channelCd#
+			</isNotEmpty>
+			AND CT.REGRID not in ('ATRIM', 'VTRIM')
+         </dynamic>
+         ORDER BY CT.CT_ID DESC
+    </select>
+
+    <select id="findDeleteContentsInst" resultMap="ContentInstsDeleteMap" parameterClass="map">
+	    SELECT * FROM CONTENTS_TBL CT 
+			INNER JOIN DISUSE_INFO_TBL DIT ON DIT.DATA_ID = CT.CT_ID
+		    INNER JOIN CONTENTS_INST_TBL CTI ON CTI.CT_ID = CT.CT_ID
+	    WHERE DIT.DISUSE_CLF='U'  AND ct.USE_YN = 'N'
+		     AND DIT.DISUSE_DD &lt; SYSDATE
+    </select>
+    
+    
+    <select id="findDefaultDeleteContentsInst" resultMap="ContentInstsDeleteMap" parameterClass="map">
+	  SELECT ct.CT_ID,CIT.CTI_ID,CIT.FL_PATH,CIT.ORG_FILE_NM,CIT.FL_EXT,'' AS DISUSE_NO FROM CONTENTS_inst_TBL CIT
+	      	INNER JOIN CONTENTS_TBL ct on ct.CT_ID = cit.CT_ID
+   			WHERE (cit.USE_YN ='Y' AND (cit.cti_fmt LIKE '2%' OR cit.cti_fmt LIKE '4%') AND ct.reg_dt &lt; SYSDATE+#service#)
+ 		<isNotEmpty property="live">
+	      UNION ALL
+	      SELECT ct.CT_ID,CIT.CTI_ID,CIT.FL_PATH,CIT.ORG_FILE_NM,CIT.FL_EXT,'' AS DISUSE_NO FROM CONTENTS_inst_TBL CIT
+		      	INNER JOIN CONTENTS_TBL ct on ct.CT_ID = cit.CT_ID
+   				WHERE (cit.USE_YN ='Y' AND (cit.cti_fmt LIKE '1%' OR cit.cti_fmt LIKE '3%') AND ct.reg_dt &lt; SYSDATE+#live# AND ct.regrid='LIVE')
+   		</isNotEmpty>  
+		<isNotEmpty property="nps">
+		  UNION ALL
+		    SELECT ct.CT_ID,CIT.CTI_ID,CIT.FL_PATH,CIT.ORG_FILE_NM,CIT.FL_EXT,'' AS DISUSE_NO FROM CONTENTS_inst_TBL CIT
+			      	INNER JOIN CONTENTS_TBL ct on ct.CT_ID = cit.CT_ID
+		   			WHERE (cit.USE_YN ='Y' AND (cit.cti_fmt LIKE '1%' OR cit.cti_fmt LIKE '3%') AND ct.reg_dt &lt; SYSDATE+#nps# AND (ct.regrid='NPS' or ct.regrid='NPS_POST'))
+		</isNotEmpty>  
+		<isNotEmpty property="dmcr">
+		  UNION ALL
+		    SELECT ct.CT_ID,CIT.CTI_ID,CIT.FL_PATH,CIT.ORG_FILE_NM,CIT.FL_EXT,'' AS DISUSE_NO FROM CONTENTS_inst_TBL CIT
+			      	INNER JOIN CONTENTS_TBL ct on ct.CT_ID = cit.CT_ID
+		   			WHERE (cit.USE_YN ='Y' AND (cit.cti_fmt LIKE '1%' OR cit.cti_fmt LIKE '3%') AND ct.reg_dt &lt; SYSDATE+#dmcr# AND ct.regrid='DMCR')
+		</isNotEmpty>
+		<isNotEmpty property="aach">
+		  UNION ALL
+		    SELECT ct.CT_ID,CIT.CTI_ID,CIT.FL_PATH,CIT.ORG_FILE_NM,CIT.FL_EXT,'' AS DISUSE_NO FROM CONTENTS_inst_TBL CIT
+			      	INNER JOIN CONTENTS_TBL ct on ct.CT_ID = cit.CT_ID
+		   			WHERE (cit.USE_YN ='Y' AND (cit.cti_fmt LIKE '1%' OR cit.cti_fmt LIKE '3%') AND ct.reg_dt &lt; SYSDATE+#aach# AND ct.regrid='AACH')
+		</isNotEmpty>
+		<isNotEmpty property="vtrim">
+		  UNION ALL
+		    SELECT ct.CT_ID,CIT.CTI_ID,CIT.FL_PATH,CIT.ORG_FILE_NM,CIT.FL_EXT,'' AS DISUSE_NO FROM CONTENTS_inst_TBL CIT
+			      	INNER JOIN CONTENTS_TBL ct on ct.CT_ID = cit.CT_ID
+		   			WHERE (cit.USE_YN ='Y' AND (cit.cti_fmt LIKE '1%' OR cit.cti_fmt LIKE '3%') AND ct.reg_dt &lt; SYSDATE+#vtrim# AND ct.regrid='VTRIM') 
+		</isNotEmpty>
+		<isNotEmpty property="kdas">
+		  UNION ALL
+		    SELECT ct.CT_ID,CIT.CTI_ID,CIT.FL_PATH,CIT.ORG_FILE_NM,CIT.FL_EXT,'' AS DISUSE_NO FROM CONTENTS_inst_TBL CIT
+			      	INNER JOIN CONTENTS_TBL ct on ct.CT_ID = cit.CT_ID
+		   			WHERE (cit.USE_YN ='Y' AND (cit.cti_fmt LIKE '1%' OR cit.cti_fmt LIKE '3%') AND ct.reg_dt &lt; SYSDATE+#kdas# AND ct.regrid='KDAS')
+		
+		</isNotEmpty>
+		<isNotEmpty property="atrim">
+		  UNION ALL
+		    SELECT ct.CT_ID,CIT.CTI_ID,CIT.FL_PATH,CIT.ORG_FILE_NM,CIT.FL_EXT,'' AS DISUSE_NO FROM CONTENTS_inst_TBL CIT
+			      	INNER JOIN CONTENTS_TBL ct on ct.CT_ID = cit.CT_ID
+		   			WHERE (cit.USE_YN ='Y' AND (cit.cti_fmt LIKE '1%' OR cit.cti_fmt LIKE '3%') AND ct.reg_dt &lt; SYSDATE+#atrim# AND ct.regrid='ATRIM') 
+		</isNotEmpty>
+		<isNotEmpty property="nas">
+		  UNION ALL
+		    SELECT ct.CT_ID,CIT.CTI_ID,CIT.FL_PATH,CIT.ORG_FILE_NM,CIT.FL_EXT,'' AS DISUSE_NO FROM CONTENTS_inst_TBL CIT
+			      	INNER JOIN CONTENTS_TBL ct on ct.CT_ID = cit.CT_ID
+		   			WHERE (cit.USE_YN ='Y' AND (cit.cti_fmt LIKE '1%' OR cit.cti_fmt LIKE '3%') AND ct.reg_dt &lt; SYSDATE+#nas# AND ct.regrid='NAS')
+		</isNotEmpty>
+		<isNotEmpty property="rms">
+		  UNION ALL
+		    SELECT ct.CT_ID,CIT.CTI_ID,CIT.FL_PATH,CIT.ORG_FILE_NM,CIT.FL_EXT,'' AS DISUSE_NO FROM CONTENTS_inst_TBL CIT
+			      	INNER JOIN CONTENTS_TBL ct on ct.CT_ID = cit.CT_ID
+		   			WHERE (cit.USE_YN ='Y' AND (cit.cti_fmt LIKE '1%' OR cit.cti_fmt LIKE '3%') AND ct.reg_dt &lt; SYSDATE+#rms# AND ct.regrid='RMS')
+		</isNotEmpty>
+    </select>
+    
+    <select id="getContentsInst" resultClass="ContentsInst" parameterClass="map">
+		SELECT  
+			CTI_ID          as ctiId,	    
+			CT_ID           as ctId,	    
+			CTI_FMT         as ctiFmt,	    
+			ME_CD           as meCd,	    
+			BIT_RT          as bitRt,       
+			FRM_PER_SEC     as frmPerSec,   
+			DRP_FRM_YN      as drpFrmYn,    
+			VD_HRESOL       as vdHresol,    
+			VD_VRESOL       as vdVresol,    
+			RECORD_TYPE_CD  as recordTypeCd,
+			FL_PATH         as flPath,       
+			FL_SZ           as flSz,        
+			REG_DT          as regDt,       
+			REGRID          as regrid,      
+			MOD_DT          as modDt,       
+			MODRID          as modrid,      
+			COLOR_CD        as colorCd,     
+			ORG_FILE_NM     as orgFileNm,   
+			AUD_SAMP_FRQ    as audSampFrq,  
+			AUDIO_BDWT      as audioBdwt,   
+			INGEST_EQ_ID    as ingestEqId,  
+			AUDIO_YN        as audioYn,     
+			AUDIO_LAN_CD    as audioLanCd,  
+			NOI_RDUC_TYP_CD as noiRducTypCd,
+			ENC_QLTY_DESC   as encQltyDesc, 
+			ENC_QLTY_CD     as encQltyCd,   
+			WRK_FILE_NM     as wrkFileNm,
+			FL_EXT			as flExt,
+			PRO_FLID     as proFlid,
+			AV_GUBUN	 as avGubun,
+			USE_YN   	 as useYn,
+			START_TIME   as startTime,
+			END_TIME	 as endTime
+		FROM CONTENTS_INST_TBL
+		<dynamic prepend="WHERE">
+			<isNotEmpty property="ctId" prepend="AND" >
+				CT_ID = #ctId#
+			</isNotEmpty>
+			<isNotEmpty property="ctiFmt" prepend="AND" >
+				CTI_FMT = #ctiFmt#
+			</isNotEmpty>
+			<isNotEmpty property="ctiFmt2" prepend="AND" >
+				(CTI_FMT LIKE ('1'||'%') or CTI_FMT LIKE ('3'||'%'))
+			</isNotEmpty>
+			<isNotEmpty property="ctiId" prepend="AND" >
+				CTI_ID = #ctiId#
+			</isNotEmpty>
+			AND ROWNUM = 1
+		</dynamic>
+		ORDER BY CTI_ID DESC
+    </select>
+    
+     <select id="getContentsInstForwardMeta" resultClass="ContentsInst" parameterClass="map">
+		SELECT  
+	    	CT.PGM_CD AS pgmCd,
+			CT.PGM_ID AS pgmId,
+			CTI.FL_SZ AS flSz,
+			CT.CT_CLA AS ctCla,
+			CT.CT_TYP AS ctTyp,
+			BPT.ALIAS AS alias,
+			BPT.SRV_URL AS srvUrl,
+			ct.SEGMENT_ID AS segmentId,
+			cti.WRK_FILE_NM AS wrkFileNm,
+			trs.PRO_FLID AS proFlid,
+			bpt.VOD_SMIL AS vodSmil
+		FROM TRS_HIS_TBL TRS
+			 INNER JOIN CONTENTS_INST_TBL CTI ON CTI.CTI_ID = TRS.CTI_ID
+			 INNER JOIN CONTENTS_TBL CT ON CT.CT_ID = CTI.CT_ID
+			 INNER JOIN BUSI_PARTNER_TBL BPT ON BPT.BUSI_PARTNERID= TRS.BUSI_PARTNER_ID
+		<dynamic prepend="WHERE">
+	  		<isNotNull prepend="AND" property="seq">
+	  			TRS.SEQ=#seq#
+	  		</isNotNull>
+	  	</dynamic>
+    </select>
+    
+    <insert id="insertContentsInst" parameterClass="ContentsInst">
+    <selectKey keyProperty="ctiId" resultClass="java.lang.Long">
+      		select CTI_ID_SEQ.NEXTVAL from dual
+     	</selectKey>
+		INSERT INTO CONTENTS_INST_TBL (
+			CTI_ID,CT_ID,CTI_FMT,ME_CD,BIT_RT,FRM_PER_SEC,DRP_FRM_YN,VD_HRESOL,VD_VRESOL,RECORD_TYPE_CD,FL_PATH,FL_SZ,REG_DT,REGRID,MOD_DT,MODRID,COLOR_CD,ORG_FILE_NM,AUD_SAMP_FRQ,AUDIO_BDWT,INGEST_EQ_ID,AUDIO_YN,AUDIO_LAN_CD,NOI_RDUC_TYP_CD,ENC_QLTY_DESC,ENC_QLTY_CD,WRK_FILE_NM,PRO_FLID,USR_FILE_NM,FL_EXT,AV_GUBUN,START_TIME,END_TIME
+		) VALUES (
+			#ctiId#,#ctId#,#ctiFmt#,#meCd#,#bitRt#,#frmPerSec#,#drpFrmYn#,#vdHresol#,#vdVresol#,#recordTypeCd#,#flPath#,#flSz#,#regDt#,#regrid#,#modDt#,#modrid#,#colorCd#,#orgFileNm#,#audSampFrq#,#audioBdwt#,#ingestEqId#,#audioYn#,#audioLanCd#,#noiRducTypCd#,#encQltyDesc#,#encQltyCd#,#wrkFileNm#,#proFlid#,#usrFileNm#,#flExt#,#avGubun#,#startTime#,#endTime#    
+		)
+	</insert>
+	
+   <update id="updateContentsInst" parameterClass="ContentsInst">
+    	UPDATE CONTENTS_INST_TBL SET MOD_DT=#modDt#
+    	<isNotNull prepend="," property="useYn">
+	    	USE_YN=#useYn#
+    	</isNotNull>
+    	<isNotNull prepend="," property="wrkFileNm">
+	    	WRK_FILE_NM=#wrkFileNm#
+    	</isNotNull>
+    	<dynamic prepend="WHERE">
+    		<isNotNull prepend="AND" property="ctiId">
+    			CTI_ID=#ctiId#
+    		</isNotNull>
+    	</dynamic>
+    </update>
+    
+    <update id="deleteContentsInst" parameterClass="ContentsInst">
+    	UPDATE CONTENTS_INST_TBL SET USE_YN=#useYn#
+    	<dynamic prepend="WHERE">
+    		<isNotEmpty prepend="AND" property="ctiId">
+    			CTI_ID=#ctiId#
+    		</isNotEmpty>
+    		<isNotEmpty prepend="AND" property="ctId">
+    			CT_ID=#ctId#
+    		</isNotEmpty>
+    		<isNotEmpty property="ctiFmt" prepend="AND">
+				(CTI_FMT NOT LIKE ('1'||'%') or CTI_FMT NOT LIKE ('3'||'%'))
+			</isNotEmpty>
+    	</dynamic>
+    </update>
+   
+ </sqlMap>
+ 

@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="TraHis">
+    
+    <typeAlias alias="TraHis" type="kr.co.d2net.dto.TranscorderHisTbl"/>
+    <typeAlias alias="Content" type="kr.co.d2net.dto.ContentsTbl"/>
+    
+    <resultMap id="TraHisMap" class="TraHis">
+		<result property="useYn" column="USE_YN" />           
+		<result property="seq" column="SEQ" />               
+		<result property="regDt" column="REG_DT" />           
+		<result property="regrid" column="REGRID" />          
+		<result property="modDt" column="MOD_DT" />           
+		<result property="modrid" column="MODRID" />          
+		<result property="workStrDt" column="WORK_STR_DT" />
+		<result property="ctiId" column="CTI_ID" />           
+		<result property="workStatcd" column="WORK_STATCD" /> 
+		<result property="reqUsrid" column="REQ_USRID" />     
+		<result property="prgrs" column="PRGRS" />            
+		<result property="downVol" column="DOWN_VOL" />       
+		<result property="flPath" column="FL_PATH" />         
+		<result property="workEndDt" column="WORK_END_DT" />
+		<result property="priority" column="PRIORITY" />
+		<result property="proFlid" column="PRO_FLID" />
+		<result property="eqPsCd" column="EQ_PS_CD" />
+		<result property="deviceid" column="DEVICEID" />      
+    </resultMap>
+    
+    <resultMap id="TraHisJobMap" class="TraHis">
+		<result property="seq" column="SEQ" />    
+		<result property="bitRt" column="BIT_RT" />  
+		<result property="newFlExt" column="NEW_FL_EXT" />
+		<result property="orgFlExt" column="ORG_FL_EXT" />
+		<result property="orgFileNm" column="ORG_FILE_NM" />
+		<result property="pgmGrpCd" column="PGM_GRP_CD" />
+		<result property="pgmCd" column="PGM_CD" />
+		<result property="pgmId" column="PGM_ID" />
+		<result property="pgmNm" column="PGM_NM" />
+		<result property="segmentId" column="SEGMENT_ID" />
+		<result property="segmentNm" column="SEGMENT_NM" />
+		<result property="vdoCodec" column="VDO_CODEC" />
+		<result property="vdoBitRate" column="VDO_BIT_RATE" />
+		<result property="vdoHori" column="VDO_HORI" />         
+		<result property="vdoVert" column="VDO_VERT" />
+		<result property="vdoFS" column="VDO_F_S" />
+		<result property="vdoSync" column="VDO_SYNC" />
+		<result property="audCodec" column="AUD_CODEC" />
+		<result property="audBitRate" column="AUD_BIT_RATE" />
+		<result property="audChan" column="AUD_CHAN" />
+		<result property="audSRate" column="AUD_S_RATE" />           
+		<result property="flPath" column="FL_PATH" />         
+		<result property="proFlid" column="PRO_FLID" />
+		<result property="ctiFmt" column="CTI_FMT" />
+		<result property="servBit" column="SERV_BIT" />
+		<result property="picKind" column="PIC_KIND" />
+		<result property="ctiId" column="CTI_ID" />
+		<result property="workStatcd" column="WORK_STATCD" />
+		<result property="avGubun" column="AV_GUBUN" />
+		<result property="regrid" column="REGRID" />
+		<result property="startTime" column="START_TIME" />
+		<result property="endTime" column="END_TIME" />
+		<result property="ctTyp" column="CT_TYP" />
+    </resultMap>
+    
+    <resultMap id="TraHisCtiIdMap" class="TraHis">
+		<result property="ctiId" column="CTI_ID" />    
+    </resultMap>
+    
+    <select id="getTraHis" resultClass="TraHis" parameterClass="map">
+		SELECT  
+			SEQ          as seq,             
+			REG_DT       as regDt,           
+			REGRID       as regrid,          
+			MOD_DT       as modDt,           
+			MODRID       as modrid,          
+			WORK_STR_DT as workStrDt,      
+			EQ_PS_CD    as eqPsCd,
+			DEVICEID    as deviceid,         
+			CTI_ID       as ctiId,           
+			WORK_STATCD  as workStatcd,      
+			REQ_USRID    as reqUsrid,        
+			PRGRS        as prgrs,           
+			DOWN_VOL     as downVol,         
+			FL_PATH      as flPath,
+			PRO_FLID      as proFlid, 
+			PRIORITY as   priority  ,      
+			WORK_END_DT as workEndDt		       
+		FROM TRA_HIS_TBL 
+		<dynamic prepend="WHERE">
+			<isNotEmpty property="wrkCtiId" prepend="AND">
+    			WRK_CTI_ID=#wrkCtiId#	
+    		</isNotEmpty>
+    		<isNotEmpty property="seq" prepend="AND">
+    			SEQ=#seq#
+    		</isNotEmpty>
+		</dynamic>
+    </select>
+    
+    <select id="getTraHisPrgrs" resultClass="TraHis" parameterClass="map">
+		SELECT  
+			SEQ			 as seq,        
+			PRGRS        as prgrs		       
+		FROM TRA_HIS_TBL 
+		<dynamic prepend="WHERE">
+			
+    		<isNotEmpty property="seq2" prepend="AND">
+    			SEQ in ($seq2$)
+    		</isNotEmpty>
+		</dynamic>
+    </select>
+    
+    <select id="getTraHisJobID" resultClass="TraHis" parameterClass="java.lang.Long">
+		SELECT
+			c.PGM_ID pgmId, c.CT_ID ctId, b.DRP_FRM_YN drpFrmYn, b.COLOR_CD colorCd, b.FL_PATH flPath, b.ORG_FILE_NM orgFileNm, a.FL_EXT newFlExt,
+		    d.VDO_BIT_RATE vdoBitRate, d.VDO_VERT vdoVert, d.VDO_HORI vdoHori, d.AUD_BIT_RATE audBitRate, d.AUD_S_RATE audSRate, a.PRO_FLID proFlid,
+		    d.SERV_BIT servBit, d.PIC_KIND picKind, a.DEVICEID deviceid, a.EQ_PS_CD eqPsCd, a.SEQ seq, b.AV_GUBUN avGubun
+		FROM TRA_HIS_TBL a
+			inner JOIN CONTENTS_INST_TBL b ON a.CTI_ID = b.CTI_ID
+		    inner JOIN CONTENTS_TBL c ON b.CT_ID = c.CT_ID
+		    inner JOIN PRO_FL_TBL d ON a.PRO_FLID = d.PRO_FLID
+		WHERE a.SEQ = #jobId#   
+    </select>
+   
+    <select id="getTraHisJob" resultClass="TraHis" parameterClass="map">
+		SELECT  
+			tra.SEQ seq, tra.PRO_FLID proFlid, cti.BIT_RT bitRt, cti.FL_EXT orgFlExt, cti.FL_PATH flPath, cti.ORG_FILE_NM orgFileNm,
+            ct.PGM_GRP_CD pgmGrpCd, ct.PGM_CD pgmCd, ct.PGM_ID pgmId, ct.PGM_NM pgmNm, ct.SEGMENT_ID segmentId, ct.SEGMENT_NM segmentNm, cti.CTI_ID ctiId,
+            pf.VDO_CODEC vdoCodec, pf.VDO_BIT_RATE vdoBitRate, pf.VDO_HORI vdoHori, pf.VDO_VERT vdoVert, pf.VDO_F_S vdoFS, pf.VDO_SYNC vdoSync,
+            pf.AUD_CODEC audCodec, pf.AUD_BIT_RATE audBitRate, pf.AUD_CHAN audChan, pf.AUD_S_RATE audSRate, tra.FL_EXT newFlExt, cti.CTI_FMT ctiFmt
+		FROM TRA_HIS_TBL tra
+			inner JOIN CONTENTS_INST_TBL cti ON tra.CTI_ID = cti.CTI_ID
+		    inner JOIN CONTENTS_TBL ct ON cti.CT_ID = ct.CT_ID
+            inner JOIN PRO_FL_TBL pf ON tra.PRO_FLID = pf.PRO_FLID
+		WHERE tra.work_statcd IN ('000') AND tra.USE_YN = 'Y' AND ROWNUM = 1
+		ORDER BY pf.priority ASC, tra.reg_dt desc
+    </select>
+    
+    <select id="findTraHisJob" resultMap="TraHisJobMap" parameterClass="java.lang.Integer">
+    <![CDATA[
+		SELECT  
+			tra.SEQ, tra.PRO_FLID, cti.BIT_RT, cti.FL_EXT as ORG_FL_EXT, cti.FL_PATH, cti.ORG_FILE_NM, cti.AV_GUBUN,
+            ct.PGM_GRP_CD, ct.PGM_CD, ct.PGM_ID, ct.PGM_NM, ct.SEGMENT_ID, ct.SEGMENT_NM, cti.CTI_ID, tra.WORK_STATCD,
+            pf.VDO_CODEC, pf.VDO_BIT_RATE, pf.VDO_HORI, pf.VDO_VERT, pf.VDO_F_S, pf.VDO_SYNC, pf.PIC_KIND, pf.SERV_BIT,
+            pf.AUD_CODEC, pf.AUD_BIT_RATE, pf.AUD_CHAN, pf.AUD_S_RATE, tra.FL_EXT NEW_FL_EXT, cti.CTI_FMT, ct.REGRID
+		FROM TRA_HIS_TBL tra
+			inner JOIN CONTENTS_INST_TBL cti ON tra.CTI_ID = cti.CTI_ID
+		    inner JOIN CONTENTS_TBL ct ON cti.CT_ID = ct.CT_ID
+            inner JOIN PRO_FL_TBL pf ON tra.PRO_FLID = pf.PRO_FLID
+		WHERE tra.work_statcd IN ('000') AND tra.USE_YN = 'Y' AND ROWNUM <= #size#
+		ORDER BY pf.priority ASC, tra.reg_dt desc
+	]]>
+    </select>
+    
+    <select id="findTraHisCtiId" resultClass="java.lang.Long" parameterClass="map">
+    	SELECT
+			a.CTI_ID
+		FROM TRA_HIS_TBL a
+			inner JOIN CONTENTS_INST_TBL b ON a.CTI_ID = b.CTI_ID 
+		WHERE a.WORK_STATCD IN (#wrkStatCd#) AND b.USE_YN = 'Y' AND AV_GUBUN = #avGubun#
+		GROUP BY a.CTI_ID
+		ORDER BY a.CTI_ID asc
+    </select>
+    
+    <select id="findTraHisJobCtiId" resultMap="TraHisJobMap" parameterClass="java.lang.Long">
+		SELECT  
+			tra.SEQ, tra.PRO_FLID, cti.BIT_RT, cti.FL_EXT as ORG_FL_EXT, cti.FL_PATH, cti.ORG_FILE_NM, cti.AV_GUBUN,
+            ct.PGM_GRP_CD, ct.PGM_CD, ct.PGM_ID, ct.PGM_NM, ct.SEGMENT_ID, ct.SEGMENT_NM, cti.CTI_ID, tra.WORK_STATCD,ct.CT_TYP,
+            pf.VDO_CODEC, pf.VDO_BIT_RATE, pf.VDO_HORI, pf.VDO_VERT, pf.VDO_F_S, pf.VDO_SYNC, pf.PIC_KIND, pf.SERV_BIT,
+            pf.AUD_CODEC, pf.AUD_BIT_RATE, pf.AUD_CHAN, pf.AUD_S_RATE, tra.FL_EXT NEW_FL_EXT, cti.CTI_FMT, ct.REGRID, cti.START_TIME, cti.END_TIME
+		FROM TRA_HIS_TBL tra
+			inner JOIN CONTENTS_INST_TBL cti ON tra.CTI_ID = cti.CTI_ID
+		    inner JOIN CONTENTS_TBL ct ON cti.CT_ID = ct.CT_ID
+            inner JOIN PRO_FL_TBL pf ON tra.PRO_FLID = pf.PRO_FLID
+		WHERE cti.CTI_ID = #ctiId# and tra.WORK_STATCD in ('000', '001')
+		ORDER BY pf.PRIORITY ASC, tra.SEQ ASC
+    </select>
+    
+    <select id="findTraHisJobIng" resultMap="TraHisJobMap" parameterClass="java.lang.String">
+    <![CDATA[
+		SELECT  
+			tra.SEQ, tra.PRO_FLID, cti.BIT_RT, cti.FL_EXT as ORG_FL_EXT, cti.FL_PATH, cti.ORG_FILE_NM, cti.AV_GUBUN,
+            ct.PGM_GRP_CD, ct.PGM_CD, ct.PGM_ID, ct.PGM_NM, ct.SEGMENT_ID, ct.SEGMENT_NM, cti.CTI_ID, tra.WORK_STATCD,
+            pf.VDO_CODEC, pf.VDO_BIT_RATE, pf.VDO_HORI, pf.VDO_VERT, pf.VDO_F_S, pf.VDO_SYNC, pf.PIC_KIND, pf.SERV_BIT,
+            pf.AUD_CODEC, pf.AUD_BIT_RATE, pf.AUD_CHAN, pf.AUD_S_RATE, tra.FL_EXT NEW_FL_EXT, cti.CTI_FMT, ct.REGRID
+		FROM TRA_HIS_TBL tra
+			inner JOIN CONTENTS_INST_TBL cti ON tra.CTI_ID = cti.CTI_ID
+		    inner JOIN CONTENTS_TBL ct ON cti.CT_ID = ct.CT_ID
+            inner JOIN PRO_FL_TBL pf ON tra.PRO_FLID = pf.PRO_FLID
+		WHERE tra.work_statcd IN (#wrkStatCd#) AND tra.USE_YN = 'Y'
+		ORDER BY pf.priority ASC, tra.reg_dt desc
+	]]>
+    </select>
+    
+    <select id="getTraWapper" resultClass="Content" parameterClass="java.lang.Long">
+    <![CDATA[
+		SELECT
+			w.GROUP_CODE pgmGrpCd, c.CT_ID ctId, c.PGM_CD pgmCd, c.PGM_ID pgmId, c.PGM_NM pgmNm, c.SEGMENT_ID segmentId, c.SEGMENT_NM segmentNm, 
+			c.PGM_NUM pgmNum, c.CT_CLA ctCla, c.CT_TYP ctTyp, c.BRD_DD brdDd, d.SERV_BIT servBit, a.FL_EXT flExt,
+		    (CASE a.JOB_GUBUN WHEN 'V' THEN d.VDO_CODEC ELSE d.AUD_CODEC end) format
+		FROM TRA_HIS_TBL a
+			inner JOIN CONTENTS_INST_TBL b ON a.CTI_ID = b.CTI_ID
+			inner JOIN CONTENTS_TBL c ON b.CT_ID = c.CT_ID
+		    inner JOIN PRO_FL_TBL d ON a.PRO_FLID = d.PRO_FLID
+		    left outer JOIN WEEK_SCH_TBL w ON c.PGM_CD = w.PROGRAM_CODE AND c.PGM_ID = w.PROGRAM_ID AND c.CHANNEL_CODE = w.CHANNEL_CODE
+		WHERE rownum = 1 and a.SEQ = #seq#
+	]]>
+    </select>
+    
+    <insert id="insertTraHis" parameterClass="TraHis">
+     <selectKey keyProperty="seq" resultClass="java.lang.Long">
+      		select TRA_HIS_SEQ.NEXTVAL from dual
+     	</selectKey>
+		INSERT INTO TRA_HIS_TBL (
+			DEVICEID,USE_YN,SEQ,REG_DT,REGRID,MOD_DT,MODRID,WORK_STR_DT,EQ_PS_CD,CTI_ID,WORK_STATCD,REQ_USRID,PRGRS,DOWN_VOL,FL_PATH,WORK_END_DT,PRIORITY,PRO_FLID,FL_EXT,JOB_GUBUN
+		) VALUES (
+			#deviceid#,#useYn#,#seq#,#regDt#,#regrid#,#modDt#,#modrid#,#workStrDt#,#eqPsCd#,#ctiId#,#workStatcd#,#reqUsrid#,#prgrs#,#downVol#,#flPath#,#workEndDt#,#priority#,#proFlid#,#flExt#,#jobGubun#
+		)
+	</insert>
+	
+	<update id="updateTraHis" parameterClass="TraHis">
+		UPDATE TRA_HIS_TBL SET 
+		  DEVICEID = #deviceid#, 
+		  USE_YN = #useYn#, 
+		  REG_DT = #regDt#, 
+		  REGRID = #regrid#, 
+		  MOD_DT = #modDt#, 
+		  MODRID = #modrid#, 
+		  WORK_STR_DT = #workStrDt#, 
+		  CTI_ID = #ctiId#, 
+		  WORK_STATCD = #workStatcd#, 
+		  REQ_USRID = #reqUsrid#, 
+		  PRGRS = #prgrs#, 
+		  DOWN_VOL = #downVol#, 
+		  FL_PATH = #flPath#, 
+		  PRO_FLID   = #proFlid#,
+		  PRIORITY   = #priority#,           
+		  WORK_END_DT = #workEndDt#
+		WHERE
+			SEQ=#seq#		 
+	</update>
+	
+	<update id="updateTraHisState" parameterClass="TraHis">
+		UPDATE TRA_HIS_TBL SET MOD_DT = #modDt#     
+		  <isNotNull prepend="," property="workStatcd">
+		  	WORK_STATCD = #workStatcd#
+		  </isNotNull>
+		  <isNotNull prepend="," property="deviceid">
+		  	DEVICEID = #deviceid#
+		  </isNotNull>
+		  <isNotNull prepend="," property="eqPsCd">
+		  	EQ_PS_CD = #eqPsCd#
+		  </isNotNull>
+		  <isNotNull prepend="," property="useYn">
+		  	USE_YN = #useYn#
+		  </isNotNull>
+		  <isNotNull prepend="," property="prgrs">
+		  	PRGRS = #prgrs#
+		  </isNotNull>
+		  <isNotNull prepend="," property="workStrDt">
+		  	WORK_STR_DT = #workStrDt#
+		  </isNotNull>
+		  <isNotNull prepend="," property="workEndDt">
+		  	WORK_END_DT = #workEndDt#
+		  </isNotNull>
+		  <isNotNull prepend="," property="wrkCtiId">
+		  	WRK_CTI_ID = #wrkCtiId#
+		  </isNotNull>
+		WHERE
+			SEQ=#seq#		 
+	</update>
+	
+	<update id="updateProflRequest" parameterClass="TraHis">
+		UPDATE TRA_HIS_TBL SET MOD_DT = sysdate     
+		  <isNotNull prepend="," property="workStatcd">
+		  	WORK_STATCD = #workStatcd# , WORK_STR_DT = #workStrDt#, WORK_END_DT = #workEndDt#, PRGRS=#prgrs#
+		  </isNotNull>
+		  <dynamic prepend="WHERE">
+    		<isNotEmpty prepend="AND" property="wrkCtiId">
+    			WRK_CTI_ID=#wrkCtiId#	
+    		</isNotEmpty>
+    		<isNotEmpty prepend="AND" property="ctiId">
+    			CTI_ID=#ctiId#
+    		</isNotEmpty>
+    		<isNotEmpty prepend="AND" property="seq">
+    			SEQ=#seq#
+    		</isNotEmpty>
+    	</dynamic>
+				 
+	</update>
+	
+	<update id="updateAllProflRequest" parameterClass="TraHis">
+		UPDATE TRA_HIS_TBL tht
+		SET WORK_STATCD = #workStatcd#, WORK_STR_DT = #workStrDt#, WORK_END_DT = #workEndDt#, PRGRS=#prgrs#	 
+		WHERE CTI_ID IN (SELECT CTI_ID FROM CONTENTS_INST_TBL CIT WHERE CIT.CT_ID =#ctId#) 
+		  AND tht.WORK_STATCD &lt;&gt; '200' AND tht.MOD_DT &lt; (SYSDATE - (10/24/60))
+	</update>
+	
+	<update id="updateProfl" parameterClass="TraHis">
+		UPDATE TRA_HIS_TBL SET MOD_DT = sysdate     
+		  <isNotNull prepend="," property="workStatcd">
+		  	WORK_STATCD = #workStatcd# , WORK_STR_DT = #workStrDt#, WORK_END_DT = #workEndDt#, PRGRS=#prgrs#
+		  </isNotNull>
+		  
+		WHERE
+			SEQ=#seq#		 
+	</update>
+    
+ </sqlMap>

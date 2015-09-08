@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="ContentsBusi">
+    
+    <typeAlias alias="ContentsBusi" type="kr.co.d2net.dto.ContentsBusiTbl"/>
+    
+    <resultMap id="ContentsBusiMap" class="ContentsBusi">
+    	<result property="ctiId" column="CTI_ID" />
+		<result property="busiPartnerId" column="BUSI_PARTNER_ID" />
+		<result property="servUrl" column="SERV_URL" />
+		<result property="regDt" column="REG_DT" />
+		<result property="regrid" column="REGRID" />
+		<result property="modDt" column="MOD_DT" />
+		<result property="modrid" column="MODRID" />
+		<result property="useYn" column="USE_YN" /> 
+    </resultMap>
+    
+    <select id="findContentsBusi" resultMap="ContentsBusiMap" parameterClass="map">
+	     SELECT  
+             *
+         FROM CONTENTS_BUSI_TBL
+         <dynamic prepend="WHERE">
+
+         </dynamic>
+    </select>
+    
+    <select id="getContentsBusi" resultClass="ContentsBusi" parameterClass="map">
+		SELECT  
+			CTI_ID          as ctiId,         
+			BUSI_PARTNER_ID as busiPartnerId, 
+			SERV_URL        as servUrl,       
+			REG_DT          as regDt,          
+			REGRID          as regrid,         
+			MOD_DT          as modDt,          
+			MODRID          as modrid,         
+			USE_YN          as useYn
+		FROM CONTENTS_BUSI_TBL
+		<dynamic prepend="WHERE">
+
+		</dynamic>
+    </select>
+    
+    <insert id="insertContentsBusi" parameterClass="ContentsBusi">
+		INSERT INTO CONTENTS_BUSI_TBL (
+			CTI_ID,BUSI_PARTNER_ID,SERV_URL,REG_DT,REGRID,MOD_DT,MODRID,USE_YN
+		) VALUES (
+			#ctiId#,#busiPartnerId#,#servUrl#,#regDt#,#regrid#,#modDt#,#modrid#,#useYn#  
+		)
+	</insert>
+    
+ </sqlMap>

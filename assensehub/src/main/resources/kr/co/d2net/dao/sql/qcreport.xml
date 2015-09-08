@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="QcReport">
+    
+    <typeAlias alias="QcReport" type="kr.co.d2net.dto.QcReportTbl"/>
+    
+    <resultMap id="QcReportMap" class="QcReport">
+    	<result property="reportId" column="REPORT_ID" /> 
+		<result property="reInfo" column="RE_INFO" />
+		<result property="rtTcd" column="RT_TCD" />
+		<result property="rtGb" column="RT_GB" />
+		<result property="seq" column="SEQ" />
+		<result property="frameNo" column="FRAME_NO" />
+		<result property="errGb" column="ERR_GB" />
+	
+    </resultMap>
+
+    <select id="findQcReport" resultMap="QcReportMap" parameterClass="map">
+	     SELECT  
+             REPORT_ID, RE_INFO, RT_TCD, RT_GB, SEQ, FRAME_NO, ERR_GB
+         FROM QC_REPORT
+         	
+         <dynamic prepend="WHERE">
+		 	<isNotEmpty property="seq" prepend="AND">
+				SEQ = #seq#
+			</isNotEmpty>
+         </dynamic>
+    </select>
+    
+    <select id="getQcCount" resultClass="int" parameterClass="java.lang.Long">
+	     SELECT  
+             count(*)
+         FROM QC_REPORT
+		 WHERE SEQ = #seq#
+    </select>
+    
+    <select id="allfindQc" resultMap="QcReportMap" parameterClass="map">
+	     SELECT  
+             *
+         FROM QC_REPORT
+    </select>
+    
+    <insert id="insertQcReport" parameterClass="QcReport">
+    	INSERT INTO QC_REPORT (REPORT_ID, RE_INFO, RT_TCD, SEQ, FRAME_NO, ERR_GB, RT_GB) VALUES (#reportId#, #reInfo#, #rtTcd#, #seq#, #frameNo#, #errGb#, #rtGb#)
+    </insert>
+    
+    <insert id="deleteQcReport" parameterClass="QcReport">
+    	DELETE FROM QC_REPORT WHERE SEQ = #seq#
+    </insert>
+ </sqlMap>

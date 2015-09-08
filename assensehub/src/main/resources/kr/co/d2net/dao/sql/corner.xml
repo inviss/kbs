@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="Corner">
+    
+    <typeAlias alias="Corner" type="kr.co.d2net.dto.CornerTbl"/>
+    
+    <resultMap id="CornerMap" class="Corner">
+    	<result property="cnId" column="CN_ID" />
+		<result property="ctId" column="CT_ID" />
+		<result property="audSegmentId" column="AUD_SEGMENT_ID" />
+		<result property="segmentId" column="SEGMENT_ID" />
+		<result property="cnNm" column="CN_NM" />
+		<result property="bgnTime" column="BGN_TIME" />
+		<result property="endTime" column="END_TIME" />
+    </resultMap>
+    
+    <select id="findCorner" resultMap="CornerMap" parameterClass="map">
+	     SELECT  
+             *
+         FROM CORNER_TBL
+         WHERE CT_ID = #ctId#
+    </select>
+    
+    <select id="getCorner" resultClass="Corner" parameterClass="map">
+		SELECT  
+			CN_ID as cnId,
+			CT_ID as ctId,
+			AUD_SEGMENT_ID as audSegmentId,
+			SEGMENT_ID as segmentId,
+			CN_NM as cnNm,
+			BGN_TIME as bgnTime,
+			END_TIME as endTime
+		FROM CORNER_TBL
+		<dynamic prepend="WHERE">
+			<isNotEmpty property="ctId" prepend="AND">
+				CT_ID = #ctId#
+			</isNotEmpty>
+			<isNotEmpty property="audSegmentId" prepend="AND">
+				AUD_SEGMENT_ID = #audSegmentId#
+			</isNotEmpty>
+			<isNotEmpty property="segmentId" prepend="AND">
+				SEGMENT_ID = #segmentId#
+			</isNotEmpty>
+			<isNotEmpty property="cnId" prepend="AND">
+				CN_ID = #cnId#
+			</isNotEmpty>
+         </dynamic>
+    </select>
+    
+    <update id="updateCorner" parameterClass="Corner">
+	    UPDATE CORNER_TBL
+	    <dynamic prepend="SET">
+			<isNotNull property="segmentId" prepend=",">
+				SEGMENT_ID = #segmentId#
+			</isNotNull>
+			<isNotNull property="cnNm" prepend=",">
+				CN_NM = #cnNm#
+			</isNotNull>
+			<isNotNull property="clfNm" prepend=",">
+				BGN_TIME = #bgnTime#
+			</isNotNull>
+			<isNotNull property="rmk1" prepend=",">
+				END_TIME = #endTime#
+			</isNotNull>
+		</dynamic>
+		<dynamic prepend="WHERE">
+			<isNotEmpty property="ctId" prepend="AND">
+				CT_ID = #ctId#
+			</isNotEmpty>
+			<isNotEmpty property="audSegmentId" prepend="AND">
+				AUD_SEGMENT_ID = #audSegmentId#
+			</isNotEmpty>
+			<isNotEmpty property="segmentId" prepend="AND">
+				SEGMENT_ID = #segmentId#
+			</isNotEmpty>
+			<isNotEmpty property="cnId" prepend="AND">
+				CN_ID = #cnId#
+			</isNotEmpty>
+         </dynamic>
+    </update>
+    
+    <insert id="insertCorner" parameterClass="Corner">
+    	<selectKey keyProperty="cnId" resultClass="java.lang.Long">
+      		select CN_ID_SEQ.NEXTVAL from dual
+     	</selectKey>
+		INSERT INTO CORNER_TBL (
+			CN_ID,CT_ID,AUD_SEGMENT_ID,SEGMENT_ID,CN_NM,BGN_TIME,END_TIME
+		) VALUES (
+			#cnId#,#ctId#,#audSegmentId#,#segmentId#,#cnNm#,#bgnTime#,#endTime#
+		)
+	</insert>
+    
+ </sqlMap>

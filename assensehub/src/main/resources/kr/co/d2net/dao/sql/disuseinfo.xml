@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="DisuseInfo">
+    
+    <typeAlias alias="DisuseInfo" type="kr.co.d2net.dto.DisuseInfoTbl"/>
+    
+    <resultMap id="DisuseInfoMap" class="DisuseInfo">
+    	<result property="disuseNo" column="DISUSE_NO" />
+		<result property="dataNm" column="DATA_NM" />
+		<result property="dataId" column="DATA_ID" />
+		<result property="dataClfCd" column="DATA_CLF_CD" />
+		<result property="disuseDd" column="DISUSE_DD" />
+		<result property="disuseRsl" column="DISUSE_RSL" />
+		<result property="disuseClf" column="DISUSE_CLF" />
+		<result property="regDt" column="REG_DT" />
+		<result property="regrid" column="REGRID" />
+		<result property="modDt" column="MOD_DT" />
+		<result property="modrid" column="MODRID" />
+		<result property="extsRsl" column="EXTS_RSL" />
+		<result property="extsDt" column="EXTS_DT" />
+		<result property="extsCd" column="EXTS_CD" />
+    </resultMap>
+    
+    <select id="findDisuseInfo" resultMap="DisuseInfoMap" parameterClass="map">
+	     SELECT  
+             *
+         FROM DISUSE_INFO_TBL
+         <dynamic prepend="WHERE">
+
+         </dynamic>
+    </select>
+    
+    <select id="getDisuseInfo" resultClass="DisuseInfo" parameterClass="map">
+		SELECT  
+			DISUSE_NO   as disuseNo,   
+			DATA_NM     as dataNm,    
+			DATA_ID     as dataId,    
+			DATA_CLF_CD as dataClfCd,
+			DISUSE_DD   as disuseDd,  
+			DISUSE_RSL  as disuseRsl, 
+			DISUSE_CLF  as disuseClf, 
+			REG_DT      as regDt,     
+			REGRID      as regrid,    
+			MOD_DT      as modDt,     
+			MODRID      as modrid,    
+			EXTS_RSL    as extsRsl,   
+			EXTS_DT     as extsDt,    
+			EXTS_CD     as extsCd 
+		FROM DISUSE_INFO_TBL
+		<dynamic prepend="WHERE">
+			DATA_NM = #dataNm#
+		</dynamic>
+    </select>
+    
+    <insert id="insertDisuseInfo" parameterClass="DisuseInfo">
+		INSERT INTO DISUSE_INFO_TBL (
+			DISUSE_NO,DATA_NM,DATA_ID,DATA_CLF_CD,DISUSE_DD,DISUSE_RSL,DISUSE_CLF,REG_DT,REGRID,MOD_DT,MODRID,EXTS_RSL,EXTS_DT,EXTS_CD     
+
+		) VALUES (
+			DISUSE_NO_SEQ.nextval,#dataNm#,#dataId#,#dataClfCd#,to_date(sysdate),#disuseRsl#,#disuseClf#,#regDt#,#regrid#,#modDt#,#modrid#,#extsRsl#,#extsDt#,#extsCd#     
+
+		)
+	</insert>
+	
+	<update id="updateDisuseInfo" parameterClass="DisuseInfo">
+    	UPDATE DISUSE_INFO_TBL SET DISUSE_CLF=#disuseClf#
+    	<dynamic prepend="WHERE">
+    		<isNotNull prepend="AND" property="disuseNo">
+    			DISUSE_NO=#disuseNo#
+    		</isNotNull>
+    		<isNotNull prepend="AND" property="dataId">
+    			DATA_ID=#dataId#
+    		</isNotNull>
+    	</dynamic>
+    </update>
+   
+    
+ </sqlMap>
