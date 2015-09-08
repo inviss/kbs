@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="SchConfirm">
+
+	<typeAlias alias="SchConfirm" type="kr.co.d2net.dto.SchConfirmTbl" />
+	<resultMap id="SchConfirmMap" class="SchConfirm">
+		<result property="confirmCd" column="CONFIRM_CD" />
+		<result property="confirmDate" column="CONFIRM_DATE" />
+	</resultMap>
+    
+    <select id="getSchConfirm" resultClass="string" parameterClass="string">
+		SELECT  
+			CONFIRM_DATE       
+		FROM SCH_CONFIRM_TBL
+		WHERE CONFIRM_CD = #confirmCd#
+    </select>
+    
+    <update id="updateSchConfirm" parameterClass="SchConfirm">
+    	UPDATE SCH_CONFIRM_TBL SET CONFIRM_DATE = #confirmDate#
+    	WHERE CONFIRM_CD = #confirmCd#
+    </update>
+    
+    <insert id="insertSchConfirm" parameterClass="SchConfirm">
+		INSERT INTO SCH_CONFIRM_TBL (
+			CONFIRM_CD, CONFIRM_DATE
+		) VALUES (
+			#confirmCd#, #confirmDate#
+		)
+	</insert>
+    
+ </sqlMap>

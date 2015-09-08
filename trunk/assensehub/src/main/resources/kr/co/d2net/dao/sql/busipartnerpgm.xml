@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="BusiPartnerPgm">
+    
+    <typeAlias alias="BusiPartnerPgm" type="kr.co.d2net.dto.BusiPartnerPgm"/>
+    
+    <resultMap id="BusiPartnerPgmMap" class="BusiPartnerPgm">
+    	<result property="programCode" column="PROGRAM_CODE" />										
+		<result property="busiPartnerid" column="BUSI_PARTNERID" />										
+		<result property="recyn" column="RECYN" />										
+		<result property="bgnTime" column="BGN_TIME" />										
+		<result property="endTime" column="END_TIME" />										
+		<result property="regrid" column="REGRID" />										
+		<result property="regDt" column="REG_DT" />										
+		<result property="modrid" column="MODRID" />										
+		<result property="modDt" column="MOD_DT" />
+		<result property="audioModeCode" column="AUDIO_MODE_CODE" />
+    </resultMap>
+    
+    <select id="findBusiPartnerPgm" resultMap="BusiPartnerPgmMap" parameterClass="map">
+	     SELECT  
+             *
+         FROM BUSI_PARTNER_PGM
+         <dynamic prepend="WHERE">
+			PROGRAM_CODE=#programCode# AND CT_TYP=#ctTyp#
+         </dynamic>
+    </select>
+    
+    <select id="getBusiPartnerPgm" resultClass="BusiPartnerPgm" parameterClass="map">
+		SELECT  
+			PROGRAM_CODE         as programCode,        											
+			BUSI_PARTNERID as busiPartnerid,											
+			RECYN          as recyn,        											
+			BGN_TIME       as bgnTime,      											
+			END_TIME       as endTime,      											
+			REGRID         as regrid,       											
+			REG_DT         as regDt,        											
+			MODRID         as modrid,       											
+			MOD_DT         as modDt,
+			AUDIO_MODE_CODE as audioModeCode
+		FROM BUSI_PARTNER_PGM
+		<dynamic prepend="WHERE">
+
+		</dynamic>
+    </select>
+    
+    <select id="getAudioMode" resultClass="java.lang.String" parameterClass="map">
+		SELECT      											
+			AUDIO_MODE_CODE as audioModeCode
+		FROM BUSI_PARTNER_PGM
+		WHERE PROGRAM_CODE = #pgmCode# AND
+		CT_TYP = #ctTyp#
+		GROUP BY AUDIO_MODE_CODE
+    </select>
+    
+    <insert id="insertBusiPartnerPgm" parameterClass="BusiPartnerPgm">
+		INSERT INTO BUSI_PARTNER_PGM (
+			PROGRAM_CODE,BUSI_PARTNERID,RECYN,BGN_TIME,END_TIME,REGRID,REG_DT,MODRID,MOD_DT,CT_TYP,AUDIO_MODE_CODE
+		) VALUES (
+			#programCode#,#busiPartnerid#,#recyn#,#bgnTime#,#endTime#,#regrid#,#regDt#,#modrid#,#modDt#,#ctTyp#,#audioModeCode#
+		)
+	</insert>
+    
+    
+    <delete id="deleteBusiPartnerPgm" parameterClass="BusiPartnerPgm">
+		DELETE FROM BUSI_PARTNER_PGM WHERE PROGRAM_CODE=#programCode# and CT_TYP=#ctTyp#
+	</delete>
+ </sqlMap>

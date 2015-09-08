@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="Auth">
+    
+    <typeAlias alias="Auth" type="kr.co.d2net.dto.AuthTbl"/>
+    
+    <resultMap id="AuthMap" class="Auth">
+    	<result property="authId" column="AUTH_ID" />
+		<result property="authNm" column="AUTH_NM" />
+		<result property="regrid" column="REGRID" />
+		<result property="regDt" column="REG_DT" />
+		<result property="modrid" column="MODRID" />
+		<result property="modDt" column="MOD_DT" />
+		<result property="useYn" column="USE_YN" />
+    </resultMap>
+    
+    <select id="findAuth" resultMap="AuthMap" parameterClass="map">
+	     SELECT  
+             *
+         FROM AUTH_TBL
+         WHERE USE_YN = 'Y'
+    </select>
+    
+    <select id="getAuth" resultClass="Auth" parameterClass="map">
+		SELECT  
+			AUTH_ID  as authId,
+			AUTH_NM  as authNm,
+			REGRID   as regrid,
+			REG_DT   as regDt,
+			MODRID   as modrid,
+			MOD_DT   as modDt,
+			USE_YN   as useYn
+		FROM AUTH_TBL
+		WHERE AUTH_ID = #authId#
+    </select>
+    
+    <insert id="insertAuth" parameterClass="Auth">
+		INSERT INTO AUTH_TBL (
+			AUTH_ID,AUTH_NM,REGRID,REG_DT,MODRID,MOD_DT,USE_YN
+		) VALUES (
+			#authId#,#authNm#,#regrid#,#regDt#,#modrid#,#modDt#,#useYn#
+		)
+	</insert>
+    
+ </sqlMap>

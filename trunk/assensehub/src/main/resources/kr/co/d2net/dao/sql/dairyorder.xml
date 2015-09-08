@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="DairyOrder">
+    
+    <typeAlias alias="DairyOrder" type="kr.co.d2net.dto.DairyOrderTbl"/>
+    
+    <resultMap id="DairyOrderMap" class="DairyOrder">
+		<result property="mediaName" column="MEDIA_NAME" />
+		<result property="mediaCode" column="MEDIA_CODE" />
+		<result property="channelName" column="CHANNEL_NAME" />
+		<result property="channelCode" column="CHANNEL_CODE" />
+		<result property="runningDate" column="RUNNING_DATE" />
+		<result property="dailyRunningKind" column="DAILY_RUNNING_KIND" />
+		<result property="runningStartTime" column="RUNNING_START_TIME" />
+		<result property="runningEndTime" column="RUNNING_END_TIME" />
+		<result property="programTitle" column="PROGRAM_TITLE" />
+		<result property="programSubtitle" column="PROGRAM_SUBTITLE" />
+		<result property="programCode" column="PROGRAM_CODE" />
+		<result property="programSequenceNumber" column="PROGRAM_SEQUENCE_NUMBER" /> 
+		<result property="partName" column="PART_NAME" /> 
+		<result property="rerunClassification" column="RERUN_CLASSIFICATION" /> 
+		<result property="note" column="NOTE" /> 
+		<result property="programId" column="PROGRAM_ID" />
+		<result property="groupCode" column="GROUP_CODE" />
+		<result property="productionVideoQuality" column="PRODUCTION_VIDEO_QUALITY" /> 
+		<result property="recyn" column="RECYN" />
+		<result property="audioModeMain" column="AUDIO_MODE_MAIN" />
+    </resultMap>
+    
+    <select id="findDairyOrder" resultMap="DairyOrderMap" parameterClass="map">
+	     SELECT  
+	     	*
+         FROM DAIRY_ORDER_TBL DOT
+           LEFT OUTER JOIN LIVE_TBL LIVE ON DOT.PROGRAM_CODE = LIVE.PROGRAM_CODE AND (CASE DOT.RERUN_CLASSIFICATION WHEN '본방' THEN '01' WHEN '재방' THEN '02' END) = LIVE.RERUN_CODE  
+         <dynamic prepend="WHERE">
+			<isNotEmpty property="channelCode" prepend="AND">
+				DOT.CHANNEL_CODE=#channelCode#
+			</isNotEmpty>
+			<isNotEmpty property="runningDate" prepend="AND">
+				DOT.RUNNING_DATE=#runningDate#
+			</isNotEmpty>
+			<isNotNull property="sdate" prepend="AND" >
+				DOT.RUNNING_DATE &gt;= #sdate# 
+			</isNotNull>
+			<isNotNull property="edate" prepend="AND">
+				DOT.RUNNING_DATE &lt;= #edate# 
+			</isNotNull>
+			<isNotEmpty property="runningStartTime" prepend="AND">
+				DOT.RUNNING_START_TIME=#runningStartTime#
+			</isNotEmpty>
+         </dynamic>
+         ORDER BY RUNNING_START_TIME ASC	
+    </select>
+    
+    <select id="getDairyOrder" resultClass="DairyOrder" parameterClass="map">
+		SELECT  
+			MEDIA_NAME              as mediaName,            
+			MEDIA_CODE              as mediaCode,            
+			CHANNEL_NAME            as channelName,          
+			CHANNEL_CODE            as channelCode,          
+			RUNNING_DATE            as runningDate,          
+			DAILY_RUNNING_KIND      as dailyRunningKind,     
+			RUNNING_START_TIME      as runningStartTime,     
+			RUNNING_END_TIME        as runningEndTime,       
+			PROGRAM_TITLE           as programTitle,         
+			PROGRAM_SUBTITLE        as programSubtitle,      
+			PROGRAM_CODE            as programCode,          
+			PROGRAM_SEQUENCE_NUMBER as programSequenceNumber,
+			PART_NAME               as partName,             
+			RERUN_CLASSIFICATION    as rerunClassification,  
+			NOTE                    as note,                 
+			PROGRAM_ID				as programId,
+			GROUP_CODE				as groupCode,							
+			PRODUCTION_VIDEO_QUALITY	as production_video_quality,
+			AUDIO_MODE_MAIN			as audioModeMain
+		FROM DAIRY_ORDER_TBL
+		<dynamic prepend="WHERE">
+			<isNotEmpty property="channelCode" prepend="AND">
+				CHANNEL_CODE=#channelCode#
+			</isNotEmpty>
+			<isNotEmpty property="runningDate" prepend="AND">
+				RUNNING_DATE=#runningDate#
+			</isNotEmpty>
+			<isNotEmpty property="runningStartTime" prepend="AND">
+				RUNNING_START_TIME=#runningStartTime#
+			</isNotEmpty>
+		</dynamic>
+    </select>
+    
+    <insert id="insertDairyOrder" parameterClass="DairyOrder">
+    <selectKey keyProperty="dairyOrderId" resultClass="java.lang.Long">
+      		select DAIRY_ORDER_SEQ.NEXTVAL from dual
+     	</selectKey>
+		INSERT INTO DAIRY_ORDER_TBL (
+			DAIRY_ORDER_ID,MEDIA_NAME,MEDIA_CODE,CHANNEL_NAME,CHANNEL_CODE,RUNNING_DATE,DAILY_RUNNING_KIND,RUNNING_START_TIME,RUNNING_END_TIME,PROGRAM_TITLE,PROGRAM_SUBTITLE,PROGRAM_CODE,PROGRAM_SEQUENCE_NUMBER,PART_NAME,RERUN_CLASSIFICATION,NOTE,PROGRAM_ID,PRODUCTION_VIDEO_QUALITY,PRODUCTION_TYPE,GROUP_CODE,AUDIO_MODE_MAIN,END_DATETIME
+		) VALUES (
+			#dairyOrderId#,#mediaName#,#mediaCode#,#channelName#,#channelCode#,#runningDate#,#dailyRunningKind#,#runningStartTime#,#runningEndTime#,#programTitle#,#programSubtitle#,#programCode#,#programSequenceNumber#,#partName#,#rerunClassification#,#note#,#programId#,#productionVideoQuality#,#productionType#,#groupCode#,#audioModeMain#,#endDatetime#
+		)
+	</insert>
+	
+	<delete id="deleteDairyOrder" parameterClass="DairyOrder">
+		DELETE FROM DAIRY_ORDER_TBL
+		<dynamic prepend="WHERE">
+			<isNotEmpty property="runningDate" prepend="AND">
+				RUNNING_DATE=#runningDate#
+			</isNotEmpty>
+			<isNotEmpty property="channelCode" prepend="AND">
+				CHANNEL_CODE=#channelCode#
+			</isNotEmpty>
+		</dynamic>
+	</delete>
+    
+ </sqlMap>

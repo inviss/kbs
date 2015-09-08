@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="User">
+    
+    <typeAlias alias="User" type="kr.co.d2net.dto.UserTbl"/>
+    
+    <resultMap id="UserMap" class="User">
+    	<result property="userId" column="USER_ID" />
+		<result property="userNm" column="USER_NM" />
+		<result property="userPass" column="USER_PASS" />
+		<result property="regrid" column="REGRID" />
+		<result property="regDt" column="REG_DT" />
+		<result property="modrid" column="MODRID" />
+		<result property="modDt" column="MOD_DT" />
+		<result property="useYn" column="USE_YN" />
+    </resultMap>
+    
+    <resultMap id="UserAuthMap" class="User">
+    	<result property="userId" column="USER_ID" />
+		<result property="userNm" column="USER_NM" />
+		<result property="authId" column="AUTH_ID" />
+		<result property="authNm" column="AUTH_NM" />
+    </resultMap>
+    
+    <select id="findUser" resultMap="UserAuthMap" parameterClass="map">
+	     SELECT
+             a.USER_ID, a.USER_NM, c.AUTH_ID, c.AUTH_NM
+         FROM USER_TBL a
+         	INNER JOIN USER_AUTH_TBL b on a.USER_ID = b.USER_ID
+         	INNER JOIN AUTH_TBL c on b.AUTH_ID = c.AUTH_ID
+         WHERE
+         	a.USE_YN = 'Y'
+         ORDER BY USER_NM asc
+    </select>
+    
+    <select id="getUser" resultClass="User" parameterClass="java.lang.String">
+		SELECT  
+			a.USER_ID as userId,
+			a.USER_NM as userNm,
+			a.USER_PASS as userPass,
+			a.REGRID  as regrid,
+			a.REG_DT  as regDt,
+			a.MODRID  as modrid,
+			a.MOD_DT  as modDt,
+			a.USE_YN  as useYn,
+			b.AUTH_ID as authId
+		FROM USER_TBL a
+			inner join USER_AUTH_TBL b on a.USER_ID = b.USER_ID
+		<dynamic prepend="WHERE">
+			a.USER_ID = #userId#
+		</dynamic>
+    </select>
+    
+    <select id="getUserAuth" resultClass="User" parameterClass="map">
+		SELECT  
+			a.USER_ID as userId,
+			a.USER_NM as userNm,
+			a.USER_PASS as userPass,
+			a.REGRID  as regrid,
+			a.REG_DT  as regDt,
+			a.MODRID  as modrid,
+			a.MOD_DT  as modDt,
+			a.USE_YN  as useYn,
+			b.AUTH_ID as authId
+		FROM USER_TBL a
+			Left outer Join USER_AUTH_TBL b on a.USER_ID = b.USER_ID
+		<dynamic prepend="WHERE">
+			<isNotEmpty property="userId" prepend="AND">
+				b.USER_ID = #userId#
+			</isNotEmpty>
+			<isNotEmpty property="userPass" prepend="AND">
+				a.USER_PASS = #userPass#
+			</isNotEmpty>
+			<isNotEmpty property="authId" prepend="AND">
+				b.AUTH_ID = #authId#
+			</isNotEmpty>
+		</dynamic>
+    </select>
+    
+    <update id="updateUser" parameterClass="User">
+    	UPDATE USER_TBL set MOD_DT=#modDt#
+    	<isNotNull prepend="," property="userNm">
+    		USER_NM = #userNm#
+    	</isNotNull>
+    	<isNotNull prepend="," property="useYn">
+    		USE_YN = #useYn#
+    	</isNotNull>
+    	<isNotNull prepend="," property="userPass">
+    		USER_PASS = #userPass#
+    	</isNotNull>
+    	WHERE USER_ID = #userId#
+    </update>
+    
+        
+    <insert id="insertUser" parameterClass="User">
+		INSERT INTO USER_TBL (
+			USER_ID,USER_NM,USER_PASS,REGRID,REG_DT,MODRID,MOD_DT,USE_YN
+		) VALUES (
+			#userId#,#userNm#,#userPass#,#regrid#,#regDt#,#modrid#,#modDt#,#useYn#
+		)
+	</insert>
+    
+ </sqlMap>

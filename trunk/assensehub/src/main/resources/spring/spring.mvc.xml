@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+		http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.0.xsd 
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+	<!--  annotation config & scan -->
+	<context:annotation-config />
+	<context:component-scan base-package="kr.co.d2net.controller" />
+	<context:component-scan base-package="kr.co.d2net.listeners" />
+	
+	<!--
+		JSR-303 support will be detected on classpath and enabled automatically
+		DefaultAnnotationHandlerMapping, AnnotationMethodHandlerAdapter를 자동 등록한다.
+	-->
+	
+	<mvc:annotation-driven conversion-service="conversionService" />
+	<bean id="conversionService" class="org.springframework.context.support.ConversionServiceFactoryBean">
+		<property name="converters">
+			<list>
+				<bean class="kr.co.d2net.commons.converter.mvc.TextConverter"/>
+				<bean class="kr.co.d2net.commons.converter.mvc.IntegerConverter"/>
+				<bean class="kr.co.d2net.commons.converter.mvc.LongConverter"/>
+				<bean class="kr.co.d2net.commons.converter.mvc.DateConverter"/>
+			</list>
+		</property>
+	</bean>
+	
+	<mvc:interceptors>
+		<mvc:interceptor>
+			<mvc:mapping path="/schedule/*"/>
+			<mvc:mapping path="/content/*"/>
+			<mvc:mapping path="/workflow/*"/>
+			<mvc:mapping path="/service/*"/>
+			<mvc:mapping path="/disuse/*"/>
+			<mvc:mapping path="/system/*"/>
+			<bean id="baseCheckInterceptor" class="kr.co.d2net.commons.interceptor.BaseCheckInterceptor" />
+		</mvc:interceptor>
+		<mvc:interceptor>
+			<mvc:mapping path="/member/*"/>
+			<bean id="loginCheckInterceptor" class="kr.co.d2net.commons.interceptor.LoginCheckInterceptor" />
+		</mvc:interceptor>
+		<mvc:interceptor>
+			<mvc:mapping path="/popup/*"/>
+			<mvc:mapping path="/ajax/*/*"/>
+			<bean id="popupCheckInterceptor" class="kr.co.d2net.commons.interceptor.PopupCheckInterceptor" />
+		</mvc:interceptor>
+	</mvc:interceptors>
+	
+	<!--  tiles2 layout config -->
+	<bean id="tilesConfigurer" class="org.springframework.web.servlet.view.tiles2.TilesConfigurer">
+		<property name="definitions">
+			<list>
+				<value>classpath:config/tiles.cfg.xml</value>
+			</list>
+		</property>
+	</bean>
+
+	<bean id="beanNameResolver" class="org.springframework.web.servlet.view.BeanNameViewResolver">
+		<property name="order" value="0"/>
+	</bean>
+	
+	<!--  view name tanslator -->
+	<bean id="viewNameTranslator" class="org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator" />
+
+	<!--  view resolver -->
+	<bean class="org.springframework.web.servlet.view.ContentNegotiatingViewResolver">
+		<property name="mediaTypes">
+			<map>
+				<entry key="atom" value="application/atom+xml" />
+				<entry key="ssc" value="text/html" />
+				<entry key="json" value="application/json" />
+			</map>
+		</property>
+		<property name="viewResolvers">
+			<list>
+				<bean class="org.springframework.web.servlet.view.BeanNameViewResolver" />
+				<bean class="kr.co.d2net.commons.ext.ExtUrlBasedViewResolver">
+					<property name="viewClass" value="kr.co.d2net.commons.ext.ExtTilesView" />
+					<property name="exposeSpringMacroModel" value="true" />
+				</bean>
+				
+				<bean class="org.springframework.web.servlet.view.freemarker.FreeMarkerViewResolver">
+					<property name="cache" value="true"/> 
+					<property name="prefix" value=""/> 
+					<property name="suffix" value=".ftl"/> 
+					<property name="exposeSpringMacroHelpers" value="true"/> 
+				</bean>
+				
+				<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+					<property name="prefix" value="/WEB-INF/views/" />
+					<property name="suffix" value=".jsp" />
+				</bean>
+			</list>
+		</property>
+		<property name="defaultViews"> 
+			<list> 
+				<bean class="org.springframework.web.servlet.view.json.MappingJacksonJsonView">
+					<property name="prefixJson" value="true" /> 
+				</bean> 
+			</list>
+		</property>
+		<property name="order" value="1"/>
+	</bean>
+
+
+	<bean id="jsonView" class="org.springframework.web.servlet.view.json.MappingJacksonJsonView" />
+	<bean id="fileView" class="kr.co.d2net.commons.view.FileDownloadView" />
+	<bean id="freeMarkerTemplateMethod" class="kr.co.d2net.commons.util.FreeMarkerTemplateMethod" />
+
+</beans>

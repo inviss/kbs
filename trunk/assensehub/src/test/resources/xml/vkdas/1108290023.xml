@@ -1,0 +1,2250 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<KBS_Exchange_Metadata>
+    <!--교환메타데이터 정보-->
+    <EXCHANGE_METADATA_INFO>
+        <!--비디오 아카이브 ID-->
+        <ARCHIVE_ID>415100980</ARCHIVE_ID>
+        <!--출처 시스템 명-->
+        <CLIP_SOURCE_SYSTEM>KDAS</CLIP_SOURCE_SYSTEM>
+        <!--요청자 ID (보조사원 ID, 또는 PD 사번)-->
+        <REQUEST_USER_ID>30163</REQUEST_USER_ID>
+        <!--(웹페이지에서 선택한) 담당 PD ID(사번)-->
+        <PD_ID>30163</PD_ID>
+        <!--(웹페이지에서 선택한) 등록할 프로그램 코드(본사 NPS), 카테고리 코드(지역 NPS)-->
+        <REGIST_PROGRAM_CODE />
+        <!--전송 메타 종류 : 10=뉴스, 11=뉴스아이템, 20=프로그램, 21=프로그램세그먼트, 30=촬영본, 31=촬영본세그먼트, 40=취재본, 41=취재본아이템, 50=외신, 51=외신아이템, 60=컨텐츠컬렉션_킬러컨텐츠, 61=컨텐츠컬렉션_킬러컨텐츠아이템, 70=컨텐츠컬렉션_우수영상, 80=컨텐츠컬렉션_광고 구분-->
+        <EXCHANGE_TYPE>11</EXCHANGE_TYPE>
+        <!--파일 전송 종류 : 1=회별 전체, 2=세그먼트,아이템, 3=사용자정의 부분다운로드-->
+        <EXCHANGE_FILE_KIND>3</EXCHANGE_FILE_KIND>
+        <!--세그먼트/아이템, 부분다운로드 Start 타임코드, 회별전체인 경우:00:00:00;00-->
+        <EXCHANGE_FILE_START_TIMECODE>00:14:20;05</EXCHANGE_FILE_START_TIMECODE>
+        <!--세그먼트/아이템, 부분다운로드 End 타임코드, 회별전체인 경우:00:00:00;00-->
+        <EXCHANGE_FILE_END_TIMECODE>00:16:43;16</EXCHANGE_FILE_END_TIMECODE>
+        <!--파일명, 목적지 파일 업로드 패스-->
+        <EXCHANGE_FILE_NAME>/20111223111923312-S-3/1108290023.MXF</EXCHANGE_FILE_NAME>
+        <!--전송 파일 크기 (bytes)-->
+        <EXCHANGE_FILE_SIZE>1122301488</EXCHANGE_FILE_SIZE>
+    </EXCHANGE_METADATA_INFO>
+    <!--Media 정보-->
+    <MEDIA_INFO>
+        <!--파일 형식-->
+        <FILE_FORMAT>MXF</FILE_FORMAT>
+        <!--Video 코덱-->
+        <VIDEO_CODEC>Apple MPEG IMX 525/60 (50 Mb/s)</VIDEO_CODEC>
+        <!--Video 해상도-->
+        <VIDEO_RESOLUTION>720x486</VIDEO_RESOLUTION>
+        <!--Video FPS-->
+        <VIDEO_FPS>29.97</VIDEO_FPS>
+        <!--Video 비트레이트-->
+        <VIDEO_BIT_RATE>59.48</VIDEO_BIT_RATE>
+        <!--Audio 코덱-->
+        <AUDIO_CODEC>Calibrated AES3</AUDIO_CODEC>
+        <!--Audio 셈플레이트-->
+        <AUDIO_SAMPLE_RATE>48</AUDIO_SAMPLE_RATE>
+        <!--Audio 채널수-->
+        <AUDIO_CHANNEL_COUNT>4</AUDIO_CHANNEL_COUNT>
+    </MEDIA_INFO>
+    <!--Program 정보-->
+    <PROGRAM_INFO>
+        <!--뉴스 여부, Y=News, N=Program-->
+        <IS_NEWS>Y</IS_NEWS>
+        <!--프로그램 코드-->
+        <PROGRAM_CODE>N000030</PROGRAM_CODE>
+        <!--편성별칭-->
+        <PROGRAMMING_TITLE />
+        <!--프로그램명-->
+        <PROGRAM_TITLE>KBS 뉴스 9</PROGRAM_TITLE>
+        <!--원제-->
+        <ORIGINAL_TITLE />
+        <!--CMS 장르-->
+        <CMS_PROGRAM_GENRE>뉴스,보도/종합뉴스(9시뉴스제외)</CMS_PROGRAM_GENRE>
+        <!--개편일-->
+        <RESCHEDULING_DATE />
+        <!--편성길이(초)-->
+        <PROGRAM_PLANNED_DURATION>21:00</PROGRAM_PLANNED_DURATION>
+        <!--제작자, <PRODUCER>가 N개 존재함.-->
+        <PRODUCER_LIST />
+        <!--스테프, <STAFF>가 N개 존재함.-->
+        <STAFF_LIST />
+        <!--출연자, <ACTOR>가 N개 존재함.-->
+        <ACTOR_LIST>
+            <ACTOR>
+                <!--소속명(text)-->
+                <EMPLOYEE_ID />
+                <KOR_NAME>류근찬</KOR_NAME>
+                <ENG_NAME />
+                <!--역할 명-->
+                <PERSON_CASTING_NAME />
+                <!--방송인물 ID-->
+                <BROADCAST_ID />
+                <!--소속명(text)-->
+                <SOSOK_NAME />
+            </ACTOR>
+            <ACTOR>
+                <!--소속명(text)-->
+                <EMPLOYEE_ID />
+                <KOR_NAME>황수경</KOR_NAME>
+                <ENG_NAME />
+                <!--역할 명-->
+                <PERSON_CASTING_NAME />
+                <!--방송인물 ID-->
+                <BROADCAST_ID />
+                <!--소속명(text)-->
+                <SOSOK_NAME />
+            </ACTOR>
+        </ACTOR_LIST>
+        <!--프로그램 표준 분류 (Code)-->
+        <PROGRAM_CLASSIFICATION>
+            <!--값이 한개 이상인 경우 "," 로 구분-->
+            <!--의도-->
+            <INTENTION>순수 정보</INTENTION>
+            <!--형식-->
+            <FORMAT>불레틴</FORMAT>
+            <!--내용-->
+            <CONTENT>뉴스</CONTENT>
+            <!--대상-->
+            <INTENDEDAUDIENCE>일반</INTENDEDAUDIENCE>
+            <!--방송빈도-->
+            <FREQUENCY>일일</FREQUENCY>
+            <!--제작방식-->
+            <ORIGINATION>자체 제작</ORIGINATION>
+            <!--등급-->
+            <CONTENTALERT>등급 적용 제외 프로그램</CONTENTALERT>
+        </PROGRAM_CLASSIFICATION>
+    </PROGRAM_INFO>
+    <!--회별(뉴스, 프로그램) 정보-->
+    <EPISODE_INFO>
+        <!--뉴스 여부, Y=News, N=Program-->
+        <IS_NEWS>Y</IS_NEWS>
+        <!--프로그램 ID-->
+        <PROGRAM_ID>PV-0000028782-01-000</PROGRAM_ID>
+        <!--방송일-->
+        <PROGRAM_ONAIR_DATE>19970812000000</PROGRAM_ONAIR_DATE>
+        <!--편성별칭-->
+        <PROGRAMMING_TITLE />
+        <!--편성표 제목-->
+        <PROGRAMMING_TABLE_TITLE />
+        <!--제작주체(제작형태)-->
+        <PRODUCTION_TYPE />
+        <!--CMS 장르-->
+        <CMS_PROGRAM_GENRE>뉴스,보도/ 9시뉴스</CMS_PROGRAM_GENRE>
+        <!--본방/재방 구분-->
+        <RERUN_CLASSIFICATION />
+        <!--정규/특집 구분-->
+        <REGULAR_SPECIAL_CLASSIFCATION />
+        <!--제작품질-->
+        <PRODUCTION_VIDEO_QULITY />
+        <!--주요내용-->
+        <MAIN_STORY />
+        <!--사용제한 사유-->
+        <USE_RESTRICTION_CLASSIFICATION />
+        <!--사용 유의사항-->
+        <USAGE_NOTICE />
+        <!--사용제한 제한일 (년월일시분초)-->
+        <RESTRICTION_DATE />
+        <!--사용제한 해제일 (년월일시분초)-->
+        <COPYRIGHT_EXPIRATION_DATE />
+        <!--제작자, <PRODUCER>가 N개 존재함.-->
+        <PRODUCER_LIST />
+        <!--스테프, <STAFF>가 N개 존재함.-->
+        <STAFF_LIST />
+        <!--출연자, <ACTOR>가 N개 존재함.-->
+        <ACTOR_LIST>
+            <ACTOR>
+                <!--사번-->
+                <EMPLOYEE_ID />
+                <KOR_NAME>류근찬</KOR_NAME>
+                <ENG_NAME />
+                <!--역할 명-->
+                <PERSON_CASTING_NAME />
+                <!--방송인물 ID-->
+                <BROADCAST_ID />
+                <!--소속명(text)-->
+                <SOSOK_NAME />
+            </ACTOR>
+            <ACTOR>
+                <!--사번-->
+                <EMPLOYEE_ID />
+                <KOR_NAME>황수경</KOR_NAME>
+                <ENG_NAME />
+                <!--역할 명-->
+                <PERSON_CASTING_NAME />
+                <!--방송인물 ID-->
+                <BROADCAST_ID />
+                <!--소속명(text)-->
+                <SOSOK_NAME />
+            </ACTOR>
+        </ACTOR_LIST>
+        <!--프로그램 표준 분류 (Code)-->
+        <PROGRAM_CLASSIFICATION>
+            <!--값이 한개 이상인 경우 "," 로 구분-->
+            <!--의도-->
+            <INTENTION>순수 정보</INTENTION>
+            <!--형식-->
+            <FORMAT>불레틴</FORMAT>
+            <!--내용-->
+            <CONTENT>뉴스</CONTENT>
+            <!--대상-->
+            <INTENDEDAUDIENCE>일반</INTENDEDAUDIENCE>
+            <!--방송빈도-->
+            <FREQUENCY>일일</FREQUENCY>
+            <!--제작방식-->
+            <ORIGINATION>자체 제작</ORIGINATION>
+            <!--등급-->
+            <CONTENTALERT>등급 적용 제외 프로그램</CONTENTALERT>
+        </PROGRAM_CLASSIFICATION>
+    </EPISODE_INFO>
+    <!--촬영본/취재본 정보-->
+    <RAW_MATERIAL_INFO>
+        <!--뉴스 여부 : Y=뉴스 취재본, N=프로그램 촬영본-->
+        <IS_NEWS />
+        <!--취재본/촬영본 제목-->
+        <CLIP_TITLE />
+        <!--촬영본/취재본 내용-->
+        <CLIP_CONTENTS />
+        <!--길이(초)-->
+        <CLIP_DURATION />
+        <!--촬영일/취재일-->
+        <SHOOTING_DATE_TIME />
+        <!--촬영/취재 장소-->
+        <SHOOTING_PLACE />
+        <!--촬영자-->
+        <CAMERA_MAN />
+        <!--프로그램 명-->
+        <PROGRAM_TITLE />
+        <!--방송일-->
+        <PROGRAM_ONAIR_DATE />
+        <!--제작품질-->
+        <PRODUCTION_VIDEO_QUALITY />
+        <!--제작부서 명-->
+        <PRODUCTION_DEPARTMENT_NAME />
+        <!--사용제한 사유-->
+        <USE_RESTRICTION_CLASSIFICATION />
+        <!--사용 유의사항-->
+        <USAGE_NOTICE />
+        <!--사용제한 제한일 (년월일시분초)-->
+        <RESTRICTION_DATE />
+        <!--사용제한 해제일 (년월일시분초)-->
+        <COPYRIGHT_EXPIRATION_DATE />
+        <!--제작자, <PRODUCER>가 N개 존재함.-->
+        <PRODUCER_LIST />
+        <!--스테프, <STAFF>가 N개 존재함.-->
+        <STAFF_LIST />
+        <!--출연자, <ACTOR>가 N개 존재함.-->
+        <ACTOR_LIST />
+        <!--영상 소재자료 표준 분류, 총류-->
+        <VRMC_CLASSIFICATION />
+    </RAW_MATERIAL_INFO>
+    <!--외신 정보-->
+    <FOREIGN_NEWS_INFO>
+        <!--외신본 제목-->
+        <CLIP_TITLE />
+        <!--외신본 내용-->
+        <CLIP_CONTENTS />
+        <!--길이(초)-->
+        <CLIP_DURATION />
+        <!--외신 소스-->
+        <SOURCE_TYPE />
+        <!--수신영상 세부채널명-->
+        <RECEIVED_VIDEO_DETAIL_CHANNEL />
+        <!--사용제한 사유-->
+        <USE_RESTRICTION_CLASSIFICATION />
+        <!--사용 유의사항-->
+        <USAGE_NOTICE />
+        <!--사용제한 제한일 (년월일시분초)-->
+        <RESTRICTION_DATE />
+        <!--사용제한 해제일 (년월일시분초)-->
+        <COPYRIGHT_EXPIRATION_DATE />
+    </FOREIGN_NEWS_INFO>
+    <!--컨텐츠 컬렉션 정보-->
+    <CONTENTS_COLLECTION_INFO>
+        <!--구분 : 1=킬러컨턴츠, 2=우수프로그램, 3=광고영상-->
+        <TYPE />
+        <!--제목-->
+        <CLIP_TITLE />
+        <!--내용-->
+        <CLIP_CONTENTS />
+        <!--프로그램명-->
+        <PROGRAM_TITLE />
+        <!--프로그램 ID-->
+        <PROGRAM_ID />
+        <!--방송일-->
+        <PROGRAM_ONAIR_DATE />
+        <!--길이(초)-->
+        <DURATION />
+        <!--행사(수상내역)-->
+        <AWARD_DESC />
+        <!--국가코드-->
+        <ISO_COUNTRY_CODE />
+        <!--방송사-->
+        <BRODCAST_COMPANY />
+        <!--장르-->
+        <PROGRAM_GENRE />
+        <!--사용제한 사유-->
+        <USE_RESTRICTION_CLASSIFICATION />
+        <!--사용 유의사항-->
+        <USAGE_NOTICE />
+        <!--사용제한 제한일 (년월일시분초)-->
+        <RESTRICTION_DATE />
+        <!--사용제한 해제일 (년월일시분초)-->
+        <COPYRIGHT_EXPIRATION_DATE />
+        <!--제작자, <PRODUCER>가 N개 존재함.-->
+        <PRODUCER_LIST />
+        <!--스테프, <STAFF>가 N개 존재함.-->
+        <STAFF_LIST />
+        <!--출연자, <ACTOR>가 N개 존재함.-->
+        <ACTOR_LIST />
+    </CONTENTS_COLLECTION_INFO>
+    <!--세그먼트/아이템 정보, <SEGMENT_INFO>가 N개 존재함.-->
+    <SEGMENT_INFO_LIST>
+        <SEGMENT_INFO>
+            <SEGMENT_TITLE>조지블랙 합동조사단장, KAL기 사고의 원인으로 인재 가능성 부정</SEGMENT_TITLE>
+            <SEGMENT_START_TIME>00:00:09;00</SEGMENT_START_TIME>
+            <SEGMENT_END_TIME>00:02:07;00</SEGMENT_END_TIME>
+            <SEGMENT_DURATION>00:01:58</SEGMENT_DURATION>
+            <!--세그먼트/아이템 내용-->
+            <SEGMENT_CONTENTS>@&apos;악천후&apos; 정밀분석&#x0D; &#x0D; ⊙류근찬 앵커 :&#x0D; 여러분 안녕하십니까? KBS 9시뉴스입니다.&#x0D; 괌에서 대한항공기가 추락한지 오늘로 꼭 일주일이 됐습니다. &#x0D; &#x0D; 사고 직후부터 사고원인을 조사해온 한.미 합동조사단이 오늘로 사실상 현지에서의 사고원인 조사를 마무리지었습니다. 미 연방 교통안전위원회 조지 블랙 위원은 오늘 마지막 브리핑을 통해서 괌 공항의 경보장치 결함과 악천후 등이 복합적으로 작용했을 가능성이 있다고 언급했습니다.&#x0D; 괌 현지에서 민경욱 기자가 이 소식 전해 드립니다.&#x0D; &#x0D; ⊙민경욱 기자 :&#x0D; 태풍 위니의 영향으로 강풍을 동반한 폭우가 쏟아지는 속에 한.미 합동조사단은 사실상 오늘로 현지조사를 마쳤습니다. 아직까지 사고에 대한 명확한 책임소재가 가려지지 않은 가운데 괌 현지에서의 마지막 브리핑에 나선 조지 블랙 조사단장은 그동안 일부 언론에 의해 지적된 인재의 가능성에 대해 부정적인 견해를 밝혔습니다. 블랙 단장을 조사 결과 사고 항공기를 조사한 박용철 기장은 사고가 나기전에 괌 국제공항에서 이착륙한 경험이 있는 것으로 밝혀졌다고 말했습니다.&#x0D; &#x0D; ⊙조지 블랙 (합동조사단장) :&#x0D; 사고가 조종사는 7월 4일 괌 공항에 이.착륙한 경험이 있었습니다.&#x0D; &#x0D; ⊙민경욱 기자 :&#x0D; 블랙 단장은 또 박기장이 괌 취항에 앞서 비디오를 통해 괌 국제공항의 지형지물을 미리 파악한 사실도 확인됐다고 밝혔습니다. 조사단은 사고 항공기의 조종사가 120시간이 넘는 항공관련 영어교육을 받아왔다고 밝혀 조종사와 관제사 사이의 의사소통의 문제로 사고가 났을 가능성을 일단 배제했습니다. 블랙 단장은 따라서 오늘 입수한 사고 당시 기상상태와 관련한 레이더 자료를 통해 악천후가 사고에 미친 영향을 좀더 정밀하게 분석하기로 결정했다고 말했습니다. 조사단은 이제 워싱턴으로 자리를 옮겨 현지에서 수집된 각종 자료를 토대로 사고원인을 규명하는 정밀 분석작업에 들어갑니다.&#x0D; 괌에서 KBS 특별취재반의 민경욱입니다. &#x0D; &#x0D; &#x0D;</SEGMENT_CONTENTS>
+            <!--색상 구분 : C=컬러 , B=흑백-->
+            <COLOR_GB>C</COLOR_GB>
+            <!--Audio 유무 : Y=유, N=무-->
+            <AUDIO_YN>Y</AUDIO_YN>
+            <!--촬영일시-->
+            <SHOOTING_DATE_TIME />
+            <!--촬영의도-->
+            <SHOOTING_INTENTION />
+            <!--촬영장소-->
+            <SHOOTING_PLACE />
+            <!--촬영자-->
+            <CAMERA_MAN />
+            <!--뉴스리포터명-->
+            <NEWS_REPORTER_NAME />
+            <!--국가코드-->
+            <ISO_COUNTRY_CODE />
+            <!--방송언어구분-->
+            <BROADCAST_LANGUAGE_KIND />
+            <!--영상 소재자료 표준 분류, 총류-->
+            <VRMC_CLASSIFICATION />
+            <!--소재자료 부가정보 촬영기법 (Code)-->
+            <VRMC_CODE_SHOOTING_TECHNIQUE />
+            <!--소재자료 부가정보 시간 (Code)-->
+            <VRMC_CODE_TIME />
+            <!--소재자료 부가정보 계절 (Code)-->
+            <VRMC_CODE_SEASON />
+            <!--소재자료 부가정보 날씨 (Code)-->
+            <VRMC_CODE_WEATHER />
+            <!--사용제한 사유-->
+            <USE_RESTRICTION_CLASSIFICATION />
+            <!--사용 유의사항-->
+            <USAGE_NOTICE />
+            <!--사용제한 제한일 (년월일시분초)-->
+            <RESTRICTION_DATE />
+            <!--사용제한 해제일 (년월일시분초)-->
+            <COPYRIGHT_EXPIRATION_DATE />
+            <!--제작자, <PRODUCER>개 N개 존재함.-->
+            <PRODUCER_LIST>
+                <PRODUCER>
+                    <!--사번-->
+                    <EMPLOYEE_ID />
+                    <KOR_NAME>민경욱</KOR_NAME>
+                    <ENG_NAME />
+                    <!--역할 명-->
+                    <PERSON_CASTING_NAME />
+                    <!--방송인물 ID-->
+                    <BROADCAST_ID />
+                    <!--소속명(text)-->
+                    <SOSOK_NAME />
+                </PRODUCER>
+            </PRODUCER_LIST>
+            <!--스테프, <STAFF>개 N개 존재함.-->
+            <STAFF_LIST />
+            <!--출연자, <ACTOR>개 N개 존재함.-->
+            <ACTOR_LIST />
+        </SEGMENT_INFO>
+        <SEGMENT_INFO>
+            <SEGMENT_TITLE>KAL기 사고 원인규명, 장기화될 전망</SEGMENT_TITLE>
+            <SEGMENT_START_TIME>00:02:07;00</SEGMENT_START_TIME>
+            <SEGMENT_END_TIME>00:03:56;00</SEGMENT_END_TIME>
+            <SEGMENT_DURATION>00:01:49</SEGMENT_DURATION>
+            <!--세그먼트/아이템 내용-->
+            <SEGMENT_CONTENTS>@1년후나 밝혀질 듯&#x0D; &#x0D; ⊙류근찬 앵커 :&#x0D; 이처럼 현지에서의 사고원인 조사가 사실상 마무리되고, 이제 현장에서 수거된 각종 자료들을 종합분석하는 작업에 들어감으로써 KAL기사고 원인규명은 장기화될 전망입니다. 최종 사고원인 분석 보고서가 나오는데는 최소한 1년 정도가 소요될 것 같다는 것이 미 연방 교통안전위원회의 견해입니다.&#x0D; 계속해서 국제부 백선기 기자가 전해 드립니다.&#x0D; &#x0D; ⊙백선기 기자 :&#x0D; 사고가 나자 조사 책임을 맡은 미국 연방교통안전위원회가 제일 먼저 제기한 사고원인 가능성은 조종사의 실수였습니다. 블랙박스의 음성정보입력기를 예비 판독한 결과 기체결함이나 비상사태가 없었다는 것이 그 이유였습니다.&#x0D; &#x0D; ⊙조지 블랙 (미 연방교통안전위) :&#x0D; 비행기 운항의 최종 책임자는 조종사죠.&#x0D; &#x0D; ⊙백선기 기자 :&#x0D; 그러나 이틀후인 지난 11일에는 괌 공항의 관제체계에 주요 결함이 발견됐으며 이에 따라 인재 가능성은 줄어들었다고 발표했습니다. 활공각 유도장치가 작동하지 않았고 최저 안전고도 경보장치의 소프트웨어에 결정적인 결함이 발견돼 사고를 방지하기 어려웠다는 분석입니다.&#x0D; &#x0D; ⊙조지 블랙 (미 연방교통안전위) :&#x0D; 괌의 관제시설에서 주요 장치가 작동하지 않았습니다.&#x0D; &#x0D; ⊙백선기 기자 :&#x0D; 오늘은 기상 레이더를 통해 수집한 자료를 분석한 결과 심한 폭우와 강풍이 사고를 유발했을 가능성이 높다는 의견을 제시했습니다. 현장조사 마무리에 접어든 미국 연방 교통안전위원회의 결론은 현재로서는 어떤 추측도 시기상조라는 전망입니다. 고통안전위원회는 문제해결의 열쇠인 블랙박스의 음성기록장치에 녹음된 실제 음성은 미국 연방법에 따라 앞으로 7개월 이내에 청문회를 거쳐 공개된다고 밝혔습니다. 따라서 최종 사고원인 분석은 최소한 1년이 걸릴 것으로 전망됩니다.&#x0D; KBS 뉴스, 백선기입니다.&#x0D; &#x0D; &#x0D;</SEGMENT_CONTENTS>
+            <!--색상 구분 : C=컬러 , B=흑백-->
+            <COLOR_GB>C</COLOR_GB>
+            <!--Audio 유무 : Y=유, N=무-->
+            <AUDIO_YN>Y</AUDIO_YN>
+            <!--촬영일시-->
+            <SHOOTING_DATE_TIME />
+            <!--촬영의도-->
+            <SHOOTING_INTENTION />
+            <!--촬영장소-->
+            <SHOOTING_PLACE />
+            <!--촬영자-->
+            <CAMERA_MAN />
+            <!--뉴스리포터명-->
+            <NEWS_REPORTER_NAME />
+            <!--국가코드-->
+            <ISO_COUNTRY_CODE />
+            <!--방송언어구분-->
+            <BROADCAST_LANGUAGE_KIND />
+            <!--영상 소재자료 표준 분류, 총류-->
+            <VRMC_CLASSIFICATION />
+            <!--소재자료 부가정보 촬영기법 (Code)-->
+            <VRMC_CODE_SHOOTING_TECHNIQUE />
+            <!--소재자료 부가정보 시간 (Code)-->
+            <VRMC_CODE_TIME />
+            <!--소재자료 부가정보 계절 (Code)-->
+            <VRMC_CODE_SEASON />
+            <!--소재자료 부가정보 날씨 (Code)-->
+            <VRMC_CODE_WEATHER />
+            <!--사용제한 사유-->
+            <USE_RESTRICTION_CLASSIFICATION />
+            <!--사용 유의사항-->
+            <USAGE_NOTICE />
+            <!--사용제한 제한일 (년월일시분초)-->
+            <RESTRICTION_DATE />
+            <!--사용제한 해제일 (년월일시분초)-->
+            <COPYRIGHT_EXPIRATION_DATE />
+            <!--제작자, <PRODUCER>개 N개 존재함.-->
+            <PRODUCER_LIST>
+                <PRODUCER>
+                    <!--사번-->
+                    <EMPLOYEE_ID />
+                    <KOR_NAME>백선기</KOR_NAME>
+                    <ENG_NAME />
+                    <!--역할 명-->
+                    <PERSON_CASTING_NAME />
+                    <!--방송인물 ID-->
+                    <BROADCAST_ID />
+                    <!--소속명(text)-->
+                    <SOSOK_NAME />
+                </PRODUCER>
+            </PRODUCER_LIST>
+            <!--스테프, <STAFF>개 N개 존재함.-->
+            <STAFF_LIST />
+            <!--출연자, <ACTOR>개 N개 존재함.-->
+            <ACTOR_LIST />
+        </SEGMENT_INFO>
+        <SEGMENT_INFO>
+            <SEGMENT_TITLE>KAL기 사고 원인으로 관제기관의 과실책임 규명 주장 제기</SEGMENT_TITLE>
+            <SEGMENT_START_TIME>00:03:56;00</SEGMENT_START_TIME>
+            <SEGMENT_END_TIME>00:06:04;00</SEGMENT_END_TIME>
+            <SEGMENT_DURATION>00:02:07</SEGMENT_DURATION>
+            <!--세그먼트/아이템 내용-->
+            <SEGMENT_CONTENTS>@&quot;관제책임 물어야&quot;&#x0D; &#x0D; ⊙류근찬 앵커 :&#x0D; 미국 연방정부의 사고조사팀도 인정했듯이 괌 공항의 관제체계에 상당한 허점이 있었던 것으로 드러났습니다. 관제체계만 제대로 작동이 됐더라면 막을 수도 있었던 사고라는 분석이 가능하기 때문에 이번 사고는 두고두고 아쉬움과 안타까움을 남기고 있습니다. 따라서 미국에 대한 책임을 묻는 노력이 있어야 한다는 그런 주장이 강력히 제기되고 있습니다.&#x0D; 박선규 기자의 보도입니다.&#x0D; &#x0D; ⊙박선규 기자 :&#x0D; 관제소의 최저 안전고도 경보장치인 MSAW가 제대로 작동했다면 이번 사고를 예방할 수도 있었을 것이다. 현장조사를 벌이고 있는 미 연방 교통안전위원회가 지난 10일 밝힌 내용입니다. 경보는 작동안했지만 관제사가 레이더 모니터에 나타난 위험표시를 제대로 알려주기만 했더라도 또 활공각 지시기가 고장나지만 않았더라도 역시 사고는 피할 수 있었을 것으로 전문가들은 보고 있습니다. 이번 사고와 관련해 관제사의 책임을 물을 수 있는 부분입니다. 미국의 항공교통 관제규정은 관제사가 착륙지점의 장애물이나 지형 등 항공기의 안정을 위협하는 상황을 발견할 경우에는 즉각적으로 안전경보를 보내야 한다고 정하고 있습니다. 그러나 이런 규정에도 관제사에 책임을 물을 수 없는 것이 지금까지의 미국의 관행입니다. 미국의 연방 항공 규칙은 사고를 방지하기 위한 최종적인 책임은 조종사에게 있다고 못박고 있기 때문입니다. 항공기의 안전에 대해 관제사는 어디까지나 보조일뿐 주는 조종사라는 이유에서입니다. 그러나 이는 미국의 관행일 뿐 이번에는 우리 입장에서 관제책임을 철저하게 따져야 한다는 것이 우리 항공 법학자들의 주장입니다.&#x0D; &#x0D; ⊙신홍균 (한국 항공대 교수) :&#x0D; 이번에 발표된 관제기관의 과실이라는 것은 충분한 신경을 썼더라면 피할 수 있는 과실인 것입니다. 따라서 이것은 어느 면으로 보나 피할 수 없는 책임을 갖다가 져야되지 않겠느냐...&#x0D; &#x0D; ⊙박선규 기자 :&#x0D; 관제소의 역할이 점점 커지고 있는 상황과 항공주권을 확실히하는 차원에서도 책임규명을 명확히 해야 한다는 것이 전문가들의 주장입니다.&#x0D; KBS 뉴스, 박선규입니다.&#x0D; &#x0D; &#x0D;</SEGMENT_CONTENTS>
+            <!--색상 구분 : C=컬러 , B=흑백-->
+            <COLOR_GB>C</COLOR_GB>
+            <!--Audio 유무 : Y=유, N=무-->
+            <AUDIO_YN>Y</AUDIO_YN>
+            <!--촬영일시-->
+            <SHOOTING_DATE_TIME />
+            <!--촬영의도-->
+            <SHOOTING_INTENTION />
+            <!--촬영장소-->
+            <SHOOTING_PLACE />
+            <!--촬영자-->
+            <CAMERA_MAN />
+            <!--뉴스리포터명-->
+            <NEWS_REPORTER_NAME />
+            <!--국가코드-->
+            <ISO_COUNTRY_CODE />
+            <!--방송언어구분-->
+            <BROADCAST_LANGUAGE_KIND />
+            <!--영상 소재자료 표준 분류, 총류-->
+            <VRMC_CLASSIFICATION />
+            <!--소재자료 부가정보 촬영기법 (Code)-->
+            <VRMC_CODE_SHOOTING_TECHNIQUE />
+            <!--소재자료 부가정보 시간 (Code)-->
+            <VRMC_CODE_TIME />
+            <!--소재자료 부가정보 계절 (Code)-->
+            <VRMC_CODE_SEASON />
+            <!--소재자료 부가정보 날씨 (Code)-->
+            <VRMC_CODE_WEATHER />
+            <!--사용제한 사유-->
+            <USE_RESTRICTION_CLASSIFICATION />
+            <!--사용 유의사항-->
+            <USAGE_NOTICE />
+            <!--사용제한 제한일 (년월일시분초)-->
+            <RESTRICTION_DATE />
+            <!--사용제한 해제일 (년월일시분초)-->
+            <COPYRIGHT_EXPIRATION_DATE />
+            <!--제작자, <PRODUCER>개 N개 존재함.-->
+            <PRODUCER_LIST>
+                <PRODUCER>
+                    <!--사번-->
+                    <EMPLOYEE_ID />
+                    <KOR_NAME>박선규</KOR_NAME>
+                    <ENG_NAME />
+                    <!--역할 명-->
+                    <PERSON_CASTING_NAME />
+                    <!--방송인물 ID-->
+                    <BROADCAST_ID />
+                    <!--소속명(text)-->
+                    <SOSOK_NAME />
+                </PRODUCER>
+            </PRODUCER_LIST>
+            <!--스테프, <STAFF>개 N개 존재함.-->
+            <STAFF_LIST />
+            <!--출연자, <ACTOR>개 N개 존재함.-->
+            <ACTOR_LIST />
+        </SEGMENT_INFO>
+        <SEGMENT_INFO>
+            <SEGMENT_TITLE>KAL 사고기의 일부계기, 추락당시 멈춰있어 원인규명에 중요단서</SEGMENT_TITLE>
+            <SEGMENT_START_TIME>00:06:04;00</SEGMENT_START_TIME>
+            <SEGMENT_END_TIME>00:08:08;00</SEGMENT_END_TIME>
+            <SEGMENT_DURATION>00:02:04</SEGMENT_DURATION>
+            <!--세그먼트/아이템 내용-->
+            <SEGMENT_CONTENTS>@계기판 증언한다&#x0D; &#x0D; ⊙류근찬 앵커 :&#x0D; 오늘 괌 사고현장에서 공개된 대한항공 801편의 조종실은 동체 잔해로부터 20여미터 튕겨나가 발견됐지만 고도계 등 각종 계기판의 보존상태가 비교적 양호한 것으로 나타났습니다. 그리고 조종실의 계기 가운데 일부가 추락당시 그대로 멈춰서 있어서 의외의 단서가 될수도 있다는 분석입니다.&#x0D; 이승환 기자의 보도입니다.&#x0D; &#x0D; ⊙이승환 기자 :&#x0D; 사고당시의 처참함을 그대로 보여주고 있는 801편의 조종석입니다. 전선이 여기저기 널려져 있고 디지털 계기판은 전원이 끊기면서 모두 멈춰섰습니다. 그러나 사고 원인을 규명하는 과정에서 이 부서진 조종실 계기판에서 의외의 단서가 나올 가능성도 배제할 수 없다는 것이 항공 전문가들의 지적입니다. 먼저 사고 비행기에는 착륙과 재이륙 결정에 필요한 최저고도인 결심고도가 당시 조종사가 입력한 그대로 남아 있습니다. 항공지도에는 결심고도를 활공각 지시기가 고장났을 경우 3백피트, 정상일 경우는 2백피트로 맞추게 돼있기 때문에 절대고도기의 잔해가 3백피트로 돼있다면 이는 조종사가 고장 사실을 잘 알고 조심스런 착륙을 시도했다고 볼 수 있습니다. 그러나 결심고도가 2백피트로 맞추어져 있다면 조종사는 활공각 지시기를 정상으로 잘못알고 고장난 계기에 따라 착륙을 시도한 것으로 분석할 수 있습니다. 또 관제소가 전달해주는 기압정보로 고도를 파악하는 기압고도계가 사고 당시의 기압 29.86인치로 돼있는지 확인한다면 관제소와의 교신 과정에서 사고가 있었는지 여부도 알 수 있습니다. 기압 정보입력이 잘못됐다면 항공기의 고도에는 치명적인 착오가 생깁니다. 이밖에 전방향 표지시설의 신호를 수신하는 주파수가 정확했는지 확인함으로써 사고 항공기가 VOR로부터의 거리 등을 알고 있었는지 판단할 수 있습니다. 이건 멈춰선 계기상태를 블랙박스기로 분석자료와 접목시킬 경우 사고원인을 밝히는 결정적 단서가 될 수도 있다는게 전문가들의 지적입니다.&#x0D; KBS 뉴스, 이승환입니다.&#x0D; &#x0D; &#x0D;</SEGMENT_CONTENTS>
+            <!--색상 구분 : C=컬러 , B=흑백-->
+            <COLOR_GB>C</COLOR_GB>
+            <!--Audio 유무 : Y=유, N=무-->
+            <AUDIO_YN>Y</AUDIO_YN>
+            <!--촬영일시-->
+            <SHOOTING_DATE_TIME />
+            <!--촬영의도-->
+            <SHOOTING_INTENTION />
+            <!--촬영장소-->
+            <SHOOTING_PLACE />
+            <!--촬영자-->
+            <CAMERA_MAN />
+            <!--뉴스리포터명-->
+            <NEWS_REPORTER_NAME />
+            <!--국가코드-->
+            <ISO_COUNTRY_CODE />
+            <!--방송언어구분-->
+            <BROADCAST_LANGUAGE_KIND />
+            <!--영상 소재자료 표준 분류, 총류-->
+            <VRMC_CLASSIFICATION />
+            <!--소재자료 부가정보 촬영기법 (Code)-->
+            <VRMC_CODE_SHOOTING_TECHNIQUE />
+            <!--소재자료 부가정보 시간 (Code)-->
+            <VRMC_CODE_TIME />
+            <!--소재자료 부가정보 계절 (Code)-->
+            <VRMC_CODE_SEASON />
+            <!--소재자료 부가정보 날씨 (Code)-->
+            <VRMC_CODE_WEATHER />
+            <!--사용제한 사유-->
+            <USE_RESTRICTION_CLASSIFICATION />
+            <!--사용 유의사항-->
+            <USAGE_NOTICE />
+            <!--사용제한 제한일 (년월일시분초)-->
+            <RESTRICTION_DATE />
+            <!--사용제한 해제일 (년월일시분초)-->
+            <COPYRIGHT_EXPIRATION_DATE />
+            <!--제작자, <PRODUCER>개 N개 존재함.-->
+            <PRODUCER_LIST>
+                <PRODUCER>
+                    <!--사번-->
+                    <EMPLOYEE_ID />
+                    <KOR_NAME>이승환</KOR_NAME>
+                    <ENG_NAME />
+                    <!--역할 명-->
+                    <PERSON_CASTING_NAME />
+                    <!--방송인물 ID-->
+                    <BROADCAST_ID />
+                    <!--소속명(text)-->
+                    <SOSOK_NAME />
+                </PRODUCER>
+            </PRODUCER_LIST>
+            <!--스테프, <STAFF>개 N개 존재함.-->
+            <STAFF_LIST />
+            <!--출연자, <ACTOR>개 N개 존재함.-->
+            <ACTOR_LIST />
+        </SEGMENT_INFO>
+        <SEGMENT_INFO>
+            <SEGMENT_TITLE>KAL 사고기, 괌공항 부근에서의 이상저고도 비행 원인 추정</SEGMENT_TITLE>
+            <SEGMENT_START_TIME>00:08:08;00</SEGMENT_START_TIME>
+            <SEGMENT_END_TIME>00:09:55;00</SEGMENT_END_TIME>
+            <SEGMENT_DURATION>00:01:46</SEGMENT_DURATION>
+            <!--세그먼트/아이템 내용-->
+            <SEGMENT_CONTENTS>@여전한 수수께끼&#x0D; &#x0D; ⊙류근찬 앵커 :&#x0D; KAL기 사고원인을 밝히는데 있어서 사고기가 왜 이상 저고도로 공항에 접근했느냐 하는 것이 의문의 핵심입니다. 아직 확실한 이유가 밝혀지지는 않았지만 그러나 몇가지 원인을 추정할 수가 있습니다.&#x0D; 용태영 기자의 보도입니다.&#x0D; &#x0D; ⊙용태영 기자 :&#x0D; ▶첫번째 가능성은 항공기의 고도계 고장, 이 고도계가 고장났다면 801편은 실제로 낮게 날면서도 높게 날고 있는 것으로 착각할 수 있습니다. 801편에 설치된 고도계는 무선 고도계와 기압 고도계, 그러나 각각 두개 이상씩 설치된 고도계가 동시에 고장나는 것은 극히 드문 일입니다. ▶두번째 가능성은 거리계 고장, 거리를 착각하면 활주로 훨씬 앞에서 미리 고도를 낮추기 때문에 역시 사고에 이릅니다. 801편은 사고 지점의 전방향 표지시설, 즉 VOR에서 나오는 전파를 받아 거리를 계산합니다. VOR이 잘못된 전파를 보냈거나 801편의 거리계가 고장났을 수도 있습니다. ▶세번째는 기상이변, 갑자기 위에서 찍어누르는 하강기류, 이른바 윈드쇼때문에 아래로 떨어질 수도 있습니다. 그러나 사고 당시 완만하게 비행중이었던 점을 고려하면 그 가능성이 작습니다. ▶네번째는 조종사의 착각, 통상 VOR은 공항안에 있는 경우가 많기 때문에 801편의 조종사도 VOR이 괌 공항 안에 있는 것으로 착각하고 활주로를 찾기 위해서 고도를 낮추었을 수가 있습니다. ▶마지막으로 관제사의 실수, 관제사가 잘못된 정보를 알려줘서 고도를 착각하게 했거나 엉뚱한 지시를 했을 수도 있습니다. 그러나 그 어떤 경우든 상식적으로 일어나기 어려운 극히 드문 일임에는 분명합니다.&#x0D; KBS 뉴스, 용태영입니다.&#x0D; &#x0D; &#x0D;</SEGMENT_CONTENTS>
+            <!--색상 구분 : C=컬러 , B=흑백-->
+            <COLOR_GB>C</COLOR_GB>
+            <!--Audio 유무 : Y=유, N=무-->
+            <AUDIO_YN>Y</AUDIO_YN>
+            <!--촬영일시-->
+            <SHOOTING_DATE_TIME />
+            <!--촬영의도-->
+            <SHOOTING_INTENTION />
+            <!--촬영장소-->
+            <SHOOTING_PLACE />
+            <!--촬영자-->
+            <CAMERA_MAN />
+            <!--뉴스리포터명-->
+            <NEWS_REPORTER_NAME />
+            <!--국가코드-->
+            <ISO_COUNTRY_CODE />
+            <!--방송언어구분-->
+            <BROADCAST_LANGUAGE_KIND />
+            <!--영상 소재자료 표준 분류, 총류-->
+            <VRMC_CLASSIFICATION />
+            <!--소재자료 부가정보 촬영기법 (Code)-->
+            <VRMC_CODE_SHOOTING_TECHNIQUE />
+            <!--소재자료 부가정보 시간 (Code)-->
+            <VRMC_CODE_TIME />
+            <!--소재자료 부가정보 계절 (Code)-->
+            <VRMC_CODE_SEASON />
+            <!--소재자료 부가정보 날씨 (Code)-->
+            <VRMC_CODE_WEATHER />
+            <!--사용제한 사유-->
+            <USE_RESTRICTION_CLASSIFICATION />
+            <!--사용 유의사항-->
+            <USAGE_NOTICE />
+            <!--사용제한 제한일 (년월일시분초)-->
+            <RESTRICTION_DATE />
+            <!--사용제한 해제일 (년월일시분초)-->
+            <COPYRIGHT_EXPIRATION_DATE />
+            <!--제작자, <PRODUCER>개 N개 존재함.-->
+            <PRODUCER_LIST>
+                <PRODUCER>
+                    <!--사번-->
+                    <EMPLOYEE_ID />
+                    <KOR_NAME>용태영</KOR_NAME>
+                    <ENG_NAME />
+                    <!--역할 명-->
+                    <PERSON_CASTING_NAME />
+                    <!--방송인물 ID-->
+                    <BROADCAST_ID />
+                    <!--소속명(text)-->
+                    <SOSOK_NAME />
+                </PRODUCER>
+            </PRODUCER_LIST>
+            <!--스테프, <STAFF>개 N개 존재함.-->
+            <STAFF_LIST />
+            <!--출연자, <ACTOR>개 N개 존재함.-->
+            <ACTOR_LIST />
+        </SEGMENT_INFO>
+        <SEGMENT_INFO>
+            <SEGMENT_TITLE>미국언론, KAL기 사고원인으로 공항관제 결함쪽에 초점</SEGMENT_TITLE>
+            <SEGMENT_START_TIME>00:09:55;00</SEGMENT_START_TIME>
+            <SEGMENT_END_TIME>00:11:38;00</SEGMENT_END_TIME>
+            <SEGMENT_DURATION>00:01:43</SEGMENT_DURATION>
+            <!--세그먼트/아이템 내용-->
+            <SEGMENT_CONTENTS>@달라진 美 언론&#x0D; &#x0D; ⊙류근찬 앵커 :&#x0D; 이번 사고 원인을 처음부터 조종사의 실수쪽으로 몰고갔던 미국 언론들도 한발 후퇴해서 공항 관제결함쪽으로 보도의 초점을 옮겨가고 있다는 소식입니다.&#x0D; 워싱턴에서 김진석 특파원의 보도입니다.&#x0D; &#x0D; ⊙김진석 특파원 :&#x0D; 미국의 주요 언론들은 이번 사고의 원인에 대해서 이번주 들어서면서부터는 일제히 공항의 결함쪽에 초점을 맞추어 보도를 하고 있습니다. ABC와 NBC 텔레비젼 그리고 워싱턴 포스트 신문 등은 교통안전위원회의 발표를 인용해서 괌 앤더슨 공군기지에 최저 안전고도 경보장치의 고장이 사고의 결정적인 원인인지 여부는 좀더 조사를 해봐야 알겠지만은 그것이 고장나지 않았더라면 사고를 막을 수는 있었을 것이라고 지적했습니다.&#x0D; &#x0D; ⊙ABC (지난 10일) :&#x0D; 활공각 지시기 최저고도 경보기 등 공항의 안전체계가 마비됐다는 겁니다.&#x0D; &#x0D; ⊙김진석 특파원 :&#x0D; 미국 언론들은 그러면서 연방 항공국이 미국내 모든 공항의 최저 안전고도 경보장치 일제 점검에 들어갔다는 사실을 전하고 있습니다. 이는 지난주 사고 발생초기 조종사의 과실여부에 보도의 초점을 맞추었던 것과는 사뭇 다른 경향입니다. 특히 NBC 텔레비젼은 지난주 조종사의 실수가 사고의 원인인 것으로 밝혀졌다는 단정적인 보도를 하기도 했습니다.&#x0D; &#x0D; ⊙NBC (지난 7일) :&#x0D; 취재결과 조종사 과실이었습니다. 워싱턴 분석팀도 이를 확인했습니다.&#x0D; &#x0D; ⊙김진석 특파원 :&#x0D; 이런 미국 언론의 보도태도에는 속보 경쟁이라는 속성외에 미국의 이해를 지나치게 염두에 두지 않았나하는 지적도 가능할 것 같습니다.&#x0D; 워싱턴에서 KBS 뉴스, 김진석입니다.&#x0D; &#x0D; &#x0D;</SEGMENT_CONTENTS>
+            <!--색상 구분 : C=컬러 , B=흑백-->
+            <COLOR_GB>C</COLOR_GB>
+            <!--Audio 유무 : Y=유, N=무-->
+            <AUDIO_YN>Y</AUDIO_YN>
+            <!--촬영일시-->
+            <SHOOTING_DATE_TIME />
+            <!--촬영의도-->
+            <SHOOTING_INTENTION />
+            <!--촬영장소-->
+            <SHOOTING_PLACE />
+            <!--촬영자-->
+            <CAMERA_MAN />
+            <!--뉴스리포터명-->
+            <NEWS_REPORTER_NAME />
+            <!--국가코드-->
+            <ISO_COUNTRY_CODE />
+            <!--방송언어구분-->
+            <BROADCAST_LANGUAGE_KIND />
+            <!--영상 소재자료 표준 분류, 총류-->
+            <VRMC_CLASSIFICATION />
+            <!--소재자료 부가정보 촬영기법 (Code)-->
+            <VRMC_CODE_SHOOTING_TECHNIQUE />
+            <!--소재자료 부가정보 시간 (Code)-->
+            <VRMC_CODE_TIME />
+            <!--소재자료 부가정보 계절 (Code)-->
+            <VRMC_CODE_SEASON />
+            <!--소재자료 부가정보 날씨 (Code)-->
+            <VRMC_CODE_WEATHER />
+            <!--사용제한 사유-->
+            <USE_RESTRICTION_CLASSIFICATION />
+            <!--사용 유의사항-->
+            <USAGE_NOTICE />
+            <!--사용제한 제한일 (년월일시분초)-->
+            <RESTRICTION_DATE />
+            <!--사용제한 해제일 (년월일시분초)-->
+            <COPYRIGHT_EXPIRATION_DATE />
+            <!--제작자, <PRODUCER>개 N개 존재함.-->
+            <PRODUCER_LIST>
+                <PRODUCER>
+                    <!--사번-->
+                    <EMPLOYEE_ID />
+                    <KOR_NAME>김진석</KOR_NAME>
+                    <ENG_NAME />
+                    <!--역할 명-->
+                    <PERSON_CASTING_NAME />
+                    <!--방송인물 ID-->
+                    <BROADCAST_ID />
+                    <!--소속명(text)-->
+                    <SOSOK_NAME />
+                </PRODUCER>
+            </PRODUCER_LIST>
+            <!--스테프, <STAFF>개 N개 존재함.-->
+            <STAFF_LIST />
+            <!--출연자, <ACTOR>개 N개 존재함.-->
+            <ACTOR_LIST />
+        </SEGMENT_INFO>
+        <SEGMENT_INFO>
+            <SEGMENT_TITLE>KAL기 추락사고 생존자 심제니씨 모녀, 서울로 이송</SEGMENT_TITLE>
+            <SEGMENT_START_TIME>00:11:38;00</SEGMENT_START_TIME>
+            <SEGMENT_END_TIME>00:13:37;00</SEGMENT_END_TIME>
+            <SEGMENT_DURATION>00:01:58</SEGMENT_DURATION>
+            <!--세그먼트/아이템 내용-->
+            <SEGMENT_CONTENTS>@살아서 온 母女&#x0D; &#x0D; ⊙류근찬 앵커 :&#x0D; 국내 병원에 이송돼서 치료를 받고 있는 부상자들의 건강이 빠른 속도로 회복되고 있다고 그럽니다. 그리고 부상자 가운데 그동안 괌에서 치료를 받아오던 심제니氏 모녀가 오늘 서울로 이송됨으로써 이제 거의 모든 환자가 서울에서 치료를 받고 있습니다. 김영삼 대통령도 오늘 국립의료원을 방문해서 환자들을 위로하고 쾌유를 빌었습니다.&#x0D; 최문호 기자의 보도입니다.&#x0D; &#x0D; ⊙최문호 기자 :&#x0D; 비행기문이 열리고 이어 조심스럽게 모녀가 구급차로 옮겨집니다. 어머니는 참혹했던 사고 당시를 연상하듯 고통스러워합니다. 그때마다 곰인형을 꼭 껴안습니다. 6살이라는 나이가 믿기지 않을 정도로 침착한 안젤라양, 모녀는 곧바로 삼성의료원으로 옮겨져 가족들의 간호를 받으며 치료를 받고 있습니다.&#x0D; &#x0D; ⊙이경현 (삼성의료원 가정의학과) :&#x0D; X-레이상에는 특별한 이상은 없고 요추부위 염좌와 골반 타박상 정도 있습니다. 성형외과에 입원해가지고 한 2-3주 정도 입원치료하셔야 될 것 같고요...&#x0D; &#x0D; ⊙최문호 기자 :&#x0D; 어제부터 심리치료를 함께 받고 있는 생존자들은 외상이 빨리 아물고 서서히 대형참사의 정신적 충격에서 벗어나고 있습니다. 김영삼 대통령도 오늘 국립의료원을 방문해 입원중인 6명의 생존자들을 차례로 격려하고 이들의 쾌유를 빌었습니다. 어제까지만 해도 중환자실에 있었던 신 현氏, 광대뼈 골절상을 입은 신 현氏는 어제 수술을 받은뒤 오늘부터는 이곳 병실로 옮겨져 치료를 받고 있습니다.&#x0D; &#x0D; ⊙신 현 (생존자) :&#x0D; 기왕에 이렇게 살아서 돌아왔으니까 그 사람들의 몫을 조금이라도 나눠서 해드리는 것이... &#x0D; &#x0D; ⊙최문호 기자 :&#x0D; 한편, 이번 사고 희생자들을 위한 천도제가 조계사 대웅전에서 봉행됐습니다. 송월주 조계종 총무원장 등 5백여명의 참석자들은 희생자들의 영혼을 위로하고 부처님의 자비로 극락왕생하기를 기원했습니다.&#x0D; KBS 뉴스, 최문호입니다.&#x0D; &#x0D; &#x0D; &#x0D;</SEGMENT_CONTENTS>
+            <!--색상 구분 : C=컬러 , B=흑백-->
+            <COLOR_GB>C</COLOR_GB>
+            <!--Audio 유무 : Y=유, N=무-->
+            <AUDIO_YN>Y</AUDIO_YN>
+            <!--촬영일시-->
+            <SHOOTING_DATE_TIME />
+            <!--촬영의도-->
+            <SHOOTING_INTENTION />
+            <!--촬영장소-->
+            <SHOOTING_PLACE />
+            <!--촬영자-->
+            <CAMERA_MAN />
+            <!--뉴스리포터명-->
+            <NEWS_REPORTER_NAME />
+            <!--국가코드-->
+            <ISO_COUNTRY_CODE />
+            <!--방송언어구분-->
+            <BROADCAST_LANGUAGE_KIND />
+            <!--영상 소재자료 표준 분류, 총류-->
+            <VRMC_CLASSIFICATION />
+            <!--소재자료 부가정보 촬영기법 (Code)-->
+            <VRMC_CODE_SHOOTING_TECHNIQUE />
+            <!--소재자료 부가정보 시간 (Code)-->
+            <VRMC_CODE_TIME />
+            <!--소재자료 부가정보 계절 (Code)-->
+            <VRMC_CODE_SEASON />
+            <!--소재자료 부가정보 날씨 (Code)-->
+            <VRMC_CODE_WEATHER />
+            <!--사용제한 사유-->
+            <USE_RESTRICTION_CLASSIFICATION />
+            <!--사용 유의사항-->
+            <USAGE_NOTICE />
+            <!--사용제한 제한일 (년월일시분초)-->
+            <RESTRICTION_DATE />
+            <!--사용제한 해제일 (년월일시분초)-->
+            <COPYRIGHT_EXPIRATION_DATE />
+            <!--제작자, <PRODUCER>개 N개 존재함.-->
+            <PRODUCER_LIST>
+                <PRODUCER>
+                    <!--사번-->
+                    <EMPLOYEE_ID />
+                    <KOR_NAME>최문호</KOR_NAME>
+                    <ENG_NAME />
+                    <!--역할 명-->
+                    <PERSON_CASTING_NAME />
+                    <!--방송인물 ID-->
+                    <BROADCAST_ID />
+                    <!--소속명(text)-->
+                    <SOSOK_NAME />
+                </PRODUCER>
+            </PRODUCER_LIST>
+            <!--스테프, <STAFF>개 N개 존재함.-->
+            <STAFF_LIST />
+            <!--출연자, <ACTOR>개 N개 존재함.-->
+            <ACTOR_LIST />
+        </SEGMENT_INFO>
+        <SEGMENT_INFO>
+            <SEGMENT_TITLE>KAL기 추락사고 희생자중 신원확인된 시신9구, 13일 서울로 운구</SEGMENT_TITLE>
+            <SEGMENT_START_TIME>00:13:37;00</SEGMENT_START_TIME>
+            <SEGMENT_END_TIME>00:15:35;00</SEGMENT_END_TIME>
+            <SEGMENT_DURATION>00:01:58</SEGMENT_DURATION>
+            <!--세그먼트/아이템 내용-->
+            <SEGMENT_CONTENTS>@내일 새벽 9구 운구&#x0D; &#x0D; ⊙류근찬 앵커 :&#x0D; 대한항공기 추락사고 희생자 가운데 신원이 확인된 시신 9구가 내일 1차로 서울로 운구됩니다. 그러나 현지에서의 시신 처리절차가 복잡해서 나머지 희생자들을 서울까지 모두 운구하려면은 앞으로 시간이 좀 걸릴 것 같다는 소식입니다.&#x0D; 괌에서 김헌식 기자의 보도입니다.&#x0D; &#x0D; ⊙김헌식 기자 :&#x0D; 한.미 합동조사단은 어제와 오늘 지금까지 신원이 확인된 50여구의 시신을 유족들에게 인도하겠다고 통보했습니다. 이 가운데 37구는 유족들이 조사단측과 인수조건에 합의해 일부 유족들이 시신을 인도받았습니다. 인수조건은 시신을 눈으로 확인해서도 안되고 화장할 수도 없다는 것입니다.&#x0D; &#x0D; ⊙희생자 유족 :&#x0D; 어제 개인개인별로 불러다가 사인받고 확인하고 그렇게 한다고 그러길래 어제는 믿었지요.&#x0D; &#x0D; ⊙김헌식 기자 :&#x0D; 처음으로 운구될 시신은 내일 새벽 대한항고 정기편으로 괌을 떠나 서울로 돌아갑니다. 당초 계획보다 시신의 운구가 늦어진 것은 시신처리에 대한 괌 현지의 까다로운 법절차때문입니다.&#x0D; &#x0D; ⊙윤영수 (괌 현지 교민) :&#x0D; 사망 진단서가 누구든지 나와야 됩니다. 그런데 내생각에 절차가 부족했다고 하면은 아직 그 사망 진단서가 나오지 않았기 때문에 그런 결과가 아닌가하는 생각이 들고...&#x0D; &#x0D; ⊙김헌식 기자 :&#x0D; 시신을 수습할 장의사가 부족한 것도 운구가 늦어지는 또다른 원인입니다.&#x0D; &#x0D; ⊙이용호 (대한항공 항공보건의료원장) :&#x0D; 하루에 지금 말씀하신대로 최고 10구 정도를 완전히 끝날 수 있겠다 하는 것이 그쪽의 얘기였습니다.&#x0D; &#x0D; ⊙김헌식 기자 :&#x0D; 희생자 시신을 담게 될 알루미늄제 관 180개도 오늘 오후 미국으로부터 도착해 시신들이 안치된 미 해군기지에 옮겨졌습니다. 따라서 내일과 모레 시신의 운구가 계속 이어질 전망입니다. 유족들은 그러나 현재 괌과 사이판을 강타하고 있는 태풍의 영향으로 시신운구에 또다시 차질이 빚어지지나 않을까 우려하고 있습니다.&#x0D; 괌에서 KBS 특별취재반의 김헌식입니다.&#x0D; &#x0D; &#x0D;</SEGMENT_CONTENTS>
+            <!--색상 구분 : C=컬러 , B=흑백-->
+            <COLOR_GB>C</COLOR_GB>
+            <!--Audio 유무 : Y=유, N=무-->
+            <AUDIO_YN>Y</AUDIO_YN>
+            <!--촬영일시-->
+            <SHOOTING_DATE_TIME />
+            <!--촬영의도-->
+            <SHOOTING_INTENTION />
+            <!--촬영장소-->
+            <SHOOTING_PLACE />
+            <!--촬영자-->
+            <CAMERA_MAN />
+            <!--뉴스리포터명-->
+            <NEWS_REPORTER_NAME />
+            <!--국가코드-->
+            <ISO_COUNTRY_CODE />
+            <!--방송언어구분-->
+            <BROADCAST_LANGUAGE_KIND />
+            <!--영상 소재자료 표준 분류, 총류-->
+            <VRMC_CLASSIFICATION />
+            <!--소재자료 부가정보 촬영기법 (Code)-->
+            <VRMC_CODE_SHOOTING_TECHNIQUE />
+            <!--소재자료 부가정보 시간 (Code)-->
+            <VRMC_CODE_TIME />
+            <!--소재자료 부가정보 계절 (Code)-->
+            <VRMC_CODE_SEASON />
+            <!--소재자료 부가정보 날씨 (Code)-->
+            <VRMC_CODE_WEATHER />
+            <!--사용제한 사유-->
+            <USE_RESTRICTION_CLASSIFICATION />
+            <!--사용 유의사항-->
+            <USAGE_NOTICE />
+            <!--사용제한 제한일 (년월일시분초)-->
+            <RESTRICTION_DATE />
+            <!--사용제한 해제일 (년월일시분초)-->
+            <COPYRIGHT_EXPIRATION_DATE />
+            <!--제작자, <PRODUCER>개 N개 존재함.-->
+            <PRODUCER_LIST>
+                <PRODUCER>
+                    <!--사번-->
+                    <EMPLOYEE_ID />
+                    <KOR_NAME>김헌식</KOR_NAME>
+                    <ENG_NAME />
+                    <!--역할 명-->
+                    <PERSON_CASTING_NAME />
+                    <!--방송인물 ID-->
+                    <BROADCAST_ID />
+                    <!--소속명(text)-->
+                    <SOSOK_NAME />
+                </PRODUCER>
+            </PRODUCER_LIST>
+            <!--스테프, <STAFF>개 N개 존재함.-->
+            <STAFF_LIST />
+            <!--출연자, <ACTOR>개 N개 존재함.-->
+            <ACTOR_LIST />
+        </SEGMENT_INFO>
+        <SEGMENT_INFO>
+            <SEGMENT_TITLE>KAL기 추락사고로 숨진 KBS 홍성현보도국장의 뉴스에 바친 생애</SEGMENT_TITLE>
+            <SEGMENT_START_TIME>00:15:35;00</SEGMENT_START_TIME>
+            <SEGMENT_END_TIME>00:18:21;00</SEGMENT_END_TIME>
+            <SEGMENT_DURATION>00:02:46</SEGMENT_DURATION>
+            <!--세그먼트/아이템 내용-->
+            <SEGMENT_CONTENTS>@ 뉴스에 바친 생애&#x0D; &#x0D; ⊙류근찬 앵커 :&#x0D; 저희 KBS는 이번 KAL기 참사로 홍성현 보도국장을 잃었습니다. 사고기에 탑승했던 홍성현 KBS 보도국장은 오늘 두 자녀와 함께 숨진 것으로 최종 확인됐습니다. KBS 뉴스의 진두지휘자였던 고인은 저희 KBS 뉴스가 세계 최고의 뉴스가 되는 것을 목표로 이른 아침부터 밤 늦게까지 1년 12달 365일을 하루도 거르지 않고 달려온 프로기자였습니다.&#x0D; 조재익 기자의 보도입니다.&#x0D; &#x0D; ⊙조재익 기자 :&#x0D; 숨가쁘게 돌아가는 지구촌 소식을 가장 빠르고 정확하게 전하고자 노력했던 KBS 뉴스의 사령탑 홍성현 보도국장, 지난 73년 공채1기로 입사해 젊은 기자의 맏형인 서울시경 출입기자와 사회부장 그리고 정치부장을 거치면서 열사의 땅 사하라, 철의 장막이 쳐져있던 구 소련의 심장 크래물린 등 국내뉴스의 현장에는 늘 그가 있었습니다.&#x0D; &#x0D; ⊙81년 한.일 외무장관회담 취재당시 :&#x0D; 오늘 오후 3시 30분, 새로운 한일관계를 정립하게 될 한일 외무장관 회담이 오후 5시 반까지 두시간 동안 이곳에서 열렸습니다.&#x0D; &#x0D; ⊙조재익 기자 :&#x0D; 지난해 4월 보도국장이 된 그는 KBS 9시뉴스가 최고의 방송뉴스로 우뚝 서도록 1년 365일을 이른 아침부터 늦은 밤까지 보도본부에서 살았습니다. 뉴스에 아버지를 빼앗겼다는 가족들의 성화에 2년만에 처음 얻은 3일간의 휴가, 밤비행기를 타기 직전에도 그는 9시뉴스를 잘해달라며 당부전화를 걸고 대한항공 801편을 탔습니다. 그러나 단란했던 순간은 잠시, 사랑하는 아내와 둘째딸을 남겨둔채 홍성현 국장은 큰딸 영실과 막내아들 은기와 함께 돌아올 수 없는 길을 가고야 말았습니다. 한국기자협회 부회장과 관훈클럽 이사를 지내기도 했던 홍성현 보도국장은 외국 방송언론계에도 교훈이 깊어 미국 CBS뉴스의 앤드류 헤이워드 사장이 슬픔과 애도를 표시해왔고 일본 NHK 등도 애도전문을 보내왔습니다. 뉴스의 현장에서 맨앞을 달리며 4반세기를 보낸 홍성현 보도국장은 이제 저멀리 하늘위에서도 늘 고집스럽게 말하던 시류와 인기에 흔들리지 않는 KBS 9시뉴스를 매일 밤 지켜볼 것입니다.&#x0D; KBS 뉴스, 조재익입니다.&#x0D; &#x0D; ⊙류근찬 앵커 :&#x0D; 1년 반 가까운 세월 동안 KBS 보도국장으로 재직해오면서 저희 KBS 뉴스가 시청자 여러분들에게 더욱 가까이 다가갈 수 있도록 하는 등 혼신의 노력을 기울이던 고인의 모습이 선합니다. 고인의 명복을 빕니다.&#x0D; &#x0D; &#x0D;</SEGMENT_CONTENTS>
+            <!--색상 구분 : C=컬러 , B=흑백-->
+            <COLOR_GB>C</COLOR_GB>
+            <!--Audio 유무 : Y=유, N=무-->
+            <AUDIO_YN>Y</AUDIO_YN>
+            <!--촬영일시-->
+            <SHOOTING_DATE_TIME />
+            <!--촬영의도-->
+            <SHOOTING_INTENTION />
+            <!--촬영장소-->
+            <SHOOTING_PLACE />
+            <!--촬영자-->
+            <CAMERA_MAN />
+            <!--뉴스리포터명-->
+            <NEWS_REPORTER_NAME />
+            <!--국가코드-->
+            <ISO_COUNTRY_CODE />
+            <!--방송언어구분-->
+            <BROADCAST_LANGUAGE_KIND />
+            <!--영상 소재자료 표준 분류, 총류-->
+            <VRMC_CLASSIFICATION />
+            <!--소재자료 부가정보 촬영기법 (Code)-->
+            <VRMC_CODE_SHOOTING_TECHNIQUE />
+            <!--소재자료 부가정보 시간 (Code)-->
+            <VRMC_CODE_TIME />
+            <!--소재자료 부가정보 계절 (Code)-->
+            <VRMC_CODE_SEASON />
+            <!--소재자료 부가정보 날씨 (Code)-->
+            <VRMC_CODE_WEATHER />
+            <!--사용제한 사유-->
+            <USE_RESTRICTION_CLASSIFICATION />
+            <!--사용 유의사항-->
+            <USAGE_NOTICE />
+            <!--사용제한 제한일 (년월일시분초)-->
+            <RESTRICTION_DATE />
+            <!--사용제한 해제일 (년월일시분초)-->
+            <COPYRIGHT_EXPIRATION_DATE />
+            <!--제작자, <PRODUCER>개 N개 존재함.-->
+            <PRODUCER_LIST>
+                <PRODUCER>
+                    <!--사번-->
+                    <EMPLOYEE_ID />
+                    <KOR_NAME>조재익</KOR_NAME>
+                    <ENG_NAME />
+                    <!--역할 명-->
+                    <PERSON_CASTING_NAME />
+                    <!--방송인물 ID-->
+                    <BROADCAST_ID />
+                    <!--소속명(text)-->
+                    <SOSOK_NAME />
+                </PRODUCER>
+            </PRODUCER_LIST>
+            <!--스테프, <STAFF>개 N개 존재함.-->
+            <STAFF_LIST />
+            <!--출연자, <ACTOR>개 N개 존재함.-->
+            <ACTOR_LIST />
+        </SEGMENT_INFO>
+        <SEGMENT_INFO>
+            <SEGMENT_TITLE>김영삼대통령, &apos;97을지연습 준비 보고회의 참석</SEGMENT_TITLE>
+            <SEGMENT_START_TIME>00:18:35;00</SEGMENT_START_TIME>
+            <SEGMENT_END_TIME>00:20:02;00</SEGMENT_END_TIME>
+            <SEGMENT_DURATION>00:01:27</SEGMENT_DURATION>
+            <!--세그먼트/아이템 내용-->
+            <SEGMENT_CONTENTS>@`97 을지연습&#x0D; &#x0D; 다음 소식입니다.&#x0D; 다음주부터 시작되는 `97 을지연습 준비 보고회의가 오늘 오전 청와대에서 열렸습니다. 김영삼 대통령은 이 자리에서 전쟁을 막기 위한 최선의 길은 철저한 안보태세로 북한의 도발을 사전에 억제하는 것이라는 점을 거듭 강조했습니다.&#x0D; 보도에 임창건 기자입니다.&#x0D; &#x0D; ⊙임창건 기자 :&#x0D; 국가의 전시대비 계획을 총점검하는 을지연습 준비 보고회의. 전 국무위원과 입법.사법부 대표, 광역단체장과 군 주요지휘관 그리고 경제단체장과 언론사 대표들이 모두 참석했습니다. 김영삼 대통령은 먼저 북한이 전쟁을 도발할 가능성이 매우 크다는 사실은 분명하며, 우리는 민족의 파멸을 가져올 전쟁을 반드시 막아야 한다고 강조했습니다. 그리고 전쟁을 막는 최선의 길은 철저한 안보태세로 북한의 도발을 사전에 억지하는 것이라고 말했습니다. 이와 함께 북한의 도발위협을 가볍게 생각하는 일부 계층의 안보의식 헤이를 지적하면서 온 국민이 하나가 될때 국가의 총력 대비태세를 극대화할 수 있다고 강조했습니다. 그런 의미에서 이번 을지연습은 민관군의 총력전 수행태세를 확립하는 중요한 계기인만큼 서로 긴밀히 협조하고 성실히 훈련에 임해 실질적인 성과를 거둘 수 있도록 하라고 김대통령은 거듭 당부했습니다. &#x0D; KBS 뉴스, 임창건입니다.&#x0D; &#x0D; &#x0D;</SEGMENT_CONTENTS>
+            <!--색상 구분 : C=컬러 , B=흑백-->
+            <COLOR_GB>C</COLOR_GB>
+            <!--Audio 유무 : Y=유, N=무-->
+            <AUDIO_YN>Y</AUDIO_YN>
+            <!--촬영일시-->
+            <SHOOTING_DATE_TIME />
+            <!--촬영의도-->
+            <SHOOTING_INTENTION />
+            <!--촬영장소-->
+            <SHOOTING_PLACE />
+            <!--촬영자-->
+            <CAMERA_MAN />
+            <!--뉴스리포터명-->
+            <NEWS_REPORTER_NAME />
+            <!--국가코드-->
+            <ISO_COUNTRY_CODE />
+            <!--방송언어구분-->
+            <BROADCAST_LANGUAGE_KIND />
+            <!--영상 소재자료 표준 분류, 총류-->
+            <VRMC_CLASSIFICATION />
+            <!--소재자료 부가정보 촬영기법 (Code)-->
+            <VRMC_CODE_SHOOTING_TECHNIQUE />
+            <!--소재자료 부가정보 시간 (Code)-->
+            <VRMC_CODE_TIME />
+            <!--소재자료 부가정보 계절 (Code)-->
+            <VRMC_CODE_SEASON />
+            <!--소재자료 부가정보 날씨 (Code)-->
+            <VRMC_CODE_WEATHER />
+            <!--사용제한 사유-->
+            <USE_RESTRICTION_CLASSIFICATION />
+            <!--사용 유의사항-->
+            <USAGE_NOTICE />
+            <!--사용제한 제한일 (년월일시분초)-->
+            <RESTRICTION_DATE />
+            <!--사용제한 해제일 (년월일시분초)-->
+            <COPYRIGHT_EXPIRATION_DATE />
+            <!--제작자, <PRODUCER>개 N개 존재함.-->
+            <PRODUCER_LIST>
+                <PRODUCER>
+                    <!--사번-->
+                    <EMPLOYEE_ID />
+                    <KOR_NAME>임창건</KOR_NAME>
+                    <ENG_NAME />
+                    <!--역할 명-->
+                    <PERSON_CASTING_NAME />
+                    <!--방송인물 ID-->
+                    <BROADCAST_ID />
+                    <!--소속명(text)-->
+                    <SOSOK_NAME />
+                </PRODUCER>
+            </PRODUCER_LIST>
+            <!--스테프, <STAFF>개 N개 존재함.-->
+            <STAFF_LIST />
+            <!--출연자, <ACTOR>개 N개 존재함.-->
+            <ACTOR_LIST />
+        </SEGMENT_INFO>
+        <SEGMENT_INFO>
+            <SEGMENT_TITLE>조순 서울시장 대선출마 따른 국민회의, 대책방안 모색</SEGMENT_TITLE>
+            <SEGMENT_START_TIME>00:20:02;00</SEGMENT_START_TIME>
+            <SEGMENT_END_TIME>00:21:54;00</SEGMENT_END_TIME>
+            <SEGMENT_DURATION>00:01:51</SEGMENT_DURATION>
+            <!--세그먼트/아이템 내용-->
+            <SEGMENT_CONTENTS>@&quot;출마 말려라&quot;&#x0D; &#x0D; ⊙류근찬 앵커 :&#x0D; 대선가도에 조순 충격이 확산돼가고 있습니다. 조순 서울 특별시장이 대선출마 수순에 본격 착수함에 따라서 여야 모두 조시장의 출마를 저지하기 위해서 총력을 기울이고 있습니다.&#x0D; 특히 비상이 걸린 곳은 먼저 국민회의쪽입니다.&#x0D; 강선규 기자의 보도입니다.&#x0D; &#x0D; ⊙강선규 기자 :&#x0D; 병역정국을 주도하면서 비교적 순탄하게 대선가도를 달리던 국민회의가 조순 시장의 대권도전이라는 복병을 만났습니다. 국민회의측은 조시장의 출마가 야권후보 단일화를 통한 정권교체를 가로막을 뿐아니라 초대 민선시장으로서 임기를 남겨놓은 상태에서 시장직을 사퇴하는 것도 문제라는 논리로 조시장 출마의 부당성을 지적하고 나섰습니다.&#x0D; &#x0D; ⊙김민석 (국민회의 부대변인) :&#x0D; 당선 가능성이 사실상 없는 군소후보로 스스로 몸을 훼손시키시려하는가에 대해서 참으로 인간적인 걱정이 앞선다.&#x0D; &#x0D; ⊙강선규 기자 :&#x0D; 국민회의는 한편으로 조시장의 등장이 서울과 수도권의 야당표를 잠식할 수 있으나 전체표 득실에서는 크게 불리하지 않다고 보고 아직은 조시장에 대해서 직격탄을 날리지는 않고 있습니다. 대선후보 등록까지 남은 3개월 동안 조시장을 설득할 여지가 있다는 판단아래 지난 서울시장 선거때 조순 시장 진영에서 일했던 국민회의 관계자들이 나서 조시장 주저앉히기와 연합을 동시에 모색하고 있습니다. 자민련은 외형적으로는 피해가 가장 적을 것으로 자신하고 있습니다. 하지만 내심으로는 조시장의 출마가 박철언 부총재 등의 독자행보에 탄력을 주지 않을까 우려하고 있습니다. 이런 가운데 오늘 민주당과 조순 시장은 오는 28일 전당대회에서 조시장을 민주당 총재로 추대한뒤 다음달 10일께 대통령 후보로 확정한다는 일정에 합의했습니다.&#x0D; KBS 뉴스, 강선규입니다. &#x0D; &#x0D; &#x0D;</SEGMENT_CONTENTS>
+            <!--색상 구분 : C=컬러 , B=흑백-->
+            <COLOR_GB>C</COLOR_GB>
+            <!--Audio 유무 : Y=유, N=무-->
+            <AUDIO_YN>Y</AUDIO_YN>
+            <!--촬영일시-->
+            <SHOOTING_DATE_TIME />
+            <!--촬영의도-->
+            <SHOOTING_INTENTION />
+            <!--촬영장소-->
+            <SHOOTING_PLACE />
+            <!--촬영자-->
+            <CAMERA_MAN />
+            <!--뉴스리포터명-->
+            <NEWS_REPORTER_NAME />
+            <!--국가코드-->
+            <ISO_COUNTRY_CODE />
+            <!--방송언어구분-->
+            <BROADCAST_LANGUAGE_KIND />
+            <!--영상 소재자료 표준 분류, 총류-->
+            <VRMC_CLASSIFICATION />
+            <!--소재자료 부가정보 촬영기법 (Code)-->
+            <VRMC_CODE_SHOOTING_TECHNIQUE />
+            <!--소재자료 부가정보 시간 (Code)-->
+            <VRMC_CODE_TIME />
+            <!--소재자료 부가정보 계절 (Code)-->
+            <VRMC_CODE_SEASON />
+            <!--소재자료 부가정보 날씨 (Code)-->
+            <VRMC_CODE_WEATHER />
+            <!--사용제한 사유-->
+            <USE_RESTRICTION_CLASSIFICATION />
+            <!--사용 유의사항-->
+            <USAGE_NOTICE />
+            <!--사용제한 제한일 (년월일시분초)-->
+            <RESTRICTION_DATE />
+            <!--사용제한 해제일 (년월일시분초)-->
+            <COPYRIGHT_EXPIRATION_DATE />
+            <!--제작자, <PRODUCER>개 N개 존재함.-->
+            <PRODUCER_LIST>
+                <PRODUCER>
+                    <!--사번-->
+                    <EMPLOYEE_ID />
+                    <KOR_NAME>강선규</KOR_NAME>
+                    <ENG_NAME />
+                    <!--역할 명-->
+                    <PERSON_CASTING_NAME />
+                    <!--방송인물 ID-->
+                    <BROADCAST_ID />
+                    <!--소속명(text)-->
+                    <SOSOK_NAME />
+                </PRODUCER>
+            </PRODUCER_LIST>
+            <!--스테프, <STAFF>개 N개 존재함.-->
+            <STAFF_LIST />
+            <!--출연자, <ACTOR>개 N개 존재함.-->
+            <ACTOR_LIST />
+        </SEGMENT_INFO>
+        <SEGMENT_INFO>
+            <SEGMENT_TITLE>신한국당, 조순 서울시장 대선출마 따른 득실분석</SEGMENT_TITLE>
+            <SEGMENT_START_TIME>00:21:54;00</SEGMENT_START_TIME>
+            <SEGMENT_END_TIME>00:23:54;00</SEGMENT_END_TIME>
+            <SEGMENT_DURATION>00:02:00</SEGMENT_DURATION>
+            <!--세그먼트/아이템 내용-->
+            <SEGMENT_CONTENTS>@당혹... 득실분석&#x0D; &#x0D; ⊙류근찬 앵커 :&#x0D; 조시장의 대선 출마를 비난하기는 신한국당도 마찬가지입니다. 그러나 신한국당이 특히 신경을 쓰는 부분은 조시장의 대선출마가 당내 경선 탈락자들의 출마를 부추길 가능성도 있다는 얘기입니다.&#x0D; 계속해서 신성범 기자의 보도입니다.&#x0D; &#x0D; ⊙신성범 기자 :&#x0D; 오늘 신한국당 당직자회의의 중요한 안건 가운데 하나가 조순 서울시장의 대선출마였습니다. 이어 대변인 논평을 통해 개인의 정치적 입지만을 고려한 이기적 행위라고 공격했습니다. &#x0D; &#x0D; ⊙이사철 (신한국당 대변인) :&#x0D; 그 자리를 더 큰 정치적 입지를 위한 발판으로만 사용한다면 그것은 그런 단체장을 믿고 뽑아준 주민들에 대한 배신행위일 뿐만 아니라...&#x0D; &#x0D; ⊙신성범 기자 :&#x0D; 신한국당은 조시장의 출마가 수도권의 야당표를 잠식하고 야권후보 단일화의 걸림돌이 되는 효과가 있지만 이회창 대표의 지지세력도 잠식함으로써 여당에게도 결코 유리하지 않다고 분석하고 있습니다. 특히 이른바 지식층과 중산층을 중심으로 이대표와 조시장의 지지층이 겹치고 일부 여론조사에서 부산.경남지역이 흔들리는데 주목하고 있습니다. 그러나 조시장 지지는 현 정치상황에 대한 일시적 반사현상으로 이대표 지지가 상승하면 거품이 걷히고 결국 야당표를 분산시키게 될 것이라는 장기적 전망을 내놓고 있습니다. 그러면서 조시장의 움직임이 이인제 지사와 박찬종.이한동 고문 등 당내 인사의 출마유혹을 촉발하지 않을까 내심 신경을 곤두세우고 있습니다. 이대표가 어제 당내 분파활동을 경고하고 자신의 구도로 대선을 치르겠다고 강조한 것도 당을 다잡고 분위기 쇄신을 시작으로 국면을 전환하겠다는 의도로 해석됩니다. 이대표는 내일 경부고속철도 건설현장과 농촌 구조조정 현장을 방문합니다. 병역공방에서 벗어나 이제는 민생현장이라는 국면전환 노력입니다.&#x0D; KBS 뉴스, 신성범입니다.&#x0D; &#x0D; &#x0D;</SEGMENT_CONTENTS>
+            <!--색상 구분 : C=컬러 , B=흑백-->
+            <COLOR_GB>C</COLOR_GB>
+            <!--Audio 유무 : Y=유, N=무-->
+            <AUDIO_YN>Y</AUDIO_YN>
+            <!--촬영일시-->
+            <SHOOTING_DATE_TIME />
+            <!--촬영의도-->
+            <SHOOTING_INTENTION />
+            <!--촬영장소-->
+            <SHOOTING_PLACE />
+            <!--촬영자-->
+            <CAMERA_MAN />
+            <!--뉴스리포터명-->
+            <NEWS_REPORTER_NAME />
+            <!--국가코드-->
+            <ISO_COUNTRY_CODE />
+            <!--방송언어구분-->
+            <BROADCAST_LANGUAGE_KIND />
+            <!--영상 소재자료 표준 분류, 총류-->
+            <VRMC_CLASSIFICATION />
+            <!--소재자료 부가정보 촬영기법 (Code)-->
+            <VRMC_CODE_SHOOTING_TECHNIQUE />
+            <!--소재자료 부가정보 시간 (Code)-->
+            <VRMC_CODE_TIME />
+            <!--소재자료 부가정보 계절 (Code)-->
+            <VRMC_CODE_SEASON />
+            <!--소재자료 부가정보 날씨 (Code)-->
+            <VRMC_CODE_WEATHER />
+            <!--사용제한 사유-->
+            <USE_RESTRICTION_CLASSIFICATION />
+            <!--사용 유의사항-->
+            <USAGE_NOTICE />
+            <!--사용제한 제한일 (년월일시분초)-->
+            <RESTRICTION_DATE />
+            <!--사용제한 해제일 (년월일시분초)-->
+            <COPYRIGHT_EXPIRATION_DATE />
+            <!--제작자, <PRODUCER>개 N개 존재함.-->
+            <PRODUCER_LIST>
+                <PRODUCER>
+                    <!--사번-->
+                    <EMPLOYEE_ID />
+                    <KOR_NAME>신성범</KOR_NAME>
+                    <ENG_NAME />
+                    <!--역할 명-->
+                    <PERSON_CASTING_NAME />
+                    <!--방송인물 ID-->
+                    <BROADCAST_ID />
+                    <!--소속명(text)-->
+                    <SOSOK_NAME />
+                </PRODUCER>
+            </PRODUCER_LIST>
+            <!--스테프, <STAFF>개 N개 존재함.-->
+            <STAFF_LIST />
+            <!--출연자, <ACTOR>개 N개 존재함.-->
+            <ACTOR_LIST />
+        </SEGMENT_INFO>
+        <SEGMENT_INFO>
+            <SEGMENT_TITLE>브레이크 고장난 시내버스 인도로 돌진, 2명 중화상</SEGMENT_TITLE>
+            <SEGMENT_START_TIME>00:23:54;00</SEGMENT_START_TIME>
+            <SEGMENT_END_TIME>00:25:41;00</SEGMENT_END_TIME>
+            <SEGMENT_DURATION>00:01:46</SEGMENT_DURATION>
+            <!--세그먼트/아이템 내용-->
+            <SEGMENT_CONTENTS>@인도로 돌진했다&#x0D; &#x0D; ⊙류근찬 앵커 :&#x0D; 교통사고 소식입니다. 대낮 서울 도심 간선도로에서 시내버스가 인도로 뛰어드는 사고가 일어났습니다. 이 사고로 두명이 중화상을 입고 가로등이 쓰러지면서 차량 6대가 크게 부서졌습니다.&#x0D; 한재호 기자가 취재했습니다.&#x0D; &#x0D; ⊙한재호 기자 :&#x0D; 중앙선을 넘어온 시내버스가 인도로 뛰어들었습니다. 쓰러진 가로등 옆으로 자동차 파편들이 널려있고 맞은편 인도에서는 버스에 부딪힌 택시가 완전히 불탔습니다. 중앙선을 넘어서 인도로 돌진한 이 시내버스는 이 육중한 철제 가로등을 들이받고서야 멈췄습니다.&#x0D; &#x0D; ⊙원혜자 (목격자) :&#x0D; 펑펑 소리가 나더니 저리로 차가 막 이리로 들이닥치는 거야, 그러더니 팡소리가 나서 얼마나 놀랬는지 몰라, 그게 무너지면서 이렇게 된거예요.&#x0D; &#x0D; ⊙한재호 기자 :&#x0D; 사고버스는 이대역 사거리 내리막길에서 택시를 들이받고 다시 중앙선을 넘어 맞은편에서 오던 승용차와 가로등을 잇따라 들이받았습니다. 쓰러지는 가로등은 인도에 있던 넉대의 차를 파손했습니다. 사고버스에 받혀 전소된 택시의 운전자 김복환氏와 승객 이모양은 중화상을 입었습니다.&#x0D; &#x0D; ⊙피해자 (택시승객) :&#x0D; 아저씨 앞의 문열고 나가길래 같이 뛰어나왔는데 나와가지고 좀있다가 1초도 안지나서 차가 폭발했어요.&#x0D; &#x0D; ⊙한재호 기자 :&#x0D; 버스 운전사는 브레이크가 제대로 듣지 않아 사고가 났다고 말했습니다.&#x0D; &#x0D; ⊙윤인근 (사고버스 운전자) :&#x0D; 자연적으로 여기서 맞고 충격에 내리막길이니까 그냥 나가버렸다니까요...&#x0D; &#x0D; ⊙한재호 기자 :&#x0D; 다행히도 윤氏는 버스를 침착하게 몰아 더이상의 인명피해를 막을 수 있었습니다. 이 버스는 어제 브레이크 라이닝 교정을 받았지만 하루만에 사고가 났습니다.&#x0D; &#x0D; ⊙정비 관계자 :&#x0D; 들어오는 차마다 일일이 점검할 수는 없다.&#x0D; &#x0D; ⊙한재호 기자 :&#x0D; 눈가림식의 허술한 정비가 시민의 발인 시내버스를 도로의 흉기로 몰아가고 있습니다.&#x0D; KBS 뉴스, 한재호입니다. &#x0D; &#x0D; &#x0D;</SEGMENT_CONTENTS>
+            <!--색상 구분 : C=컬러 , B=흑백-->
+            <COLOR_GB>C</COLOR_GB>
+            <!--Audio 유무 : Y=유, N=무-->
+            <AUDIO_YN>Y</AUDIO_YN>
+            <!--촬영일시-->
+            <SHOOTING_DATE_TIME />
+            <!--촬영의도-->
+            <SHOOTING_INTENTION />
+            <!--촬영장소-->
+            <SHOOTING_PLACE />
+            <!--촬영자-->
+            <CAMERA_MAN />
+            <!--뉴스리포터명-->
+            <NEWS_REPORTER_NAME />
+            <!--국가코드-->
+            <ISO_COUNTRY_CODE />
+            <!--방송언어구분-->
+            <BROADCAST_LANGUAGE_KIND />
+            <!--영상 소재자료 표준 분류, 총류-->
+            <VRMC_CLASSIFICATION />
+            <!--소재자료 부가정보 촬영기법 (Code)-->
+            <VRMC_CODE_SHOOTING_TECHNIQUE />
+            <!--소재자료 부가정보 시간 (Code)-->
+            <VRMC_CODE_TIME />
+            <!--소재자료 부가정보 계절 (Code)-->
+            <VRMC_CODE_SEASON />
+            <!--소재자료 부가정보 날씨 (Code)-->
+            <VRMC_CODE_WEATHER />
+            <!--사용제한 사유-->
+            <USE_RESTRICTION_CLASSIFICATION />
+            <!--사용 유의사항-->
+            <USAGE_NOTICE />
+            <!--사용제한 제한일 (년월일시분초)-->
+            <RESTRICTION_DATE />
+            <!--사용제한 해제일 (년월일시분초)-->
+            <COPYRIGHT_EXPIRATION_DATE />
+            <!--제작자, <PRODUCER>개 N개 존재함.-->
+            <PRODUCER_LIST>
+                <PRODUCER>
+                    <!--사번-->
+                    <EMPLOYEE_ID />
+                    <KOR_NAME>한재호</KOR_NAME>
+                    <ENG_NAME />
+                    <!--역할 명-->
+                    <PERSON_CASTING_NAME />
+                    <!--방송인물 ID-->
+                    <BROADCAST_ID />
+                    <!--소속명(text)-->
+                    <SOSOK_NAME />
+                </PRODUCER>
+            </PRODUCER_LIST>
+            <!--스테프, <STAFF>개 N개 존재함.-->
+            <STAFF_LIST />
+            <!--출연자, <ACTOR>개 N개 존재함.-->
+            <ACTOR_LIST />
+        </SEGMENT_INFO>
+        <SEGMENT_INFO>
+            <SEGMENT_TITLE>95년 고름우유 파동벌인 유가공업체들, 소비자에게 배상판결</SEGMENT_TITLE>
+            <SEGMENT_START_TIME>00:25:41;00</SEGMENT_START_TIME>
+            <SEGMENT_END_TIME>00:27:35;00</SEGMENT_END_TIME>
+            <SEGMENT_DURATION>00:01:54</SEGMENT_DURATION>
+            <!--세그먼트/아이템 내용-->
+            <SEGMENT_CONTENTS>@&quot;소비자에 배상하라&quot;&#x0D; &#x0D; ⊙류근찬 앵커 :&#x0D; 1년전인 지난 95년에 있었던 이른바 고름우유 파동을 아마 여러분들 기억하실 겁니다. 법원이 오늘 2년전 상대방이 고름우유라면서 허위광고전을 벌였던 유가공 업체들에게 국민들의 불신감과 혐오감을 초래한 책임을 물어서 피해배상 판결을 내리고 해당업체 대표들에게도 전원 유죄를 선고했습니다. 소비자를 볼모로 한 업체들간 과당경쟁에 쐐기를 박은 판결이라고 할 수가 있습니다. &#x0D; 하준수 기자의 보도입니다. &#x0D; &#x0D; ⊙하준수 기자 :&#x0D; 지난 95년 10월 일부 고름우유가 시판되고 있다는 보도가 나가자 파스퇴르유업과 한국 유가공협회 업체들은 서로 상대회사 제품이 고름우유라며 치열한 광고 공방에 나섰습니다. 이를 지켜본 소비자들은 우유제품에 극도의 불신감을 갖게 됐고 급기야 시민단체 회원 3백여명이 고름우유 광고를 낸 유가공 업체들을 상대로 손해배상 청구소송을 냈습니다. &#x0D; &#x0D; ⊙정미정 (여성단체 회원) :&#x0D; 갓 태어난 애들도 있고 거의 어린애들이잖아요 미래 새싹이나 마찬가지인데 걔들을 대상으로 해가지고 고름이 있네 없네 이런식으로 얘기하는거는 말이 안되는 거죠.&#x0D; &#x0D; ⊙하준수 기자 :&#x0D; 이에 대해 법원은 오늘 유가공업체들은 연대해서 원고들에게 1인당 3만원씩 모두 951만원을 지급하라고 판결했습니다. 기업이 신의 성실 원칙에 비추어 비난받을 정도로 허위과장 광고를 냄으로써 소비자들이 피해를 입은 점이 인정 된다는 취지입니다. 기업의 허위 과장 광고로 불특정 다수에게 피해보상이 내려진 판결은 이번이 처음입니다. &#x0D; &#x0D; ⊙이석연 (변호사) :&#x0D; 소비자를 볼모로 한 기업의 허위 과장 광고에 대해서 정신적 손해배상까지도 인정했다는 점에서 헌법이 보장한 소비자 기본권을 구체적으로 확인한 획기적인 판결이라고 생각합니다. &#x0D; &#x0D; ⊙하준수 기자 :&#x0D; 또 명예훼손 혐의로 불구속 기소된 6명의 유가공 업체 대표들도 집행유예와 벌금형 등 유죄판결을 받아 형사 책임까지 지게 됐습니다. &#x0D; KBS 뉴스, 하준수입니다. &#x0D; &#x0D; &#x0D;</SEGMENT_CONTENTS>
+            <!--색상 구분 : C=컬러 , B=흑백-->
+            <COLOR_GB>C</COLOR_GB>
+            <!--Audio 유무 : Y=유, N=무-->
+            <AUDIO_YN>Y</AUDIO_YN>
+            <!--촬영일시-->
+            <SHOOTING_DATE_TIME />
+            <!--촬영의도-->
+            <SHOOTING_INTENTION />
+            <!--촬영장소-->
+            <SHOOTING_PLACE />
+            <!--촬영자-->
+            <CAMERA_MAN />
+            <!--뉴스리포터명-->
+            <NEWS_REPORTER_NAME />
+            <!--국가코드-->
+            <ISO_COUNTRY_CODE />
+            <!--방송언어구분-->
+            <BROADCAST_LANGUAGE_KIND />
+            <!--영상 소재자료 표준 분류, 총류-->
+            <VRMC_CLASSIFICATION />
+            <!--소재자료 부가정보 촬영기법 (Code)-->
+            <VRMC_CODE_SHOOTING_TECHNIQUE />
+            <!--소재자료 부가정보 시간 (Code)-->
+            <VRMC_CODE_TIME />
+            <!--소재자료 부가정보 계절 (Code)-->
+            <VRMC_CODE_SEASON />
+            <!--소재자료 부가정보 날씨 (Code)-->
+            <VRMC_CODE_WEATHER />
+            <!--사용제한 사유-->
+            <USE_RESTRICTION_CLASSIFICATION />
+            <!--사용 유의사항-->
+            <USAGE_NOTICE />
+            <!--사용제한 제한일 (년월일시분초)-->
+            <RESTRICTION_DATE />
+            <!--사용제한 해제일 (년월일시분초)-->
+            <COPYRIGHT_EXPIRATION_DATE />
+            <!--제작자, <PRODUCER>개 N개 존재함.-->
+            <PRODUCER_LIST>
+                <PRODUCER>
+                    <!--사번-->
+                    <EMPLOYEE_ID />
+                    <KOR_NAME>하준수</KOR_NAME>
+                    <ENG_NAME />
+                    <!--역할 명-->
+                    <PERSON_CASTING_NAME />
+                    <!--방송인물 ID-->
+                    <BROADCAST_ID />
+                    <!--소속명(text)-->
+                    <SOSOK_NAME />
+                </PRODUCER>
+            </PRODUCER_LIST>
+            <!--스테프, <STAFF>개 N개 존재함.-->
+            <STAFF_LIST />
+            <!--출연자, <ACTOR>개 N개 존재함.-->
+            <ACTOR_LIST />
+        </SEGMENT_INFO>
+        <SEGMENT_INFO>
+            <SEGMENT_TITLE>미국 프로야구 ; LA다저스 박찬호선수, 첫 완투승 거두며 11승고지</SEGMENT_TITLE>
+            <SEGMENT_START_TIME>00:27:35;00</SEGMENT_START_TIME>
+            <SEGMENT_END_TIME>00:29:28;00</SEGMENT_END_TIME>
+            <SEGMENT_DURATION>00:01:52</SEGMENT_DURATION>
+            <!--세그먼트/아이템 내용-->
+            <SEGMENT_CONTENTS>@첫 완투승&#x0D; &#x0D; ⊙황수경 앵커 :&#x0D; 코리안 특급 박찬호 선수가 오늘 미국 메이저리그에 진출한 이래 첫 완투승을 거두면서 시즌 11승 고지에 올랐습니다. &#x0D; 김봉진 기자의 보도입니다. &#x0D; &#x0D; ⊙김봉진 기자 :&#x0D; 메이저리그 첫 완투승에 아웃 카운트 하나를 남긴 박찬호 마지막 타자를 시원스럽게 3진으로 처리하며 마침내 완투승의 감격을 누립니다. 박찬호는 시카고컵스와의 홈경기에서 9이닝 동안 강속구와 변화구를 절묘하게 구사하며 단 한점만을 허용해 팀을 2:1 승리로 이끌었습니다. 8회 통한의 홈런을 내준 것이 유일한 실점이었습니다. 박찬호는 32명의 타자를 상대로 안타 4개를 허용했으나 3진 7개를 빼앗으며 마운드를 끝까지 지켰습니다. 특히 5회에는 무릎부상에도 불구하고 타자들을 압도하는 강한 승부근성을 보이며 위기를 넘겼습니다. &#x0D; &#x0D; ⊙박찬호 (LA다저스 투수) :&#x0D; 어려운 구사되기 어려운 9이닝을 전부 던져가지고 커프링 게임을 했는데 저 한테는 처음이었기 때문에 굉장히 뭐랄까 힘을 얻었다고 생각해요 앞으로를 위해서&#x0D; &#x0D; ⊙김봉진 기자 :&#x0D; 아쉽게 완봉승을 놓쳤으나 박찬호는 오늘 완투승으로 선발투수로서 자신의 위상을 한단계 높였습니다. 한 경기를 끝까지 책임진다는 의미에서 완투승은 모든 메이저리그 선발투수들의 꿈입니다. &#x0D; &#x0D; ⊙빌 러셀 (LA다저스 감독) :&#x0D; 뛰어난 재능을 가진 박찬호가 최고의 투수가 되기 위한 자신의 길을 밟고 있습니다. &#x0D; &#x0D; ⊙김봉진 기자 :&#x0D; 11승을 완투승으로 장식한 박찬호는 내셔널리그 다승 공동10위에 올랐고 시즌 목표인 15승에도 한발 다가서게 됐습니다. 방어율은 3.24에서 3.10으로 낮아져 14위를 기록했습니다. 박찬호는 닷새뒤인 오는 17일 신시네티를 상대로 시즌 12승에 도전합니다. &#x0D; KBS 뉴스, 김봉진입니다. &#x0D; &#x0D; &#x0D;</SEGMENT_CONTENTS>
+            <!--색상 구분 : C=컬러 , B=흑백-->
+            <COLOR_GB>C</COLOR_GB>
+            <!--Audio 유무 : Y=유, N=무-->
+            <AUDIO_YN>Y</AUDIO_YN>
+            <!--촬영일시-->
+            <SHOOTING_DATE_TIME />
+            <!--촬영의도-->
+            <SHOOTING_INTENTION />
+            <!--촬영장소-->
+            <SHOOTING_PLACE />
+            <!--촬영자-->
+            <CAMERA_MAN />
+            <!--뉴스리포터명-->
+            <NEWS_REPORTER_NAME />
+            <!--국가코드-->
+            <ISO_COUNTRY_CODE />
+            <!--방송언어구분-->
+            <BROADCAST_LANGUAGE_KIND />
+            <!--영상 소재자료 표준 분류, 총류-->
+            <VRMC_CLASSIFICATION />
+            <!--소재자료 부가정보 촬영기법 (Code)-->
+            <VRMC_CODE_SHOOTING_TECHNIQUE />
+            <!--소재자료 부가정보 시간 (Code)-->
+            <VRMC_CODE_TIME />
+            <!--소재자료 부가정보 계절 (Code)-->
+            <VRMC_CODE_SEASON />
+            <!--소재자료 부가정보 날씨 (Code)-->
+            <VRMC_CODE_WEATHER />
+            <!--사용제한 사유-->
+            <USE_RESTRICTION_CLASSIFICATION />
+            <!--사용 유의사항-->
+            <USAGE_NOTICE />
+            <!--사용제한 제한일 (년월일시분초)-->
+            <RESTRICTION_DATE />
+            <!--사용제한 해제일 (년월일시분초)-->
+            <COPYRIGHT_EXPIRATION_DATE />
+            <!--제작자, <PRODUCER>개 N개 존재함.-->
+            <PRODUCER_LIST>
+                <PRODUCER>
+                    <!--사번-->
+                    <EMPLOYEE_ID />
+                    <KOR_NAME>김봉진</KOR_NAME>
+                    <ENG_NAME />
+                    <!--역할 명-->
+                    <PERSON_CASTING_NAME />
+                    <!--방송인물 ID-->
+                    <BROADCAST_ID />
+                    <!--소속명(text)-->
+                    <SOSOK_NAME />
+                </PRODUCER>
+            </PRODUCER_LIST>
+            <!--스테프, <STAFF>개 N개 존재함.-->
+            <STAFF_LIST />
+            <!--출연자, <ACTOR>개 N개 존재함.-->
+            <ACTOR_LIST />
+        </SEGMENT_INFO>
+        <SEGMENT_INFO>
+            <SEGMENT_TITLE>박찬호선수 등판한 미국 LA다저스 구장 ; 한국야구팬들, 열광적 응원</SEGMENT_TITLE>
+            <SEGMENT_START_TIME>00:29:28;00</SEGMENT_START_TIME>
+            <SEGMENT_END_TIME>00:30:51;00</SEGMENT_END_TIME>
+            <SEGMENT_DURATION>00:01:22</SEGMENT_DURATION>
+            <!--세그먼트/아이템 내용-->
+            <SEGMENT_CONTENTS>@응원 절정&#x0D; &#x0D; ⊙황수경 앵커 :&#x0D; 오늘 LA다저스 구장에는 박찬호 선수가 다저스팀에 소속된 이래 가장 많은 수의 한국 야구팬들이 몰려서 박찬호 선수의 선발등판 경기를 열광적으로 응원했습니다. &#x0D; LA에서 박원훈 특파원이 전해 드립니다. &#x0D; &#x0D; ⊙박원훈 특파원 :&#x0D; 평소보다 5,6천명이 더많은 4만6천명의 자리를 메운 오늘 다저스 구장 관중 세사람 가운데 한명은 한국 야구팬이었습니다. &#x0D; &#x0D; ⊙파파라 (다저스구장 매표담당) :&#x0D; 박찬호 경기를 보기 위해 엄청난 한국 관중이 이곳을 찾았습니다. &#x0D; &#x0D; ⊙박원훈 특파원 :&#x0D; 박찬호 선수가 다저스에 진출한 이래 한국 응원단이 가장 많은 날이었습니다. &#x0D; &#x0D; ⊙송정희 (LA교민) :&#x0D; 애들이 굉장히 박찬호 경기를 좋아해요 그래서 오늘 애들하고 같이 함께 왔어요.&#x0D; &#x0D; ⊙윤순경 (LA교민) :&#x0D; 가슴이 확 뚤리죠 한국에 답답한 일도 많고 &#x0D; &#x0D; ⊙박원훈 특파원 :&#x0D; 한국 응원단이 부담스럽다고 말해온 박찬호 선수는 오늘은 아예 불펜이 아닌 다른 곳에서 몸을 풀고 등판했습니다. 그러나 동료선수들은 훌륭한 선수를 보내주고 응원을 해주는 한국민에 감사한다고 말했습니다. &#x0D; &#x0D; ⊙캐로스 (다저스 4번 타자) :&#x0D; 박찬호 선수를 우리 다저스팀에 보내준 한국에 감사드립니다.&#x0D; &#x0D; ⊙소사 (시카고 4번 타자) :&#x0D; 박찬호에게 높은 점수를 매기고 싶습니다. 훌륭한 선수입니다. &#x0D; &#x0D; ⊙박원훈 특파원 :&#x0D; 박찬호 선수가 만들어내는 뉴스가 지금과 같이 청량제 역할을 하는 한 야구장을 찾는 한국인들의 발걸음은 더욱 잦아질 것으로 보입니다. &#x0D; LA다저스 구장에서 KBS 뉴스, 박원훈입니다. &#x0D; &#x0D; &#x0D;</SEGMENT_CONTENTS>
+            <!--색상 구분 : C=컬러 , B=흑백-->
+            <COLOR_GB>C</COLOR_GB>
+            <!--Audio 유무 : Y=유, N=무-->
+            <AUDIO_YN>Y</AUDIO_YN>
+            <!--촬영일시-->
+            <SHOOTING_DATE_TIME />
+            <!--촬영의도-->
+            <SHOOTING_INTENTION />
+            <!--촬영장소-->
+            <SHOOTING_PLACE />
+            <!--촬영자-->
+            <CAMERA_MAN />
+            <!--뉴스리포터명-->
+            <NEWS_REPORTER_NAME />
+            <!--국가코드-->
+            <ISO_COUNTRY_CODE />
+            <!--방송언어구분-->
+            <BROADCAST_LANGUAGE_KIND />
+            <!--영상 소재자료 표준 분류, 총류-->
+            <VRMC_CLASSIFICATION />
+            <!--소재자료 부가정보 촬영기법 (Code)-->
+            <VRMC_CODE_SHOOTING_TECHNIQUE />
+            <!--소재자료 부가정보 시간 (Code)-->
+            <VRMC_CODE_TIME />
+            <!--소재자료 부가정보 계절 (Code)-->
+            <VRMC_CODE_SEASON />
+            <!--소재자료 부가정보 날씨 (Code)-->
+            <VRMC_CODE_WEATHER />
+            <!--사용제한 사유-->
+            <USE_RESTRICTION_CLASSIFICATION />
+            <!--사용 유의사항-->
+            <USAGE_NOTICE />
+            <!--사용제한 제한일 (년월일시분초)-->
+            <RESTRICTION_DATE />
+            <!--사용제한 해제일 (년월일시분초)-->
+            <COPYRIGHT_EXPIRATION_DATE />
+            <!--제작자, <PRODUCER>개 N개 존재함.-->
+            <PRODUCER_LIST>
+                <PRODUCER>
+                    <!--사번-->
+                    <EMPLOYEE_ID />
+                    <KOR_NAME>박원훈</KOR_NAME>
+                    <ENG_NAME />
+                    <!--역할 명-->
+                    <PERSON_CASTING_NAME />
+                    <!--방송인물 ID-->
+                    <BROADCAST_ID />
+                    <!--소속명(text)-->
+                    <SOSOK_NAME />
+                </PRODUCER>
+            </PRODUCER_LIST>
+            <!--스테프, <STAFF>개 N개 존재함.-->
+            <STAFF_LIST />
+            <!--출연자, <ACTOR>개 N개 존재함.-->
+            <ACTOR_LIST />
+        </SEGMENT_INFO>
+        <SEGMENT_INFO>
+            <SEGMENT_TITLE>현장추적 781-1234 ; 형식적인 총기소지 신체검사 실태</SEGMENT_TITLE>
+            <SEGMENT_START_TIME>00:30:51;00</SEGMENT_START_TIME>
+            <SEGMENT_END_TIME>00:32:50;00</SEGMENT_END_TIME>
+            <SEGMENT_DURATION>00:01:59</SEGMENT_DURATION>
+            <!--세그먼트/아이템 내용-->
+            <SEGMENT_CONTENTS>@현장추적 781-1234&#x0D; 말뿐인 신체검사&#x0D; &#x0D; ⊙류근찬 앵커 :&#x0D; 공기총 같은 총기소지 허가를 받기 위해서는 병원에서 신체검사를 받도록 돼 있습니다. 정신질환이 있는 사람 손에 총기가 쥐어져서는 안된다는 취지로 그런 규정을 만들어놨지만 그러나 실제로 이루어지는 신체검사라고 하는 것이 너무 형식적이고 엉터리입니다. &#x0D; 김덕원 기자가 이 엉터리로 이뤄지고 있는 신체검사 과정을 취재했습니다. &#x0D; &#x0D; ⊙김덕원 기자 :&#x0D; 서울 화곡동에 있는 한 총포상입니다. 공기총을 구입하기 위해 필요한 서류를 준비해 총포상에서 지정해준 병원으로 신체검사를 받으러 갔습니다. 내과전문의의 검사는 손가락을 펴보이는 것으로 끝납니다.&#x0D; &#x0D; &quot;마약 여부는 검사 안해요?&quot;&#x0D; &quot;검사를 할 수 있어요? 그냥 가시면 돼요.&quot;&#x0D; &quot;그럼 이 부분은 왜 있어요?&quot;&#x0D; &quot;우리나라 원래 그렇잖아요.&quot;&#x0D; 검사의 문제를 지적했더니 오히려 화를 냅니다.&#x0D; &quot;원래(검사)해야 되잖아요.&quot;&#x0D; &quot;그냥 가시라니까요. 하기 싫어요?&quot;&#x0D; &#x0D; 사정은 다른 병원도 마찬가지입니다. 신체검사를 맡은 간호사는 검사를 하다가 다른 일을 하는 등 정신이 없습니다. 검사가 제대로 이루어질리 없습니다. &#x0D; &#x0D; &quot;이곳 (정신과)은 어떻게 됩니까?&quot;&#x0D; &quot;원무과로 가보세요.&quot;&#x0D; &#x0D; 간호사가 너무 바빠서 정신과 검사를 못했지만 원무과 직원이 대신 이상없음이라는 도장을 찍어줍니다.&#x0D; &#x0D; &quot;대화할 수 있으면 정상이예요. 같이 말이 통하면 정상이라구요. 다들 이렇게 해 가시는데...&quot;&#x0D; &#x0D; 이런 신체검사 때문에 10년간 우울증을 앓아왔고 보름동안이나 정신병원에 입원한 대구의 40대 가장도 총기소지 허가증을 얻을 수 있었습니다. 그는 결국 자신의 부인과 딸들을 공기총으로 쏴 숨지게 했습니다. &#x0D; KBS 뉴스, 김덕원입니다. &#x0D; &#x0D; &#x0D;</SEGMENT_CONTENTS>
+            <!--색상 구분 : C=컬러 , B=흑백-->
+            <COLOR_GB>C</COLOR_GB>
+            <!--Audio 유무 : Y=유, N=무-->
+            <AUDIO_YN>Y</AUDIO_YN>
+            <!--촬영일시-->
+            <SHOOTING_DATE_TIME />
+            <!--촬영의도-->
+            <SHOOTING_INTENTION />
+            <!--촬영장소-->
+            <SHOOTING_PLACE />
+            <!--촬영자-->
+            <CAMERA_MAN />
+            <!--뉴스리포터명-->
+            <NEWS_REPORTER_NAME />
+            <!--국가코드-->
+            <ISO_COUNTRY_CODE />
+            <!--방송언어구분-->
+            <BROADCAST_LANGUAGE_KIND />
+            <!--영상 소재자료 표준 분류, 총류-->
+            <VRMC_CLASSIFICATION />
+            <!--소재자료 부가정보 촬영기법 (Code)-->
+            <VRMC_CODE_SHOOTING_TECHNIQUE />
+            <!--소재자료 부가정보 시간 (Code)-->
+            <VRMC_CODE_TIME />
+            <!--소재자료 부가정보 계절 (Code)-->
+            <VRMC_CODE_SEASON />
+            <!--소재자료 부가정보 날씨 (Code)-->
+            <VRMC_CODE_WEATHER />
+            <!--사용제한 사유-->
+            <USE_RESTRICTION_CLASSIFICATION />
+            <!--사용 유의사항-->
+            <USAGE_NOTICE />
+            <!--사용제한 제한일 (년월일시분초)-->
+            <RESTRICTION_DATE />
+            <!--사용제한 해제일 (년월일시분초)-->
+            <COPYRIGHT_EXPIRATION_DATE />
+            <!--제작자, <PRODUCER>개 N개 존재함.-->
+            <PRODUCER_LIST>
+                <PRODUCER>
+                    <!--사번-->
+                    <EMPLOYEE_ID />
+                    <KOR_NAME>김덕원</KOR_NAME>
+                    <ENG_NAME />
+                    <!--역할 명-->
+                    <PERSON_CASTING_NAME />
+                    <!--방송인물 ID-->
+                    <BROADCAST_ID />
+                    <!--소속명(text)-->
+                    <SOSOK_NAME />
+                </PRODUCER>
+            </PRODUCER_LIST>
+            <!--스테프, <STAFF>개 N개 존재함.-->
+            <STAFF_LIST />
+            <!--출연자, <ACTOR>개 N개 존재함.-->
+            <ACTOR_LIST />
+        </SEGMENT_INFO>
+        <SEGMENT_INFO>
+            <SEGMENT_TITLE>정부, 사이비언론 근절위한 강력한 대책 마련</SEGMENT_TITLE>
+            <SEGMENT_START_TIME>00:32:50;00</SEGMENT_START_TIME>
+            <SEGMENT_END_TIME>00:34:32;00</SEGMENT_END_TIME>
+            <SEGMENT_DURATION>00:01:41</SEGMENT_DURATION>
+            <!--세그먼트/아이템 내용-->
+            <SEGMENT_CONTENTS>@사이비 언론 근절&#x0D; &#x0D; ⊙류근찬 앵커 :&#x0D; 최근들어서 부쩍 늘어나고 있는 사이비 언론의 폐해를 뿌리뽑기 위해서 정부가 강력한 대책을 마련하고 있습니다. 공보처는 이를 위해서 오늘 16개 시도 관계공무원과 지역 경제인들이 참석한 토론회를 열어서 피해 사례를 듣고 근절 방안을 논의했습니다. &#x0D; 김환주 기자의 보도입니다. &#x0D; &#x0D; ⊙김환주 기자 :&#x0D; 문민정부 들어 지금까지 모두 370여명의 사이비 언론인들이 구속됐지만 아직도 그 폐해는 그치지 않고 있습니다. &#x0D; &#x0D; ⊙정인창 (수원지검 검사) :&#x0D; 지방에서 중소기업체를 운영한 사람 가운데는 사이비 기자들의 횡포에 시달리다 못해 본점을 서울로 이전하는 경우까지 있는 것으로 알고 있습니다. &#x0D; &#x0D; ⊙김환주 기자 :&#x0D; 촌지근절 등 소신행정을 펴다가 보복위협을 받았다는 자치단체장들의 하소연에 가까운 주장도 이어졌습니다. &#x0D; &#x0D; ⊙김두관 (경남 남해군수) :&#x0D; 특별기동취재반인가 이런걸 편성을 해서 남해군수의 개인적 비리가 없는가 이렇게 해서 파견 나와서 한 일주일 정도 자기들이 떨쳐보고 &#x0D; &#x0D; ⊙김환주 기자 :&#x0D; 무엇보다도 사이비 기자를 양산해내는 사이비 언론사의 설립 자체를 막는 것이 시급하다는게 참석자들의 공통된 의견입니다. &#x0D; &#x0D; ⊙이진영 (수원 중부일보 전무) :&#x0D; 지방에서도 일간신문을 하려면 최소한 20억원 이상의 자본금이 있어야 하지 않겠냐 하는 것이 저의 소견입니다. &#x0D; &#x0D; ⊙남정판 (공보처 차관) :&#x0D; 장기간 발행 중단 상태에 있거나 미천한 상태인 정기간행물에 대해서는 등록취소 조치를 취할 계획입니다. &#x0D; &#x0D; ⊙김환주 기자 :&#x0D; 참석자들은 또 기자들에게 최저임금을 주지 않는 언론사는 등록을 취소하는 방안과 소규모 지역언론의 연례 평가제도 그리고 적발된 사이비 언론인은 일정기간 기자취업을 금지하는 방안도 검토해야 한다는데 의견을 모았습니다. &#x0D; KBS 뉴스, 김환주입니다. &#x0D; &#x0D; &#x0D;</SEGMENT_CONTENTS>
+            <!--색상 구분 : C=컬러 , B=흑백-->
+            <COLOR_GB>C</COLOR_GB>
+            <!--Audio 유무 : Y=유, N=무-->
+            <AUDIO_YN>Y</AUDIO_YN>
+            <!--촬영일시-->
+            <SHOOTING_DATE_TIME />
+            <!--촬영의도-->
+            <SHOOTING_INTENTION />
+            <!--촬영장소-->
+            <SHOOTING_PLACE />
+            <!--촬영자-->
+            <CAMERA_MAN />
+            <!--뉴스리포터명-->
+            <NEWS_REPORTER_NAME />
+            <!--국가코드-->
+            <ISO_COUNTRY_CODE />
+            <!--방송언어구분-->
+            <BROADCAST_LANGUAGE_KIND />
+            <!--영상 소재자료 표준 분류, 총류-->
+            <VRMC_CLASSIFICATION />
+            <!--소재자료 부가정보 촬영기법 (Code)-->
+            <VRMC_CODE_SHOOTING_TECHNIQUE />
+            <!--소재자료 부가정보 시간 (Code)-->
+            <VRMC_CODE_TIME />
+            <!--소재자료 부가정보 계절 (Code)-->
+            <VRMC_CODE_SEASON />
+            <!--소재자료 부가정보 날씨 (Code)-->
+            <VRMC_CODE_WEATHER />
+            <!--사용제한 사유-->
+            <USE_RESTRICTION_CLASSIFICATION />
+            <!--사용 유의사항-->
+            <USAGE_NOTICE />
+            <!--사용제한 제한일 (년월일시분초)-->
+            <RESTRICTION_DATE />
+            <!--사용제한 해제일 (년월일시분초)-->
+            <COPYRIGHT_EXPIRATION_DATE />
+            <!--제작자, <PRODUCER>개 N개 존재함.-->
+            <PRODUCER_LIST>
+                <PRODUCER>
+                    <!--사번-->
+                    <EMPLOYEE_ID />
+                    <KOR_NAME>김환주</KOR_NAME>
+                    <ENG_NAME />
+                    <!--역할 명-->
+                    <PERSON_CASTING_NAME />
+                    <!--방송인물 ID-->
+                    <BROADCAST_ID />
+                    <!--소속명(text)-->
+                    <SOSOK_NAME />
+                </PRODUCER>
+            </PRODUCER_LIST>
+            <!--스테프, <STAFF>개 N개 존재함.-->
+            <STAFF_LIST />
+            <!--출연자, <ACTOR>개 N개 존재함.-->
+            <ACTOR_LIST />
+        </SEGMENT_INFO>
+        <SEGMENT_INFO>
+            <SEGMENT_TITLE>전국검사장급 검사 21명, 승진과 전보인사</SEGMENT_TITLE>
+            <SEGMENT_START_TIME>00:34:32;00</SEGMENT_START_TIME>
+            <SEGMENT_END_TIME>00:36:04;00</SEGMENT_END_TIME>
+            <SEGMENT_DURATION>00:01:32</SEGMENT_DURATION>
+            <!--세그먼트/아이템 내용-->
+            <SEGMENT_CONTENTS>@검사장 21명 인사&#x0D; &#x0D; ⊙류근찬 앵커 :&#x0D; 전국 검사장급 검사 21명에 대한 승진과 전보인사가 오는 14일자로 단행됐습니다. 법무부는 이번 인사에 서열과 능력을 중시하는 한편 가능한 기존체제를 안정시키는데 유의했다고 인사 원칙을 밝혔습니다. &#x0D; 이준안 기자가 전해 드립니다. &#x0D; &#x0D; ⊙이준안 기자 :&#x0D; 오늘 인사에서 법무부 검사장 자리는 검찰내 핵심요직인 검찰국장에 최경원 검사장을 비롯해 기획실장에 윤동민 법무실장에 강신욱 보호국장에 김영철 교정국장에 김수장 검사장으로 각각 바꼈습니다. 대검찰청의 경우도 중수부장이 특수수사통인 박순용 검사장으로 바뀌고 총무부장에 이명재 형사부장에 박주환 강력부장에 송인준 송무부장에 임휘윤 검사장으로 대부분 바꼈습니다. 일선 지검장에는 수원의 유재성 전주의 신승남 춘천의 김경한 창원의 이태창 제주의 한광수 검사장이 각각 전보됐고 나머지 7군데는 유임됐습니다. &#x0D; 법무부는 이번 인사에 서열과 능력을 중시했다고 밝혔습니다. 또 대검 공안부장과 서울지검장 등 일부 검사장급 자리는 대선 등을 고려해 현 체제를 유지했다고 설명했습니다. 이와 함께 2년만에 6명의 검사가 검사장으로 승진했습니다. 사법연수원 부원장에 김각영 서울고검 차장에 한부환 대구에 제갈융우 부산에 이종찬 대전의 김승규 광주에 조준웅 검사가 승진 임명됐습니다. 법무부는 오는 25일자로 부장검사와 평검사 4백여명에 대한 후속인사를 할 예정입니다. &#x0D; KBS 뉴스, 이준안입니다. &#x0D; &#x0D; &#x0D;</SEGMENT_CONTENTS>
+            <!--색상 구분 : C=컬러 , B=흑백-->
+            <COLOR_GB>C</COLOR_GB>
+            <!--Audio 유무 : Y=유, N=무-->
+            <AUDIO_YN>Y</AUDIO_YN>
+            <!--촬영일시-->
+            <SHOOTING_DATE_TIME />
+            <!--촬영의도-->
+            <SHOOTING_INTENTION />
+            <!--촬영장소-->
+            <SHOOTING_PLACE />
+            <!--촬영자-->
+            <CAMERA_MAN />
+            <!--뉴스리포터명-->
+            <NEWS_REPORTER_NAME />
+            <!--국가코드-->
+            <ISO_COUNTRY_CODE />
+            <!--방송언어구분-->
+            <BROADCAST_LANGUAGE_KIND />
+            <!--영상 소재자료 표준 분류, 총류-->
+            <VRMC_CLASSIFICATION />
+            <!--소재자료 부가정보 촬영기법 (Code)-->
+            <VRMC_CODE_SHOOTING_TECHNIQUE />
+            <!--소재자료 부가정보 시간 (Code)-->
+            <VRMC_CODE_TIME />
+            <!--소재자료 부가정보 계절 (Code)-->
+            <VRMC_CODE_SEASON />
+            <!--소재자료 부가정보 날씨 (Code)-->
+            <VRMC_CODE_WEATHER />
+            <!--사용제한 사유-->
+            <USE_RESTRICTION_CLASSIFICATION />
+            <!--사용 유의사항-->
+            <USAGE_NOTICE />
+            <!--사용제한 제한일 (년월일시분초)-->
+            <RESTRICTION_DATE />
+            <!--사용제한 해제일 (년월일시분초)-->
+            <COPYRIGHT_EXPIRATION_DATE />
+            <!--제작자, <PRODUCER>개 N개 존재함.-->
+            <PRODUCER_LIST>
+                <PRODUCER>
+                    <!--사번-->
+                    <EMPLOYEE_ID />
+                    <KOR_NAME>이준안</KOR_NAME>
+                    <ENG_NAME />
+                    <!--역할 명-->
+                    <PERSON_CASTING_NAME />
+                    <!--방송인물 ID-->
+                    <BROADCAST_ID />
+                    <!--소속명(text)-->
+                    <SOSOK_NAME />
+                </PRODUCER>
+            </PRODUCER_LIST>
+            <!--스테프, <STAFF>개 N개 존재함.-->
+            <STAFF_LIST />
+            <!--출연자, <ACTOR>개 N개 존재함.-->
+            <ACTOR_LIST />
+        </SEGMENT_INFO>
+        <SEGMENT_INFO>
+            <SEGMENT_TITLE>건강하게 삽시다 ; 통풍의 원인과 예방법</SEGMENT_TITLE>
+            <SEGMENT_START_TIME>00:36:04;00</SEGMENT_START_TIME>
+            <SEGMENT_END_TIME>00:37:51;00</SEGMENT_END_TIME>
+            <SEGMENT_DURATION>00:01:47</SEGMENT_DURATION>
+            <!--세그먼트/아이템 내용-->
+            <SEGMENT_CONTENTS>@건강하게 삽시다&#x0D; 통풍 조심&#x0D; &#x0D; ⊙류근찬 앵커 :&#x0D; 한낮에는 아직도 햇?騈？따갑지만 새벽녘엔 제법 서늘한 바람이 부는 등 일교차가 심해지고 있습니다. 이럴때 바람만 불어도 견기기 힘들 정도로 아파오는 질환이 바로 통풍입니다. 통풍 이게 왜 생기고 또 어떻게 예방하는게 좋은지 이영진 기자가 오늘 전해 드리겠습니다. &#x0D; &#x0D; ⊙이영진 기자 :&#x0D; 팔 다리와 손발 마디마다 붓고 염증이 생기면 벌겋게 달아오르면서 견디기 힘든 통증을 가져오는 질환이 통풍입니다. 수명이 다한 세포의 부산물인 요산이 몸밖으로 제대로 배출이 안돼 요산 농도가 높아지면 통풍을 일으킵니다.&#x0D; &#x0D; ⊙통풍환자 :&#x0D; &quot;온 전신이 막 누워가지고 꼼짝도 못한 적이 있었습니다.&quot;&#x0D; &#x0D; &quot;찬바람나면 더 좀 심한 편이죠.&quot;&#x0D; &#x0D; ⊙이영진 기자 :&#x0D; 요산은 신장에서 처리 과정을 거쳐 소변으로 배출돼 정상의 경우 6-7㎎의 혈중 농도를 유지하지만 8㎎ 이상이 되면 위험수위가 됩니다. 특히 요산이 축적돼 뾰족한 결석이 생기면 신장 등 장기의 조직을 파괴시키고 혈관 질환을 일으키기도 합니다. 음식물이 요산의 농도에 미치는 영향은 미미하지만 통풍의 위험이 있는 사람에게 술은 급성 발작의 원인이 되고 동물의 내장이나 멸치 고등어 등도 요산의 농도를 높여 통풍환자가 피해야 할 음식입니다. 치료는 약물로 조절하는 것이 보통이지만 꾸준히 하는게 중요합니다. &#x0D; &#x0D; ⊙정성수 (한양대 병원 류마티스내과 의사) :&#x0D; 통풍도 고혈압이나 당뇨병처럼 만성질환이거든요 증상이 없다고 그래서 치료됐다고 생각하면 안됩니다. &#x0D; &#x0D; ⊙이영진 기자 :&#x0D; 남자에게 특히 많은 통풍은 고혈압과 비만 동맥경화와 당뇨 등 대사성 질환이 있는 사람을 더욱 괴롭히기 때문에 통풍을 막기 위해서는 이런 질환을 철저히 관리하는 것도 중요하다고 전문의들은 지적합니다. &#x0D; KBS 뉴스, 이영진입니다. &#x0D; &#x0D; &#x0D;</SEGMENT_CONTENTS>
+            <!--색상 구분 : C=컬러 , B=흑백-->
+            <COLOR_GB>C</COLOR_GB>
+            <!--Audio 유무 : Y=유, N=무-->
+            <AUDIO_YN>Y</AUDIO_YN>
+            <!--촬영일시-->
+            <SHOOTING_DATE_TIME />
+            <!--촬영의도-->
+            <SHOOTING_INTENTION />
+            <!--촬영장소-->
+            <SHOOTING_PLACE />
+            <!--촬영자-->
+            <CAMERA_MAN />
+            <!--뉴스리포터명-->
+            <NEWS_REPORTER_NAME />
+            <!--국가코드-->
+            <ISO_COUNTRY_CODE />
+            <!--방송언어구분-->
+            <BROADCAST_LANGUAGE_KIND />
+            <!--영상 소재자료 표준 분류, 총류-->
+            <VRMC_CLASSIFICATION />
+            <!--소재자료 부가정보 촬영기법 (Code)-->
+            <VRMC_CODE_SHOOTING_TECHNIQUE />
+            <!--소재자료 부가정보 시간 (Code)-->
+            <VRMC_CODE_TIME />
+            <!--소재자료 부가정보 계절 (Code)-->
+            <VRMC_CODE_SEASON />
+            <!--소재자료 부가정보 날씨 (Code)-->
+            <VRMC_CODE_WEATHER />
+            <!--사용제한 사유-->
+            <USE_RESTRICTION_CLASSIFICATION />
+            <!--사용 유의사항-->
+            <USAGE_NOTICE />
+            <!--사용제한 제한일 (년월일시분초)-->
+            <RESTRICTION_DATE />
+            <!--사용제한 해제일 (년월일시분초)-->
+            <COPYRIGHT_EXPIRATION_DATE />
+            <!--제작자, <PRODUCER>개 N개 존재함.-->
+            <PRODUCER_LIST>
+                <PRODUCER>
+                    <!--사번-->
+                    <EMPLOYEE_ID />
+                    <KOR_NAME>이영진</KOR_NAME>
+                    <ENG_NAME />
+                    <!--역할 명-->
+                    <PERSON_CASTING_NAME />
+                    <!--방송인물 ID-->
+                    <BROADCAST_ID />
+                    <!--소속명(text)-->
+                    <SOSOK_NAME />
+                </PRODUCER>
+            </PRODUCER_LIST>
+            <!--스테프, <STAFF>개 N개 존재함.-->
+            <STAFF_LIST />
+            <!--출연자, <ACTOR>개 N개 존재함.-->
+            <ACTOR_LIST />
+        </SEGMENT_INFO>
+        <SEGMENT_INFO>
+            <SEGMENT_TITLE>정원식 대한적십자사총재, 이산가족 면회소 설치 북한에 제의</SEGMENT_TITLE>
+            <SEGMENT_START_TIME>00:37:51;00</SEGMENT_START_TIME>
+            <SEGMENT_END_TIME>00:38:12;00</SEGMENT_END_TIME>
+            <SEGMENT_DURATION>00:00:20</SEGMENT_DURATION>
+            <!--세그먼트/아이템 내용-->
+            <SEGMENT_CONTENTS>@&quot;이산가족 면회소 설치 北에 제의&quot;&#x0D; &#x0D; ⊙황수경 앵커 :&#x0D; 정원식 대한적십자사 총재는 오늘 기자간담회를 통해서 남북한간에 화해와 평화 분위기를 조성하기 위해서는 천만 이산가족의 아픔을 덜어주는 일이 시급하다고 전제하고 판문점이나 철원 고성 등 휴전선 지역에 이산가족 면회소 설치를 곧 북한 적십자회에 제안하겠다고 말했습니다. &#x0D; &#x0D; &#x0D;</SEGMENT_CONTENTS>
+            <!--색상 구분 : C=컬러 , B=흑백-->
+            <COLOR_GB>C</COLOR_GB>
+            <!--Audio 유무 : Y=유, N=무-->
+            <AUDIO_YN>Y</AUDIO_YN>
+            <!--촬영일시-->
+            <SHOOTING_DATE_TIME />
+            <!--촬영의도-->
+            <SHOOTING_INTENTION />
+            <!--촬영장소-->
+            <SHOOTING_PLACE />
+            <!--촬영자-->
+            <CAMERA_MAN />
+            <!--뉴스리포터명-->
+            <NEWS_REPORTER_NAME />
+            <!--국가코드-->
+            <ISO_COUNTRY_CODE />
+            <!--방송언어구분-->
+            <BROADCAST_LANGUAGE_KIND />
+            <!--영상 소재자료 표준 분류, 총류-->
+            <VRMC_CLASSIFICATION />
+            <!--소재자료 부가정보 촬영기법 (Code)-->
+            <VRMC_CODE_SHOOTING_TECHNIQUE />
+            <!--소재자료 부가정보 시간 (Code)-->
+            <VRMC_CODE_TIME />
+            <!--소재자료 부가정보 계절 (Code)-->
+            <VRMC_CODE_SEASON />
+            <!--소재자료 부가정보 날씨 (Code)-->
+            <VRMC_CODE_WEATHER />
+            <!--사용제한 사유-->
+            <USE_RESTRICTION_CLASSIFICATION />
+            <!--사용 유의사항-->
+            <USAGE_NOTICE />
+            <!--사용제한 제한일 (년월일시분초)-->
+            <RESTRICTION_DATE />
+            <!--사용제한 해제일 (년월일시분초)-->
+            <COPYRIGHT_EXPIRATION_DATE />
+            <!--제작자, <PRODUCER>개 N개 존재함.-->
+            <PRODUCER_LIST />
+            <!--스테프, <STAFF>개 N개 존재함.-->
+            <STAFF_LIST />
+            <!--출연자, <ACTOR>개 N개 존재함.-->
+            <ACTOR_LIST />
+        </SEGMENT_INFO>
+        <SEGMENT_INFO>
+            <SEGMENT_TITLE>제7차 범청학련 통일축전, 제8차 범민족대회 원천봉쇄 결정</SEGMENT_TITLE>
+            <SEGMENT_START_TIME>00:38:12;00</SEGMENT_START_TIME>
+            <SEGMENT_END_TIME>00:38:49;00</SEGMENT_END_TIME>
+            <SEGMENT_DURATION>00:00:37</SEGMENT_DURATION>
+            <!--세그먼트/아이템 내용-->
+            <SEGMENT_CONTENTS>@범민족 대회 원천 봉쇄&#x0D; &#x0D; 대검찰청 공안부는 내일부터 사흘간 예정으로 열릴 제7차 범청학련 통일축전과 제8차 범민족대회를 원천 봉쇄하기로 했습니다. 검찰은 오늘 좌익사범 합동수사본부 7차 실무협의회에서 이같은 방침을 정하고 이 대회에 참가하는 한총련 중앙조직원은 전원 구속 수사하기로 했습니다. 한편 8.15 범민족대회 개최 보장을 요구하면서 어제 저녁 서울 조계사에서 농성에 들어간 한총련 소속 대학생 50여명은 현 정권이 8.15 범민족대회를 원천봉쇄하기로 한 것은 통일운동에 대한 명백한 탄압이라고 주장했습니다. &#x0D; &#x0D; &#x0D;</SEGMENT_CONTENTS>
+            <!--색상 구분 : C=컬러 , B=흑백-->
+            <COLOR_GB>C</COLOR_GB>
+            <!--Audio 유무 : Y=유, N=무-->
+            <AUDIO_YN>Y</AUDIO_YN>
+            <!--촬영일시-->
+            <SHOOTING_DATE_TIME />
+            <!--촬영의도-->
+            <SHOOTING_INTENTION />
+            <!--촬영장소-->
+            <SHOOTING_PLACE />
+            <!--촬영자-->
+            <CAMERA_MAN />
+            <!--뉴스리포터명-->
+            <NEWS_REPORTER_NAME />
+            <!--국가코드-->
+            <ISO_COUNTRY_CODE />
+            <!--방송언어구분-->
+            <BROADCAST_LANGUAGE_KIND />
+            <!--영상 소재자료 표준 분류, 총류-->
+            <VRMC_CLASSIFICATION />
+            <!--소재자료 부가정보 촬영기법 (Code)-->
+            <VRMC_CODE_SHOOTING_TECHNIQUE />
+            <!--소재자료 부가정보 시간 (Code)-->
+            <VRMC_CODE_TIME />
+            <!--소재자료 부가정보 계절 (Code)-->
+            <VRMC_CODE_SEASON />
+            <!--소재자료 부가정보 날씨 (Code)-->
+            <VRMC_CODE_WEATHER />
+            <!--사용제한 사유-->
+            <USE_RESTRICTION_CLASSIFICATION />
+            <!--사용 유의사항-->
+            <USAGE_NOTICE />
+            <!--사용제한 제한일 (년월일시분초)-->
+            <RESTRICTION_DATE />
+            <!--사용제한 해제일 (년월일시분초)-->
+            <COPYRIGHT_EXPIRATION_DATE />
+            <!--제작자, <PRODUCER>개 N개 존재함.-->
+            <PRODUCER_LIST />
+            <!--스테프, <STAFF>개 N개 존재함.-->
+            <STAFF_LIST />
+            <!--출연자, <ACTOR>개 N개 존재함.-->
+            <ACTOR_LIST />
+        </SEGMENT_INFO>
+        <SEGMENT_INFO>
+            <SEGMENT_TITLE>변조된 의무부문서 공개 혐의로 기소된 국민회의 권노갑의원, 무죄선고</SEGMENT_TITLE>
+            <SEGMENT_START_TIME>00:38:49;00</SEGMENT_START_TIME>
+            <SEGMENT_END_TIME>00:39:17;00</SEGMENT_END_TIME>
+            <SEGMENT_DURATION>00:00:27</SEGMENT_DURATION>
+            <!--세그먼트/아이템 내용-->
+            <SEGMENT_CONTENTS>@변조 문서 공개 권노갑 의원 &apos;무죄&apos;&#x0D; &#x0D; 지난 95년 변조된 외무부 문서를 언론에 공개한 혐의로 기소된 국민회의 권노갑 의원에게 무죄가 선고됐습니다. 서울 지방법원 형사1단독 임종윤 판사는 오늘 외무부 문서변조 사건과 관련해서 공문서 위조 행사 등의 혐의로 기소돼 징역 2년이 구형된 권노갑 피고인에게 무죄를 선고했습니다. 한편 검찰은 국민회의 권노갑 의원에 대해서 1심에서 무죄가 선고됨에 따라 곧 항소하기로 했습니다. &#x0D; &#x0D; &#x0D;</SEGMENT_CONTENTS>
+            <!--색상 구분 : C=컬러 , B=흑백-->
+            <COLOR_GB>C</COLOR_GB>
+            <!--Audio 유무 : Y=유, N=무-->
+            <AUDIO_YN>Y</AUDIO_YN>
+            <!--촬영일시-->
+            <SHOOTING_DATE_TIME />
+            <!--촬영의도-->
+            <SHOOTING_INTENTION />
+            <!--촬영장소-->
+            <SHOOTING_PLACE />
+            <!--촬영자-->
+            <CAMERA_MAN />
+            <!--뉴스리포터명-->
+            <NEWS_REPORTER_NAME />
+            <!--국가코드-->
+            <ISO_COUNTRY_CODE />
+            <!--방송언어구분-->
+            <BROADCAST_LANGUAGE_KIND />
+            <!--영상 소재자료 표준 분류, 총류-->
+            <VRMC_CLASSIFICATION />
+            <!--소재자료 부가정보 촬영기법 (Code)-->
+            <VRMC_CODE_SHOOTING_TECHNIQUE />
+            <!--소재자료 부가정보 시간 (Code)-->
+            <VRMC_CODE_TIME />
+            <!--소재자료 부가정보 계절 (Code)-->
+            <VRMC_CODE_SEASON />
+            <!--소재자료 부가정보 날씨 (Code)-->
+            <VRMC_CODE_WEATHER />
+            <!--사용제한 사유-->
+            <USE_RESTRICTION_CLASSIFICATION />
+            <!--사용 유의사항-->
+            <USAGE_NOTICE />
+            <!--사용제한 제한일 (년월일시분초)-->
+            <RESTRICTION_DATE />
+            <!--사용제한 해제일 (년월일시분초)-->
+            <COPYRIGHT_EXPIRATION_DATE />
+            <!--제작자, <PRODUCER>개 N개 존재함.-->
+            <PRODUCER_LIST />
+            <!--스테프, <STAFF>개 N개 존재함.-->
+            <STAFF_LIST />
+            <!--출연자, <ACTOR>개 N개 존재함.-->
+            <ACTOR_LIST />
+        </SEGMENT_INFO>
+        <SEGMENT_INFO>
+            <SEGMENT_TITLE>금품살포 혐의로 기소된 김화남의원, 벌금 천만원 선고</SEGMENT_TITLE>
+            <SEGMENT_START_TIME>00:39:17;00</SEGMENT_START_TIME>
+            <SEGMENT_END_TIME>00:39:42;00</SEGMENT_END_TIME>
+            <SEGMENT_DURATION>00:00:24</SEGMENT_DURATION>
+            <!--세그먼트/아이템 내용-->
+            <SEGMENT_CONTENTS>@금품살포 김화남 의원 벌금 천만원&#x0D; &#x0D; 대구 고등법원은 오늘 지난 15대 총선에서 금품을 돌린 혐의로 기소된 경북 의성지역구 무소속 김화남 의원에 대한 항소심 공판에서 벌금 천만원을 선고했습니다. 김 의원은 지난 15대 총선에서 7천3백만원 상당의 금품을 선거 구민들에게 뿌린 혐의로 구속 기소돼서 1심에서 징역 1년 6개월 집행유예 3년을 선고받고 대구 고등법원에 항소했습니다. &#x0D; &#x0D; &#x0D;</SEGMENT_CONTENTS>
+            <!--색상 구분 : C=컬러 , B=흑백-->
+            <COLOR_GB>C</COLOR_GB>
+            <!--Audio 유무 : Y=유, N=무-->
+            <AUDIO_YN>Y</AUDIO_YN>
+            <!--촬영일시-->
+            <SHOOTING_DATE_TIME />
+            <!--촬영의도-->
+            <SHOOTING_INTENTION />
+            <!--촬영장소-->
+            <SHOOTING_PLACE />
+            <!--촬영자-->
+            <CAMERA_MAN />
+            <!--뉴스리포터명-->
+            <NEWS_REPORTER_NAME />
+            <!--국가코드-->
+            <ISO_COUNTRY_CODE />
+            <!--방송언어구분-->
+            <BROADCAST_LANGUAGE_KIND />
+            <!--영상 소재자료 표준 분류, 총류-->
+            <VRMC_CLASSIFICATION />
+            <!--소재자료 부가정보 촬영기법 (Code)-->
+            <VRMC_CODE_SHOOTING_TECHNIQUE />
+            <!--소재자료 부가정보 시간 (Code)-->
+            <VRMC_CODE_TIME />
+            <!--소재자료 부가정보 계절 (Code)-->
+            <VRMC_CODE_SEASON />
+            <!--소재자료 부가정보 날씨 (Code)-->
+            <VRMC_CODE_WEATHER />
+            <!--사용제한 사유-->
+            <USE_RESTRICTION_CLASSIFICATION />
+            <!--사용 유의사항-->
+            <USAGE_NOTICE />
+            <!--사용제한 제한일 (년월일시분초)-->
+            <RESTRICTION_DATE />
+            <!--사용제한 해제일 (년월일시분초)-->
+            <COPYRIGHT_EXPIRATION_DATE />
+            <!--제작자, <PRODUCER>개 N개 존재함.-->
+            <PRODUCER_LIST />
+            <!--스테프, <STAFF>개 N개 존재함.-->
+            <STAFF_LIST />
+            <!--출연자, <ACTOR>개 N개 존재함.-->
+            <ACTOR_LIST />
+        </SEGMENT_INFO>
+        <SEGMENT_INFO>
+            <SEGMENT_TITLE>경기침체 장기화로 실업자수 55만명</SEGMENT_TITLE>
+            <SEGMENT_START_TIME>00:39:42;00</SEGMENT_START_TIME>
+            <SEGMENT_END_TIME>00:41:36;00</SEGMENT_END_TIME>
+            <SEGMENT_DURATION>00:01:54</SEGMENT_DURATION>
+            <!--세그먼트/아이템 내용-->
+            <SEGMENT_CONTENTS>@실업자 55만명&#x0D; &#x0D; 경기침체가 장기화 되고 이에 따른 기업들의 감량경영이 확산되면서 실업자의 수가 크게 늘고 있습니다. 통계청의 집계결과 올 2분기 실업자는 55만명으로 지난해 2분기 보다 13만7천명이 늘어난 것으로 나타났습니다. &#x0D; 신춘범 기자의 보도입니다. &#x0D; &#x0D; ⊙신춘범 기자 :&#x0D; 올초 3.4%까지 급등했던 실업율이 2분기에 2.5%로 낮아졌지만 지난해 보다는 여전히 크게 높은 수준을 유지하고 있습니다. 실업자는 55만명으로 지난해 2분기 보다 13만7천명이나 늘었습니다. 제조업의 취업자 수가 지난해 2분기 보다 20만9천명이나 줄었고 특히 중화학공업은 지난해 4분기 부터 지속적으로 일자리가 줄고 있습니다. &#x0D; &#x0D; ⊙이윤호 (LG 경제연구원장) :&#x0D; 연속 부도사태로 휴폐업 사태가 많이 일어나면서 실직자가 생긴 것이 가장 큰 이유가 되겠습니다. 특히 중화학 공업 부분은 과잉투자로 인해서 지금은 경영을 조정하는 그러한 국면에 있기 때문에 &#x0D; &#x0D; ⊙신춘범 기자 :&#x0D; 경영합리화를 위한 감원바람은 금융기관에서도 거세게 불고 있습니다. 5대 시중은행이 올 상반기에 천420명을 감축한데 이어 인원감축은 증권가 투신 등 전 금융권으로 확산되고 있습니다. &#x0D; &#x0D; ⊙김형곤 (증권업협회 회원부장) :&#x0D; 금년도 상반기중에 증권회사 임직원 수가 상당히 줄었습니다. 정확하게 말씀드리면 982명 줄어든 것으로 집계됐습니다. &#x0D; &#x0D; ⊙신춘범 기자 :&#x0D; 생산 현장에서는 정규직원을 줄이는 대신 계약직이나 일용직 근로자는 늘리는 고용의 기형 현상이 나타나고 있습니다. 4백여가지 각종 생활용품을 생산하는 구로공단의 한 중소기업은 150명의 생산인력을 모두 일용직 주부사원으로 대체 시켰습니다. &#x0D; &#x0D; ⊙김종덕 (코멕스 산업 상무) :&#x0D; 우선 채용이 용이하고 또 인당 농비가 경제적입니다. &#x0D; &#x0D; ⊙신춘범 기자 :&#x0D; 인원감축과 고용조정으로 올 하반기 대졸자 등의 취업문은 바늘구멍이 될 전망입니다. &#x0D; KBS 뉴스, 신춘범입니다. &#x0D; &#x0D; &#x0D;</SEGMENT_CONTENTS>
+            <!--색상 구분 : C=컬러 , B=흑백-->
+            <COLOR_GB>C</COLOR_GB>
+            <!--Audio 유무 : Y=유, N=무-->
+            <AUDIO_YN>Y</AUDIO_YN>
+            <!--촬영일시-->
+            <SHOOTING_DATE_TIME />
+            <!--촬영의도-->
+            <SHOOTING_INTENTION />
+            <!--촬영장소-->
+            <SHOOTING_PLACE />
+            <!--촬영자-->
+            <CAMERA_MAN />
+            <!--뉴스리포터명-->
+            <NEWS_REPORTER_NAME />
+            <!--국가코드-->
+            <ISO_COUNTRY_CODE />
+            <!--방송언어구분-->
+            <BROADCAST_LANGUAGE_KIND />
+            <!--영상 소재자료 표준 분류, 총류-->
+            <VRMC_CLASSIFICATION />
+            <!--소재자료 부가정보 촬영기법 (Code)-->
+            <VRMC_CODE_SHOOTING_TECHNIQUE />
+            <!--소재자료 부가정보 시간 (Code)-->
+            <VRMC_CODE_TIME />
+            <!--소재자료 부가정보 계절 (Code)-->
+            <VRMC_CODE_SEASON />
+            <!--소재자료 부가정보 날씨 (Code)-->
+            <VRMC_CODE_WEATHER />
+            <!--사용제한 사유-->
+            <USE_RESTRICTION_CLASSIFICATION />
+            <!--사용 유의사항-->
+            <USAGE_NOTICE />
+            <!--사용제한 제한일 (년월일시분초)-->
+            <RESTRICTION_DATE />
+            <!--사용제한 해제일 (년월일시분초)-->
+            <COPYRIGHT_EXPIRATION_DATE />
+            <!--제작자, <PRODUCER>개 N개 존재함.-->
+            <PRODUCER_LIST>
+                <PRODUCER>
+                    <!--사번-->
+                    <EMPLOYEE_ID />
+                    <KOR_NAME>신춘범</KOR_NAME>
+                    <ENG_NAME />
+                    <!--역할 명-->
+                    <PERSON_CASTING_NAME />
+                    <!--방송인물 ID-->
+                    <BROADCAST_ID />
+                    <!--소속명(text)-->
+                    <SOSOK_NAME />
+                </PRODUCER>
+            </PRODUCER_LIST>
+            <!--스테프, <STAFF>개 N개 존재함.-->
+            <STAFF_LIST />
+            <!--출연자, <ACTOR>개 N개 존재함.-->
+            <ACTOR_LIST />
+        </SEGMENT_INFO>
+        <SEGMENT_INFO>
+            <SEGMENT_TITLE>주식회사 세모 부도</SEGMENT_TITLE>
+            <SEGMENT_START_TIME>00:41:36;00</SEGMENT_START_TIME>
+            <SEGMENT_END_TIME>00:41:55;00</SEGMENT_END_TIME>
+            <SEGMENT_DURATION>00:00:18</SEGMENT_DURATION>
+            <!--세그먼트/아이템 내용-->
+            <SEGMENT_CONTENTS>주식회사 세모 부도&#x0D; &#x0D; ⊙황수경 앵커 :&#x0D; (주)세모가 경기은행 성남지점에 돌아온 12억원과 외환은행 서울 도화동 지점에 돌아온 4억7천만원 등 모두 16억7천만원의 만기어음을 막지 못해서 오늘 날짜로 최종 부도처리 됐습니다. 이에 따라 세모는 오늘 인천 지방법원에 법정관리를 신청했습니다. &#x0D; &#x0D; &#x0D;</SEGMENT_CONTENTS>
+            <!--색상 구분 : C=컬러 , B=흑백-->
+            <COLOR_GB>C</COLOR_GB>
+            <!--Audio 유무 : Y=유, N=무-->
+            <AUDIO_YN>Y</AUDIO_YN>
+            <!--촬영일시-->
+            <SHOOTING_DATE_TIME />
+            <!--촬영의도-->
+            <SHOOTING_INTENTION />
+            <!--촬영장소-->
+            <SHOOTING_PLACE />
+            <!--촬영자-->
+            <CAMERA_MAN />
+            <!--뉴스리포터명-->
+            <NEWS_REPORTER_NAME />
+            <!--국가코드-->
+            <ISO_COUNTRY_CODE />
+            <!--방송언어구분-->
+            <BROADCAST_LANGUAGE_KIND />
+            <!--영상 소재자료 표준 분류, 총류-->
+            <VRMC_CLASSIFICATION />
+            <!--소재자료 부가정보 촬영기법 (Code)-->
+            <VRMC_CODE_SHOOTING_TECHNIQUE />
+            <!--소재자료 부가정보 시간 (Code)-->
+            <VRMC_CODE_TIME />
+            <!--소재자료 부가정보 계절 (Code)-->
+            <VRMC_CODE_SEASON />
+            <!--소재자료 부가정보 날씨 (Code)-->
+            <VRMC_CODE_WEATHER />
+            <!--사용제한 사유-->
+            <USE_RESTRICTION_CLASSIFICATION />
+            <!--사용 유의사항-->
+            <USAGE_NOTICE />
+            <!--사용제한 제한일 (년월일시분초)-->
+            <RESTRICTION_DATE />
+            <!--사용제한 해제일 (년월일시분초)-->
+            <COPYRIGHT_EXPIRATION_DATE />
+            <!--제작자, <PRODUCER>개 N개 존재함.-->
+            <PRODUCER_LIST />
+            <!--스테프, <STAFF>개 N개 존재함.-->
+            <STAFF_LIST />
+            <!--출연자, <ACTOR>개 N개 존재함.-->
+            <ACTOR_LIST />
+        </SEGMENT_INFO>
+        <SEGMENT_INFO>
+            <SEGMENT_TITLE>은행들, 중소기업에 대출할때 &apos;꺾기&apos; 금지</SEGMENT_TITLE>
+            <SEGMENT_START_TIME>00:41:55;00</SEGMENT_START_TIME>
+            <SEGMENT_END_TIME>00:42:21;00</SEGMENT_END_TIME>
+            <SEGMENT_DURATION>00:00:25</SEGMENT_DURATION>
+            <!--세그먼트/아이템 내용-->
+            <SEGMENT_CONTENTS>@중소기업 대출때 꺾기 금지&#x0D; &#x0D; 은행들이 앞으로 중소기업에 대출을 할 경우 일정한 금액을 강제로 예금하도록 하는 구속성 예금인 꺾기를 할 수 없게 됩니다. 은행감독원은 오늘 제4단계 금리자유화로 기업의 신용이나 대출기간에 따라 대출금리를 차등 적용할 수 있는 제도적인 여건이 마련됐으므로 중소기업에 대한 후속성 예금을 오는 18일부터 금지할 방침이라고 밝혔습니다. &#x0D; &#x0D; &#x0D;</SEGMENT_CONTENTS>
+            <!--색상 구분 : C=컬러 , B=흑백-->
+            <COLOR_GB>C</COLOR_GB>
+            <!--Audio 유무 : Y=유, N=무-->
+            <AUDIO_YN>Y</AUDIO_YN>
+            <!--촬영일시-->
+            <SHOOTING_DATE_TIME />
+            <!--촬영의도-->
+            <SHOOTING_INTENTION />
+            <!--촬영장소-->
+            <SHOOTING_PLACE />
+            <!--촬영자-->
+            <CAMERA_MAN />
+            <!--뉴스리포터명-->
+            <NEWS_REPORTER_NAME />
+            <!--국가코드-->
+            <ISO_COUNTRY_CODE />
+            <!--방송언어구분-->
+            <BROADCAST_LANGUAGE_KIND />
+            <!--영상 소재자료 표준 분류, 총류-->
+            <VRMC_CLASSIFICATION />
+            <!--소재자료 부가정보 촬영기법 (Code)-->
+            <VRMC_CODE_SHOOTING_TECHNIQUE />
+            <!--소재자료 부가정보 시간 (Code)-->
+            <VRMC_CODE_TIME />
+            <!--소재자료 부가정보 계절 (Code)-->
+            <VRMC_CODE_SEASON />
+            <!--소재자료 부가정보 날씨 (Code)-->
+            <VRMC_CODE_WEATHER />
+            <!--사용제한 사유-->
+            <USE_RESTRICTION_CLASSIFICATION />
+            <!--사용 유의사항-->
+            <USAGE_NOTICE />
+            <!--사용제한 제한일 (년월일시분초)-->
+            <RESTRICTION_DATE />
+            <!--사용제한 해제일 (년월일시분초)-->
+            <COPYRIGHT_EXPIRATION_DATE />
+            <!--제작자, <PRODUCER>개 N개 존재함.-->
+            <PRODUCER_LIST />
+            <!--스테프, <STAFF>개 N개 존재함.-->
+            <STAFF_LIST />
+            <!--출연자, <ACTOR>개 N개 존재함.-->
+            <ACTOR_LIST />
+        </SEGMENT_INFO>
+        <SEGMENT_INFO>
+            <SEGMENT_TITLE>지하철 1호선열차, 고압선 합선으로 개봉역에서 운행중단</SEGMENT_TITLE>
+            <SEGMENT_START_TIME>00:42:21;00</SEGMENT_START_TIME>
+            <SEGMENT_END_TIME>00:42:37;00</SEGMENT_END_TIME>
+            <SEGMENT_DURATION>00:00:16</SEGMENT_DURATION>
+            <!--세그먼트/아이템 내용-->
+            <SEGMENT_CONTENTS>@지하철 1호선 개봉역서 운행중단&#x0D; &#x0D; 오늘 밤 9시쯤 서울 개봉동 지하철 1호선 개봉역에서 서울에서 인천으로 가던 철도청 소속 하행선 열차가 역 구내로 들어서는 순간 고압선이 합선되면서 멈춰서서 이 시각 현재 인천행 1호선 열차 운행이 전면 중단되고 있습니다. &#x0D; &#x0D; &#x0D;</SEGMENT_CONTENTS>
+            <!--색상 구분 : C=컬러 , B=흑백-->
+            <COLOR_GB>C</COLOR_GB>
+            <!--Audio 유무 : Y=유, N=무-->
+            <AUDIO_YN>Y</AUDIO_YN>
+            <!--촬영일시-->
+            <SHOOTING_DATE_TIME />
+            <!--촬영의도-->
+            <SHOOTING_INTENTION />
+            <!--촬영장소-->
+            <SHOOTING_PLACE />
+            <!--촬영자-->
+            <CAMERA_MAN />
+            <!--뉴스리포터명-->
+            <NEWS_REPORTER_NAME />
+            <!--국가코드-->
+            <ISO_COUNTRY_CODE />
+            <!--방송언어구분-->
+            <BROADCAST_LANGUAGE_KIND />
+            <!--영상 소재자료 표준 분류, 총류-->
+            <VRMC_CLASSIFICATION />
+            <!--소재자료 부가정보 촬영기법 (Code)-->
+            <VRMC_CODE_SHOOTING_TECHNIQUE />
+            <!--소재자료 부가정보 시간 (Code)-->
+            <VRMC_CODE_TIME />
+            <!--소재자료 부가정보 계절 (Code)-->
+            <VRMC_CODE_SEASON />
+            <!--소재자료 부가정보 날씨 (Code)-->
+            <VRMC_CODE_WEATHER />
+            <!--사용제한 사유-->
+            <USE_RESTRICTION_CLASSIFICATION />
+            <!--사용 유의사항-->
+            <USAGE_NOTICE />
+            <!--사용제한 제한일 (년월일시분초)-->
+            <RESTRICTION_DATE />
+            <!--사용제한 해제일 (년월일시분초)-->
+            <COPYRIGHT_EXPIRATION_DATE />
+            <!--제작자, <PRODUCER>개 N개 존재함.-->
+            <PRODUCER_LIST />
+            <!--스테프, <STAFF>개 N개 존재함.-->
+            <STAFF_LIST />
+            <!--출연자, <ACTOR>개 N개 존재함.-->
+            <ACTOR_LIST />
+        </SEGMENT_INFO>
+        <SEGMENT_INFO>
+            <SEGMENT_TITLE>농업진흥청, 세계최초로 형광누에 개발</SEGMENT_TITLE>
+            <SEGMENT_START_TIME>00:42:37;00</SEGMENT_START_TIME>
+            <SEGMENT_END_TIME>00:43:52;00</SEGMENT_END_TIME>
+            <SEGMENT_DURATION>00:01:14</SEGMENT_DURATION>
+            <!--세그먼트/아이템 내용-->
+            <SEGMENT_CONTENTS>@형광누에 최초개발&#x0D; &#x0D; 몸에서 초록색 빛이 나는 살아있는 형광누에가 세계에서 처음으로 우리 농업진흥청에 의해서 개발됐습니다. &#x0D; 나신하 기자가 취재했습니다.&#x0D; &#x0D; ⊙나신하 기자 :&#x0D; 밝은 곳에서 보면 여느 보통 누에와 다를바가 없습니다. 그러나 어두운 곳에서 자외선을 비추면 보통 누에와는 달리 초록빛을 선명하게 내뿜습니다. 농촌진흥청이 세계최초로 개발한 살아있는 초록색 형광누에입니다. 유전자 조작을 통해 세계에서 최초로 형광누에가 개발된 것입니다. 해파리에서 추출한 형광 단백질 유전자를 곤충 바이러스 게논과 재조합해 누에에게 주사하면 초록빛을 내뿜는 형광누에가 됩니다. 누에는 물질대사 기능이 사람과 유사하기 때문에 사람에게 유용한 물질을 합성할 수 있습니다. 형광누에의 개발기술을 활용할 경우 암을 비롯한 난치병의 치료와 무공해 농약 등에 필요한 천연 활성물질을 값싸게 대량 생산할 수 있습니다. &#x0D; &#x0D; ⊙진병래 (농촌진흥청 잠사 곤충연구소 박사) :&#x0D; 농업뿐만 아니라 의약 쪽으로도 유용 물질을 싼 가격에 대량생산할 수 있는 생체공장으로서 누에를 이용할 수 있으리라 기대 됩니다. &#x0D; &#x0D; ⊙나신하 기자 :&#x0D; 또 이 개발법을 각종 곤충에 적용하면 여러가지 빛을 내뿜는 애완용 곤충의 개발도 가능할 것으로 보입니다. &#x0D; KBS 뉴스, 나신하입니다. &#x0D; &#x0D; &#x0D;</SEGMENT_CONTENTS>
+            <!--색상 구분 : C=컬러 , B=흑백-->
+            <COLOR_GB>C</COLOR_GB>
+            <!--Audio 유무 : Y=유, N=무-->
+            <AUDIO_YN>Y</AUDIO_YN>
+            <!--촬영일시-->
+            <SHOOTING_DATE_TIME />
+            <!--촬영의도-->
+            <SHOOTING_INTENTION />
+            <!--촬영장소-->
+            <SHOOTING_PLACE />
+            <!--촬영자-->
+            <CAMERA_MAN />
+            <!--뉴스리포터명-->
+            <NEWS_REPORTER_NAME />
+            <!--국가코드-->
+            <ISO_COUNTRY_CODE />
+            <!--방송언어구분-->
+            <BROADCAST_LANGUAGE_KIND />
+            <!--영상 소재자료 표준 분류, 총류-->
+            <VRMC_CLASSIFICATION />
+            <!--소재자료 부가정보 촬영기법 (Code)-->
+            <VRMC_CODE_SHOOTING_TECHNIQUE />
+            <!--소재자료 부가정보 시간 (Code)-->
+            <VRMC_CODE_TIME />
+            <!--소재자료 부가정보 계절 (Code)-->
+            <VRMC_CODE_SEASON />
+            <!--소재자료 부가정보 날씨 (Code)-->
+            <VRMC_CODE_WEATHER />
+            <!--사용제한 사유-->
+            <USE_RESTRICTION_CLASSIFICATION />
+            <!--사용 유의사항-->
+            <USAGE_NOTICE />
+            <!--사용제한 제한일 (년월일시분초)-->
+            <RESTRICTION_DATE />
+            <!--사용제한 해제일 (년월일시분초)-->
+            <COPYRIGHT_EXPIRATION_DATE />
+            <!--제작자, <PRODUCER>개 N개 존재함.-->
+            <PRODUCER_LIST>
+                <PRODUCER>
+                    <!--사번-->
+                    <EMPLOYEE_ID />
+                    <KOR_NAME>나신하</KOR_NAME>
+                    <ENG_NAME />
+                    <!--역할 명-->
+                    <PERSON_CASTING_NAME />
+                    <!--방송인물 ID-->
+                    <BROADCAST_ID />
+                    <!--소속명(text)-->
+                    <SOSOK_NAME />
+                </PRODUCER>
+            </PRODUCER_LIST>
+            <!--스테프, <STAFF>개 N개 존재함.-->
+            <STAFF_LIST />
+            <!--출연자, <ACTOR>개 N개 존재함.-->
+            <ACTOR_LIST />
+        </SEGMENT_INFO>
+        <SEGMENT_INFO>
+            <SEGMENT_TITLE>사생활 침해하는 불법 심부름센터 업주 76명 구속</SEGMENT_TITLE>
+            <SEGMENT_START_TIME>00:43:52;00</SEGMENT_START_TIME>
+            <SEGMENT_END_TIME>00:45:26;00</SEGMENT_END_TIME>
+            <SEGMENT_DURATION>00:01:34</SEGMENT_DURATION>
+            <!--세그먼트/아이템 내용-->
+            <SEGMENT_CONTENTS>@76명 구속&#x0D; &#x0D; ⊙황수경 앵커 :&#x0D; 심부름센터의 불법영업 행위가 근절되지 않고 있습니다. 돈을 받고 다른 사람의 전화를 감청해 주거나 채무자를 미행 협박하는 등 개인의 사생활을 침해하는 일이 비일비재합니다. 이런 불법 심부름센터 업주들이 오늘 경찰에 무더기로 적발됐습니다. &#x0D; 박찬욱 기자가 취재했습니다.&#x0D; &#x0D; ⊙박찬욱 기자 :&#x0D; 가정고민과 민원해결 비밀 절대보장 일부 심부름센터가 생활정보지에 낸 광고 문구입니다. 업주들은 이런 광고를 보고 찾아온 사람들에게 각종 민원의 해결사 역할을 자처했습니다. 수고비는 수백만원에서 수천만원 이들은 이 돈을 받은 뒤에 채무자를 미행하거나 불륜현장의 나체사진을 촬영해 협박을 하는 파렴치한 행동도 서슴치 않았습니다. 이들은 심지어 무전기와 도청장치까지 동원했습니다. &#x0D; &#x0D; ⊙김현종 (부천 남부서 수사관) :&#x0D; 송신을 해가지고 다른 사람이 이거를 수신을 한 다음에 사진을 찍는다거나 아니면 그 사람 계속 미행하는 &#x0D; &#x0D; ⊙박찬욱 기자 :&#x0D; 또 빌려준 돈을 받기 위해 채무자의 집이나 사무실로 찾아가 협박을 하거나 폭력까지 행사했습니다. 일부 업주들은 경찰의 단속을 피하기 위해 사무실을 차리지 않고 전화로만 의뢰인과 접촉을 해온 것으로 드러났습니다. &#x0D; &#x0D; &quot;특정인이 의뢰를 하면 그 사무실에서 만나는게 아니고 제3의 장소에서 만나가지고 청탁을 받아가지고 주로 일을 처리하고 그렇게 하더라고요.&quot;&#x0D; &#x0D; 경찰은 오늘 이런 식으로 개인의 사생활을 침범해온 불법 심부름센터 업주 283명을 적발해 76명을 구속했습니다. &#x0D; KBS 뉴스, 박찬욱입니다. &#x0D; &#x0D; &#x0D;</SEGMENT_CONTENTS>
+            <!--색상 구분 : C=컬러 , B=흑백-->
+            <COLOR_GB>C</COLOR_GB>
+            <!--Audio 유무 : Y=유, N=무-->
+            <AUDIO_YN>Y</AUDIO_YN>
+            <!--촬영일시-->
+            <SHOOTING_DATE_TIME />
+            <!--촬영의도-->
+            <SHOOTING_INTENTION />
+            <!--촬영장소-->
+            <SHOOTING_PLACE />
+            <!--촬영자-->
+            <CAMERA_MAN />
+            <!--뉴스리포터명-->
+            <NEWS_REPORTER_NAME />
+            <!--국가코드-->
+            <ISO_COUNTRY_CODE />
+            <!--방송언어구분-->
+            <BROADCAST_LANGUAGE_KIND />
+            <!--영상 소재자료 표준 분류, 총류-->
+            <VRMC_CLASSIFICATION />
+            <!--소재자료 부가정보 촬영기법 (Code)-->
+            <VRMC_CODE_SHOOTING_TECHNIQUE />
+            <!--소재자료 부가정보 시간 (Code)-->
+            <VRMC_CODE_TIME />
+            <!--소재자료 부가정보 계절 (Code)-->
+            <VRMC_CODE_SEASON />
+            <!--소재자료 부가정보 날씨 (Code)-->
+            <VRMC_CODE_WEATHER />
+            <!--사용제한 사유-->
+            <USE_RESTRICTION_CLASSIFICATION />
+            <!--사용 유의사항-->
+            <USAGE_NOTICE />
+            <!--사용제한 제한일 (년월일시분초)-->
+            <RESTRICTION_DATE />
+            <!--사용제한 해제일 (년월일시분초)-->
+            <COPYRIGHT_EXPIRATION_DATE />
+            <!--제작자, <PRODUCER>개 N개 존재함.-->
+            <PRODUCER_LIST>
+                <PRODUCER>
+                    <!--사번-->
+                    <EMPLOYEE_ID />
+                    <KOR_NAME>박찬욱</KOR_NAME>
+                    <ENG_NAME />
+                    <!--역할 명-->
+                    <PERSON_CASTING_NAME />
+                    <!--방송인물 ID-->
+                    <BROADCAST_ID />
+                    <!--소속명(text)-->
+                    <SOSOK_NAME />
+                </PRODUCER>
+            </PRODUCER_LIST>
+            <!--스테프, <STAFF>개 N개 존재함.-->
+            <STAFF_LIST />
+            <!--출연자, <ACTOR>개 N개 존재함.-->
+            <ACTOR_LIST />
+        </SEGMENT_INFO>
+        <SEGMENT_INFO>
+            <SEGMENT_TITLE>아시아3국 어린이 바둑잔치 개최</SEGMENT_TITLE>
+            <SEGMENT_START_TIME>00:45:26;00</SEGMENT_START_TIME>
+            <SEGMENT_END_TIME>00:45:43;00</SEGMENT_END_TIME>
+            <SEGMENT_DURATION>00:00:17</SEGMENT_DURATION>
+            <!--세그먼트/아이템 내용-->
+            <SEGMENT_CONTENTS>@아시아 3국 어린이 바둑잔치&#x0D; &#x0D; ⊙황수경 앵커 :&#x0D; KBS가 방송70년 KBS50년을 맞아서 일본의 NHK 중국의 CCTV와 함께 마련한 아시아 3국 어린이 바둑잔치가 세 나라의 어린이 기사 6명과 국내 프로기사들이 참석한 가운데 오늘 KBS 공개홀에서 열렸습니다. &#x0D; &#x0D; &#x0D;</SEGMENT_CONTENTS>
+            <!--색상 구분 : C=컬러 , B=흑백-->
+            <COLOR_GB>C</COLOR_GB>
+            <!--Audio 유무 : Y=유, N=무-->
+            <AUDIO_YN>Y</AUDIO_YN>
+            <!--촬영일시-->
+            <SHOOTING_DATE_TIME />
+            <!--촬영의도-->
+            <SHOOTING_INTENTION />
+            <!--촬영장소-->
+            <SHOOTING_PLACE />
+            <!--촬영자-->
+            <CAMERA_MAN />
+            <!--뉴스리포터명-->
+            <NEWS_REPORTER_NAME />
+            <!--국가코드-->
+            <ISO_COUNTRY_CODE />
+            <!--방송언어구분-->
+            <BROADCAST_LANGUAGE_KIND />
+            <!--영상 소재자료 표준 분류, 총류-->
+            <VRMC_CLASSIFICATION />
+            <!--소재자료 부가정보 촬영기법 (Code)-->
+            <VRMC_CODE_SHOOTING_TECHNIQUE />
+            <!--소재자료 부가정보 시간 (Code)-->
+            <VRMC_CODE_TIME />
+            <!--소재자료 부가정보 계절 (Code)-->
+            <VRMC_CODE_SEASON />
+            <!--소재자료 부가정보 날씨 (Code)-->
+            <VRMC_CODE_WEATHER />
+            <!--사용제한 사유-->
+            <USE_RESTRICTION_CLASSIFICATION />
+            <!--사용 유의사항-->
+            <USAGE_NOTICE />
+            <!--사용제한 제한일 (년월일시분초)-->
+            <RESTRICTION_DATE />
+            <!--사용제한 해제일 (년월일시분초)-->
+            <COPYRIGHT_EXPIRATION_DATE />
+            <!--제작자, <PRODUCER>개 N개 존재함.-->
+            <PRODUCER_LIST />
+            <!--스테프, <STAFF>개 N개 존재함.-->
+            <STAFF_LIST />
+            <!--출연자, <ACTOR>개 N개 존재함.-->
+            <ACTOR_LIST />
+        </SEGMENT_INFO>
+        <SEGMENT_INFO>
+            <SEGMENT_TITLE>제2회 삼성화재배 세계 바둑오픈선수권대회 본선 개막식</SEGMENT_TITLE>
+            <SEGMENT_START_TIME>00:45:43;00</SEGMENT_START_TIME>
+            <SEGMENT_END_TIME>00:46:06;00</SEGMENT_END_TIME>
+            <SEGMENT_DURATION>00:00:22</SEGMENT_DURATION>
+            <!--세그먼트/아이템 내용-->
+            <SEGMENT_CONTENTS>@삼성화재배 세계 바둑대회 개막&#x0D; &#x0D; 제2회 삼성화재배 세계 바둑 오픈선수권대회 본선 개막식이 지난해 대회우승자인 유다 9단과 준우승자 유창혁 9단 등 바둑계 인사 3백여명이 참석한 가운데 오늘 저녁 신라호텔에서 열렸습니다. 이 대회는 내일 32강전을 시작으로 오는 15일 16강전이 치러진뒤 8강전은 다음달 북경에서 계속됩니다. &#x0D; &#x0D; &#x0D;</SEGMENT_CONTENTS>
+            <!--색상 구분 : C=컬러 , B=흑백-->
+            <COLOR_GB>C</COLOR_GB>
+            <!--Audio 유무 : Y=유, N=무-->
+            <AUDIO_YN>Y</AUDIO_YN>
+            <!--촬영일시-->
+            <SHOOTING_DATE_TIME />
+            <!--촬영의도-->
+            <SHOOTING_INTENTION />
+            <!--촬영장소-->
+            <SHOOTING_PLACE />
+            <!--촬영자-->
+            <CAMERA_MAN />
+            <!--뉴스리포터명-->
+            <NEWS_REPORTER_NAME />
+            <!--국가코드-->
+            <ISO_COUNTRY_CODE />
+            <!--방송언어구분-->
+            <BROADCAST_LANGUAGE_KIND />
+            <!--영상 소재자료 표준 분류, 총류-->
+            <VRMC_CLASSIFICATION />
+            <!--소재자료 부가정보 촬영기법 (Code)-->
+            <VRMC_CODE_SHOOTING_TECHNIQUE />
+            <!--소재자료 부가정보 시간 (Code)-->
+            <VRMC_CODE_TIME />
+            <!--소재자료 부가정보 계절 (Code)-->
+            <VRMC_CODE_SEASON />
+            <!--소재자료 부가정보 날씨 (Code)-->
+            <VRMC_CODE_WEATHER />
+            <!--사용제한 사유-->
+            <USE_RESTRICTION_CLASSIFICATION />
+            <!--사용 유의사항-->
+            <USAGE_NOTICE />
+            <!--사용제한 제한일 (년월일시분초)-->
+            <RESTRICTION_DATE />
+            <!--사용제한 해제일 (년월일시분초)-->
+            <COPYRIGHT_EXPIRATION_DATE />
+            <!--제작자, <PRODUCER>개 N개 존재함.-->
+            <PRODUCER_LIST />
+            <!--스테프, <STAFF>개 N개 존재함.-->
+            <STAFF_LIST />
+            <!--출연자, <ACTOR>개 N개 존재함.-->
+            <ACTOR_LIST />
+        </SEGMENT_INFO>
+        <SEGMENT_INFO>
+            <SEGMENT_TITLE>영상취재 ; 초가을이 성큼?</SEGMENT_TITLE>
+            <SEGMENT_START_TIME>00:46:06;00</SEGMENT_START_TIME>
+            <SEGMENT_END_TIME>00:46:26;00</SEGMENT_END_TIME>
+            <SEGMENT_DURATION>00:00:19</SEGMENT_DURATION>
+            <!--세그먼트/아이템 내용-->
+            <SEGMENT_CONTENTS>@영상취재&#x0D; &lt; 초가을이 성큼? &gt;&#x0D; &#x0D; &#x0D;</SEGMENT_CONTENTS>
+            <!--색상 구분 : C=컬러 , B=흑백-->
+            <COLOR_GB>C</COLOR_GB>
+            <!--Audio 유무 : Y=유, N=무-->
+            <AUDIO_YN>Y</AUDIO_YN>
+            <!--촬영일시-->
+            <SHOOTING_DATE_TIME />
+            <!--촬영의도-->
+            <SHOOTING_INTENTION />
+            <!--촬영장소-->
+            <SHOOTING_PLACE />
+            <!--촬영자-->
+            <CAMERA_MAN />
+            <!--뉴스리포터명-->
+            <NEWS_REPORTER_NAME />
+            <!--국가코드-->
+            <ISO_COUNTRY_CODE />
+            <!--방송언어구분-->
+            <BROADCAST_LANGUAGE_KIND />
+            <!--영상 소재자료 표준 분류, 총류-->
+            <VRMC_CLASSIFICATION />
+            <!--소재자료 부가정보 촬영기법 (Code)-->
+            <VRMC_CODE_SHOOTING_TECHNIQUE />
+            <!--소재자료 부가정보 시간 (Code)-->
+            <VRMC_CODE_TIME />
+            <!--소재자료 부가정보 계절 (Code)-->
+            <VRMC_CODE_SEASON />
+            <!--소재자료 부가정보 날씨 (Code)-->
+            <VRMC_CODE_WEATHER />
+            <!--사용제한 사유-->
+            <USE_RESTRICTION_CLASSIFICATION />
+            <!--사용 유의사항-->
+            <USAGE_NOTICE />
+            <!--사용제한 제한일 (년월일시분초)-->
+            <RESTRICTION_DATE />
+            <!--사용제한 해제일 (년월일시분초)-->
+            <COPYRIGHT_EXPIRATION_DATE />
+            <!--제작자, <PRODUCER>개 N개 존재함.-->
+            <PRODUCER_LIST />
+            <!--스테프, <STAFF>개 N개 존재함.-->
+            <STAFF_LIST />
+            <!--출연자, <ACTOR>개 N개 존재함.-->
+            <ACTOR_LIST />
+        </SEGMENT_INFO>
+    </SEGMENT_INFO_LIST>
+</KBS_Exchange_Metadata>

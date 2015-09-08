@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml-bindings xmlns="http://www.eclipse.org/eclipselink/xsds/persistence/oxm">
+	<java-types>
+		<java-type name="kr.co.d2net.dto.xml.meta.Properties">
+			<java-attributes>
+				<xml-any-element java-attribute="eleValue" xml-mixed="true"/>
+			</java-attributes>
+		</java-type>
+   </java-types>
+</xml-bindings>

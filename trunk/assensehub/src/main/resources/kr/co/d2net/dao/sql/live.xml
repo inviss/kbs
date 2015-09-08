@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="Live">
+    
+    <typeAlias alias="Live" type="kr.co.d2net.dto.LiveTbl"/>
+    
+    <resultMap id="LiveMap" class="Live">
+    	<result property="programCode" column="PROGRAM_CODE" />
+		<result property="recyn" column="RECYN" />
+		<result property="bgnTime" column="BGN_TIME" />
+		<result property="endTime" column="END_TIME" />
+		<result property="regrid" column="REGRID" />
+		<result property="regDt" column="REG_DT" />
+		<result property="modrid" column="MODRID" />
+		<result property="modDt" column="MOD_DT" />
+		<result property="rerunCode" column="RERUN_CODE" />
+    </resultMap>
+    
+    <select id="findLive" resultMap="LiveMap" parameterClass="map">
+	     SELECT  
+             *
+         FROM LIVE_TBL
+         <dynamic prepend="WHERE">
+
+         </dynamic>
+    </select>
+    
+    <select id="getLive" resultClass="Live" parameterClass="map">
+		SELECT  
+			PROGRAM_CODE   as programCode,  
+			RECYN    as recyn,  
+			BGN_TIME as bgnTime,
+			END_TIME as endTime,
+			REGRID   as regrid, 
+			REG_DT   as regDt,  
+			MODRID   as modrid, 
+			MOD_DT   as modDt  
+		FROM LIVE_TBL
+		<dynamic prepend="WHERE">
+			PROGRAM_CODE=#programCode# and RERUN_CODE=#rerunCode#
+		</dynamic>
+		
+    </select>
+    
+    <insert id="insertLive" parameterClass="Live">
+		INSERT INTO LIVE_TBL (
+			PROGRAM_CODE,RECYN,BGN_TIME,END_TIME,REGRID,REG_DT,MODRID,MOD_DT,RERUN_CODE
+		) VALUES (
+			#programCode#,#recyn#,#bgnTime#,#endTime#,#regrid#,#regDt#,#modrid#,#modDt#,#rerunCode#
+		)
+	</insert>
+	
+	<update id="updateLive" parameterClass="Live">
+		UPDATE LIVE_TBL
+		SET 
+			RECYN = #recyn#, 
+			BGN_TIME = #bgnTime#, 
+			END_TIME = #endTime#, 
+			REGRID = #regrid#, 
+			REG_DT = #regDt#, 
+			MODRID = #modrid#, 
+			MOD_DT = #modDt#
+		WHERE 
+			PROGRAM_CODE=#programCode#
+	</update>
+	
+	<delete id="deleteLive" parameterClass="Live">
+		DELETE FROM LIVE_TBL WHERE PROGRAM_CODE = #programCode# and RERUN_CODE = #rerunCode#
+	</delete>
+    
+ </sqlMap>

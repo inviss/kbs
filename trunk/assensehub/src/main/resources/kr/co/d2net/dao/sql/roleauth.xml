@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="RoleAuth">
+    
+    <typeAlias alias="RoleAuth" type="kr.co.d2net.dto.RoleAuthTbl"/>
+    
+    <resultMap id="RoleAuthMap" class="RoleAuth">
+    	<result property="menuId" column="MENU_ID" />
+		<result property="controlGubun" column="CONTROL_GUBUN" />
+		<result property="authId" column="AUTH_ID" />
+    </resultMap>
+    
+    <select id="findRoleAuth" resultMap="RoleAuthMap" parameterClass="map">
+	     SELECT  
+             *
+         FROM ROLE_AUTH_TBL
+         <dynamic prepend="WHERE">
+			<isNotEmpty property="authId" prepend="AND">
+				AUTH_ID = #authId# ORDER BY MENU_ID ASC
+			</isNotEmpty>
+         </dynamic>
+    </select>
+    
+    <select id="getRoleAuth" resultClass="RoleAuth" parameterClass="map">
+		SELECT  
+			MENU_ID       as menuId,             
+			CONTROL_GUBUN as controlGubun,
+			AUTH_ID       as authId 
+		FROM ROLE_AUTH_TBL
+		<dynamic prepend="WHERE">
+			<isNotEmpty property="authId" prepend="AND">
+				AUTH_ID = #authId#
+			</isNotEmpty>
+			<isNotEmpty property="menuId" prepend="AND">
+				MENU_ID = #menuId#
+			</isNotEmpty>
+		</dynamic>
+    </select>
+    
+    <select id="getUserAuth" resultClass="java.lang.String" parameterClass="map">
+		SELECT CONTROL_GUBUN 
+		FROM USER_AUTH_TBL A
+			INNER JOIN ROLE_AUTH_TBL B ON A.AUTH_ID = B.AUTH_ID
+		<dynamic prepend="WHERE">
+			<isNotEmpty property="userId" prepend="AND">
+				USER_ID =#userId#  
+			</isNotEmpty>
+			<isNotEmpty property="menuId" prepend="AND">
+				MENU_ID = #menuId#
+			</isNotEmpty>
+		</dynamic>
+    </select>
+    
+    <insert id="insertRoleAuth" parameterClass="RoleAuth">
+		INSERT INTO ROLE_AUTH_TBL (
+			MENU_ID,CONTROL_GUBUN,AUTH_ID
+		) VALUES (
+			#menuId#,#controlGubun#,#authId#
+		)
+	</insert>
+	
+	<delete id="deleteRoleAuth" parameterClass="RoleAuth">
+		DELETE FROM ROLE_AUTH_TBL 
+		<dynamic prepend="WHERE">
+	    	<isNotNull property="authId" prepend="AND">
+	    		AUTH_ID=#authId#
+	    	</isNotNull>
+    	</dynamic>
+	</delete>
+	
+	<delete id="deleteRoleAuth2" parameterClass="RoleAuth">
+		DELETE FROM ROLE_AUTH_TBL CONTROL_GUBUN=''
+		<dynamic prepend="WHERE">
+	    	
+    	</dynamic>
+	</delete>
+    
+ </sqlMap>

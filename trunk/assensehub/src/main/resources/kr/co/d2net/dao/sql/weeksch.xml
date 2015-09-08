@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="WeekSch">
+    
+    <typeAlias alias="WeekSch" type="kr.co.d2net.dto.WeekSchTbl"/>
+    
+    <resultMap id="WeekSchMap" class="WeekSch">
+		<result property="aspectRatio" column="ASPECT_RATIO" />
+		<result property="aspectRatioCode" column="ASPECT_RATIO_CODE" />
+		<result property="channelCode" column="CHANNEL_CODE" />
+		<result property="channelName" column="CHANNEL_NAME" />
+		<result property="created" column="CREATED" />
+		<result property="mediaCode" column="MEDIA_CODE" />
+		<result property="onairDay" column="ONAIR_DAY" />
+		<result property="onairDayCode" column="ONAIR_DAY_CODE" />
+		<result property="parentProgramScheduleUnique" column="PARENT_PROGRAM_SCHEDULE_UNIQUE" />
+		<result property="partTotalCount" column="PART_TOTAL_COUNT" />
+		<result property="productionType" column="PRODUCTION_TYPE" />
+		<result property="productionTypeCode" column="PRODUCTION_TYPE_CODE" />
+		<result property="programId" column="PROGRAM_ID" />
+		<result property="programClassification" column="PROGRAM_CLASSIFICATION" />
+		<result property="programClassificationCode" column="PROGRAM_CLASSIFICATION_CODE" />
+		<result property="programCode" column="PROGRAM_CODE" />
+		<result property="programGenre" column="PROGRAM_GENRE" />
+		<result property="programGenreCode" column="PROGRAM_GENRE_CODE" />
+		<result property="programPlannedDate" column="PROGRAM_PLANNED_DATE" />
+		<result property="programPlannedDurationMinut" column="PROGRAM_PLANNED_DURATION_MINUT" />
+		<result property="programPlannedEndTime" column="PROGRAM_PLANNED_END_TIME" />
+		<result property="programPlannedStartTime" column="PROGRAM_PLANNED_START_TIME" />
+		<result property="programSequenceNumber" column="PROGRAM_SEQUENCE_NUMBER" />
+		<result property="programTitle" column="PROGRAM_TITLE" />
+		<result property="registrationDateTime" column="REGISTRATION_DATE_TIME" />
+		<result property="rerunClassification" column="RERUN_CLASSIFICATION" />
+		<result property="rerunClassificationCode" column="RERUN_CLASSIFICATION_CODE" />
+		<result property="sdConvertingAspectRatio" column="SD_CONVERTING_ASPECT_RATIO" />
+		<result property="sdConvertingAspectRatioCo" column="SD_CONVERTING_ASPECT_RATIO_CO" />
+		<result property="mediaName" column="MEDIA_NAME" />
+		<result property="productionVideoQuality" column="PRODUCTION_VIDEO_QUALITY" />
+		<result property="groupCode" column="GROUP_CODE" />
+		<result property="programmingLocalStationCode" column="PROGRAMMING_LOCAL_STATION_CODE" /> 
+		
+		<result property="recyn" column="RECYN" />
+		<result property="audioModeMain" column="AUDIO_MODE_MAIN" />
+    </resultMap>
+    
+    <select id="findWeekSch" resultMap="WeekSchMap" parameterClass="map">
+	     SELECT  
+             	*
+         FROM WEEK_SCH_TBL WST
+         LEFT OUTER JOIN LIVE_TBL LIVE ON WST.PROGRAM_CODE = LIVE.PROGRAM_CODE and WST.RERUN_CLASSIFICATION_CODE = LIVE.RERUN_CODE
+         <dynamic prepend="WHERE">
+			<isNotEmpty property="sdate" prepend="AND" >
+				WST.PROGRAM_PLANNED_DATE &gt;= #sdate# 
+			</isNotEmpty>
+			<isNotEmpty property="edate" prepend="AND">
+				WST.PROGRAM_PLANNED_DATE &lt;= #edate# 
+			</isNotEmpty>
+			<isNotEmpty property="channelCode" prepend="AND">
+				WST.CHANNEL_CODE = #channelCode#
+			</isNotEmpty>
+			<isNotEmpty property="programId" prepend="AND">
+				PROGRAM_ID=#programId#
+			</isNotEmpty>
+			<isNotEmpty property="localCode" prepend="AND">
+				WST.PROGRAMMING_LOCAL_STATION_CODE =#localCode#
+			</isNotEmpty>
+         </dynamic>
+         ORDER BY WST.PROGRAM_PLANNED_START_TIME ASC
+    </select>
+    
+    <select id="getWeekSch" resultClass="WeekSch" parameterClass="map">
+		SELECT  
+			ASPECT_RATIO                   as aspectRatio,                
+			ASPECT_RATIO_CODE              as aspectRatioCode,            
+			CHANNEL_CODE                   as channelCode,                
+			CHANNEL_NAME                   as channelName,                
+			CREATED                        as created,                    
+			MEDIA_CODE                     as mediaCode,                  
+			ONAIR_DAY                      as onairDay,                   
+			ONAIR_DAY_CODE                 as onairDayCode,               
+			PARENT_PROGRAM_SCHEDULE_UNIQUE as parentProgramScheduleUnique,
+			PART_TOTAL_COUNT               as partTotalCount,              
+			PRODUCTION_TYPE                as productionType,             
+			PRODUCTION_TYPE_CODE           as productionTypeCode,         
+			PROGRAM_ID                     as programId,                  
+			PROGRAM_CLASSIFICATION         as programClassification,      
+			PROGRAM_CLASSIFICATION_CODE    as programClassificationCode,  
+			PROGRAM_CODE                   as programCode,                
+			PROGRAM_GENRE                  as programGenre,               
+			PROGRAM_GENRE_CODE             as programGenreCode,           
+			PROGRAM_PLANNED_DATE           as programPlannedDate,         
+			PROGRAM_PLANNED_DURATION_MINUT as programPlannedDurationMinut,
+			PROGRAM_PLANNED_END_TIME       as programPlannedEndTime,      
+			PROGRAM_PLANNED_START_TIME     as programPlannedStartTime,    
+			PROGRAM_SEQUENCE_NUMBER        as programSequenceNumber,      
+			PROGRAM_TITLE                  as programTitle,               
+			REGISTRATION_DATE_TIME         as registrationDateTime,       
+			RERUN_CLASSIFICATION           as rerunClassification,        
+			RERUN_CLASSIFICATION_CODE      as rerunClassificationCode,    
+			SD_CONVERTING_ASPECT_RATIO     as sdConvertingAspectRatio,    
+			SD_CONVERTING_ASPECT_RATIO_CO  as sdConvertingAspectRatioCo, 
+			MEDIA_NAME                     as mediaName  ,
+			GROUP_CODE                     as groupCode  ,
+			PRODUCTION_VIDEO_QUALITY	as production_video_quality,
+			AUDIO_MODE_MAIN				as audioModeMain
+		FROM WEEK_SCH_TBL
+		<dynamic prepend="WHERE">
+			<isNotEmpty property="programPlannedDate" prepend="AND">
+				PROGRAM_PLANNED_DATE=#programPlannedDate#
+				</isNotEmpty>
+			<isNotEmpty property="channelCode" prepend="AND">
+				CHANNEL_CODE=#channelCode#
+				</isNotEmpty>
+			<isNotEmpty property="programPlannedStartTime" prepend="AND">
+				PROGRAM_PLANNED_START_TIME=#programPlannedStartTime#
+			</isNotEmpty>
+			<isNotEmpty property="programId" prepend="AND">
+				PROGRAM_ID=#programId#
+			</isNotEmpty>
+		</dynamic>
+    </select>
+    
+    <insert id="insertWeekSch" parameterClass="WeekSch">
+    	<selectKey keyProperty="seq" resultClass="java.lang.Long">
+      		select WEEK_SCH_SEQ.NEXTVAL from dual
+     	</selectKey>
+		INSERT INTO WEEK_SCH_TBL (
+			 SEQ,CHANNEL_CODE,CHANNEL_NAME,PROGRAM_PLANNED_DATE,PROGRAM_PLANNED_START_TIME,ASPECT_RATIO,ASPECT_RATIO_CODE
+			,MEDIA_CODE,ONAIR_DAY,ONAIR_DAY_CODE,PARENT_PROGRAM_SCHEDULE_UNIQUE,PART_TOTAL_COUNT
+			,PRODUCTION_TYPE,PRODUCTION_TYPE_CODE,PROGRAM_ID,PROGRAM_CLASSIFICATION,PROGRAM_CLASSIFICATION_CODE
+			,PROGRAM_CODE,PROGRAM_GENRE,PROGRAM_GENRE_CODE,CREATED    ,PROGRAM_PLANNED_DURATION_MINUT
+			,PROGRAM_PLANNED_END_TIME,PROGRAM_SEQUENCE_NUMBER,PROGRAM_TITLE,REGISTRATION_DATE_TIME
+			,RERUN_CLASSIFICATION,RERUN_CLASSIFICATION_CODE,SD_CONVERTING_ASPECT_RATIO,SD_CONVERTING_ASPECT_RATIO_CO,MEDIA_NAME
+			,PRODUCTION_VIDEO_QUALITY,GROUP_CODE,PROGRAMMING_LOCAL_STATION_CODE,AUDIO_MODE_MAIN
+		) VALUES (
+			 #seq#,#channelCode#,#channelName#,#programPlannedDate#,#programPlannedStartTime#,#aspectRatio#,#aspectRatioCode#
+			,#mediaCode#,#onairDay#,#onairDayCode#,#parentProgramScheduleUnique#,#partTotalCount#
+			,#productionType#,#productionTypeCode#,#programIdKey#,#programClassification#,#programClassificationCode#
+			,#programCode#,#programGenre#,#programGenreCode#,#created#,#programPlannedDurationMinut#
+			,#programPlannedEndTime#,#programSequenceNumber#,#programTitle#,#registrationDateTime#
+			,#rerunClassification#,#rerunClassificationCode#,#sdConvertingAspectRatio#,#sdConvertingAspectRatioCo#,#mediaName#
+			,#productionVideoQuality#,#groupCode#,#programmingLocalStationCode#,#audioModeMain#
+		)
+	</insert>
+	
+	<delete id="deleteWeekSch" parameterClass="WeekSch">
+		DELETE FROM WEEK_SCH_TBL 
+		<dynamic prepend="WHERE">
+			<isNotEmpty property="programPlannedDate" prepend="AND">
+				PROGRAM_PLANNED_DATE=#programPlannedDate# 
+			</isNotEmpty>
+			<isNotEmpty property="channelCode" prepend="AND">
+				CHANNEL_CODE=#channelCode# 
+			</isNotEmpty>
+			<isNotEmpty property="programmingLocalStationCode" prepend="AND">
+				PROGRAMMING_LOCAL_STATION_CODE=#programmingLocalStationCode# 
+			</isNotEmpty>
+		</dynamic>
+	</delete>
+    
+ </sqlMap>

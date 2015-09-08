@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml-bindings xmlns="http://www.eclipse.org/eclipselink/xsds/persistence/oxm">
+	<java-types>
+		<java-type name="kr.co.d2net.dto.xml.publish.BasicDescription">
+			<java-attributes>
+	            <xml-element java-attribute="programTitle" cdata="true"/>
+				<xml-element java-attribute="programIntention" cdata="true"/>
+				<xml-element java-attribute="languageKindCode" cdata="true"/>
+				<xml-element java-attribute="onairDayCode" cdata="true"/>
+				<xml-element java-attribute="thumnailImage" cdata="true"/>
+				<xml-element java-attribute="programSubtitle" cdata="true"/>
+				<xml-element java-attribute="domesticForeignKind" cdata="true"/>
+			</java-attributes>
+      	</java-type>
+   </java-types>
+</xml-bindings>

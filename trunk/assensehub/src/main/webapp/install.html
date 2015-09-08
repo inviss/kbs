@@ -1,0 +1,277 @@
+<html>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<head>
+<title>Innorix Multi Platform Solution</title>
+
+<script type="text/javascript" src="/js/InnoDS.js"></script>
+<script type="text/javascript">
+	var innomp_download_file = new String();
+	var innomp_detected_os = browserDetect.OS;	
+	var innomp_detected_browser = browserDetect.browser;
+	
+	function OnLoadComplete(){}
+		
+	function innomp_sel_opt(num)
+	{
+		if (num == "0")
+		{
+			innomp_download_file = "/package/InnoMP_Win.exe";
+		}
+		else if (num == "1")
+		{
+			innomp_download_file = "InnoMP_Win.exe";
+		}
+		else if (num == "2")
+		{
+			innomp_download_file = "InnoMP_Win.exe";		
+		}	
+		else if (num == "3")
+		{
+			innomp_download_file = "InnoMP_Win.exe";		
+		}
+		else if (num == "4")
+		{
+			innomp_download_file = "InnoMP_Win.exe";		
+		}		
+		else if (num == "5")
+		{
+			innomp_download_file = "InnoMP_Win.exe";		
+		}
+		else if (num == "6")
+		{
+			innomp_pkg_select();
+		}	
+		else if (num == "7")
+		{
+			innomp_download_file = "InnoMP_Mac_Intel.pkg";		
+		}	
+		else if (num == "8")
+		{
+			innomp_download_file = "InnoMP_Mac_Intel.pkg";		
+		}
+		else if (num == "9")
+		{
+			innomp_download_file = "InnoMP_Mac_Intel.pkg";		
+		}	
+		else if (num == "10")
+		{
+			innomp_download_file = "InnoMP_Mac_Intel.pkg";				
+		}		
+		else if (num == "11")
+		{
+			innomp_download_file = "InnoMP_Mac_Intel.pkg";				
+		}	
+		else if (num == "12")
+		{
+			innomp_pkg_select();
+		}	
+		else if (num == "13")
+		{
+			innomp_download_file = "InnoMP_Mac_PPC.pkg";		
+		}
+		else if (num == "14")
+		{
+			innomp_download_file = "InnoMP_Mac_PPC.pkg";		
+		}
+		else if (num == "15")
+		{
+			innomp_download_file = "InnoMP_Mac_PPC.pkg";				
+		}	
+		else if (num == "16")
+		{
+			innomp_download_file = "InnoMP_Mac_PPC.pkg";				
+		}		
+		else if (num == "17")
+		{
+			innomp_download_file = "InnoMP_Mac_PPC.pkg";		
+		}	
+		else if (num == "18")	
+		{
+			innomp_pkg_select();
+		}
+		else if (num == "19")
+		{
+			innomp_download_file = "InnoMP_Linux.bin";
+		}
+		else if (num == "20")
+		{
+			innomp_download_file = "InnoMP_Linux.bin";		
+		}	
+		else if (num == "21")
+		{
+			innomp_download_file = "InnoMP_Linux.bin";		
+		}		
+		else if (num == "22")
+		{
+			innomp_download_file = "InnoMP_Linux.bin";
+		}
+
+		document.getElementById('innomp_select_box').selectedIndex = num;
+		document.getElementById('innomp_download_link').href = "/package/" + innomp_download_file;
+	}
+
+	function innomp_on_change()
+	{
+		
+		var sel = document.getElementById('innomp_select_box');
+		var num = sel.value;
+		
+		if (num == "6" || num == "12" || num == "18")
+		{
+			innomp_pkg_select();
+		}
+		else
+		{
+			innomp_sel_opt(num);
+		}
+	}
+
+	function innomp_pkg_select()
+	{
+		
+		if (innomp_detected_os == "Win32")
+		{
+			if (innomp_detected_browser == "Explorer")
+			{
+				innomp_sel_opt("0");
+			}
+			else if	(innomp_detected_browser == "Firefox")
+			{
+				innomp_sel_opt("1");
+			}
+			else if	(innomp_detected_browser == "Chrome")
+			{
+				innomp_sel_opt("2");
+			}	
+			else if	(innomp_detected_browser == "Safari")
+			{
+				innomp_sel_opt("3");
+			}
+			else if	(innomp_detected_browser == "Opera")
+			{
+				innomp_sel_opt("4");
+			}		
+			else if	(innomp_detected_browser == "Flock")
+			{
+				innomp_sel_opt("5");
+			}
+		}
+		else if (innomp_detected_os == "MacIntel")
+		{
+			if	(innomp_detected_browser == "Safari")
+			{
+				innomp_sel_opt("7");
+			}	
+			else if	(innomp_detected_browser == "Firefox")
+			{
+				innomp_sel_opt("8");
+			}
+			else if	(innomp_detected_browser == "Chrome")
+			{
+				innomp_sel_opt("9");
+			}	
+			else if	(innomp_detected_browser == "Opera")
+			{
+				innomp_sel_opt("10");
+			}		
+			else if	(innomp_detected_browser == "Flock")
+			{
+				innomp_sel_opt("11");
+			}	
+		}
+		else if (innomp_detected_os == "MacPPC")
+		{
+			if	(innomp_detected_browser == "Safari")
+			{
+				innomp_sel_opt("13");
+			}
+			else if	(innomp_detected_browser == "Firefox")
+			{
+				innomp_sel_opt("14");
+			}
+			else if	(innomp_detected_browser == "Chrome")
+			{
+				innomp_sel_opt("15");
+			}	
+			else if	(innomp_detected_browser == "Opera")
+			{
+				innomp_sel_opt("16");
+			}		
+			else if	(innomp_detected_browser == "Flock")
+			{
+				innomp_sel_opt("17");
+			}
+		}
+		else if (innomp_detected_os == "Linux i686")
+		{
+			if	(innomp_detected_browser == "Firefox")
+			{
+				innomp_sel_opt("19");
+			}
+			else if	(innomp_detected_browser == "Chrome")
+			{
+				innomp_sel_opt("20");
+			}	
+			else if	(innomp_detected_browser == "Opera")
+			{
+				innomp_sel_opt("21");
+			}		
+			else if	(innomp_detected_browser == "Flock")
+			{
+				innomp_sel_opt("22");
+			}
+		}
+	}
+
+</script>
+
+</head>
+<body onload="innomp_pkg_select();innomp_update_status();">
+
+<table border="0" cellpadding="0" cellspacing="0" width="480" height="260" align="center">
+	<tr><td background="img/install_bg_01.gif" style="padding-top:179px" valign="top" align="center">
+	
+	<table border="0" cellpadding="0" cellspacing="0">
+		<tr><td style="padding:0px 0px 1px 0px;">
+			<select id="innomp_select_box" name="innomp_select_box" style="width:247px; height:20px; padding:0px 0px 0px 0px; font-family:arial; color:#6d6d6d" onchange="innomp_on_change()">
+				<option value="0">&nbsp;&nbsp;&nbsp;&nbsp;Windows - Internet Explorer</option>
+
+				<option value="1">&nbsp;&nbsp;&nbsp;&nbsp;Windows - Mozilla Firefox</option>
+				<option value="2">&nbsp;&nbsp;&nbsp;&nbsp;Windows - Google Chrome</option>
+				<option value="3">&nbsp;&nbsp;&nbsp;&nbsp;Windows - Apple Safari</option>
+				<option value="4">&nbsp;&nbsp;&nbsp;&nbsp;Windows - Opera Browser</option>
+				<option value="5">&nbsp;&nbsp;&nbsp;&nbsp;Windows - Flock Browser</option>
+				<option value="6">&nbsp;---------------------------------------------------------</option>
+				<option value="7">&nbsp;&nbsp;&nbsp;&nbsp;Mac OS X Intel - Apple Safari</option>
+				<option value="8">&nbsp;&nbsp;&nbsp;&nbsp;Mac OS X Intel - Mozilla Firefox</option>
+				<option value="9">&nbsp;&nbsp;&nbsp;&nbsp;Mac OS X Intel - Google Chrome</option>
+				<option value="10">&nbsp;&nbsp;&nbsp;&nbsp;Mac OS X Intel - Opera Browser</option>
+				<option value="11">&nbsp;&nbsp;&nbsp;&nbsp;Mac OS X Intel - Flock Browser</option>
+				<option value="12">&nbsp;---------------------------------------------------------</option>
+				<option value="13">&nbsp;&nbsp;&nbsp;&nbsp;Mac OS X PPC - Apple Safari</option>
+				<option value="14">&nbsp;&nbsp;&nbsp;&nbsp;Mac OS X PPC - Mozilla Firefox</option>
+				<option value="15">&nbsp;&nbsp;&nbsp;&nbsp;Mac OS X PPC - Google Chrome</option>
+				<option value="16">&nbsp;&nbsp;&nbsp;&nbsp;Mac OS X PPC - Opera Browser</option>
+				<option value="17">&nbsp;&nbsp;&nbsp;&nbsp;Mac OS X PPC - Flock Browser</option>
+				<option value="18">&nbsp;---------------------------------------------------------</option>
+				<option value="19">&nbsp;&nbsp;&nbsp;&nbsp;Linux i686 - Mozilla Firefox</option>
+				<option value="20">&nbsp;&nbsp;&nbsp;&nbsp;Linux i686 - Google Chrome</option>
+				<option value="21">&nbsp;&nbsp;&nbsp;&nbsp;Linux i686 - Opera Browser</option>				
+				<option value="22">&nbsp;&nbsp;&nbsp;&nbsp;Linux i686 - Flock Browser</option>
+
+			</select>
+			
+			</td>
+			<td style="padding-left:10px"><a id="innomp_download_link" href="/package/InnoMP_Win.exe"><img src="img/install_btn_01.gif" border="0"></a>
+			</td>
+		</tr>
+	</table>
+	
+	<iframe id="innomp_downlaod_frame" src="download.html" style="width:0px;height:0px;border:0px"></iframe>
+	<div id="innomp_check_obj"></div>
+	
+	</td></tr>
+</table>
+
+</body>
+</html>

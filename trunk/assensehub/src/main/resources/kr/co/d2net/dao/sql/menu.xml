@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="Menu">
+    
+    <typeAlias alias="Menu" type="kr.co.d2net.dto.MenuTbl"/>
+    
+    <resultMap id="MenuMap" class="Menu">
+    	<result property="menuId" column="MENU_ID" />
+		<result property="useYn" column="USE_YN" />
+		<result property="regrid" column="REGRID" />
+		<result property="regDt" column="REG_DT" />
+		<result property="modrid" column="MODRID" />
+		<result property="modDt" column="MOD_DT" />
+		<result property="menuNm" column="MENU_NM" />
+		<result property="url" column="URL" />
+		<result property="lft" column="LFT" />
+		<result property="rgt" column="RGT" />
+    </resultMap>
+    
+    <resultMap id="AuthMenuMap" class="Menu">
+    	<result property="menuId" column="MENU_ID" />
+		<result property="menuNm" column="MENU_NM" />
+		<result property="url" column="URL" />
+		<result property="controlGubun" column="CONTROL_GUBUN" />
+    </resultMap>
+    
+    <resultMap id="UserMenuMap" class="Menu">
+    	<result property="menuId" column="MENU_ID" />
+		<result property="menuNm" column="MENU_NM" />
+		<result property="url" column="URL" />
+		<result property="depth" column="DEPTH" />
+		<result property="controlGubun" column="CONTROL_GUBUN" />
+		<result property="menuEnNm" column="MENU_EN_NM" />
+    </resultMap>
+    
+    <select id="findMenu" resultMap="MenuMap" parameterClass="map">
+	     SELECT  
+             *
+         FROM MENU_TBL
+         <dynamic prepend="WHERE">
+
+         </dynamic>
+    </select>
+    
+    <select id="findAuthMenus" resultMap="AuthMenuMap" parameterClass="map">
+	     SELECT  
+             menu.MENU_ID, menu.MENU_NM, menu.URL, role.CONTROL_GUBUN
+         FROM MENU_TBL menu
+         	inner join ROLE_AUTH_TBL role on menu.MENU_ID = role.MENU_ID
+         <dynamic prepend="WHERE">
+			<isNotEmpty property="authId" prepend="AND">
+				role.AUTH_ID = #authId#
+			</isNotEmpty>
+         </dynamic>
+    </select>
+    
+    <select id="findUserMenus" resultMap="UserMenuMap" parameterClass="map">
+    <![CDATA[
+		select
+			tm.menu_id, tm.menu_nm, tm.url, tm.depth, mp.control_gubun, tm.menu_en_nm
+		from (	
+			select
+			    node.menu_id, node.menu_nm, node.url, (count(parent.menu_id) - (sub.depth + 1)) as depth, node.menu_en_nm
+			from menu_tbl node, menu_tbl parent, menu_tbl parent2, (
+			    select
+			        menu1.menu_id, menu1.menu_nm, (count(menu2.menu_id) -1) as depth
+			    from menu_tbl menu1, menu_tbl menu2
+			    where menu1.lft between menu2.lft and menu2.rgt
+			        and menu1.menu_id = 1 and menu1.use_yn = 'Y' and menu2.use_yn = 'Y'
+			    group by menu1.menu_id, menu1.menu_nm, menu1.lft
+			) sub
+			where node.lft between parent.lft and parent.rgt and node.lft between parent2.lft and parent2.rgt
+			    and parent2.menu_id = sub.menu_id and node.use_yn = 'Y' and parent.use_yn = 'Y'
+			group by node.menu_id, node.menu_nm, node.url, sub.depth, node.lft, node.menu_en_nm
+			having (count(parent.menu_id) - (sub.depth + 1)) <= 2
+			order by node.lft
+		) tm 
+			inner JOIN (SELECT * FROM ROLE_AUTH_TBL WHERE menu_id > 1) mp ON tm.menu_id = mp.menu_id
+			inner join (
+				select tu.user_id, nvl(pu.auth_id, 9) auth_id
+				from user_tbl tu
+					left outer join user_auth_tbl pu on tu.user_id = pu.user_id
+				where tu.user_id = #userId#
+			) up on mp.auth_id = up.auth_id
+		where tm.depth > 0
+	]]>
+    </select>
+    
+    <select id="getFirstMenu" resultClass="Menu" parameterClass="map">
+    	SELECT
+    		tm.MENU_ID  as menuId,
+			tm.USE_YN   as useYn,
+			tm.REGRID   as regrid,
+			tm.REG_DT   as regDt,
+			tm.MODRID   as modrid,
+			tm.MOD_DT   as modDt,
+			tm.MENU_NM  as menuNm,
+			tm.URL      as url,
+			tm.LFT      as lft,
+			tm.RGT      as rgt
+		FROM (select rownum , tm.* from MENU_TBL tm ORDER BY tm.LFT asc) tm
+		inner JOIN (SELECT * FROM ROLE_AUTH_TBL WHERE menu_id > 1) mp ON tm.menu_id = mp.menu_id
+			inner join (
+				select tu.user_id, nvl(pu.auth_id, 9) auth_id
+				from user_tbl tu
+					left outer join user_auth_tbl pu on tu.user_id = pu.user_id
+				where tu.user_id = #userId#
+			) up on mp.auth_id = up.auth_id
+		WHERE tm.USE_YN = 'Y' AND (tm.rgt - tm.lft) = 1 AND ROWNUM = 1
+    </select>
+    
+    <select id="getMenu" resultClass="Menu" parameterClass="map">
+		SELECT  
+			MENU_ID  as menuId,
+			USE_YN   as useYn,
+			REGRID   as regrid,
+			REG_DT   as regDt,
+			MODRID   as modrid,
+			MOD_DT   as modDt,
+			MENU_NM  as menuNm,
+			URL      as url,
+			LFT      as lft,
+			RGT      as rgt
+		FROM MENU_TBL
+		<dynamic prepend="WHERE">
+
+		</dynamic>
+    </select>
+    
+    <insert id="insertMenu" parameterClass="Menu">
+		INSERT INTO MENU_TBL (
+			MENU_ID,USE_YN,REGRID,REG_DT,MODRID,MOD_DT,MENU_NM,URL,LFT,RGT
+		) VALUES (
+			#menuId#,#useYn#,#regrid#,#regDt#,#modrid#,#modDt#,#menuNm#,#url#,#lft#,#rgt#
+		)
+	</insert>
+    
+ </sqlMap>

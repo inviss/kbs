@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="ProOpt">
+    
+    <typeAlias alias="ProOpt" type="kr.co.d2net.dto.ProOptTbl"/>
+    
+    <resultMap id="ProOptMap" class="ProOpt">
+    	<result property="optId" column="OPT_ID" /> 
+		<result property="proFlid" column="PRO_FLID" />
+		<result property="useYn" column="USE_YN" />
+		<result property="optDesc" column="OPT_DESC" />
+	
+    </resultMap>
+
+    <select id="findProOpt" resultMap="ProOptMap" parameterClass="map">
+	     SELECT  
+             a.OPT_ID, a.PRO_FLID, a.USE_YN, b.OPT_DESC
+         FROM PRO_OPT a
+         	INNER JOIN OPT b ON a.OPT_ID = b.OPT_ID 
+         <dynamic prepend="WHERE">
+		 	<isNotEmpty property="useYn" prepend="AND">
+				a.USE_YN = #useYn#
+			</isNotEmpty>
+			<isNotEmpty property="proFlid" prepend="AND">
+				a.PRO_FLID = #proFlid#
+			</isNotEmpty>		
+         </dynamic>
+    </select>
+    
+    <select id="getProOpt" resultClass="ProOpt" parameterClass="map">
+		SELECT  
+			OPT_ID     as optId,      
+			PRO_FLID       as proFlid,           
+			USE_YN          as useYn         
+			
+		FROM PRO_OPT
+		<dynamic prepend="WHERE">
+			
+		</dynamic>
+    </select>
+    
+    <insert id="insertProOpt" parameterClass="ProOpt">
+		INSERT INTO PRO_OPT (
+			OPT_ID,PRO_FLID,USE_YN
+		) VALUES (
+			#optId#,#proFlid#,#useYn#
+		)
+	</insert>
+    
+    <update id="deleteProOpt" parameterClass="ProOpt">
+    	DELETE FROM PRO_OPT
+    	<dynamic prepend="WHERE">
+	    	<isNotNull property="proFlid" prepend="AND">
+	    		PRO_FLID=#proFlid#
+	    	</isNotNull>
+    	</dynamic>
+    </update>
+ </sqlMap>

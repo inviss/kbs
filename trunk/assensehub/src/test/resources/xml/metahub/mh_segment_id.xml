@@ -1,0 +1,367 @@
+<nodes count="10" more="false">
+<node nid="51100012099662" tid="mh_segment_id">
+<property defalut="" name="그룹코드" pid="group_code" type="REFERENCE" value="T2011-0757">T2011-0757</property>
+<property defalut="" name="회차" pid="p_id" type="REFERENCE" value=""></property>
+<property defalut="" name="세그먼트 아이디" pid="segment_id" type="ID" value="">-S001</property>
+<property defalut="" name="세그먼트코드" pid="segment_code" type="REFERENCE" value="R2008-0410-S001">ㅅㄷㄴㅅ</property>
+<property defalut="" name="시작 시간" pid="segment_start_time" type="TEXT" value=""></property>
+<property defalut="" name="종료 시간" pid="segment_end_time" type="TEXT" value=""></property>
+<property defalut="" name="대표 이미지" pid="thumnail_image" type="FILE" value=""></property>
+<property defalut="" name="연관 이미지" pid="relation_img" type="REFERENCED"/>
+<property defalut="" name="세그먼트명" pid="segment_title" type="NAME" value=""></property>
+<property defalut="" name="저속 VOD" pid="video_file_path_56k" type="TEXT" value=""></property>
+<property defalut="" name="고속 VOD" pid="video_file_path_300k" type="TEXT" value=""></property>
+<property defalut="" name="저속 미리보기 VOD" pid="preview_video_56k" type="JSON" value=""></property>
+<property defalut="" name="고속 미리보기 VOD" pid="preview_video_300k" type="JSON" value=""></property>
+<property defalut="" name="초고속 미리보기 VOD" pid="preview_video_700k" type="JSON" value=""></property>
+<property defalut="" name="방송순서" pid="broadcast_order" type="NUMBER" value="">0</property>
+<property defalut="" name="등록일" pid="created" type="DATE" value="20111219 170346">2011/12/19 17:03:46</property>
+<property defalut="" name="수정일" pid="changed" type="DATE" value="20111219 170346">2011/12/19 17:03:46</property>
+<property defalut="" name="다시보기" pid="ref_replay" type="REFERENCED"/>
+<property defalut="" name="tmp_code" pid="tmp_code" type="TEXT" value="">-S001</property>
+<property defalut="" name="세그먼트 내용" pid="segment_contents" type="CLOB" value=""></property>
+<property defalut="" name="고정 출연진" pid="ref_participant" type="REFERENCED"/>
+<property defalut="p_id.broadcast_planned_date" name="방송예정일" pid="broadcast_planned_date" type="DATE" value=""></property>
+<property defalut="p_id.program_sequence_number" name="회차넘버" pid="program_sequence_number" type="TEXT" value=""></property>
+<property defalut="p_id.video_file_path_700k" name="초고화질 700k 링크" pid="video_file_path_700k" type="TEXT" value=""></property>
+<property defalut="p_id.conpia_url" name="콘피아 다운로드" pid="conpia_url" type="TEXT" value=""></property>
+<property defalut="p_id.pcode.channel_code" name="채널코드" pid="channel_code" type="CODE" value=""></property>
+<property defalut="group_code.group_code" name="gcode" pid="gcode" type="ID" value="">T2011-0757</property>
+<property defalut="segment_code.segment_code" name="세그먼트코드(Virtual)" pid="s_code" type="ID" value="">R2008-0410-S001</property>
+<property defalut="p_id.program_id" name="프로그램ID" pid="program_id" type="ID" value=""></property>
+<property defalut="p_id.pcode.program_code" name="프로그램 코드" pid="program_code" type="ID" value=""></property>
+<property defalut="" name="History" pid="histories" type="LIST">
+<node iconclass="Icon_silk_m_q_page_page_white_database" nid="2" tid="_history_view"></node>
+</property>
+<property defalut="0" name="Version" pid="_version" type="NUMBER" value=""></property>
+</node>
+<node nid="51100012024796" tid="mh_segment_id">
+<property defalut="" name="그룹코드" pid="group_code" type="REFERENCE" value="T2011-0430">T2011-0430</property>
+<property defalut="" name="회차" pid="p_id" type="REFERENCE" value="PS-2011134611-01-000">자유선언 토요일 1</property>
+<property defalut="" name="세그먼트 아이디" pid="segment_id" type="ID" value="">PS-2011134611-01-000-S002</property>
+<property defalut="" name="세그먼트코드" pid="segment_code" type="REFERENCE" value="T2011-0430-S002">불후의 명곡</property>
+<property defalut="" name="시작 시간" pid="segment_start_time" type="TEXT" value="">11</property>
+<property defalut="" name="종료 시간" pid="segment_end_time" type="TEXT" value="">11</property>
+<property defalut="" name="대표 이미지" pid="thumnail_image" type="FILE" value="20968">2.jpg</property>
+<property defalut="" name="연관 이미지" pid="relation_img" type="REFERENCED"/>
+<property defalut="" name="세그먼트명" pid="segment_title" type="NAME" value="">불후의 명곡</property>
+<property defalut="" name="저속 VOD" pid="video_file_path_56k" type="TEXT" value=""></property>
+<property defalut="" name="고속 VOD" pid="video_file_path_300k" type="TEXT" value=""></property>
+<property defalut="" name="저속 미리보기 VOD" pid="preview_video_56k" type="JSON" value=""></property>
+<property defalut="" name="고속 미리보기 VOD" pid="preview_video_300k" type="JSON" value=""></property>
+<property defalut="" name="초고속 미리보기 VOD" pid="preview_video_700k" type="JSON" value=""></property>
+<property defalut="" name="방송순서" pid="broadcast_order" type="NUMBER" value="">2</property>
+<property defalut="" name="등록일" pid="created" type="DATE" value="20111101 180212">2011/11/01 18:02:12</property>
+<property defalut="" name="수정일" pid="changed" type="DATE" value="20111117 140017">2011/11/17 14:00:17</property>
+<property defalut="" name="다시보기" pid="ref_replay" type="REFERENCED"/>
+<property defalut="" name="tmp_code" pid="tmp_code" type="TEXT" value=""></property>
+<property defalut="" name="세그먼트 내용" pid="segment_contents" type="CLOB" value=""></property>
+<property defalut="" name="고정 출연진" pid="ref_participant" type="REFERENCED"/>
+<property defalut="p_id.broadcast_planned_date" name="방송예정일" pid="broadcast_planned_date" type="DATE" value="20111105 000000">2011/11/05 00:00:00</property>
+<property defalut="p_id.program_sequence_number" name="회차넘버" pid="program_sequence_number" type="TEXT" value="">23</property>
+<property defalut="p_id.video_file_path_700k" name="초고화질 700k 링크" pid="video_file_path_700k" type="TEXT" value=""></property>
+<property defalut="p_id.conpia_url" name="콘피아 다운로드" pid="conpia_url" type="TEXT" value=""></property>
+<property defalut="p_id.pcode.channel_code" name="채널코드" pid="channel_code" type="CODE" value="12">2TV</property>
+<property defalut="group_code.group_code" name="gcode" pid="gcode" type="ID" value="">T2011-0430</property>
+<property defalut="segment_code.segment_code" name="세그먼트코드(Virtual)" pid="s_code" type="ID" value="">T2011-0430-S002</property>
+<property defalut="p_id.program_id" name="프로그램ID" pid="program_id" type="ID" value="">PS-2011134611-01-000</property>
+<property defalut="p_id.pcode.program_code" name="프로그램 코드" pid="program_code" type="ID" value="">T2011-0430</property>
+<property defalut="" name="History" pid="histories" type="LIST">
+<node iconclass="Icon_silk_m_q_page_page_white_database" nid="2" tid="_history_view">불후의 명곡</node>
+<node iconclass="Icon_silk_m_q_page_page_white_database" nid="2" tid="_history_view">불후의 명곡</node>
+<node iconclass="Icon_silk_m_q_page_page_white_database" nid="2" tid="_history_view">불후의 명곡</node>
+<node iconclass="Icon_silk_m_q_page_page_white_database" nid="2" tid="_history_view">불후의 명곡</node>
+<node iconclass="Icon_silk_m_q_page_page_white_database" nid="2" tid="_history_view">불후의 명곡</node>
+<node iconclass="Icon_silk_m_q_page_page_white_database" nid="2" tid="_history_view">불후의 명곡</node>
+</property>
+<property defalut="0" name="Version" pid="_version" type="NUMBER" value=""></property>
+</node>
+<node nid="51100012024795" tid="mh_segment_id">
+<property defalut="" name="그룹코드" pid="group_code" type="REFERENCE" value="T2011-0430">T2011-0430</property>
+<property defalut="" name="회차" pid="p_id" type="REFERENCE" value="PS-2011134611-01-000">자유선언 토요일 1</property>
+<property defalut="" name="세그먼트 아이디" pid="segment_id" type="ID" value="">PS-2011134611-01-000-S001</property>
+<property defalut="" name="세그먼트코드" pid="segment_code" type="REFERENCE" value="T2011-0430-S001">시크릿</property>
+<property defalut="" name="시작 시간" pid="segment_start_time" type="TEXT" value=""></property>
+<property defalut="" name="종료 시간" pid="segment_end_time" type="TEXT" value=""></property>
+<property defalut="" name="대표 이미지" pid="thumnail_image" type="FILE" value=""></property>
+<property defalut="" name="연관 이미지" pid="relation_img" type="REFERENCED"/>
+<property defalut="" name="세그먼트명" pid="segment_title" type="NAME" value="">시크릿</property>
+<property defalut="" name="저속 VOD" pid="video_file_path_56k" type="TEXT" value=""></property>
+<property defalut="" name="고속 VOD" pid="video_file_path_300k" type="TEXT" value=""></property>
+<property defalut="" name="저속 미리보기 VOD" pid="preview_video_56k" type="JSON" value=""></property>
+<property defalut="" name="고속 미리보기 VOD" pid="preview_video_300k" type="JSON" value=""></property>
+<property defalut="" name="초고속 미리보기 VOD" pid="preview_video_700k" type="JSON" value=""></property>
+<property defalut="" name="방송순서" pid="broadcast_order" type="NUMBER" value="">1</property>
+<property defalut="" name="등록일" pid="created" type="DATE" value="20111101 180200">2011/11/01 18:02:00</property>
+<property defalut="" name="수정일" pid="changed" type="DATE" value="20111101 180200">2011/11/01 18:02:00</property>
+<property defalut="" name="다시보기" pid="ref_replay" type="REFERENCED"/>
+<property defalut="" name="tmp_code" pid="tmp_code" type="TEXT" value=""></property>
+<property defalut="" name="세그먼트 내용" pid="segment_contents" type="CLOB" value=""></property>
+<property defalut="" name="고정 출연진" pid="ref_participant" type="REFERENCED"/>
+<property defalut="p_id.broadcast_planned_date" name="방송예정일" pid="broadcast_planned_date" type="DATE" value="20111105 000000">2011/11/05 00:00:00</property>
+<property defalut="p_id.program_sequence_number" name="회차넘버" pid="program_sequence_number" type="TEXT" value="">23</property>
+<property defalut="p_id.video_file_path_700k" name="초고화질 700k 링크" pid="video_file_path_700k" type="TEXT" value=""></property>
+<property defalut="p_id.conpia_url" name="콘피아 다운로드" pid="conpia_url" type="TEXT" value=""></property>
+<property defalut="p_id.pcode.channel_code" name="채널코드" pid="channel_code" type="CODE" value="12">2TV</property>
+<property defalut="group_code.group_code" name="gcode" pid="gcode" type="ID" value="">T2011-0430</property>
+<property defalut="segment_code.segment_code" name="세그먼트코드(Virtual)" pid="s_code" type="ID" value="">T2011-0430-S001</property>
+<property defalut="p_id.program_id" name="프로그램ID" pid="program_id" type="ID" value="">PS-2011134611-01-000</property>
+<property defalut="p_id.pcode.program_code" name="프로그램 코드" pid="program_code" type="ID" value="">T2011-0430</property>
+<property defalut="" name="History" pid="histories" type="LIST">
+<node iconclass="Icon_silk_m_q_page_page_white_database" nid="2" tid="_history_view">시크릿</node>
+</property>
+<property defalut="0" name="Version" pid="_version" type="NUMBER" value=""></property>
+</node>
+<node nid="51100011856908" tid="mh_segment_id">
+<property defalut="" name="그룹코드" pid="group_code" type="REFERENCE" value="T2000-0065">T2000-0065</property>
+<property defalut="" name="회차" pid="p_id" type="REFERENCE" value="PS-2011140035-01-000">개그 콘서트</property>
+<property defalut="" name="세그먼트 아이디" pid="segment_id" type="ID" value="">PS-2011140035-01-000-S004</property>
+<property defalut="" name="세그먼트코드" pid="segment_code" type="REFERENCE" value="T2000-0065-S004">코너4</property>
+<property defalut="" name="시작 시간" pid="segment_start_time" type="TEXT" value=""></property>
+<property defalut="" name="종료 시간" pid="segment_end_time" type="TEXT" value=""></property>
+<property defalut="" name="대표 이미지" pid="thumnail_image" type="FILE" value=""></property>
+<property defalut="" name="연관 이미지" pid="relation_img" type="REFERENCED"/>
+<property defalut="" name="세그먼트명" pid="segment_title" type="NAME" value="">개그콘서트 코너 4</property>
+<property defalut="" name="저속 VOD" pid="video_file_path_56k" type="TEXT" value=""></property>
+<property defalut="" name="고속 VOD" pid="video_file_path_300k" type="TEXT" value=""></property>
+<property defalut="" name="저속 미리보기 VOD" pid="preview_video_56k" type="JSON" value=""></property>
+<property defalut="" name="고속 미리보기 VOD" pid="preview_video_300k" type="JSON" value=""></property>
+<property defalut="" name="초고속 미리보기 VOD" pid="preview_video_700k" type="JSON" value=""></property>
+<property defalut="" name="방송순서" pid="broadcast_order" type="NUMBER" value="">4</property>
+<property defalut="" name="등록일" pid="created" type="DATE" value="20111026 164839">2011/10/26 16:48:39</property>
+<property defalut="" name="수정일" pid="changed" type="DATE" value="20111026 164839">2011/10/26 16:48:39</property>
+<property defalut="" name="다시보기" pid="ref_replay" type="REFERENCED"/>
+<property defalut="" name="tmp_code" pid="tmp_code" type="TEXT" value=""></property>
+<property defalut="" name="세그먼트 내용" pid="segment_contents" type="CLOB" value=""></property>
+<property defalut="" name="고정 출연진" pid="ref_participant" type="REFERENCED"/>
+<property defalut="p_id.broadcast_planned_date" name="방송예정일" pid="broadcast_planned_date" type="DATE" value="20111106 000000">2011/11/06 00:00:00</property>
+<property defalut="p_id.program_sequence_number" name="회차넘버" pid="program_sequence_number" type="TEXT" value="">618</property>
+<property defalut="p_id.video_file_path_700k" name="초고화질 700k 링크" pid="video_file_path_700k" type="TEXT" value=""></property>
+<property defalut="p_id.conpia_url" name="콘피아 다운로드" pid="conpia_url" type="TEXT" value=""></property>
+<property defalut="p_id.pcode.channel_code" name="채널코드" pid="channel_code" type="CODE" value="12">2TV</property>
+<property defalut="group_code.group_code" name="gcode" pid="gcode" type="ID" value="">T2000-0065</property>
+<property defalut="segment_code.segment_code" name="세그먼트코드(Virtual)" pid="s_code" type="ID" value="">T2000-0065-S004</property>
+<property defalut="p_id.program_id" name="프로그램ID" pid="program_id" type="ID" value="">PS-2011140035-01-000</property>
+<property defalut="p_id.pcode.program_code" name="프로그램 코드" pid="program_code" type="ID" value="">T2000-0065</property>
+<property defalut="" name="History" pid="histories" type="LIST">
+<node iconclass="Icon_silk_m_q_page_page_white_database" nid="2" tid="_history_view">개그콘서트 코너 4</node>
+</property>
+<property defalut="0" name="Version" pid="_version" type="NUMBER" value=""></property>
+</node>
+<node nid="51100011856907" tid="mh_segment_id">
+<property defalut="" name="그룹코드" pid="group_code" type="REFERENCE" value="T2000-0065">T2000-0065</property>
+<property defalut="" name="회차" pid="p_id" type="REFERENCE" value="PS-2011140035-01-000">개그 콘서트</property>
+<property defalut="" name="세그먼트 아이디" pid="segment_id" type="ID" value="">PS-2011140035-01-000-S003</property>
+<property defalut="" name="세그먼트코드" pid="segment_code" type="REFERENCE" value="T2000-0065-S003">코너3</property>
+<property defalut="" name="시작 시간" pid="segment_start_time" type="TEXT" value=""></property>
+<property defalut="" name="종료 시간" pid="segment_end_time" type="TEXT" value=""></property>
+<property defalut="" name="대표 이미지" pid="thumnail_image" type="FILE" value=""></property>
+<property defalut="" name="연관 이미지" pid="relation_img" type="REFERENCED"/>
+<property defalut="" name="세그먼트명" pid="segment_title" type="NAME" value="">개그콘서트 코너 3</property>
+<property defalut="" name="저속 VOD" pid="video_file_path_56k" type="TEXT" value=""></property>
+<property defalut="" name="고속 VOD" pid="video_file_path_300k" type="TEXT" value=""></property>
+<property defalut="" name="저속 미리보기 VOD" pid="preview_video_56k" type="JSON" value=""></property>
+<property defalut="" name="고속 미리보기 VOD" pid="preview_video_300k" type="JSON" value=""></property>
+<property defalut="" name="초고속 미리보기 VOD" pid="preview_video_700k" type="JSON" value=""></property>
+<property defalut="" name="방송순서" pid="broadcast_order" type="NUMBER" value="">3</property>
+<property defalut="" name="등록일" pid="created" type="DATE" value="20111026 164820">2011/10/26 16:48:20</property>
+<property defalut="" name="수정일" pid="changed" type="DATE" value="20111026 164820">2011/10/26 16:48:20</property>
+<property defalut="" name="다시보기" pid="ref_replay" type="REFERENCED"/>
+<property defalut="" name="tmp_code" pid="tmp_code" type="TEXT" value=""></property>
+<property defalut="" name="세그먼트 내용" pid="segment_contents" type="CLOB" value=""></property>
+<property defalut="" name="고정 출연진" pid="ref_participant" type="REFERENCED"/>
+<property defalut="p_id.broadcast_planned_date" name="방송예정일" pid="broadcast_planned_date" type="DATE" value="20111106 000000">2011/11/06 00:00:00</property>
+<property defalut="p_id.program_sequence_number" name="회차넘버" pid="program_sequence_number" type="TEXT" value="">618</property>
+<property defalut="p_id.video_file_path_700k" name="초고화질 700k 링크" pid="video_file_path_700k" type="TEXT" value=""></property>
+<property defalut="p_id.conpia_url" name="콘피아 다운로드" pid="conpia_url" type="TEXT" value=""></property>
+<property defalut="p_id.pcode.channel_code" name="채널코드" pid="channel_code" type="CODE" value="12">2TV</property>
+<property defalut="group_code.group_code" name="gcode" pid="gcode" type="ID" value="">T2000-0065</property>
+<property defalut="segment_code.segment_code" name="세그먼트코드(Virtual)" pid="s_code" type="ID" value="">T2000-0065-S003</property>
+<property defalut="p_id.program_id" name="프로그램ID" pid="program_id" type="ID" value="">PS-2011140035-01-000</property>
+<property defalut="p_id.pcode.program_code" name="프로그램 코드" pid="program_code" type="ID" value="">T2000-0065</property>
+<property defalut="" name="History" pid="histories" type="LIST">
+<node iconclass="Icon_silk_m_q_page_page_white_database" nid="2" tid="_history_view">개그콘서트 코너 3</node>
+</property>
+<property defalut="0" name="Version" pid="_version" type="NUMBER" value=""></property>
+</node>
+<node nid="51100011856906" tid="mh_segment_id">
+<property defalut="" name="그룹코드" pid="group_code" type="REFERENCE" value="T2000-0065">T2000-0065</property>
+<property defalut="" name="회차" pid="p_id" type="REFERENCE" value="PS-2011140035-01-000">개그 콘서트</property>
+<property defalut="" name="세그먼트 아이디" pid="segment_id" type="ID" value="">PS-2011140035-01-000-S002</property>
+<property defalut="" name="세그먼트코드" pid="segment_code" type="REFERENCE" value="T2000-0065-S002">코너2</property>
+<property defalut="" name="시작 시간" pid="segment_start_time" type="TEXT" value=""></property>
+<property defalut="" name="종료 시간" pid="segment_end_time" type="TEXT" value=""></property>
+<property defalut="" name="대표 이미지" pid="thumnail_image" type="FILE" value=""></property>
+<property defalut="" name="연관 이미지" pid="relation_img" type="REFERENCED"/>
+<property defalut="" name="세그먼트명" pid="segment_title" type="NAME" value="">개그콘서트 코너 2</property>
+<property defalut="" name="저속 VOD" pid="video_file_path_56k" type="TEXT" value=""></property>
+<property defalut="" name="고속 VOD" pid="video_file_path_300k" type="TEXT" value=""></property>
+<property defalut="" name="저속 미리보기 VOD" pid="preview_video_56k" type="JSON" value=""></property>
+<property defalut="" name="고속 미리보기 VOD" pid="preview_video_300k" type="JSON" value=""></property>
+<property defalut="" name="초고속 미리보기 VOD" pid="preview_video_700k" type="JSON" value=""></property>
+<property defalut="" name="방송순서" pid="broadcast_order" type="NUMBER" value="">2</property>
+<property defalut="" name="등록일" pid="created" type="DATE" value="20111026 164811">2011/10/26 16:48:11</property>
+<property defalut="" name="수정일" pid="changed" type="DATE" value="20111026 164811">2011/10/26 16:48:11</property>
+<property defalut="" name="다시보기" pid="ref_replay" type="REFERENCED"/>
+<property defalut="" name="tmp_code" pid="tmp_code" type="TEXT" value=""></property>
+<property defalut="" name="세그먼트 내용" pid="segment_contents" type="CLOB" value=""></property>
+<property defalut="" name="고정 출연진" pid="ref_participant" type="REFERENCED"/>
+<property defalut="p_id.broadcast_planned_date" name="방송예정일" pid="broadcast_planned_date" type="DATE" value="20111106 000000">2011/11/06 00:00:00</property>
+<property defalut="p_id.program_sequence_number" name="회차넘버" pid="program_sequence_number" type="TEXT" value="">618</property>
+<property defalut="p_id.video_file_path_700k" name="초고화질 700k 링크" pid="video_file_path_700k" type="TEXT" value=""></property>
+<property defalut="p_id.conpia_url" name="콘피아 다운로드" pid="conpia_url" type="TEXT" value=""></property>
+<property defalut="p_id.pcode.channel_code" name="채널코드" pid="channel_code" type="CODE" value="12">2TV</property>
+<property defalut="group_code.group_code" name="gcode" pid="gcode" type="ID" value="">T2000-0065</property>
+<property defalut="segment_code.segment_code" name="세그먼트코드(Virtual)" pid="s_code" type="ID" value="">T2000-0065-S002</property>
+<property defalut="p_id.program_id" name="프로그램ID" pid="program_id" type="ID" value="">PS-2011140035-01-000</property>
+<property defalut="p_id.pcode.program_code" name="프로그램 코드" pid="program_code" type="ID" value="">T2000-0065</property>
+<property defalut="" name="History" pid="histories" type="LIST">
+<node iconclass="Icon_silk_m_q_page_page_white_database" nid="2" tid="_history_view">개그콘서트 코너 2</node>
+</property>
+<property defalut="0" name="Version" pid="_version" type="NUMBER" value=""></property>
+</node>
+<node nid="51100011856905" tid="mh_segment_id">
+<property defalut="" name="그룹코드" pid="group_code" type="REFERENCE" value="T2000-0065">T2000-0065</property>
+<property defalut="" name="회차" pid="p_id" type="REFERENCE" value="PS-2011140035-01-000">개그 콘서트</property>
+<property defalut="" name="세그먼트 아이디" pid="segment_id" type="ID" value="">PS-2011140035-01-000-S001</property>
+<property defalut="" name="세그먼트코드" pid="segment_code" type="REFERENCE" value="T2000-0065-S001">코너1</property>
+<property defalut="" name="시작 시간" pid="segment_start_time" type="TEXT" value=""></property>
+<property defalut="" name="종료 시간" pid="segment_end_time" type="TEXT" value=""></property>
+<property defalut="" name="대표 이미지" pid="thumnail_image" type="FILE" value=""></property>
+<property defalut="" name="연관 이미지" pid="relation_img" type="REFERENCED"/>
+<property defalut="" name="세그먼트명" pid="segment_title" type="NAME" value="">개그콘서트 코너 1</property>
+<property defalut="" name="저속 VOD" pid="video_file_path_56k" type="TEXT" value=""></property>
+<property defalut="" name="고속 VOD" pid="video_file_path_300k" type="TEXT" value=""></property>
+<property defalut="" name="저속 미리보기 VOD" pid="preview_video_56k" type="JSON" value=""></property>
+<property defalut="" name="고속 미리보기 VOD" pid="preview_video_300k" type="JSON" value=""></property>
+<property defalut="" name="초고속 미리보기 VOD" pid="preview_video_700k" type="JSON" value=""></property>
+<property defalut="" name="방송순서" pid="broadcast_order" type="NUMBER" value="">1</property>
+<property defalut="" name="등록일" pid="created" type="DATE" value="20111026 164801">2011/10/26 16:48:01</property>
+<property defalut="" name="수정일" pid="changed" type="DATE" value="20111026 164801">2011/10/26 16:48:01</property>
+<property defalut="" name="다시보기" pid="ref_replay" type="REFERENCED"/>
+<property defalut="" name="tmp_code" pid="tmp_code" type="TEXT" value=""></property>
+<property defalut="" name="세그먼트 내용" pid="segment_contents" type="CLOB" value=""></property>
+<property defalut="" name="고정 출연진" pid="ref_participant" type="REFERENCED"/>
+<property defalut="p_id.broadcast_planned_date" name="방송예정일" pid="broadcast_planned_date" type="DATE" value="20111106 000000">2011/11/06 00:00:00</property>
+<property defalut="p_id.program_sequence_number" name="회차넘버" pid="program_sequence_number" type="TEXT" value="">618</property>
+<property defalut="p_id.video_file_path_700k" name="초고화질 700k 링크" pid="video_file_path_700k" type="TEXT" value=""></property>
+<property defalut="p_id.conpia_url" name="콘피아 다운로드" pid="conpia_url" type="TEXT" value=""></property>
+<property defalut="p_id.pcode.channel_code" name="채널코드" pid="channel_code" type="CODE" value="12">2TV</property>
+<property defalut="group_code.group_code" name="gcode" pid="gcode" type="ID" value="">T2000-0065</property>
+<property defalut="segment_code.segment_code" name="세그먼트코드(Virtual)" pid="s_code" type="ID" value="">T2000-0065-S001</property>
+<property defalut="p_id.program_id" name="프로그램ID" pid="program_id" type="ID" value="">PS-2011140035-01-000</property>
+<property defalut="p_id.pcode.program_code" name="프로그램 코드" pid="program_code" type="ID" value="">T2000-0065</property>
+<property defalut="" name="History" pid="histories" type="LIST">
+<node iconclass="Icon_silk_m_q_page_page_white_database" nid="2" tid="_history_view">개그콘서트 코너 1</node>
+</property>
+<property defalut="0" name="Version" pid="_version" type="NUMBER" value=""></property>
+</node>
+<node nid="51100011856904" tid="mh_segment_id">
+<property defalut="" name="그룹코드" pid="group_code" type="REFERENCE" value="T2000-0065">T2000-0065</property>
+<property defalut="" name="회차" pid="p_id" type="REFERENCE" value="PS-2011135703-01-000">개그 콘서트</property>
+<property defalut="" name="세그먼트 아이디" pid="segment_id" type="ID" value="">PS-2011135703-01-000-S004</property>
+<property defalut="" name="세그먼트코드" pid="segment_code" type="REFERENCE" value="T2000-0065-S004">코너4</property>
+<property defalut="" name="시작 시간" pid="segment_start_time" type="TEXT" value=""></property>
+<property defalut="" name="종료 시간" pid="segment_end_time" type="TEXT" value=""></property>
+<property defalut="" name="대표 이미지" pid="thumnail_image" type="FILE" value=""></property>
+<property defalut="" name="연관 이미지" pid="relation_img" type="REFERENCED"/>
+<property defalut="" name="세그먼트명" pid="segment_title" type="NAME" value="">개그콘서트 코너 4</property>
+<property defalut="" name="저속 VOD" pid="video_file_path_56k" type="TEXT" value=""></property>
+<property defalut="" name="고속 VOD" pid="video_file_path_300k" type="TEXT" value=""></property>
+<property defalut="" name="저속 미리보기 VOD" pid="preview_video_56k" type="JSON" value=""></property>
+<property defalut="" name="고속 미리보기 VOD" pid="preview_video_300k" type="JSON" value=""></property>
+<property defalut="" name="초고속 미리보기 VOD" pid="preview_video_700k" type="JSON" value=""></property>
+<property defalut="" name="방송순서" pid="broadcast_order" type="NUMBER" value="">4</property>
+<property defalut="" name="등록일" pid="created" type="DATE" value="20111026 164747">2011/10/26 16:47:47</property>
+<property defalut="" name="수정일" pid="changed" type="DATE" value="20111026 164747">2011/10/26 16:47:47</property>
+<property defalut="" name="다시보기" pid="ref_replay" type="REFERENCED"/>
+<property defalut="" name="tmp_code" pid="tmp_code" type="TEXT" value=""></property>
+<property defalut="" name="세그먼트 내용" pid="segment_contents" type="CLOB" value=""></property>
+<property defalut="" name="고정 출연진" pid="ref_participant" type="REFERENCED"/>
+<property defalut="p_id.broadcast_planned_date" name="방송예정일" pid="broadcast_planned_date" type="DATE" value="20111030 000000">2011/10/30 00:00:00</property>
+<property defalut="p_id.program_sequence_number" name="회차넘버" pid="program_sequence_number" type="TEXT" value="">617</property>
+<property defalut="p_id.video_file_path_700k" name="초고화질 700k 링크" pid="video_file_path_700k" type="TEXT" value=""></property>
+<property defalut="p_id.conpia_url" name="콘피아 다운로드" pid="conpia_url" type="TEXT" value=""></property>
+<property defalut="p_id.pcode.channel_code" name="채널코드" pid="channel_code" type="CODE" value="12">2TV</property>
+<property defalut="group_code.group_code" name="gcode" pid="gcode" type="ID" value="">T2000-0065</property>
+<property defalut="segment_code.segment_code" name="세그먼트코드(Virtual)" pid="s_code" type="ID" value="">T2000-0065-S004</property>
+<property defalut="p_id.program_id" name="프로그램ID" pid="program_id" type="ID" value="">PS-2011135703-01-000</property>
+<property defalut="p_id.pcode.program_code" name="프로그램 코드" pid="program_code" type="ID" value="">T2000-0065</property>
+<property defalut="" name="History" pid="histories" type="LIST">
+<node iconclass="Icon_silk_m_q_page_page_white_database" nid="2" tid="_history_view">개그콘서트 코너 4</node>
+</property>
+<property defalut="0" name="Version" pid="_version" type="NUMBER" value=""></property>
+</node>
+<node nid="51100011856903" tid="mh_segment_id">
+<property defalut="" name="그룹코드" pid="group_code" type="REFERENCE" value="T2000-0065">T2000-0065</property>
+<property defalut="" name="회차" pid="p_id" type="REFERENCE" value="PS-2011135703-01-000">개그 콘서트</property>
+<property defalut="" name="세그먼트 아이디" pid="segment_id" type="ID" value="">PS-2011135703-01-000-S003</property>
+<property defalut="" name="세그먼트코드" pid="segment_code" type="REFERENCE" value="T2000-0065-S003">코너3</property>
+<property defalut="" name="시작 시간" pid="segment_start_time" type="TEXT" value=""></property>
+<property defalut="" name="종료 시간" pid="segment_end_time" type="TEXT" value=""></property>
+<property defalut="" name="대표 이미지" pid="thumnail_image" type="FILE" value=""></property>
+<property defalut="" name="연관 이미지" pid="relation_img" type="REFERENCED"/>
+<property defalut="" name="세그먼트명" pid="segment_title" type="NAME" value="">개그콘서트 코너 3</property>
+<property defalut="" name="저속 VOD" pid="video_file_path_56k" type="TEXT" value=""></property>
+<property defalut="" name="고속 VOD" pid="video_file_path_300k" type="TEXT" value=""></property>
+<property defalut="" name="저속 미리보기 VOD" pid="preview_video_56k" type="JSON" value=""></property>
+<property defalut="" name="고속 미리보기 VOD" pid="preview_video_300k" type="JSON" value=""></property>
+<property defalut="" name="초고속 미리보기 VOD" pid="preview_video_700k" type="JSON" value=""></property>
+<property defalut="" name="방송순서" pid="broadcast_order" type="NUMBER" value="">3</property>
+<property defalut="" name="등록일" pid="created" type="DATE" value="20111026 164738">2011/10/26 16:47:38</property>
+<property defalut="" name="수정일" pid="changed" type="DATE" value="20111026 164738">2011/10/26 16:47:38</property>
+<property defalut="" name="다시보기" pid="ref_replay" type="REFERENCED"/>
+<property defalut="" name="tmp_code" pid="tmp_code" type="TEXT" value=""></property>
+<property defalut="" name="세그먼트 내용" pid="segment_contents" type="CLOB" value=""></property>
+<property defalut="" name="고정 출연진" pid="ref_participant" type="REFERENCED"/>
+<property defalut="p_id.broadcast_planned_date" name="방송예정일" pid="broadcast_planned_date" type="DATE" value="20111030 000000">2011/10/30 00:00:00</property>
+<property defalut="p_id.program_sequence_number" name="회차넘버" pid="program_sequence_number" type="TEXT" value="">617</property>
+<property defalut="p_id.video_file_path_700k" name="초고화질 700k 링크" pid="video_file_path_700k" type="TEXT" value=""></property>
+<property defalut="p_id.conpia_url" name="콘피아 다운로드" pid="conpia_url" type="TEXT" value=""></property>
+<property defalut="p_id.pcode.channel_code" name="채널코드" pid="channel_code" type="CODE" value="12">2TV</property>
+<property defalut="group_code.group_code" name="gcode" pid="gcode" type="ID" value="">T2000-0065</property>
+<property defalut="segment_code.segment_code" name="세그먼트코드(Virtual)" pid="s_code" type="ID" value="">T2000-0065-S003</property>
+<property defalut="p_id.program_id" name="프로그램ID" pid="program_id" type="ID" value="">PS-2011135703-01-000</property>
+<property defalut="p_id.pcode.program_code" name="프로그램 코드" pid="program_code" type="ID" value="">T2000-0065</property>
+<property defalut="" name="History" pid="histories" type="LIST">
+<node iconclass="Icon_silk_m_q_page_page_white_database" nid="2" tid="_history_view">개그콘서트 코너 3</node>
+</property>
+<property defalut="0" name="Version" pid="_version" type="NUMBER" value=""></property>
+</node>
+<node nid="51100011856902" tid="mh_segment_id">
+<property defalut="" name="그룹코드" pid="group_code" type="REFERENCE" value="T2000-0065">T2000-0065</property>
+<property defalut="" name="회차" pid="p_id" type="REFERENCE" value="PS-2011135703-01-000">개그 콘서트</property>
+<property defalut="" name="세그먼트 아이디" pid="segment_id" type="ID" value="">PS-2011135703-01-000-S002</property>
+<property defalut="" name="세그먼트코드" pid="segment_code" type="REFERENCE" value="T2000-0065-S002">코너2</property>
+<property defalut="" name="시작 시간" pid="segment_start_time" type="TEXT" value=""></property>
+<property defalut="" name="종료 시간" pid="segment_end_time" type="TEXT" value=""></property>
+<property defalut="" name="대표 이미지" pid="thumnail_image" type="FILE" value=""></property>
+<property defalut="" name="연관 이미지" pid="relation_img" type="REFERENCED"/>
+<property defalut="" name="세그먼트명" pid="segment_title" type="NAME" value="">개그콘서트 코너 2</property>
+<property defalut="" name="저속 VOD" pid="video_file_path_56k" type="TEXT" value=""></property>
+<property defalut="" name="고속 VOD" pid="video_file_path_300k" type="TEXT" value=""></property>
+<property defalut="" name="저속 미리보기 VOD" pid="preview_video_56k" type="JSON" value=""></property>
+<property defalut="" name="고속 미리보기 VOD" pid="preview_video_300k" type="JSON" value=""></property>
+<property defalut="" name="초고속 미리보기 VOD" pid="preview_video_700k" type="JSON" value=""></property>
+<property defalut="" name="방송순서" pid="broadcast_order" type="NUMBER" value="">2</property>
+<property defalut="" name="등록일" pid="created" type="DATE" value="20111026 164729">2011/10/26 16:47:29</property>
+<property defalut="" name="수정일" pid="changed" type="DATE" value="20111026 164729">2011/10/26 16:47:29</property>
+<property defalut="" name="다시보기" pid="ref_replay" type="REFERENCED"/>
+<property defalut="" name="tmp_code" pid="tmp_code" type="TEXT" value=""></property>
+<property defalut="" name="세그먼트 내용" pid="segment_contents" type="CLOB" value=""></property>
+<property defalut="" name="고정 출연진" pid="ref_participant" type="REFERENCED"/>
+<property defalut="p_id.broadcast_planned_date" name="방송예정일" pid="broadcast_planned_date" type="DATE" value="20111030 000000">2011/10/30 00:00:00</property>
+<property defalut="p_id.program_sequence_number" name="회차넘버" pid="program_sequence_number" type="TEXT" value="">617</property>
+<property defalut="p_id.video_file_path_700k" name="초고화질 700k 링크" pid="video_file_path_700k" type="TEXT" value=""></property>
+<property defalut="p_id.conpia_url" name="콘피아 다운로드" pid="conpia_url" type="TEXT" value=""></property>
+<property defalut="p_id.pcode.channel_code" name="채널코드" pid="channel_code" type="CODE" value="12">2TV</property>
+<property defalut="group_code.group_code" name="gcode" pid="gcode" type="ID" value="">T2000-0065</property>
+<property defalut="segment_code.segment_code" name="세그먼트코드(Virtual)" pid="s_code" type="ID" value="">T2000-0065-S002</property>
+<property defalut="p_id.program_id" name="프로그램ID" pid="program_id" type="ID" value="">PS-2011135703-01-000</property>
+<property defalut="p_id.pcode.program_code" name="프로그램 코드" pid="program_code" type="ID" value="">T2000-0065</property>
+<property defalut="" name="History" pid="histories" type="LIST">
+<node iconclass="Icon_silk_m_q_page_page_white_database" nid="2" tid="_history_view">개그콘서트 코너 2</node>
+</property>
+<property defalut="0" name="Version" pid="_version" type="NUMBER" value=""></property>
+</node>
+</nodes>

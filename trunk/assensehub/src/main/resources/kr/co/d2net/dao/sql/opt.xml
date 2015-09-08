@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="Opt">
+    
+    <typeAlias alias="Opt" type="kr.co.d2net.dto.OptTbl"/>
+    
+    <resultMap id="OptMap" class="Opt">
+    	<result property="optId" column="OPT_ID" /> 
+		<result property="optDesc" column="OPT_DESC" />
+		<result property="optInfo" column="OPT_INFO" />
+		<result property="defaultYn" column="DEFAULT_YN" />
+		<result property="useYn" column="USE_YN" />
+		
+	
+    </resultMap>
+
+    <select id="findOpt" resultMap="OptMap" parameterClass="map">
+	     SELECT  
+             *
+         FROM OPT
+         <dynamic prepend="WHERE">
+		 	<isNotEmpty property="useYn" prepend="AND">
+				USE_YN = #useYn#
+			</isNotEmpty>	
+         </dynamic>
+           ORDER BY DEFAULT_YN ASC
+    </select>
+    
+    <select id="getOpt" resultClass="Opt" parameterClass="map">
+		SELECT  
+			OPT_ID     as optId,      
+			OPT_DESC       as optDesc,      
+			OPT_INFO     as optInfo,     
+			DEFAULT_YN       as defaultYn,     
+			USE_YN          as useYn         
+			
+		FROM OPT
+		<dynamic prepend="WHERE">
+			<isNotEmpty property="optId" prepend="AND">
+				OPT_ID = #optId#
+			</isNotEmpty>
+			<isNotEmpty property="defaultYn" prepend="AND">
+				DEFAULT_YN = #defaultYn#
+			</isNotEmpty>
+		</dynamic>
+    </select>
+    
+    <insert id="insertOpt" parameterClass="Opt">
+		INSERT INTO OPT (
+			OPT_ID,OPT_DESC,OPT_INFO,DEFAULT_YN,USE_YN
+		) VALUES (
+			OPT_ID_SEQ.NEXTVAL,#optDesc#,#optInfo#,#defaultYn#,#useYn#
+		)
+	</insert>
+    
+    <update id="deleteOpt" parameterClass="Opt">
+    	UPDATE OPT SET USE_YN=#useYn#,DEFAULT_YN=#defaultYn# 
+    	<dynamic prepend="WHERE">
+	    	<isNotNull property="optId" prepend="AND">
+	    		OPT_ID=#optId#
+	    	</isNotNull>
+    	</dynamic>
+    </update>
+    
+    <update id="updateOpt" parameterClass="Opt">
+    	UPDATE OPT SET OPT_DESC=#optDesc#,OPT_INFO=#optInfo# 
+    	<dynamic prepend="WHERE">
+	    	<isNotNull property="optId" prepend="AND">
+	    		OPT_ID=#optId#
+	    	</isNotNull>
+    	</dynamic>
+    </update>
+    
+    <update id="updateOpt2" parameterClass="Opt">
+    	UPDATE OPT SET DEFAULT_YN=#defaultYn# 
+    	<dynamic prepend="WHERE">
+	    	<isNotNull property="optId" prepend="AND">
+	    		OPT_ID=#optId#
+	    	</isNotNull>
+    	</dynamic>
+    </update>
+    
+     <update id="updateOpt3" parameterClass="Opt">
+    	UPDATE OPT SET DEFAULT_YN=#defaultYn# 
+    	<dynamic prepend="WHERE">
+	    	
+    	</dynamic>
+    </update>
+    
+    
+ </sqlMap>

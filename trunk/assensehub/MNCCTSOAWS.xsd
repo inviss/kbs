@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is JAX-WS RI 2.1.4-b01-.--><xs:schema version="1.0" targetNamespace="http://oa.kmnc.icube.com/" xmlns:tns="http://oa.kmnc.icube.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="cancelJob" type="tns:cancelJob"/>
+  <xs:element name="cancelJobResponse" type="tns:cancelJobResponse"/>
+  <xs:element name="getConvertProfileList" type="tns:getConvertProfileList"/>
+  <xs:element name="getConvertProfileListResponse" type="tns:getConvertProfileListResponse"/>
+  <xs:element name="getJobStatus" type="tns:getJobStatus"/>
+  <xs:element name="getJobStatusResponse" type="tns:getJobStatusResponse"/>
+  <xs:element name="getMNCFTPSvr" type="tns:getMNCFTPSvr"/>
+  <xs:element name="getMNCFTPSvrResponse" type="tns:getMNCFTPSvrResponse"/>
+  <xs:element name="getTransferProfileList" type="tns:getTransferProfileList"/>
+  <xs:element name="getTransferProfileListResponse" type="tns:getTransferProfileListResponse"/>
+  <xs:element name="requestJob" type="tns:requestJob"/>
+  <xs:element name="requestJobEx" type="tns:requestJobEx"/>
+  <xs:element name="requestJobExResponse" type="tns:requestJobExResponse"/>
+  <xs:element name="requestJobResponse" type="tns:requestJobResponse"/>
+  <xs:complexType name="getConvertProfileList">
+    <xs:sequence/>
+  </xs:complexType>
+  <xs:complexType name="getConvertProfileListResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cancelJob">
+    <xs:sequence>
+      <xs:element name="jobID" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cancelJobResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getTransferProfileList">
+    <xs:sequence/>
+  </xs:complexType>
+  <xs:complexType name="getTransferProfileListResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="requestJob">
+    <xs:sequence>
+      <xs:element name="srcVideoPath" type="xs:string" minOccurs="0"/>
+      <xs:element name="srcMetaPath" type="xs:string" minOccurs="0"/>
+      <xs:element name="convertProfileName" type="xs:string" minOccurs="0"/>
+      <xs:element name="transferProfileName" type="xs:string" minOccurs="0"/>
+      <xs:element name="callerName" type="xs:string" minOccurs="0"/>
+      <xs:element name="userID" type="xs:string" minOccurs="0"/>
+      <xs:element name="extra1" type="xs:string" minOccurs="0"/>
+      <xs:element name="extra2" type="xs:string" minOccurs="0"/>
+      <xs:element name="extra3" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="requestJobResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getJobStatus">
+    <xs:sequence>
+      <xs:element name="jobID" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getJobStatusResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int"/>
+      <xs:element name="jobStatus" type="xs:int" minOccurs="0"/>
+      <xs:element name="jobProgress" type="xs:int" minOccurs="0"/>
+      <xs:element name="errorOut" type="xs:int" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getMNCFTPSvr">
+    <xs:sequence>
+      <xs:element name="callerName" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getMNCFTPSvrResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="requestJobEx">
+    <xs:sequence>
+      <xs:element name="srcVideoPath" type="xs:string" minOccurs="0"/>
+      <xs:element name="srcMetaPath" type="xs:string" minOccurs="0"/>
+      <xs:element name="convertProfileName" type="xs:string" minOccurs="0"/>
+      <xs:element name="transferProfileName" type="xs:string" minOccurs="0"/>
+      <xs:element name="callerName" type="xs:string" minOccurs="0"/>
+      <xs:element name="userID" type="xs:string" minOccurs="0"/>
+      <xs:element name="extra1" type="xs:string" minOccurs="0"/>
+      <xs:element name="extra2" type="xs:string" minOccurs="0"/>
+      <xs:element name="extra3" type="xs:string" minOccurs="0"/>
+      <xs:element name="programID" type="xs:string" minOccurs="0"/>
+      <xs:element name="programCode" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="requestJobExResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="BusiPartner">
+    
+    <typeAlias alias="BusiPartner" type="kr.co.d2net.dto.BusiPartnerTbl"/>
+    
+    <resultMap id="BusiPartnerMap" class="BusiPartner">
+    	<result property="busiPartnerid" column="BUSI_PARTNERID" />
+		<result property="regrid" column="REGRID" />
+		<result property="regDt" column="REG_DT" />
+		<result property="modrid" column="MODRID" />
+		<result property="modDt" column="MOD_DT" />
+		<result property="password" column="PASSWORD" />
+		<result property="company" column="COMPANY" />
+		<result property="servyn" column="SERVYN" />
+		<result property="ftpServYn" column="FTP_SERV_YN" />
+		<result property="folderRule" column="FOLDER_RULE" />
+		<result property="ip" column="IP" />              
+		<result property="port" column="PORT" />              
+		<result property="transMethod" column="TRANS_METHOD" />
+		<result property="remoteDir" column="REMOTE_DIR" />  
+		<result property="ftpid" column="FTPID" />  
+		<result property="srvUrl" column="SRV_URL" />
+		<result property="contentML" column="CONTENT_ML" />  
+		<result property="vodSmil" column="VOD_SMIL" />
+		<result property="alias" column="ALIAS" />
+		<result property="proEngYn" column="PRO_ENG_YN" />
+    </resultMap>
+    
+    <select id="findBusiPartner" resultMap="BusiPartnerMap" parameterClass="map">
+	     SELECT  
+             *
+         FROM BUSI_PARTNER_TBL
+         <dynamic prepend="WHERE">
+			SERVYN ='Y'
+         </dynamic>
+    </select>
+    
+    <select id="getBusiPartnerId" resultClass="BusiPartner" parameterClass="map">
+		SELECT  
+			BUSI_PARTNERID_SEQ.NEXTVAL 
+		FROM DUAL
+		<dynamic prepend="WHERE">
+			
+		</dynamic>
+    </select>
+    
+    <select id="getBusiPartner" resultClass="BusiPartner" parameterClass="map">
+		SELECT  
+			BUSI_PARTNERID as busiPartnerid,  
+			REGRID         as regrid,         
+			REG_DT         as regDt,          
+			MODRID         as modrid,         
+			MOD_DT         as modDt,          
+			PASSWORD       as password,       
+			COMPANY        as company,        
+			SERVYN         as servyn,       
+			FTP_SERV_YN    as ftpServYn,    
+			FOLDER_RULE    as folderRule,   
+			IP             as ip,           
+			PORT           as port,
+			REMOTE_DIR     as remoteDir,              
+			TRANS_METHOD   as transMethod,
+			FTPID		   as ftpid,
+			SRV_URL		   as srvUrl,
+			CONTENT_ML     as contentML,
+			VOD_SMIL       as vodSmil,
+			ALIAS		   as alias,
+			PRO_ENG_YN		   as proEngYn
+		FROM BUSI_PARTNER_TBL
+		<dynamic prepend="WHERE">
+			<isNotEmpty property="busiPartnerid" prepend="AND">
+				BUSI_PARTNERID = #busiPartnerid#
+			</isNotEmpty>
+		</dynamic>
+    </select>
+    
+    <insert id="insertBusiPartner" parameterClass="BusiPartner">
+		INSERT INTO BUSI_PARTNER_TBL (
+			BUSI_PARTNERID,REGRID,REG_DT,MODRID,MOD_DT,PASSWORD,COMPANY,SERVYN,FTP_SERV_YN,FOLDER_RULE,IP,PORT,TRANS_METHOD ,REMOTE_DIR,FTPID,SRV_URL,CONTENT_ML,VOD_SMIL,ALIAS,PRO_ENG_YN
+
+		) VALUES (
+			#busiPartnerid#,#regrid#,sysdate,#modrid#,#modDt#,#password#,#company#,#servyn#,#ftpServYn#,#folderRule#,#ip#,#port#,#transMethod#,#remoteDir#,#ftpid#,#srvUrl#,#contentML#,#vodSmil#,#alias#,#proEngYn#
+		)
+	</insert>
+    
+    <update id="updateBusiPartner" parameterClass="BusiPartner">
+    	UPDATE BUSI_PARTNER_TBL SET REGRID=#regrid#,MOD_DT=sysdate,MODRID=#modrid#,PASSWORD=#password#,COMPANY=#company#,SERVYN=#servyn#,FTP_SERV_YN=#ftpServYn#,FOLDER_RULE=#folderRule#,IP=#ip#,PORT=#port#,TRANS_METHOD=#transMethod# ,REMOTE_DIR=#remoteDir#,FTPID=#ftpid#,
+    	SRV_URL=#srvUrl#,CONTENT_ML=#contentML#,VOD_SMIL=#vodSmil#,ALIAS=#alias#,PRO_ENG_YN=#proEngYn#
+    	<dynamic prepend="WHERE">
+	    	<isNotNull property="busiPartnerid" prepend="AND">
+	    		BUSI_PARTNERID=#busiPartnerid#
+	    	</isNotNull>
+    	</dynamic>
+    </update>
+    
+    <update id="deleteBusiPartner" parameterClass="BusiPartner">
+    	DELETE FROM BUSI_PARTNER_TBL 
+    	<dynamic prepend="WHERE">
+	    	<isNotNull property="busiPartnerid" prepend="AND">
+	    		BUSI_PARTNERID=#busiPartnerid#
+	    	</isNotNull>
+    	</dynamic>
+    </update>
+ </sqlMap>

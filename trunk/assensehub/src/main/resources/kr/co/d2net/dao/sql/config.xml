@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="Config">
+    
+    <typeAlias alias="Config" type="kr.co.d2net.dto.ConfigTbl"/>
+    
+    <resultMap id="ConfigMap" class="Config">
+    	<result property="propName" column="PROP_NAME" />  
+		<result property="propValue" column="PROP_VALUE" />
+		<result property="regrid" column="REGRID" />   
+		<result property="regDt" column="REG_DT" />
+		<result property="modrid" column="MODRID" />
+		<result property="modDt" column="MOD_DT" />
+
+    </resultMap>
+    
+    <select id="findConfig" resultMap="ConfigMap" parameterClass="map">
+	     SELECT  
+             *
+         FROM CONFIG_TBL
+         <dynamic prepend="WHERE">
+
+         </dynamic>
+    </select>
+    
+    <select id="getConfig" resultClass="Config" parameterClass="map">
+		SELECT  
+			PROP_NAME  as propName,
+			PROP_VALUE as propValue,
+			REGRID     as regrid,
+			REG_DT     as regDt,    
+			MODRID     as modrid,   
+			MOD_DT     as modDt 
+		FROM CONFIG_TBL
+		<dynamic prepend="WHERE">
+
+		</dynamic>
+    </select>
+    
+    <insert id="insertConfig" parameterClass="Config">
+		INSERT INTO CONFIG_TBL (
+			PROP_NAME,PROP_VALUE,REGRID,REG_DT,MODRID,MOD_DT
+		) VALUES (
+			#propName#,#propValue#,#regrid#,#regDt#,#modrid#,#modDt#
+		)
+	</insert>
+    
+ </sqlMap>

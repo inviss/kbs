@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="ProFl">
+    
+    <typeAlias alias="ProFl" type="kr.co.d2net.dto.ProFlTbl"/>
+    
+    <resultMap id="ProFlMap" class="ProFl">
+    	<result property="proFlid" column="PRO_FLID" /> 
+		<result property="regrid" column="REGRID" />
+		<result property="servBit" column="SERV_BIT" />
+		<result property="modrid" column="MODRID" />
+		<result property="ext" column="EXT" />
+		<result property="vdoCodec" column="VDO_CODEC" />
+		<result property="vdoBitRate" column="VDO_BIT_RATE" />
+		<result property="vdoHori" column="VDO_HORI" />
+		<result property="vdoVert" column="VDO_VERT" />
+		<result property="vdoFS" column="VDO_F_S" />
+		<result property="vdoSync" column="VDO_SYNC" />
+		<result property="audCodec" column="AUD_CODEC" />
+		<result property="audBitRate" column="AUD_BIT_RATE" />
+		<result property="audChan" column="AUD_CHAN" />
+		<result property="audSRate" column="AUD_S_RATE" />
+		<result property="keyFrame" column="KEY_FRAME" />
+		<result property="chanpriority" column="CHANPRIORITY" />
+		<result property="priority" column="PRIORITY" />
+		<result property="proFlnm" column="PRO_FLNM" />
+		<result property="modDt" column="MOD_DT" />
+		<result property="regDt" column="REG_DT" />
+		<result property="picKind" column="PIC_KIND" />
+		<result property="useYn" column="USE_YN" />
+		<result property="flNameRule" column="FL_NAME_RULE" />
+    </resultMap>
+
+    <select id="findProFl" resultMap="ProFlMap" parameterClass="map">
+	     SELECT  
+             *
+         FROM PRO_FL_TBL
+         <dynamic prepend="WHERE">
+		 	<isNotEmpty property="useYn" prepend="AND">
+				USE_YN = #useYn#
+			</isNotEmpty>
+		 	<isNotEmpty property="picKind" prepend="AND">
+				PIC_KIND = #picKind#
+			</isNotEmpty>
+		 	<isNotEmpty property="flNameRule" prepend="AND">
+				FL_NAME_RULE = #flNameRule#
+			</isNotEmpty>	
+         </dynamic>
+    </select>
+    
+    <select id="findProflExt" resultClass="java.lang.String" parameterClass="java.lang.String">
+    	<isEqual compareValue="high">
+    		SELECT  
+            	rmk_1 as EXT
+         	FROM CODE_TBL
+         	WHERE USE_YN = 'Y' AND (clf_nm LIKE '1%' or clf_nm LIKE '3%') AND clf_cd = 'FMAT'
+         	GROUP BY rmk_1
+    	</isEqual>
+	    <isEqual compareValue="row">
+    		SELECT  
+            	EXT
+         	FROM PRO_FL_TBL
+         	WHERE USE_YN = 'Y'
+         	GROUP BY EXT
+    	</isEqual>
+    </select>
+    <select id="getProFl" resultClass="ProFl" parameterClass="map">
+		SELECT  
+			PRO_FLID     as proFlid,      
+			REGRID       as regrid,      
+			SERV_BIT     as servBit,     
+			MODRID       as modrid,      
+			lower(EXT)   as ext,         
+			VDO_CODEC    as vdoCodec,
+			VDO_BIT_RATE as vdoBitRate,  
+			VDO_HORI     as vdoHori,     
+			VDO_VERT     as vdoVert,     
+			VDO_F_S      as vdoFS,       
+			VDO_SYNC     as vdoSync,     
+			AUD_CODEC    as audCodec,    
+			AUD_BIT_RATE as audBitRate,  
+			AUD_CHAN     as audChan,     
+			AUD_S_RATE   as audSRate,    
+			KEY_FRAME    as keyFrame,    
+			CHANPRIORITY as chanpriority,
+			PRIORITY     as priority,
+			PRO_FLNM     as proFlnm,
+			MOD_DT		 as modDt,
+			REG_DT		 as regDt,
+			PIC_KIND	 as picKind,
+			USE_YN          as useYn,
+			FL_NAME_RULE as flNameRule  
+		FROM PRO_FL_TBL
+		<dynamic prepend="WHERE">
+			PRO_FLID = #proFlid#
+		</dynamic>
+    </select>
+    
+    <insert id="insertProFl" parameterClass="ProFl">
+		INSERT INTO PRO_FL_TBL (
+			PRO_FLID,REGRID,SERV_BIT,MODRID,EXT,VDO_CODEC,VDO_BIT_RATE,VDO_HORI,VDO_VERT,VDO_F_S,VDO_SYNC,AUD_CODEC,AUD_BIT_RATE,AUD_CHAN,AUD_S_RATE,KEY_FRAME,CHANPRIORITY,PRIORITY,PRO_FLNM,MOD_DT,REG_DT,PIC_KIND,USE_YN,FL_NAME_RULE
+		) VALUES (
+			#proFlid#,#regrid#,#servBit#,#modrid#,#ext#,#vdoCodec#,#vdoBitRate#,#vdoHori#,#vdoVert#,#vdoFS#,#vdoSync#,#audCodec#,#audBitRate#,#audChan#,#audSRate#,#keyFrame#,#chanpriority#,#priority#,#proFlnm#,#modDt#,sysdate,#picKind#,#useYn#,#flNameRule#
+		)
+	</insert>
+    
+    <update id="updateProFl" parameterClass="ProFl">
+    	UPDATE PRO_FL_TBL SET REGRID=#regrid#, SERV_BIT=#servBit#, MODRID=#modrid#, EXT=#ext#, VDO_CODEC=#vdoCodec#, VDO_BIT_RATE=#vdoBitRate#, VDO_HORI=#vdoHori#, VDO_VERT=#vdoVert#, VDO_F_S=#vdoFS#, VDO_SYNC=#vdoSync#, AUD_CODEC=#audCodec#, AUD_BIT_RATE=#audBitRate#, AUD_CHAN=#audChan#, AUD_S_RATE=#audSRate#, KEY_FRAME=#keyFrame#, CHANPRIORITY=#chanpriority#, PRIORITY=#priority#, PRO_FLNM=#proFlnm#, MOD_DT=sysdate, PIC_KIND=#picKind#,FL_NAME_RULE=#flNameRule#
+    	<dynamic prepend="WHERE">
+	    	<isNotNull property="proFlid" prepend="AND">
+	    		PRO_FLID=#proFlid#
+	    	</isNotNull>
+    	</dynamic>
+    </update>
+    
+    <update id="deleteProFl" parameterClass="ProFl">
+    	DELETE FROM PRO_FL_TBL 
+    	<dynamic prepend="WHERE">
+	    	<isNotNull property="proFlid" prepend="AND">
+	    		PRO_FLID=#proFlid#
+	    	</isNotNull>
+    	</dynamic>
+    </update>
+    
+    <select id="getProFlId" resultClass="ProFl" parameterClass="map">
+		SELECT  
+			PRO_FLID_SEQ.NEXTVAL 
+		FROM DUAL
+		<dynamic prepend="WHERE">
+			
+		</dynamic>
+    </select>
+ </sqlMap>
