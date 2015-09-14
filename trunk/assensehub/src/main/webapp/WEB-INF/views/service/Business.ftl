@@ -189,6 +189,14 @@
 		                	table += '<td><ul class="radio"><li class="blank"><input name="ftpServYn" type="radio" value="Y">사용함</li>'
 		                	table += '<li class="blank"><input name="ftpServYn" type="radio" value="N" checked="checked">사용안함</li></ul></td></tr>'
 		                }
+		                table += '<tr><th>그룹코드 사용 여부</th>'
+                		if(data.busipartnerTbl.gcodeUseYn == "Y"){
+                			table += '<td><ul class="radio"><li class="blank"><input name="gcodeUseYn" type="radio" value="Y" checked="checked">사용함</li>'
+		                	table += '<li class="blank"><input name="gcodeUseYn" type="radio" value="N" >사용안함</li></ul></td></tr>'
+		                }else{
+		                	table += '<td><ul class="radio"><li class="blank"><input name="gcodeUseYn" type="radio" value="Y">사용함</li>'
+		                	table += '<li class="blank"><input name="gcodeUseYn" type="radio" value="N" checked="checked">사용안함</li></ul></td></tr>'
+		                }
 		                table += '<tr><th>프로그램 Alias정보</th>'
 		                if(data.busipartnerTbl.proEngYn == "N"){
 		                		table += '<td><ul class="radio">'
@@ -311,6 +319,9 @@
                 		table += '<tr><th>FTP 서비스 여부</th>'
                 		table += '<td><ul class="radio"><li class="blank"><input name="ftpServYn" type="radio" value="Y" checked="checked">사용함</li>'
 		                table += '<li class="blank"><input name="ftpServYn" type="radio" value="N" >사용안함</li></ul></td></tr>'
+		                table += '<tr><th>그룹코드 사용 여부</th>'
+                		table += '<td><ul class="radio"><li class="blank"><input name="gcodeUseYn" type="radio" value="Y" checked="checked">사용함</li>'
+		                table += '<li class="blank"><input name="gcodeUseYn" type="radio" value="N" >사용안함</li></ul></td></tr>'
 		                table += '<tr><th>프로그램 Alias정보</th>'
                 		table += '<td><ul class="radio">'
 		                table += '<li class="blank"><input name="proEngYn" type="radio" value="N" checked="checked">코드</li>'
@@ -408,6 +419,13 @@
 		                <ul class="radio">
 		                <li class="blank"><input name="ftpServYn" type="radio" value="Y" checked="checked">사용함</li>
 		                <li class="blank"><input name="ftpServYn" type="radio" value="N" >사용안함</li>
+		                </ul>
+						</td></tr>
+						<tr><th>그룹코드 사용 여부</th>
+		                <td>
+		                <ul class="radio">
+		                <li class="blank"><input name="gcodeUseYn" type="radio" value="Y" checked="checked">사용함</li>
+		                <li class="blank"><input name="gcodeUseYn" type="radio" value="N" >사용안함</li>
 		                </ul>
 						</td></tr>
 		                <tr><th>프로그램 Alias정보</th>

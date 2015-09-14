@@ -26,6 +26,7 @@
 		<result property="vodSmil" column="VOD_SMIL" />
 		<result property="alias" column="ALIAS" />
 		<result property="proEngYn" column="PRO_ENG_YN" />
+		<result property="gcodeUseYn" column="GCODE_USE_YN" />
     </resultMap>
     
     <select id="findBusiPartner" resultMap="BusiPartnerMap" parameterClass="map">
@@ -67,7 +68,8 @@
 			CONTENT_ML     as contentML,
 			VOD_SMIL       as vodSmil,
 			ALIAS		   as alias,
-			PRO_ENG_YN		   as proEngYn
+			PRO_ENG_YN	   as proEngYn,
+			GCODE_USE_YN   as gcodeUseYn
 		FROM BUSI_PARTNER_TBL
 		<dynamic prepend="WHERE">
 			<isNotEmpty property="busiPartnerid" prepend="AND">
@@ -78,16 +80,16 @@
     
     <insert id="insertBusiPartner" parameterClass="BusiPartner">
 		INSERT INTO BUSI_PARTNER_TBL (
-			BUSI_PARTNERID,REGRID,REG_DT,MODRID,MOD_DT,PASSWORD,COMPANY,SERVYN,FTP_SERV_YN,FOLDER_RULE,IP,PORT,TRANS_METHOD ,REMOTE_DIR,FTPID,SRV_URL,CONTENT_ML,VOD_SMIL,ALIAS,PRO_ENG_YN
+			BUSI_PARTNERID,REGRID,REG_DT,MODRID,MOD_DT,PASSWORD,COMPANY,SERVYN,FTP_SERV_YN,FOLDER_RULE,IP,PORT,TRANS_METHOD ,REMOTE_DIR,FTPID,SRV_URL,CONTENT_ML,VOD_SMIL,ALIAS,PRO_ENG_YN,GCODE_USE_YN
 
 		) VALUES (
-			#busiPartnerid#,#regrid#,sysdate,#modrid#,#modDt#,#password#,#company#,#servyn#,#ftpServYn#,#folderRule#,#ip#,#port#,#transMethod#,#remoteDir#,#ftpid#,#srvUrl#,#contentML#,#vodSmil#,#alias#,#proEngYn#
+			#busiPartnerid#,#regrid#,sysdate,#modrid#,#modDt#,#password#,#company#,#servyn#,#ftpServYn#,#folderRule#,#ip#,#port#,#transMethod#,#remoteDir#,#ftpid#,#srvUrl#,#contentML#,#vodSmil#,#alias#,#proEngYn#,#gcodeUseYn#
 		)
 	</insert>
     
     <update id="updateBusiPartner" parameterClass="BusiPartner">
     	UPDATE BUSI_PARTNER_TBL SET REGRID=#regrid#,MOD_DT=sysdate,MODRID=#modrid#,PASSWORD=#password#,COMPANY=#company#,SERVYN=#servyn#,FTP_SERV_YN=#ftpServYn#,FOLDER_RULE=#folderRule#,IP=#ip#,PORT=#port#,TRANS_METHOD=#transMethod# ,REMOTE_DIR=#remoteDir#,FTPID=#ftpid#,
-    	SRV_URL=#srvUrl#,CONTENT_ML=#contentML#,VOD_SMIL=#vodSmil#,ALIAS=#alias#,PRO_ENG_YN=#proEngYn#
+    	SRV_URL=#srvUrl#,CONTENT_ML=#contentML#,VOD_SMIL=#vodSmil#,ALIAS=#alias#,PRO_ENG_YN=#proEngYn#,GCODE_USE_YN=#gcodeUseYn#
     	<dynamic prepend="WHERE">
 	    	<isNotNull property="busiPartnerid" prepend="AND">
 	    		BUSI_PARTNERID=#busiPartnerid#

@@ -27,7 +27,17 @@ public class BusiPartnerTbl {
 	private String vodSmil;
 	private String alias;
 	private String proEngYn; // 프로그램 영문 사용여부
+	private String gcodeUseYn; // 그룹코드 사용 여부
 	
+	
+	public String getGcodeUseYn() {
+		return gcodeUseYn;
+	}
+
+	public void setGcodeUseYn(String gcodeUseYn) {
+		this.gcodeUseYn = gcodeUseYn;
+	}
+
 	public String getProEngYn() {
 		return proEngYn;
 	}
