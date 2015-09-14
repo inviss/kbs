@@ -100,13 +100,16 @@ function checkEmpty(value){
  }
 function callDownload(tmp){
 
-var filePath = document.getElementById('filePath').value
+var filePath = document.getElementById('filePath').value;
+
+console.log(filePath);
 
 
 		if(filePath === undefined || filePath == null || filePath.length <= 0){
 			alert("파일/프로파일이 선택되지 않았습니다!.");			
 		}else{
 			alert("다운로드 요청을 하겠습니다!.");
+			return;
 			document.ContentsSearch.downFile.value = filePath;
 			
 			document.ContentsSearch.action="<@spring.url '/content/filedownload.ssc'/>";
@@ -173,7 +176,8 @@ function deleteContentsInst(tmp){
 function getContentInfo(ctId){
 	
 	document.ContentsSearch.ctId.value=ctId;
-	$jq('#Player').attr("URL","");
+
+	$jq('#Player').attr("URL","")
 	var obj = ($jq('#ContentsSearch').get(0));
 	$jq.ajax({
 		url: '<@spring.url "/content/ajaxFindContentInfo.ssc" />',
@@ -192,7 +196,6 @@ function getContentInfo(ctId){
 			  table +='<tr><th>제목</th><td id="pgmNm">'+isEmpty(data.contentsTbl.pgmNm)+'</td></tr>'
 			  table +='<tr><th>콘텐츠명</th><td>'+isEmpty(data.contentsTbl.ctNm)+'</td></tr>'
 			$jq('#viewContent').append(table);
-			
 			
 			if(data.contentsTbl.channelCode == "11" || data.contentsTbl.channelCode == "12"){
 				document.ContentsSearch.avGubun.value='V';
@@ -483,6 +486,10 @@ function saveContentInfo(){
 
 
 function viewMediaPlayer(filePath,ctId,ctiId,wrkFileNm,proFlid){
+	
+	alert('a');
+	console.log(filePath);
+
 	ContentsSearch.filePath.value=filePath;
 	ContentsSearch.ctId.value=ctId;
 	ContentsSearch.ctiId.value=ctiId;
@@ -516,13 +523,15 @@ function viewMediaPlayer(filePath,ctId,ctiId,wrkFileNm,proFlid){
 	table += '</span>'
 	
 	$jq('#selectContentsInst').append(table);
+	
 	-->
-	//prompt("Media URL :", "<@spring.url '"+filePath+"'/>");
+	prompt("Media URL :", "<@spring.url '"+filePath+"'/>");
 	$jq('#Player').attr("URL", "<@spring.url '"+filePath+"'/>");
 	
 }
 
 function viewMediaPlayer2(filePath,ctId,ctiId,wrkFileNm,proFlid){
+	alert('b');
 	ContentsSearch.filePath.value=filePath;
 	ContentsSearch.ctId.value=ctId;
 	ContentsSearch.ctiId.value=ctiId;
@@ -798,7 +807,7 @@ function contentsCopy(){
 			         	<td align="left" title="${content.ctId!""}">
 			            	&nbsp;<div class="icon">
 			             	<img src='<@spring.url "/images/icon_"+regrid+".gif"/>'/>		
-			            	&nbsp;<a href="javascript:void(0)" onclick="getContentInfo('${content.ctId!""}');Player.controls.stop();">${content.pgmNm!""}</a></div>
+			            	&nbsp;<a href="javascript:void(0)" onclick="getContentInfo('${content.ctId!""}');">${content.pgmNm!""}</a></div>
 			            </td>
 			            <#else>
 			            <td align="left" title="${content.ctId!""}">
