@@ -69,6 +69,7 @@
 		<result property="busiPartnerId" column="BUSI_PARTNER_ID" />
 		<result property="vodSmil" column="VOD_SMIL" />
 		<result property="workStatcd" column="WORK_STATCD" />
+		<result property="gcodeUseYn" column="GCODE_USE_YN" />
     </resultMap>
     
     <resultMap id="TrsHisBusiMap" class="TrsHis">
@@ -207,7 +208,7 @@
 		    ct.PGM_GRP_CD, ct.PGM_CD, ct.PGM_ID, ct.PGM_NM,
 			ct.CT_NM, ct.CT_ID, cti.CTI_ID, trs.SEQ,
 			cti.FL_PATH, cti.ORG_FILE_NM, cti.WRK_FILE_NM, cti.FL_EXT,
-			bp.COMPANY, bp.IP, bp.FTPID, BP.PASSWORD, bp.PORT, bp.REMOTE_DIR, bp.TRANS_METHOD,trs.BUSI_PARTNER_ID, bp.VOD_SMIL,
+			bp.COMPANY, bp.IP, bp.FTPID, BP.PASSWORD, bp.PORT, bp.REMOTE_DIR, bp.TRANS_METHOD, bp.GCODE_USE_YN, trs.BUSI_PARTNER_ID, bp.VOD_SMIL,
 			pf.PRO_FLNM, (CASE WHEN pf.VDO_CODEC IS NULL OR pf.VDO_CODEC = '' THEN pf.AUD_BIT_RATE ELSE pf.VDO_BIT_RATE end) BIT_RATE
 		FROM TRS_HIS_TBL trs
 			inner JOIN CONTENTS_INST_TBL cti ON trs.CTI_ID = cti.CTI_ID
@@ -242,7 +243,7 @@
 		    ct.PGM_GRP_CD, ct.PGM_CD, ct.PGM_ID, ct.PGM_NM,
 			ct.CT_NM, ct.CT_ID, cti.CTI_ID, trs.SEQ,
 			cti.FL_PATH, cti.ORG_FILE_NM, cti.WRK_FILE_NM, cti.FL_EXT,
-			bp.COMPANY, bp.IP, bp.FTPID, BP.PASSWORD, bp.PORT, bp.REMOTE_DIR, bp.TRANS_METHOD,trs.BUSI_PARTNER_ID, bp.VOD_SMIL,
+			bp.COMPANY, bp.IP, bp.FTPID, BP.PASSWORD, bp.PORT, bp.REMOTE_DIR, bp.TRANS_METHOD, bp.GCODE_USE_YN, trs.BUSI_PARTNER_ID, bp.VOD_SMIL,
 			pf.PRO_FLNM, (CASE WHEN pf.VDO_CODEC IS NULL OR pf.VDO_CODEC = '' THEN pf.AUD_BIT_RATE ELSE pf.VDO_BIT_RATE end) BIT_RATE
 		FROM TRS_HIS_TBL trs
 			inner JOIN CONTENTS_INST_TBL cti ON trs.CTI_ID = cti.CTI_ID
@@ -281,7 +282,7 @@
 			    ct.PGM_GRP_CD, ct.PGM_CD, ct.PGM_ID, ct.PGM_NM,
 				ct.CT_NM, ct.CT_ID, cti.CTI_ID, trs.SEQ,
 				cti.FL_PATH, cti.ORG_FILE_NM, cti.WRK_FILE_NM, cti.FL_EXT,
-				bp.COMPANY, bp.IP, bp.FTPID, BP.PASSWORD, bp.PORT, bp.REMOTE_DIR, bp.TRANS_METHOD,trs.BUSI_PARTNER_ID, bp.VOD_SMIL,
+				bp.COMPANY, bp.IP, bp.FTPID, BP.PASSWORD, bp.PORT, bp.REMOTE_DIR, bp.TRANS_METHOD, bp.GCODE_USE_YN, trs.BUSI_PARTNER_ID, bp.VOD_SMIL,
 				pf.PRO_FLNM, (CASE WHEN pf.VDO_CODEC IS NULL OR pf.VDO_CODEC = '' THEN pf.AUD_BIT_RATE ELSE pf.VDO_BIT_RATE end) BIT_RATE
 			FROM TRS_HIS_TBL trs
 				inner JOIN CONTENTS_INST_TBL cti ON trs.CTI_ID = cti.CTI_ID
@@ -304,7 +305,7 @@
 			    ct.PGM_GRP_CD, ct.PGM_CD, ct.PGM_ID, ct.PGM_NM,
 				ct.CT_NM, ct.CT_ID, cti.CTI_ID, trs.SEQ,
 				cti.FL_PATH, cti.ORG_FILE_NM, cti.WRK_FILE_NM, cti.FL_EXT,
-				bp.COMPANY, bp.IP, bp.FTPID, BP.PASSWORD, bp.PORT, bp.REMOTE_DIR, bp.TRANS_METHOD,trs.BUSI_PARTNER_ID, bp.VOD_SMIL,
+				bp.COMPANY, bp.IP, bp.FTPID, BP.PASSWORD, bp.PORT, bp.REMOTE_DIR, bp.TRANS_METHOD, bp.GCODE_USE_YN, trs.BUSI_PARTNER_ID, bp.VOD_SMIL,
 				pf.PRO_FLNM, (CASE WHEN pf.VDO_CODEC IS NULL OR pf.VDO_CODEC = '' THEN pf.AUD_BIT_RATE ELSE pf.VDO_BIT_RATE end) BIT_RATE
 			FROM TRS_HIS_TBL trs
 				inner JOIN CONTENTS_INST_TBL cti ON trs.CTI_ID = cti.CTI_ID
@@ -332,7 +333,7 @@
 		    ct.PGM_GRP_CD, ct.PGM_CD, ct.PGM_ID, ct.PGM_NM,
 			ct.CT_NM, ct.CT_ID, cti.CTI_ID, trs.SEQ,
 			cti.FL_PATH, cti.ORG_FILE_NM, cti.WRK_FILE_NM, cti.FL_EXT,
-			bp.COMPANY, bp.IP, bp.FTPID, BP.PASSWORD, bp.PORT, bp.REMOTE_DIR, bp.TRANS_METHOD,trs.BUSI_PARTNER_ID, bp.VOD_SMIL,
+			bp.COMPANY, bp.IP, bp.FTPID, BP.PASSWORD, bp.PORT, bp.REMOTE_DIR, bp.TRANS_METHOD, bp.GCODE_USE_YN, trs.BUSI_PARTNER_ID, bp.VOD_SMIL,
 			pf.PRO_FLNM, (CASE WHEN pf.VDO_CODEC IS NULL OR pf.VDO_CODEC = '' THEN pf.AUD_BIT_RATE ELSE pf.VDO_BIT_RATE end) BIT_RATE
 		FROM TRS_HIS_TBL trs
 			inner JOIN CONTENTS_INST_TBL cti ON trs.CTI_ID = cti.CTI_ID
@@ -358,7 +359,7 @@
 		    ct.PGM_GRP_CD, ct.PGM_CD, ct.PGM_ID, ct.PGM_NM,
 			ct.CT_NM, ct.CT_ID, cti.CTI_ID, trs.SEQ,
 			cti.FL_PATH, cti.ORG_FILE_NM, cti.WRK_FILE_NM, cti.FL_EXT,
-			bp.COMPANY, bp.IP, bp.FTPID, BP.PASSWORD, bp.PORT, bp.REMOTE_DIR, bp.TRANS_METHOD,trs.BUSI_PARTNER_ID, bp.VOD_SMIL,
+			bp.COMPANY, bp.IP, bp.FTPID, BP.PASSWORD, bp.PORT, bp.REMOTE_DIR, bp.TRANS_METHOD, bp.GCODE_USE_YN, trs.BUSI_PARTNER_ID, bp.VOD_SMIL,
 			pf.PRO_FLNM, (CASE WHEN pf.VDO_CODEC IS NULL OR pf.VDO_CODEC = '' THEN pf.AUD_BIT_RATE ELSE pf.VDO_BIT_RATE end) BIT_RATE
 		FROM TRS_HIS_TBL trs
 			inner JOIN CONTENTS_INST_TBL cti ON trs.CTI_ID = cti.CTI_ID
@@ -382,7 +383,7 @@
 			    ct.PGM_GRP_CD, ct.PGM_CD, ct.PGM_ID, ct.PGM_NM,
 				ct.CT_NM, ct.CT_ID, cti.CTI_ID, trs.SEQ,
 				cti.FL_PATH, cti.ORG_FILE_NM, cti.WRK_FILE_NM, cti.FL_EXT,
-				bp.COMPANY, bp.IP, bp.FTPID, BP.PASSWORD, bp.PORT, bp.REMOTE_DIR, bp.TRANS_METHOD,trs.BUSI_PARTNER_ID, bp.VOD_SMIL,
+				bp.COMPANY, bp.IP, bp.FTPID, BP.PASSWORD, bp.PORT, bp.REMOTE_DIR, bp.TRANS_METHOD, bp.GCODE_USE_YN, trs.BUSI_PARTNER_ID, bp.VOD_SMIL,
 				pf.PRO_FLNM, (CASE WHEN pf.VDO_CODEC IS NULL OR pf.VDO_CODEC = '' THEN pf.AUD_BIT_RATE ELSE pf.VDO_BIT_RATE end) BIT_RATE
 			FROM TRS_HIS_TBL trs
 				inner JOIN CONTENTS_INST_TBL cti ON trs.CTI_ID = cti.CTI_ID

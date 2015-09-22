@@ -48,8 +48,17 @@ public class TransferHisTbl {
 	
 	private String channel;
 	private String local;
+	private String gcodeUseYn;
 	
 	
+	public String getGcodeUseYn() {
+		return gcodeUseYn;
+	}
+
+	public void setGcodeUseYn(String gcodeUseYn) {
+		this.gcodeUseYn = gcodeUseYn;
+	}
+
 	public String getLocal() {
 		return local;
 	}

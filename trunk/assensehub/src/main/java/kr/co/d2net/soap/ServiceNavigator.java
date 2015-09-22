@@ -159,6 +159,7 @@ public class ServiceNavigator implements Navigator {
 							job.setFlSz(transferHisTbl.getFlSz());
 							job.setSourcePath(transferHisTbl.getFlPath());
 							job.setSourceFile(transferHisTbl.getOrgFileNm()+"."+transferHisTbl.getFlExt());
+							job.setGcodeUseYn(transferHisTbl.getGcodeUseYn());
 
 							// /<그룹코드>가 와야함.
 							job.setPgmGrpCd(transferHisTbl.getPgmGrpCd());
@@ -914,10 +915,14 @@ public class ServiceNavigator implements Navigator {
 					/*
 					 * Audio Profile 96k 파일을 클로즈드캡션 시스템과 연동을 위해 
 					 * 스토리지 특정 위치로 복사를 해준다.
+					 * 
+					 * 2015.09.17 파일복사 로직 제거
+					 * 사업자를 신규로 추가하여 전송서버에서 담당하도록 함.
+					 * isCopy = false 처리 함.
 					 */
 
 					boolean isCopy = false;
-					if(logger.isInfoEnabled()) {
+					/*if(logger.isInfoEnabled()) {
 						logger.info("aud bitrate: "+transcorderHisTbl.getAudBitRate());
 						logger.info("new fl_ext: "+transcorderHisTbl.getNewFlExt().toLowerCase());
 						logger.info("av_gubun: "+transcorderHisTbl.getAvGubun());
@@ -925,7 +930,7 @@ public class ServiceNavigator implements Navigator {
 					if(transcorderHisTbl.getAudBitRate().equals("96") && transcorderHisTbl.getNewFlExt().toLowerCase().equals("mp3")
 							&& transcorderHisTbl.getAvGubun().equals("V")) {
 						isCopy = true;
-					}
+					}*/
 					if(isCopy) {
 						try {
 							if(logger.isInfoEnabled()) {
