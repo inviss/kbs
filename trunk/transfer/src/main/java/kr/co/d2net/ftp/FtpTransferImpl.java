@@ -135,26 +135,37 @@ public class FtpTransferImpl implements FtpTransferService {
 					throw e;
 				}
 
-				/*
-				 * 사업자가 프로그램 그룹코드 형태로 받지 않을경우 프로그램 [영문,한글]명으로 대체하여 폴더를 생성한다.
-				 * 프로그램 [영문,한글]명은 메타허브에 사전에 정의가 되어 있어야하고
-				 * 에센스허브의 사업자 관리에서 '프로그램 [영문,한글]명 사용'에 체크가 되어 있을경우 
-				 * 그룹코드 대신에 [영문,한글]명으로 폴더를 사용하여 하위에 프로그램을 업로드 한다.
-				 */
-				if(StringUtils.isNotBlank(job.getProEngNm()) && StringUtils.defaultString(job.getProEngYn(), "N").equals("Y")) {
-					job.setPgmGrpCd(job.getProEngNm());
-				}
 				if(logger.isDebugEnabled()) {
-					logger.debug("getProEngYn: "+job.getProEngYn());
-					logger.debug("getProEngNm: "+job.getProEngNm());
-					logger.debug("getPgmGrpCd: "+job.getPgmGrpCd());
+					logger.debug("group code use yn : "+job.getGcodeUseYn());
 				}
-				if(!ftpClient.existsDirectory(job.getPgmGrpCd())) {
-					ftpClient.mkdir(job.getPgmGrpCd());
-					ftpClient.chdir(job.getPgmGrpCd());
-				}else{
-					ftpClient.chdir(job.getPgmGrpCd());
+				/*
+				 * 2015.09.14
+				 * KBS Media 요청으로 그룹코드 적용여부를 추가함.
+				 * 사업자 관리에서 그룹코드 사용여부를 설정이 가능하고 없다면 기본값을 "Y"로 적용함.
+				 */
+				if(StringUtils.defaultIfEmpty(job.getGcodeUseYn(), "Y").equals("Y")) {
+					/*
+					 * 사업자가 프로그램 그룹코드 형태로 받지 않을경우 프로그램 [영문,한글]명으로 대체하여 폴더를 생성한다.
+					 * 프로그램 [영문,한글]명은 메타허브에 사전에 정의가 되어 있어야하고
+					 * 에센스허브의 사업자 관리에서 '프로그램 [영문,한글]명 사용'에 체크가 되어 있을경우 
+					 * 그룹코드 대신에 [영문,한글]명으로 폴더를 사용하여 하위에 프로그램을 업로드 한다.
+					 */
+					if(StringUtils.isNotBlank(job.getProEngNm()) && StringUtils.defaultString(job.getProEngYn(), "N").equals("Y")) {
+						job.setPgmGrpCd(job.getProEngNm());
+					}
+					if(logger.isDebugEnabled()) {
+						logger.debug("getProEngYn: "+job.getProEngYn());
+						logger.debug("getProEngNm: "+job.getProEngNm());
+						logger.debug("getPgmGrpCd: "+job.getPgmGrpCd());
+					}
+					if(!ftpClient.existsDirectory(job.getPgmGrpCd())) {
+						ftpClient.mkdir(job.getPgmGrpCd());
+						ftpClient.chdir(job.getPgmGrpCd());
+					}else{
+						ftpClient.chdir(job.getPgmGrpCd());
+					}
 				}
+				
 
 				/*
 				if(StringUtils.isNotBlank(job.getPgmGrpCd())) {

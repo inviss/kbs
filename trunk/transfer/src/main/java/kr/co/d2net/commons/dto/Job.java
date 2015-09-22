@@ -97,6 +97,10 @@ public class Job {
 	@XStreamConverter(TextConverter.class)
 	private String qcYn;
 	
+	@XStreamAlias("gcode_use_yn")
+	@XStreamConverter(TextConverter.class)
+	private String gcodeUseYn;
+	
 	/* Transfer Job */
 	@XStreamAlias("pgm_grp_cd")
 	@XStreamConverter(TextConverter.class)
@@ -156,6 +160,13 @@ public class Job {
 	@XStreamConverter(TextConverter.class)
 	private String vodSmil;
 	
+	
+	public String getGcodeUseYn() {
+		return gcodeUseYn;
+	}
+	public void setGcodeUseYn(String gcodeUseYn) {
+		this.gcodeUseYn = gcodeUseYn;
+	}
 	public String getVodSmil() {
 		return vodSmil;
 	}
