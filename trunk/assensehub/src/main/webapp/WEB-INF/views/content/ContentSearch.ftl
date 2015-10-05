@@ -487,8 +487,8 @@ function saveContentInfo(){
 
 function viewMediaPlayer(filePath,ctId,ctiId,wrkFileNm,proFlid){
 	
-	alert('a');
-	console.log(filePath);
+	//alert('a');
+	//console.log(filePath);
 
 	ContentsSearch.filePath.value=filePath;
 	ContentsSearch.ctId.value=ctId;
@@ -525,13 +525,13 @@ function viewMediaPlayer(filePath,ctId,ctiId,wrkFileNm,proFlid){
 	$jq('#selectContentsInst').append(table);
 	
 	-->
-	prompt("Media URL :", "<@spring.url '"+filePath+"'/>");
+	//prompt("Media URL :", "<@spring.url '"+filePath+"'/>");
 	$jq('#Player').attr("URL", "<@spring.url '"+filePath+"'/>");
 	
 }
 
 function viewMediaPlayer2(filePath,ctId,ctiId,wrkFileNm,proFlid){
-	alert('b');
+	//alert('b');
 	ContentsSearch.filePath.value=filePath;
 	ContentsSearch.ctId.value=ctId;
 	ContentsSearch.ctiId.value=ctiId;
