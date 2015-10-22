@@ -164,6 +164,23 @@ public class FtpTransferImpl implements FtpTransferService {
 					}else{
 						ftpClient.chdir(job.getPgmGrpCd());
 					}
+				} else {
+					/*
+					 * 2015.10.22 KBS Media 요구사항 반영
+					 * 클로즈캡션 관련하여 그룹코드를 사용하지 않을경우
+					 * 방송일자 폴더를 생성하고 하위 폴더에 파일을 업로드 함.
+					 * 리모트 파일명에 방송일자가 포함되어 있음
+					 * wrk_file_name : 예) T2002-0429_S000_20151021_PS-2015160704-01-000_03_M4H27000.mp4
+					 * '_' 구분자로 분리하면 방송일은 [2]: '20151021'
+					 */
+					String remoteFileName = job.getTargetFile();
+					String[] temp = remoteFileName.split("\\_");
+					String onAirDate = temp[2];
+					
+					if(!ftpClient.existsDirectory(onAirDate)) {
+						ftpClient.mkdir(onAirDate);
+						ftpClient.chdir(onAirDate);
+					}
 				}
 				
 
