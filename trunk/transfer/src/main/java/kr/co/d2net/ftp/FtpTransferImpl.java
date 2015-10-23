@@ -172,7 +172,11 @@ public class FtpTransferImpl implements FtpTransferService {
 					 * 리모트 파일명에 방송일자가 포함되어 있음
 					 * wrk_file_name : 예) T2002-0429_S000_20151021_PS-2015160704-01-000_03_M4H27000.mp4
 					 * '_' 구분자로 분리하면 방송일은 [2]: '20151021'
+					 * ---------------------------------------------------------------
+					 * 2015.10.23 KBS Media 요구사항 재반영
+					 * 방송일자 폴더를 사용하지 않음.
 					 */
+					/*
 					String remoteFileName = job.getTargetFile();
 					String[] temp = remoteFileName.split("\\_");
 					String onAirDate = temp[2];
@@ -181,6 +185,7 @@ public class FtpTransferImpl implements FtpTransferService {
 						ftpClient.mkdir(onAirDate);
 						ftpClient.chdir(onAirDate);
 					}
+					*/
 				}
 				
 
