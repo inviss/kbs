@@ -1,0 +1,19 @@
+c:\users\han\documents\visual studio 2015\Projects\KBS_Playout\KBS_Playout\bin\Debug\KBS_Playout.exe.config
+c:\users\han\documents\visual studio 2015\Projects\KBS_Playout\KBS_Playout\bin\Debug\KBS_Playout.exe
+c:\users\han\documents\visual studio 2015\Projects\KBS_Playout\KBS_Playout\bin\Debug\KBS_Playout.pdb
+c:\users\han\documents\visual studio 2015\Projects\KBS_Playout\KBS_Playout\obj\Debug\Explorer.g.cs
+c:\users\han\documents\visual studio 2015\Projects\KBS_Playout\KBS_Playout\obj\Debug\MainWindow.g.cs
+c:\users\han\documents\visual studio 2015\Projects\KBS_Playout\KBS_Playout\obj\Debug\App.g.cs
+c:\users\han\documents\visual studio 2015\Projects\KBS_Playout\KBS_Playout\obj\Debug\KBS_Playout_MarkupCompile.cache
+c:\users\han\documents\visual studio 2015\Projects\KBS_Playout\KBS_Playout\obj\Debug\KBS_Playout_MarkupCompile.lref
+c:\users\han\documents\visual studio 2015\Projects\KBS_Playout\KBS_Playout\obj\Debug\Explorer.baml
+c:\users\han\documents\visual studio 2015\Projects\KBS_Playout\KBS_Playout\obj\Debug\MainWindow.baml
+c:\users\han\documents\visual studio 2015\Projects\KBS_Playout\KBS_Playout\obj\Debug\KBS_Playout.g.resources
+c:\users\han\documents\visual studio 2015\Projects\KBS_Playout\KBS_Playout\obj\Debug\KBS_Playout.Properties.Resources.resources
+c:\users\han\documents\visual studio 2015\Projects\KBS_Playout\KBS_Playout\obj\Debug\KBS_Playout.csproj.GenerateResource.Cache
+c:\users\han\documents\visual studio 2015\Projects\KBS_Playout\KBS_Playout\obj\Debug\KBS_Playout.exe
+c:\users\han\documents\visual studio 2015\Projects\KBS_Playout\KBS_Playout\obj\Debug\KBS_Playout.pdb
+c:\users\han\documents\visual studio 2015\Projects\KBS_Playout\KBS_Playout\obj\Debug\KBS_Playout.csprojResolveAssemblyReference.cache
+c:\users\han\documents\visual studio 2015\Projects\KBS_Playout\KBS_Playout\obj\Debug\Simple Styles.baml
+c:\users\han\documents\visual studio 2015\Projects\KBS_Playout\KBS_Playout\obj\Debug\App.baml
+c:\users\han\documents\visual studio 2015\Projects\KBS_Playout\KBS_Playout\obj\Debug\GeneratedInternalTypeHelper.g.cs
