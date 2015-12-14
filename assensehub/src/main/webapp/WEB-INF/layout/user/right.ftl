@@ -146,23 +146,25 @@ function ajaxRightData(){
 		//	alert('Return Error.');
 		},
 		success: function(data){
-		
-		 var stTable ="";
-		 var stTable2 ="";	
-		 //-- ajax 스토리지 정보 취압  by dekim
-			 $jq('#pro').empty();
-	 	 //stTable +='<colgroup><col width="140px"></col><col></col></colgroup>' 
-		 	    stTable +=data.contents2[5]
-		 	    stTable +='<p class="dsc_loading_no"><span class="progress"><em>'+parseInt(Number(data.contents2[2])/1024)+'/'+parseInt(Number(data.contents2[1])/1024)+'('+data.contents2[4]+')</em></span></p>'
-		 		stTable +='<article class="loading_bar"><span style="width:'+data.contents2[4]+';"></span></article><br>'
-			$jq('#pro').append(stTable);
+			var stTable ="";
+		 	var stTable2 ="";	
 			
-			$jq('#pro2').empty();
-			//stTable +='<colgroup><col width="140px"></col><col></col></colgroup>' 
-				stTable2 +=data.contents[5]
-		 	    stTable2 +='<p class="dsc_loading_no"><span class="progress"><em>'+parseInt(Number(data.contents[2])/1024)+' / '+parseInt(Number(data.contents[1])/1024)+'GB ('+data.contents[4]+')</em></span></p>'
-		 		stTable2 +='<article class="loading_bar"><span style="width:'+data.contents[4]+';"></span></article>'
-			$jq('#pro2').append(stTable2);
+			$jq('#pro').empty();
+			if ( data.contents2 != null ) {
+				stTable +=data.contents2[5];
+		 	    stTable +='<p class="dsc_loading_no"><span class="progress"><em>'+parseInt(Number(data.contents2[2])/1024/1024)+' /'+parseInt(Number(data.contents2[1])/1024/1024)+'GB('+data.contents2[4]+')</em></span></p>';
+		 		stTable +='<article class="loading_bar"><span style="width:'+data.contents2[4]+';"></span></article><br>';
+				$jq('#pro').append(stTable);
+			}
+		 	
+		 	$jq('#pro2').empty();    
+			if ( data.contents != null ) {
+				stTable2 +=data.contents[5];
+		 	    stTable2 +='<p class="dsc_loading_no"><span class="progress"><em>'+parseInt(Number(data.contents[2])/1024/1024)+' / '+parseInt(Number(data.contents[1])/1024/1024)+'GB ('+data.contents[4]+')</em></span></p>';
+		 		stTable2 +='<article class="loading_bar"><span style="width:'+data.contents[4]+';"></span></article>';
+				$jq('#pro2').append(stTable2);
+			}
+				
 		}
 	});
 	
@@ -178,14 +180,10 @@ function rightRefreshTime(){
 }
 	
 function window::onload(){
-  //ajaxRightData();
+  ajaxRightData();
 }
 
 //window.onload=function() 주석을 하면 에센스 허브 onload function 이 중단된다.
-
-function window::onload(){
-	//ajaxData();
-}
 
 </script>
 	<section class="aside">
