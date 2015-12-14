@@ -559,6 +559,7 @@ public class WorkflowManageControl {
 		try {
 			if(null==StorageCheckControlWorker.params.get("contents"))
 				StorageCheckControlWorker.init();
+			logger.debug("storage: "+StorageCheckControlWorker.params.get("contents")[4]);
 			view.addObject("contents", StorageCheckControlWorker.params.get("contents"));
 			view.addObject("contents2", StorageCheckControlWorker.params.get("contents2"));
 			view.setViewName("jsonView");
