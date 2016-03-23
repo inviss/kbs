@@ -49,7 +49,7 @@
     <logger name="kr.co.d2net">
         <level value="DEBUG"/>
     </logger>  
-<!--  
+  
     <logger name="java.sql.Connection">
         <level value="DEBUG"/>
     </logger>
@@ -59,7 +59,7 @@
     <logger name="java.sql.PreparedStatement">
         <level value="DEBUG"/>
     </logger>
--->
+
     <root>
         <level value="INFO"/>
         <appender-ref ref="CONSOLE"/>

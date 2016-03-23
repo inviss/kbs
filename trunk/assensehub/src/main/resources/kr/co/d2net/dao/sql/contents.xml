@@ -52,6 +52,7 @@
 		<result property="grpAliasEng" column="GRP_ALIAS_ENG" />
 		<result property="jobId" column="JOB_ID" />
 		<result property="prgrs" column="PRGRS" />
+		<result property="channelCode" column="CHANNEL_CODE" />
     </resultMap>
     
     <resultMap id="ContentsMap2" class="Contents">
@@ -100,11 +101,13 @@
 		<result property="grpAliasEng" column="GRP_ALIAS_ENG" />
 		<result property="jobId" column="JOB_ID" />
 		<result property="prgrs" column="PRGRS" />
+		<result property="channelCode" column="CHANNEL_CODE" />
+		<result property="brdKd" column="BRD_KD" />
     </resultMap>
     
     <select id="findContents" resultMap="ContentsMap2" parameterClass="map">
 	     SELECT  
-             *
+             ct.*, to_char(ct.BRD_DD, 'YY.MM.DD') as brd_kd
          FROM CONTENTS_TBL CT
          <dynamic prepend="WHERE">
 			<isNotEmpty property="pgmId" prepend="AND">
@@ -117,7 +120,7 @@
 				CT.CT_TYP = #ctTyp#
 			</isNotEmpty>
 			<isNotEmpty property="dataStatCd" prepend="AND">
-				CT.DATA_STAT_CD is not null AND CT.DATA_STAT_CD = #dataStatCd#
+				(CT.DATA_STAT_CD is not null AND CT.DATA_STAT_CD = #dataStatCd#)
 			</isNotEmpty>
 			<isNotEmpty prepend="AND" property="regrid">
 				CT.REGRID = #regrid# AND to_char(CT.REG_DT, 'YYYYMMDD') = to_char(sysdate, 'YYYYMMDD')
@@ -128,8 +131,20 @@
 			<isNotEmpty prepend="AND" property="jobId">
 				CT.JOB_ID = #jobId# AND CT.JOB_ID is not null
 			</isNotEmpty>
+			<isNotEmpty prepend="AND" property="trimSte">
+				CT.TRIMM_STE = #trimSte#
+			</isNotEmpty>
 			AND CT.USE_YN='Y'
+			<isNotEmpty prepend="AND" property="limit">
+			<![CDATA[
+         		ROWNUM <= #limit#
+         	]]>
+         	AND EXISTS (
+         		SELECT 1 FROM CONTENTS_INST_TBL CTI WHERE CT.CT_ID = CTI.CT_ID
+         	)
+         	</isNotEmpty>		
          </dynamic>
+         ORDER BY CT_ID DESC
     </select>
     
     <select id="getRmsContentsCount" resultClass="Contents" parameterClass="map">

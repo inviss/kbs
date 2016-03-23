@@ -29,7 +29,7 @@ import com.ibatis.sqlmap.client.SqlMapClient;
 
 @Repository(value = "contentsDao")
 public class ContentsDaoImpl extends SqlMapClientDaoSupport implements
-		ContentsDao {
+ContentsDao {
 
 	private static Log logger = LogFactory.getLog(ContentsDaoImpl.class);
 
@@ -54,7 +54,7 @@ public class ContentsDaoImpl extends SqlMapClientDaoSupport implements
 		return getSqlMapClientTemplate().queryForList("Contents.findContents",
 				params);
 	}
-	
+
 	@SuppressWarnings("unchecked")
 	public List<ContentsTbl> getContentsPrgrs(Map<String, Object> params)
 			throws DaoNonRollbackException {
@@ -74,7 +74,7 @@ public class ContentsDaoImpl extends SqlMapClientDaoSupport implements
 			throws DaoRollbackException {
 		return (Long) getSqlMapClientTemplate().insert("Contents.insertContents", contentsTbl);
 	}
-	
+
 	@Override
 	public Long updateContentsRms(ContentsTbl contentsTbl)
 			throws DaoRollbackException {
@@ -90,7 +90,7 @@ public class ContentsDaoImpl extends SqlMapClientDaoSupport implements
 		// logger.debug("--->"+proflTbl.getCtNm());
 
 		getSqlMapClientTemplate()
-				.update("Contents.deleteContents", contentsTbl);
+		.update("Contents.deleteContents", contentsTbl);
 	}
 
 	@SuppressWarnings({ "rawtypes", "unchecked" })
@@ -101,11 +101,11 @@ public class ContentsDaoImpl extends SqlMapClientDaoSupport implements
 
 		StringBuffer query = new StringBuffer();
 		query.append("")
-				.append(" FROM CONTENTS_TBL ct                                                      ")
-				// .append(" 	inner JOIN CONTENTS_INST_TBL cti ON trs.CTI_ID = cti.CTI_ID             ")
-				// .append("   inner JOIN CONTENTS_TBL ct ON cti.CT_ID = ct.CT_ID                      ")
-				.append(" WHERE ct.USE_YN = 'Y' AND (ct.TRIMM_STE='Y' OR ct.TRIMM_STE='P')  AND pgm_id IS NOT NULL  AND brd_dd IS NOT NULL            ");
-				//.append(" WHERE ct.USE_YN = 'Y'            ");
+		.append(" FROM CONTENTS_TBL ct                                                      ")
+		// .append(" 	inner JOIN CONTENTS_INST_TBL cti ON trs.CTI_ID = cti.CTI_ID             ")
+		// .append("   inner JOIN CONTENTS_TBL ct ON cti.CT_ID = ct.CT_ID                      ")
+		.append(" WHERE ct.USE_YN = 'Y' AND (ct.TRIMM_STE='Y' OR ct.TRIMM_STE='P')  AND pgm_id IS NOT NULL  AND brd_dd IS NOT NULL            ");
+		//.append(" WHERE ct.USE_YN = 'Y'            ");
 		if (search.getStartDt() != null) {
 			query.append(" AND TO_CHAR(ct.BRD_DD,'YYYY-MM-DD') BETWEEN :startDt AND :endDt ");
 			params.put("startDt", Utility.getDate(search.getStartDt(), 0));
@@ -143,16 +143,16 @@ public class ContentsDaoImpl extends SqlMapClientDaoSupport implements
 	}
 
 	public PaginationSupport<ContentsTbl> findstandbycontentsList(Search search)
-	throws DaoNonRollbackException {
+			throws DaoNonRollbackException {
 		Map<String, Object> params = new HashMap<String, Object>();
 		PaginationSupport<ContentsTbl> ps = null;
-		
+
 		StringBuffer query = new StringBuffer();
 		query.append("")
-				.append(" FROM CONTENTS_TBL ct                                                      ")
-				// .append(" 	inner JOIN CONTENTS_INST_TBL cti ON trs.CTI_ID = cti.CTI_ID             ")
-				// .append("   inner JOIN CONTENTS_TBL ct ON cti.CT_ID = ct.CT_ID                      ")
-				.append(" WHERE ct.USE_YN = 'Y' AND  CT.TRIMM_STE='N'                  ");
+		.append(" FROM CONTENTS_TBL ct                                                      ")
+		// .append(" 	inner JOIN CONTENTS_INST_TBL cti ON trs.CTI_ID = cti.CTI_ID             ")
+		// .append("   inner JOIN CONTENTS_TBL ct ON cti.CT_ID = ct.CT_ID                      ")
+		.append(" WHERE ct.USE_YN = 'Y' AND  CT.TRIMM_STE='N'                  ");
 		if (search.getStartDt() != null) {
 			query.append(" AND TO_CHAR(ct.BRD_DD,'YYYY-MM-DD') BETWEEN :startDt AND :endDt ");
 			params.put("startDt", Utility.getDate(search.getStartDt(), 0));
@@ -162,7 +162,7 @@ public class ContentsDaoImpl extends SqlMapClientDaoSupport implements
 			query.append(" AND ct.PGM_NM like :pgmNm ");
 			params.put("pgmNm", "%" + search.getKeyword() + "%");
 		}
-		
+
 		if (StringUtils.isNotBlank(search.getChannelCode())
 				&& !search.getChannelCode().equals("0")) {
 			query.append(" AND ct.CHANNEL_CODE like :channelCode ");
@@ -170,9 +170,9 @@ public class ContentsDaoImpl extends SqlMapClientDaoSupport implements
 		}
 		String countSql = "select count(*) ";
 		String dataSql = "select ct.CT_ID, ct.CT_NM, ct.PGM_ID, ct.CT_TYP, ct.CT_CLA, ct.CHANNEL_CODE, ct.BRD_DD, ct.REG_DT,ct.REGRID,ct.PRGRS,ct.JOB_ID,"+
-						 "(CASE WHEN (SELECT COUNT(*) FROM CORNER_TBL CN WHERE ct.CT_ID = cn.CT_ID) > 0 THEN '[코]'||ct.CT_NM ELSE ct.PGM_NM end) PGM_NM";
+				"(CASE WHEN (SELECT COUNT(*) FROM CORNER_TBL CN WHERE ct.CT_ID = cn.CT_ID) > 0 THEN '[코]'||ct.CT_NM ELSE ct.PGM_NM end) PGM_NM";
 		String orderSql = "ORDER BY ct.CT_ID DESC ";
-		
+
 		try {
 			PaginationHelper<ContentsTbl> ph = new PaginationHelper<ContentsTbl>();
 			ps = ph.fetchPage(jdbcTemplate, countSql + query.toString(),
@@ -184,21 +184,21 @@ public class ContentsDaoImpl extends SqlMapClientDaoSupport implements
 					"ContentsDaoImpl - findcontentsList Error", dae);
 		}
 		return ps;
-		
-		}
-	
+
+	}
+
 	@SuppressWarnings({ "rawtypes", "unchecked" })
 	public PaginationSupport<ContentsTbl> findrmscontentsList(Search search)
 			throws DaoNonRollbackException {
 		Map<String, Object> params = new HashMap<String, Object>();
 		PaginationSupport<ContentsTbl> ps = null;
 
-		
+
 		StringBuffer query = new StringBuffer();
 		query.append("")
-				.append(" FROM CONTENTS_TBL ct                                                      ")
-				.append(" 	inner JOIN CONTENTS_INST_TBL cti ON ct.CT_ID = cti.CT_ID             ")
-				.append(" WHERE ct.USE_YN = 'Y' AND ct.REGRID='RMS' AND (cti.CTI_FMT LIKE '1%' or cti.CTI_FMT LIKE '3%')           ");
+		.append(" FROM CONTENTS_TBL ct                                                      ")
+		.append(" 	inner JOIN CONTENTS_INST_TBL cti ON ct.CT_ID = cti.CT_ID             ")
+		.append(" WHERE ct.USE_YN = 'Y' AND ct.REGRID='RMS' AND (cti.CTI_FMT LIKE '1%' or cti.CTI_FMT LIKE '3%')           ");
 		if (search.getStartDt() != null) {
 			query.append(" AND TO_CHAR(ct.BRD_DD,'YYYY-MM-DD') BETWEEN :startDt AND :endDt ");
 			params.put("startDt", Utility.getDate(search.getStartDt(), 0));
@@ -241,20 +241,20 @@ public class ContentsDaoImpl extends SqlMapClientDaoSupport implements
 		return ps;
 
 	}
-	
+
 	@SuppressWarnings({ "rawtypes", "unchecked" })
 	public PaginationSupport<ContentsTbl> findrmscontentsUd(Search search)
 			throws DaoNonRollbackException {
 		Map<String, Object> params = new HashMap<String, Object>();
 		PaginationSupport<ContentsTbl> ps = null;
 
-		
+
 		StringBuffer query = new StringBuffer();
 		query.append("")
-				.append(" FROM CONTENTS_TBL ct                                                      ")
-				.append(" 	inner JOIN CONTENTS_INST_TBL cti ON ct.CT_ID = cti.CT_ID             ")
-				// .append("   inner JOIN CONTENTS_TBL ct ON cti.CT_ID = ct.CT_ID                      ")
-				.append(" WHERE ct.USE_YN = 'Y' AND ct.REGRID='RMS' AND (cti.CTI_FMT LIKE '1%' or cti.CTI_FMT LIKE '3%')           ");
+		.append(" FROM CONTENTS_TBL ct                                                      ")
+		.append(" 	inner JOIN CONTENTS_INST_TBL cti ON ct.CT_ID = cti.CT_ID             ")
+		// .append("   inner JOIN CONTENTS_TBL ct ON cti.CT_ID = ct.CT_ID                      ")
+		.append(" WHERE ct.USE_YN = 'Y' AND ct.REGRID='RMS' AND (cti.CTI_FMT LIKE '1%' or cti.CTI_FMT LIKE '3%')           ");
 		/**
 		if (search.getStartDt() != null) {
 			query.append(" AND TO_CHAR(ct.BRD_DD,'YYYY-MM-DD') BETWEEN :startDt AND :endDt ");
@@ -265,7 +265,7 @@ public class ContentsDaoImpl extends SqlMapClientDaoSupport implements
 			query.append(" AND ct.CT_NM like :ctNm ");
 			params.put("ctNm", "%" + search.getKeyword() + "%");
 		}
-		*/
+		 */
 		if (StringUtils.isNotBlank(search.getPgmCd())) {
 			query.append(" AND ct.PGM_CD like :pgmCd ");
 			params.put("pgmCd", search.getPgmCd());
@@ -283,7 +283,7 @@ public class ContentsDaoImpl extends SqlMapClientDaoSupport implements
 			query.append(" AND ct.PART like :part ");
 			params.put("part", search.getPart2());
 		}
-		*/
+		 */
 		String countSql = "select count(*) ";
 		String dataSql = "select ct.PGM_CD,ct.PART, ct.CT_ID, ct.CT_NM, ct.PGM_ID, ct.CT_TYP, ct.CT_CLA, ct.CHANNEL_CODE, ct.BRD_DD, ct.PGM_NM, ct.REG_DT,ct.REGRID,ct.PERSON_INFO,cti.USR_FILE_NM,ct.TRIMM_STE";
 		String orderSql = "ORDER BY ct.CT_ID DESC ";
@@ -307,24 +307,24 @@ public class ContentsDaoImpl extends SqlMapClientDaoSupport implements
 		// "Contents.getContents")).intValue();
 		return 0;
 	}
-	
+
 	@Override
 	public ContentsTbl getRmsContentsCount(Map<String, Object> params) throws DaoNonRollbackException {
 		// ((Integer) getSqlMapClientTemplate().queryForObject(
 		// "Contents.getContents")).intValue();
 		return (ContentsTbl) getSqlMapClientTemplate().queryForObject("Contents.getRmsContentsCount", params);
 	}
-	
+
 	@Override
 	public ContentsTbl getContents2(Map<String, Object> params) throws DaoNonRollbackException {
 		return (ContentsTbl)getSqlMapClientTemplate().queryForObject("Contents.getContents2", params);
 	}
-	
+
 	@Override
 	public ContentsTbl getContents3(Map<String, Object> params) throws DaoNonRollbackException {
 		return (ContentsTbl)getSqlMapClientTemplate().queryForObject("Contents.getContents3", params);
 	}
-	
+
 	@Override
 	public ContentsTbl getContents4(Map<String, Object> params) throws DaoNonRollbackException {
 		return (ContentsTbl)getSqlMapClientTemplate().queryForObject("Contents.getContents4", params);
@@ -345,9 +345,9 @@ public class ContentsDaoImpl extends SqlMapClientDaoSupport implements
 	@Override
 	public ContentsTbl getContentsPgmNum(Map<String, Object> params)
 			throws DaoNonRollbackException {
-		
+
 		return (ContentsTbl)getSqlMapClientTemplate().queryForObject("Contents.getContentsPgmNum", params);
 	}
-	
-	
+
+
 }
