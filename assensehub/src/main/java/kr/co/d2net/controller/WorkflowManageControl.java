@@ -13,6 +13,7 @@ import javax.servlet.ServletContext;
 import kr.co.d2net.commons.util.PaginationSupport;
 import kr.co.d2net.commons.util.Utility;
 import kr.co.d2net.dto.ContentsInstTbl;
+import kr.co.d2net.dto.ContentsTbl;
 import kr.co.d2net.dto.EquipmentTbl;
 import kr.co.d2net.dto.ProFlTbl;
 import kr.co.d2net.dto.QcReportTbl;
@@ -22,6 +23,7 @@ import kr.co.d2net.dto.TransferHisTbl;
 import kr.co.d2net.dto.xml.meta.Nodes;
 import kr.co.d2net.service.CodeManagerService;
 import kr.co.d2net.service.ContentsInstManagerService;
+import kr.co.d2net.service.ContentsManagerService;
 import kr.co.d2net.service.HttpRequestService;
 import kr.co.d2net.service.HttpRequestServiceImpl;
 import kr.co.d2net.service.ProFlManagerService;
@@ -59,6 +61,8 @@ public class WorkflowManageControl {
 	private MessageSource messageSource;
 	@Autowired
 	private ProFlManagerService proFlManagerService;
+	@Autowired
+	private ContentsManagerService contentsManagerService;
 
 	final Logger logger = LoggerFactory.getLogger(getClass());
 
@@ -132,7 +136,7 @@ public class WorkflowManageControl {
 
 
 			PaginationSupport<TranscorderHisTbl> contents = workflowManagerService
-			.findTranscorderHis(search);
+					.findTranscorderHis(search);
 			map.addAttribute("contents", contents);
 		} catch (Exception e) {
 			logger.error("트랜스코더 목록 조회 에러", e);
@@ -198,7 +202,7 @@ public class WorkflowManageControl {
 
 
 			PaginationSupport<TranscorderHisTbl> contents = workflowManagerService
-			.findTranscorderHis(search);
+					.findTranscorderHis(search);
 			map.addAttribute("contents", contents);
 		} catch (Exception e) {
 			logger.error("트랜스코더 목록 조회 에러", e);
@@ -223,13 +227,13 @@ public class WorkflowManageControl {
 			trsHisTbl.setWorkStatcd("000");
 			trsHisTbl.setPrgrs("0");
 			workflowManagerService.updateProflRequest(trsHisTbl);
-			
-			
+
+
 		} catch (Exception e) {
 			logger.error("ajaxProfileAllInitialize", e);
 			view.addObject("msg", "N");
 		}
-		
+
 		view.addObject("msg", "Y");
 		view.setViewName("jsonView");
 
@@ -489,7 +493,7 @@ public class WorkflowManageControl {
 			view.addObject("search", search);
 
 			PaginationSupport<TransferHisTbl> contents = workflowManagerService
-			.findTransferHis(search);
+					.findTransferHis(search);
 
 			view.addObject("contents", contents.getItems());
 
@@ -505,7 +509,7 @@ public class WorkflowManageControl {
 
 		try {
 			List<EquipmentTbl> contents = workflowManagerService
-			.findEquipment(map);
+					.findEquipment(map);
 			map.addAttribute("contents", contents);
 		} catch (Exception e) {
 			logger.error("워크플로우 목록 조회 에러", e);
@@ -520,7 +524,7 @@ public class WorkflowManageControl {
 		map.put("useYn", "Y");
 		try {
 			List<EquipmentTbl> contents = workflowManagerService
-			.findEquipment(map);
+					.findEquipment(map);
 			view.addObject("contents", contents);
 			view.setViewName("jsonView");
 		} catch (Exception e) {
@@ -532,7 +536,7 @@ public class WorkflowManageControl {
 	@RequestMapping(value = {"/workflow/ajaxWorkflowAv.ssc", "/ajax/workflow/ajaxWorkflowAv.ssc"}, method = RequestMethod.POST)
 	public ModelAndView ajaxFindWorkflowList(ModelMap map,
 			@RequestParam(value = "avGubun", required = false) String avGubun
-	) {
+			) {
 
 		logger.debug("###avGubun:"+avGubun);
 		ModelAndView view = new ModelAndView();
@@ -559,9 +563,34 @@ public class WorkflowManageControl {
 		try {
 			if(null==StorageCheckControlWorker.params.get("contents"))
 				StorageCheckControlWorker.init();
-			logger.debug("storage: "+StorageCheckControlWorker.params.get("contents")[4]);
 			view.addObject("contents", StorageCheckControlWorker.params.get("contents"));
 			view.addObject("contents2", StorageCheckControlWorker.params.get("contents2"));
+			view.setViewName("jsonView");
+		} catch (Exception e) {
+			logger.error("Check available NAS storage", e);
+		}
+		return view;
+	}
+
+	@RequestMapping(value = {"/workflow/ajaxDmcrContentList.ssc","/ajax/workflow/ajaxDmcrContentList.ssc"}, method = RequestMethod.POST)
+	public ModelAndView ajaxDmcrContentList(ModelMap map, 
+			@RequestParam(value = "targetValue", required = false) String target,
+			@RequestParam(value = "limit", required = false) String limit) {
+
+		ModelAndView view = new ModelAndView();
+		try {
+			if(StringUtils.isBlank(target)) target="'DMCR','NPS','DNPS','KDAS'";
+			if(StringUtils.isBlank(limit)) limit="6";
+
+			Map<String, Object> params = new HashMap<String, Object>();
+			params.put("regrids", target);
+			params.put("trimSte", "N");
+			params.put("limit", limit);
+			params.put("dataStatCd", "200");
+			List<ContentsTbl> contentsTbls = contentsManagerService.findContents(params);
+
+			view.addObject("contents", contentsTbls);
+
 			view.setViewName("jsonView");
 		} catch (Exception e) {
 			logger.error("Check available NAS storage", e);
@@ -703,7 +732,7 @@ public class WorkflowManageControl {
 
 		try {
 			PaginationSupport<TransferHisTbl> contents = workflowManagerService
-			.findTransferHis(search);
+					.findTransferHis(search);
 
 			map.addAttribute("contents", contents);
 		} catch (Exception e) {
@@ -726,7 +755,7 @@ public class WorkflowManageControl {
 
 		try {
 			PaginationSupport<TransferHisTbl> contents = workflowManagerService
-			.findMetaURLlist(search);
+					.findMetaURLlist(search);
 
 			map.addAttribute("contents", contents);
 		} catch (Exception e) {
@@ -955,7 +984,7 @@ public class WorkflowManageControl {
 				}catch (Exception e) {
 					logger.error("MetaHub Service URL Insert Error", e);
 				}
-				
+
 				TransferHisTbl transferHisTbl = new TransferHisTbl();
 				transferHisTbl.setSeq(Long.parseLong(seq));
 

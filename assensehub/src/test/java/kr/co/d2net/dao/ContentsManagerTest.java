@@ -114,14 +114,19 @@ public class ContentsManagerTest extends BaseDaoConfig {
 	public void findContents(){
 		Map<String, Object> params = new HashMap<String, Object>();
 		try {
-			params.put("regrids", "'DMCR','NPS','KDAS','AACH'");
-			params.put("dataStatCd", "002");
+			params.put("regrids", "'DMCR','NPS','DNPS','KDAS'");
+			//params.put("dataStatCd", "002");
 			//params.put("ctId", 111738);
+			params.put("trimSte", "N");
+			params.put("limit", 6);
 			
 			List<ContentsTbl> contentsTbls = contentsManagerService.findContents(params);
 			
-			//contentsManagerService.getContents(params);
-			System.out.println(contentsTbls.size());
+			for(ContentsTbl contentsTbl : contentsTbls) {
+				System.out.print(contentsTbl.getChannelCode()+", ");
+				System.out.print(contentsTbl.getPgmNum()+", ");
+				System.out.println(contentsTbl.getPgmNm());
+			}
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

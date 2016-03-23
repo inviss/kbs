@@ -95,10 +95,19 @@ public class ContentsTbl {
 	private String transmissionAudioModeMain;
 	private String rerunClassification;
 	
+	// 2016.03.21 add
+	private String brdKd;
+	
 	// 2013.04.04 오디오 코너 추가
 	List<CornerTbl> cornerTbls = new ArrayList<CornerTbl>();
 	
 	
+	public String getBrdKd() {
+		return brdKd;
+	}
+	public void setBrdKd(String brdKd) {
+		this.brdKd = brdKd;
+	}
 	public String getRerunClassification() {
 		return rerunClassification;
 	}
