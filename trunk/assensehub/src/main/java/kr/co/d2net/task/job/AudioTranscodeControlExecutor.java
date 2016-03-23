@@ -169,10 +169,11 @@ public class AudioTranscodeControlExecutor {
 						logger.error("[Transcode Audio Job Control] TransferJob Generation Error", e);
 					}
 
-					try {
-						Thread.sleep(THREAD_WAIT_TIME);
-					} catch (Exception e) {}
 				}
+				
+				try {
+					Thread.sleep(THREAD_WAIT_TIME);
+				} catch (Exception e) {}
 			}
 
 		}
