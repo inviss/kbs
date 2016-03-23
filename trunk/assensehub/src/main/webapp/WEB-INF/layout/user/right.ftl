@@ -191,7 +191,7 @@ function ajaxRightData3(){
 			
 			$jq('#pro2').empty();
 				stTable2 +=data.contents[5];
-		 	    stTable2 +='<p class="dsc_loading_no"><span class="progress"><em>'+parseInt(Number(data.contents[2])/1024)+' / '+parseInt(Number(data.contents[1])/1024)+'GB ('+data.contents[4]+')</em></span></p>'
+		 	    stTable2 +='<p class="dsc_loading_no"><span class="progress"><em>'+parseInt(Number(data.contents[2])/1024)+' / '+parseInt(Number(data.contents[1])/1024)+'('+data.contents[4]+')</em></span></p>'
 		 		stTable2 +='<article class="loading_bar"><span style="width:'+data.contents[4]+';"></span></article>'
 			$jq('#pro2').append(stTable2);
 		}
