@@ -12,6 +12,7 @@ import kr.co.d2net.commons.util.UserFilenameFilter;
 import kr.co.d2net.commons.util.Utility;
 import kr.co.d2net.dto.Search;
 import kr.co.d2net.dto.WeekSchTbl;
+import kr.co.d2net.task.job.TranscodeJobControl;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang.StringUtils;
@@ -20,6 +21,11 @@ import org.junit.Test;
 
 public class CglibTest {
 
+	@Test
+	public void setTest() {
+		TranscodeJobControl.removeCtiId(1L);
+	}
+	
 	@Ignore
 	@Test
 	public void binSetterTest() {
@@ -183,6 +189,7 @@ public class CglibTest {
 		}
 	}
 	
+	@Ignore
 	@Test
 	public void dateTest() {
 		try {
