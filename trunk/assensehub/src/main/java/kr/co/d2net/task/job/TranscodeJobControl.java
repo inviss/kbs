@@ -1,9 +1,11 @@
 package kr.co.d2net.task.job;
 
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
+import java.util.Set;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
@@ -43,6 +45,8 @@ public class TranscodeJobControl {
 	private static volatile SwappingFifoQueue<Workflow> tcJobs = new SwappingFifoQueue<Workflow>();
 	private static volatile SwappingFifoQueue<Workflow> acJobs = new SwappingFifoQueue<Workflow>();
 	
+	private static volatile Set<Long> ctiIds = new HashSet<Long>();
+	
 	private ExecutorService jobReq = Executors.newSingleThreadExecutor();
 	private static Integer swap = 0;
 	private Map<String, Object> params = new HashMap<String, Object>();
@@ -78,6 +82,22 @@ public class TranscodeJobControl {
 		acJobs.put(workflow);
 	}
 	
+	
+	
+	public static boolean isExist(Long ctiId) {
+		return TranscodeJobControl.ctiIds.contains(ctiId);
+	}
+
+	public static void addCtiIds(Long ctiId) {
+		TranscodeJobControl.ctiIds.add(ctiId);
+	}
+	
+	public static void removeCtiId(Long ctiId) {
+		TranscodeJobControl.ctiIds.remove(ctiId);
+	}
+
+
+
 	/**
 	 * 지금은 안씀.
 	 * @author Administrator
