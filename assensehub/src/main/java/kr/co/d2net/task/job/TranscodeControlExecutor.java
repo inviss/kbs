@@ -60,14 +60,22 @@ public class TranscodeControlExecutor {
 
 		private Map<String, Object> params = new HashMap<String, Object>();
 		private List<Long> ctiIds = new ArrayList<Long>();
+		
+		private boolean isPutJob = true;
+		
+
+		//파일 없을 경우 관리하는 map
+		private Map<Long, Object> existFileMap = new HashMap<Long, Object>();
 
 		@Override
 		public void run() {
 			while(true) {
 
+				//프로파일 포함된 job 갯수
 				int size = TranscodeJobControl.getSize();
 				if(logger.isInfoEnabled()) {
 					logger.info("Transcode Video Job size - "+size);
+					logger.info("Transcode Video CTI_ID Job size - " + TranscodeJobControl.getTmpSize());
 				}
 
 				ctiIds.clear();
@@ -96,7 +104,6 @@ public class TranscodeControlExecutor {
 				for(Long ctiId : ctiIds) {
 					Workflow workflow = new Workflow();
 					workflow.setCtiId(ctiId);
-
 					try {
 						List<TranscorderHisTbl> transcorderHisTbls = workflowManagerService.findTraHisJobCtiId(ctiId);
 						for(TranscorderHisTbl transcorderHisTbl :  transcorderHisTbls) {
@@ -106,13 +113,41 @@ public class TranscodeControlExecutor {
 								if(!f.exists()) {
 									f = new File(mammnt+transcorderHisTbl.getFlPath().replaceAll("\\\\", "\\/"), transcorderHisTbl.getOrgFileNm()+"." + transcorderHisTbl.getOrgFlExt().toUpperCase());
 									if(!f.exists()) {
+										//스토리지 동기화 약간의 delay 시간이 필요
+										//최소 한번 재시도는 해야함 ex) 최소 동기화 시간 5초
+										//16.5.30 vayne
 										if(logger.isInfoEnabled()) {
 											logger.info("new job orgfile not exist!! break."+f.getAbsolutePath());
+											
+											if(existFileMap.get(transcorderHisTbl.getSeq()) != null){
+												logger.info("reg_id from : " + transcorderHisTbl.getRegrid());
+												
+												existFileMap.remove(transcorderHisTbl.getSeq());
+												
+												transcorderHisTbl.setWorkStatcd("900"); 
+												transcorderHisTbl.setModDt(Utility.getTimestamp());
+												
+												workflowManagerService.updateTranscorderHisState(transcorderHisTbl);
+												
+												//queue에 job 삭제
+												TranscodeJobControl.getJob();
+												
+												isPutJob = false;
+												
+											}else{
+												existFileMap.put(transcorderHisTbl.getSeq(), "");
+											}
 										}
 										break;
 									}
 								}
 								
+								//16.5.30 vayne
+								TranscodeJobControl.addCtiIds(ctiId);
+								
+								if(logger.isInfoEnabled())
+									logger.info("addCtiIds : " + ctiId);
+
 								if(logger.isInfoEnabled()) {
 									logger.info("new job org path: "+f.getAbsolutePath());
 								}
@@ -225,8 +260,12 @@ public class TranscodeControlExecutor {
 
 							workflow.addJobList(job);
 						}
-
-						TranscodeJobControl.putJob(workflow);
+						
+						if(isPutJob){
+							TranscodeJobControl.putJob(workflow);
+						}
+						isPutJob = true;
+						
 					} catch (Exception e) {
 						logger.error("[Transcode Job Control] TransferJobSwap Error", e);
 					}

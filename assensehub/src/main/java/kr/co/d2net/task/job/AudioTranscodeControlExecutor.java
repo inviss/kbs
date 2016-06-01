@@ -2,7 +2,9 @@ package kr.co.d2net.task.job;
 
 import java.io.File;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
@@ -29,6 +31,9 @@ public class AudioTranscodeControlExecutor {
 
 	private ExecutorService thread = Executors.newSingleThreadExecutor();
 	private final long THREAD_WAIT_TIME = 1000L * 30;
+	
+	//파일 없을 경우 관리하는 map
+	private Map<Long, Object> existFileMap = new HashMap<Long, Object>();
 
 	@Autowired
 	private WorkflowManagerService workflowManagerService;
@@ -46,6 +51,7 @@ public class AudioTranscodeControlExecutor {
 	public class AudioTranscodeJob implements Runnable {
 		
 		private List<Long> ctiIds = new ArrayList<Long>();
+		private boolean isPutAcJob = true;
 		
 		@Override
 		public void run() {
@@ -89,9 +95,34 @@ public class AudioTranscodeControlExecutor {
 								if(!f.exists()) {
 									if(logger.isInfoEnabled()) {
 										logger.info("new job orgfile not exist!! break."+f.getAbsolutePath());
+										
+										if(existFileMap.get(transcorderHisTbl.getSeq()) != null){
+											logger.info("reg_id from : " + transcorderHisTbl.getRegrid());
+											
+											existFileMap.remove(transcorderHisTbl.getSeq());
+											
+											transcorderHisTbl.setWorkStatcd("900"); 
+											transcorderHisTbl.setModDt(Utility.getTimestamp());
+											
+											workflowManagerService.updateTranscorderHisState(transcorderHisTbl);
+											
+											//queue에 job 삭제
+											TranscodeJobControl.getAcJob();
+											
+											isPutAcJob = false;
+										}else{
+											existFileMap.put(transcorderHisTbl.getSeq(), "");
+										}
 									}
 									break;
 								}
+								
+								//16.5.30 vayne
+								TranscodeJobControl.addCtiIds(ctiId);
+								
+								if(logger.isInfoEnabled())
+									logger.info("addCtiIds : " + ctiId);
+								
 								if(logger.isInfoEnabled()) {
 									logger.info("new job org path: "+f.getAbsolutePath());
 								}
@@ -161,10 +192,14 @@ public class AudioTranscodeControlExecutor {
 
 							workflow.addJobList(job);
 						}
-
-						TranscodeJobControl.putAcJob(workflow);
-
+						
+						if(isPutAcJob){
+							TranscodeJobControl.putAcJob(workflow);
+						}
+						
+						isPutAcJob = true;
 						header = true;
+						
 					} catch (Exception e) {
 						logger.error("[Transcode Audio Job Control] TransferJob Generation Error", e);
 					}

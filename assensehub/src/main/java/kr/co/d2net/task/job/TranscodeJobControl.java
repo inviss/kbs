@@ -95,6 +95,10 @@ public class TranscodeJobControl {
 	public static void removeCtiId(Long ctiId) {
 		TranscodeJobControl.ctiIds.remove(ctiId);
 	}
+	
+	public static Integer getTmpSize() {
+		return TranscodeJobControl.ctiIds.size();
+	}
 
 
 
