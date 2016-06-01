@@ -289,6 +289,9 @@ public class ServiceNavigator implements Navigator {
 
 								logger.debug("seq job get Status update - "+ctiJob.getJobId());
 							}
+							//16.05.30
+							TranscodeJobControl.removeCtiId(workJob.getCtiId());
+							
 							workflow = workJob;
 						}
 
