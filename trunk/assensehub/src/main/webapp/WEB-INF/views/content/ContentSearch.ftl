@@ -102,14 +102,11 @@ function callDownload(tmp){
 
 var filePath = document.getElementById('filePath').value;
 
-console.log(filePath);
-
-
 		if(filePath === undefined || filePath == null || filePath.length <= 0){
 			alert("파일/프로파일이 선택되지 않았습니다!.");			
 		}else{
 			alert("다운로드 요청을 하겠습니다!.");
-			return;
+
 			document.ContentsSearch.downFile.value = filePath;
 			
 			document.ContentsSearch.action="<@spring.url '/content/filedownload.ssc'/>";
