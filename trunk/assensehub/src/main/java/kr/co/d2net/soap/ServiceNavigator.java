@@ -1289,6 +1289,7 @@ public class ServiceNavigator implements Navigator {
 							contentsTbl.setCtNm(metadata.getProgramSubTitle());
 							contentsTbl.setCtTyp("00");
 							break;
+						/* 추가 type: 'X' 정의 필요*/
 						}
 
 						contentsTbl.setPgmCd(metadata.getProgramCode());
