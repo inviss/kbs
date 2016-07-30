@@ -276,6 +276,18 @@ public class Metadata {
 	@XStreamConverter(TextConverter.class)
 	private String playoutTransmissinoYn;
 	
+	/* 2016.07.30 NPS 추가항목 */
+	@XStreamAlias("video_source_version")
+	@XStreamConverter(TextConverter.class)
+	private String videoSourceVersion;
+	
+	
+	public String getVideoSourceVersion() {
+		return videoSourceVersion;
+	}
+	public void setVideoSourceVersion(String videoSourceVersion) {
+		this.videoSourceVersion = videoSourceVersion;
+	}
 	public String getPlayoutTransmissinoYn() {
 		return playoutTransmissinoYn;
 	}
