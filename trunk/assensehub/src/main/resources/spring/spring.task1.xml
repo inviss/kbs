@@ -9,6 +9,25 @@
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd">
 	
 	<context:annotation-config />
-	<context:component-scan base-package="kr.co.d2net.task" />
+	<context:component-scan base-package="kr.co.d2net.task" /> 
     
+    <bean name="storageCheckRequestDetail" class="org.springframework.scheduling.quartz.JobDetailBean"
+		p:jobClass="kr.co.d2net.task.diagram.StorageCheckControlJob">
+	</bean>
+	
+	<bean id="storageCheckRequestTrigger" class="org.springframework.scheduling.quartz.CronTriggerBean"
+		p:jobDetail-ref="storageCheckRequestDetail"
+		p:startDelay="5000"
+		p:cronExpression="0 0/10 * * * ?" />
+	
+	<!-- Trigger Add -->
+	<bean class="org.springframework.scheduling.quartz.SchedulerFactoryBean"
+		p:waitForJobsToCompleteOnShutdown="true">
+		<property name="triggers">
+			<list>
+				<ref bean="storageCheckRequestTrigger" />
+			</list>
+		</property>
+		<property name="applicationContextSchedulerContextKey" value="applicationContext"/>
+	</bean>
 </beans>
