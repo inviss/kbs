@@ -2,6 +2,7 @@ package kr.co.d2net.controller;
 
 import java.io.File;
 import java.io.IOException;
+import java.io.StringReader;
 import java.io.UnsupportedEncodingException;
 import java.net.URL;
 import java.net.URLDecoder;
@@ -82,6 +83,19 @@ import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.util.WebUtils;
 
 import com.malgn.aesDemo.AESUtil;
+
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.xpath.XPath;
+import javax.xml.xpath.XPathConstants;
+import javax.xml.xpath.XPathExpressionException;
+import javax.xml.xpath.XPathFactory;
+
+import org.w3c.dom.Document;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
+import org.xml.sax.InputSource;
+import org.xml.sax.SAXException;
 
 @Controller
 public class ContentManageControl {
@@ -3295,118 +3309,7 @@ public class ContentManageControl {
 		return view;
 	}
 
-	@RequestMapping(value="/popup/ProgramSearch.ssc", method = RequestMethod.POST)
-	public ModelMap businessSearchList(@ModelAttribute("search") Search search, 
-			@RequestParam(value = "pagestart", required = false) String pagestart,
-			@RequestParam(value = "pagecurrent", required = false) String pagecurrent,
-			@RequestParam(value = "ctTyp", required = false) String ctTyp,
-			ModelMap map) {
-
-
-		// 페이지 설정
-		if (search.getPageNo() == null || search.getPageNo() == 0) {
-			search.setPageNo(1);
-			//search.setMenuId("15");
-		}
-
-		String startDt="";
-		String endDt="";
-		// 기간검색 설정
-		if(search.getStartDt() != null){
-			map.addAttribute("startDt", Utility.getDate(search.getStartDt(),"yyyy-MM-dd"));
-			startDt = Utility.getDate(search.getStartDt(),"yyyyMMdd");
-		}
-		if(search.getEndDt() != null){
-			map.addAttribute("endDt", Utility.getDate(search.getEndDt(),"yyyy-MM-dd"));
-			endDt = Utility.getDate(search.getEndDt(),"yyyyMMdd", 0);
-		}		
-		// 키워드 설정
-		if (search.getKeyword() != null)
-			map.addAttribute("ketword", search.getKeyword());
-
-		String pagesize = "10";
-
-		if(pagestart.equals("") || pagestart.equals(null)){
-			pagestart = "1";
-		}
-
-		if(pagecurrent.equals("") || pagecurrent.equals(null)){
-			pagecurrent = "1";
-		}
-
-		Map<String, Object> params = new HashMap<String, Object>();
-
-		params.put("pagecount","20");
-		params.put("pagesize",pagesize);
-		params.put("pagestart",pagestart);
-		params.put("pagecurrent",pagecurrent);
-		//		params.put("position",null);
-		params.put("pids","program_code,program_id,program_title,group_code,channel_code,program_planned_date,program_planned_start_time,audio_mode_main,descriptive_video_service_yn,rerun_classification,transmission_audio_mode_main");  // 실제로 받아와야 할 컬럼들.
-
-		if(StringUtils.isNotBlank(search.getKeyword()))
-			params.put("searchValue", search.getKeyword());
-		if(StringUtils.isNotBlank(startDt))
-			params.put("broadcast_planned_date_morethan", startDt);
-		if(StringUtils.isNotBlank(endDt))
-			params.put("broadcast_planned_date_lessthan", endDt);
-		if(StringUtils.isNotBlank(search.getChannelCode2())&& !search.getChannelCode2().equals("0"))
-			params.put("channel_code_equals", search.getChannelCode2());
-		if(StringUtils.isNotBlank(ctTyp))
-			params.put("ct_typ", ctTyp);
-
-		String domain = messageSource.getMessage("meta.system.domain", null, Locale.KOREA);
-		String programMethod = messageSource.getMessage("meta.system.search.program", null, Locale.KOREA);
-
-
-		String programXml = "";
-
-		try {
-			HttpRequestService<Nodes> httpRequestService = HttpRequestServiceImpl.getInstance();
-			programXml = httpRequestService.findData(domain+programMethod, Utility.convertNameValue(params));
-			//programXml = Utility.connectHttpPostMethod(domain+programMethod, Utility.convertNameValue(params));
-
-			if(logger.isDebugEnabled()) {
-				logger.debug(programXml);
-			}
-
-			List<ProBusiTbl> proBusiTbls = proBusiManagerService.findProBusi(params);
-			List<ProFlTbl> proFlTbls = proFlManagerService.findProFl(params);
-			List<BusiPartnerTbl> busiPartnerTbls = busiPartnerManagerService.findBusiPartner(params);
-
-			map.addAttribute("proBusiTbls", proBusiTbls);
-			map.addAttribute("proFlTbls", proFlTbls);
-			map.addAttribute("busiPartnerTbls", busiPartnerTbls);
-			map.addAttribute("ctTyp", ctTyp);
-
-		} catch (Exception e) {
-			logger.error("metahub search error", e);
-		}
-
-		List<ContentsTbl> contentsTbl = new ArrayList<ContentsTbl>();
-		//contentsTbl.add(null);
-		if(StringUtils.isNotBlank(programXml)){
-			try {
-				contentsTbl = mediaToolInterfaceService.forwardProgramsInfo(programXml);
-
-				map.addAttribute("contentsTbl", contentsTbl);
-			} catch (ServiceException e) {
-				logger.error("metahub xml parsing error", e);
-			}
-		}else{
-			map.addAttribute("contentsTbl", contentsTbl);
-		}
-		int size = Integer.parseInt(pagesize);
-		int start = Integer.parseInt(pagestart);
-		int current = Integer.parseInt(pagecurrent);
-
-		map.addAttribute("s_page","0");
-		map.addAttribute("size", size);
-		map.addAttribute("start", start);
-		map.addAttribute("current", current);
-		map.addAttribute("search", search);
-
-		return map;
-	}
+	
 
 	@RequestMapping(value="/popup/scd_ProgramSearch.ssc", method = RequestMethod.POST)
 	public ModelMap scd_ProgramSearchList(@ModelAttribute("search") Search search, 
@@ -3762,10 +3665,160 @@ public class ContentManageControl {
 		}
 
 		List<ContentsTbl> contentsTbl = new ArrayList<ContentsTbl>();
+		PaginationSupport<ContentsTbl> support = new PaginationSupport<ContentsTbl>(contentsTbl, 0,    
+				0, 0);    
 
-		map.addAttribute("contentsTbl", contentsTbl);
+		map.addAttribute("contentsTbl", support);
 		map.addAttribute("search", search);
 		map.addAttribute("ctTyp", ctTyp);
+		return map;
+	}
+	
+	
+	
+	@RequestMapping(value="/popup/ProgramSearch.ssc", method = RequestMethod.POST)
+	public ModelMap businessSearchList(@ModelAttribute("search") Search search, 
+			@RequestParam(value = "pagestart", required = false) String pagestart,
+			@RequestParam(value = "pagecurrent", required = false) String pagecurrent,
+			@RequestParam(value = "ctTyp", required = false) String ctTyp,
+			ModelMap map) {
+		
+		logger.info("search.getPageNo() : " + search.getPageNo());
+
+		// 페이지 설정
+		if (search.getPageNo() == null || search.getPageNo() == 0) {
+			search.setPageNo(1);
+			//search.setMenuId("15");
+		}
+
+		String startDt="";
+		String endDt="";
+		// 기간검색 설정
+		if(search.getStartDt() != null){
+			map.addAttribute("startDt", Utility.getDate(search.getStartDt(),"yyyy-MM-dd"));
+			startDt = Utility.getDate(search.getStartDt(),"yyyyMMdd");
+		}
+		if(search.getEndDt() != null){
+			map.addAttribute("endDt", Utility.getDate(search.getEndDt(),"yyyy-MM-dd"));
+			endDt = Utility.getDate(search.getEndDt(),"yyyyMMdd", 0);
+		}		
+		// 키워드 설정
+		if (search.getKeyword() != null)
+			map.addAttribute("ketword", search.getKeyword());
+
+		String pagesize = "20";
+
+		if(pagestart.equals("") || pagestart.equals(null)){
+			pagestart = "1";
+		}
+
+		if(pagecurrent.equals("") || pagecurrent.equals(null)){
+			pagecurrent = "1";
+		}
+
+		Map<String, Object> params = new HashMap<String, Object>();
+
+		params.put("pagecount","20");
+		params.put("pagesize",pagesize);
+		params.put("pagestart",pagestart);
+		params.put("pagecurrent",search.getPageNo().toString());
+		//		params.put("position",null);
+		params.put("pids","program_code,program_id,program_title,group_code,channel_code,program_planned_date,program_planned_start_time,audio_mode_main,descriptive_video_service_yn,rerun_classification,transmission_audio_mode_main");  // 실제로 받아와야 할 컬럼들.
+
+		if(StringUtils.isNotBlank(search.getKeyword()))
+			params.put("searchValue", search.getKeyword());
+		if(StringUtils.isNotBlank(startDt))
+			params.put("broadcast_planned_date_morethan", startDt);
+		if(StringUtils.isNotBlank(endDt))
+			params.put("broadcast_planned_date_lessthan", endDt);
+		if(StringUtils.isNotBlank(search.getChannelCode2())&& !search.getChannelCode2().equals("0"))
+			params.put("channel_code_equals", search.getChannelCode2());
+		if(StringUtils.isNotBlank(ctTyp))
+			params.put("ct_typ", ctTyp);
+
+		String domain = messageSource.getMessage("meta.system.domain", null, Locale.KOREA);
+		String programMethod = messageSource.getMessage("meta.system.search.program", null, Locale.KOREA);
+
+
+		String programXml = "";
+
+		try {
+			HttpRequestService<Nodes> httpRequestService = HttpRequestServiceImpl.getInstance();
+			programXml = httpRequestService.findData(domain+programMethod, Utility.convertNameValue(params));
+			//programXml = Utility.connectHttpPostMethod(domain+programMethod, Utility.convertNameValue(params));
+
+			if(logger.isDebugEnabled()) {
+				logger.debug(programXml);
+			}
+			
+			List<ProBusiTbl> proBusiTbls = proBusiManagerService.findProBusi(params);
+			List<ProFlTbl> proFlTbls = proFlManagerService.findProFl(params);
+			List<BusiPartnerTbl> busiPartnerTbls = busiPartnerManagerService.findBusiPartner(params);
+
+			map.addAttribute("proBusiTbls", proBusiTbls);
+			map.addAttribute("proFlTbls", proFlTbls);
+			map.addAttribute("busiPartnerTbls", busiPartnerTbls);
+			map.addAttribute("ctTyp", ctTyp);
+
+		} catch (Exception e) {
+			logger.error("metahub search error", e);
+		}
+
+		List<ContentsTbl> contentsTbl = new ArrayList<ContentsTbl>();
+		
+		int size = Integer.parseInt(pagesize);
+		int start = Integer.parseInt(pagestart);
+		int current = Integer.parseInt(pagecurrent);
+		
+		//contentsTbl.add(null);
+		if(StringUtils.isNotBlank(programXml)){
+			try {
+				contentsTbl = mediaToolInterfaceService.forwardProgramsInfo(programXml);
+				String tmpTotalCount = "";
+				
+				//160818 vayne 페이징 구현
+				InputSource is = new InputSource(new StringReader(programXml));
+		        try {
+					Document document = DocumentBuilderFactory.newInstance().newDocumentBuilder().parse(is);
+					XPath xpath = XPathFactory.newInstance().newXPath();
+					
+					try {
+						NodeList cols = (NodeList)xpath.evaluate("//nodes/@total", document, XPathConstants.NODESET);
+						tmpTotalCount = cols.item(0).getTextContent();
+						
+					} catch (XPathExpressionException e) {
+						logger.error("XPathExpressionException : " + e);
+					}
+				} catch (SAXException e) {
+					logger.error("SAXException : " + e);
+				} catch (IOException e) {
+					logger.error("IOException : " + e);
+				} catch (ParserConfigurationException e) {
+					logger.error("ParserConfigurationException : " + e);
+				}
+				
+				PaginationSupport<ContentsTbl> support = new PaginationSupport<ContentsTbl>(contentsTbl, Integer.parseInt(tmpTotalCount),    
+						search.getPageNo(), size);    
+
+				map.addAttribute("contentsTbl", support);
+			} catch (ServiceException e) {
+				logger.error("metahub xml parsing error", e);
+			}
+		}else{
+			PaginationSupport<ContentsTbl> support = new PaginationSupport<ContentsTbl>(contentsTbl, 0,    
+					0, 0);    
+			map.addAttribute("contentsTbl", support);
+		}
+
+
+		map.addAttribute("s_page","0");
+		map.addAttribute("size", size);
+		map.addAttribute("start", start);
+		map.addAttribute("current", current);
+		map.addAttribute("search", search);
+	
+		//map.addAttribute("contentsTbl", contentsTbl);
+
 		return map;
 	}
 
