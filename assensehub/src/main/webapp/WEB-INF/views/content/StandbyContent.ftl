@@ -673,7 +673,7 @@ function refreshTime(){
 				        	<td align="left" title="${content.ctId!""}">
 				        	&nbsp;<div class="icon">
 				        	<img src='<@spring.url "/images/icon_"+regrid+".gif"/>'/>	
-				           &nbsp;<a href="javascript:void(0)" onclick="getContentInfo('${content.ctId!""}');">${content.pgmNm!content.jobId}</a>
+				           &nbsp;<a href="javascript:void(0)" onclick="getContentInfo('${content.ctId!""}');">${content.pgmNm!content.jobId!content.ctId}</a>
 		            		</div>
 				            </td>
 			            <#else>

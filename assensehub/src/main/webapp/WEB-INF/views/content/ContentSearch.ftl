@@ -102,11 +102,11 @@ function callDownload(tmp){
 
 var filePath = document.getElementById('filePath').value;
 
+
 		if(filePath === undefined || filePath == null || filePath.length <= 0){
 			alert("파일/프로파일이 선택되지 않았습니다!.");			
 		}else{
 			alert("다운로드 요청을 하겠습니다!.");
-
 			document.ContentsSearch.downFile.value = filePath;
 			
 			document.ContentsSearch.action="<@spring.url '/content/filedownload.ssc'/>";
@@ -484,9 +484,6 @@ function saveContentInfo(){
 
 function viewMediaPlayer(filePath,ctId,ctiId,wrkFileNm,proFlid){
 	
-	//alert('a');
-	//console.log(filePath);
-
 	ContentsSearch.filePath.value=filePath;
 	ContentsSearch.ctId.value=ctId;
 	ContentsSearch.ctiId.value=ctiId;
@@ -522,13 +519,14 @@ function viewMediaPlayer(filePath,ctId,ctiId,wrkFileNm,proFlid){
 	$jq('#selectContentsInst').append(table);
 	
 	-->
-	//prompt("Media URL :", "<@spring.url '"+filePath+"'/>");
+	<#--
+	prompt("Media URL :", "<@spring.url '"+filePath+"'/>");
+	-->
 	$jq('#Player').attr("URL", "<@spring.url '"+filePath+"'/>");
 	
 }
 
 function viewMediaPlayer2(filePath,ctId,ctiId,wrkFileNm,proFlid){
-	//alert('b');
 	ContentsSearch.filePath.value=filePath;
 	ContentsSearch.ctId.value=ctId;
 	ContentsSearch.ctiId.value=ctiId;
@@ -869,10 +867,8 @@ function contentsCopy(){
 		</span>
 		</article>
 	-->	
-	<!-- paginate -->
-	    <@paging contents search.pageNo '' />
-	<!-- //paginate -->
-
+	
+	<@paging contents search.pageNo '' />
 	</section>
 </form>	
 <form name="nProfl" id="nProfl" method="post">
