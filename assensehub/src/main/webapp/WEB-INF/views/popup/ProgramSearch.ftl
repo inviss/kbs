@@ -2,7 +2,11 @@
 <#include "/WEB-INF/views/includes/macro_fomat.ftl" >
 <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
 <script Language="JavaScript">
-
+function goPage(pageNo) {
+		document.ProgramSearch.action="<@spring.url '/popup/ProgramSearch.ssc'/>";
+		document.ProgramSearch.pageNo.value = pageNo;
+		document.ProgramSearch.submit();
+}
 function search(){
 	if(document.ProgramSearch.keyword.value==""){
 	  alert("프로그램명을 입력하세요");
@@ -46,6 +50,7 @@ function checkSearch(){
 			},
 			success: function(data){
 				document.ProgramSearch.method="post";
+				document.ProgramSearch.pageNo.value = 1;
 				document.ProgramSearch.action="<@spring.url '/popup/ProgramSearch.ssc'/>";
 				document.ProgramSearch.submit();
 			}
@@ -372,7 +377,7 @@ window.onload=function(){
             <tr><th>채널</th><th>프로그램코드</th><th>방송구분</th><th>프로그램명</th><th>방송일</th><th>방송시각</th><th>프로파일 설정</th></tr>
 				<#assign x = 20>  
             	<#assign y = x>
-				<#list contentsTbl as content>
+				<#list contentsTbl.items as content>
 					
 					<#if y%2==0>
 		            <tr class="gry">
@@ -392,7 +397,7 @@ window.onload=function(){
 		     			</#if>
 		     			
 			            <td>${ tpl.getCodeDesc("CHAN", content.channelCode!"")}</td>
-			            <td>${content.pgmCd!""}</td>
+			            <td>${content.pgmCd!""} ( ${content.pgmId!""} )</td>
 			            <td>${content.rerunClassification!""}</td>
 			            <#assign size=content.pgmNm?length>
 			         	<#if size <= 20>
@@ -434,6 +439,7 @@ window.onload=function(){
 				        	</#if>
 					            <td></td>
 					          	<td></td>
+					            <td></td>
 					            <td></td>
 					            <td></td>
 					            <td></td>
@@ -484,10 +490,9 @@ window.onload=function(){
 		</span>
 		</article>
 		
-	
-	
+	<@paging contentsTbl search.pageNo '' />
 	</section>
-	
+
 </form>
 </section>
 <!-- //Container -->
